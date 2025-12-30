@@ -1,0 +1,27 @@
+{
+    "name": "fatehan/phpb",
+    "version": "1.0.0",
+    "type": "library",
+    "license": "MIT",
+    "description": "Fatehan's PHP Protobuf/GRPC implementation",
+    "keywords": [
+        "protobuf",
+        "grpc"
+    ],
+    "homepage": "https://github.com/fatehanNew/phpb",
+    "autoload": {
+        "psr-4": {
+            "Fatehan\\Phpb\\": "src\\Fatehan"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mehdi Rajabi",
+            "email": "96rajabi@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.4",
+        "google/protobuf": "^4.31"
+    }
+}
