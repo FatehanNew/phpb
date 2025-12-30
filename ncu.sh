@@ -7,7 +7,7 @@ printf "Updating PHP dependencies using Composer...\n"
 composer update
 
 printf "Clearing source directory...\n"
-rm -rf src/*
+rm -rf src/Fatehan/*
 
 printf "Regenerating gRPC PHP classes from .proto files...\n"
 protoc --php_out=src/ --grpc_out=src/ --plugin=protoc-gen-grpc=/bin/grpc_php_plugin -I ../protocols \
