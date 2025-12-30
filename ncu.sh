@@ -15,18 +15,14 @@ protoc --php_out=src/ --grpc_out=src/ --plugin=protoc-gen-grpc=/bin/grpc_php_plu
 
 printf "Bumping composer package minor version...\n"
 if [ -f "composer.json" ]; then
-    # Extract current version (assumes format "version": "x.y.z")
     current_version=$(awk -F'"' '/"version":/ {print $4}' composer.json)
     
     if [ -n "$current_version" ]; then
-        # Parse version into array (Major.Minor.Patch)
         IFS='.' read -r major minor patch <<< "$current_version"
         
-        # Increment patch version only
         new_patch=$((patch + 1))
         new_version="$major.$minor.$new_patch"
         
-        # Update the file in place
         sed "s/\"version\": \"$current_version\"/\"version\": \"$new_version\"/" composer.json > composer.json.tmp && mv composer.json.tmp composer.json
         
         printf "Version bumped from $current_version to $new_version\n"
