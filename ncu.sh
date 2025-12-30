@@ -22,9 +22,9 @@ if [ -f "composer.json" ]; then
         # Parse version into array (Major.Minor.Patch)
         IFS='.' read -r major minor patch <<< "$current_version"
         
-        # Increment minor, reset patch to 0
-        new_minor=$((minor + 1))
-        new_version="$major.$new_minor.0"
+        # Increment patch version only
+        new_patch=$((patch + 1))
+        new_version="$major.$minor.$new_patch"
         
         # Update the file in place
         sed "s/\"version\": \"$current_version\"/\"version\": \"$new_version\"/" composer.json > composer.json.tmp && mv composer.json.tmp composer.json
