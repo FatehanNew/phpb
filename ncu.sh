@@ -13,9 +13,33 @@ printf "Regenerating gRPC PHP classes from .proto files...\n"
 protoc --php_out=src/ --grpc_out=src/ --plugin=protoc-gen-grpc=/bin/grpc_php_plugin -I ../protocols \
   ../protocols/{trips,reports,packets,notifies,financial,identities,models,services,areas,devices,activities}/*.proto
 
+printf "Bumping composer package minor version...\n"
+if [ -f "composer.json" ]; then
+    # Extract current version (assumes format "version": "x.y.z")
+    current_version=$(awk -F'"' '/"version":/ {print $4}' composer.json)
+    
+    if [ -n "$current_version" ]; then
+        # Parse version into array (Major.Minor.Patch)
+        IFS='.' read -r major minor patch <<< "$current_version"
+        
+        # Increment minor, reset patch to 0
+        new_minor=$((minor + 1))
+        new_version="$major.$new_minor.0"
+        
+        # Update the file in place
+        sed "s/\"version\": \"$current_version\"/\"version\": \"$new_version\"/" composer.json > composer.json.tmp && mv composer.json.tmp composer.json
+        
+        printf "Version bumped from $current_version to $new_version\n"
+    else
+        printf "Could not find a valid version in composer.json. Skipping bump.\n"
+    fi
+else
+    printf "composer.json not found. Skipping bump.\n"
+fi
+
 printf "Staging and committing changes to Git repository...\n"
 git add .
-git commit -m "Regenerated gRPC PHP classes from .proto files" || printf "No changes to commit.\n"
+git commit -m "Regenerated gRPC PHP classes and bumped version to $new_version" || printf "No changes to commit.\n"
 
 printf "Pushing changes to remote repository...\n"
 git push
