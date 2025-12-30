@@ -1,6 +1,6 @@
 {
     "name": "fatehan/phpb",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "type": "library",
     "license": "MIT",
     "minimum-stability": "stable",
@@ -13,7 +13,7 @@
     "homepage": "https://github.com/fatehanNew/phpb",
     "autoload": {
         "psr-4": {
-            "Fatehan\\Phpb\\": "src\\Fatehan"
+            "Fatehan": "src\\Fatehan"
         }
     },
     "authors": [
