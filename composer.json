@@ -13,7 +13,8 @@
     "homepage": "https://github.com/fatehanNew/phpb",
     "autoload": {
         "psr-4": {
-            "Fatehan\\": "src\\Fatehan"
+            "Fatehan\\": "src\\Fatehan",
+            "Fatehan\\Constants\\": "src\\Constants"
         }
     },
     "authors": [
