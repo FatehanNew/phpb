@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "344d3a3149bb0cc0cf65d57ba423265c",
+    "content-hash": "7feec5a1ee093f3934cdb0cacbacc933",
     "packages": [
         {
             "name": "google/protobuf",
