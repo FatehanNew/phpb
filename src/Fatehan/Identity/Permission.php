@@ -126,9 +126,9 @@ class Permission
      */
     const COMMAND_LIST = 22;
     /**
-     * Generated from protobuf enum <code>COMMAND_CREATE = 23;</code>
+     * Generated from protobuf enum <code>ADMIN_COMMAND_CREATE = 23;</code>
      */
-    const COMMAND_CREATE = 23;
+    const ADMIN_COMMAND_CREATE = 23;
     /**
      * Generated from protobuf enum <code>COMMAND_SHOW = 24;</code>
      */
@@ -152,40 +152,36 @@ class Permission
     /**
      * Command rebrand permissions
      *
-     * Generated from protobuf enum <code>COMMAND_REBRAND_LIST = 29;</code>
+     * Generated from protobuf enum <code>PARTNER_COMMAND_REBRAND_LIST = 29;</code>
      */
-    const COMMAND_REBRAND_LIST = 29;
+    const PARTNER_COMMAND_REBRAND_LIST = 29;
     /**
-     * Generated from protobuf enum <code>COMMAND_REBRAND_CREATE = 30;</code>
+     * Generated from protobuf enum <code>PARTNER_COMMAND_REBRAND_CREATE = 30;</code>
      */
-    const COMMAND_REBRAND_CREATE = 30;
+    const PARTNER_COMMAND_REBRAND_CREATE = 30;
     /**
-     * Generated from protobuf enum <code>COMMAND_REBRAND_SHOW = 31;</code>
+     * Generated from protobuf enum <code>PARTNER_COMMAND_REBRAND_SHOW = 31;</code>
      */
-    const COMMAND_REBRAND_SHOW = 31;
+    const PARTNER_COMMAND_REBRAND_SHOW = 31;
     /**
-     * Generated from protobuf enum <code>COMMAND_REBRAND_UPDATE = 32;</code>
+     * Generated from protobuf enum <code>PARTNER_COMMAND_REBRAND_UPDATE = 32;</code>
      */
-    const COMMAND_REBRAND_UPDATE = 32;
+    const PARTNER_COMMAND_REBRAND_UPDATE = 32;
     /**
-     * Generated from protobuf enum <code>COMMAND_REBRAND_DELETE = 33;</code>
+     * Generated from protobuf enum <code>PARTNER_COMMAND_REBRAND_DELETE = 33;</code>
      */
-    const COMMAND_REBRAND_DELETE = 33;
+    const PARTNER_COMMAND_REBRAND_DELETE = 33;
     /**
-     * Generated from protobuf enum <code>COMMAND_REBRAND_ME = 34;</code>
+     * Generated from protobuf enum <code>PARTNER_COMMAND_REBRAND_ME = 34;</code>
      */
-    const COMMAND_REBRAND_ME = 34;
+    const PARTNER_COMMAND_REBRAND_ME = 34;
     /**
-     * Generated from protobuf enum <code>COMMAND_REBRAND_SUB = 35;</code>
+     * Generated from protobuf enum <code>PARTNER_COMMAND_REBRAND_SUB = 35;</code>
      */
-    const COMMAND_REBRAND_SUB = 35;
+    const PARTNER_COMMAND_REBRAND_SUB = 35;
     /**
      * CommandSend permissions
      *
-     * Generated from protobuf enum <code>COMMAND_SEND = 36;</code>
-     */
-    const COMMAND_SEND = 36;
-    /**
      * Generated from protobuf enum <code>COMMAND_SEND_LIST = 37;</code>
      */
     const COMMAND_SEND_LIST = 37;
@@ -193,10 +189,6 @@ class Permission
      * Generated from protobuf enum <code>COMMAND_SEND_CREATE = 38;</code>
      */
     const COMMAND_SEND_CREATE = 38;
-    /**
-     * Generated from protobuf enum <code>COMMAND_SEND_SHOW = 39;</code>
-     */
-    const COMMAND_SEND_SHOW = 39;
     /**
      * Generated from protobuf enum <code>COMMAND_SEND_ME = 40;</code>
      */
@@ -224,9 +216,9 @@ class Permission
      */
     const DEVICE_UPDATE = 45;
     /**
-     * Generated from protobuf enum <code>DEVICE_DELETE = 46;</code>
+     * Generated from protobuf enum <code>PARTNER_DEVICE_DELETE = 46;</code>
      */
-    const DEVICE_DELETE = 46;
+    const PARTNER_DEVICE_DELETE = 46;
     /**
      * Generated from protobuf enum <code>DEVICE_ME = 47;</code>
      */
@@ -372,36 +364,6 @@ class Permission
      */
     const AREA_CATEGORY_SUB = 80;
     /**
-     * GpsLog permissions
-     *
-     * Generated from protobuf enum <code>GPS_LOG_LIST = 81;</code>
-     */
-    const GPS_LOG_LIST = 81;
-    /**
-     * Generated from protobuf enum <code>GPS_LOG_CREATE = 82;</code>
-     */
-    const GPS_LOG_CREATE = 82;
-    /**
-     * Generated from protobuf enum <code>GPS_LOG_SHOW = 83;</code>
-     */
-    const GPS_LOG_SHOW = 83;
-    /**
-     * Generated from protobuf enum <code>GPS_LOG_UPDATE = 84;</code>
-     */
-    const GPS_LOG_UPDATE = 84;
-    /**
-     * Generated from protobuf enum <code>GPS_LOG_DELETE = 85;</code>
-     */
-    const GPS_LOG_DELETE = 85;
-    /**
-     * Generated from protobuf enum <code>GPS_LOG_ME = 86;</code>
-     */
-    const GPS_LOG_ME = 86;
-    /**
-     * Generated from protobuf enum <code>GPS_LOG_SUB = 87;</code>
-     */
-    const GPS_LOG_SUB = 87;
-    /**
      * Icon permissions
      *
      * Generated from protobuf enum <code>ICON_LIST = 88;</code>
@@ -432,17 +394,17 @@ class Permission
      */
     const ICON_SUB = 94;
     /**
-     * Generated from protobuf enum <code>ICON_CREATE_DEFAULT = 95;</code>
+     * Generated from protobuf enum <code>ADMIN_ICON_CREATE_DEFAULT = 95;</code>
      */
-    const ICON_CREATE_DEFAULT = 95;
+    const ADMIN_ICON_CREATE_DEFAULT = 95;
     /**
-     * Generated from protobuf enum <code>ICON_UPDATE_DEFAULT = 96;</code>
+     * Generated from protobuf enum <code>ADMIN_ICON_UPDATE_DEFAULT = 96;</code>
      */
-    const ICON_UPDATE_DEFAULT = 96;
+    const ADMIN_ICON_UPDATE_DEFAULT = 96;
     /**
-     * Generated from protobuf enum <code>ICON_DELETE_DEFAULT = 97;</code>
+     * Generated from protobuf enum <code>ADMIN_ICON_DELETE_DEFAULT = 97;</code>
      */
-    const ICON_DELETE_DEFAULT = 97;
+    const ADMIN_ICON_DELETE_DEFAULT = 97;
     /**
      * Invoice permissions
      *
@@ -536,33 +498,33 @@ class Permission
     /**
      * OrganizationSetting permissions
      *
-     * Generated from protobuf enum <code>ORGANIZATION_SETTING_LIST = 119;</code>
+     * Generated from protobuf enum <code>PARTNER_ORGANIZATION_SETTING_LIST = 119;</code>
      */
-    const ORGANIZATION_SETTING_LIST = 119;
+    const PARTNER_ORGANIZATION_SETTING_LIST = 119;
     /**
-     * Generated from protobuf enum <code>ORGANIZATION_SETTING_CREATE = 120;</code>
+     * Generated from protobuf enum <code>PARTNER_ORGANIZATION_SETTING_CREATE = 120;</code>
      */
-    const ORGANIZATION_SETTING_CREATE = 120;
+    const PARTNER_ORGANIZATION_SETTING_CREATE = 120;
     /**
-     * Generated from protobuf enum <code>ORGANIZATION_SETTING_SHOW = 121;</code>
+     * Generated from protobuf enum <code>PARTNER_ORGANIZATION_SETTING_SHOW = 121;</code>
      */
-    const ORGANIZATION_SETTING_SHOW = 121;
+    const PARTNER_ORGANIZATION_SETTING_SHOW = 121;
     /**
-     * Generated from protobuf enum <code>ORGANIZATION_SETTING_UPDATE = 122;</code>
+     * Generated from protobuf enum <code>PARTNER_ORGANIZATION_SETTING_UPDATE = 122;</code>
      */
-    const ORGANIZATION_SETTING_UPDATE = 122;
+    const PARTNER_ORGANIZATION_SETTING_UPDATE = 122;
     /**
-     * Generated from protobuf enum <code>ORGANIZATION_SETTING_DELETE = 123;</code>
+     * Generated from protobuf enum <code>PARTNER_ORGANIZATION_SETTING_DELETE = 123;</code>
      */
-    const ORGANIZATION_SETTING_DELETE = 123;
+    const PARTNER_ORGANIZATION_SETTING_DELETE = 123;
     /**
-     * Generated from protobuf enum <code>ORGANIZATION_SETTING_ME = 124;</code>
+     * Generated from protobuf enum <code>PARTNER_ORGANIZATION_SETTING_ME = 124;</code>
      */
-    const ORGANIZATION_SETTING_ME = 124;
+    const PARTNER_ORGANIZATION_SETTING_ME = 124;
     /**
-     * Generated from protobuf enum <code>ORGANIZATION_SETTING_SUB = 125;</code>
+     * Generated from protobuf enum <code>PARTNER_ORGANIZATION_SETTING_SUB = 125;</code>
      */
-    const ORGANIZATION_SETTING_SUB = 125;
+    const PARTNER_ORGANIZATION_SETTING_SUB = 125;
     /**
      * Person permissions
      *
@@ -596,33 +558,33 @@ class Permission
     /**
      * PrintConfig permissions
      *
-     * Generated from protobuf enum <code>PRINT_CONFIG_LIST = 133;</code>
+     * Generated from protobuf enum <code>PARTNER_PRINT_CONFIG_LIST = 133;</code>
      */
-    const PRINT_CONFIG_LIST = 133;
+    const PARTNER_PRINT_CONFIG_LIST = 133;
     /**
-     * Generated from protobuf enum <code>PRINT_CONFIG_CREATE = 134;</code>
+     * Generated from protobuf enum <code>PARTNER_PRINT_CONFIG_CREATE = 134;</code>
      */
-    const PRINT_CONFIG_CREATE = 134;
+    const PARTNER_PRINT_CONFIG_CREATE = 134;
     /**
-     * Generated from protobuf enum <code>PRINT_CONFIG_SHOW = 135;</code>
+     * Generated from protobuf enum <code>PARTNER_PRINT_CONFIG_SHOW = 135;</code>
      */
-    const PRINT_CONFIG_SHOW = 135;
+    const PARTNER_PRINT_CONFIG_SHOW = 135;
     /**
-     * Generated from protobuf enum <code>PRINT_CONFIG_UPDATE = 136;</code>
+     * Generated from protobuf enum <code>PARTNER_PRINT_CONFIG_UPDATE = 136;</code>
      */
-    const PRINT_CONFIG_UPDATE = 136;
+    const PARTNER_PRINT_CONFIG_UPDATE = 136;
     /**
-     * Generated from protobuf enum <code>PRINT_CONFIG_DELETE = 137;</code>
+     * Generated from protobuf enum <code>PARTNER_PRINT_CONFIG_DELETE = 137;</code>
      */
-    const PRINT_CONFIG_DELETE = 137;
+    const PARTNER_PRINT_CONFIG_DELETE = 137;
     /**
-     * Generated from protobuf enum <code>PRINT_CONFIG_ME = 138;</code>
+     * Generated from protobuf enum <code>PARTNER_PRINT_CONFIG_ME = 138;</code>
      */
-    const PRINT_CONFIG_ME = 138;
+    const PARTNER_PRINT_CONFIG_ME = 138;
     /**
-     * Generated from protobuf enum <code>PRINT_CONFIG_SUB = 139;</code>
+     * Generated from protobuf enum <code>PARTNER_PRINT_CONFIG_SUB = 139;</code>
      */
-    const PRINT_CONFIG_SUB = 139;
+    const PARTNER_PRINT_CONFIG_SUB = 139;
     /**
      * Reminder permissions
      *
@@ -746,33 +708,33 @@ class Permission
     /**
      * Warehouse permissions
      *
-     * Generated from protobuf enum <code>WAREHOUSE_LIST = 168;</code>
+     * Generated from protobuf enum <code>PARTNER_WAREHOUSE_LIST = 168;</code>
      */
-    const WAREHOUSE_LIST = 168;
+    const PARTNER_WAREHOUSE_LIST = 168;
     /**
-     * Generated from protobuf enum <code>WAREHOUSE_CREATE = 169;</code>
+     * Generated from protobuf enum <code>PARTNER_WAREHOUSE_CREATE = 169;</code>
      */
-    const WAREHOUSE_CREATE = 169;
+    const PARTNER_WAREHOUSE_CREATE = 169;
     /**
-     * Generated from protobuf enum <code>WAREHOUSE_SHOW = 170;</code>
+     * Generated from protobuf enum <code>PARTNER_WAREHOUSE_SHOW = 170;</code>
      */
-    const WAREHOUSE_SHOW = 170;
+    const PARTNER_WAREHOUSE_SHOW = 170;
     /**
-     * Generated from protobuf enum <code>WAREHOUSE_UPDATE = 171;</code>
+     * Generated from protobuf enum <code>PARTNER_WAREHOUSE_UPDATE = 171;</code>
      */
-    const WAREHOUSE_UPDATE = 171;
+    const PARTNER_WAREHOUSE_UPDATE = 171;
     /**
-     * Generated from protobuf enum <code>WAREHOUSE_DELETE = 172;</code>
+     * Generated from protobuf enum <code>PARTNER_WAREHOUSE_DELETE = 172;</code>
      */
-    const WAREHOUSE_DELETE = 172;
+    const PARTNER_WAREHOUSE_DELETE = 172;
     /**
-     * Generated from protobuf enum <code>WAREHOUSE_ME = 173;</code>
+     * Generated from protobuf enum <code>PARTNER_WAREHOUSE_ME = 173;</code>
      */
-    const WAREHOUSE_ME = 173;
+    const PARTNER_WAREHOUSE_ME = 173;
     /**
-     * Generated from protobuf enum <code>WAREHOUSE_SUB = 174;</code>
+     * Generated from protobuf enum <code>PARTNER_WAREHOUSE_SUB = 174;</code>
      */
-    const WAREHOUSE_SUB = 174;
+    const PARTNER_WAREHOUSE_SUB = 174;
     /**
      * PhoneBook permissions
      *
@@ -833,47 +795,6 @@ class Permission
      * Generated from protobuf enum <code>ROLE_SUB = 188;</code>
      */
     const ROLE_SUB = 188;
-    /**
-     * Generated from protobuf enum <code>ROLE_PERMISSION = 189;</code>
-     */
-    const ROLE_PERMISSION = 189;
-    /**
-     * AlertConfig permissions
-     * Deprecated: Use EVENT_TEMPLATE_CREATE INSTEAD
-     *
-     * Generated from protobuf enum <code>ALERT_CONFIG_CREATE = 190;</code>
-     */
-    const ALERT_CONFIG_CREATE = 190;
-    /**
-     * Deprecated: Use EVENT_TEMPLATE_SHOW INSTEAD
-     *
-     * Generated from protobuf enum <code>ALERT_CONFIG_SHOW = 191;</code>
-     */
-    const ALERT_CONFIG_SHOW = 191;
-    /**
-     * Deprecated: Use EVENT_TEMPLATE_UPDATE INSTEAD
-     *
-     * Generated from protobuf enum <code>ALERT_CONFIG_UPDATE = 192;</code>
-     */
-    const ALERT_CONFIG_UPDATE = 192;
-    /**
-     * Deprecated: Use EVENT_TEMPLATE_DELETE INSTEAD
-     *
-     * Generated from protobuf enum <code>ALERT_CONFIG_DELETE = 193;</code>
-     */
-    const ALERT_CONFIG_DELETE = 193;
-    /**
-     * Deprecated: Use EVENT_TEMPLATE_ME INSTEAD
-     *
-     * Generated from protobuf enum <code>ALERT_CONFIG_ME = 194;</code>
-     */
-    const ALERT_CONFIG_ME = 194;
-    /**
-     * Deprecated: Use EVENT_TEMPLATE_SUB INSTEAD
-     *
-     * Generated from protobuf enum <code>ALERT_CONFIG_SUB = 195;</code>
-     */
-    const ALERT_CONFIG_SUB = 195;
     /**
      * Service permissions
      *
@@ -967,91 +888,91 @@ class Permission
     /**
      * InstallationAgency permissions
      *
-     * Generated from protobuf enum <code>INSTALLATION_AGENCY_LIST = 217;</code>
+     * Generated from protobuf enum <code>PARTNER_INSTALLATION_AGENCY_LIST = 217;</code>
      */
-    const INSTALLATION_AGENCY_LIST = 217;
+    const PARTNER_INSTALLATION_AGENCY_LIST = 217;
     /**
-     * Generated from protobuf enum <code>INSTALLATION_AGENCY_CREATE = 218;</code>
+     * Generated from protobuf enum <code>PARTNER_INSTALLATION_AGENCY_CREATE = 218;</code>
      */
-    const INSTALLATION_AGENCY_CREATE = 218;
+    const PARTNER_INSTALLATION_AGENCY_CREATE = 218;
     /**
-     * Generated from protobuf enum <code>INSTALLATION_AGENCY_SHOW = 219;</code>
+     * Generated from protobuf enum <code>PARTNER_INSTALLATION_AGENCY_SHOW = 219;</code>
      */
-    const INSTALLATION_AGENCY_SHOW = 219;
+    const PARTNER_INSTALLATION_AGENCY_SHOW = 219;
     /**
-     * Generated from protobuf enum <code>INSTALLATION_AGENCY_UPDATE = 220;</code>
+     * Generated from protobuf enum <code>PARTNER_INSTALLATION_AGENCY_UPDATE = 220;</code>
      */
-    const INSTALLATION_AGENCY_UPDATE = 220;
+    const PARTNER_INSTALLATION_AGENCY_UPDATE = 220;
     /**
-     * Generated from protobuf enum <code>INSTALLATION_AGENCY_DELETE = 221;</code>
+     * Generated from protobuf enum <code>PARTNER_INSTALLATION_AGENCY_DELETE = 221;</code>
      */
-    const INSTALLATION_AGENCY_DELETE = 221;
+    const PARTNER_INSTALLATION_AGENCY_DELETE = 221;
     /**
-     * Generated from protobuf enum <code>INSTALLATION_AGENCY_ME = 222;</code>
+     * Generated from protobuf enum <code>PARTNER_INSTALLATION_AGENCY_ME = 222;</code>
      */
-    const INSTALLATION_AGENCY_ME = 222;
+    const PARTNER_INSTALLATION_AGENCY_ME = 222;
     /**
-     * Generated from protobuf enum <code>INSTALLATION_AGENCY_SUB = 223;</code>
+     * Generated from protobuf enum <code>PARTNER_INSTALLATION_AGENCY_SUB = 223;</code>
      */
-    const INSTALLATION_AGENCY_SUB = 223;
+    const PARTNER_INSTALLATION_AGENCY_SUB = 223;
     /**
      * SalesAgency permissions
      *
-     * Generated from protobuf enum <code>SALES_AGENCY_REPORT = 224;</code>
+     * Generated from protobuf enum <code>PARTNER_SALES_AGENCY_REPORT = 224;</code>
      */
-    const SALES_AGENCY_REPORT = 224;
+    const PARTNER_SALES_AGENCY_REPORT = 224;
     /**
-     * Generated from protobuf enum <code>SALES_AGENCY_PRICE_LIST = 225;</code>
+     * Generated from protobuf enum <code>PARTNER_SALES_AGENCY_PRICE_LIST = 225;</code>
      */
-    const SALES_AGENCY_PRICE_LIST = 225;
+    const PARTNER_SALES_AGENCY_PRICE_LIST = 225;
     /**
-     * Generated from protobuf enum <code>SALES_AGENCY_PRICE_UPDATE = 226;</code>
+     * Generated from protobuf enum <code>PARTNER_SALES_AGENCY_PRICE_UPDATE = 226;</code>
      */
-    const SALES_AGENCY_PRICE_UPDATE = 226;
+    const PARTNER_SALES_AGENCY_PRICE_UPDATE = 226;
     /**
-     * Generated from protobuf enum <code>SALES_AGENCY_REQUEST_LIST = 227;</code>
+     * Generated from protobuf enum <code>PARTNER_SALES_AGENCY_REQUEST_LIST = 227;</code>
      */
-    const SALES_AGENCY_REQUEST_LIST = 227;
+    const PARTNER_SALES_AGENCY_REQUEST_LIST = 227;
     /**
-     * Generated from protobuf enum <code>SALES_AGENCY_REQUEST_CREATE = 228;</code>
+     * Generated from protobuf enum <code>PARTNER_SALES_AGENCY_REQUEST_CREATE = 228;</code>
      */
-    const SALES_AGENCY_REQUEST_CREATE = 228;
+    const PARTNER_SALES_AGENCY_REQUEST_CREATE = 228;
     /**
-     * Generated from protobuf enum <code>SALES_AGENCY_REQUEST_ACCEPT = 229;</code>
+     * Generated from protobuf enum <code>PARTNER_SALES_AGENCY_REQUEST_ACCEPT = 229;</code>
      */
-    const SALES_AGENCY_REQUEST_ACCEPT = 229;
+    const PARTNER_SALES_AGENCY_REQUEST_ACCEPT = 229;
     /**
-     * Generated from protobuf enum <code>SALES_AGENCY_REQUEST_REJECT = 230;</code>
+     * Generated from protobuf enum <code>PARTNER_SALES_AGENCY_REQUEST_REJECT = 230;</code>
      */
-    const SALES_AGENCY_REQUEST_REJECT = 230;
+    const PARTNER_SALES_AGENCY_REQUEST_REJECT = 230;
     /**
-     * Generated from protobuf enum <code>SALES_AGENCY_LIST = 231;</code>
+     * Generated from protobuf enum <code>PARTNER_SALES_AGENCY_LIST = 231;</code>
      */
-    const SALES_AGENCY_LIST = 231;
+    const PARTNER_SALES_AGENCY_LIST = 231;
     /**
-     * Generated from protobuf enum <code>SALES_AGENCY_CREATE = 232;</code>
+     * Generated from protobuf enum <code>PARTNER_SALES_AGENCY_CREATE = 232;</code>
      */
-    const SALES_AGENCY_CREATE = 232;
+    const PARTNER_SALES_AGENCY_CREATE = 232;
     /**
-     * Generated from protobuf enum <code>SALES_AGENCY_SHOW = 233;</code>
+     * Generated from protobuf enum <code>PARTNER_SALES_AGENCY_SHOW = 233;</code>
      */
-    const SALES_AGENCY_SHOW = 233;
+    const PARTNER_SALES_AGENCY_SHOW = 233;
     /**
-     * Generated from protobuf enum <code>SALES_AGENCY_UPDATE = 234;</code>
+     * Generated from protobuf enum <code>PARTNER_SALES_AGENCY_UPDATE = 234;</code>
      */
-    const SALES_AGENCY_UPDATE = 234;
+    const PARTNER_SALES_AGENCY_UPDATE = 234;
     /**
-     * Generated from protobuf enum <code>SALES_AGENCY_DELETE = 235;</code>
+     * Generated from protobuf enum <code>PARTNER_SALES_AGENCY_DELETE = 235;</code>
      */
-    const SALES_AGENCY_DELETE = 235;
+    const PARTNER_SALES_AGENCY_DELETE = 235;
     /**
-     * Generated from protobuf enum <code>SALES_AGENCY_ME = 236;</code>
+     * Generated from protobuf enum <code>PARTNER_SALES_AGENCY_ME = 236;</code>
      */
-    const SALES_AGENCY_ME = 236;
+    const PARTNER_SALES_AGENCY_ME = 236;
     /**
-     * Generated from protobuf enum <code>SALES_AGENCY_SUB = 237;</code>
+     * Generated from protobuf enum <code>PARTNER_SALES_AGENCY_SUB = 237;</code>
      */
-    const SALES_AGENCY_SUB = 237;
+    const PARTNER_SALES_AGENCY_SUB = 237;
     /**
      * Transaction permissions
      *
@@ -1191,21 +1112,21 @@ class Permission
      */
     const TRACKERS_LIST = 269;
     /**
-     * Generated from protobuf enum <code>TRACKERS_CREATE = 270;</code>
+     * Generated from protobuf enum <code>ADMIN_TRACKERS_CREATE = 270;</code>
      */
-    const TRACKERS_CREATE = 270;
+    const ADMIN_TRACKERS_CREATE = 270;
     /**
      * Generated from protobuf enum <code>TRACKERS_SHOW = 271;</code>
      */
     const TRACKERS_SHOW = 271;
     /**
-     * Generated from protobuf enum <code>TRACKERS_UPDATE = 272;</code>
+     * Generated from protobuf enum <code>ADMIN_TRACKERS_UPDATE = 272;</code>
      */
-    const TRACKERS_UPDATE = 272;
+    const ADMIN_TRACKERS_UPDATE = 272;
     /**
-     * Generated from protobuf enum <code>TRACKERS_DELETE = 273;</code>
+     * Generated from protobuf enum <code>ADMIN_TRACKERS_DELETE = 273;</code>
      */
-    const TRACKERS_DELETE = 273;
+    const ADMIN_TRACKERS_DELETE = 273;
     /**
      * Generated from protobuf enum <code>TRACKERS_ME = 274;</code>
      */
@@ -1215,33 +1136,33 @@ class Permission
      */
     const TRACKERS_SUB = 275;
     /**
-     * Generated from protobuf enum <code>TRACKERS_REBRAND_LIST = 276;</code>
+     * Generated from protobuf enum <code>PARTNER_TRACKERS_REBRAND_LIST = 276;</code>
      */
-    const TRACKERS_REBRAND_LIST = 276;
+    const PARTNER_TRACKERS_REBRAND_LIST = 276;
     /**
-     * Generated from protobuf enum <code>TRACKERS_REBRAND_CREATE = 277;</code>
+     * Generated from protobuf enum <code>PARTNER_TRACKERS_REBRAND_CREATE = 277;</code>
      */
-    const TRACKERS_REBRAND_CREATE = 277;
+    const PARTNER_TRACKERS_REBRAND_CREATE = 277;
     /**
-     * Generated from protobuf enum <code>TRACKERS_REBRAND_SHOW = 278;</code>
+     * Generated from protobuf enum <code>PARTNER_TRACKERS_REBRAND_SHOW = 278;</code>
      */
-    const TRACKERS_REBRAND_SHOW = 278;
+    const PARTNER_TRACKERS_REBRAND_SHOW = 278;
     /**
-     * Generated from protobuf enum <code>TRACKERS_REBRAND_UPDATE = 279;</code>
+     * Generated from protobuf enum <code>PARTNER_TRACKERS_REBRAND_UPDATE = 279;</code>
      */
-    const TRACKERS_REBRAND_UPDATE = 279;
+    const PARTNER_TRACKERS_REBRAND_UPDATE = 279;
     /**
-     * Generated from protobuf enum <code>TRACKERS_REBRAND_DELETE = 280;</code>
+     * Generated from protobuf enum <code>PARTNER_TRACKERS_REBRAND_DELETE = 280;</code>
      */
-    const TRACKERS_REBRAND_DELETE = 280;
+    const PARTNER_TRACKERS_REBRAND_DELETE = 280;
     /**
-     * Generated from protobuf enum <code>TRACKERS_REBRAND_ME = 281;</code>
+     * Generated from protobuf enum <code>PARTNER_TRACKERS_REBRAND_ME = 281;</code>
      */
-    const TRACKERS_REBRAND_ME = 281;
+    const PARTNER_TRACKERS_REBRAND_ME = 281;
     /**
-     * Generated from protobuf enum <code>TRACKERS_REBRAND_SUB = 282;</code>
+     * Generated from protobuf enum <code>PARTNER_TRACKERS_REBRAND_SUB = 282;</code>
      */
-    const TRACKERS_REBRAND_SUB = 282;
+    const PARTNER_TRACKERS_REBRAND_SUB = 282;
     /**
      * CarType permissions
      *
@@ -1335,33 +1256,33 @@ class Permission
     /**
      * WarehouseProduct permissions
      *
-     * Generated from protobuf enum <code>WAREHOUSE_PRODUCT_LIST = 304;</code>
+     * Generated from protobuf enum <code>PARTNER_WAREHOUSE_PRODUCT_LIST = 304;</code>
      */
-    const WAREHOUSE_PRODUCT_LIST = 304;
+    const PARTNER_WAREHOUSE_PRODUCT_LIST = 304;
     /**
-     * Generated from protobuf enum <code>WAREHOUSE_PRODUCT_CREATE = 305;</code>
+     * Generated from protobuf enum <code>PARTNER_WAREHOUSE_PRODUCT_CREATE = 305;</code>
      */
-    const WAREHOUSE_PRODUCT_CREATE = 305;
+    const PARTNER_WAREHOUSE_PRODUCT_CREATE = 305;
     /**
-     * Generated from protobuf enum <code>WAREHOUSE_PRODUCT_SHOW = 306;</code>
+     * Generated from protobuf enum <code>PARTNER_WAREHOUSE_PRODUCT_SHOW = 306;</code>
      */
-    const WAREHOUSE_PRODUCT_SHOW = 306;
+    const PARTNER_WAREHOUSE_PRODUCT_SHOW = 306;
     /**
-     * Generated from protobuf enum <code>WAREHOUSE_PRODUCT_UPDATE = 307;</code>
+     * Generated from protobuf enum <code>PARTNER_WAREHOUSE_PRODUCT_UPDATE = 307;</code>
      */
-    const WAREHOUSE_PRODUCT_UPDATE = 307;
+    const PARTNER_WAREHOUSE_PRODUCT_UPDATE = 307;
     /**
-     * Generated from protobuf enum <code>WAREHOUSE_PRODUCT_DELETE = 308;</code>
+     * Generated from protobuf enum <code>PARTNER_WAREHOUSE_PRODUCT_DELETE = 308;</code>
      */
-    const WAREHOUSE_PRODUCT_DELETE = 308;
+    const PARTNER_WAREHOUSE_PRODUCT_DELETE = 308;
     /**
-     * Generated from protobuf enum <code>WAREHOUSE_PRODUCT_ME = 309;</code>
+     * Generated from protobuf enum <code>PARTNER_WAREHOUSE_PRODUCT_ME = 309;</code>
      */
-    const WAREHOUSE_PRODUCT_ME = 309;
+    const PARTNER_WAREHOUSE_PRODUCT_ME = 309;
     /**
-     * Generated from protobuf enum <code>WAREHOUSE_PRODUCT_SUB = 310;</code>
+     * Generated from protobuf enum <code>PARTNER_WAREHOUSE_PRODUCT_SUB = 310;</code>
      */
-    const WAREHOUSE_PRODUCT_SUB = 310;
+    const PARTNER_WAREHOUSE_PRODUCT_SUB = 310;
     /**
      * Product permissions
      *
@@ -1395,33 +1316,33 @@ class Permission
     /**
      * WarehouseAction permissions
      *
-     * Generated from protobuf enum <code>WAREHOUSE_ACTION_LIST = 318;</code>
+     * Generated from protobuf enum <code>PARTNER_WAREHOUSE_ACTION_LIST = 318;</code>
      */
-    const WAREHOUSE_ACTION_LIST = 318;
+    const PARTNER_WAREHOUSE_ACTION_LIST = 318;
     /**
-     * Generated from protobuf enum <code>WAREHOUSE_ACTION_CREATE = 319;</code>
+     * Generated from protobuf enum <code>PARTNER_WAREHOUSE_ACTION_CREATE = 319;</code>
      */
-    const WAREHOUSE_ACTION_CREATE = 319;
+    const PARTNER_WAREHOUSE_ACTION_CREATE = 319;
     /**
-     * Generated from protobuf enum <code>WAREHOUSE_ACTION_SHOW = 320;</code>
+     * Generated from protobuf enum <code>PARTNER_WAREHOUSE_ACTION_SHOW = 320;</code>
      */
-    const WAREHOUSE_ACTION_SHOW = 320;
+    const PARTNER_WAREHOUSE_ACTION_SHOW = 320;
     /**
-     * Generated from protobuf enum <code>WAREHOUSE_ACTION_UPDATE = 321;</code>
+     * Generated from protobuf enum <code>PARTNER_WAREHOUSE_ACTION_UPDATE = 321;</code>
      */
-    const WAREHOUSE_ACTION_UPDATE = 321;
+    const PARTNER_WAREHOUSE_ACTION_UPDATE = 321;
     /**
-     * Generated from protobuf enum <code>WAREHOUSE_ACTION_DELETE = 322;</code>
+     * Generated from protobuf enum <code>PARTNER_WAREHOUSE_ACTION_DELETE = 322;</code>
      */
-    const WAREHOUSE_ACTION_DELETE = 322;
+    const PARTNER_WAREHOUSE_ACTION_DELETE = 322;
     /**
-     * Generated from protobuf enum <code>WAREHOUSE_ACTION_ME = 323;</code>
+     * Generated from protobuf enum <code>PARTNER_WAREHOUSE_ACTION_ME = 323;</code>
      */
-    const WAREHOUSE_ACTION_ME = 323;
+    const PARTNER_WAREHOUSE_ACTION_ME = 323;
     /**
-     * Generated from protobuf enum <code>WAREHOUSE_ACTION_SUB = 324;</code>
+     * Generated from protobuf enum <code>PARTNER_WAREHOUSE_ACTION_SUB = 324;</code>
      */
-    const WAREHOUSE_ACTION_SUB = 324;
+    const PARTNER_WAREHOUSE_ACTION_SUB = 324;
     /**
      * Subscription permissions
      *
@@ -1455,33 +1376,33 @@ class Permission
     /**
      * PaymentGateway permissions
      *
-     * Generated from protobuf enum <code>PAYMENT_GATEWAY_LIST = 332;</code>
+     * Generated from protobuf enum <code>PARTNER_PAYMENT_GATEWAY_LIST = 332;</code>
      */
-    const PAYMENT_GATEWAY_LIST = 332;
+    const PARTNER_PAYMENT_GATEWAY_LIST = 332;
     /**
-     * Generated from protobuf enum <code>PAYMENT_GATEWAY_CREATE = 333;</code>
+     * Generated from protobuf enum <code>PARTNER_PAYMENT_GATEWAY_CREATE = 333;</code>
      */
-    const PAYMENT_GATEWAY_CREATE = 333;
+    const PARTNER_PAYMENT_GATEWAY_CREATE = 333;
     /**
-     * Generated from protobuf enum <code>PAYMENT_GATEWAY_SHOW = 334;</code>
+     * Generated from protobuf enum <code>PARTNER_PAYMENT_GATEWAY_SHOW = 334;</code>
      */
-    const PAYMENT_GATEWAY_SHOW = 334;
+    const PARTNER_PAYMENT_GATEWAY_SHOW = 334;
     /**
-     * Generated from protobuf enum <code>PAYMENT_GATEWAY_UPDATE = 335;</code>
+     * Generated from protobuf enum <code>PARTNER_PAYMENT_GATEWAY_UPDATE = 335;</code>
      */
-    const PAYMENT_GATEWAY_UPDATE = 335;
+    const PARTNER_PAYMENT_GATEWAY_UPDATE = 335;
     /**
-     * Generated from protobuf enum <code>PAYMENT_GATEWAY_DELETE = 336;</code>
+     * Generated from protobuf enum <code>PARTNER_PAYMENT_GATEWAY_DELETE = 336;</code>
      */
-    const PAYMENT_GATEWAY_DELETE = 336;
+    const PARTNER_PAYMENT_GATEWAY_DELETE = 336;
     /**
-     * Generated from protobuf enum <code>PAYMENT_GATEWAY_ME = 337;</code>
+     * Generated from protobuf enum <code>PARTNER_PAYMENT_GATEWAY_ME = 337;</code>
      */
-    const PAYMENT_GATEWAY_ME = 337;
+    const PARTNER_PAYMENT_GATEWAY_ME = 337;
     /**
-     * Generated from protobuf enum <code>PAYMENT_GATEWAY_SUB = 338;</code>
+     * Generated from protobuf enum <code>PARTNER_PAYMENT_GATEWAY_SUB = 338;</code>
      */
-    const PAYMENT_GATEWAY_SUB = 338;
+    const PARTNER_PAYMENT_GATEWAY_SUB = 338;
     /**
      * WalletTransactionLog permissions
      *
@@ -1493,65 +1414,35 @@ class Permission
      */
     const WALLET_TRANSACTION_LOG_SHOW = 340;
     /**
-     * Configs permissions
-     *
-     * Generated from protobuf enum <code>CONFIGS_LIST = 341;</code>
-     */
-    const CONFIGS_LIST = 341;
-    /**
-     * Generated from protobuf enum <code>CONFIGS_CREATE = 342;</code>
-     */
-    const CONFIGS_CREATE = 342;
-    /**
-     * Generated from protobuf enum <code>CONFIGS_SHOW = 343;</code>
-     */
-    const CONFIGS_SHOW = 343;
-    /**
-     * Generated from protobuf enum <code>CONFIGS_UPDATE = 344;</code>
-     */
-    const CONFIGS_UPDATE = 344;
-    /**
-     * Generated from protobuf enum <code>CONFIGS_DELETE = 345;</code>
-     */
-    const CONFIGS_DELETE = 345;
-    /**
-     * Generated from protobuf enum <code>CONFIGS_ME = 346;</code>
-     */
-    const CONFIGS_ME = 346;
-    /**
-     * Generated from protobuf enum <code>CONFIGS_SUB = 347;</code>
-     */
-    const CONFIGS_SUB = 347;
-    /**
      * AvailableConfig permissions
      *
-     * Generated from protobuf enum <code>AVAILABLE_CONFIG_LIST = 348;</code>
+     * Generated from protobuf enum <code>PARTNER_AVAILABLE_CONFIG_LIST = 348;</code>
      */
-    const AVAILABLE_CONFIG_LIST = 348;
+    const PARTNER_AVAILABLE_CONFIG_LIST = 348;
     /**
-     * Generated from protobuf enum <code>AVAILABLE_CONFIG_CREATE = 349;</code>
+     * Generated from protobuf enum <code>ADMIN_AVAILABLE_CONFIG_CREATE = 349;</code>
      */
-    const AVAILABLE_CONFIG_CREATE = 349;
+    const ADMIN_AVAILABLE_CONFIG_CREATE = 349;
     /**
-     * Generated from protobuf enum <code>AVAILABLE_CONFIG_SHOW = 350;</code>
+     * Generated from protobuf enum <code>PARTNER_AVAILABLE_CONFIG_SHOW = 350;</code>
      */
-    const AVAILABLE_CONFIG_SHOW = 350;
+    const PARTNER_AVAILABLE_CONFIG_SHOW = 350;
     /**
-     * Generated from protobuf enum <code>AVAILABLE_CONFIG_UPDATE = 351;</code>
+     * Generated from protobuf enum <code>ADMIN_AVAILABLE_CONFIG_UPDATE = 351;</code>
      */
-    const AVAILABLE_CONFIG_UPDATE = 351;
+    const ADMIN_AVAILABLE_CONFIG_UPDATE = 351;
     /**
-     * Generated from protobuf enum <code>AVAILABLE_CONFIG_DELETE = 352;</code>
+     * Generated from protobuf enum <code>ADMIN_AVAILABLE_CONFIG_DELETE = 352;</code>
      */
-    const AVAILABLE_CONFIG_DELETE = 352;
+    const ADMIN_AVAILABLE_CONFIG_DELETE = 352;
     /**
-     * Generated from protobuf enum <code>AVAILABLE_CONFIG_ME = 353;</code>
+     * Generated from protobuf enum <code>PARTNER_AVAILABLE_CONFIG_ME = 353;</code>
      */
-    const AVAILABLE_CONFIG_ME = 353;
+    const PARTNER_AVAILABLE_CONFIG_ME = 353;
     /**
-     * Generated from protobuf enum <code>AVAILABLE_CONFIG_SUB = 354;</code>
+     * Generated from protobuf enum <code>PARTNER_AVAILABLE_CONFIG_SUB = 354;</code>
      */
-    const AVAILABLE_CONFIG_SUB = 354;
+    const PARTNER_AVAILABLE_CONFIG_SUB = 354;
     /**
      * Drivers permissions
      *
@@ -2127,10 +2018,6 @@ class Permission
      */
     const CHARGE_MANUAL_DEVICE = 489;
     /**
-     * Generated from protobuf enum <code>SERVER = 490;</code>
-     */
-    const SERVER = 490;
-    /**
      * Generated from protobuf enum <code>PARTNER_REPORT = 491;</code>
      */
     const PARTNER_REPORT = 491;
@@ -2151,25 +2038,13 @@ class Permission
      */
     const REPORT_REPORT = 495;
     /**
-     * Generated from protobuf enum <code>REPORT_DRIVER = 496;</code>
+     * Generated from protobuf enum <code>TRAFFIC_REPORT = 498;</code>
      */
-    const REPORT_DRIVER = 496;
+    const TRAFFIC_REPORT = 498;
     /**
-     * Generated from protobuf enum <code>REPORT_STOPS = 497;</code>
+     * Generated from protobuf enum <code>GEOFENCE_REPORT = 499;</code>
      */
-    const REPORT_STOPS = 497;
-    /**
-     * Generated from protobuf enum <code>REPORT_TRAFFIC = 498;</code>
-     */
-    const REPORT_TRAFFIC = 498;
-    /**
-     * Generated from protobuf enum <code>REPORT_GEOFENCE = 499;</code>
-     */
-    const REPORT_GEOFENCE = 499;
-    /**
-     * Generated from protobuf enum <code>REPORT_DATA = 500;</code>
-     */
-    const REPORT_DATA = 500;
+    const GEOFENCE_REPORT = 499;
     /**
      * Generated from protobuf enum <code>NOTIFICATION_REPORT = 501;</code>
      */
@@ -2183,9 +2058,9 @@ class Permission
      */
     const PRINT_SETTING = 503;
     /**
-     * Generated from protobuf enum <code>TRACKING = 504;</code>
+     * Generated from protobuf enum <code>TRACKING_REPORT = 504;</code>
      */
-    const TRACKING = 504;
+    const TRACKING_REPORT = 504;
     /**
      * Generated from protobuf enum <code>WAREHOUSE_REPORT = 505;</code>
      */
@@ -2205,55 +2080,25 @@ class Permission
      */
     const ADMIN_CHARGE_WALLET = 508;
     /**
-     * Deprecated: Use EVENT_LIST INSTEAD
-     *
-     * Generated from protobuf enum <code>USER_DEVICE_ALERT_LIST = 509;</code>
-     */
-    const USER_DEVICE_ALERT_LIST = 509;
-    /**
-     * Deprecated: Use EVENT_CREATE INSTEAD
-     *
-     * Generated from protobuf enum <code>USER_DEVICE_ALERT_CREATE = 510;</code>
-     */
-    const USER_DEVICE_ALERT_CREATE = 510;
-    /**
-     * Deprecated: Use EVENT_UPDATE INSTEAD
-     *
-     * Generated from protobuf enum <code>USER_DEVICE_ALERT_UPDATE = 511;</code>
-     */
-    const USER_DEVICE_ALERT_UPDATE = 511;
-    /**
-     * Deprecated: Use EVENT_SHOW INSTEAD
-     *
-     * Generated from protobuf enum <code>USER_DEVICE_ALERT_SHOW = 512;</code>
-     */
-    const USER_DEVICE_ALERT_SHOW = 512;
-    /**
-     * Deprecated: Use EVENT_DELETE INSTEAD
-     *
-     * Generated from protobuf enum <code>USER_DEVICE_ALERT_DELETE = 513;</code>
-     */
-    const USER_DEVICE_ALERT_DELETE = 513;
-    /**
      * Generated from protobuf enum <code>IO_ELEMENT_LIST = 514;</code>
      */
     const IO_ELEMENT_LIST = 514;
     /**
-     * Generated from protobuf enum <code>IO_ELEMENT_CREATE = 515;</code>
+     * Generated from protobuf enum <code>ADMIN_IO_ELEMENT_CREATE = 515;</code>
      */
-    const IO_ELEMENT_CREATE = 515;
+    const ADMIN_IO_ELEMENT_CREATE = 515;
     /**
      * Generated from protobuf enum <code>IO_ELEMENT_SHOW = 516;</code>
      */
     const IO_ELEMENT_SHOW = 516;
     /**
-     * Generated from protobuf enum <code>IO_ELEMENT_UPDATE = 517;</code>
+     * Generated from protobuf enum <code>ADMIN_IO_ELEMENT_UPDATE = 517;</code>
      */
-    const IO_ELEMENT_UPDATE = 517;
+    const ADMIN_IO_ELEMENT_UPDATE = 517;
     /**
-     * Generated from protobuf enum <code>IO_ELEMENT_DELETE = 518;</code>
+     * Generated from protobuf enum <code>ADMIN_IO_ELEMENT_DELETE = 518;</code>
      */
-    const IO_ELEMENT_DELETE = 518;
+    const ADMIN_IO_ELEMENT_DELETE = 518;
     /**
      * Generated from protobuf enum <code>ORGANIZATION_CONFIG_LIST = 519;</code>
      */
@@ -2299,17 +2144,17 @@ class Permission
      */
     const CAR_BRAND_DELETE = 529;
     /**
-     * Generated from protobuf enum <code>PRODUCT_TYPE_CREATE = 530;</code>
+     * Generated from protobuf enum <code>PARTNER_PRODUCT_TYPE_CREATE = 530;</code>
      */
-    const PRODUCT_TYPE_CREATE = 530;
+    const PARTNER_PRODUCT_TYPE_CREATE = 530;
     /**
-     * Generated from protobuf enum <code>PRODUCT_TYPE_UPDATE = 531;</code>
+     * Generated from protobuf enum <code>PARTNER_PRODUCT_TYPE_UPDATE = 531;</code>
      */
-    const PRODUCT_TYPE_UPDATE = 531;
+    const PARTNER_PRODUCT_TYPE_UPDATE = 531;
     /**
-     * Generated from protobuf enum <code>PRODUCT_TYPE_DELETE = 532;</code>
+     * Generated from protobuf enum <code>PARTNER_PRODUCT_TYPE_DELETE = 532;</code>
      */
-    const PRODUCT_TYPE_DELETE = 532;
+    const PARTNER_PRODUCT_TYPE_DELETE = 532;
     /**
      * Generated from protobuf enum <code>NOTIFICATION_ALERT_LIST = 533;</code>
      */
@@ -2331,25 +2176,25 @@ class Permission
      */
     const NOTIFICATION_ALERT_DELETE = 537;
     /**
-     * Generated from protobuf enum <code>MODULE_PRICE_LIST = 538;</code>
+     * Generated from protobuf enum <code>PARTNER_MODULE_PRICE_LIST = 538;</code>
      */
-    const MODULE_PRICE_LIST = 538;
+    const PARTNER_MODULE_PRICE_LIST = 538;
     /**
-     * Generated from protobuf enum <code>MODULE_PRICE_SHOW = 539;</code>
+     * Generated from protobuf enum <code>PARTNER_MODULE_PRICE_SHOW = 539;</code>
      */
-    const MODULE_PRICE_SHOW = 539;
+    const PARTNER_MODULE_PRICE_SHOW = 539;
     /**
-     * Generated from protobuf enum <code>MODULE_PRICE_CREATE = 540;</code>
+     * Generated from protobuf enum <code>PARTNER_MODULE_PRICE_CREATE = 540;</code>
      */
-    const MODULE_PRICE_CREATE = 540;
+    const PARTNER_MODULE_PRICE_CREATE = 540;
     /**
-     * Generated from protobuf enum <code>MODULE_PRICE_UPDATE = 541;</code>
+     * Generated from protobuf enum <code>PARTNER_MODULE_PRICE_UPDATE = 541;</code>
      */
-    const MODULE_PRICE_UPDATE = 541;
+    const PARTNER_MODULE_PRICE_UPDATE = 541;
     /**
-     * Generated from protobuf enum <code>MODULE_PRICE_DELETE = 542;</code>
+     * Generated from protobuf enum <code>PARTNER_MODULE_PRICE_DELETE = 542;</code>
      */
-    const MODULE_PRICE_DELETE = 542;
+    const PARTNER_MODULE_PRICE_DELETE = 542;
     /**
      * Generated from protobuf enum <code>ACTIVITY_LOGS_LIST = 543;</code>
      */
@@ -2383,65 +2228,53 @@ class Permission
      */
     const USER_DEVICE_IO_DELETE = 550;
     /**
-     * Generated from protobuf enum <code>MODULE_PACKAGE_LIST = 551;</code>
+     * Generated from protobuf enum <code>PARTNER_MODULE_PACKAGE_LIST = 551;</code>
      */
-    const MODULE_PACKAGE_LIST = 551;
+    const PARTNER_MODULE_PACKAGE_LIST = 551;
     /**
-     * Generated from protobuf enum <code>MODULE_PACKAGE_SHOW = 552;</code>
+     * Generated from protobuf enum <code>PARTNER_MODULE_PACKAGE_SHOW = 552;</code>
      */
-    const MODULE_PACKAGE_SHOW = 552;
+    const PARTNER_MODULE_PACKAGE_SHOW = 552;
     /**
-     * Generated from protobuf enum <code>MODULE_PACKAGE_CREATE = 553;</code>
+     * Generated from protobuf enum <code>PARTNER_MODULE_PACKAGE_CREATE = 553;</code>
      */
-    const MODULE_PACKAGE_CREATE = 553;
+    const PARTNER_MODULE_PACKAGE_CREATE = 553;
     /**
-     * Generated from protobuf enum <code>MODULE_PACKAGE_UPDATE = 554;</code>
+     * Generated from protobuf enum <code>PARTNER_MODULE_PACKAGE_UPDATE = 554;</code>
      */
-    const MODULE_PACKAGE_UPDATE = 554;
+    const PARTNER_MODULE_PACKAGE_UPDATE = 554;
     /**
-     * Generated from protobuf enum <code>MODULE_PACKAGE_DELETE = 555;</code>
+     * Generated from protobuf enum <code>PARTNER_MODULE_PACKAGE_DELETE = 555;</code>
      */
-    const MODULE_PACKAGE_DELETE = 555;
+    const PARTNER_MODULE_PACKAGE_DELETE = 555;
     /**
-     * Generated from protobuf enum <code>APP_VERSION_LIST = 556;</code>
+     * Generated from protobuf enum <code>ADMIN_APP_VERSION_LIST = 556;</code>
      */
-    const APP_VERSION_LIST = 556;
+    const ADMIN_APP_VERSION_LIST = 556;
     /**
-     * Generated from protobuf enum <code>APP_VERSION_SHOW = 557;</code>
+     * Generated from protobuf enum <code>ADMIN_APP_VERSION_SHOW = 557;</code>
      */
-    const APP_VERSION_SHOW = 557;
+    const ADMIN_APP_VERSION_SHOW = 557;
     /**
-     * Generated from protobuf enum <code>APP_VERSION_CREATE = 558;</code>
+     * Generated from protobuf enum <code>ADMIN_APP_VERSION_CREATE = 558;</code>
      */
-    const APP_VERSION_CREATE = 558;
+    const ADMIN_APP_VERSION_CREATE = 558;
     /**
-     * Generated from protobuf enum <code>APP_VERSION_UPDATE = 559;</code>
+     * Generated from protobuf enum <code>ADMIN_APP_VERSION_UPDATE = 559;</code>
      */
-    const APP_VERSION_UPDATE = 559;
+    const ADMIN_APP_VERSION_UPDATE = 559;
     /**
-     * Generated from protobuf enum <code>APP_VERSION_DELETE = 560;</code>
+     * Generated from protobuf enum <code>ADMIN_APP_VERSION_DELETE = 560;</code>
      */
-    const APP_VERSION_DELETE = 560;
+    const ADMIN_APP_VERSION_DELETE = 560;
     /**
-     * Generated from protobuf enum <code>PERMISSIONS_LIST = 561;</code>
+     * Generated from protobuf enum <code>ADMIN_SERVICE_CREATE_DEFAULT = 562;</code>
      */
-    const PERMISSIONS_LIST = 561;
+    const ADMIN_SERVICE_CREATE_DEFAULT = 562;
     /**
-     * Generated from protobuf enum <code>SERVICE_CREATE_DEFAULT = 562;</code>
+     * Generated from protobuf enum <code>WORK_CYCLE_REPORT = 563;</code>
      */
-    const SERVICE_CREATE_DEFAULT = 562;
-    /**
-     * Generated from protobuf enum <code>REPORT_WORK_CYCLE = 563;</code>
-     */
-    const REPORT_WORK_CYCLE = 563;
-    /**
-     * Generated from protobuf enum <code>REPORT_NOTIFICATION = 564;</code>
-     */
-    const REPORT_NOTIFICATION = 564;
-    /**
-     * Generated from protobuf enum <code>REPORT_CHART = 565;</code>
-     */
-    const REPORT_CHART = 565;
+    const WORK_CYCLE_REPORT = 563;
     /**
      * Generated from protobuf enum <code>MAINTENANCE_LIST = 566;</code>
      */
@@ -2527,25 +2360,25 @@ class Permission
      */
     const ORDER_SUB = 586;
     /**
-     * Generated from protobuf enum <code>APP_SETTING_LIST = 587;</code>
+     * Generated from protobuf enum <code>ADMIN_APP_SETTING_LIST = 587;</code>
      */
-    const APP_SETTING_LIST = 587;
+    const ADMIN_APP_SETTING_LIST = 587;
     /**
-     * Generated from protobuf enum <code>APP_SETTING_SHOW = 588;</code>
+     * Generated from protobuf enum <code>ADMIN_APP_SETTING_SHOW = 588;</code>
      */
-    const APP_SETTING_SHOW = 588;
+    const ADMIN_APP_SETTING_SHOW = 588;
     /**
-     * Generated from protobuf enum <code>APP_SETTING_CREATE = 589;</code>
+     * Generated from protobuf enum <code>ADMIN_APP_SETTING_CREATE = 589;</code>
      */
-    const APP_SETTING_CREATE = 589;
+    const ADMIN_APP_SETTING_CREATE = 589;
     /**
-     * Generated from protobuf enum <code>APP_SETTING_UPDATE = 590;</code>
+     * Generated from protobuf enum <code>ADMIN_APP_SETTING_UPDATE = 590;</code>
      */
-    const APP_SETTING_UPDATE = 590;
+    const ADMIN_APP_SETTING_UPDATE = 590;
     /**
-     * Generated from protobuf enum <code>APP_SETTING_DELETE = 591;</code>
+     * Generated from protobuf enum <code>ADMIN_APP_SETTING_DELETE = 591;</code>
      */
-    const APP_SETTING_DELETE = 591;
+    const ADMIN_APP_SETTING_DELETE = 591;
     /**
      * Generated from protobuf enum <code>BLOCK_IP = 592;</code>
      */
@@ -2693,9 +2526,9 @@ class Permission
      */
     const TRIP_WORK_FLOW_TASK_CONFIRM = 635;
     /**
-     * Generated from protobuf enum <code>CHANGE_ORGANIZATION_IS_UNLIMITED = 636;</code>
+     * Generated from protobuf enum <code>PARTNER_CHANGE_ORGANIZATION_IS_UNLIMITED = 636;</code>
      */
-    const CHANGE_ORGANIZATION_IS_UNLIMITED = 636;
+    const PARTNER_CHANGE_ORGANIZATION_IS_UNLIMITED = 636;
     /**
      * Generated from protobuf enum <code>LIVE_VIDEO_MONITORING = 637;</code>
      */
@@ -2749,9 +2582,9 @@ class Permission
      */
     const MONITORING = 649;
     /**
-     * Generated from protobuf enum <code>DEBUGGING = 650;</code>
+     * Generated from protobuf enum <code>PARTNER_DEBUGGING = 650;</code>
      */
-    const DEBUGGING = 650;
+    const PARTNER_DEBUGGING = 650;
     /**
      * Generated from protobuf enum <code>USER_UPDATE_IMEI = 651;</code>
      */
@@ -2785,17 +2618,17 @@ class Permission
     /**
      * EVENT TEMPLATES
      *
-     * Generated from protobuf enum <code>EVENT_TEMPLATE_CREATE = 658;</code>
+     * Generated from protobuf enum <code>ADMIN_EVENT_TEMPLATE_CREATE = 658;</code>
      */
-    const EVENT_TEMPLATE_CREATE = 658;
+    const ADMIN_EVENT_TEMPLATE_CREATE = 658;
     /**
-     * Generated from protobuf enum <code>EVENT_TEMPLATE_UPDATE = 659;</code>
+     * Generated from protobuf enum <code>ADMIN_EVENT_TEMPLATE_UPDATE = 659;</code>
      */
-    const EVENT_TEMPLATE_UPDATE = 659;
+    const ADMIN_EVENT_TEMPLATE_UPDATE = 659;
     /**
-     * Generated from protobuf enum <code>EVENT_TEMPLATE_DELETE = 660;</code>
+     * Generated from protobuf enum <code>ADMIN_EVENT_TEMPLATE_DELETE = 660;</code>
      */
-    const EVENT_TEMPLATE_DELETE = 660;
+    const ADMIN_EVENT_TEMPLATE_DELETE = 660;
     /**
      * QUESTIONS
      *
@@ -2877,30 +2710,28 @@ class Permission
         self::CAR_ME => 'CAR_ME',
         self::CAR_SUB => 'CAR_SUB',
         self::COMMAND_LIST => 'COMMAND_LIST',
-        self::COMMAND_CREATE => 'COMMAND_CREATE',
+        self::ADMIN_COMMAND_CREATE => 'ADMIN_COMMAND_CREATE',
         self::COMMAND_SHOW => 'COMMAND_SHOW',
         self::COMMAND_UPDATE => 'COMMAND_UPDATE',
         self::COMMAND_DELETE => 'COMMAND_DELETE',
         self::COMMAND_ME => 'COMMAND_ME',
         self::COMMAND_SUB => 'COMMAND_SUB',
-        self::COMMAND_REBRAND_LIST => 'COMMAND_REBRAND_LIST',
-        self::COMMAND_REBRAND_CREATE => 'COMMAND_REBRAND_CREATE',
-        self::COMMAND_REBRAND_SHOW => 'COMMAND_REBRAND_SHOW',
-        self::COMMAND_REBRAND_UPDATE => 'COMMAND_REBRAND_UPDATE',
-        self::COMMAND_REBRAND_DELETE => 'COMMAND_REBRAND_DELETE',
-        self::COMMAND_REBRAND_ME => 'COMMAND_REBRAND_ME',
-        self::COMMAND_REBRAND_SUB => 'COMMAND_REBRAND_SUB',
-        self::COMMAND_SEND => 'COMMAND_SEND',
+        self::PARTNER_COMMAND_REBRAND_LIST => 'PARTNER_COMMAND_REBRAND_LIST',
+        self::PARTNER_COMMAND_REBRAND_CREATE => 'PARTNER_COMMAND_REBRAND_CREATE',
+        self::PARTNER_COMMAND_REBRAND_SHOW => 'PARTNER_COMMAND_REBRAND_SHOW',
+        self::PARTNER_COMMAND_REBRAND_UPDATE => 'PARTNER_COMMAND_REBRAND_UPDATE',
+        self::PARTNER_COMMAND_REBRAND_DELETE => 'PARTNER_COMMAND_REBRAND_DELETE',
+        self::PARTNER_COMMAND_REBRAND_ME => 'PARTNER_COMMAND_REBRAND_ME',
+        self::PARTNER_COMMAND_REBRAND_SUB => 'PARTNER_COMMAND_REBRAND_SUB',
         self::COMMAND_SEND_LIST => 'COMMAND_SEND_LIST',
         self::COMMAND_SEND_CREATE => 'COMMAND_SEND_CREATE',
-        self::COMMAND_SEND_SHOW => 'COMMAND_SEND_SHOW',
         self::COMMAND_SEND_ME => 'COMMAND_SEND_ME',
         self::COMMAND_SEND_SUB => 'COMMAND_SEND_SUB',
         self::DEVICE_LIST => 'DEVICE_LIST',
         self::DEVICE_CREATE => 'DEVICE_CREATE',
         self::DEVICE_SHOW => 'DEVICE_SHOW',
         self::DEVICE_UPDATE => 'DEVICE_UPDATE',
-        self::DEVICE_DELETE => 'DEVICE_DELETE',
+        self::PARTNER_DEVICE_DELETE => 'PARTNER_DEVICE_DELETE',
         self::DEVICE_ME => 'DEVICE_ME',
         self::DEVICE_SUB => 'DEVICE_SUB',
         self::DEVICE_IO_LIST => 'DEVICE_IO_LIST',
@@ -2935,13 +2766,6 @@ class Permission
         self::AREA_CATEGORY_DELETE => 'AREA_CATEGORY_DELETE',
         self::AREA_CATEGORY_ME => 'AREA_CATEGORY_ME',
         self::AREA_CATEGORY_SUB => 'AREA_CATEGORY_SUB',
-        self::GPS_LOG_LIST => 'GPS_LOG_LIST',
-        self::GPS_LOG_CREATE => 'GPS_LOG_CREATE',
-        self::GPS_LOG_SHOW => 'GPS_LOG_SHOW',
-        self::GPS_LOG_UPDATE => 'GPS_LOG_UPDATE',
-        self::GPS_LOG_DELETE => 'GPS_LOG_DELETE',
-        self::GPS_LOG_ME => 'GPS_LOG_ME',
-        self::GPS_LOG_SUB => 'GPS_LOG_SUB',
         self::ICON_LIST => 'ICON_LIST',
         self::ICON_CREATE => 'ICON_CREATE',
         self::ICON_SHOW => 'ICON_SHOW',
@@ -2949,9 +2773,9 @@ class Permission
         self::ICON_DELETE => 'ICON_DELETE',
         self::ICON_ME => 'ICON_ME',
         self::ICON_SUB => 'ICON_SUB',
-        self::ICON_CREATE_DEFAULT => 'ICON_CREATE_DEFAULT',
-        self::ICON_UPDATE_DEFAULT => 'ICON_UPDATE_DEFAULT',
-        self::ICON_DELETE_DEFAULT => 'ICON_DELETE_DEFAULT',
+        self::ADMIN_ICON_CREATE_DEFAULT => 'ADMIN_ICON_CREATE_DEFAULT',
+        self::ADMIN_ICON_UPDATE_DEFAULT => 'ADMIN_ICON_UPDATE_DEFAULT',
+        self::ADMIN_ICON_DELETE_DEFAULT => 'ADMIN_ICON_DELETE_DEFAULT',
         self::INVOICE_LIST => 'INVOICE_LIST',
         self::INVOICE_CREATE => 'INVOICE_CREATE',
         self::INVOICE_SHOW => 'INVOICE_SHOW',
@@ -2973,13 +2797,13 @@ class Permission
         self::ORGANIZATION_DELETE => 'ORGANIZATION_DELETE',
         self::ORGANIZATION_ME => 'ORGANIZATION_ME',
         self::ORGANIZATION_SUB => 'ORGANIZATION_SUB',
-        self::ORGANIZATION_SETTING_LIST => 'ORGANIZATION_SETTING_LIST',
-        self::ORGANIZATION_SETTING_CREATE => 'ORGANIZATION_SETTING_CREATE',
-        self::ORGANIZATION_SETTING_SHOW => 'ORGANIZATION_SETTING_SHOW',
-        self::ORGANIZATION_SETTING_UPDATE => 'ORGANIZATION_SETTING_UPDATE',
-        self::ORGANIZATION_SETTING_DELETE => 'ORGANIZATION_SETTING_DELETE',
-        self::ORGANIZATION_SETTING_ME => 'ORGANIZATION_SETTING_ME',
-        self::ORGANIZATION_SETTING_SUB => 'ORGANIZATION_SETTING_SUB',
+        self::PARTNER_ORGANIZATION_SETTING_LIST => 'PARTNER_ORGANIZATION_SETTING_LIST',
+        self::PARTNER_ORGANIZATION_SETTING_CREATE => 'PARTNER_ORGANIZATION_SETTING_CREATE',
+        self::PARTNER_ORGANIZATION_SETTING_SHOW => 'PARTNER_ORGANIZATION_SETTING_SHOW',
+        self::PARTNER_ORGANIZATION_SETTING_UPDATE => 'PARTNER_ORGANIZATION_SETTING_UPDATE',
+        self::PARTNER_ORGANIZATION_SETTING_DELETE => 'PARTNER_ORGANIZATION_SETTING_DELETE',
+        self::PARTNER_ORGANIZATION_SETTING_ME => 'PARTNER_ORGANIZATION_SETTING_ME',
+        self::PARTNER_ORGANIZATION_SETTING_SUB => 'PARTNER_ORGANIZATION_SETTING_SUB',
         self::PERSON_LIST => 'PERSON_LIST',
         self::PERSON_CREATE => 'PERSON_CREATE',
         self::PERSON_SHOW => 'PERSON_SHOW',
@@ -2987,13 +2811,13 @@ class Permission
         self::PERSON_DELETE => 'PERSON_DELETE',
         self::PERSON_ME => 'PERSON_ME',
         self::PERSON_SUB => 'PERSON_SUB',
-        self::PRINT_CONFIG_LIST => 'PRINT_CONFIG_LIST',
-        self::PRINT_CONFIG_CREATE => 'PRINT_CONFIG_CREATE',
-        self::PRINT_CONFIG_SHOW => 'PRINT_CONFIG_SHOW',
-        self::PRINT_CONFIG_UPDATE => 'PRINT_CONFIG_UPDATE',
-        self::PRINT_CONFIG_DELETE => 'PRINT_CONFIG_DELETE',
-        self::PRINT_CONFIG_ME => 'PRINT_CONFIG_ME',
-        self::PRINT_CONFIG_SUB => 'PRINT_CONFIG_SUB',
+        self::PARTNER_PRINT_CONFIG_LIST => 'PARTNER_PRINT_CONFIG_LIST',
+        self::PARTNER_PRINT_CONFIG_CREATE => 'PARTNER_PRINT_CONFIG_CREATE',
+        self::PARTNER_PRINT_CONFIG_SHOW => 'PARTNER_PRINT_CONFIG_SHOW',
+        self::PARTNER_PRINT_CONFIG_UPDATE => 'PARTNER_PRINT_CONFIG_UPDATE',
+        self::PARTNER_PRINT_CONFIG_DELETE => 'PARTNER_PRINT_CONFIG_DELETE',
+        self::PARTNER_PRINT_CONFIG_ME => 'PARTNER_PRINT_CONFIG_ME',
+        self::PARTNER_PRINT_CONFIG_SUB => 'PARTNER_PRINT_CONFIG_SUB',
         self::REMINDER_LIST => 'REMINDER_LIST',
         self::REMINDER_CREATE => 'REMINDER_CREATE',
         self::REMINDER_SHOW => 'REMINDER_SHOW',
@@ -3022,13 +2846,13 @@ class Permission
         self::USER_DEVICE_CONFIG_DELETE => 'USER_DEVICE_CONFIG_DELETE',
         self::USER_DEVICE_CONFIG_ME => 'USER_DEVICE_CONFIG_ME',
         self::USER_DEVICE_CONFIG_SUB => 'USER_DEVICE_CONFIG_SUB',
-        self::WAREHOUSE_LIST => 'WAREHOUSE_LIST',
-        self::WAREHOUSE_CREATE => 'WAREHOUSE_CREATE',
-        self::WAREHOUSE_SHOW => 'WAREHOUSE_SHOW',
-        self::WAREHOUSE_UPDATE => 'WAREHOUSE_UPDATE',
-        self::WAREHOUSE_DELETE => 'WAREHOUSE_DELETE',
-        self::WAREHOUSE_ME => 'WAREHOUSE_ME',
-        self::WAREHOUSE_SUB => 'WAREHOUSE_SUB',
+        self::PARTNER_WAREHOUSE_LIST => 'PARTNER_WAREHOUSE_LIST',
+        self::PARTNER_WAREHOUSE_CREATE => 'PARTNER_WAREHOUSE_CREATE',
+        self::PARTNER_WAREHOUSE_SHOW => 'PARTNER_WAREHOUSE_SHOW',
+        self::PARTNER_WAREHOUSE_UPDATE => 'PARTNER_WAREHOUSE_UPDATE',
+        self::PARTNER_WAREHOUSE_DELETE => 'PARTNER_WAREHOUSE_DELETE',
+        self::PARTNER_WAREHOUSE_ME => 'PARTNER_WAREHOUSE_ME',
+        self::PARTNER_WAREHOUSE_SUB => 'PARTNER_WAREHOUSE_SUB',
         self::PHONE_BOOK_LIST => 'PHONE_BOOK_LIST',
         self::PHONE_BOOK_CREATE => 'PHONE_BOOK_CREATE',
         self::PHONE_BOOK_SHOW => 'PHONE_BOOK_SHOW',
@@ -3043,13 +2867,6 @@ class Permission
         self::ROLE_DELETE => 'ROLE_DELETE',
         self::ROLE_ME => 'ROLE_ME',
         self::ROLE_SUB => 'ROLE_SUB',
-        self::ROLE_PERMISSION => 'ROLE_PERMISSION',
-        self::ALERT_CONFIG_CREATE => 'ALERT_CONFIG_CREATE',
-        self::ALERT_CONFIG_SHOW => 'ALERT_CONFIG_SHOW',
-        self::ALERT_CONFIG_UPDATE => 'ALERT_CONFIG_UPDATE',
-        self::ALERT_CONFIG_DELETE => 'ALERT_CONFIG_DELETE',
-        self::ALERT_CONFIG_ME => 'ALERT_CONFIG_ME',
-        self::ALERT_CONFIG_SUB => 'ALERT_CONFIG_SUB',
         self::SERVICE_LIST => 'SERVICE_LIST',
         self::SERVICE_CREATE => 'SERVICE_CREATE',
         self::SERVICE_SHOW => 'SERVICE_SHOW',
@@ -3071,27 +2888,27 @@ class Permission
         self::LIVE_LOCATION_DELETE => 'LIVE_LOCATION_DELETE',
         self::LIVE_LOCATION_ME => 'LIVE_LOCATION_ME',
         self::LIVE_LOCATION_SUB => 'LIVE_LOCATION_SUB',
-        self::INSTALLATION_AGENCY_LIST => 'INSTALLATION_AGENCY_LIST',
-        self::INSTALLATION_AGENCY_CREATE => 'INSTALLATION_AGENCY_CREATE',
-        self::INSTALLATION_AGENCY_SHOW => 'INSTALLATION_AGENCY_SHOW',
-        self::INSTALLATION_AGENCY_UPDATE => 'INSTALLATION_AGENCY_UPDATE',
-        self::INSTALLATION_AGENCY_DELETE => 'INSTALLATION_AGENCY_DELETE',
-        self::INSTALLATION_AGENCY_ME => 'INSTALLATION_AGENCY_ME',
-        self::INSTALLATION_AGENCY_SUB => 'INSTALLATION_AGENCY_SUB',
-        self::SALES_AGENCY_REPORT => 'SALES_AGENCY_REPORT',
-        self::SALES_AGENCY_PRICE_LIST => 'SALES_AGENCY_PRICE_LIST',
-        self::SALES_AGENCY_PRICE_UPDATE => 'SALES_AGENCY_PRICE_UPDATE',
-        self::SALES_AGENCY_REQUEST_LIST => 'SALES_AGENCY_REQUEST_LIST',
-        self::SALES_AGENCY_REQUEST_CREATE => 'SALES_AGENCY_REQUEST_CREATE',
-        self::SALES_AGENCY_REQUEST_ACCEPT => 'SALES_AGENCY_REQUEST_ACCEPT',
-        self::SALES_AGENCY_REQUEST_REJECT => 'SALES_AGENCY_REQUEST_REJECT',
-        self::SALES_AGENCY_LIST => 'SALES_AGENCY_LIST',
-        self::SALES_AGENCY_CREATE => 'SALES_AGENCY_CREATE',
-        self::SALES_AGENCY_SHOW => 'SALES_AGENCY_SHOW',
-        self::SALES_AGENCY_UPDATE => 'SALES_AGENCY_UPDATE',
-        self::SALES_AGENCY_DELETE => 'SALES_AGENCY_DELETE',
-        self::SALES_AGENCY_ME => 'SALES_AGENCY_ME',
-        self::SALES_AGENCY_SUB => 'SALES_AGENCY_SUB',
+        self::PARTNER_INSTALLATION_AGENCY_LIST => 'PARTNER_INSTALLATION_AGENCY_LIST',
+        self::PARTNER_INSTALLATION_AGENCY_CREATE => 'PARTNER_INSTALLATION_AGENCY_CREATE',
+        self::PARTNER_INSTALLATION_AGENCY_SHOW => 'PARTNER_INSTALLATION_AGENCY_SHOW',
+        self::PARTNER_INSTALLATION_AGENCY_UPDATE => 'PARTNER_INSTALLATION_AGENCY_UPDATE',
+        self::PARTNER_INSTALLATION_AGENCY_DELETE => 'PARTNER_INSTALLATION_AGENCY_DELETE',
+        self::PARTNER_INSTALLATION_AGENCY_ME => 'PARTNER_INSTALLATION_AGENCY_ME',
+        self::PARTNER_INSTALLATION_AGENCY_SUB => 'PARTNER_INSTALLATION_AGENCY_SUB',
+        self::PARTNER_SALES_AGENCY_REPORT => 'PARTNER_SALES_AGENCY_REPORT',
+        self::PARTNER_SALES_AGENCY_PRICE_LIST => 'PARTNER_SALES_AGENCY_PRICE_LIST',
+        self::PARTNER_SALES_AGENCY_PRICE_UPDATE => 'PARTNER_SALES_AGENCY_PRICE_UPDATE',
+        self::PARTNER_SALES_AGENCY_REQUEST_LIST => 'PARTNER_SALES_AGENCY_REQUEST_LIST',
+        self::PARTNER_SALES_AGENCY_REQUEST_CREATE => 'PARTNER_SALES_AGENCY_REQUEST_CREATE',
+        self::PARTNER_SALES_AGENCY_REQUEST_ACCEPT => 'PARTNER_SALES_AGENCY_REQUEST_ACCEPT',
+        self::PARTNER_SALES_AGENCY_REQUEST_REJECT => 'PARTNER_SALES_AGENCY_REQUEST_REJECT',
+        self::PARTNER_SALES_AGENCY_LIST => 'PARTNER_SALES_AGENCY_LIST',
+        self::PARTNER_SALES_AGENCY_CREATE => 'PARTNER_SALES_AGENCY_CREATE',
+        self::PARTNER_SALES_AGENCY_SHOW => 'PARTNER_SALES_AGENCY_SHOW',
+        self::PARTNER_SALES_AGENCY_UPDATE => 'PARTNER_SALES_AGENCY_UPDATE',
+        self::PARTNER_SALES_AGENCY_DELETE => 'PARTNER_SALES_AGENCY_DELETE',
+        self::PARTNER_SALES_AGENCY_ME => 'PARTNER_SALES_AGENCY_ME',
+        self::PARTNER_SALES_AGENCY_SUB => 'PARTNER_SALES_AGENCY_SUB',
         self::TRANSACTION_LIST => 'TRANSACTION_LIST',
         self::TRANSACTION_CREATE => 'TRANSACTION_CREATE',
         self::TRANSACTION_SHOW => 'TRANSACTION_SHOW',
@@ -3124,19 +2941,19 @@ class Permission
         self::BANK_ACCOUNT_ME => 'BANK_ACCOUNT_ME',
         self::BANK_ACCOUNT_SUB => 'BANK_ACCOUNT_SUB',
         self::TRACKERS_LIST => 'TRACKERS_LIST',
-        self::TRACKERS_CREATE => 'TRACKERS_CREATE',
+        self::ADMIN_TRACKERS_CREATE => 'ADMIN_TRACKERS_CREATE',
         self::TRACKERS_SHOW => 'TRACKERS_SHOW',
-        self::TRACKERS_UPDATE => 'TRACKERS_UPDATE',
-        self::TRACKERS_DELETE => 'TRACKERS_DELETE',
+        self::ADMIN_TRACKERS_UPDATE => 'ADMIN_TRACKERS_UPDATE',
+        self::ADMIN_TRACKERS_DELETE => 'ADMIN_TRACKERS_DELETE',
         self::TRACKERS_ME => 'TRACKERS_ME',
         self::TRACKERS_SUB => 'TRACKERS_SUB',
-        self::TRACKERS_REBRAND_LIST => 'TRACKERS_REBRAND_LIST',
-        self::TRACKERS_REBRAND_CREATE => 'TRACKERS_REBRAND_CREATE',
-        self::TRACKERS_REBRAND_SHOW => 'TRACKERS_REBRAND_SHOW',
-        self::TRACKERS_REBRAND_UPDATE => 'TRACKERS_REBRAND_UPDATE',
-        self::TRACKERS_REBRAND_DELETE => 'TRACKERS_REBRAND_DELETE',
-        self::TRACKERS_REBRAND_ME => 'TRACKERS_REBRAND_ME',
-        self::TRACKERS_REBRAND_SUB => 'TRACKERS_REBRAND_SUB',
+        self::PARTNER_TRACKERS_REBRAND_LIST => 'PARTNER_TRACKERS_REBRAND_LIST',
+        self::PARTNER_TRACKERS_REBRAND_CREATE => 'PARTNER_TRACKERS_REBRAND_CREATE',
+        self::PARTNER_TRACKERS_REBRAND_SHOW => 'PARTNER_TRACKERS_REBRAND_SHOW',
+        self::PARTNER_TRACKERS_REBRAND_UPDATE => 'PARTNER_TRACKERS_REBRAND_UPDATE',
+        self::PARTNER_TRACKERS_REBRAND_DELETE => 'PARTNER_TRACKERS_REBRAND_DELETE',
+        self::PARTNER_TRACKERS_REBRAND_ME => 'PARTNER_TRACKERS_REBRAND_ME',
+        self::PARTNER_TRACKERS_REBRAND_SUB => 'PARTNER_TRACKERS_REBRAND_SUB',
         self::CAR_TYPE_LIST => 'CAR_TYPE_LIST',
         self::CAR_TYPE_CREATE => 'CAR_TYPE_CREATE',
         self::CAR_TYPE_SHOW => 'CAR_TYPE_SHOW',
@@ -3158,13 +2975,13 @@ class Permission
         self::WARRANTY_DELETE => 'WARRANTY_DELETE',
         self::WARRANTY_ME => 'WARRANTY_ME',
         self::WARRANTY_SUB => 'WARRANTY_SUB',
-        self::WAREHOUSE_PRODUCT_LIST => 'WAREHOUSE_PRODUCT_LIST',
-        self::WAREHOUSE_PRODUCT_CREATE => 'WAREHOUSE_PRODUCT_CREATE',
-        self::WAREHOUSE_PRODUCT_SHOW => 'WAREHOUSE_PRODUCT_SHOW',
-        self::WAREHOUSE_PRODUCT_UPDATE => 'WAREHOUSE_PRODUCT_UPDATE',
-        self::WAREHOUSE_PRODUCT_DELETE => 'WAREHOUSE_PRODUCT_DELETE',
-        self::WAREHOUSE_PRODUCT_ME => 'WAREHOUSE_PRODUCT_ME',
-        self::WAREHOUSE_PRODUCT_SUB => 'WAREHOUSE_PRODUCT_SUB',
+        self::PARTNER_WAREHOUSE_PRODUCT_LIST => 'PARTNER_WAREHOUSE_PRODUCT_LIST',
+        self::PARTNER_WAREHOUSE_PRODUCT_CREATE => 'PARTNER_WAREHOUSE_PRODUCT_CREATE',
+        self::PARTNER_WAREHOUSE_PRODUCT_SHOW => 'PARTNER_WAREHOUSE_PRODUCT_SHOW',
+        self::PARTNER_WAREHOUSE_PRODUCT_UPDATE => 'PARTNER_WAREHOUSE_PRODUCT_UPDATE',
+        self::PARTNER_WAREHOUSE_PRODUCT_DELETE => 'PARTNER_WAREHOUSE_PRODUCT_DELETE',
+        self::PARTNER_WAREHOUSE_PRODUCT_ME => 'PARTNER_WAREHOUSE_PRODUCT_ME',
+        self::PARTNER_WAREHOUSE_PRODUCT_SUB => 'PARTNER_WAREHOUSE_PRODUCT_SUB',
         self::PRODUCT_LIST => 'PRODUCT_LIST',
         self::PRODUCT_CREATE => 'PRODUCT_CREATE',
         self::PRODUCT_SHOW => 'PRODUCT_SHOW',
@@ -3172,13 +2989,13 @@ class Permission
         self::PRODUCT_DELETE => 'PRODUCT_DELETE',
         self::PRODUCT_ME => 'PRODUCT_ME',
         self::PRODUCT_SUB => 'PRODUCT_SUB',
-        self::WAREHOUSE_ACTION_LIST => 'WAREHOUSE_ACTION_LIST',
-        self::WAREHOUSE_ACTION_CREATE => 'WAREHOUSE_ACTION_CREATE',
-        self::WAREHOUSE_ACTION_SHOW => 'WAREHOUSE_ACTION_SHOW',
-        self::WAREHOUSE_ACTION_UPDATE => 'WAREHOUSE_ACTION_UPDATE',
-        self::WAREHOUSE_ACTION_DELETE => 'WAREHOUSE_ACTION_DELETE',
-        self::WAREHOUSE_ACTION_ME => 'WAREHOUSE_ACTION_ME',
-        self::WAREHOUSE_ACTION_SUB => 'WAREHOUSE_ACTION_SUB',
+        self::PARTNER_WAREHOUSE_ACTION_LIST => 'PARTNER_WAREHOUSE_ACTION_LIST',
+        self::PARTNER_WAREHOUSE_ACTION_CREATE => 'PARTNER_WAREHOUSE_ACTION_CREATE',
+        self::PARTNER_WAREHOUSE_ACTION_SHOW => 'PARTNER_WAREHOUSE_ACTION_SHOW',
+        self::PARTNER_WAREHOUSE_ACTION_UPDATE => 'PARTNER_WAREHOUSE_ACTION_UPDATE',
+        self::PARTNER_WAREHOUSE_ACTION_DELETE => 'PARTNER_WAREHOUSE_ACTION_DELETE',
+        self::PARTNER_WAREHOUSE_ACTION_ME => 'PARTNER_WAREHOUSE_ACTION_ME',
+        self::PARTNER_WAREHOUSE_ACTION_SUB => 'PARTNER_WAREHOUSE_ACTION_SUB',
         self::SUBSCRIPTION_LIST => 'SUBSCRIPTION_LIST',
         self::SUBSCRIPTION_CREATE => 'SUBSCRIPTION_CREATE',
         self::SUBSCRIPTION_SHOW => 'SUBSCRIPTION_SHOW',
@@ -3186,29 +3003,22 @@ class Permission
         self::SUBSCRIPTION_DELETE => 'SUBSCRIPTION_DELETE',
         self::SUBSCRIPTION_ME => 'SUBSCRIPTION_ME',
         self::SUBSCRIPTION_SUB => 'SUBSCRIPTION_SUB',
-        self::PAYMENT_GATEWAY_LIST => 'PAYMENT_GATEWAY_LIST',
-        self::PAYMENT_GATEWAY_CREATE => 'PAYMENT_GATEWAY_CREATE',
-        self::PAYMENT_GATEWAY_SHOW => 'PAYMENT_GATEWAY_SHOW',
-        self::PAYMENT_GATEWAY_UPDATE => 'PAYMENT_GATEWAY_UPDATE',
-        self::PAYMENT_GATEWAY_DELETE => 'PAYMENT_GATEWAY_DELETE',
-        self::PAYMENT_GATEWAY_ME => 'PAYMENT_GATEWAY_ME',
-        self::PAYMENT_GATEWAY_SUB => 'PAYMENT_GATEWAY_SUB',
+        self::PARTNER_PAYMENT_GATEWAY_LIST => 'PARTNER_PAYMENT_GATEWAY_LIST',
+        self::PARTNER_PAYMENT_GATEWAY_CREATE => 'PARTNER_PAYMENT_GATEWAY_CREATE',
+        self::PARTNER_PAYMENT_GATEWAY_SHOW => 'PARTNER_PAYMENT_GATEWAY_SHOW',
+        self::PARTNER_PAYMENT_GATEWAY_UPDATE => 'PARTNER_PAYMENT_GATEWAY_UPDATE',
+        self::PARTNER_PAYMENT_GATEWAY_DELETE => 'PARTNER_PAYMENT_GATEWAY_DELETE',
+        self::PARTNER_PAYMENT_GATEWAY_ME => 'PARTNER_PAYMENT_GATEWAY_ME',
+        self::PARTNER_PAYMENT_GATEWAY_SUB => 'PARTNER_PAYMENT_GATEWAY_SUB',
         self::WALLET_TRANSACTION_LOG_LIST => 'WALLET_TRANSACTION_LOG_LIST',
         self::WALLET_TRANSACTION_LOG_SHOW => 'WALLET_TRANSACTION_LOG_SHOW',
-        self::CONFIGS_LIST => 'CONFIGS_LIST',
-        self::CONFIGS_CREATE => 'CONFIGS_CREATE',
-        self::CONFIGS_SHOW => 'CONFIGS_SHOW',
-        self::CONFIGS_UPDATE => 'CONFIGS_UPDATE',
-        self::CONFIGS_DELETE => 'CONFIGS_DELETE',
-        self::CONFIGS_ME => 'CONFIGS_ME',
-        self::CONFIGS_SUB => 'CONFIGS_SUB',
-        self::AVAILABLE_CONFIG_LIST => 'AVAILABLE_CONFIG_LIST',
-        self::AVAILABLE_CONFIG_CREATE => 'AVAILABLE_CONFIG_CREATE',
-        self::AVAILABLE_CONFIG_SHOW => 'AVAILABLE_CONFIG_SHOW',
-        self::AVAILABLE_CONFIG_UPDATE => 'AVAILABLE_CONFIG_UPDATE',
-        self::AVAILABLE_CONFIG_DELETE => 'AVAILABLE_CONFIG_DELETE',
-        self::AVAILABLE_CONFIG_ME => 'AVAILABLE_CONFIG_ME',
-        self::AVAILABLE_CONFIG_SUB => 'AVAILABLE_CONFIG_SUB',
+        self::PARTNER_AVAILABLE_CONFIG_LIST => 'PARTNER_AVAILABLE_CONFIG_LIST',
+        self::ADMIN_AVAILABLE_CONFIG_CREATE => 'ADMIN_AVAILABLE_CONFIG_CREATE',
+        self::PARTNER_AVAILABLE_CONFIG_SHOW => 'PARTNER_AVAILABLE_CONFIG_SHOW',
+        self::ADMIN_AVAILABLE_CONFIG_UPDATE => 'ADMIN_AVAILABLE_CONFIG_UPDATE',
+        self::ADMIN_AVAILABLE_CONFIG_DELETE => 'ADMIN_AVAILABLE_CONFIG_DELETE',
+        self::PARTNER_AVAILABLE_CONFIG_ME => 'PARTNER_AVAILABLE_CONFIG_ME',
+        self::PARTNER_AVAILABLE_CONFIG_SUB => 'PARTNER_AVAILABLE_CONFIG_SUB',
         self::DRIVERS_LIST => 'DRIVERS_LIST',
         self::DRIVERS_CREATE => 'DRIVERS_CREATE',
         self::DRIVERS_SHOW => 'DRIVERS_SHOW',
@@ -3344,35 +3154,26 @@ class Permission
         self::LAST_CONNECTION_REPORT => 'LAST_CONNECTION_REPORT',
         self::CHARGE_DEVICE => 'CHARGE_DEVICE',
         self::CHARGE_MANUAL_DEVICE => 'CHARGE_MANUAL_DEVICE',
-        self::SERVER => 'SERVER',
         self::PARTNER_REPORT => 'PARTNER_REPORT',
         self::EXPIRE_SHOW => 'EXPIRE_SHOW',
         self::DRIVING_REPORT => 'DRIVING_REPORT',
         self::ACTIVITY_LOG_LIST => 'ACTIVITY_LOG_LIST',
         self::REPORT_REPORT => 'REPORT_REPORT',
-        self::REPORT_DRIVER => 'REPORT_DRIVER',
-        self::REPORT_STOPS => 'REPORT_STOPS',
-        self::REPORT_TRAFFIC => 'REPORT_TRAFFIC',
-        self::REPORT_GEOFENCE => 'REPORT_GEOFENCE',
-        self::REPORT_DATA => 'REPORT_DATA',
+        self::TRAFFIC_REPORT => 'TRAFFIC_REPORT',
+        self::GEOFENCE_REPORT => 'GEOFENCE_REPORT',
         self::NOTIFICATION_REPORT => 'NOTIFICATION_REPORT',
         self::REMOTE_CONTROL => 'REMOTE_CONTROL',
         self::PRINT_SETTING => 'PRINT_SETTING',
-        self::TRACKING => 'TRACKING',
+        self::TRACKING_REPORT => 'TRACKING_REPORT',
         self::WAREHOUSE_REPORT => 'WAREHOUSE_REPORT',
         self::BUY_SUBSCRIPTION_METHOD_CREATE => 'BUY_SUBSCRIPTION_METHOD_CREATE',
         self::CHARGE_WALLET_CREATE => 'CHARGE_WALLET_CREATE',
         self::ADMIN_CHARGE_WALLET => 'ADMIN_CHARGE_WALLET',
-        self::USER_DEVICE_ALERT_LIST => 'USER_DEVICE_ALERT_LIST',
-        self::USER_DEVICE_ALERT_CREATE => 'USER_DEVICE_ALERT_CREATE',
-        self::USER_DEVICE_ALERT_UPDATE => 'USER_DEVICE_ALERT_UPDATE',
-        self::USER_DEVICE_ALERT_SHOW => 'USER_DEVICE_ALERT_SHOW',
-        self::USER_DEVICE_ALERT_DELETE => 'USER_DEVICE_ALERT_DELETE',
         self::IO_ELEMENT_LIST => 'IO_ELEMENT_LIST',
-        self::IO_ELEMENT_CREATE => 'IO_ELEMENT_CREATE',
+        self::ADMIN_IO_ELEMENT_CREATE => 'ADMIN_IO_ELEMENT_CREATE',
         self::IO_ELEMENT_SHOW => 'IO_ELEMENT_SHOW',
-        self::IO_ELEMENT_UPDATE => 'IO_ELEMENT_UPDATE',
-        self::IO_ELEMENT_DELETE => 'IO_ELEMENT_DELETE',
+        self::ADMIN_IO_ELEMENT_UPDATE => 'ADMIN_IO_ELEMENT_UPDATE',
+        self::ADMIN_IO_ELEMENT_DELETE => 'ADMIN_IO_ELEMENT_DELETE',
         self::ORGANIZATION_CONFIG_LIST => 'ORGANIZATION_CONFIG_LIST',
         self::ORGANIZATION_CONFIG_CREATE => 'ORGANIZATION_CONFIG_CREATE',
         self::ORGANIZATION_CONFIG_SHOW => 'ORGANIZATION_CONFIG_SHOW',
@@ -3384,19 +3185,19 @@ class Permission
         self::CAR_BRAND_CREATE => 'CAR_BRAND_CREATE',
         self::CAR_BRAND_UPDATE => 'CAR_BRAND_UPDATE',
         self::CAR_BRAND_DELETE => 'CAR_BRAND_DELETE',
-        self::PRODUCT_TYPE_CREATE => 'PRODUCT_TYPE_CREATE',
-        self::PRODUCT_TYPE_UPDATE => 'PRODUCT_TYPE_UPDATE',
-        self::PRODUCT_TYPE_DELETE => 'PRODUCT_TYPE_DELETE',
+        self::PARTNER_PRODUCT_TYPE_CREATE => 'PARTNER_PRODUCT_TYPE_CREATE',
+        self::PARTNER_PRODUCT_TYPE_UPDATE => 'PARTNER_PRODUCT_TYPE_UPDATE',
+        self::PARTNER_PRODUCT_TYPE_DELETE => 'PARTNER_PRODUCT_TYPE_DELETE',
         self::NOTIFICATION_ALERT_LIST => 'NOTIFICATION_ALERT_LIST',
         self::NOTIFICATION_ALERT_SHOW => 'NOTIFICATION_ALERT_SHOW',
         self::NOTIFICATION_ALERT_CREATE => 'NOTIFICATION_ALERT_CREATE',
         self::NOTIFICATION_ALERT_UPDATE => 'NOTIFICATION_ALERT_UPDATE',
         self::NOTIFICATION_ALERT_DELETE => 'NOTIFICATION_ALERT_DELETE',
-        self::MODULE_PRICE_LIST => 'MODULE_PRICE_LIST',
-        self::MODULE_PRICE_SHOW => 'MODULE_PRICE_SHOW',
-        self::MODULE_PRICE_CREATE => 'MODULE_PRICE_CREATE',
-        self::MODULE_PRICE_UPDATE => 'MODULE_PRICE_UPDATE',
-        self::MODULE_PRICE_DELETE => 'MODULE_PRICE_DELETE',
+        self::PARTNER_MODULE_PRICE_LIST => 'PARTNER_MODULE_PRICE_LIST',
+        self::PARTNER_MODULE_PRICE_SHOW => 'PARTNER_MODULE_PRICE_SHOW',
+        self::PARTNER_MODULE_PRICE_CREATE => 'PARTNER_MODULE_PRICE_CREATE',
+        self::PARTNER_MODULE_PRICE_UPDATE => 'PARTNER_MODULE_PRICE_UPDATE',
+        self::PARTNER_MODULE_PRICE_DELETE => 'PARTNER_MODULE_PRICE_DELETE',
         self::ACTIVITY_LOGS_LIST => 'ACTIVITY_LOGS_LIST',
         self::ACTIVITY_LOGS_LAST => 'ACTIVITY_LOGS_LAST',
         self::ACTIVITY_LOGS_SHOW => 'ACTIVITY_LOGS_SHOW',
@@ -3405,21 +3206,18 @@ class Permission
         self::USER_DEVICE_IO_CREATE => 'USER_DEVICE_IO_CREATE',
         self::USER_DEVICE_IO_UPDATE => 'USER_DEVICE_IO_UPDATE',
         self::USER_DEVICE_IO_DELETE => 'USER_DEVICE_IO_DELETE',
-        self::MODULE_PACKAGE_LIST => 'MODULE_PACKAGE_LIST',
-        self::MODULE_PACKAGE_SHOW => 'MODULE_PACKAGE_SHOW',
-        self::MODULE_PACKAGE_CREATE => 'MODULE_PACKAGE_CREATE',
-        self::MODULE_PACKAGE_UPDATE => 'MODULE_PACKAGE_UPDATE',
-        self::MODULE_PACKAGE_DELETE => 'MODULE_PACKAGE_DELETE',
-        self::APP_VERSION_LIST => 'APP_VERSION_LIST',
-        self::APP_VERSION_SHOW => 'APP_VERSION_SHOW',
-        self::APP_VERSION_CREATE => 'APP_VERSION_CREATE',
-        self::APP_VERSION_UPDATE => 'APP_VERSION_UPDATE',
-        self::APP_VERSION_DELETE => 'APP_VERSION_DELETE',
-        self::PERMISSIONS_LIST => 'PERMISSIONS_LIST',
-        self::SERVICE_CREATE_DEFAULT => 'SERVICE_CREATE_DEFAULT',
-        self::REPORT_WORK_CYCLE => 'REPORT_WORK_CYCLE',
-        self::REPORT_NOTIFICATION => 'REPORT_NOTIFICATION',
-        self::REPORT_CHART => 'REPORT_CHART',
+        self::PARTNER_MODULE_PACKAGE_LIST => 'PARTNER_MODULE_PACKAGE_LIST',
+        self::PARTNER_MODULE_PACKAGE_SHOW => 'PARTNER_MODULE_PACKAGE_SHOW',
+        self::PARTNER_MODULE_PACKAGE_CREATE => 'PARTNER_MODULE_PACKAGE_CREATE',
+        self::PARTNER_MODULE_PACKAGE_UPDATE => 'PARTNER_MODULE_PACKAGE_UPDATE',
+        self::PARTNER_MODULE_PACKAGE_DELETE => 'PARTNER_MODULE_PACKAGE_DELETE',
+        self::ADMIN_APP_VERSION_LIST => 'ADMIN_APP_VERSION_LIST',
+        self::ADMIN_APP_VERSION_SHOW => 'ADMIN_APP_VERSION_SHOW',
+        self::ADMIN_APP_VERSION_CREATE => 'ADMIN_APP_VERSION_CREATE',
+        self::ADMIN_APP_VERSION_UPDATE => 'ADMIN_APP_VERSION_UPDATE',
+        self::ADMIN_APP_VERSION_DELETE => 'ADMIN_APP_VERSION_DELETE',
+        self::ADMIN_SERVICE_CREATE_DEFAULT => 'ADMIN_SERVICE_CREATE_DEFAULT',
+        self::WORK_CYCLE_REPORT => 'WORK_CYCLE_REPORT',
         self::MAINTENANCE_LIST => 'MAINTENANCE_LIST',
         self::MAINTENANCE_CREATE => 'MAINTENANCE_CREATE',
         self::MAINTENANCE_SHOW => 'MAINTENANCE_SHOW',
@@ -3441,11 +3239,11 @@ class Permission
         self::ORDER_DELETE => 'ORDER_DELETE',
         self::ORDER_ME => 'ORDER_ME',
         self::ORDER_SUB => 'ORDER_SUB',
-        self::APP_SETTING_LIST => 'APP_SETTING_LIST',
-        self::APP_SETTING_SHOW => 'APP_SETTING_SHOW',
-        self::APP_SETTING_CREATE => 'APP_SETTING_CREATE',
-        self::APP_SETTING_UPDATE => 'APP_SETTING_UPDATE',
-        self::APP_SETTING_DELETE => 'APP_SETTING_DELETE',
+        self::ADMIN_APP_SETTING_LIST => 'ADMIN_APP_SETTING_LIST',
+        self::ADMIN_APP_SETTING_SHOW => 'ADMIN_APP_SETTING_SHOW',
+        self::ADMIN_APP_SETTING_CREATE => 'ADMIN_APP_SETTING_CREATE',
+        self::ADMIN_APP_SETTING_UPDATE => 'ADMIN_APP_SETTING_UPDATE',
+        self::ADMIN_APP_SETTING_DELETE => 'ADMIN_APP_SETTING_DELETE',
         self::BLOCK_IP => 'BLOCK_IP',
         self::SEND_SMS_COMMAND => 'SEND_SMS_COMMAND',
         self::WORK_FLOW_LIST => 'WORK_FLOW_LIST',
@@ -3482,7 +3280,7 @@ class Permission
         self::TRIP_WORK_FLOW_TASK_SUB => 'TRIP_WORK_FLOW_TASK_SUB',
         self::TRIP_WORK_FLOW_TASK_ME => 'TRIP_WORK_FLOW_TASK_ME',
         self::TRIP_WORK_FLOW_TASK_CONFIRM => 'TRIP_WORK_FLOW_TASK_CONFIRM',
-        self::CHANGE_ORGANIZATION_IS_UNLIMITED => 'CHANGE_ORGANIZATION_IS_UNLIMITED',
+        self::PARTNER_CHANGE_ORGANIZATION_IS_UNLIMITED => 'PARTNER_CHANGE_ORGANIZATION_IS_UNLIMITED',
         self::LIVE_VIDEO_MONITORING => 'LIVE_VIDEO_MONITORING',
         self::PLAYBACK_VIDEO_MONITORING => 'PLAYBACK_VIDEO_MONITORING',
         self::LISTEN_VIDEO_MONITORING => 'LISTEN_VIDEO_MONITORING',
@@ -3496,7 +3294,7 @@ class Permission
         self::WORKFLOW_TASK_ME => 'WORKFLOW_TASK_ME',
         self::TRIP_WORK_FLOW_TASK_REJECT => 'TRIP_WORK_FLOW_TASK_REJECT',
         self::MONITORING => 'MONITORING',
-        self::DEBUGGING => 'DEBUGGING',
+        self::PARTNER_DEBUGGING => 'PARTNER_DEBUGGING',
         self::USER_UPDATE_IMEI => 'USER_UPDATE_IMEI',
         self::PARTNER_UPDATE_IMEI => 'PARTNER_UPDATE_IMEI',
         self::ADMIN_UPDATE_IMEI => 'ADMIN_UPDATE_IMEI',
@@ -3504,9 +3302,9 @@ class Permission
         self::EVENTS_CREATE => 'EVENTS_CREATE',
         self::EVENTS_UPDATE => 'EVENTS_UPDATE',
         self::EVENTS_DELETE => 'EVENTS_DELETE',
-        self::EVENT_TEMPLATE_CREATE => 'EVENT_TEMPLATE_CREATE',
-        self::EVENT_TEMPLATE_UPDATE => 'EVENT_TEMPLATE_UPDATE',
-        self::EVENT_TEMPLATE_DELETE => 'EVENT_TEMPLATE_DELETE',
+        self::ADMIN_EVENT_TEMPLATE_CREATE => 'ADMIN_EVENT_TEMPLATE_CREATE',
+        self::ADMIN_EVENT_TEMPLATE_UPDATE => 'ADMIN_EVENT_TEMPLATE_UPDATE',
+        self::ADMIN_EVENT_TEMPLATE_DELETE => 'ADMIN_EVENT_TEMPLATE_DELETE',
         self::QUESTION_LIST => 'QUESTION_LIST',
         self::QUESTION_CREATE => 'QUESTION_CREATE',
         self::QUESTION_SHOW => 'QUESTION_SHOW',
