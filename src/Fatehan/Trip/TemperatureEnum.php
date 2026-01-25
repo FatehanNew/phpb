@@ -13,562 +13,562 @@ use UnexpectedValueException;
 class TemperatureEnum
 {
     /**
-     * Generated from protobuf enum <code>DefaultTemperatureMin = 0;</code>
+     * Generated from protobuf enum <code>DEFAULT_TEMPERATURE_MIN = 0;</code>
      */
-    const DefaultTemperatureMin = 0;
+    const DEFAULT_TEMPERATURE_MIN = 0;
     /**
-     * Generated from protobuf enum <code>DefaultTemperatureMax = 1;</code>
+     * Generated from protobuf enum <code>DEFAULT_TEMPERATURE_MAX = 1;</code>
      */
-    const DefaultTemperatureMax = 1;
+    const DEFAULT_TEMPERATURE_MAX = 1;
     /**
-     * Generated from protobuf enum <code>DefaultTemperatureAvg = 2;</code>
+     * Generated from protobuf enum <code>DEFAULT_TEMPERATURE_AVG = 2;</code>
      */
-    const DefaultTemperatureAvg = 2;
+    const DEFAULT_TEMPERATURE_AVG = 2;
     /**
-     * Generated from protobuf enum <code>IntakeAirTemperatureMin = 3;</code>
+     * Generated from protobuf enum <code>INTAKE_AIR_TEMPERATURE_MIN = 3;</code>
      */
-    const IntakeAirTemperatureMin = 3;
+    const INTAKE_AIR_TEMPERATURE_MIN = 3;
     /**
-     * Generated from protobuf enum <code>IntakeAirTemperatureMax = 4;</code>
+     * Generated from protobuf enum <code>INTAKE_AIR_TEMPERATURE_MAX = 4;</code>
      */
-    const IntakeAirTemperatureMax = 4;
+    const INTAKE_AIR_TEMPERATURE_MAX = 4;
     /**
-     * Generated from protobuf enum <code>IntakeAirTemperatureAvg = 5;</code>
+     * Generated from protobuf enum <code>INTAKE_AIR_TEMPERATURE_AVG = 5;</code>
      */
-    const IntakeAirTemperatureAvg = 5;
+    const INTAKE_AIR_TEMPERATURE_AVG = 5;
     /**
-     * Generated from protobuf enum <code>AmbientAirTemperatureMin = 6;</code>
+     * Generated from protobuf enum <code>AMBIENT_AIR_TEMPERATURE_MIN = 6;</code>
      */
-    const AmbientAirTemperatureMin = 6;
+    const AMBIENT_AIR_TEMPERATURE_MIN = 6;
     /**
-     * Generated from protobuf enum <code>AmbientAirTemperatureMax = 7;</code>
+     * Generated from protobuf enum <code>AMBIENT_AIR_TEMPERATURE_MAX = 7;</code>
      */
-    const AmbientAirTemperatureMax = 7;
+    const AMBIENT_AIR_TEMPERATURE_MAX = 7;
     /**
-     * Generated from protobuf enum <code>AmbientAirTemperatureAvg = 8;</code>
+     * Generated from protobuf enum <code>AMBIENT_AIR_TEMPERATURE_AVG = 8;</code>
      */
-    const AmbientAirTemperatureAvg = 8;
+    const AMBIENT_AIR_TEMPERATURE_AVG = 8;
     /**
-     * Generated from protobuf enum <code>EngineOilTemperatureMin = 9;</code>
+     * Generated from protobuf enum <code>ENGINE_OIL_TEMPERATURE_MIN = 9;</code>
      */
-    const EngineOilTemperatureMin = 9;
+    const ENGINE_OIL_TEMPERATURE_MIN = 9;
     /**
-     * Generated from protobuf enum <code>EngineOilTemperatureMax = 10;</code>
+     * Generated from protobuf enum <code>ENGINE_OIL_TEMPERATURE_MAX = 10;</code>
      */
-    const EngineOilTemperatureMax = 10;
+    const ENGINE_OIL_TEMPERATURE_MAX = 10;
     /**
-     * Generated from protobuf enum <code>EngineOilTemperatureAvg = 11;</code>
+     * Generated from protobuf enum <code>ENGINE_OIL_TEMPERATURE_AVG = 11;</code>
      */
-    const EngineOilTemperatureAvg = 11;
+    const ENGINE_OIL_TEMPERATURE_AVG = 11;
     /**
-     * Generated from protobuf enum <code>CoolantTemperatureMin = 12;</code>
+     * Generated from protobuf enum <code>COOLANT_TEMPERATURE_MIN = 12;</code>
      */
-    const CoolantTemperatureMin = 12;
+    const COOLANT_TEMPERATURE_MIN = 12;
     /**
-     * Generated from protobuf enum <code>CoolantTemperatureMax = 13;</code>
+     * Generated from protobuf enum <code>COOLANT_TEMPERATURE_MAX = 13;</code>
      */
-    const CoolantTemperatureMax = 13;
+    const COOLANT_TEMPERATURE_MAX = 13;
     /**
-     * Generated from protobuf enum <code>CoolantTemperatureAvg = 14;</code>
+     * Generated from protobuf enum <code>COOLANT_TEMPERATURE_AVG = 14;</code>
      */
-    const CoolantTemperatureAvg = 14;
+    const COOLANT_TEMPERATURE_AVG = 14;
     /**
-     * Generated from protobuf enum <code>BLETemperature01Min = 15;</code>
+     * Generated from protobuf enum <code>BLE_TEMPERATURE1_MIN = 15;</code>
      */
-    const BLETemperature01Min = 15;
+    const BLE_TEMPERATURE1_MIN = 15;
     /**
-     * Generated from protobuf enum <code>BLETemperature01Max = 16;</code>
+     * Generated from protobuf enum <code>BLE_TEMPERATURE1_MAX = 16;</code>
      */
-    const BLETemperature01Max = 16;
+    const BLE_TEMPERATURE1_MAX = 16;
     /**
-     * Generated from protobuf enum <code>BLETemperature01Avg = 17;</code>
+     * Generated from protobuf enum <code>BLE_TEMPERATURE1_AVG = 17;</code>
      */
-    const BLETemperature01Avg = 17;
+    const BLE_TEMPERATURE1_AVG = 17;
     /**
-     * Generated from protobuf enum <code>BLETemperature02Min = 18;</code>
+     * Generated from protobuf enum <code>BLE_TEMPERATURE2_MIN = 18;</code>
      */
-    const BLETemperature02Min = 18;
+    const BLE_TEMPERATURE2_MIN = 18;
     /**
-     * Generated from protobuf enum <code>BLETemperature02Max = 19;</code>
+     * Generated from protobuf enum <code>BLE_TEMPERATURE2_MAX = 19;</code>
      */
-    const BLETemperature02Max = 19;
+    const BLE_TEMPERATURE2_MAX = 19;
     /**
-     * Generated from protobuf enum <code>BLETemperature02Avg = 20;</code>
+     * Generated from protobuf enum <code>BLE_TEMPERATURE2_AVG = 20;</code>
      */
-    const BLETemperature02Avg = 20;
+    const BLE_TEMPERATURE2_AVG = 20;
     /**
-     * Generated from protobuf enum <code>BLETemperature03Min = 21;</code>
+     * Generated from protobuf enum <code>BLE_TEMPERATURE3_MIN = 21;</code>
      */
-    const BLETemperature03Min = 21;
+    const BLE_TEMPERATURE3_MIN = 21;
     /**
-     * Generated from protobuf enum <code>BLETemperature03Max = 22;</code>
+     * Generated from protobuf enum <code>BLE_TEMPERATURE3_MAX = 22;</code>
      */
-    const BLETemperature03Max = 22;
+    const BLE_TEMPERATURE3_MAX = 22;
     /**
-     * Generated from protobuf enum <code>BLETemperature03Avg = 23;</code>
+     * Generated from protobuf enum <code>BLE_TEMPERATURE3_AVG = 23;</code>
      */
-    const BLETemperature03Avg = 23;
+    const BLE_TEMPERATURE3_AVG = 23;
     /**
-     * Generated from protobuf enum <code>BLETemperature04Min = 24;</code>
+     * Generated from protobuf enum <code>BLE_TEMPERATURE4_MIN = 24;</code>
      */
-    const BLETemperature04Min = 24;
+    const BLE_TEMPERATURE4_MIN = 24;
     /**
-     * Generated from protobuf enum <code>BLETemperature04Max = 25;</code>
+     * Generated from protobuf enum <code>BLE_TEMPERATURE4_MAX = 25;</code>
      */
-    const BLETemperature04Max = 25;
+    const BLE_TEMPERATURE4_MAX = 25;
     /**
-     * Generated from protobuf enum <code>BLETemperature04Avg = 27;</code>
+     * Generated from protobuf enum <code>BLE_TEMPERATURE4_AVG = 27;</code>
      */
-    const BLETemperature04Avg = 27;
+    const BLE_TEMPERATURE4_AVG = 27;
     /**
-     * Generated from protobuf enum <code>EngineTemperatureMin = 28;</code>
+     * Generated from protobuf enum <code>ENGINE_TEMPERATURE_MIN = 28;</code>
      */
-    const EngineTemperatureMin = 28;
+    const ENGINE_TEMPERATURE_MIN = 28;
     /**
-     * Generated from protobuf enum <code>EngineTemperatureMax = 29;</code>
+     * Generated from protobuf enum <code>ENGINE_TEMPERATURE_MAX = 29;</code>
      */
-    const EngineTemperatureMax = 29;
+    const ENGINE_TEMPERATURE_MAX = 29;
     /**
-     * Generated from protobuf enum <code>EngineTemperatureAvg = 30;</code>
+     * Generated from protobuf enum <code>ENGINE_TEMPERATURE_AVG = 30;</code>
      */
-    const EngineTemperatureAvg = 30;
+    const ENGINE_TEMPERATURE_AVG = 30;
     /**
-     * Generated from protobuf enum <code>BatteryTemperatureMin = 31;</code>
+     * Generated from protobuf enum <code>BATTERY_TEMPERATURE_MIN = 31;</code>
      */
-    const BatteryTemperatureMin = 31;
+    const BATTERY_TEMPERATURE_MIN = 31;
     /**
-     * Generated from protobuf enum <code>BatteryTemperatureMax = 32;</code>
+     * Generated from protobuf enum <code>BATTERY_TEMPERATURE_MAX = 32;</code>
      */
-    const BatteryTemperatureMax = 32;
+    const BATTERY_TEMPERATURE_MAX = 32;
     /**
-     * Generated from protobuf enum <code>BatteryTemperatureAvg = 33;</code>
+     * Generated from protobuf enum <code>BATTERY_TEMPERATURE_AVG = 33;</code>
      */
-    const BatteryTemperatureAvg = 33;
+    const BATTERY_TEMPERATURE_AVG = 33;
     /**
-     * Generated from protobuf enum <code>DallasTemperature1Min = 34;</code>
+     * Generated from protobuf enum <code>DALLAS_TEMPERATURE1_MIN = 34;</code>
      */
-    const DallasTemperature1Min = 34;
+    const DALLAS_TEMPERATURE1_MIN = 34;
     /**
-     * Generated from protobuf enum <code>DallasTemperature1Max = 35;</code>
+     * Generated from protobuf enum <code>DALLAS_TEMPERATURE1_MAX = 35;</code>
      */
-    const DallasTemperature1Max = 35;
+    const DALLAS_TEMPERATURE1_MAX = 35;
     /**
-     * Generated from protobuf enum <code>DallasTemperature1Avg = 36;</code>
+     * Generated from protobuf enum <code>DALLAS_TEMPERATURE1_AVG = 36;</code>
      */
-    const DallasTemperature1Avg = 36;
+    const DALLAS_TEMPERATURE1_AVG = 36;
     /**
-     * Generated from protobuf enum <code>DallasTemperature2Min = 37;</code>
+     * Generated from protobuf enum <code>DALLAS_TEMPERATURE2_MIN = 37;</code>
      */
-    const DallasTemperature2Min = 37;
+    const DALLAS_TEMPERATURE2_MIN = 37;
     /**
-     * Generated from protobuf enum <code>DallasTemperature2Max = 38;</code>
+     * Generated from protobuf enum <code>DALLAS_TEMPERATURE2_MAX = 38;</code>
      */
-    const DallasTemperature2Max = 38;
+    const DALLAS_TEMPERATURE2_MAX = 38;
     /**
-     * Generated from protobuf enum <code>DallasTemperature2Avg = 39;</code>
+     * Generated from protobuf enum <code>DALLAS_TEMPERATURE2_AVG = 39;</code>
      */
-    const DallasTemperature2Avg = 39;
+    const DALLAS_TEMPERATURE2_AVG = 39;
     /**
-     * Generated from protobuf enum <code>DallasTemperature3Min = 40;</code>
+     * Generated from protobuf enum <code>DALLAS_TEMPERATURE3_MIN = 40;</code>
      */
-    const DallasTemperature3Min = 40;
+    const DALLAS_TEMPERATURE3_MIN = 40;
     /**
-     * Generated from protobuf enum <code>DallasTemperature3Max = 41;</code>
+     * Generated from protobuf enum <code>DALLAS_TEMPERATURE3_MAX = 41;</code>
      */
-    const DallasTemperature3Max = 41;
+    const DALLAS_TEMPERATURE3_MAX = 41;
     /**
-     * Generated from protobuf enum <code>DallasTemperature3Avg = 42;</code>
+     * Generated from protobuf enum <code>DALLAS_TEMPERATURE3_AVG = 42;</code>
      */
-    const DallasTemperature3Avg = 42;
+    const DALLAS_TEMPERATURE3_AVG = 42;
     /**
-     * Generated from protobuf enum <code>DallasTemperature4Min = 43;</code>
+     * Generated from protobuf enum <code>DALLAS_TEMPERATURE4_MIN = 43;</code>
      */
-    const DallasTemperature4Min = 43;
+    const DALLAS_TEMPERATURE4_MIN = 43;
     /**
-     * Generated from protobuf enum <code>DallasTemperature4Max = 44;</code>
+     * Generated from protobuf enum <code>DALLAS_TEMPERATURE4_MAX = 44;</code>
      */
-    const DallasTemperature4Max = 44;
+    const DALLAS_TEMPERATURE4_MAX = 44;
     /**
-     * Generated from protobuf enum <code>DallasTemperature4Avg = 45;</code>
+     * Generated from protobuf enum <code>DALLAS_TEMPERATURE4_AVG = 45;</code>
      */
-    const DallasTemperature4Avg = 45;
+    const DALLAS_TEMPERATURE4_AVG = 45;
     /**
-     * Generated from protobuf enum <code>LLSTemperature01Min = 46;</code>
+     * Generated from protobuf enum <code>LLS_TEMPERATURE1_MIN = 46;</code>
      */
-    const LLSTemperature01Min = 46;
+    const LLS_TEMPERATURE1_MIN = 46;
     /**
-     * Generated from protobuf enum <code>LLSTemperature01Max = 47;</code>
+     * Generated from protobuf enum <code>LLS_TEMPERATURE1_MAX = 47;</code>
      */
-    const LLSTemperature01Max = 47;
+    const LLS_TEMPERATURE1_MAX = 47;
     /**
-     * Generated from protobuf enum <code>LLSTemperature01Avg = 48;</code>
+     * Generated from protobuf enum <code>LLS_TEMPERATURE1_AVG = 48;</code>
      */
-    const LLSTemperature01Avg = 48;
+    const LLS_TEMPERATURE1_AVG = 48;
     /**
-     * Generated from protobuf enum <code>LLSTemperature02Min = 49;</code>
+     * Generated from protobuf enum <code>LLS_TEMPERATURE2_MIN = 49;</code>
      */
-    const LLSTemperature02Min = 49;
+    const LLS_TEMPERATURE2_MIN = 49;
     /**
-     * Generated from protobuf enum <code>LLSTemperature02Max = 50;</code>
+     * Generated from protobuf enum <code>LLS_TEMPERATURE2_MAX = 50;</code>
      */
-    const LLSTemperature02Max = 50;
+    const LLS_TEMPERATURE2_MAX = 50;
     /**
-     * Generated from protobuf enum <code>LLSTemperature02Avg = 51;</code>
+     * Generated from protobuf enum <code>LLS_TEMPERATURE2_AVG = 51;</code>
      */
-    const LLSTemperature02Avg = 51;
+    const LLS_TEMPERATURE2_AVG = 51;
     /**
-     * Generated from protobuf enum <code>LLSTemperature03Min = 52;</code>
+     * Generated from protobuf enum <code>LLS_TEMPERATURE3_MIN = 52;</code>
      */
-    const LLSTemperature03Min = 52;
+    const LLS_TEMPERATURE3_MIN = 52;
     /**
-     * Generated from protobuf enum <code>LLSTemperature03Max = 53;</code>
+     * Generated from protobuf enum <code>LLS_TEMPERATURE3_MAX = 53;</code>
      */
-    const LLSTemperature03Max = 53;
+    const LLS_TEMPERATURE3_MAX = 53;
     /**
-     * Generated from protobuf enum <code>LLSTemperature03Avg = 54;</code>
+     * Generated from protobuf enum <code>LLS_TEMPERATURE3_AVG = 54;</code>
      */
-    const LLSTemperature03Avg = 54;
+    const LLS_TEMPERATURE3_AVG = 54;
     /**
-     * Generated from protobuf enum <code>LLSTemperature04Min = 55;</code>
+     * Generated from protobuf enum <code>LLS_TEMPERATURE4_MIN = 55;</code>
      */
-    const LLSTemperature04Min = 55;
+    const LLS_TEMPERATURE4_MIN = 55;
     /**
-     * Generated from protobuf enum <code>LLSTemperature04Max = 56;</code>
+     * Generated from protobuf enum <code>LLS_TEMPERATURE4_MAX = 56;</code>
      */
-    const LLSTemperature04Max = 56;
+    const LLS_TEMPERATURE4_MAX = 56;
     /**
-     * Generated from protobuf enum <code>LLSTemperature04Avg = 59;</code>
+     * Generated from protobuf enum <code>LLS_TEMPERATURE4_AVG = 59;</code>
      */
-    const LLSTemperature04Avg = 59;
+    const LLS_TEMPERATURE4_AVG = 59;
     /**
-     * Generated from protobuf enum <code>EyeTemperature01Min = 60;</code>
+     * Generated from protobuf enum <code>EYE_TEMPERATURE1_MIN = 60;</code>
      */
-    const EyeTemperature01Min = 60;
+    const EYE_TEMPERATURE1_MIN = 60;
     /**
-     * Generated from protobuf enum <code>EyeTemperature01Max = 61;</code>
+     * Generated from protobuf enum <code>EYE_TEMPERATURE1_MAX = 61;</code>
      */
-    const EyeTemperature01Max = 61;
+    const EYE_TEMPERATURE1_MAX = 61;
     /**
-     * Generated from protobuf enum <code>EyeTemperature01Avg = 62;</code>
+     * Generated from protobuf enum <code>EYE_TEMPERATURE1_AVG = 62;</code>
      */
-    const EyeTemperature01Avg = 62;
+    const EYE_TEMPERATURE1_AVG = 62;
     /**
-     * Generated from protobuf enum <code>EyeTemperature02Min = 63;</code>
+     * Generated from protobuf enum <code>EYE_TEMPERATURE2_MIN = 63;</code>
      */
-    const EyeTemperature02Min = 63;
+    const EYE_TEMPERATURE2_MIN = 63;
     /**
-     * Generated from protobuf enum <code>EyeTemperature02Max = 64;</code>
+     * Generated from protobuf enum <code>EYE_TEMPERATURE2_MAX = 64;</code>
      */
-    const EyeTemperature02Max = 64;
+    const EYE_TEMPERATURE2_MAX = 64;
     /**
-     * Generated from protobuf enum <code>EyeTemperature02Avg = 65;</code>
+     * Generated from protobuf enum <code>EYE_TEMPERATURE2_AVG = 65;</code>
      */
-    const EyeTemperature02Avg = 65;
+    const EYE_TEMPERATURE2_AVG = 65;
     /**
-     * Generated from protobuf enum <code>EyeTemperature03Min = 66;</code>
+     * Generated from protobuf enum <code>EYE_TEMPERATURE3_MIN = 66;</code>
      */
-    const EyeTemperature03Min = 66;
+    const EYE_TEMPERATURE3_MIN = 66;
     /**
-     * Generated from protobuf enum <code>EyeTemperature03Max = 67;</code>
+     * Generated from protobuf enum <code>EYE_TEMPERATURE3_MAX = 67;</code>
      */
-    const EyeTemperature03Max = 67;
+    const EYE_TEMPERATURE3_MAX = 67;
     /**
-     * Generated from protobuf enum <code>EyeTemperature03Avg = 68;</code>
+     * Generated from protobuf enum <code>EYE_TEMPERATURE3_AVG = 68;</code>
      */
-    const EyeTemperature03Avg = 68;
+    const EYE_TEMPERATURE3_AVG = 68;
     /**
-     * Generated from protobuf enum <code>EyeTemperature04Min = 69;</code>
+     * Generated from protobuf enum <code>EYE_TEMPERATURE4_MIN = 69;</code>
      */
-    const EyeTemperature04Min = 69;
+    const EYE_TEMPERATURE4_MIN = 69;
     /**
-     * Generated from protobuf enum <code>EyeTemperature04Max = 70;</code>
+     * Generated from protobuf enum <code>EYE_TEMPERATURE4_MAX = 70;</code>
      */
-    const EyeTemperature04Max = 70;
+    const EYE_TEMPERATURE4_MAX = 70;
     /**
-     * Generated from protobuf enum <code>EyeTemperature04Avg = 71;</code>
+     * Generated from protobuf enum <code>EYE_TEMPERATURE4_AVG = 71;</code>
      */
-    const EyeTemperature04Avg = 71;
+    const EYE_TEMPERATURE4_AVG = 71;
     /**
-     * Generated from protobuf enum <code>DallasTemperature05Min = 72;</code>
+     * Generated from protobuf enum <code>DALLAS_TEMPERATURE5_MIN = 72;</code>
      */
-    const DallasTemperature05Min = 72;
+    const DALLAS_TEMPERATURE5_MIN = 72;
     /**
-     * Generated from protobuf enum <code>DallasTemperature05Max = 73;</code>
+     * Generated from protobuf enum <code>DALLAS_TEMPERATURE5_MAX = 73;</code>
      */
-    const DallasTemperature05Max = 73;
+    const DALLAS_TEMPERATURE5_MAX = 73;
     /**
-     * Generated from protobuf enum <code>DallasTemperature05Avg = 74;</code>
+     * Generated from protobuf enum <code>DALLAS_TEMPERATURE5_AVG = 74;</code>
      */
-    const DallasTemperature05Avg = 74;
+    const DALLAS_TEMPERATURE5_AVG = 74;
     /**
-     * Generated from protobuf enum <code>DallasTemperature06Min = 75;</code>
+     * Generated from protobuf enum <code>DALLAS_TEMPERATURE6_MIN = 75;</code>
      */
-    const DallasTemperature06Min = 75;
+    const DALLAS_TEMPERATURE6_MIN = 75;
     /**
-     * Generated from protobuf enum <code>DallasTemperature06Max = 76;</code>
+     * Generated from protobuf enum <code>DALLAS_TEMPERATURE6_MAX = 76;</code>
      */
-    const DallasTemperature06Max = 76;
+    const DALLAS_TEMPERATURE6_MAX = 76;
     /**
-     * Generated from protobuf enum <code>DallasTemperature06Avg = 77;</code>
+     * Generated from protobuf enum <code>DALLAS_TEMPERATURE6_AVG = 77;</code>
      */
-    const DallasTemperature06Avg = 77;
+    const DALLAS_TEMPERATURE6_AVG = 77;
     /**
-     * Generated from protobuf enum <code>Tire01TemperatureMin = 78;</code>
+     * Generated from protobuf enum <code>TIRE1_TEMPERATURE_MIN = 78;</code>
      */
-    const Tire01TemperatureMin = 78;
+    const TIRE1_TEMPERATURE_MIN = 78;
     /**
-     * Generated from protobuf enum <code>Tire01TemperatureMax = 79;</code>
+     * Generated from protobuf enum <code>TIRE1_TEMPERATURE_MAX = 79;</code>
      */
-    const Tire01TemperatureMax = 79;
+    const TIRE1_TEMPERATURE_MAX = 79;
     /**
-     * Generated from protobuf enum <code>Tire01TemperatureAvg = 80;</code>
+     * Generated from protobuf enum <code>TIRE1_TEMPERATURE_AVG = 80;</code>
      */
-    const Tire01TemperatureAvg = 80;
+    const TIRE1_TEMPERATURE_AVG = 80;
     /**
-     * Generated from protobuf enum <code>Tire02TemperatureMin = 81;</code>
+     * Generated from protobuf enum <code>TIRE2_TEMPERATURE_MIN = 81;</code>
      */
-    const Tire02TemperatureMin = 81;
+    const TIRE2_TEMPERATURE_MIN = 81;
     /**
-     * Generated from protobuf enum <code>Tire02TemperatureMax = 82;</code>
+     * Generated from protobuf enum <code>TIRE2_TEMPERATURE_MAX = 82;</code>
      */
-    const Tire02TemperatureMax = 82;
+    const TIRE2_TEMPERATURE_MAX = 82;
     /**
-     * Generated from protobuf enum <code>Tire02TemperatureAvg = 83;</code>
+     * Generated from protobuf enum <code>TIRE2_TEMPERATURE_AVG = 83;</code>
      */
-    const Tire02TemperatureAvg = 83;
+    const TIRE2_TEMPERATURE_AVG = 83;
     /**
-     * Generated from protobuf enum <code>Tire03TemperatureMin = 84;</code>
+     * Generated from protobuf enum <code>TIRE3_TEMPERATURE_MIN = 84;</code>
      */
-    const Tire03TemperatureMin = 84;
+    const TIRE3_TEMPERATURE_MIN = 84;
     /**
-     * Generated from protobuf enum <code>Tire03TemperatureMax = 85;</code>
+     * Generated from protobuf enum <code>TIRE3_TEMPERATURE_MAX = 85;</code>
      */
-    const Tire03TemperatureMax = 85;
+    const TIRE3_TEMPERATURE_MAX = 85;
     /**
-     * Generated from protobuf enum <code>Tire03TemperatureAvg = 86;</code>
+     * Generated from protobuf enum <code>TIRE3_TEMPERATURE_AVG = 86;</code>
      */
-    const Tire03TemperatureAvg = 86;
+    const TIRE3_TEMPERATURE_AVG = 86;
     /**
-     * Generated from protobuf enum <code>Tire04TemperatureMin = 87;</code>
+     * Generated from protobuf enum <code>TIRE4_TEMPERATURE_MIN = 87;</code>
      */
-    const Tire04TemperatureMin = 87;
+    const TIRE4_TEMPERATURE_MIN = 87;
     /**
-     * Generated from protobuf enum <code>Tire04TemperatureMax = 88;</code>
+     * Generated from protobuf enum <code>TIRE4_TEMPERATURE_MAX = 88;</code>
      */
-    const Tire04TemperatureMax = 88;
+    const TIRE4_TEMPERATURE_MAX = 88;
     /**
-     * Generated from protobuf enum <code>Tire04TemperatureAvg = 89;</code>
+     * Generated from protobuf enum <code>TIRE4_TEMPERATURE_AVG = 89;</code>
      */
-    const Tire04TemperatureAvg = 89;
+    const TIRE4_TEMPERATURE_AVG = 89;
     /**
-     * Generated from protobuf enum <code>Tire05TemperatureMin = 90;</code>
+     * Generated from protobuf enum <code>TIRE5_TEMPERATURE_MIN = 90;</code>
      */
-    const Tire05TemperatureMin = 90;
+    const TIRE5_TEMPERATURE_MIN = 90;
     /**
-     * Generated from protobuf enum <code>Tire05TemperatureMax = 91;</code>
+     * Generated from protobuf enum <code>TIRE5_TEMPERATURE_MAX = 91;</code>
      */
-    const Tire05TemperatureMax = 91;
+    const TIRE5_TEMPERATURE_MAX = 91;
     /**
-     * Generated from protobuf enum <code>Tire05TemperatureAvg = 92;</code>
+     * Generated from protobuf enum <code>TIRE5_TEMPERATURE_AVG = 92;</code>
      */
-    const Tire05TemperatureAvg = 92;
+    const TIRE5_TEMPERATURE_AVG = 92;
     /**
-     * Generated from protobuf enum <code>Tire06TemperatureMin = 93;</code>
+     * Generated from protobuf enum <code>TIRE6_TEMPERATURE_MIN = 93;</code>
      */
-    const Tire06TemperatureMin = 93;
+    const TIRE6_TEMPERATURE_MIN = 93;
     /**
-     * Generated from protobuf enum <code>Tire06TemperatureMax = 94;</code>
+     * Generated from protobuf enum <code>TIRE6_TEMPERATURE_MAX = 94;</code>
      */
-    const Tire06TemperatureMax = 94;
+    const TIRE6_TEMPERATURE_MAX = 94;
     /**
-     * Generated from protobuf enum <code>Tire06TemperatureAvg = 95;</code>
+     * Generated from protobuf enum <code>TIRE6_TEMPERATURE_AVG = 95;</code>
      */
-    const Tire06TemperatureAvg = 95;
+    const TIRE6_TEMPERATURE_AVG = 95;
     /**
-     * Generated from protobuf enum <code>Tire07TemperatureMin = 96;</code>
+     * Generated from protobuf enum <code>TIRE7_TEMPERATURE_MIN = 96;</code>
      */
-    const Tire07TemperatureMin = 96;
+    const TIRE7_TEMPERATURE_MIN = 96;
     /**
-     * Generated from protobuf enum <code>Tire07TemperatureMax = 97;</code>
+     * Generated from protobuf enum <code>TIRE7_TEMPERATURE_MAX = 97;</code>
      */
-    const Tire07TemperatureMax = 97;
+    const TIRE7_TEMPERATURE_MAX = 97;
     /**
-     * Generated from protobuf enum <code>Tire07TemperatureAvg = 98;</code>
+     * Generated from protobuf enum <code>TIRE7_TEMPERATURE_AVG = 98;</code>
      */
-    const Tire07TemperatureAvg = 98;
+    const TIRE7_TEMPERATURE_AVG = 98;
     /**
-     * Generated from protobuf enum <code>Tire08TemperatureMin = 99;</code>
+     * Generated from protobuf enum <code>TIRE8_TEMPERATURE_MIN = 99;</code>
      */
-    const Tire08TemperatureMin = 99;
+    const TIRE8_TEMPERATURE_MIN = 99;
     /**
-     * Generated from protobuf enum <code>Tire08TemperatureMax = 100;</code>
+     * Generated from protobuf enum <code>TIRE8_TEMPERATURE_MAX = 100;</code>
      */
-    const Tire08TemperatureMax = 100;
+    const TIRE8_TEMPERATURE_MAX = 100;
     /**
-     * Generated from protobuf enum <code>Tire08TemperatureAvg = 101;</code>
+     * Generated from protobuf enum <code>TIRE8_TEMPERATURE_AVG = 101;</code>
      */
-    const Tire08TemperatureAvg = 101;
+    const TIRE8_TEMPERATURE_AVG = 101;
     /**
-     * Generated from protobuf enum <code>Tire09TemperatureMin = 102;</code>
+     * Generated from protobuf enum <code>TIRE9_TEMPERATURE_MIN = 102;</code>
      */
-    const Tire09TemperatureMin = 102;
+    const TIRE9_TEMPERATURE_MIN = 102;
     /**
-     * Generated from protobuf enum <code>Tire09TemperatureMax = 103;</code>
+     * Generated from protobuf enum <code>TIRE9_TEMPERATURE_MAX = 103;</code>
      */
-    const Tire09TemperatureMax = 103;
+    const TIRE9_TEMPERATURE_MAX = 103;
     /**
-     * Generated from protobuf enum <code>Tire09TemperatureAvg = 104;</code>
+     * Generated from protobuf enum <code>TIRE9_TEMPERATURE_AVG = 104;</code>
      */
-    const Tire09TemperatureAvg = 104;
+    const TIRE9_TEMPERATURE_AVG = 104;
     /**
-     * Generated from protobuf enum <code>Tire10TemperatureMin = 105;</code>
+     * Generated from protobuf enum <code>TIRE10_TEMPERATURE_MIN = 105;</code>
      */
-    const Tire10TemperatureMin = 105;
+    const TIRE10_TEMPERATURE_MIN = 105;
     /**
-     * Generated from protobuf enum <code>Tire10TemperatureMax = 106;</code>
+     * Generated from protobuf enum <code>TIRE10_TEMPERATURE_MAX = 106;</code>
      */
-    const Tire10TemperatureMax = 106;
+    const TIRE10_TEMPERATURE_MAX = 106;
     /**
-     * Generated from protobuf enum <code>Tire10TemperatureAvg = 107;</code>
+     * Generated from protobuf enum <code>TIRE10_TEMPERATURE_AVG = 107;</code>
      */
-    const Tire10TemperatureAvg = 107;
+    const TIRE10_TEMPERATURE_AVG = 107;
     /**
-     * Generated from protobuf enum <code>Tire11TemperatureMin = 108;</code>
+     * Generated from protobuf enum <code>TIRE11_TEMPERATURE_MIN = 108;</code>
      */
-    const Tire11TemperatureMin = 108;
+    const TIRE11_TEMPERATURE_MIN = 108;
     /**
-     * Generated from protobuf enum <code>Tire11TemperatureMax = 109;</code>
+     * Generated from protobuf enum <code>TIRE11_TEMPERATURE_MAX = 109;</code>
      */
-    const Tire11TemperatureMax = 109;
+    const TIRE11_TEMPERATURE_MAX = 109;
     /**
-     * Generated from protobuf enum <code>Tire11TemperatureAvg = 110;</code>
+     * Generated from protobuf enum <code>TIRE11_TEMPERATURE_AVG = 110;</code>
      */
-    const Tire11TemperatureAvg = 110;
+    const TIRE11_TEMPERATURE_AVG = 110;
     /**
-     * Generated from protobuf enum <code>Tire12TemperatureMin = 111;</code>
+     * Generated from protobuf enum <code>TIRE12_TEMPERATURE_MIN = 111;</code>
      */
-    const Tire12TemperatureMin = 111;
+    const TIRE12_TEMPERATURE_MIN = 111;
     /**
-     * Generated from protobuf enum <code>Tire12TemperatureMax = 112;</code>
+     * Generated from protobuf enum <code>TIRE12_TEMPERATURE_MAX = 112;</code>
      */
-    const Tire12TemperatureMax = 112;
+    const TIRE12_TEMPERATURE_MAX = 112;
     /**
-     * Generated from protobuf enum <code>Tire12TemperatureAvg = 113;</code>
+     * Generated from protobuf enum <code>TIRE12_TEMPERATURE_AVG = 113;</code>
      */
-    const Tire12TemperatureAvg = 113;
+    const TIRE12_TEMPERATURE_AVG = 113;
 
     private static $valueToName = [
-        self::DefaultTemperatureMin => 'DefaultTemperatureMin',
-        self::DefaultTemperatureMax => 'DefaultTemperatureMax',
-        self::DefaultTemperatureAvg => 'DefaultTemperatureAvg',
-        self::IntakeAirTemperatureMin => 'IntakeAirTemperatureMin',
-        self::IntakeAirTemperatureMax => 'IntakeAirTemperatureMax',
-        self::IntakeAirTemperatureAvg => 'IntakeAirTemperatureAvg',
-        self::AmbientAirTemperatureMin => 'AmbientAirTemperatureMin',
-        self::AmbientAirTemperatureMax => 'AmbientAirTemperatureMax',
-        self::AmbientAirTemperatureAvg => 'AmbientAirTemperatureAvg',
-        self::EngineOilTemperatureMin => 'EngineOilTemperatureMin',
-        self::EngineOilTemperatureMax => 'EngineOilTemperatureMax',
-        self::EngineOilTemperatureAvg => 'EngineOilTemperatureAvg',
-        self::CoolantTemperatureMin => 'CoolantTemperatureMin',
-        self::CoolantTemperatureMax => 'CoolantTemperatureMax',
-        self::CoolantTemperatureAvg => 'CoolantTemperatureAvg',
-        self::BLETemperature01Min => 'BLETemperature01Min',
-        self::BLETemperature01Max => 'BLETemperature01Max',
-        self::BLETemperature01Avg => 'BLETemperature01Avg',
-        self::BLETemperature02Min => 'BLETemperature02Min',
-        self::BLETemperature02Max => 'BLETemperature02Max',
-        self::BLETemperature02Avg => 'BLETemperature02Avg',
-        self::BLETemperature03Min => 'BLETemperature03Min',
-        self::BLETemperature03Max => 'BLETemperature03Max',
-        self::BLETemperature03Avg => 'BLETemperature03Avg',
-        self::BLETemperature04Min => 'BLETemperature04Min',
-        self::BLETemperature04Max => 'BLETemperature04Max',
-        self::BLETemperature04Avg => 'BLETemperature04Avg',
-        self::EngineTemperatureMin => 'EngineTemperatureMin',
-        self::EngineTemperatureMax => 'EngineTemperatureMax',
-        self::EngineTemperatureAvg => 'EngineTemperatureAvg',
-        self::BatteryTemperatureMin => 'BatteryTemperatureMin',
-        self::BatteryTemperatureMax => 'BatteryTemperatureMax',
-        self::BatteryTemperatureAvg => 'BatteryTemperatureAvg',
-        self::DallasTemperature1Min => 'DallasTemperature1Min',
-        self::DallasTemperature1Max => 'DallasTemperature1Max',
-        self::DallasTemperature1Avg => 'DallasTemperature1Avg',
-        self::DallasTemperature2Min => 'DallasTemperature2Min',
-        self::DallasTemperature2Max => 'DallasTemperature2Max',
-        self::DallasTemperature2Avg => 'DallasTemperature2Avg',
-        self::DallasTemperature3Min => 'DallasTemperature3Min',
-        self::DallasTemperature3Max => 'DallasTemperature3Max',
-        self::DallasTemperature3Avg => 'DallasTemperature3Avg',
-        self::DallasTemperature4Min => 'DallasTemperature4Min',
-        self::DallasTemperature4Max => 'DallasTemperature4Max',
-        self::DallasTemperature4Avg => 'DallasTemperature4Avg',
-        self::LLSTemperature01Min => 'LLSTemperature01Min',
-        self::LLSTemperature01Max => 'LLSTemperature01Max',
-        self::LLSTemperature01Avg => 'LLSTemperature01Avg',
-        self::LLSTemperature02Min => 'LLSTemperature02Min',
-        self::LLSTemperature02Max => 'LLSTemperature02Max',
-        self::LLSTemperature02Avg => 'LLSTemperature02Avg',
-        self::LLSTemperature03Min => 'LLSTemperature03Min',
-        self::LLSTemperature03Max => 'LLSTemperature03Max',
-        self::LLSTemperature03Avg => 'LLSTemperature03Avg',
-        self::LLSTemperature04Min => 'LLSTemperature04Min',
-        self::LLSTemperature04Max => 'LLSTemperature04Max',
-        self::LLSTemperature04Avg => 'LLSTemperature04Avg',
-        self::EyeTemperature01Min => 'EyeTemperature01Min',
-        self::EyeTemperature01Max => 'EyeTemperature01Max',
-        self::EyeTemperature01Avg => 'EyeTemperature01Avg',
-        self::EyeTemperature02Min => 'EyeTemperature02Min',
-        self::EyeTemperature02Max => 'EyeTemperature02Max',
-        self::EyeTemperature02Avg => 'EyeTemperature02Avg',
-        self::EyeTemperature03Min => 'EyeTemperature03Min',
-        self::EyeTemperature03Max => 'EyeTemperature03Max',
-        self::EyeTemperature03Avg => 'EyeTemperature03Avg',
-        self::EyeTemperature04Min => 'EyeTemperature04Min',
-        self::EyeTemperature04Max => 'EyeTemperature04Max',
-        self::EyeTemperature04Avg => 'EyeTemperature04Avg',
-        self::DallasTemperature05Min => 'DallasTemperature05Min',
-        self::DallasTemperature05Max => 'DallasTemperature05Max',
-        self::DallasTemperature05Avg => 'DallasTemperature05Avg',
-        self::DallasTemperature06Min => 'DallasTemperature06Min',
-        self::DallasTemperature06Max => 'DallasTemperature06Max',
-        self::DallasTemperature06Avg => 'DallasTemperature06Avg',
-        self::Tire01TemperatureMin => 'Tire01TemperatureMin',
-        self::Tire01TemperatureMax => 'Tire01TemperatureMax',
-        self::Tire01TemperatureAvg => 'Tire01TemperatureAvg',
-        self::Tire02TemperatureMin => 'Tire02TemperatureMin',
-        self::Tire02TemperatureMax => 'Tire02TemperatureMax',
-        self::Tire02TemperatureAvg => 'Tire02TemperatureAvg',
-        self::Tire03TemperatureMin => 'Tire03TemperatureMin',
-        self::Tire03TemperatureMax => 'Tire03TemperatureMax',
-        self::Tire03TemperatureAvg => 'Tire03TemperatureAvg',
-        self::Tire04TemperatureMin => 'Tire04TemperatureMin',
-        self::Tire04TemperatureMax => 'Tire04TemperatureMax',
-        self::Tire04TemperatureAvg => 'Tire04TemperatureAvg',
-        self::Tire05TemperatureMin => 'Tire05TemperatureMin',
-        self::Tire05TemperatureMax => 'Tire05TemperatureMax',
-        self::Tire05TemperatureAvg => 'Tire05TemperatureAvg',
-        self::Tire06TemperatureMin => 'Tire06TemperatureMin',
-        self::Tire06TemperatureMax => 'Tire06TemperatureMax',
-        self::Tire06TemperatureAvg => 'Tire06TemperatureAvg',
-        self::Tire07TemperatureMin => 'Tire07TemperatureMin',
-        self::Tire07TemperatureMax => 'Tire07TemperatureMax',
-        self::Tire07TemperatureAvg => 'Tire07TemperatureAvg',
-        self::Tire08TemperatureMin => 'Tire08TemperatureMin',
-        self::Tire08TemperatureMax => 'Tire08TemperatureMax',
-        self::Tire08TemperatureAvg => 'Tire08TemperatureAvg',
-        self::Tire09TemperatureMin => 'Tire09TemperatureMin',
-        self::Tire09TemperatureMax => 'Tire09TemperatureMax',
-        self::Tire09TemperatureAvg => 'Tire09TemperatureAvg',
-        self::Tire10TemperatureMin => 'Tire10TemperatureMin',
-        self::Tire10TemperatureMax => 'Tire10TemperatureMax',
-        self::Tire10TemperatureAvg => 'Tire10TemperatureAvg',
-        self::Tire11TemperatureMin => 'Tire11TemperatureMin',
-        self::Tire11TemperatureMax => 'Tire11TemperatureMax',
-        self::Tire11TemperatureAvg => 'Tire11TemperatureAvg',
-        self::Tire12TemperatureMin => 'Tire12TemperatureMin',
-        self::Tire12TemperatureMax => 'Tire12TemperatureMax',
-        self::Tire12TemperatureAvg => 'Tire12TemperatureAvg',
+        self::DEFAULT_TEMPERATURE_MIN => 'DEFAULT_TEMPERATURE_MIN',
+        self::DEFAULT_TEMPERATURE_MAX => 'DEFAULT_TEMPERATURE_MAX',
+        self::DEFAULT_TEMPERATURE_AVG => 'DEFAULT_TEMPERATURE_AVG',
+        self::INTAKE_AIR_TEMPERATURE_MIN => 'INTAKE_AIR_TEMPERATURE_MIN',
+        self::INTAKE_AIR_TEMPERATURE_MAX => 'INTAKE_AIR_TEMPERATURE_MAX',
+        self::INTAKE_AIR_TEMPERATURE_AVG => 'INTAKE_AIR_TEMPERATURE_AVG',
+        self::AMBIENT_AIR_TEMPERATURE_MIN => 'AMBIENT_AIR_TEMPERATURE_MIN',
+        self::AMBIENT_AIR_TEMPERATURE_MAX => 'AMBIENT_AIR_TEMPERATURE_MAX',
+        self::AMBIENT_AIR_TEMPERATURE_AVG => 'AMBIENT_AIR_TEMPERATURE_AVG',
+        self::ENGINE_OIL_TEMPERATURE_MIN => 'ENGINE_OIL_TEMPERATURE_MIN',
+        self::ENGINE_OIL_TEMPERATURE_MAX => 'ENGINE_OIL_TEMPERATURE_MAX',
+        self::ENGINE_OIL_TEMPERATURE_AVG => 'ENGINE_OIL_TEMPERATURE_AVG',
+        self::COOLANT_TEMPERATURE_MIN => 'COOLANT_TEMPERATURE_MIN',
+        self::COOLANT_TEMPERATURE_MAX => 'COOLANT_TEMPERATURE_MAX',
+        self::COOLANT_TEMPERATURE_AVG => 'COOLANT_TEMPERATURE_AVG',
+        self::BLE_TEMPERATURE1_MIN => 'BLE_TEMPERATURE1_MIN',
+        self::BLE_TEMPERATURE1_MAX => 'BLE_TEMPERATURE1_MAX',
+        self::BLE_TEMPERATURE1_AVG => 'BLE_TEMPERATURE1_AVG',
+        self::BLE_TEMPERATURE2_MIN => 'BLE_TEMPERATURE2_MIN',
+        self::BLE_TEMPERATURE2_MAX => 'BLE_TEMPERATURE2_MAX',
+        self::BLE_TEMPERATURE2_AVG => 'BLE_TEMPERATURE2_AVG',
+        self::BLE_TEMPERATURE3_MIN => 'BLE_TEMPERATURE3_MIN',
+        self::BLE_TEMPERATURE3_MAX => 'BLE_TEMPERATURE3_MAX',
+        self::BLE_TEMPERATURE3_AVG => 'BLE_TEMPERATURE3_AVG',
+        self::BLE_TEMPERATURE4_MIN => 'BLE_TEMPERATURE4_MIN',
+        self::BLE_TEMPERATURE4_MAX => 'BLE_TEMPERATURE4_MAX',
+        self::BLE_TEMPERATURE4_AVG => 'BLE_TEMPERATURE4_AVG',
+        self::ENGINE_TEMPERATURE_MIN => 'ENGINE_TEMPERATURE_MIN',
+        self::ENGINE_TEMPERATURE_MAX => 'ENGINE_TEMPERATURE_MAX',
+        self::ENGINE_TEMPERATURE_AVG => 'ENGINE_TEMPERATURE_AVG',
+        self::BATTERY_TEMPERATURE_MIN => 'BATTERY_TEMPERATURE_MIN',
+        self::BATTERY_TEMPERATURE_MAX => 'BATTERY_TEMPERATURE_MAX',
+        self::BATTERY_TEMPERATURE_AVG => 'BATTERY_TEMPERATURE_AVG',
+        self::DALLAS_TEMPERATURE1_MIN => 'DALLAS_TEMPERATURE1_MIN',
+        self::DALLAS_TEMPERATURE1_MAX => 'DALLAS_TEMPERATURE1_MAX',
+        self::DALLAS_TEMPERATURE1_AVG => 'DALLAS_TEMPERATURE1_AVG',
+        self::DALLAS_TEMPERATURE2_MIN => 'DALLAS_TEMPERATURE2_MIN',
+        self::DALLAS_TEMPERATURE2_MAX => 'DALLAS_TEMPERATURE2_MAX',
+        self::DALLAS_TEMPERATURE2_AVG => 'DALLAS_TEMPERATURE2_AVG',
+        self::DALLAS_TEMPERATURE3_MIN => 'DALLAS_TEMPERATURE3_MIN',
+        self::DALLAS_TEMPERATURE3_MAX => 'DALLAS_TEMPERATURE3_MAX',
+        self::DALLAS_TEMPERATURE3_AVG => 'DALLAS_TEMPERATURE3_AVG',
+        self::DALLAS_TEMPERATURE4_MIN => 'DALLAS_TEMPERATURE4_MIN',
+        self::DALLAS_TEMPERATURE4_MAX => 'DALLAS_TEMPERATURE4_MAX',
+        self::DALLAS_TEMPERATURE4_AVG => 'DALLAS_TEMPERATURE4_AVG',
+        self::LLS_TEMPERATURE1_MIN => 'LLS_TEMPERATURE1_MIN',
+        self::LLS_TEMPERATURE1_MAX => 'LLS_TEMPERATURE1_MAX',
+        self::LLS_TEMPERATURE1_AVG => 'LLS_TEMPERATURE1_AVG',
+        self::LLS_TEMPERATURE2_MIN => 'LLS_TEMPERATURE2_MIN',
+        self::LLS_TEMPERATURE2_MAX => 'LLS_TEMPERATURE2_MAX',
+        self::LLS_TEMPERATURE2_AVG => 'LLS_TEMPERATURE2_AVG',
+        self::LLS_TEMPERATURE3_MIN => 'LLS_TEMPERATURE3_MIN',
+        self::LLS_TEMPERATURE3_MAX => 'LLS_TEMPERATURE3_MAX',
+        self::LLS_TEMPERATURE3_AVG => 'LLS_TEMPERATURE3_AVG',
+        self::LLS_TEMPERATURE4_MIN => 'LLS_TEMPERATURE4_MIN',
+        self::LLS_TEMPERATURE4_MAX => 'LLS_TEMPERATURE4_MAX',
+        self::LLS_TEMPERATURE4_AVG => 'LLS_TEMPERATURE4_AVG',
+        self::EYE_TEMPERATURE1_MIN => 'EYE_TEMPERATURE1_MIN',
+        self::EYE_TEMPERATURE1_MAX => 'EYE_TEMPERATURE1_MAX',
+        self::EYE_TEMPERATURE1_AVG => 'EYE_TEMPERATURE1_AVG',
+        self::EYE_TEMPERATURE2_MIN => 'EYE_TEMPERATURE2_MIN',
+        self::EYE_TEMPERATURE2_MAX => 'EYE_TEMPERATURE2_MAX',
+        self::EYE_TEMPERATURE2_AVG => 'EYE_TEMPERATURE2_AVG',
+        self::EYE_TEMPERATURE3_MIN => 'EYE_TEMPERATURE3_MIN',
+        self::EYE_TEMPERATURE3_MAX => 'EYE_TEMPERATURE3_MAX',
+        self::EYE_TEMPERATURE3_AVG => 'EYE_TEMPERATURE3_AVG',
+        self::EYE_TEMPERATURE4_MIN => 'EYE_TEMPERATURE4_MIN',
+        self::EYE_TEMPERATURE4_MAX => 'EYE_TEMPERATURE4_MAX',
+        self::EYE_TEMPERATURE4_AVG => 'EYE_TEMPERATURE4_AVG',
+        self::DALLAS_TEMPERATURE5_MIN => 'DALLAS_TEMPERATURE5_MIN',
+        self::DALLAS_TEMPERATURE5_MAX => 'DALLAS_TEMPERATURE5_MAX',
+        self::DALLAS_TEMPERATURE5_AVG => 'DALLAS_TEMPERATURE5_AVG',
+        self::DALLAS_TEMPERATURE6_MIN => 'DALLAS_TEMPERATURE6_MIN',
+        self::DALLAS_TEMPERATURE6_MAX => 'DALLAS_TEMPERATURE6_MAX',
+        self::DALLAS_TEMPERATURE6_AVG => 'DALLAS_TEMPERATURE6_AVG',
+        self::TIRE1_TEMPERATURE_MIN => 'TIRE1_TEMPERATURE_MIN',
+        self::TIRE1_TEMPERATURE_MAX => 'TIRE1_TEMPERATURE_MAX',
+        self::TIRE1_TEMPERATURE_AVG => 'TIRE1_TEMPERATURE_AVG',
+        self::TIRE2_TEMPERATURE_MIN => 'TIRE2_TEMPERATURE_MIN',
+        self::TIRE2_TEMPERATURE_MAX => 'TIRE2_TEMPERATURE_MAX',
+        self::TIRE2_TEMPERATURE_AVG => 'TIRE2_TEMPERATURE_AVG',
+        self::TIRE3_TEMPERATURE_MIN => 'TIRE3_TEMPERATURE_MIN',
+        self::TIRE3_TEMPERATURE_MAX => 'TIRE3_TEMPERATURE_MAX',
+        self::TIRE3_TEMPERATURE_AVG => 'TIRE3_TEMPERATURE_AVG',
+        self::TIRE4_TEMPERATURE_MIN => 'TIRE4_TEMPERATURE_MIN',
+        self::TIRE4_TEMPERATURE_MAX => 'TIRE4_TEMPERATURE_MAX',
+        self::TIRE4_TEMPERATURE_AVG => 'TIRE4_TEMPERATURE_AVG',
+        self::TIRE5_TEMPERATURE_MIN => 'TIRE5_TEMPERATURE_MIN',
+        self::TIRE5_TEMPERATURE_MAX => 'TIRE5_TEMPERATURE_MAX',
+        self::TIRE5_TEMPERATURE_AVG => 'TIRE5_TEMPERATURE_AVG',
+        self::TIRE6_TEMPERATURE_MIN => 'TIRE6_TEMPERATURE_MIN',
+        self::TIRE6_TEMPERATURE_MAX => 'TIRE6_TEMPERATURE_MAX',
+        self::TIRE6_TEMPERATURE_AVG => 'TIRE6_TEMPERATURE_AVG',
+        self::TIRE7_TEMPERATURE_MIN => 'TIRE7_TEMPERATURE_MIN',
+        self::TIRE7_TEMPERATURE_MAX => 'TIRE7_TEMPERATURE_MAX',
+        self::TIRE7_TEMPERATURE_AVG => 'TIRE7_TEMPERATURE_AVG',
+        self::TIRE8_TEMPERATURE_MIN => 'TIRE8_TEMPERATURE_MIN',
+        self::TIRE8_TEMPERATURE_MAX => 'TIRE8_TEMPERATURE_MAX',
+        self::TIRE8_TEMPERATURE_AVG => 'TIRE8_TEMPERATURE_AVG',
+        self::TIRE9_TEMPERATURE_MIN => 'TIRE9_TEMPERATURE_MIN',
+        self::TIRE9_TEMPERATURE_MAX => 'TIRE9_TEMPERATURE_MAX',
+        self::TIRE9_TEMPERATURE_AVG => 'TIRE9_TEMPERATURE_AVG',
+        self::TIRE10_TEMPERATURE_MIN => 'TIRE10_TEMPERATURE_MIN',
+        self::TIRE10_TEMPERATURE_MAX => 'TIRE10_TEMPERATURE_MAX',
+        self::TIRE10_TEMPERATURE_AVG => 'TIRE10_TEMPERATURE_AVG',
+        self::TIRE11_TEMPERATURE_MIN => 'TIRE11_TEMPERATURE_MIN',
+        self::TIRE11_TEMPERATURE_MAX => 'TIRE11_TEMPERATURE_MAX',
+        self::TIRE11_TEMPERATURE_AVG => 'TIRE11_TEMPERATURE_AVG',
+        self::TIRE12_TEMPERATURE_MIN => 'TIRE12_TEMPERATURE_MIN',
+        self::TIRE12_TEMPERATURE_MAX => 'TIRE12_TEMPERATURE_MAX',
+        self::TIRE12_TEMPERATURE_AVG => 'TIRE12_TEMPERATURE_AVG',
     ];
 
     public static function name($value)

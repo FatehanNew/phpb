@@ -10,6 +10,8 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
+ * user identity
+ *
  * Generated from protobuf message <code>com.fatehan.identities.Identity</code>
  */
 class Identity extends \Google\Protobuf\Internal\Message
@@ -66,10 +68,6 @@ class Identity extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional sint64 telegram_id = 13 [json_name = "telegram_id"];</code>
      */
     protected $telegram_id = null;
-    /**
-     * Generated from protobuf field <code>bool two_step_verification = 14 [json_name = "two_step_verification"];</code>
-     */
-    protected $two_step_verification = false;
 
     /**
      * Constructor.
@@ -90,7 +88,6 @@ class Identity extends \Google\Protobuf\Internal\Message
      *     @type string $email_hash
      *     @type string $telegram_username
      *     @type int|string $telegram_id
-     *     @type bool $two_step_verification
      * }
      */
     public function __construct($data = NULL) {
@@ -470,28 +467,6 @@ class Identity extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt64($var);
         $this->telegram_id = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>bool two_step_verification = 14 [json_name = "two_step_verification"];</code>
-     * @return bool
-     */
-    public function getTwoStepVerification()
-    {
-        return $this->two_step_verification;
-    }
-
-    /**
-     * Generated from protobuf field <code>bool two_step_verification = 14 [json_name = "two_step_verification"];</code>
-     * @param bool $var
-     * @return $this
-     */
-    public function setTwoStepVerification($var)
-    {
-        GPBUtil::checkBool($var);
-        $this->two_step_verification = $var;
 
         return $this;
     }

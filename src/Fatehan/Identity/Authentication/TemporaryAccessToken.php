@@ -10,7 +10,7 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * user to pass throw 
+ * user to pass throw
  *
  * Generated from protobuf message <code>com.fatehan.identities.TemporaryAccessToken</code>
  */

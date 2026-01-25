@@ -143,13 +143,13 @@ class FusionTrip extends \Google\Protobuf\Internal\Message
      */
     protected $updated_at = null;
     /**
-     * Generated from protobuf field <code>string Logs = 33 [json_name = "logs"];</code>
+     * Generated from protobuf field <code>string logs = 33 [json_name = "logs"];</code>
      */
-    protected $Logs = '';
+    protected $logs = '';
     /**
-     * Generated from protobuf field <code>optional uint32 Fug = 34 [json_name = "fug"];</code>
+     * Generated from protobuf field <code>optional uint32 fug = 34 [json_name = "fug"];</code>
      */
-    protected $Fug = null;
+    protected $fug = null;
 
     /**
      * Constructor.
@@ -189,8 +189,8 @@ class FusionTrip extends \Google\Protobuf\Internal\Message
      *     @type \Google\Protobuf\Timestamp $finished_at
      *     @type \Google\Protobuf\Timestamp $created_at
      *     @type \Google\Protobuf\Timestamp $updated_at
-     *     @type string $Logs
-     *     @type int $Fug
+     *     @type string $logs
+     *     @type int $fug
      * }
      */
     public function __construct($data = NULL) {
@@ -1083,55 +1083,55 @@ class FusionTrip extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string Logs = 33 [json_name = "logs"];</code>
+     * Generated from protobuf field <code>string logs = 33 [json_name = "logs"];</code>
      * @return string
      */
     public function getLogs()
     {
-        return $this->Logs;
+        return $this->logs;
     }
 
     /**
-     * Generated from protobuf field <code>string Logs = 33 [json_name = "logs"];</code>
+     * Generated from protobuf field <code>string logs = 33 [json_name = "logs"];</code>
      * @param string $var
      * @return $this
      */
     public function setLogs($var)
     {
         GPBUtil::checkString($var, True);
-        $this->Logs = $var;
+        $this->logs = $var;
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>optional uint32 Fug = 34 [json_name = "fug"];</code>
+     * Generated from protobuf field <code>optional uint32 fug = 34 [json_name = "fug"];</code>
      * @return int
      */
     public function getFug()
     {
-        return isset($this->Fug) ? $this->Fug : 0;
+        return isset($this->fug) ? $this->fug : 0;
     }
 
     public function hasFug()
     {
-        return isset($this->Fug);
+        return isset($this->fug);
     }
 
     public function clearFug()
     {
-        unset($this->Fug);
+        unset($this->fug);
     }
 
     /**
-     * Generated from protobuf field <code>optional uint32 Fug = 34 [json_name = "fug"];</code>
+     * Generated from protobuf field <code>optional uint32 fug = 34 [json_name = "fug"];</code>
      * @param int $var
      * @return $this
      */
     public function setFug($var)
     {
         GPBUtil::checkUint32($var);
-        $this->Fug = $var;
+        $this->fug = $var;
 
         return $this;
     }

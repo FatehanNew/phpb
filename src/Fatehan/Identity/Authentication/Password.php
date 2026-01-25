@@ -10,6 +10,8 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
+ * password model
+ *
  * Generated from protobuf message <code>com.fatehan.identities.Password</code>
  */
 class Password extends \Google\Protobuf\Internal\Message

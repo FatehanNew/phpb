@@ -13,47 +13,47 @@ use UnexpectedValueException;
 class GreenDrivingTypeEnum
 {
     /**
-     * Generated from protobuf enum <code>none = 0;</code>
+     * Generated from protobuf enum <code>NONE = 0;</code>
      */
-    const none = 0;
+    const NONE = 0;
     /**
-     * Generated from protobuf enum <code>harshAcceleration = 1;</code>
+     * Generated from protobuf enum <code>HARSH_ACCELERATION = 1;</code>
      */
-    const harshAcceleration = 1;
+    const HARSH_ACCELERATION = 1;
     /**
-     * Generated from protobuf enum <code>harshBraking = 2;</code>
+     * Generated from protobuf enum <code>HARSH_BREAKING = 2;</code>
      */
-    const harshBraking = 2;
+    const HARSH_BREAKING = 2;
     /**
-     * Generated from protobuf enum <code>harshCornering = 3;</code>
+     * Generated from protobuf enum <code>HARSH_CORNERING = 3;</code>
      */
-    const harshCornering = 3;
+    const HARSH_CORNERING = 3;
     /**
-     * Generated from protobuf enum <code>bloodAlcoholContent = 4;</code>
+     * Generated from protobuf enum <code>BLOOD_ALCOHOL_CONTENT = 4;</code>
      */
-    const bloodAlcoholContent = 4;
+    const BLOOD_ALCOHOL_CONTENT = 4;
     /**
-     * Generated from protobuf enum <code>overSpeeding = 5;</code>
+     * Generated from protobuf enum <code>OVER_SPEEDING = 5;</code>
      */
-    const overSpeeding = 5;
+    const OVER_SPEEDING = 5;
     /**
-     * Generated from protobuf enum <code>idling = 6;</code>
+     * Generated from protobuf enum <code>IDLING = 6;</code>
      */
-    const idling = 6;
+    const IDLING = 6;
     /**
-     * Generated from protobuf enum <code>score = 7;</code>
+     * Generated from protobuf enum <code>SCORE = 7;</code>
      */
-    const score = 7;
+    const SCORE = 7;
 
     private static $valueToName = [
-        self::none => 'none',
-        self::harshAcceleration => 'harshAcceleration',
-        self::harshBraking => 'harshBraking',
-        self::harshCornering => 'harshCornering',
-        self::bloodAlcoholContent => 'bloodAlcoholContent',
-        self::overSpeeding => 'overSpeeding',
-        self::idling => 'idling',
-        self::score => 'score',
+        self::NONE => 'NONE',
+        self::HARSH_ACCELERATION => 'HARSH_ACCELERATION',
+        self::HARSH_BREAKING => 'HARSH_BREAKING',
+        self::HARSH_CORNERING => 'HARSH_CORNERING',
+        self::BLOOD_ALCOHOL_CONTENT => 'BLOOD_ALCOHOL_CONTENT',
+        self::OVER_SPEEDING => 'OVER_SPEEDING',
+        self::IDLING => 'IDLING',
+        self::SCORE => 'SCORE',
     ];
 
     public static function name($value)

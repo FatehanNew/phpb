@@ -13,142 +13,142 @@ use UnexpectedValueException;
 class HumidityEnum
 {
     /**
-     * Generated from protobuf enum <code>DefaultHumidityMin = 0;</code>
+     * Generated from protobuf enum <code>DEFAULT_HUMIDITY_MIN = 0;</code>
      */
-    const DefaultHumidityMin = 0;
+    const DEFAULT_HUMIDITY_MIN = 0;
     /**
-     * Generated from protobuf enum <code>DefaultHumidityMax = 1;</code>
+     * Generated from protobuf enum <code>DEFAULT_HUMIDITY_MAX = 1;</code>
      */
-    const DefaultHumidityMax = 1;
+    const DEFAULT_HUMIDITY_MAX = 1;
     /**
-     * Generated from protobuf enum <code>DefaultHumidityAvg = 2;</code>
+     * Generated from protobuf enum <code>DEFAULT_HUMIDITY_AVG = 2;</code>
      */
-    const DefaultHumidityAvg = 2;
+    const DEFAULT_HUMIDITY_AVG = 2;
     /**
-     * Generated from protobuf enum <code>EyeHumidity1Min = 3;</code>
+     * Generated from protobuf enum <code>EYE_HUMIDITY1_MIN = 3;</code>
      */
-    const EyeHumidity1Min = 3;
+    const EYE_HUMIDITY1_MIN = 3;
     /**
-     * Generated from protobuf enum <code>EyeHumidity1Max = 4;</code>
+     * Generated from protobuf enum <code>EYE_HUMIDITY1_MAX = 4;</code>
      */
-    const EyeHumidity1Max = 4;
+    const EYE_HUMIDITY1_MAX = 4;
     /**
-     * Generated from protobuf enum <code>EyeHumidity1Avg = 5;</code>
+     * Generated from protobuf enum <code>EYE_HUMIDITY1_AVG = 5;</code>
      */
-    const EyeHumidity1Avg = 5;
+    const EYE_HUMIDITY1_AVG = 5;
     /**
-     * Generated from protobuf enum <code>EyeHumidity2Min = 6;</code>
+     * Generated from protobuf enum <code>EYE_HUMIDITY2_MIN = 6;</code>
      */
-    const EyeHumidity2Min = 6;
+    const EYE_HUMIDITY2_MIN = 6;
     /**
-     * Generated from protobuf enum <code>EyeHumidity2Max = 7;</code>
+     * Generated from protobuf enum <code>EYE_HUMIDITY2_MAX = 7;</code>
      */
-    const EyeHumidity2Max = 7;
+    const EYE_HUMIDITY2_MAX = 7;
     /**
-     * Generated from protobuf enum <code>EyeHumidity2Avg = 8;</code>
+     * Generated from protobuf enum <code>EYE_HUMIDITY2_AVG = 8;</code>
      */
-    const EyeHumidity2Avg = 8;
+    const EYE_HUMIDITY2_AVG = 8;
     /**
-     * Generated from protobuf enum <code>EyeHumidity3Min = 9;</code>
+     * Generated from protobuf enum <code>EYE_HUMIDITY3_MIN = 9;</code>
      */
-    const EyeHumidity3Min = 9;
+    const EYE_HUMIDITY3_MIN = 9;
     /**
-     * Generated from protobuf enum <code>EyeHumidity3Max = 10;</code>
+     * Generated from protobuf enum <code>EYE_HUMIDITY3_MAX = 10;</code>
      */
-    const EyeHumidity3Max = 10;
+    const EYE_HUMIDITY3_MAX = 10;
     /**
-     * Generated from protobuf enum <code>EyeHumidity3Avg = 11;</code>
+     * Generated from protobuf enum <code>EYE_HUMIDITY3_AVG = 11;</code>
      */
-    const EyeHumidity3Avg = 11;
+    const EYE_HUMIDITY3_AVG = 11;
     /**
-     * Generated from protobuf enum <code>EyeHumidity4Min = 12;</code>
+     * Generated from protobuf enum <code>EYE_HUMIDITY4_MIN = 12;</code>
      */
-    const EyeHumidity4Min = 12;
+    const EYE_HUMIDITY4_MIN = 12;
     /**
-     * Generated from protobuf enum <code>EyeHumidity4Max = 13;</code>
+     * Generated from protobuf enum <code>EYE_HUMIDITY4_MAX = 13;</code>
      */
-    const EyeHumidity4Max = 13;
+    const EYE_HUMIDITY4_MAX = 13;
     /**
-     * Generated from protobuf enum <code>EyeHumidity4Avg = 14;</code>
+     * Generated from protobuf enum <code>EYE_HUMIDITY4_AVG = 14;</code>
      */
-    const EyeHumidity4Avg = 14;
+    const EYE_HUMIDITY4_AVG = 14;
     /**
-     * Generated from protobuf enum <code>BLEHumidity01Min = 15;</code>
+     * Generated from protobuf enum <code>BLE_HUMIDITY1_MIN = 15;</code>
      */
-    const BLEHumidity01Min = 15;
+    const BLE_HUMIDITY1_MIN = 15;
     /**
-     * Generated from protobuf enum <code>BLEHumidity01Max = 16;</code>
+     * Generated from protobuf enum <code>BLE_HUMIDITY1_MAX = 16;</code>
      */
-    const BLEHumidity01Max = 16;
+    const BLE_HUMIDITY1_MAX = 16;
     /**
-     * Generated from protobuf enum <code>BLEHumidity01Avg = 17;</code>
+     * Generated from protobuf enum <code>BLE_HUMIDITY1_AVG = 17;</code>
      */
-    const BLEHumidity01Avg = 17;
+    const BLE_HUMIDITY1_AVG = 17;
     /**
-     * Generated from protobuf enum <code>BLEHumidity02Min = 18;</code>
+     * Generated from protobuf enum <code>BLE_HUMIDITY2_MIN = 18;</code>
      */
-    const BLEHumidity02Min = 18;
+    const BLE_HUMIDITY2_MIN = 18;
     /**
-     * Generated from protobuf enum <code>BLEHumidity02Max = 19;</code>
+     * Generated from protobuf enum <code>BLE_HUMIDITY2_MAX = 19;</code>
      */
-    const BLEHumidity02Max = 19;
+    const BLE_HUMIDITY2_MAX = 19;
     /**
-     * Generated from protobuf enum <code>BLEHumidity02Avg = 20;</code>
+     * Generated from protobuf enum <code>BLE_HUMIDITY2_AVG = 20;</code>
      */
-    const BLEHumidity02Avg = 20;
+    const BLE_HUMIDITY2_AVG = 20;
     /**
-     * Generated from protobuf enum <code>BLEHumidity03Min = 21;</code>
+     * Generated from protobuf enum <code>BLE_HUMIDITY3_MIN = 21;</code>
      */
-    const BLEHumidity03Min = 21;
+    const BLE_HUMIDITY3_MIN = 21;
     /**
-     * Generated from protobuf enum <code>BLEHumidity03Max = 22;</code>
+     * Generated from protobuf enum <code>BLE_HUMIDITY3_MAX = 22;</code>
      */
-    const BLEHumidity03Max = 22;
+    const BLE_HUMIDITY3_MAX = 22;
     /**
-     * Generated from protobuf enum <code>BLEHumidity03Avg = 23;</code>
+     * Generated from protobuf enum <code>BLE_HUMIDITY3_AVG = 23;</code>
      */
-    const BLEHumidity03Avg = 23;
+    const BLE_HUMIDITY3_AVG = 23;
     /**
-     * Generated from protobuf enum <code>BLEHumidity04Min = 24;</code>
+     * Generated from protobuf enum <code>BLE_HUMIDITY4_MIN = 24;</code>
      */
-    const BLEHumidity04Min = 24;
+    const BLE_HUMIDITY4_MIN = 24;
     /**
-     * Generated from protobuf enum <code>BLEHumidity04Max = 25;</code>
+     * Generated from protobuf enum <code>BLE_HUMIDITY4_MAX = 25;</code>
      */
-    const BLEHumidity04Max = 25;
+    const BLE_HUMIDITY4_MAX = 25;
     /**
-     * Generated from protobuf enum <code>BLEHumidity04Avg = 26;</code>
+     * Generated from protobuf enum <code>BLE_HUMIDITY4_AVG = 26;</code>
      */
-    const BLEHumidity04Avg = 26;
+    const BLE_HUMIDITY4_AVG = 26;
 
     private static $valueToName = [
-        self::DefaultHumidityMin => 'DefaultHumidityMin',
-        self::DefaultHumidityMax => 'DefaultHumidityMax',
-        self::DefaultHumidityAvg => 'DefaultHumidityAvg',
-        self::EyeHumidity1Min => 'EyeHumidity1Min',
-        self::EyeHumidity1Max => 'EyeHumidity1Max',
-        self::EyeHumidity1Avg => 'EyeHumidity1Avg',
-        self::EyeHumidity2Min => 'EyeHumidity2Min',
-        self::EyeHumidity2Max => 'EyeHumidity2Max',
-        self::EyeHumidity2Avg => 'EyeHumidity2Avg',
-        self::EyeHumidity3Min => 'EyeHumidity3Min',
-        self::EyeHumidity3Max => 'EyeHumidity3Max',
-        self::EyeHumidity3Avg => 'EyeHumidity3Avg',
-        self::EyeHumidity4Min => 'EyeHumidity4Min',
-        self::EyeHumidity4Max => 'EyeHumidity4Max',
-        self::EyeHumidity4Avg => 'EyeHumidity4Avg',
-        self::BLEHumidity01Min => 'BLEHumidity01Min',
-        self::BLEHumidity01Max => 'BLEHumidity01Max',
-        self::BLEHumidity01Avg => 'BLEHumidity01Avg',
-        self::BLEHumidity02Min => 'BLEHumidity02Min',
-        self::BLEHumidity02Max => 'BLEHumidity02Max',
-        self::BLEHumidity02Avg => 'BLEHumidity02Avg',
-        self::BLEHumidity03Min => 'BLEHumidity03Min',
-        self::BLEHumidity03Max => 'BLEHumidity03Max',
-        self::BLEHumidity03Avg => 'BLEHumidity03Avg',
-        self::BLEHumidity04Min => 'BLEHumidity04Min',
-        self::BLEHumidity04Max => 'BLEHumidity04Max',
-        self::BLEHumidity04Avg => 'BLEHumidity04Avg',
+        self::DEFAULT_HUMIDITY_MIN => 'DEFAULT_HUMIDITY_MIN',
+        self::DEFAULT_HUMIDITY_MAX => 'DEFAULT_HUMIDITY_MAX',
+        self::DEFAULT_HUMIDITY_AVG => 'DEFAULT_HUMIDITY_AVG',
+        self::EYE_HUMIDITY1_MIN => 'EYE_HUMIDITY1_MIN',
+        self::EYE_HUMIDITY1_MAX => 'EYE_HUMIDITY1_MAX',
+        self::EYE_HUMIDITY1_AVG => 'EYE_HUMIDITY1_AVG',
+        self::EYE_HUMIDITY2_MIN => 'EYE_HUMIDITY2_MIN',
+        self::EYE_HUMIDITY2_MAX => 'EYE_HUMIDITY2_MAX',
+        self::EYE_HUMIDITY2_AVG => 'EYE_HUMIDITY2_AVG',
+        self::EYE_HUMIDITY3_MIN => 'EYE_HUMIDITY3_MIN',
+        self::EYE_HUMIDITY3_MAX => 'EYE_HUMIDITY3_MAX',
+        self::EYE_HUMIDITY3_AVG => 'EYE_HUMIDITY3_AVG',
+        self::EYE_HUMIDITY4_MIN => 'EYE_HUMIDITY4_MIN',
+        self::EYE_HUMIDITY4_MAX => 'EYE_HUMIDITY4_MAX',
+        self::EYE_HUMIDITY4_AVG => 'EYE_HUMIDITY4_AVG',
+        self::BLE_HUMIDITY1_MIN => 'BLE_HUMIDITY1_MIN',
+        self::BLE_HUMIDITY1_MAX => 'BLE_HUMIDITY1_MAX',
+        self::BLE_HUMIDITY1_AVG => 'BLE_HUMIDITY1_AVG',
+        self::BLE_HUMIDITY2_MIN => 'BLE_HUMIDITY2_MIN',
+        self::BLE_HUMIDITY2_MAX => 'BLE_HUMIDITY2_MAX',
+        self::BLE_HUMIDITY2_AVG => 'BLE_HUMIDITY2_AVG',
+        self::BLE_HUMIDITY3_MIN => 'BLE_HUMIDITY3_MIN',
+        self::BLE_HUMIDITY3_MAX => 'BLE_HUMIDITY3_MAX',
+        self::BLE_HUMIDITY3_AVG => 'BLE_HUMIDITY3_AVG',
+        self::BLE_HUMIDITY4_MIN => 'BLE_HUMIDITY4_MIN',
+        self::BLE_HUMIDITY4_MAX => 'BLE_HUMIDITY4_MAX',
+        self::BLE_HUMIDITY4_AVG => 'BLE_HUMIDITY4_AVG',
     ];
 
     public static function name($value)

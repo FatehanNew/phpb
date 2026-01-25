@@ -10,6 +10,8 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
+ * verification response
+ *
  * Generated from protobuf message <code>com.fatehan.identities.VerifyResponse</code>
  */
 class VerifyResponse extends \Google\Protobuf\Internal\Message

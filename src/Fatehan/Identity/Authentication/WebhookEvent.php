@@ -10,6 +10,8 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
+ * webhook event base model
+ *
  * Generated from protobuf message <code>com.fatehan.identities.WebhookEvent</code>
  */
 class WebhookEvent extends \Google\Protobuf\Internal\Message

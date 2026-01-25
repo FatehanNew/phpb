@@ -13,42 +13,42 @@ use UnexpectedValueException;
 class CrashEnum
 {
     /**
-     * Generated from protobuf enum <code>CrashNone = 0;</code>
+     * Generated from protobuf enum <code>CRASH_NONE = 0;</code>
      */
-    const CrashNone = 0;
+    const CRASH_NONE = 0;
     /**
-     * Generated from protobuf enum <code>RealCrash = 1;</code>
+     * Generated from protobuf enum <code>REAL_CRASH = 1;</code>
      */
-    const RealCrash = 1;
+    const REAL_CRASH = 1;
     /**
-     * Generated from protobuf enum <code>LimitedCrashTrace = 2;</code>
+     * Generated from protobuf enum <code>LIMIT_CRASH_TRACE = 2;</code>
      */
-    const LimitedCrashTrace = 2;
+    const LIMIT_CRASH_TRACE = 2;
     /**
-     * Generated from protobuf enum <code>LimitedCrashTraceNotCalibrated = 3;</code>
+     * Generated from protobuf enum <code>LIMIT_CRASH_TRACE_NOT_CALIBRATED = 3;</code>
      */
-    const LimitedCrashTraceNotCalibrated = 3;
+    const LIMIT_CRASH_TRACE_NOT_CALIBRATED = 3;
     /**
-     * Generated from protobuf enum <code>FullCrashTraceNotCalibrated = 4;</code>
+     * Generated from protobuf enum <code>FULL_CRASH_TRACE_NOT_CALIBRATED = 4;</code>
      */
-    const FullCrashTraceNotCalibrated = 4;
+    const FULL_CRASH_TRACE_NOT_CALIBRATED = 4;
     /**
-     * Generated from protobuf enum <code>FullCrashTrace = 5;</code>
+     * Generated from protobuf enum <code>FULL_CRASH_TRACE = 5;</code>
      */
-    const FullCrashTrace = 5;
+    const FULL_CRASH_TRACE = 5;
     /**
-     * Generated from protobuf enum <code>RealCrashNotCalibrated = 6;</code>
+     * Generated from protobuf enum <code>REAL_CRASH_NOT_CALIBRATED = 6;</code>
      */
-    const RealCrashNotCalibrated = 6;
+    const REAL_CRASH_NOT_CALIBRATED = 6;
 
     private static $valueToName = [
-        self::CrashNone => 'CrashNone',
-        self::RealCrash => 'RealCrash',
-        self::LimitedCrashTrace => 'LimitedCrashTrace',
-        self::LimitedCrashTraceNotCalibrated => 'LimitedCrashTraceNotCalibrated',
-        self::FullCrashTraceNotCalibrated => 'FullCrashTraceNotCalibrated',
-        self::FullCrashTrace => 'FullCrashTrace',
-        self::RealCrashNotCalibrated => 'RealCrashNotCalibrated',
+        self::CRASH_NONE => 'CRASH_NONE',
+        self::REAL_CRASH => 'REAL_CRASH',
+        self::LIMIT_CRASH_TRACE => 'LIMIT_CRASH_TRACE',
+        self::LIMIT_CRASH_TRACE_NOT_CALIBRATED => 'LIMIT_CRASH_TRACE_NOT_CALIBRATED',
+        self::FULL_CRASH_TRACE_NOT_CALIBRATED => 'FULL_CRASH_TRACE_NOT_CALIBRATED',
+        self::FULL_CRASH_TRACE => 'FULL_CRASH_TRACE',
+        self::REAL_CRASH_NOT_CALIBRATED => 'REAL_CRASH_NOT_CALIBRATED',
     ];
 
     public static function name($value)

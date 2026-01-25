@@ -10,6 +10,8 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
+ * access token
+ *
  * Generated from protobuf message <code>com.fatehan.identities.AccessToken</code>
  */
 class AccessToken extends \Google\Protobuf\Internal\Message

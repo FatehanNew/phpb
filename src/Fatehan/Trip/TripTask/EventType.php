@@ -13,27 +13,27 @@ use UnexpectedValueException;
 class EventType
 {
     /**
-     * Generated from protobuf enum <code>None = 0;</code>
+     * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const None = 0;
+    const UNSPECIFIED = 0;
     /**
-     * Generated from protobuf enum <code>Odyssey = 1;</code>
+     * Generated from protobuf enum <code>ODYSSEY = 1;</code>
      */
-    const Odyssey = 1;
+    const ODYSSEY = 1;
     /**
-     * Generated from protobuf enum <code>Fusion = 2;</code>
+     * Generated from protobuf enum <code>FUSION = 2;</code>
      */
-    const Fusion = 2;
+    const FUSION = 2;
     /**
-     * Generated from protobuf enum <code>Monthly = 3;</code>
+     * Generated from protobuf enum <code>MONTHLY = 3;</code>
      */
-    const Monthly = 3;
+    const MONTHLY = 3;
 
     private static $valueToName = [
-        self::None => 'None',
-        self::Odyssey => 'Odyssey',
-        self::Fusion => 'Fusion',
-        self::Monthly => 'Monthly',
+        self::UNSPECIFIED => 'UNSPECIFIED',
+        self::ODYSSEY => 'ODYSSEY',
+        self::FUSION => 'FUSION',
+        self::MONTHLY => 'MONTHLY',
     ];
 
     public static function name($value)

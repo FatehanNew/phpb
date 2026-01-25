@@ -10,6 +10,8 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
+ * user credential
+ *
  * Generated from protobuf message <code>com.fatehan.identities.Credential</code>
  */
 class Credential extends \Google\Protobuf\Internal\Message
@@ -38,10 +40,6 @@ class Credential extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string domain = 5 [json_name = "domain"];</code>
      */
     protected $domain = '';
-    /**
-     * Generated from protobuf field <code>bool password_verified = 7 [json_name = "password_verified"];</code>
-     */
-    protected $password_verified = false;
 
     /**
      * Constructor.
@@ -55,7 +53,6 @@ class Credential extends \Google\Protobuf\Internal\Message
      *     @type int|string $created
      *     @type int|string $token
      *     @type string $domain
-     *     @type bool $password_verified
      * }
      */
     public function __construct($data = NULL) {
@@ -191,28 +188,6 @@ class Credential extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->domain = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>bool password_verified = 7 [json_name = "password_verified"];</code>
-     * @return bool
-     */
-    public function getPasswordVerified()
-    {
-        return $this->password_verified;
-    }
-
-    /**
-     * Generated from protobuf field <code>bool password_verified = 7 [json_name = "password_verified"];</code>
-     * @param bool $var
-     * @return $this
-     */
-    public function setPasswordVerified($var)
-    {
-        GPBUtil::checkBool($var);
-        $this->password_verified = $var;
 
         return $this;
     }

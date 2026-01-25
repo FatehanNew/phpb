@@ -10,6 +10,8 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
+ * otp request
+ *
  * Generated from protobuf message <code>com.fatehan.identities.OtpRequest</code>
  */
 class OtpRequest extends \Google\Protobuf\Internal\Message
