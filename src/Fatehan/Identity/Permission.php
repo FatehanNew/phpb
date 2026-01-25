@@ -2685,6 +2685,28 @@ class Permission
      * Generated from protobuf enum <code>TRACKER_OUTPUT_COMMAND_DELETE = 673;</code>
      */
     const TRACKER_OUTPUT_COMMAND_DELETE = 673;
+    /**
+     * PRODUCT ATTRIBUTES
+     *
+     * Generated from protobuf enum <code>ATTRIBUTE_LIST = 674;</code>
+     */
+    const ATTRIBUTE_LIST = 674;
+    /**
+     * Generated from protobuf enum <code>ATTRIBUTE_CREATE = 675;</code>
+     */
+    const ATTRIBUTE_CREATE = 675;
+    /**
+     * Generated from protobuf enum <code>ATTRIBUTE_SHOW = 676;</code>
+     */
+    const ATTRIBUTE_SHOW = 676;
+    /**
+     * Generated from protobuf enum <code>ATTRIBUTE_UPDATE = 677;</code>
+     */
+    const ATTRIBUTE_UPDATE = 677;
+    /**
+     * Generated from protobuf enum <code>ATTRIBUTE_DELETE = 678;</code>
+     */
+    const ATTRIBUTE_DELETE = 678;
 
     private static $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
@@ -3318,6 +3340,11 @@ class Permission
         self::TRACKER_OUTPUT_COMMAND_SHOW => 'TRACKER_OUTPUT_COMMAND_SHOW',
         self::TRACKER_OUTPUT_COMMAND_UPDATE => 'TRACKER_OUTPUT_COMMAND_UPDATE',
         self::TRACKER_OUTPUT_COMMAND_DELETE => 'TRACKER_OUTPUT_COMMAND_DELETE',
+        self::ATTRIBUTE_LIST => 'ATTRIBUTE_LIST',
+        self::ATTRIBUTE_CREATE => 'ATTRIBUTE_CREATE',
+        self::ATTRIBUTE_SHOW => 'ATTRIBUTE_SHOW',
+        self::ATTRIBUTE_UPDATE => 'ATTRIBUTE_UPDATE',
+        self::ATTRIBUTE_DELETE => 'ATTRIBUTE_DELETE',
     ];
 
     public static function name($value)
