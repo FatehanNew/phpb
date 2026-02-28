@@ -27,13 +27,17 @@ class ConfigResponse extends \Google\Protobuf\Internal\Message
      */
     private $list;
     /**
-     * Generated from protobuf field <code>optional .com.fatehan.services.ConfigResponse.AppDesignConfig app_design = 4;</code>
+     * Generated from protobuf field <code>optional .com.fatehan.services.ConfigResponse.AppDesignConfig app_design = 4 [json_name = "app_design"];</code>
      */
     protected $app_design = null;
     /**
-     * Generated from protobuf field <code>optional .com.fatehan.services.ConfigResponse.AppSecConfig app_sec = 5;</code>
+     * Generated from protobuf field <code>optional .com.fatehan.services.ConfigResponse.AppSecConfig app_sec = 5 [json_name = "app_sec"];</code>
      */
     protected $app_sec = null;
+    /**
+     * Generated from protobuf field <code>optional .com.fatehan.identities.AuthenticationStrategy strategy = 6 [json_name = "strategy"];</code>
+     */
+    protected $strategy = null;
 
     /**
      * Constructor.
@@ -46,6 +50,7 @@ class ConfigResponse extends \Google\Protobuf\Internal\Message
      *     @type \Fatehan\Models\Config[] $list
      *     @type \Fatehan\Service\ConfigResponse\AppDesignConfig $app_design
      *     @type \Fatehan\Service\ConfigResponse\AppSecConfig $app_sec
+     *     @type \Fatehan\Identity\Authentication\AuthenticationStrategy $strategy
      * }
      */
     public function __construct($data = NULL) {
@@ -120,7 +125,7 @@ class ConfigResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional .com.fatehan.services.ConfigResponse.AppDesignConfig app_design = 4;</code>
+     * Generated from protobuf field <code>optional .com.fatehan.services.ConfigResponse.AppDesignConfig app_design = 4 [json_name = "app_design"];</code>
      * @return \Fatehan\Service\ConfigResponse\AppDesignConfig|null
      */
     public function getAppDesign()
@@ -139,7 +144,7 @@ class ConfigResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional .com.fatehan.services.ConfigResponse.AppDesignConfig app_design = 4;</code>
+     * Generated from protobuf field <code>optional .com.fatehan.services.ConfigResponse.AppDesignConfig app_design = 4 [json_name = "app_design"];</code>
      * @param \Fatehan\Service\ConfigResponse\AppDesignConfig $var
      * @return $this
      */
@@ -152,7 +157,7 @@ class ConfigResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional .com.fatehan.services.ConfigResponse.AppSecConfig app_sec = 5;</code>
+     * Generated from protobuf field <code>optional .com.fatehan.services.ConfigResponse.AppSecConfig app_sec = 5 [json_name = "app_sec"];</code>
      * @return \Fatehan\Service\ConfigResponse\AppSecConfig|null
      */
     public function getAppSec()
@@ -171,7 +176,7 @@ class ConfigResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional .com.fatehan.services.ConfigResponse.AppSecConfig app_sec = 5;</code>
+     * Generated from protobuf field <code>optional .com.fatehan.services.ConfigResponse.AppSecConfig app_sec = 5 [json_name = "app_sec"];</code>
      * @param \Fatehan\Service\ConfigResponse\AppSecConfig $var
      * @return $this
      */
@@ -179,6 +184,38 @@ class ConfigResponse extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Fatehan\Service\ConfigResponse\AppSecConfig::class);
         $this->app_sec = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .com.fatehan.identities.AuthenticationStrategy strategy = 6 [json_name = "strategy"];</code>
+     * @return \Fatehan\Identity\Authentication\AuthenticationStrategy|null
+     */
+    public function getStrategy()
+    {
+        return $this->strategy;
+    }
+
+    public function hasStrategy()
+    {
+        return isset($this->strategy);
+    }
+
+    public function clearStrategy()
+    {
+        unset($this->strategy);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .com.fatehan.identities.AuthenticationStrategy strategy = 6 [json_name = "strategy"];</code>
+     * @param \Fatehan\Identity\Authentication\AuthenticationStrategy $var
+     * @return $this
+     */
+    public function setStrategy($var)
+    {
+        GPBUtil::checkMessage($var, \Fatehan\Identity\Authentication\AuthenticationStrategy::class);
+        $this->strategy = $var;
 
         return $this;
     }

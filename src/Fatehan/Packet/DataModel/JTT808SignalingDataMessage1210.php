@@ -10,9 +10,9 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * Generated from protobuf message <code>com.fatehan.packets.Jtt808SignalingDataMessage1210</code>
+ * Generated from protobuf message <code>com.fatehan.packets.JTT808SignalingDataMessage1210</code>
  */
-class Jtt808SignalingDataMessage1210 extends \Google\Protobuf\Internal\Message
+class JTT808SignalingDataMessage1210 extends \Google\Protobuf\Internal\Message
 {
     /**
      * Generated from protobuf field <code>bytes terminal_id = 1;</code>
@@ -35,7 +35,7 @@ class Jtt808SignalingDataMessage1210 extends \Google\Protobuf\Internal\Message
      */
     protected $attachment_count = 0;
     /**
-     * Generated from protobuf field <code>repeated .com.fatehan.packets.Jtt808SignalingDataMessage1210.Attachment attachments = 6;</code>
+     * Generated from protobuf field <code>repeated .com.fatehan.packets.JTT808SignalingDataMessage1210.Attachment attachments = 6;</code>
      */
     private $attachments;
 
@@ -50,7 +50,7 @@ class Jtt808SignalingDataMessage1210 extends \Google\Protobuf\Internal\Message
      *     @type string $alarm_no
      *     @type int $info_type
      *     @type int $attachment_count
-     *     @type \Fatehan\Packet\DataModel\Jtt808SignalingDataMessage1210\Attachment[] $attachments
+     *     @type \Fatehan\Packet\DataModel\JTT808SignalingDataMessage1210\Attachment[] $attachments
      * }
      */
     public function __construct($data = NULL) {
@@ -169,8 +169,8 @@ class Jtt808SignalingDataMessage1210 extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .com.fatehan.packets.Jtt808SignalingDataMessage1210.Attachment attachments = 6;</code>
-     * @return RepeatedField<\Fatehan\Packet\DataModel\Jtt808SignalingDataMessage1210\Attachment>
+     * Generated from protobuf field <code>repeated .com.fatehan.packets.JTT808SignalingDataMessage1210.Attachment attachments = 6;</code>
+     * @return RepeatedField<\Fatehan\Packet\DataModel\JTT808SignalingDataMessage1210\Attachment>
      */
     public function getAttachments()
     {
@@ -178,13 +178,13 @@ class Jtt808SignalingDataMessage1210 extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .com.fatehan.packets.Jtt808SignalingDataMessage1210.Attachment attachments = 6;</code>
-     * @param \Fatehan\Packet\DataModel\Jtt808SignalingDataMessage1210\Attachment[] $var
+     * Generated from protobuf field <code>repeated .com.fatehan.packets.JTT808SignalingDataMessage1210.Attachment attachments = 6;</code>
+     * @param \Fatehan\Packet\DataModel\JTT808SignalingDataMessage1210\Attachment[] $var
      * @return $this
      */
     public function setAttachments($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Packet\DataModel\Jtt808SignalingDataMessage1210\Attachment::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Packet\DataModel\JTT808SignalingDataMessage1210\Attachment::class);
         $this->attachments = $arr;
 
         return $this;

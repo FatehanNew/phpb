@@ -10,9 +10,9 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * Generated from protobuf message <code>com.fatehan.packets.Jtt10780x0001Answer</code>
+ * Generated from protobuf message <code>com.fatehan.packets.JTT808Reply</code>
  */
-class Jtt10780x0001Answer extends \Google\Protobuf\Internal\Message
+class JTT808Reply extends \Google\Protobuf\Internal\Message
 {
     /**
      * Generated from protobuf field <code>uint32 response_serial_number = 1;</code>

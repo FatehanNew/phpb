@@ -13,247 +13,252 @@ use UnexpectedValueException;
 class Protocol
 {
     /**
-     * Generated from protobuf enum <code>PROTOCOL_UNSPECIFIED = 0;</code>
+     * Generated from protobuf enum <code>UNKNOWN = 0;</code>
      */
-    const PROTOCOL_UNSPECIFIED = 0;
+    const UNKNOWN = 0;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_COBAN = 1;</code>
+     * Generated from protobuf enum <code>COBAN = 1;</code>
      */
-    const PROTOCOL_COBAN = 1;
+    const COBAN = 1;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_COBAN_WR = 2;</code>
+     * Generated from protobuf enum <code>COBAN_WR = 2;</code>
      */
-    const PROTOCOL_COBAN_WR = 2;
+    const COBAN_WR = 2;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_ACCURATE = 3;</code>
+     * Generated from protobuf enum <code>ACCURATE = 3;</code>
      */
-    const PROTOCOL_ACCURATE = 3;
+    const ACCURATE = 3;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_A9 = 4;</code>
+     * Generated from protobuf enum <code>A9 = 4;</code>
      */
-    const PROTOCOL_A9 = 4;
+    const A9 = 4;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_CONCOX = 5;</code>
+     * Generated from protobuf enum <code>CONCOX = 5;</code>
      */
-    const PROTOCOL_CONCOX = 5;
+    const CONCOX = 5;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_DOLPHIN = 6;</code>
+     * Generated from protobuf enum <code>DOLPHIN = 6;</code>
      */
-    const PROTOCOL_DOLPHIN = 6;
+    const DOLPHIN = 6;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_GT07 = 7;</code>
+     * Generated from protobuf enum <code>GT07 = 7;</code>
      */
-    const PROTOCOL_GT07 = 7;
+    const GT07 = 7;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_JTT808 = 8;</code>
+     * Generated from protobuf enum <code>JTT808 = 8;</code>
      */
-    const PROTOCOL_JTT808 = 8;
+    const JTT808 = 8;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_R16 = 9;</code>
+     * Generated from protobuf enum <code>R16 = 9;</code>
      */
-    const PROTOCOL_R16 = 9;
+    const R16 = 9;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_R31 = 10;</code>
+     * Generated from protobuf enum <code>R31 = 10;</code>
      */
-    const PROTOCOL_R31 = 10;
+    const R31 = 10;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_R56 = 11;</code>
+     * Generated from protobuf enum <code>R56 = 11;</code>
      */
-    const PROTOCOL_R56 = 11;
+    const R56 = 11;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_S11 = 12;</code>
+     * Generated from protobuf enum <code>S11 = 12;</code>
      */
-    const PROTOCOL_S11 = 12;
+    const S11 = 12;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_S15 = 13;</code>
+     * Generated from protobuf enum <code>S15 = 13;</code>
      */
-    const PROTOCOL_S15 = 13;
+    const S15 = 13;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_SAYEH = 14;</code>
+     * Generated from protobuf enum <code>SAYEH = 14;</code>
      */
-    const PROTOCOL_SAYEH = 14;
+    const SAYEH = 14;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_SINOTRACK = 15;</code>
+     * Generated from protobuf enum <code>SINOTRACK = 15;</code>
      */
-    const PROTOCOL_SINOTRACK = 15;
+    const SINOTRACK = 15;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_TELTONIKA = 16;</code>
+     * Generated from protobuf enum <code>TELTONIKA = 16;</code>
      */
-    const PROTOCOL_TELTONIKA = 16;
+    const TELTONIKA = 16;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_TOPIN = 17;</code>
+     * Generated from protobuf enum <code>TOPIN = 17;</code>
      */
-    const PROTOCOL_TOPIN = 17;
+    const TOPIN = 17;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_WEFINDER = 18;</code>
+     * Generated from protobuf enum <code>WEFINDER = 18;</code>
      */
-    const PROTOCOL_WEFINDER = 18;
+    const WEFINDER = 18;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_RUBTELLA = 19;</code>
+     * Generated from protobuf enum <code>RUBTELLA = 19;</code>
      */
-    const PROTOCOL_RUBTELLA = 19;
+    const RUBTELLA = 19;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_LANDER = 20;</code>
+     * Generated from protobuf enum <code>LANDER = 20;</code>
      */
-    const PROTOCOL_LANDER = 20;
+    const LANDER = 20;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_RAMMA = 21;</code>
+     * Generated from protobuf enum <code>RAMMA = 21;</code>
      */
-    const PROTOCOL_RAMMA = 21;
+    const RAMMA = 21;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_SINERE = 22;</code>
+     * Generated from protobuf enum <code>SINERE = 22;</code>
      */
-    const PROTOCOL_SINERE = 22;
+    const SINERE = 22;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_GALLO_SKY = 23;</code>
+     * Generated from protobuf enum <code>GALLO_SKY = 23;</code>
      */
-    const PROTOCOL_GALLO_SKY = 23;
+    const GALLO_SKY = 23;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_GITINAMA = 24;</code>
+     * Generated from protobuf enum <code>GITINAMA = 24;</code>
      */
-    const PROTOCOL_GITINAMA = 24;
+    const GITINAMA = 24;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_BCE = 25;</code>
+     * Generated from protobuf enum <code>BCE = 25;</code>
      */
-    const PROTOCOL_BCE = 25;
+    const BCE = 25;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_TOP_FLY_TECH = 26;</code>
+     * Generated from protobuf enum <code>TOP_FLY_TECH = 26;</code>
      */
-    const PROTOCOL_TOP_FLY_TECH = 26;
+    const TOP_FLY_TECH = 26;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_QUICK = 27;</code>
+     * Generated from protobuf enum <code>QUICK = 27;</code>
      */
-    const PROTOCOL_QUICK = 27;
+    const QUICK = 27;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_RADSHID = 28;</code>
+     * Generated from protobuf enum <code>RADSHID = 28;</code>
      */
-    const PROTOCOL_RADSHID = 28;
+    const RADSHID = 28;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_MEITRACK = 29;</code>
+     * Generated from protobuf enum <code>MEITRACK = 29;</code>
      */
-    const PROTOCOL_MEITRACK = 29;
+    const MEITRACK = 29;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_GT30X = 30;</code>
+     * Generated from protobuf enum <code>GT30X = 30;</code>
      */
-    const PROTOCOL_GT30X = 30;
+    const GT30X = 30;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_WP = 31;</code>
+     * Generated from protobuf enum <code>WP = 31;</code>
      */
-    const PROTOCOL_WP = 31;
+    const WP = 31;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_SR03 = 32;</code>
+     * Generated from protobuf enum <code>SR03 = 32;</code>
      */
-    const PROTOCOL_SR03 = 32;
+    const SR03 = 32;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_TELTONIKA650 = 33;</code>
+     * Generated from protobuf enum <code>TELTONIKA650 = 33;</code>
      */
-    const PROTOCOL_TELTONIKA650 = 33;
+    const TELTONIKA650 = 33;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_SR04B = 34;</code>
+     * Generated from protobuf enum <code>SR04B = 34;</code>
      */
-    const PROTOCOL_SR04B = 34;
+    const SR04B = 34;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_NAV_TELECOM = 35;</code>
+     * Generated from protobuf enum <code>NAV_TELECOM = 35;</code>
      */
-    const PROTOCOL_NAV_TELECOM = 35;
+    const NAV_TELECOM = 35;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_VTRACK2 = 36;</code>
+     * Generated from protobuf enum <code>VTRACK2 = 36;</code>
      */
-    const PROTOCOL_VTRACK2 = 36;
+    const VTRACK2 = 36;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_ET06L = 37;</code>
+     * Generated from protobuf enum <code>ET06L = 37;</code>
      */
-    const PROTOCOL_ET06L = 37;
+    const ET06L = 37;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_ATN = 38;</code>
+     * Generated from protobuf enum <code>ATN = 38;</code>
      */
-    const PROTOCOL_ATN = 38;
+    const ATN = 38;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_ARIO_AVL = 39;</code>
+     * Generated from protobuf enum <code>ARIO_AVL = 39;</code>
      */
-    const PROTOCOL_ARIO_AVL = 39;
+    const ARIO_AVL = 39;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_HAMIGPS = 40;</code>
+     * Generated from protobuf enum <code>HAMIGPS = 40;</code>
      */
-    const PROTOCOL_HAMIGPS = 40;
+    const HAMIGPS = 40;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_RUPTELLA = 41;</code>
+     * Generated from protobuf enum <code>RUPTELLA = 41;</code>
      */
-    const PROTOCOL_RUPTELLA = 41;
+    const RUPTELLA = 41;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_ZINGJONG = 42;</code>
+     * Generated from protobuf enum <code>ZINGJONG = 42;</code>
      */
-    const PROTOCOL_ZINGJONG = 42;
+    const ZINGJONG = 42;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_RADSHID_OLD = 43;</code>
+     * Generated from protobuf enum <code>RADSHID_OLD = 43;</code>
      */
-    const PROTOCOL_RADSHID_OLD = 43;
+    const RADSHID_OLD = 43;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_COBAN_2025 = 44;</code>
+     * Generated from protobuf enum <code>COBAN_2025 = 44;</code>
      */
-    const PROTOCOL_COBAN_2025 = 44;
+    const COBAN_2025 = 44;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_S200 = 45;</code>
+     * Generated from protobuf enum <code>S200 = 45;</code>
      */
-    const PROTOCOL_S200 = 45;
+    const S200 = 45;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_S250 = 46;</code>
+     * Generated from protobuf enum <code>S250 = 46;</code>
      */
-    const PROTOCOL_S250 = 46;
+    const S250 = 46;
     /**
-     * Generated from protobuf enum <code>PROTOCOL_SR17 = 47;</code>
+     * Generated from protobuf enum <code>SR17 = 47;</code>
      */
-    const PROTOCOL_SR17 = 47;
+    const SR17 = 47;
+    /**
+     * Generated from protobuf enum <code>ARIO_4G_AVL = 48;</code>
+     */
+    const ARIO_4G_AVL = 48;
 
     private static $valueToName = [
-        self::PROTOCOL_UNSPECIFIED => 'PROTOCOL_UNSPECIFIED',
-        self::PROTOCOL_COBAN => 'PROTOCOL_COBAN',
-        self::PROTOCOL_COBAN_WR => 'PROTOCOL_COBAN_WR',
-        self::PROTOCOL_ACCURATE => 'PROTOCOL_ACCURATE',
-        self::PROTOCOL_A9 => 'PROTOCOL_A9',
-        self::PROTOCOL_CONCOX => 'PROTOCOL_CONCOX',
-        self::PROTOCOL_DOLPHIN => 'PROTOCOL_DOLPHIN',
-        self::PROTOCOL_GT07 => 'PROTOCOL_GT07',
-        self::PROTOCOL_JTT808 => 'PROTOCOL_JTT808',
-        self::PROTOCOL_R16 => 'PROTOCOL_R16',
-        self::PROTOCOL_R31 => 'PROTOCOL_R31',
-        self::PROTOCOL_R56 => 'PROTOCOL_R56',
-        self::PROTOCOL_S11 => 'PROTOCOL_S11',
-        self::PROTOCOL_S15 => 'PROTOCOL_S15',
-        self::PROTOCOL_SAYEH => 'PROTOCOL_SAYEH',
-        self::PROTOCOL_SINOTRACK => 'PROTOCOL_SINOTRACK',
-        self::PROTOCOL_TELTONIKA => 'PROTOCOL_TELTONIKA',
-        self::PROTOCOL_TOPIN => 'PROTOCOL_TOPIN',
-        self::PROTOCOL_WEFINDER => 'PROTOCOL_WEFINDER',
-        self::PROTOCOL_RUBTELLA => 'PROTOCOL_RUBTELLA',
-        self::PROTOCOL_LANDER => 'PROTOCOL_LANDER',
-        self::PROTOCOL_RAMMA => 'PROTOCOL_RAMMA',
-        self::PROTOCOL_SINERE => 'PROTOCOL_SINERE',
-        self::PROTOCOL_GALLO_SKY => 'PROTOCOL_GALLO_SKY',
-        self::PROTOCOL_GITINAMA => 'PROTOCOL_GITINAMA',
-        self::PROTOCOL_BCE => 'PROTOCOL_BCE',
-        self::PROTOCOL_TOP_FLY_TECH => 'PROTOCOL_TOP_FLY_TECH',
-        self::PROTOCOL_QUICK => 'PROTOCOL_QUICK',
-        self::PROTOCOL_RADSHID => 'PROTOCOL_RADSHID',
-        self::PROTOCOL_MEITRACK => 'PROTOCOL_MEITRACK',
-        self::PROTOCOL_GT30X => 'PROTOCOL_GT30X',
-        self::PROTOCOL_WP => 'PROTOCOL_WP',
-        self::PROTOCOL_SR03 => 'PROTOCOL_SR03',
-        self::PROTOCOL_TELTONIKA650 => 'PROTOCOL_TELTONIKA650',
-        self::PROTOCOL_SR04B => 'PROTOCOL_SR04B',
-        self::PROTOCOL_NAV_TELECOM => 'PROTOCOL_NAV_TELECOM',
-        self::PROTOCOL_VTRACK2 => 'PROTOCOL_VTRACK2',
-        self::PROTOCOL_ET06L => 'PROTOCOL_ET06L',
-        self::PROTOCOL_ATN => 'PROTOCOL_ATN',
-        self::PROTOCOL_ARIO_AVL => 'PROTOCOL_ARIO_AVL',
-        self::PROTOCOL_HAMIGPS => 'PROTOCOL_HAMIGPS',
-        self::PROTOCOL_RUPTELLA => 'PROTOCOL_RUPTELLA',
-        self::PROTOCOL_ZINGJONG => 'PROTOCOL_ZINGJONG',
-        self::PROTOCOL_RADSHID_OLD => 'PROTOCOL_RADSHID_OLD',
-        self::PROTOCOL_COBAN_2025 => 'PROTOCOL_COBAN_2025',
-        self::PROTOCOL_S200 => 'PROTOCOL_S200',
-        self::PROTOCOL_S250 => 'PROTOCOL_S250',
-        self::PROTOCOL_SR17 => 'PROTOCOL_SR17',
+        self::UNKNOWN => 'UNKNOWN',
+        self::COBAN => 'COBAN',
+        self::COBAN_WR => 'COBAN_WR',
+        self::ACCURATE => 'ACCURATE',
+        self::A9 => 'A9',
+        self::CONCOX => 'CONCOX',
+        self::DOLPHIN => 'DOLPHIN',
+        self::GT07 => 'GT07',
+        self::JTT808 => 'JTT808',
+        self::R16 => 'R16',
+        self::R31 => 'R31',
+        self::R56 => 'R56',
+        self::S11 => 'S11',
+        self::S15 => 'S15',
+        self::SAYEH => 'SAYEH',
+        self::SINOTRACK => 'SINOTRACK',
+        self::TELTONIKA => 'TELTONIKA',
+        self::TOPIN => 'TOPIN',
+        self::WEFINDER => 'WEFINDER',
+        self::RUBTELLA => 'RUBTELLA',
+        self::LANDER => 'LANDER',
+        self::RAMMA => 'RAMMA',
+        self::SINERE => 'SINERE',
+        self::GALLO_SKY => 'GALLO_SKY',
+        self::GITINAMA => 'GITINAMA',
+        self::BCE => 'BCE',
+        self::TOP_FLY_TECH => 'TOP_FLY_TECH',
+        self::QUICK => 'QUICK',
+        self::RADSHID => 'RADSHID',
+        self::MEITRACK => 'MEITRACK',
+        self::GT30X => 'GT30X',
+        self::WP => 'WP',
+        self::SR03 => 'SR03',
+        self::TELTONIKA650 => 'TELTONIKA650',
+        self::SR04B => 'SR04B',
+        self::NAV_TELECOM => 'NAV_TELECOM',
+        self::VTRACK2 => 'VTRACK2',
+        self::ET06L => 'ET06L',
+        self::ATN => 'ATN',
+        self::ARIO_AVL => 'ARIO_AVL',
+        self::HAMIGPS => 'HAMIGPS',
+        self::RUPTELLA => 'RUPTELLA',
+        self::ZINGJONG => 'ZINGJONG',
+        self::RADSHID_OLD => 'RADSHID_OLD',
+        self::COBAN_2025 => 'COBAN_2025',
+        self::S200 => 'S200',
+        self::S250 => 'S250',
+        self::SR17 => 'SR17',
+        self::ARIO_4G_AVL => 'ARIO_4G_AVL',
     ];
 
     public static function name($value)

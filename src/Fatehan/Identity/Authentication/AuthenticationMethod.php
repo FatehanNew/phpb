@@ -23,9 +23,9 @@ class AuthenticationMethod
      */
     const OTP = 1;
     /**
-     * Generated from protobuf enum <code>PASSWORD = 2;</code>
+     * Generated from protobuf enum <code>LOGIN_PASSWORD = 2;</code>
      */
-    const PASSWORD = 2;
+    const LOGIN_PASSWORD = 2;
     /**
      * Generated from protobuf enum <code>GOOGLE = 3;</code>
      */
@@ -50,17 +50,22 @@ class AuthenticationMethod
      * Generated from protobuf enum <code>BALE = 8;</code>
      */
     const BALE = 8;
+    /**
+     * Generated from protobuf enum <code>VERIFY_PASSWORD = 9;</code>
+     */
+    const VERIFY_PASSWORD = 9;
 
     private static $valueToName = [
         self::UNSPECIFIED_AUTHENTICATION => 'UNSPECIFIED_AUTHENTICATION',
         self::OTP => 'OTP',
-        self::PASSWORD => 'PASSWORD',
+        self::LOGIN_PASSWORD => 'LOGIN_PASSWORD',
         self::GOOGLE => 'GOOGLE',
         self::TELEGRAM => 'TELEGRAM',
         self::AUTHENTICATOR => 'AUTHENTICATOR',
         self::QR => 'QR',
         self::WHATS_APP => 'WHATS_APP',
         self::BALE => 'BALE',
+        self::VERIFY_PASSWORD => 'VERIFY_PASSWORD',
     ];
 
     public static function name($value)

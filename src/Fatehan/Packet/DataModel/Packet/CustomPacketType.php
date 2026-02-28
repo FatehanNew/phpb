@@ -8,59 +8,57 @@ namespace Fatehan\Packet\DataModel\Packet;
 use UnexpectedValueException;
 
 /**
+ * Deprecated: Use custom oneof instead
+ *
  * Protobuf type <code>com.fatehan.packets.Packet.CustomPacketType</code>
  */
 class CustomPacketType
 {
     /**
+     * Deprecated: Use custom oneof instead
+     *
      * Generated from protobuf enum <code>CUSTOM_PACKET_TYPE_UNSPECIFIED = 0;</code>
      */
     const CUSTOM_PACKET_TYPE_UNSPECIFIED = 0;
     /**
+     * Deprecated: Use custom oneof instead
+     *
      * Generated from protobuf enum <code>MULTIMEDIA_EVENT_INFORMATION_UPLOADING = 1;</code>
      */
     const MULTIMEDIA_EVENT_INFORMATION_UPLOADING = 1;
     /**
-     * Generated from protobuf enum <code>MULTIMEDIA_DATA_UPLOAD = 3;</code>
-     */
-    const MULTIMEDIA_DATA_UPLOAD = 3;
-    /**
-     * Generated from protobuf enum <code>JTT808_SIGNALING_DATA_MESSAGE1210 = 4;</code>
-     */
-    const JTT808_SIGNALING_DATA_MESSAGE1210 = 4;
-    /**
-     * Generated from protobuf enum <code>JTT808_SIGNALING_DATA_MESSAGE1211 = 5;</code>
-     */
-    const JTT808_SIGNALING_DATA_MESSAGE1211 = 5;
-    /**
-     * Generated from protobuf enum <code>JTT808_SIGNALING_DATA_MESSAGE1212 = 6;</code>
-     */
-    const JTT808_SIGNALING_DATA_MESSAGE1212 = 6;
-    /**
-     * Generated from protobuf enum <code>JTT808_MEDIA_RETRIEVAL0802 = 11;</code>
-     */
-    const JTT808_MEDIA_RETRIEVAL0802 = 11;
-    /**
+     * Deprecated: Use custom oneof instead
+     *
      * Generated from protobuf enum <code>CONCOX_LBS_INFORMATION = 7;</code>
      */
     const CONCOX_LBS_INFORMATION = 7;
     /**
+     * Deprecated: Use custom oneof instead
+     *
      * Generated from protobuf enum <code>CONCOX_IMSI_NUMBER = 8;</code>
      */
     const CONCOX_IMSI_NUMBER = 8;
     /**
+     * Deprecated: Use custom oneof instead
+     *
      * Generated from protobuf enum <code>CONCOX_ICCID_NUMBER = 9;</code>
      */
     const CONCOX_ICCID_NUMBER = 9;
     /**
+     * Deprecated: Use custom oneof instead
+     *
      * Generated from protobuf enum <code>CONCOX_RECORDING_PROTOCOL_PACKAGE0X8D = 10;</code>
      */
     const CONCOX_RECORDING_PROTOCOL_PACKAGE0X8D = 10;
     /**
+     * Deprecated: Use custom oneof instead
+     *
      * Generated from protobuf enum <code>DOLPHIN_BUFFER_PAYLOAD = 12;</code>
      */
     const DOLPHIN_BUFFER_PAYLOAD = 12;
     /**
+     * Deprecated: Use custom oneof instead
+     *
      * Generated from protobuf enum <code>DOLPHIN_NEW_BUFFER = 13;</code>
      */
     const DOLPHIN_NEW_BUFFER = 13;
@@ -68,11 +66,6 @@ class CustomPacketType
     private static $valueToName = [
         self::CUSTOM_PACKET_TYPE_UNSPECIFIED => 'CUSTOM_PACKET_TYPE_UNSPECIFIED',
         self::MULTIMEDIA_EVENT_INFORMATION_UPLOADING => 'MULTIMEDIA_EVENT_INFORMATION_UPLOADING',
-        self::MULTIMEDIA_DATA_UPLOAD => 'MULTIMEDIA_DATA_UPLOAD',
-        self::JTT808_SIGNALING_DATA_MESSAGE1210 => 'JTT808_SIGNALING_DATA_MESSAGE1210',
-        self::JTT808_SIGNALING_DATA_MESSAGE1211 => 'JTT808_SIGNALING_DATA_MESSAGE1211',
-        self::JTT808_SIGNALING_DATA_MESSAGE1212 => 'JTT808_SIGNALING_DATA_MESSAGE1212',
-        self::JTT808_MEDIA_RETRIEVAL0802 => 'JTT808_MEDIA_RETRIEVAL0802',
         self::CONCOX_LBS_INFORMATION => 'CONCOX_LBS_INFORMATION',
         self::CONCOX_IMSI_NUMBER => 'CONCOX_IMSI_NUMBER',
         self::CONCOX_ICCID_NUMBER => 'CONCOX_ICCID_NUMBER',

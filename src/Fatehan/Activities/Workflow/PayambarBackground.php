@@ -30,6 +30,18 @@ class PayambarBackground extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>uint32 towing_duration = 5 [json_name = "towing_duration"];</code>
      */
     protected $towing_duration = 0;
+    /**
+     * Generated from protobuf field <code>bool is_loaded = 6 [json_name = "last_load_weigth"];</code>
+     */
+    protected $is_loaded = false;
+    /**
+     * Generated from protobuf field <code>.com.fatehan.packets.Data loading = 7 [json_name = "loading"];</code>
+     */
+    protected $loading = null;
+    /**
+     * Generated from protobuf field <code>.com.fatehan.packets.Data unloading = 8 [json_name = "unloading"];</code>
+     */
+    protected $unloading = null;
 
     /**
      * Constructor.
@@ -41,6 +53,9 @@ class PayambarBackground extends \Google\Protobuf\Internal\Message
      *     @type int $idling_duration
      *     @type int $parking_duration
      *     @type int $towing_duration
+     *     @type bool $is_loaded
+     *     @type \Fatehan\Packet\DataModel\Data $loading
+     *     @type \Fatehan\Packet\DataModel\Data $unloading
      * }
      */
     public function __construct($data = NULL) {
@@ -132,6 +147,92 @@ class PayambarBackground extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkUint32($var);
         $this->towing_duration = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_loaded = 6 [json_name = "last_load_weigth"];</code>
+     * @return bool
+     */
+    public function getIsLoaded()
+    {
+        return $this->is_loaded;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_loaded = 6 [json_name = "last_load_weigth"];</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsLoaded($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->is_loaded = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.com.fatehan.packets.Data loading = 7 [json_name = "loading"];</code>
+     * @return \Fatehan\Packet\DataModel\Data|null
+     */
+    public function getLoading()
+    {
+        return $this->loading;
+    }
+
+    public function hasLoading()
+    {
+        return isset($this->loading);
+    }
+
+    public function clearLoading()
+    {
+        unset($this->loading);
+    }
+
+    /**
+     * Generated from protobuf field <code>.com.fatehan.packets.Data loading = 7 [json_name = "loading"];</code>
+     * @param \Fatehan\Packet\DataModel\Data $var
+     * @return $this
+     */
+    public function setLoading($var)
+    {
+        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\Data::class);
+        $this->loading = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.com.fatehan.packets.Data unloading = 8 [json_name = "unloading"];</code>
+     * @return \Fatehan\Packet\DataModel\Data|null
+     */
+    public function getUnloading()
+    {
+        return $this->unloading;
+    }
+
+    public function hasUnloading()
+    {
+        return isset($this->unloading);
+    }
+
+    public function clearUnloading()
+    {
+        unset($this->unloading);
+    }
+
+    /**
+     * Generated from protobuf field <code>.com.fatehan.packets.Data unloading = 8 [json_name = "unloading"];</code>
+     * @param \Fatehan\Packet\DataModel\Data $var
+     * @return $this
+     */
+    public function setUnloading($var)
+    {
+        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\Data::class);
+        $this->unloading = $var;
 
         return $this;
     }

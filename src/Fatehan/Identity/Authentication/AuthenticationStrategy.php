@@ -17,17 +17,53 @@ use Google\Protobuf\RepeatedField;
 class AuthenticationStrategy extends \Google\Protobuf\Internal\Message
 {
     /**
+     * authentication methods 
+     *
      * Generated from protobuf field <code>repeated .com.fatehan.identities.AuthenticationMethod authentication = 1 [json_name = "authentication"];</code>
      */
     private $authentication;
     /**
+     * verification method 
+     *
      * Generated from protobuf field <code>.com.fatehan.identities.AuthenticationMethod verification = 2 [json_name = "verification"];</code>
      */
     protected $verification = 0;
     /**
+     * verification timeout 
+     *
      * Generated from protobuf field <code>.google.protobuf.Duration verification_timeout = 3 [json_name = "verification_timeout"];</code>
      */
     protected $verification_timeout = null;
+    /**
+     * session duration 
+     *
+     * Generated from protobuf field <code>.google.protobuf.Duration session_timeout = 4 [json_name = "session_timeout"];</code>
+     */
+    protected $session_timeout = null;
+    /**
+     * active session limit 
+     *
+     * Generated from protobuf field <code>uint32 active_session_limit = 5 [json_name = "session_limit"];</code>
+     */
+    protected $active_session_limit = 0;
+    /**
+     * minimum password length 
+     *
+     * Generated from protobuf field <code>uint32 password_minimum_length = 6 [json_name = "password_minimum_length"];</code>
+     */
+    protected $password_minimum_length = 0;
+    /**
+     * from one to four 
+     *
+     * Generated from protobuf field <code>uint32 password_min_character_class = 7 [json_name = "password_min_character_class"];</code>
+     */
+    protected $password_min_character_class = 0;
+    /**
+     * password duration 
+     *
+     * Generated from protobuf field <code>.google.protobuf.Duration password_timeout = 8 [json_name = "password_timeout"];</code>
+     */
+    protected $password_timeout = null;
 
     /**
      * Constructor.
@@ -36,8 +72,21 @@ class AuthenticationStrategy extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int[] $authentication
+     *           authentication methods 
      *     @type int $verification
+     *           verification method 
      *     @type \Google\Protobuf\Duration $verification_timeout
+     *           verification timeout 
+     *     @type \Google\Protobuf\Duration $session_timeout
+     *           session duration 
+     *     @type int $active_session_limit
+     *           active session limit 
+     *     @type int $password_minimum_length
+     *           minimum password length 
+     *     @type int $password_min_character_class
+     *           from one to four 
+     *     @type \Google\Protobuf\Duration $password_timeout
+     *           password duration 
      * }
      */
     public function __construct($data = NULL) {
@@ -46,6 +95,8 @@ class AuthenticationStrategy extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * authentication methods 
+     *
      * Generated from protobuf field <code>repeated .com.fatehan.identities.AuthenticationMethod authentication = 1 [json_name = "authentication"];</code>
      * @return RepeatedField<int>
      */
@@ -55,6 +106,8 @@ class AuthenticationStrategy extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * authentication methods 
+     *
      * Generated from protobuf field <code>repeated .com.fatehan.identities.AuthenticationMethod authentication = 1 [json_name = "authentication"];</code>
      * @param int[] $var
      * @return $this
@@ -68,6 +121,8 @@ class AuthenticationStrategy extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * verification method 
+     *
      * Generated from protobuf field <code>.com.fatehan.identities.AuthenticationMethod verification = 2 [json_name = "verification"];</code>
      * @return int
      */
@@ -77,6 +132,8 @@ class AuthenticationStrategy extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * verification method 
+     *
      * Generated from protobuf field <code>.com.fatehan.identities.AuthenticationMethod verification = 2 [json_name = "verification"];</code>
      * @param int $var
      * @return $this
@@ -90,6 +147,8 @@ class AuthenticationStrategy extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * verification timeout 
+     *
      * Generated from protobuf field <code>.google.protobuf.Duration verification_timeout = 3 [json_name = "verification_timeout"];</code>
      * @return \Google\Protobuf\Duration|null
      */
@@ -109,6 +168,8 @@ class AuthenticationStrategy extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * verification timeout 
+     *
      * Generated from protobuf field <code>.google.protobuf.Duration verification_timeout = 3 [json_name = "verification_timeout"];</code>
      * @param \Google\Protobuf\Duration $var
      * @return $this
@@ -117,6 +178,156 @@ class AuthenticationStrategy extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Duration::class);
         $this->verification_timeout = $var;
+
+        return $this;
+    }
+
+    /**
+     * session duration 
+     *
+     * Generated from protobuf field <code>.google.protobuf.Duration session_timeout = 4 [json_name = "session_timeout"];</code>
+     * @return \Google\Protobuf\Duration|null
+     */
+    public function getSessionTimeout()
+    {
+        return $this->session_timeout;
+    }
+
+    public function hasSessionTimeout()
+    {
+        return isset($this->session_timeout);
+    }
+
+    public function clearSessionTimeout()
+    {
+        unset($this->session_timeout);
+    }
+
+    /**
+     * session duration 
+     *
+     * Generated from protobuf field <code>.google.protobuf.Duration session_timeout = 4 [json_name = "session_timeout"];</code>
+     * @param \Google\Protobuf\Duration $var
+     * @return $this
+     */
+    public function setSessionTimeout($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Protobuf\Duration::class);
+        $this->session_timeout = $var;
+
+        return $this;
+    }
+
+    /**
+     * active session limit 
+     *
+     * Generated from protobuf field <code>uint32 active_session_limit = 5 [json_name = "session_limit"];</code>
+     * @return int
+     */
+    public function getActiveSessionLimit()
+    {
+        return $this->active_session_limit;
+    }
+
+    /**
+     * active session limit 
+     *
+     * Generated from protobuf field <code>uint32 active_session_limit = 5 [json_name = "session_limit"];</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setActiveSessionLimit($var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->active_session_limit = $var;
+
+        return $this;
+    }
+
+    /**
+     * minimum password length 
+     *
+     * Generated from protobuf field <code>uint32 password_minimum_length = 6 [json_name = "password_minimum_length"];</code>
+     * @return int
+     */
+    public function getPasswordMinimumLength()
+    {
+        return $this->password_minimum_length;
+    }
+
+    /**
+     * minimum password length 
+     *
+     * Generated from protobuf field <code>uint32 password_minimum_length = 6 [json_name = "password_minimum_length"];</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setPasswordMinimumLength($var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->password_minimum_length = $var;
+
+        return $this;
+    }
+
+    /**
+     * from one to four 
+     *
+     * Generated from protobuf field <code>uint32 password_min_character_class = 7 [json_name = "password_min_character_class"];</code>
+     * @return int
+     */
+    public function getPasswordMinCharacterClass()
+    {
+        return $this->password_min_character_class;
+    }
+
+    /**
+     * from one to four 
+     *
+     * Generated from protobuf field <code>uint32 password_min_character_class = 7 [json_name = "password_min_character_class"];</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setPasswordMinCharacterClass($var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->password_min_character_class = $var;
+
+        return $this;
+    }
+
+    /**
+     * password duration 
+     *
+     * Generated from protobuf field <code>.google.protobuf.Duration password_timeout = 8 [json_name = "password_timeout"];</code>
+     * @return \Google\Protobuf\Duration|null
+     */
+    public function getPasswordTimeout()
+    {
+        return $this->password_timeout;
+    }
+
+    public function hasPasswordTimeout()
+    {
+        return isset($this->password_timeout);
+    }
+
+    public function clearPasswordTimeout()
+    {
+        unset($this->password_timeout);
+    }
+
+    /**
+     * password duration 
+     *
+     * Generated from protobuf field <code>.google.protobuf.Duration password_timeout = 8 [json_name = "password_timeout"];</code>
+     * @param \Google\Protobuf\Duration $var
+     * @return $this
+     */
+    public function setPasswordTimeout($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Protobuf\Duration::class);
+        $this->password_timeout = $var;
 
         return $this;
     }

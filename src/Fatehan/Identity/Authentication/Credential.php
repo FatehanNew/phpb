@@ -40,6 +40,12 @@ class Credential extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string domain = 5 [json_name = "domain"];</code>
      */
     protected $domain = '';
+    /**
+     * if it's true it means that user cannot pass till makes a free room for current session 
+     *
+     * Generated from protobuf field <code>bool session_limit_reached = 7 [json_name = "session_limit_reached"];</code>
+     */
+    protected $session_limit_reached = false;
 
     /**
      * Constructor.
@@ -53,6 +59,8 @@ class Credential extends \Google\Protobuf\Internal\Message
      *     @type int|string $created
      *     @type int|string $token
      *     @type string $domain
+     *     @type bool $session_limit_reached
+     *           if it's true it means that user cannot pass till makes a free room for current session 
      * }
      */
     public function __construct($data = NULL) {
@@ -188,6 +196,32 @@ class Credential extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->domain = $var;
+
+        return $this;
+    }
+
+    /**
+     * if it's true it means that user cannot pass till makes a free room for current session 
+     *
+     * Generated from protobuf field <code>bool session_limit_reached = 7 [json_name = "session_limit_reached"];</code>
+     * @return bool
+     */
+    public function getSessionLimitReached()
+    {
+        return $this->session_limit_reached;
+    }
+
+    /**
+     * if it's true it means that user cannot pass till makes a free room for current session 
+     *
+     * Generated from protobuf field <code>bool session_limit_reached = 7 [json_name = "session_limit_reached"];</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setSessionLimitReached($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->session_limit_reached = $var;
 
         return $this;
     }

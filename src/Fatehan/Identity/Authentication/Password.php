@@ -25,17 +25,21 @@ class Password extends \Google\Protobuf\Internal\Message
      */
     protected $identity_id = 0;
     /**
-     * Generated from protobuf field <code>string password = 3 [json_name = "password"];</code>
+     * Generated from protobuf field <code>bytes password = 3 [json_name = "password"];</code>
      */
     protected $password = '';
     /**
-     * Generated from protobuf field <code>.google.protobuf.Timestamp expires_at = 6 [json_name = "expires_at"];</code>
+     * Generated from protobuf field <code>string password_usage = 4 [json_name = "password_usage"];</code>
      */
-    protected $expires_at = null;
+    protected $password_usage = '';
     /**
-     * Generated from protobuf field <code>.google.protobuf.Timestamp created_at = 7 [json_name = "created_at"];</code>
+     * Generated from protobuf field <code>.google.protobuf.Timestamp created_at = 6 [json_name = "created_at"];</code>
      */
     protected $created_at = null;
+    /**
+     * Generated from protobuf field <code>.google.protobuf.Timestamp expires_at = 7 [json_name = "expires_at"];</code>
+     */
+    protected $expires_at = null;
 
     /**
      * Constructor.
@@ -46,8 +50,9 @@ class Password extends \Google\Protobuf\Internal\Message
      *     @type int|string $id
      *     @type int|string $identity_id
      *     @type string $password
-     *     @type \Google\Protobuf\Timestamp $expires_at
+     *     @type string $password_usage
      *     @type \Google\Protobuf\Timestamp $created_at
+     *     @type \Google\Protobuf\Timestamp $expires_at
      * }
      */
     public function __construct($data = NULL) {
@@ -100,7 +105,7 @@ class Password extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string password = 3 [json_name = "password"];</code>
+     * Generated from protobuf field <code>bytes password = 3 [json_name = "password"];</code>
      * @return string
      */
     public function getPassword()
@@ -109,52 +114,42 @@ class Password extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string password = 3 [json_name = "password"];</code>
+     * Generated from protobuf field <code>bytes password = 3 [json_name = "password"];</code>
      * @param string $var
      * @return $this
      */
     public function setPassword($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, False);
         $this->password = $var;
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>.google.protobuf.Timestamp expires_at = 6 [json_name = "expires_at"];</code>
-     * @return \Google\Protobuf\Timestamp|null
+     * Generated from protobuf field <code>string password_usage = 4 [json_name = "password_usage"];</code>
+     * @return string
      */
-    public function getExpiresAt()
+    public function getPasswordUsage()
     {
-        return $this->expires_at;
-    }
-
-    public function hasExpiresAt()
-    {
-        return isset($this->expires_at);
-    }
-
-    public function clearExpiresAt()
-    {
-        unset($this->expires_at);
+        return $this->password_usage;
     }
 
     /**
-     * Generated from protobuf field <code>.google.protobuf.Timestamp expires_at = 6 [json_name = "expires_at"];</code>
-     * @param \Google\Protobuf\Timestamp $var
+     * Generated from protobuf field <code>string password_usage = 4 [json_name = "password_usage"];</code>
+     * @param string $var
      * @return $this
      */
-    public function setExpiresAt($var)
+    public function setPasswordUsage($var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
-        $this->expires_at = $var;
+        GPBUtil::checkString($var, True);
+        $this->password_usage = $var;
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>.google.protobuf.Timestamp created_at = 7 [json_name = "created_at"];</code>
+     * Generated from protobuf field <code>.google.protobuf.Timestamp created_at = 6 [json_name = "created_at"];</code>
      * @return \Google\Protobuf\Timestamp|null
      */
     public function getCreatedAt()
@@ -173,7 +168,7 @@ class Password extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.google.protobuf.Timestamp created_at = 7 [json_name = "created_at"];</code>
+     * Generated from protobuf field <code>.google.protobuf.Timestamp created_at = 6 [json_name = "created_at"];</code>
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
@@ -181,6 +176,38 @@ class Password extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.google.protobuf.Timestamp expires_at = 7 [json_name = "expires_at"];</code>
+     * @return \Google\Protobuf\Timestamp|null
+     */
+    public function getExpiresAt()
+    {
+        return $this->expires_at;
+    }
+
+    public function hasExpiresAt()
+    {
+        return isset($this->expires_at);
+    }
+
+    public function clearExpiresAt()
+    {
+        unset($this->expires_at);
+    }
+
+    /**
+     * Generated from protobuf field <code>.google.protobuf.Timestamp expires_at = 7 [json_name = "expires_at"];</code>
+     * @param \Google\Protobuf\Timestamp $var
+     * @return $this
+     */
+    public function setExpiresAt($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
+        $this->expires_at = $var;
 
         return $this;
     }

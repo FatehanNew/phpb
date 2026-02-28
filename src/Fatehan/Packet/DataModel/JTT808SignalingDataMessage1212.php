@@ -10,9 +10,9 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * Generated from protobuf message <code>com.fatehan.packets.Jtt808SignalingDataMessage1211</code>
+ * Generated from protobuf message <code>com.fatehan.packets.JTT808SignalingDataMessage1212</code>
  */
-class Jtt808SignalingDataMessage1211 extends \Google\Protobuf\Internal\Message
+class JTT808SignalingDataMessage1212 extends \Google\Protobuf\Internal\Message
 {
     /**
      * Generated from protobuf field <code>string name = 1;</code>

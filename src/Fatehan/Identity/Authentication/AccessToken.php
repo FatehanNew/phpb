@@ -33,10 +33,6 @@ class AccessToken extends \Google\Protobuf\Internal\Message
      */
     protected $token = 0;
     /**
-     * Generated from protobuf field <code>bytes phone_hash = 5 [json_name = "phone"];</code>
-     */
-    protected $phone_hash = '';
-    /**
      * Generated from protobuf field <code>string ip_address = 6 [json_name = "ip"];</code>
      */
     protected $ip_address = '';
@@ -48,10 +44,6 @@ class AccessToken extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string device_type = 8 [json_name = "device_type"];</code>
      */
     protected $device_type = '';
-    /**
-     * Generated from protobuf field <code>bool two_step_verification = 12 [json_name = "two_step_verification"];</code>
-     */
-    protected $two_step_verification = false;
     /**
      * Generated from protobuf field <code>.google.protobuf.Timestamp expires_at = 9 [json_name = "expires_at"];</code>
      */
@@ -75,11 +67,9 @@ class AccessToken extends \Google\Protobuf\Internal\Message
      *     @type int|string $identity_id
      *     @type string $domain
      *     @type int|string $token
-     *     @type string $phone_hash
      *     @type string $ip_address
      *     @type string $user_agent
      *     @type string $device_type
-     *     @type bool $two_step_verification
      *     @type \Google\Protobuf\Timestamp $expires_at
      *     @type \Google\Protobuf\Timestamp $created_at
      *     @type \Google\Protobuf\Timestamp $logout_at
@@ -179,28 +169,6 @@ class AccessToken extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>bytes phone_hash = 5 [json_name = "phone"];</code>
-     * @return string
-     */
-    public function getPhoneHash()
-    {
-        return $this->phone_hash;
-    }
-
-    /**
-     * Generated from protobuf field <code>bytes phone_hash = 5 [json_name = "phone"];</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setPhoneHash($var)
-    {
-        GPBUtil::checkString($var, False);
-        $this->phone_hash = $var;
-
-        return $this;
-    }
-
-    /**
      * Generated from protobuf field <code>string ip_address = 6 [json_name = "ip"];</code>
      * @return string
      */
@@ -262,28 +230,6 @@ class AccessToken extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->device_type = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>bool two_step_verification = 12 [json_name = "two_step_verification"];</code>
-     * @return bool
-     */
-    public function getTwoStepVerification()
-    {
-        return $this->two_step_verification;
-    }
-
-    /**
-     * Generated from protobuf field <code>bool two_step_verification = 12 [json_name = "two_step_verification"];</code>
-     * @param bool $var
-     * @return $this
-     */
-    public function setTwoStepVerification($var)
-    {
-        GPBUtil::checkBool($var);
-        $this->two_step_verification = $var;
 
         return $this;
     }

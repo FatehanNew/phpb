@@ -3,27 +3,23 @@
 # NO CHECKED-IN PROTOBUF GENCODE
 # source: packets/dataModel.proto
 
-namespace Fatehan\Packet\DataModel;
+namespace Fatehan\Packet\DataModel\JTT808SignalingDataMessage1210;
 
 use Google\Protobuf\Internal\GPBType;
 use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * Generated from protobuf message <code>com.fatehan.packets.Jtt808SignalingDataMessage1212</code>
+ * Generated from protobuf message <code>com.fatehan.packets.JTT808SignalingDataMessage1210.Attachment</code>
  */
-class Jtt808SignalingDataMessage1212 extends \Google\Protobuf\Internal\Message
+class Attachment extends \Google\Protobuf\Internal\Message
 {
     /**
      * Generated from protobuf field <code>string name = 1;</code>
      */
     protected $name = '';
     /**
-     * Generated from protobuf field <code>.com.fatehan.packets.FileType type = 2;</code>
-     */
-    protected $type = 0;
-    /**
-     * Generated from protobuf field <code>uint32 size = 3;</code>
+     * Generated from protobuf field <code>uint32 size = 2;</code>
      */
     protected $size = 0;
 
@@ -34,7 +30,6 @@ class Jtt808SignalingDataMessage1212 extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $name
-     *     @type int $type
      *     @type int $size
      * }
      */
@@ -66,29 +61,7 @@ class Jtt808SignalingDataMessage1212 extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.com.fatehan.packets.FileType type = 2;</code>
-     * @return int
-     */
-    public function getType()
-    {
-        return $this->type;
-    }
-
-    /**
-     * Generated from protobuf field <code>.com.fatehan.packets.FileType type = 2;</code>
-     * @param int $var
-     * @return $this
-     */
-    public function setType($var)
-    {
-        GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\FileType::class);
-        $this->type = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>uint32 size = 3;</code>
+     * Generated from protobuf field <code>uint32 size = 2;</code>
      * @return int
      */
     public function getSize()
@@ -97,7 +70,7 @@ class Jtt808SignalingDataMessage1212 extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 size = 3;</code>
+     * Generated from protobuf field <code>uint32 size = 2;</code>
      * @param int $var
      * @return $this
      */

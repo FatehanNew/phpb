@@ -17,46 +17,6 @@ class Key
      */
     const KEY_UNSPECIFIED = 0;
     /**
-     * Generated from protobuf enum <code>JTT808_ALARM_ID = 1;</code>
-     */
-    const JTT808_ALARM_ID = 1;
-    /**
-     * Generated from protobuf enum <code>JTT808_SPEED = 2;</code>
-     */
-    const JTT808_SPEED = 2;
-    /**
-     * Generated from protobuf enum <code>JTT808_LATITUDE = 3;</code>
-     */
-    const JTT808_LATITUDE = 3;
-    /**
-     * Generated from protobuf enum <code>JTT808_LONGITUDE = 4;</code>
-     */
-    const JTT808_LONGITUDE = 4;
-    /**
-     * Generated from protobuf enum <code>JTT808_ALTITUDE = 5;</code>
-     */
-    const JTT808_ALTITUDE = 5;
-    /**
-     * Generated from protobuf enum <code>JTT808_GPS_TIME = 6;</code>
-     */
-    const JTT808_GPS_TIME = 6;
-    /**
-     * Generated from protobuf enum <code>JTT808_ALARM_TERMINAL_ID = 7;</code>
-     */
-    const JTT808_ALARM_TERMINAL_ID = 7;
-    /**
-     * Generated from protobuf enum <code>JTT808_ALARM_TIME = 8;</code>
-     */
-    const JTT808_ALARM_TIME = 8;
-    /**
-     * Generated from protobuf enum <code>JTT808_SERIAL_NUMBER = 9;</code>
-     */
-    const JTT808_SERIAL_NUMBER = 9;
-    /**
-     * Generated from protobuf enum <code>JTT808_ATTACHMENT = 10;</code>
-     */
-    const JTT808_ATTACHMENT = 10;
-    /**
      * Generated from protobuf enum <code>JTT808_ALARM_TYPE = 13;</code>
      */
     const JTT808_ALARM_TYPE = 13;
@@ -67,16 +27,6 @@ class Key
 
     private static $valueToName = [
         self::KEY_UNSPECIFIED => 'KEY_UNSPECIFIED',
-        self::JTT808_ALARM_ID => 'JTT808_ALARM_ID',
-        self::JTT808_SPEED => 'JTT808_SPEED',
-        self::JTT808_LATITUDE => 'JTT808_LATITUDE',
-        self::JTT808_LONGITUDE => 'JTT808_LONGITUDE',
-        self::JTT808_ALTITUDE => 'JTT808_ALTITUDE',
-        self::JTT808_GPS_TIME => 'JTT808_GPS_TIME',
-        self::JTT808_ALARM_TERMINAL_ID => 'JTT808_ALARM_TERMINAL_ID',
-        self::JTT808_ALARM_TIME => 'JTT808_ALARM_TIME',
-        self::JTT808_SERIAL_NUMBER => 'JTT808_SERIAL_NUMBER',
-        self::JTT808_ATTACHMENT => 'JTT808_ATTACHMENT',
         self::JTT808_ALARM_TYPE => 'JTT808_ALARM_TYPE',
         self::DOLPHIN_TERMINAL_ID => 'DOLPHIN_TERMINAL_ID',
     ];

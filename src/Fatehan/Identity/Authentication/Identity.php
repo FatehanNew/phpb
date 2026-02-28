@@ -68,6 +68,12 @@ class Identity extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional sint64 telegram_id = 13 [json_name = "telegram_id"];</code>
      */
     protected $telegram_id = null;
+    /**
+     * if it's true it means that user cannot pass till makes a free room for current session 
+     *
+     * Generated from protobuf field <code>bool session_limit_reached = 14 [json_name = "session_limit_reached"];</code>
+     */
+    protected $session_limit_reached = false;
 
     /**
      * Constructor.
@@ -88,6 +94,8 @@ class Identity extends \Google\Protobuf\Internal\Message
      *     @type string $email_hash
      *     @type string $telegram_username
      *     @type int|string $telegram_id
+     *     @type bool $session_limit_reached
+     *           if it's true it means that user cannot pass till makes a free room for current session 
      * }
      */
     public function __construct($data = NULL) {
@@ -467,6 +475,32 @@ class Identity extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt64($var);
         $this->telegram_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * if it's true it means that user cannot pass till makes a free room for current session 
+     *
+     * Generated from protobuf field <code>bool session_limit_reached = 14 [json_name = "session_limit_reached"];</code>
+     * @return bool
+     */
+    public function getSessionLimitReached()
+    {
+        return $this->session_limit_reached;
+    }
+
+    /**
+     * if it's true it means that user cannot pass till makes a free room for current session 
+     *
+     * Generated from protobuf field <code>bool session_limit_reached = 14 [json_name = "session_limit_reached"];</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setSessionLimitReached($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->session_limit_reached = $var;
 
         return $this;
     }

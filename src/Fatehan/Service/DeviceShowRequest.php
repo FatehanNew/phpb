@@ -18,6 +18,10 @@ class DeviceShowRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>uint64 id = 1 [json_name = "id"];</code>
      */
     protected $id = 0;
+    /**
+     * Generated from protobuf field <code>optional bool include_device_status = 2 [json_name = "include_device_status"];</code>
+     */
+    protected $include_device_status = null;
 
     /**
      * Constructor.
@@ -26,6 +30,7 @@ class DeviceShowRequest extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int|string $id
+     *     @type bool $include_device_status
      * }
      */
     public function __construct($data = NULL) {
@@ -51,6 +56,38 @@ class DeviceShowRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional bool include_device_status = 2 [json_name = "include_device_status"];</code>
+     * @return bool
+     */
+    public function getIncludeDeviceStatus()
+    {
+        return isset($this->include_device_status) ? $this->include_device_status : false;
+    }
+
+    public function hasIncludeDeviceStatus()
+    {
+        return isset($this->include_device_status);
+    }
+
+    public function clearIncludeDeviceStatus()
+    {
+        unset($this->include_device_status);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional bool include_device_status = 2 [json_name = "include_device_status"];</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIncludeDeviceStatus($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->include_device_status = $var;
 
         return $this;
     }

@@ -20,10 +20,15 @@ class TriggerEvent
      * Generated from protobuf enum <code>ON_START = 1;</code>
      */
     const ON_START = 1;
+    /**
+     * Generated from protobuf enum <code>ON_WEIGHT_UNLOADED = 2;</code>
+     */
+    const ON_WEIGHT_UNLOADED = 2;
 
     private static $valueToName = [
         self::ON_FINISH => 'ON_FINISH',
         self::ON_START => 'ON_START',
+        self::ON_WEIGHT_UNLOADED => 'ON_WEIGHT_UNLOADED',
     ];
 
     public static function name($value)

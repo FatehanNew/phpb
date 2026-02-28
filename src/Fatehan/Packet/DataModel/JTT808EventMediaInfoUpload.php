@@ -10,9 +10,9 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * Generated from protobuf message <code>com.fatehan.packets.Jtt1078EventMediaDataUpload</code>
+ * Generated from protobuf message <code>com.fatehan.packets.JTT808EventMediaInfoUpload</code>
  */
-class Jtt1078EventMediaDataUpload extends \Google\Protobuf\Internal\Message
+class JTT808EventMediaInfoUpload extends \Google\Protobuf\Internal\Message
 {
     /**
      * Generated from protobuf field <code>uint32 media_id = 1;</code>
@@ -34,10 +34,6 @@ class Jtt1078EventMediaDataUpload extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>uint32 channel_id = 5;</code>
      */
     protected $channel_id = 0;
-    /**
-     * Generated from protobuf field <code>bytes payload = 6;</code>
-     */
-    protected $payload = '';
 
     /**
      * Constructor.
@@ -50,7 +46,6 @@ class Jtt1078EventMediaDataUpload extends \Google\Protobuf\Internal\Message
      *     @type int $media_format
      *     @type int $event_item_code
      *     @type int $channel_id
-     *     @type string $payload
      * }
      */
     public function __construct($data = NULL) {
@@ -164,28 +159,6 @@ class Jtt1078EventMediaDataUpload extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkUint32($var);
         $this->channel_id = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>bytes payload = 6;</code>
-     * @return string
-     */
-    public function getPayload()
-    {
-        return $this->payload;
-    }
-
-    /**
-     * Generated from protobuf field <code>bytes payload = 6;</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setPayload($var)
-    {
-        GPBUtil::checkString($var, False);
-        $this->payload = $var;
 
         return $this;
     }
