@@ -38,6 +38,10 @@ class ConfigResponse extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional .com.fatehan.identities.AuthenticationStrategy strategy = 6 [json_name = "strategy"];</code>
      */
     protected $strategy = null;
+    /**
+     * Generated from protobuf field <code>uint64 organization_id = 7 [json_name = "organization_id"];</code>
+     */
+    protected $organization_id = 0;
 
     /**
      * Constructor.
@@ -51,6 +55,7 @@ class ConfigResponse extends \Google\Protobuf\Internal\Message
      *     @type \Fatehan\Service\ConfigResponse\AppDesignConfig $app_design
      *     @type \Fatehan\Service\ConfigResponse\AppSecConfig $app_sec
      *     @type \Fatehan\Identity\Authentication\AuthenticationStrategy $strategy
+     *     @type int|string $organization_id
      * }
      */
     public function __construct($data = NULL) {
@@ -216,6 +221,28 @@ class ConfigResponse extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Fatehan\Identity\Authentication\AuthenticationStrategy::class);
         $this->strategy = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>uint64 organization_id = 7 [json_name = "organization_id"];</code>
+     * @return int|string
+     */
+    public function getOrganizationId()
+    {
+        return $this->organization_id;
+    }
+
+    /**
+     * Generated from protobuf field <code>uint64 organization_id = 7 [json_name = "organization_id"];</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setOrganizationId($var)
+    {
+        GPBUtil::checkUint64($var);
+        $this->organization_id = $var;
 
         return $this;
     }

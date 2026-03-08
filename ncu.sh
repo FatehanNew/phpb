@@ -4,7 +4,12 @@ printf "Updating Git repository...\n"
 git pull
 
 printf "Updating PHP dependencies using Composer...\n"
-composer update
+
+if [[ "$1" == "--ignore" || "$2" == "--ignore" ]]; then
+    printf "ignoring composer updates\n"
+else 
+    composer update
+fi
 
 printf "Clearing source directory...\n"
 rm -rf src/Fatehan/*
