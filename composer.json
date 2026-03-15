@@ -24,7 +24,7 @@
         }
     ],
     "require": {
-        "php": ">=8.4",
+        "php": ">=7.4",
         "google/protobuf": "^4.31"
     }
 }
