@@ -75,11 +75,11 @@ class ActivityLog extends \Google\Protobuf\Internal\Message
      */
     protected $properties = null;
     /**
-     * Generated from protobuf field <code>optional string created_at = 16;</code>
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp created_at = 16;</code>
      */
     protected $created_at = null;
     /**
-     * Generated from protobuf field <code>optional string updated_at = 17;</code>
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp updated_at = 17;</code>
      */
     protected $updated_at = null;
 
@@ -104,8 +104,8 @@ class ActivityLog extends \Google\Protobuf\Internal\Message
      *     @type string $ip
      *     @type string $user_agent
      *     @type string $properties
-     *     @type string $created_at
-     *     @type string $updated_at
+     *     @type \Google\Protobuf\Timestamp $created_at
+     *     @type \Google\Protobuf\Timestamp $updated_at
      * }
      */
     public function __construct($data = NULL) {
@@ -584,12 +584,12 @@ class ActivityLog extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional string created_at = 16;</code>
-     * @return string
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp created_at = 16;</code>
+     * @return \Google\Protobuf\Timestamp|null
      */
     public function getCreatedAt()
     {
-        return isset($this->created_at) ? $this->created_at : '';
+        return $this->created_at;
     }
 
     public function hasCreatedAt()
@@ -603,25 +603,25 @@ class ActivityLog extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional string created_at = 16;</code>
-     * @param string $var
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp created_at = 16;</code>
+     * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
     public function setCreatedAt($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>optional string updated_at = 17;</code>
-     * @return string
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp updated_at = 17;</code>
+     * @return \Google\Protobuf\Timestamp|null
      */
     public function getUpdatedAt()
     {
-        return isset($this->updated_at) ? $this->updated_at : '';
+        return $this->updated_at;
     }
 
     public function hasUpdatedAt()
@@ -635,13 +635,13 @@ class ActivityLog extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional string updated_at = 17;</code>
-     * @param string $var
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp updated_at = 17;</code>
+     * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
     public function setUpdatedAt($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;

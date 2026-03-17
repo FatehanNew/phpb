@@ -23,6 +23,10 @@ class Flow extends \Google\Protobuf\Internal\Message
      */
     protected $last_gps_time = 0;
     /**
+     * Generated from protobuf field <code>optional .google.protobuf.Duration operation_timeout = 3 [json_name = "operation_timeout"];</code>
+     */
+    protected $operation_timeout = null;
+    /**
      * Generated from protobuf field <code>repeated .com.fatehan.activities.FlowEvent events = 30 [json_name = "events"];</code>
      */
     private $events;
@@ -42,6 +46,7 @@ class Flow extends \Google\Protobuf\Internal\Message
      *
      *     @type bool $continuous
      *     @type int|string $last_gps_time
+     *     @type \Google\Protobuf\Duration $operation_timeout
      *     @type \Fatehan\Activities\Workflow\FlowEvent[] $events
      *     @type \Fatehan\Activities\Workflow\FlowModule[] $modules
      *     @type \Fatehan\Activities\Workflow\DefaultReport $default_report
@@ -99,6 +104,38 @@ class Flow extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt64($var);
         $this->last_gps_time = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .google.protobuf.Duration operation_timeout = 3 [json_name = "operation_timeout"];</code>
+     * @return \Google\Protobuf\Duration|null
+     */
+    public function getOperationTimeout()
+    {
+        return $this->operation_timeout;
+    }
+
+    public function hasOperationTimeout()
+    {
+        return isset($this->operation_timeout);
+    }
+
+    public function clearOperationTimeout()
+    {
+        unset($this->operation_timeout);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .google.protobuf.Duration operation_timeout = 3 [json_name = "operation_timeout"];</code>
+     * @param \Google\Protobuf\Duration $var
+     * @return $this
+     */
+    public function setOperationTimeout($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Protobuf\Duration::class);
+        $this->operation_timeout = $var;
 
         return $this;
     }

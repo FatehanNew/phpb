@@ -31,7 +31,7 @@ class PayambarBackground extends \Google\Protobuf\Internal\Message
      */
     protected $towing_duration = 0;
     /**
-     * Generated from protobuf field <code>bool is_loaded = 6 [json_name = "last_load_weigth"];</code>
+     * Generated from protobuf field <code>bool is_loaded = 6 [json_name = "is_loaded"];</code>
      */
     protected $is_loaded = false;
     /**
@@ -152,7 +152,7 @@ class PayambarBackground extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>bool is_loaded = 6 [json_name = "last_load_weigth"];</code>
+     * Generated from protobuf field <code>bool is_loaded = 6 [json_name = "is_loaded"];</code>
      * @return bool
      */
     public function getIsLoaded()
@@ -161,7 +161,7 @@ class PayambarBackground extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>bool is_loaded = 6 [json_name = "last_load_weigth"];</code>
+     * Generated from protobuf field <code>bool is_loaded = 6 [json_name = "is_loaded"];</code>
      * @param bool $var
      * @return $this
      */
