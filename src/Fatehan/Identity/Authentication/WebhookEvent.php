@@ -61,9 +61,8 @@ class WebhookEvent extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setTimestamp($var)
+    public function setTimestamp(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->timestamp = $var;
 
         return $this;
@@ -88,9 +87,8 @@ class WebhookEvent extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Identity\Authentication\WebhookEvent\Logout $var
      * @return $this
      */
-    public function setLogoutPayload($var)
+    public function setLogoutPayload(\Fatehan\Identity\Authentication\WebhookEvent\Logout|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Identity\Authentication\WebhookEvent\Logout::class);
         $this->writeOneof(21, $var);
 
         return $this;

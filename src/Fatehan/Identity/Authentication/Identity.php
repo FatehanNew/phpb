@@ -117,7 +117,7 @@ class Identity extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -139,7 +139,7 @@ class Identity extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setPhone($var)
+    public function setPhone(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->phone = $var;
@@ -171,9 +171,9 @@ class Identity extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setEmail($var)
+    public function setEmail(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->email = $var;
 
         return $this;
@@ -203,9 +203,9 @@ class Identity extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -235,9 +235,9 @@ class Identity extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPicture($var)
+    public function setPicture(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->picture = $var;
 
         return $this;
@@ -267,9 +267,8 @@ class Identity extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -299,9 +298,8 @@ class Identity extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;
@@ -321,9 +319,9 @@ class Identity extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setEncryptedPhone($var)
+    public function setEncryptedPhone(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->encrypted_phone = $var;
 
         return $this;
@@ -343,9 +341,9 @@ class Identity extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPhoneHash($var)
+    public function setPhoneHash(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->phone_hash = $var;
 
         return $this;
@@ -375,9 +373,9 @@ class Identity extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setEncryptedEmail($var)
+    public function setEncryptedEmail(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->encrypted_email = $var;
 
         return $this;
@@ -407,9 +405,9 @@ class Identity extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setEmailHash($var)
+    public function setEmailHash(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->email_hash = $var;
 
         return $this;
@@ -439,9 +437,9 @@ class Identity extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTelegramUsername($var)
+    public function setTelegramUsername(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->telegram_username = $var;
 
         return $this;
@@ -453,7 +451,7 @@ class Identity extends \Google\Protobuf\Internal\Message
      */
     public function getTelegramId()
     {
-        return isset($this->telegram_id) ? $this->telegram_id : 0;
+        return isset($this->telegram_id) ? $this->telegram_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasTelegramId()
@@ -471,7 +469,7 @@ class Identity extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTelegramId($var)
+    public function setTelegramId(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->telegram_id = $var;
@@ -497,9 +495,8 @@ class Identity extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSessionLimitReached($var)
+    public function setSessionLimitReached(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->session_limit_reached = $var;
 
         return $this;

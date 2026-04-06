@@ -64,9 +64,8 @@ class TemporaryAccessToken extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Identity\Authentication\Credential $var
      * @return $this
      */
-    public function setCredential($var)
+    public function setCredential(\Fatehan\Identity\Authentication\Credential|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Identity\Authentication\Credential::class);
         $this->credential = $var;
 
         return $this;
@@ -96,9 +95,8 @@ class TemporaryAccessToken extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setExpiresAt($var)
+    public function setExpiresAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->expires_at = $var;
 
         return $this;

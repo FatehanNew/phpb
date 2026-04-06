@@ -62,7 +62,7 @@ class DeviceDataRequest extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLimit($var)
+    public function setLimit(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->limit = $var;
@@ -84,7 +84,7 @@ class DeviceDataRequest extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -116,9 +116,8 @@ class DeviceDataRequest extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setStartedAt($var)
+    public function setStartedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->started_at = $var;
 
         return $this;
@@ -148,9 +147,8 @@ class DeviceDataRequest extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setFinishedAt($var)
+    public function setFinishedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->finished_at = $var;
 
         return $this;

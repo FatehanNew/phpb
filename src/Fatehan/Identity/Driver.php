@@ -137,7 +137,7 @@ class Driver extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -159,7 +159,7 @@ class Driver extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOrganizationId($var)
+    public function setOrganizationId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->organization_id = $var;
@@ -173,7 +173,7 @@ class Driver extends \Google\Protobuf\Internal\Message
      */
     public function getCreatedBy()
     {
-        return isset($this->created_by) ? $this->created_by : 0;
+        return isset($this->created_by) ? $this->created_by : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCreatedBy()
@@ -191,7 +191,7 @@ class Driver extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreatedBy($var)
+    public function setCreatedBy(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->created_by = $var;
@@ -205,7 +205,7 @@ class Driver extends \Google\Protobuf\Internal\Message
      */
     public function getUpdatedBy()
     {
-        return isset($this->updated_by) ? $this->updated_by : 0;
+        return isset($this->updated_by) ? $this->updated_by : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasUpdatedBy()
@@ -223,7 +223,7 @@ class Driver extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setUpdatedBy($var)
+    public function setUpdatedBy(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->updated_by = $var;
@@ -245,7 +245,7 @@ class Driver extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setPersonId($var)
+    public function setPersonId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->person_id = $var;
@@ -277,9 +277,9 @@ class Driver extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDriverIdentify($var)
+    public function setDriverIdentify(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->driver_identify = $var;
 
         return $this;
@@ -309,9 +309,9 @@ class Driver extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setLicenseNumber($var)
+    public function setLicenseNumber(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->license_number = $var;
 
         return $this;
@@ -341,9 +341,9 @@ class Driver extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setHiringDate($var)
+    public function setHiringDate(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->hiring_date = $var;
 
         return $this;
@@ -355,7 +355,7 @@ class Driver extends \Google\Protobuf\Internal\Message
      */
     public function getMonthlySalary()
     {
-        return isset($this->monthly_salary) ? $this->monthly_salary : 0;
+        return isset($this->monthly_salary) ? $this->monthly_salary : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasMonthlySalary()
@@ -373,7 +373,7 @@ class Driver extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setMonthlySalary($var)
+    public function setMonthlySalary(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->monthly_salary = $var;
@@ -405,7 +405,7 @@ class Driver extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLicenseType($var)
+    public function setLicenseType(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->license_type = $var;
@@ -437,9 +437,9 @@ class Driver extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setLicenseExpire($var)
+    public function setLicenseExpire(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->license_expire = $var;
 
         return $this;
@@ -469,7 +469,7 @@ class Driver extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCommissionPercentage($var)
+    public function setCommissionPercentage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->commission_percentage = $var;
@@ -491,9 +491,8 @@ class Driver extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setStatus($var)
+    public function setStatus(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->status = $var;
 
         return $this;
@@ -523,9 +522,9 @@ class Driver extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMobileNumber($var)
+    public function setMobileNumber(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->mobile_number = $var;
 
         return $this;
@@ -555,9 +554,9 @@ class Driver extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPhoneNumber($var)
+    public function setPhoneNumber(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->phone_number = $var;
 
         return $this;
@@ -587,9 +586,9 @@ class Driver extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setAddress($var)
+    public function setAddress(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->address = $var;
 
         return $this;
@@ -619,9 +618,9 @@ class Driver extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPostalCode($var)
+    public function setPostalCode(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->postal_code = $var;
 
         return $this;
@@ -651,9 +650,8 @@ class Driver extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -683,9 +681,8 @@ class Driver extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;

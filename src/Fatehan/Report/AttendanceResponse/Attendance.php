@@ -147,9 +147,8 @@ class Attendance extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setEnteredAt($var)
+    public function setEnteredAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->entered_at = $var;
 
         return $this;
@@ -179,9 +178,8 @@ class Attendance extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setExitedAt($var)
+    public function setExitedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->exited_at = $var;
 
         return $this;
@@ -201,7 +199,7 @@ class Attendance extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -223,7 +221,7 @@ class Attendance extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setAreaId($var)
+    public function setAreaId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->area_id = $var;
@@ -245,9 +243,9 @@ class Attendance extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setAreaName($var)
+    public function setAreaName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->area_name = $var;
 
         return $this;
@@ -277,9 +275,9 @@ class Attendance extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setGeoName($var)
+    public function setGeoName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->geo_name = $var;
 
         return $this;
@@ -299,7 +297,7 @@ class Attendance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setOvertime($var)
+    public function setOvertime(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->overtime = $var;
@@ -321,7 +319,7 @@ class Attendance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setShortage($var)
+    public function setShortage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->shortage = $var;
@@ -343,7 +341,7 @@ class Attendance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setWorkTime($var)
+    public function setWorkTime(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->work_time = $var;
@@ -365,7 +363,7 @@ class Attendance extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setPricePerHour($var)
+    public function setPricePerHour(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->price_per_hour = $var;
@@ -387,7 +385,7 @@ class Attendance extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOvertimePrice($var)
+    public function setOvertimePrice(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->overtime_price = $var;
@@ -409,7 +407,7 @@ class Attendance extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setShortagePrice($var)
+    public function setShortagePrice(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->shortage_price = $var;
@@ -431,7 +429,7 @@ class Attendance extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setWorkTimePrice($var)
+    public function setWorkTimePrice(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->work_time_price = $var;
@@ -453,9 +451,9 @@ class Attendance extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setShiftStartsAt($var)
+    public function setShiftStartsAt(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->shift_starts_at = $var;
 
         return $this;
@@ -475,9 +473,9 @@ class Attendance extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setShiftEndsAt($var)
+    public function setShiftEndsAt(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->shift_ends_at = $var;
 
         return $this;
@@ -497,7 +495,7 @@ class Attendance extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setSubtotal($var)
+    public function setSubtotal(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->subtotal = $var;
@@ -519,7 +517,7 @@ class Attendance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMileageInside($var)
+    public function setMileageInside(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->mileage_inside = $var;
@@ -541,7 +539,7 @@ class Attendance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMileageOutside($var)
+    public function setMileageOutside(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->mileage_outside = $var;
@@ -563,7 +561,7 @@ class Attendance extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Report\AttendanceResponse\Event[] $var
      * @return $this
      */
-    public function setEvents($var)
+    public function setEvents(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Report\AttendanceResponse\Event::class);
         $this->events = $arr;

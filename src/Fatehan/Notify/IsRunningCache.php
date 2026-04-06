@@ -52,9 +52,8 @@ class IsRunningCache extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsRunning($var)
+    public function setIsRunning(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_running = $var;
 
         return $this;
@@ -74,7 +73,7 @@ class IsRunningCache extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setNotifiedAt($var)
+    public function setNotifiedAt(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->notified_at = $var;

@@ -62,7 +62,7 @@ class AreaSplitterRequest extends \Google\Protobuf\Internal\Message
      * @param int[]|string[] $var
      * @return $this
      */
-    public function setDeviceIds($var)
+    public function setDeviceIds(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT64);
         $this->device_ids = $arr;
@@ -84,7 +84,7 @@ class AreaSplitterRequest extends \Google\Protobuf\Internal\Message
      * @param int[]|string[] $var
      * @return $this
      */
-    public function setAreaIds($var)
+    public function setAreaIds(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT64);
         $this->area_ids = $arr;
@@ -116,9 +116,8 @@ class AreaSplitterRequest extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setStartedAt($var)
+    public function setStartedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->started_at = $var;
 
         return $this;
@@ -148,9 +147,8 @@ class AreaSplitterRequest extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setFinishedAt($var)
+    public function setFinishedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->finished_at = $var;
 
         return $this;

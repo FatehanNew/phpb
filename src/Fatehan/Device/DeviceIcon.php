@@ -97,7 +97,7 @@ class DeviceIcon extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -119,7 +119,7 @@ class DeviceIcon extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOrganizationId($var)
+    public function setOrganizationId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->organization_id = $var;
@@ -133,7 +133,7 @@ class DeviceIcon extends \Google\Protobuf\Internal\Message
      */
     public function getCreatedBy()
     {
-        return isset($this->created_by) ? $this->created_by : 0;
+        return isset($this->created_by) ? $this->created_by : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCreatedBy()
@@ -151,7 +151,7 @@ class DeviceIcon extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreatedBy($var)
+    public function setCreatedBy(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->created_by = $var;
@@ -165,7 +165,7 @@ class DeviceIcon extends \Google\Protobuf\Internal\Message
      */
     public function getUpdatedBy()
     {
-        return isset($this->updated_by) ? $this->updated_by : 0;
+        return isset($this->updated_by) ? $this->updated_by : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasUpdatedBy()
@@ -183,7 +183,7 @@ class DeviceIcon extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setUpdatedBy($var)
+    public function setUpdatedBy(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->updated_by = $var;
@@ -205,7 +205,7 @@ class DeviceIcon extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setIconType($var)
+    public function setIconType(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->icon_type = $var;
@@ -227,7 +227,7 @@ class DeviceIcon extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setImageType($var)
+    public function setImageType(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->image_type = $var;
@@ -249,9 +249,9 @@ class DeviceIcon extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -281,9 +281,8 @@ class DeviceIcon extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Device\DeviceIcon\Image $var
      * @return $this
      */
-    public function setImages($var)
+    public function setImages(\Fatehan\Device\DeviceIcon\Image|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Device\DeviceIcon\Image::class);
         $this->images = $var;
 
         return $this;
@@ -303,9 +302,8 @@ class DeviceIcon extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsDefault($var)
+    public function setIsDefault(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_default = $var;
 
         return $this;
@@ -335,9 +333,8 @@ class DeviceIcon extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -367,9 +364,8 @@ class DeviceIcon extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;

@@ -82,9 +82,8 @@ class EventData extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setContinuous($var)
+    public function setContinuous(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->continuous = $var;
 
         return $this;
@@ -104,9 +103,8 @@ class EventData extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setBlindFilter($var)
+    public function setBlindFilter(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->blind_filter = $var;
 
         return $this;
@@ -136,9 +134,8 @@ class EventData extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Notify\AlertNotify $var
      * @return $this
      */
-    public function setNotify($var)
+    public function setNotify(\Fatehan\Notify\AlertNotify|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Notify\AlertNotify::class);
         $this->notify = $var;
 
         return $this;
@@ -146,7 +143,7 @@ class EventData extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.notifies.TriggerGate trigger_gate = 4 [json_name = "trigger_gate"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Notify\TriggerGate}
      */
     public function getTriggerGate()
     {
@@ -155,10 +152,10 @@ class EventData extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.notifies.TriggerGate trigger_gate = 4 [json_name = "trigger_gate"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Notify\TriggerGate}
      * @return $this
      */
-    public function setTriggerGate($var)
+    public function setTriggerGate(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Notify\TriggerGate::class);
         $this->trigger_gate = $var;
@@ -180,7 +177,7 @@ class EventData extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Notify\MuteMask[] $var
      * @return $this
      */
-    public function setMuteMask($var)
+    public function setMuteMask(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Notify\MuteMask::class);
         $this->mute_mask = $arr;
@@ -202,7 +199,7 @@ class EventData extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Notify\EventModule[] $var
      * @return $this
      */
-    public function setEventModules($var)
+    public function setEventModules(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Notify\EventModule::class);
         $this->event_modules = $arr;
@@ -212,7 +209,7 @@ class EventData extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.notifies.Via via = 7 [json_name = "via", (.buf.validate.field) = {</code>
-     * @return RepeatedField<int>
+     * @return RepeatedField<int> one of the values in {@see \Fatehan\Notify\Via}
      */
     public function getVia()
     {
@@ -221,10 +218,10 @@ class EventData extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.notifies.Via via = 7 [json_name = "via", (.buf.validate.field) = {</code>
-     * @param int[] $var
+     * @param int[] $var one of the values in {@see \Fatehan\Notify\Via}
      * @return $this
      */
-    public function setVia($var)
+    public function setVia(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Fatehan\Notify\Via::class);
         $this->via = $arr;
@@ -238,7 +235,7 @@ class EventData extends \Google\Protobuf\Internal\Message
      */
     public function getTemplateId()
     {
-        return isset($this->template_id) ? $this->template_id : 0;
+        return isset($this->template_id) ? $this->template_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasTemplateId()
@@ -256,7 +253,7 @@ class EventData extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTemplateId($var)
+    public function setTemplateId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->template_id = $var;

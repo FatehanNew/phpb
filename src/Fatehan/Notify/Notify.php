@@ -92,9 +92,9 @@ class Notify extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTitle($var)
+    public function setTitle(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->title = $var;
 
         return $this;
@@ -124,9 +124,9 @@ class Notify extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setBody($var)
+    public function setBody(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->body = $var;
 
         return $this;
@@ -138,7 +138,7 @@ class Notify extends \Google\Protobuf\Internal\Message
      */
     public function getSound()
     {
-        return isset($this->sound) ? $this->sound : 0;
+        return isset($this->sound) ? $this->sound : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasSound()
@@ -156,7 +156,7 @@ class Notify extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setSound($var)
+    public function setSound(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->sound = $var;
@@ -188,9 +188,9 @@ class Notify extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setImage($var)
+    public function setImage(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->image = $var;
 
         return $this;
@@ -220,9 +220,9 @@ class Notify extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setIcon($var)
+    public function setIcon(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->icon = $var;
 
         return $this;
@@ -252,9 +252,8 @@ class Notify extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Identity\Receiver $var
      * @return $this
      */
-    public function setReceiver($var)
+    public function setReceiver(\Fatehan\Identity\Receiver|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Identity\Receiver::class);
         $this->receiver = $var;
 
         return $this;
@@ -266,7 +265,7 @@ class Notify extends \Google\Protobuf\Internal\Message
      */
     public function getObjectId()
     {
-        return isset($this->object_id) ? $this->object_id : 0;
+        return isset($this->object_id) ? $this->object_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasObjectId()
@@ -284,7 +283,7 @@ class Notify extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setObjectId($var)
+    public function setObjectId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->object_id = $var;
@@ -294,7 +293,7 @@ class Notify extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.notifies.ObjectType object_type = 8 [json_name = "object_type"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Notify\ObjectType}
      */
     public function getObjectType()
     {
@@ -303,10 +302,10 @@ class Notify extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.notifies.ObjectType object_type = 8 [json_name = "object_type"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Notify\ObjectType}
      * @return $this
      */
-    public function setObjectType($var)
+    public function setObjectType(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Notify\ObjectType::class);
         $this->object_type = $var;
@@ -338,9 +337,8 @@ class Notify extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setTimestamp($var)
+    public function setTimestamp(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->timestamp = $var;
 
         return $this;
@@ -360,7 +358,7 @@ class Notify extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setData($var)
+    public function setData(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
         $this->data = $arr;

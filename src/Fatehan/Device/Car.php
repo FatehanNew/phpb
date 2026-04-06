@@ -172,7 +172,7 @@ class Car extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -194,7 +194,7 @@ class Car extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOrganizationId($var)
+    public function setOrganizationId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->organization_id = $var;
@@ -208,7 +208,7 @@ class Car extends \Google\Protobuf\Internal\Message
      */
     public function getCreatedBy()
     {
-        return isset($this->created_by) ? $this->created_by : 0;
+        return isset($this->created_by) ? $this->created_by : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCreatedBy()
@@ -226,7 +226,7 @@ class Car extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreatedBy($var)
+    public function setCreatedBy(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->created_by = $var;
@@ -240,7 +240,7 @@ class Car extends \Google\Protobuf\Internal\Message
      */
     public function getUpdatedBy()
     {
-        return isset($this->updated_by) ? $this->updated_by : 0;
+        return isset($this->updated_by) ? $this->updated_by : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasUpdatedBy()
@@ -258,7 +258,7 @@ class Car extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setUpdatedBy($var)
+    public function setUpdatedBy(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->updated_by = $var;
@@ -280,9 +280,9 @@ class Car extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -312,9 +312,9 @@ class Car extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPicture($var)
+    public function setPicture(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->picture = $var;
 
         return $this;
@@ -344,9 +344,9 @@ class Car extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPlateNumber($var)
+    public function setPlateNumber(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->plate_number = $var;
 
         return $this;
@@ -358,7 +358,7 @@ class Car extends \Google\Protobuf\Internal\Message
      */
     public function getCarGroupId()
     {
-        return isset($this->car_group_id) ? $this->car_group_id : 0;
+        return isset($this->car_group_id) ? $this->car_group_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCarGroupId()
@@ -376,7 +376,7 @@ class Car extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCarGroupId($var)
+    public function setCarGroupId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->car_group_id = $var;
@@ -390,7 +390,7 @@ class Car extends \Google\Protobuf\Internal\Message
      */
     public function getCarType()
     {
-        return isset($this->car_type) ? $this->car_type : 0;
+        return isset($this->car_type) ? $this->car_type : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCarType()
@@ -408,7 +408,7 @@ class Car extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCarType($var)
+    public function setCarType(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->car_type = $var;
@@ -440,9 +440,9 @@ class Car extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCode($var)
+    public function setCode(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->code = $var;
 
         return $this;
@@ -454,7 +454,7 @@ class Car extends \Google\Protobuf\Internal\Message
      */
     public function getTonnage()
     {
-        return isset($this->tonnage) ? $this->tonnage : 0;
+        return isset($this->tonnage) ? $this->tonnage : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasTonnage()
@@ -472,7 +472,7 @@ class Car extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTonnage($var)
+    public function setTonnage(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->tonnage = $var;
@@ -486,7 +486,7 @@ class Car extends \Google\Protobuf\Internal\Message
      */
     public function getMaxSpeed()
     {
-        return isset($this->max_speed) ? $this->max_speed : 0;
+        return isset($this->max_speed) ? $this->max_speed : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasMaxSpeed()
@@ -504,7 +504,7 @@ class Car extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setMaxSpeed($var)
+    public function setMaxSpeed(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->max_speed = $var;
@@ -536,9 +536,9 @@ class Car extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setVin($var)
+    public function setVin(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->vin = $var;
 
         return $this;
@@ -568,9 +568,9 @@ class Car extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setEngineNumber($var)
+    public function setEngineNumber(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->engine_number = $var;
 
         return $this;
@@ -600,9 +600,9 @@ class Car extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setChassisNumber($var)
+    public function setChassisNumber(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->chassis_number = $var;
 
         return $this;
@@ -632,7 +632,7 @@ class Car extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setModelYear($var)
+    public function setModelYear(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->model_year = $var;
@@ -664,7 +664,7 @@ class Car extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelUsage($var)
+    public function setFuelUsage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_usage = $var;
@@ -696,7 +696,7 @@ class Car extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelUsagePerHour($var)
+    public function setFuelUsagePerHour(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_usage_per_hour = $var;
@@ -728,9 +728,9 @@ class Car extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFuelType($var)
+    public function setFuelType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->fuel_type = $var;
 
         return $this;
@@ -760,7 +760,7 @@ class Car extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelCapacity($var)
+    public function setFuelCapacity(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_capacity = $var;
@@ -792,9 +792,9 @@ class Car extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDescription($var)
+    public function setDescription(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->description = $var;
 
         return $this;
@@ -824,9 +824,8 @@ class Car extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setGuarantyExpirationDate($var)
+    public function setGuarantyExpirationDate(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->guaranty_expiration_date = $var;
 
         return $this;
@@ -838,7 +837,7 @@ class Car extends \Google\Protobuf\Internal\Message
      */
     public function getGuarantyExpirationKm()
     {
-        return isset($this->guaranty_expiration_km) ? $this->guaranty_expiration_km : 0;
+        return isset($this->guaranty_expiration_km) ? $this->guaranty_expiration_km : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasGuarantyExpirationKm()
@@ -856,7 +855,7 @@ class Car extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setGuarantyExpirationKm($var)
+    public function setGuarantyExpirationKm(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->guaranty_expiration_km = $var;
@@ -888,9 +887,9 @@ class Car extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setColor($var)
+    public function setColor(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->color = $var;
 
         return $this;
@@ -920,9 +919,8 @@ class Car extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -952,9 +950,8 @@ class Car extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;

@@ -72,7 +72,7 @@ class JTT808EventMediaDataUpload extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMediaId($var)
+    public function setMediaId(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->media_id = $var;
@@ -94,7 +94,7 @@ class JTT808EventMediaDataUpload extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMediaType($var)
+    public function setMediaType(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->media_type = $var;
@@ -116,7 +116,7 @@ class JTT808EventMediaDataUpload extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMediaFormat($var)
+    public function setMediaFormat(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->media_format = $var;
@@ -138,7 +138,7 @@ class JTT808EventMediaDataUpload extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEventItemCode($var)
+    public function setEventItemCode(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->event_item_code = $var;
@@ -160,7 +160,7 @@ class JTT808EventMediaDataUpload extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setChannelId($var)
+    public function setChannelId(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->channel_id = $var;
@@ -182,9 +182,9 @@ class JTT808EventMediaDataUpload extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPayload($var)
+    public function setPayload(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->payload = $var;
 
         return $this;

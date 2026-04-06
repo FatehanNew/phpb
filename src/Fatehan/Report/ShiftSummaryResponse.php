@@ -67,7 +67,7 @@ class ShiftSummaryResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Report\ShiftSummaryResponse\Summary[] $var
      * @return $this
      */
-    public function setReports($var)
+    public function setReports(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Report\ShiftSummaryResponse\Summary::class);
         $this->reports = $arr;
@@ -89,7 +89,7 @@ class ShiftSummaryResponse extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTripRecords($var)
+    public function setTripRecords(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->trip_records = $var;
@@ -111,7 +111,7 @@ class ShiftSummaryResponse extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTripMilliseconds($var)
+    public function setTripMilliseconds(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->trip_milliseconds = $var;
@@ -133,9 +133,9 @@ class ShiftSummaryResponse extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setStartedAt($var)
+    public function setStartedAt(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->started_at = $var;
 
         return $this;
@@ -155,9 +155,9 @@ class ShiftSummaryResponse extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFinishedAt($var)
+    public function setFinishedAt(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->finished_at = $var;
 
         return $this;

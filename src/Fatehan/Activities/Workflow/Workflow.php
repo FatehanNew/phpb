@@ -82,7 +82,7 @@ class Workflow extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -104,7 +104,7 @@ class Workflow extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOrganizationId($var)
+    public function setOrganizationId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->organization_id = $var;
@@ -126,7 +126,7 @@ class Workflow extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreatedBy($var)
+    public function setCreatedBy(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->created_by = $var;
@@ -148,9 +148,9 @@ class Workflow extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -180,9 +180,9 @@ class Workflow extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDescription($var)
+    public function setDescription(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->description = $var;
 
         return $this;
@@ -212,9 +212,8 @@ class Workflow extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Activities\Workflow\Flow $var
      * @return $this
      */
-    public function setFlow($var)
+    public function setFlow(\Fatehan\Activities\Workflow\Flow|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Activities\Workflow\Flow::class);
         $this->flow = $var;
 
         return $this;
@@ -244,9 +243,8 @@ class Workflow extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -276,9 +274,8 @@ class Workflow extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;

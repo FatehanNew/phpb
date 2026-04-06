@@ -172,9 +172,8 @@ class Cisf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection1PresenceOfFluidInTheDownpipe($var)
+    public function setSection1PresenceOfFluidInTheDownpipe(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section1_presence_of_fluid_in_the_downpipe = $var;
 
         return $this;
@@ -204,9 +203,8 @@ class Cisf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection1Filled($var)
+    public function setSection1Filled(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section1_filled = $var;
 
         return $this;
@@ -236,9 +234,8 @@ class Cisf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection1Overfilled($var)
+    public function setSection1Overfilled(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section1_overfilled = $var;
 
         return $this;
@@ -268,9 +265,8 @@ class Cisf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection2PresenceOfFluidInTheDownpipe($var)
+    public function setSection2PresenceOfFluidInTheDownpipe(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section2_presence_of_fluid_in_the_downpipe = $var;
 
         return $this;
@@ -300,9 +296,8 @@ class Cisf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection2Filled($var)
+    public function setSection2Filled(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section2_filled = $var;
 
         return $this;
@@ -332,9 +327,8 @@ class Cisf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection2Overfilled($var)
+    public function setSection2Overfilled(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section2_overfilled = $var;
 
         return $this;
@@ -364,9 +358,8 @@ class Cisf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection3PresenceOfFluidInTheDownpipe($var)
+    public function setSection3PresenceOfFluidInTheDownpipe(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section3_presence_of_fluid_in_the_downpipe = $var;
 
         return $this;
@@ -396,9 +389,8 @@ class Cisf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection3Filled($var)
+    public function setSection3Filled(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section3_filled = $var;
 
         return $this;
@@ -428,9 +420,8 @@ class Cisf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection3Overfilled($var)
+    public function setSection3Overfilled(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section3_overfilled = $var;
 
         return $this;
@@ -460,9 +451,8 @@ class Cisf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection4PresenceOfFluidInTheDownpipe($var)
+    public function setSection4PresenceOfFluidInTheDownpipe(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section4_presence_of_fluid_in_the_downpipe = $var;
 
         return $this;
@@ -492,9 +482,8 @@ class Cisf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection4Filled($var)
+    public function setSection4Filled(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section4_filled = $var;
 
         return $this;
@@ -524,9 +513,8 @@ class Cisf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection4Overfilled($var)
+    public function setSection4Overfilled(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section4_overfilled = $var;
 
         return $this;
@@ -556,9 +544,8 @@ class Cisf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection5PresenceOfFluidInTheDownpipe($var)
+    public function setSection5PresenceOfFluidInTheDownpipe(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section5_presence_of_fluid_in_the_downpipe = $var;
 
         return $this;
@@ -588,9 +575,8 @@ class Cisf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection5Filled($var)
+    public function setSection5Filled(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section5_filled = $var;
 
         return $this;
@@ -620,9 +606,8 @@ class Cisf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection5Overfilled($var)
+    public function setSection5Overfilled(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section5_overfilled = $var;
 
         return $this;
@@ -652,9 +637,8 @@ class Cisf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection6PresenceOfFluidInTheDownpipe($var)
+    public function setSection6PresenceOfFluidInTheDownpipe(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section6_presence_of_fluid_in_the_downpipe = $var;
 
         return $this;
@@ -684,9 +668,8 @@ class Cisf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection6Filled($var)
+    public function setSection6Filled(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section6_filled = $var;
 
         return $this;
@@ -716,9 +699,8 @@ class Cisf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection6Overfilled($var)
+    public function setSection6Overfilled(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section6_overfilled = $var;
 
         return $this;
@@ -748,9 +730,8 @@ class Cisf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection7PresenceOfFluidInTheDownpipe($var)
+    public function setSection7PresenceOfFluidInTheDownpipe(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section7_presence_of_fluid_in_the_downpipe = $var;
 
         return $this;
@@ -780,9 +761,8 @@ class Cisf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection7Filled($var)
+    public function setSection7Filled(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section7_filled = $var;
 
         return $this;
@@ -812,9 +792,8 @@ class Cisf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection7Overfilled($var)
+    public function setSection7Overfilled(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section7_overfilled = $var;
 
         return $this;
@@ -844,9 +823,8 @@ class Cisf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection8PresenceOfFluidInTheDownpipe($var)
+    public function setSection8PresenceOfFluidInTheDownpipe(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section8_presence_of_fluid_in_the_downpipe = $var;
 
         return $this;
@@ -876,9 +854,8 @@ class Cisf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection8Filled($var)
+    public function setSection8Filled(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section8_filled = $var;
 
         return $this;
@@ -908,9 +885,8 @@ class Cisf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection8Overfilled($var)
+    public function setSection8Overfilled(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section8_overfilled = $var;
 
         return $this;

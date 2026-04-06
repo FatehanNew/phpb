@@ -92,7 +92,7 @@ class Event extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -114,7 +114,7 @@ class Event extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->user_id = $var;
@@ -136,7 +136,7 @@ class Event extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -158,7 +158,7 @@ class Event extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOrganizationId($var)
+    public function setOrganizationId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->organization_id = $var;
@@ -172,7 +172,7 @@ class Event extends \Google\Protobuf\Internal\Message
      */
     public function getCreatedBy()
     {
-        return isset($this->created_by) ? $this->created_by : 0;
+        return isset($this->created_by) ? $this->created_by : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCreatedBy()
@@ -190,7 +190,7 @@ class Event extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreatedBy($var)
+    public function setCreatedBy(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->created_by = $var;
@@ -212,9 +212,9 @@ class Event extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -244,9 +244,8 @@ class Event extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Notify\EventData $var
      * @return $this
      */
-    public function setEventData($var)
+    public function setEventData(\Fatehan\Notify\EventData|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Notify\EventData::class);
         $this->event_data = $var;
 
         return $this;
@@ -266,9 +265,8 @@ class Event extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setStatus($var)
+    public function setStatus(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->status = $var;
 
         return $this;
@@ -298,9 +296,8 @@ class Event extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -330,9 +327,8 @@ class Event extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;

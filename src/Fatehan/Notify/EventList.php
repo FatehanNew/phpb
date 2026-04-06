@@ -67,7 +67,7 @@ class EventList extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTotal($var)
+    public function setTotal(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->total = $var;
@@ -89,7 +89,7 @@ class EventList extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCurrentPage($var)
+    public function setCurrentPage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->current_page = $var;
@@ -111,7 +111,7 @@ class EventList extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLastPage($var)
+    public function setLastPage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->last_page = $var;
@@ -133,7 +133,7 @@ class EventList extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPerPage($var)
+    public function setPerPage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->per_page = $var;
@@ -155,7 +155,7 @@ class EventList extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Notify\Event[] $var
      * @return $this
      */
-    public function setEvents($var)
+    public function setEvents(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Notify\Event::class);
         $this->events = $arr;

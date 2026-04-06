@@ -94,9 +94,8 @@ class AuthState extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Identity\Authentication\AuthenticationStrategy $var
      * @return $this
      */
-    public function setStrategy($var)
+    public function setStrategy(\Fatehan\Identity\Authentication\AuthenticationStrategy|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Identity\Authentication\AuthenticationStrategy::class);
         $this->strategy = $var;
 
         return $this;
@@ -104,7 +103,7 @@ class AuthState extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.identities.AuthenticationMethod authentication = 2 [json_name = "authentication"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Identity\Authentication\AuthenticationMethod}
      */
     public function getAuthentication()
     {
@@ -113,10 +112,10 @@ class AuthState extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.identities.AuthenticationMethod authentication = 2 [json_name = "authentication"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Identity\Authentication\AuthenticationMethod}
      * @return $this
      */
-    public function setAuthentication($var)
+    public function setAuthentication(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Identity\Authentication\AuthenticationMethod::class);
         $this->authentication = $var;
@@ -148,9 +147,8 @@ class AuthState extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setAuthenticated($var)
+    public function setAuthenticated(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->authenticated = $var;
 
         return $this;
@@ -158,7 +156,7 @@ class AuthState extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.identities.AuthenticationMethod verification = 4 [json_name = "verification"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Identity\Authentication\AuthenticationMethod}
      */
     public function getVerification()
     {
@@ -167,10 +165,10 @@ class AuthState extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.identities.AuthenticationMethod verification = 4 [json_name = "verification"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Identity\Authentication\AuthenticationMethod}
      * @return $this
      */
-    public function setVerification($var)
+    public function setVerification(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Identity\Authentication\AuthenticationMethod::class);
         $this->verification = $var;
@@ -202,9 +200,8 @@ class AuthState extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setVerified($var)
+    public function setVerified(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->verified = $var;
 
         return $this;
@@ -224,9 +221,9 @@ class AuthState extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCsrfToken($var)
+    public function setCsrfToken(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->csrf_token = $var;
 
         return $this;
@@ -256,9 +253,8 @@ class AuthState extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Identity\Authentication\Identity $var
      * @return $this
      */
-    public function setIdentity($var)
+    public function setIdentity(\Fatehan\Identity\Authentication\Identity|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Identity\Authentication\Identity::class);
         $this->identity = $var;
 
         return $this;
@@ -288,9 +284,8 @@ class AuthState extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Identity\Authentication\Identity $var
      * @return $this
      */
-    public function setGoogle($var)
+    public function setGoogle(\Fatehan\Identity\Authentication\Identity|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Identity\Authentication\Identity::class);
         $this->google = $var;
 
         return $this;

@@ -72,9 +72,8 @@ class DailyTrafficRequest extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setStartedAt($var)
+    public function setStartedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->started_at = $var;
 
         return $this;
@@ -104,9 +103,8 @@ class DailyTrafficRequest extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setFinishedAt($var)
+    public function setFinishedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->finished_at = $var;
 
         return $this;
@@ -126,9 +124,8 @@ class DailyTrafficRequest extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setBetween($var)
+    public function setBetween(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->between = $var;
 
         return $this;
@@ -148,7 +145,7 @@ class DailyTrafficRequest extends \Google\Protobuf\Internal\Message
      * @param int[]|string[] $var
      * @return $this
      */
-    public function setDeviceIds($var)
+    public function setDeviceIds(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT64);
         $this->device_ids = $arr;

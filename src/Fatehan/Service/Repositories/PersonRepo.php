@@ -67,9 +67,8 @@ class PersonRepo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Identity\Person $var
      * @return $this
      */
-    public function setPerson($var)
+    public function setPerson(\Fatehan\Identity\Person|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Identity\Person::class);
         $this->person = $var;
 
         return $this;
@@ -99,9 +98,8 @@ class PersonRepo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Financial\Wallet $var
      * @return $this
      */
-    public function setWallet($var)
+    public function setWallet(\Fatehan\Financial\Wallet|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Financial\Wallet::class);
         $this->wallet = $var;
 
         return $this;
@@ -131,9 +129,8 @@ class PersonRepo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Identity\Organization $var
      * @return $this
      */
-    public function setOrganization($var)
+    public function setOrganization(\Fatehan\Identity\Organization|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Identity\Organization::class);
         $this->organization = $var;
 
         return $this;

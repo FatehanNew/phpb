@@ -47,7 +47,7 @@ class AttendanceResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Report\AttendanceResponse\Attendance[] $var
      * @return $this
      */
-    public function setReports($var)
+    public function setReports(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Report\AttendanceResponse\Attendance::class);
         $this->reports = $arr;

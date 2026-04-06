@@ -47,7 +47,7 @@ class TripsResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Trip\FusionTrip[] $var
      * @return $this
      */
-    public function setReports($var)
+    public function setReports(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Trip\FusionTrip::class);
         $this->reports = $arr;

@@ -47,7 +47,7 @@ class ConditionList extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Notify\UserDeviceAlert\Condition[] $var
      * @return $this
      */
-    public function setCondition($var)
+    public function setCondition(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Notify\UserDeviceAlert\Condition::class);
         $this->condition = $arr;

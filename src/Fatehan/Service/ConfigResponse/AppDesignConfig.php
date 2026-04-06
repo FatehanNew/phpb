@@ -137,9 +137,9 @@ class AppDesignConfig extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setAppName($var)
+    public function setAppName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->app_name = $var;
 
         return $this;
@@ -159,9 +159,9 @@ class AppDesignConfig extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setLogo($var)
+    public function setLogo(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->logo = $var;
 
         return $this;
@@ -181,9 +181,9 @@ class AppDesignConfig extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setWebBackground($var)
+    public function setWebBackground(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->web_background = $var;
 
         return $this;
@@ -203,9 +203,9 @@ class AppDesignConfig extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPrimaryColor($var)
+    public function setPrimaryColor(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->primary_color = $var;
 
         return $this;
@@ -225,9 +225,9 @@ class AppDesignConfig extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setAppLogo($var)
+    public function setAppLogo(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->app_logo = $var;
 
         return $this;
@@ -247,9 +247,9 @@ class AppDesignConfig extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setGoftino($var)
+    public function setGoftino(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->goftino = $var;
 
         return $this;
@@ -269,9 +269,9 @@ class AppDesignConfig extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setAppBackground($var)
+    public function setAppBackground(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->app_background = $var;
 
         return $this;
@@ -291,9 +291,9 @@ class AppDesignConfig extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setAddress($var)
+    public function setAddress(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->address = $var;
 
         return $this;
@@ -313,9 +313,9 @@ class AppDesignConfig extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPhone($var)
+    public function setPhone(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->phone = $var;
 
         return $this;
@@ -335,9 +335,9 @@ class AppDesignConfig extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTelegram($var)
+    public function setTelegram(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->telegram = $var;
 
         return $this;
@@ -357,9 +357,9 @@ class AppDesignConfig extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPrimaryIconColor($var)
+    public function setPrimaryIconColor(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->primary_icon_color = $var;
 
         return $this;
@@ -379,9 +379,9 @@ class AppDesignConfig extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSecondaryIconColor($var)
+    public function setSecondaryIconColor(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->secondary_icon_color = $var;
 
         return $this;
@@ -401,9 +401,9 @@ class AppDesignConfig extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDefaultRoleId($var)
+    public function setDefaultRoleId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->default_role_id = $var;
 
         return $this;
@@ -423,9 +423,9 @@ class AppDesignConfig extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setEnableRegistration($var)
+    public function setEnableRegistration(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->enable_registration = $var;
 
         return $this;
@@ -445,9 +445,9 @@ class AppDesignConfig extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDefaultRegisterOrganizationId($var)
+    public function setDefaultRegisterOrganizationId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->default_register_organization_id = $var;
 
         return $this;
@@ -467,9 +467,9 @@ class AppDesignConfig extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setGoogleClientId($var)
+    public function setGoogleClientId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->google_client_id = $var;
 
         return $this;
@@ -489,9 +489,9 @@ class AppDesignConfig extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTelegramBotUsername($var)
+    public function setTelegramBotUsername(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->telegram_bot_username = $var;
 
         return $this;
@@ -511,9 +511,9 @@ class AppDesignConfig extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMainDomain($var)
+    public function setMainDomain(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->main_domain = $var;
 
         return $this;
@@ -533,9 +533,9 @@ class AppDesignConfig extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFavicon($var)
+    public function setFavicon(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->favicon = $var;
 
         return $this;

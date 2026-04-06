@@ -47,7 +47,7 @@ class ShiftResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Report\ShiftResponse\Shift[] $var
      * @return $this
      */
-    public function setReports($var)
+    public function setReports(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Report\ShiftResponse\Shift::class);
         $this->reports = $arr;

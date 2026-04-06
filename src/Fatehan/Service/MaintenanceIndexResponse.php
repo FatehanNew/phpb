@@ -72,9 +72,8 @@ class MaintenanceIndexResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Service\Repositories\DeviceRepo $var
      * @return $this
      */
-    public function setDevice($var)
+    public function setDevice(\Fatehan\Service\Repositories\DeviceRepo|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Service\Repositories\DeviceRepo::class);
         $this->device = $var;
 
         return $this;
@@ -94,7 +93,7 @@ class MaintenanceIndexResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Device\Maintenance\Maintenance[] $var
      * @return $this
      */
-    public function setMaintenance($var)
+    public function setMaintenance(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Device\Maintenance\Maintenance::class);
         $this->maintenance = $arr;
@@ -126,9 +125,8 @@ class MaintenanceIndexResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Service\MaintenanceIndexResponse\Statistics $var
      * @return $this
      */
-    public function setStatistics($var)
+    public function setStatistics(\Fatehan\Service\MaintenanceIndexResponse\Statistics|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Service\MaintenanceIndexResponse\Statistics::class);
         $this->statistics = $var;
 
         return $this;
@@ -148,7 +146,7 @@ class MaintenanceIndexResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCost($var)
+    public function setCost(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->cost = $var;

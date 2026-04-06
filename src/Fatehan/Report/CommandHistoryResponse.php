@@ -62,7 +62,7 @@ class CommandHistoryResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRecords($var)
+    public function setRecords(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->records = $var;
@@ -84,7 +84,7 @@ class CommandHistoryResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCost($var)
+    public function setCost(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->cost = $var;
@@ -106,7 +106,7 @@ class CommandHistoryResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPage($var)
+    public function setPage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->page = $var;
@@ -128,7 +128,7 @@ class CommandHistoryResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\Message\Command[] $var
      * @return $this
      */
-    public function setList($var)
+    public function setList(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Packet\Message\Command::class);
         $this->list = $arr;

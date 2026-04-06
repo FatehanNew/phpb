@@ -57,7 +57,7 @@ class TrialLog extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -79,7 +79,7 @@ class TrialLog extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setImei($var)
+    public function setImei(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->imei = $var;
@@ -111,9 +111,8 @@ class TrialLog extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;

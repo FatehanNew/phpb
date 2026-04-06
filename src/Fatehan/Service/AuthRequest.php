@@ -47,9 +47,9 @@ class AuthRequest extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCredential($var)
+    public function setCredential(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->credential = $var;
 
         return $this;

@@ -117,9 +117,9 @@ class Notification extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUuid($var)
+    public function setUuid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->uuid = $var;
 
         return $this;
@@ -139,7 +139,7 @@ class Notification extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->user_id = $var;
@@ -153,7 +153,7 @@ class Notification extends \Google\Protobuf\Internal\Message
      */
     public function getObjectId()
     {
-        return isset($this->object_id) ? $this->object_id : 0;
+        return isset($this->object_id) ? $this->object_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasObjectId()
@@ -171,7 +171,7 @@ class Notification extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setObjectId($var)
+    public function setObjectId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->object_id = $var;
@@ -181,7 +181,7 @@ class Notification extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.notifies.ObjectType object_type = 4 [json_name = "object_type"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Notify\ObjectType}
      */
     public function getObjectType()
     {
@@ -200,10 +200,10 @@ class Notification extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.notifies.ObjectType object_type = 4 [json_name = "object_type"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Notify\ObjectType}
      * @return $this
      */
-    public function setObjectType($var)
+    public function setObjectType(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Notify\ObjectType::class);
         $this->object_type = $var;
@@ -225,9 +225,9 @@ class Notification extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTitle($var)
+    public function setTitle(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->title = $var;
 
         return $this;
@@ -257,9 +257,9 @@ class Notification extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setBody($var)
+    public function setBody(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->body = $var;
 
         return $this;
@@ -271,7 +271,7 @@ class Notification extends \Google\Protobuf\Internal\Message
      */
     public function getAlertId()
     {
-        return isset($this->alert_id) ? $this->alert_id : 0;
+        return isset($this->alert_id) ? $this->alert_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasAlertId()
@@ -289,7 +289,7 @@ class Notification extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setAlertId($var)
+    public function setAlertId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->alert_id = $var;
@@ -299,7 +299,7 @@ class Notification extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.Alert alert = 8 [json_name = "alert"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\Alert}
      */
     public function getAlert()
     {
@@ -308,10 +308,10 @@ class Notification extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.Alert alert = 8 [json_name = "alert"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\Alert}
      * @return $this
      */
-    public function setAlert($var)
+    public function setAlert(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\Alert::class);
         $this->alert = $var;
@@ -321,7 +321,7 @@ class Notification extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.notifies.Via via = 9 [json_name = "via"];</code>
-     * @return RepeatedField<int>
+     * @return RepeatedField<int> one of the values in {@see \Fatehan\Notify\Via}
      */
     public function getVia()
     {
@@ -330,10 +330,10 @@ class Notification extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.notifies.Via via = 9 [json_name = "via"];</code>
-     * @param int[] $var
+     * @param int[] $var one of the values in {@see \Fatehan\Notify\Via}
      * @return $this
      */
-    public function setVia($var)
+    public function setVia(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Fatehan\Notify\Via::class);
         $this->via = $arr;
@@ -355,7 +355,7 @@ class Notification extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setData($var)
+    public function setData(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
         $this->data = $arr;
@@ -387,9 +387,9 @@ class Notification extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setImage($var)
+    public function setImage(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->image = $var;
 
         return $this;
@@ -401,7 +401,7 @@ class Notification extends \Google\Protobuf\Internal\Message
      */
     public function getSound()
     {
-        return isset($this->sound) ? $this->sound : 0;
+        return isset($this->sound) ? $this->sound : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasSound()
@@ -419,7 +419,7 @@ class Notification extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setSound($var)
+    public function setSound(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->sound = $var;
@@ -451,9 +451,8 @@ class Notification extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -483,9 +482,8 @@ class Notification extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setReadAt($var)
+    public function setReadAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->read_at = $var;
 
         return $this;
@@ -497,7 +495,7 @@ class Notification extends \Google\Protobuf\Internal\Message
      */
     public function getUserAlertId()
     {
-        return isset($this->user_alert_id) ? $this->user_alert_id : 0;
+        return isset($this->user_alert_id) ? $this->user_alert_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasUserAlertId()
@@ -515,7 +513,7 @@ class Notification extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setUserAlertId($var)
+    public function setUserAlertId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->user_alert_id = $var;

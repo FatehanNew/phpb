@@ -47,7 +47,7 @@ class EventTemplateDestroyRequest extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setEventId($var)
+    public function setEventId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->event_id = $var;

@@ -77,7 +77,7 @@ class JTTQueryFileRequest extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLogicalNumber($var)
+    public function setLogicalNumber(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->logical_number = $var;
@@ -109,9 +109,8 @@ class JTTQueryFileRequest extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setStartsAt($var)
+    public function setStartsAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->starts_at = $var;
 
         return $this;
@@ -141,9 +140,8 @@ class JTTQueryFileRequest extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setFinishesAt($var)
+    public function setFinishesAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->finishes_at = $var;
 
         return $this;
@@ -163,7 +161,7 @@ class JTTQueryFileRequest extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setAlarmSign($var)
+    public function setAlarmSign(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->alarm_sign = $var;
@@ -185,7 +183,7 @@ class JTTQueryFileRequest extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAudioVideoType($var)
+    public function setAudioVideoType(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->audio_video_type = $var;
@@ -207,7 +205,7 @@ class JTTQueryFileRequest extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setStreamType($var)
+    public function setStreamType(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->stream_type = $var;
@@ -229,7 +227,7 @@ class JTTQueryFileRequest extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMemoryType($var)
+    public function setMemoryType(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->memory_type = $var;

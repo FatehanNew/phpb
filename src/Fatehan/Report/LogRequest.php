@@ -77,7 +77,7 @@ class LogRequest extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -109,9 +109,8 @@ class LogRequest extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setStartedAt($var)
+    public function setStartedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->started_at = $var;
 
         return $this;
@@ -141,9 +140,8 @@ class LogRequest extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setFinishedAt($var)
+    public function setFinishedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->finished_at = $var;
 
         return $this;
@@ -163,7 +161,7 @@ class LogRequest extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setPage($var)
+    public function setPage(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->page = $var;
@@ -185,7 +183,7 @@ class LogRequest extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setLimit($var)
+    public function setLimit(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->limit = $var;
@@ -207,7 +205,7 @@ class LogRequest extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setSort($var)
+    public function setSort(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->sort = $var;
@@ -239,7 +237,7 @@ class LogRequest extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setType($var)
+    public function setType(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->type = $var;

@@ -47,9 +47,9 @@ class FormulaEvent extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFormula($var)
+    public function setFormula(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->formula = $var;
 
         return $this;

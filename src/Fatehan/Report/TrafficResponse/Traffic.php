@@ -60,7 +60,7 @@ class Traffic extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.reports.TrafficResponse.Traffic.EventType type = 1;</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Report\TrafficResponse\Traffic\EventType}
      */
     public function getType()
     {
@@ -69,10 +69,10 @@ class Traffic extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.reports.TrafficResponse.Traffic.EventType type = 1;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Report\TrafficResponse\Traffic\EventType}
      * @return $this
      */
-    public function setType($var)
+    public function setType(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Report\TrafficResponse\Traffic\EventType::class);
         $this->type = $var;
@@ -104,9 +104,9 @@ class Traffic extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setArea($var)
+    public function setArea(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->area = $var;
 
         return $this;
@@ -136,9 +136,8 @@ class Traffic extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setDateTime($var)
+    public function setDateTime(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->date_time = $var;
 
         return $this;
@@ -158,7 +157,7 @@ class Traffic extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setAreaId($var)
+    public function setAreaId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->area_id = $var;
@@ -180,7 +179,7 @@ class Traffic extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -212,7 +211,7 @@ class Traffic extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMileage($var)
+    public function setMileage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->mileage = $var;

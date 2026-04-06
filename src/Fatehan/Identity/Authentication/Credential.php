@@ -82,7 +82,7 @@ class Credential extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -104,7 +104,7 @@ class Credential extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setIdentityId($var)
+    public function setIdentityId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->identity_id = $var;
@@ -126,7 +126,7 @@ class Credential extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setExpires($var)
+    public function setExpires(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->expires = $var;
@@ -148,7 +148,7 @@ class Credential extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreated($var)
+    public function setCreated(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->created = $var;
@@ -170,7 +170,7 @@ class Credential extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setToken($var)
+    public function setToken(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->token = $var;
@@ -192,9 +192,9 @@ class Credential extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDomain($var)
+    public function setDomain(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->domain = $var;
 
         return $this;
@@ -218,9 +218,8 @@ class Credential extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSessionLimitReached($var)
+    public function setSessionLimitReached(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->session_limit_reached = $var;
 
         return $this;

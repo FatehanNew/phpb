@@ -72,9 +72,8 @@ class Event extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setDateTime($var)
+    public function setDateTime(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->date_time = $var;
 
         return $this;
@@ -82,7 +81,7 @@ class Event extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.reports.AttendanceResponse.EventType type = 2 [json_name = "type"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Report\AttendanceResponse\EventType}
      */
     public function getType()
     {
@@ -91,10 +90,10 @@ class Event extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.reports.AttendanceResponse.EventType type = 2 [json_name = "type"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Report\AttendanceResponse\EventType}
      * @return $this
      */
-    public function setType($var)
+    public function setType(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Report\AttendanceResponse\EventType::class);
         $this->type = $var;
@@ -116,7 +115,7 @@ class Event extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDuration($var)
+    public function setDuration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->duration = $var;
@@ -138,7 +137,7 @@ class Event extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMileage($var)
+    public function setMileage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->mileage = $var;

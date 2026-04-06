@@ -67,7 +67,7 @@ class CommandContent extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -81,7 +81,7 @@ class CommandContent extends \Google\Protobuf\Internal\Message
      */
     public function getCommandId()
     {
-        return isset($this->command_id) ? $this->command_id : 0;
+        return isset($this->command_id) ? $this->command_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCommandId()
@@ -99,7 +99,7 @@ class CommandContent extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCommandId($var)
+    public function setCommandId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->command_id = $var;
@@ -131,9 +131,9 @@ class CommandContent extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMessage($var)
+    public function setMessage(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->message = $var;
 
         return $this;
@@ -153,7 +153,7 @@ class CommandContent extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setParams($var)
+    public function setParams(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->params = $arr;
@@ -185,9 +185,9 @@ class CommandContent extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRawCommand($var)
+    public function setRawCommand(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->raw_command = $var;
 
         return $this;

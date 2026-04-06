@@ -47,7 +47,7 @@ class CommandActionShowResponse extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCommandActionId($var)
+    public function setCommandActionId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->command_action_id = $var;

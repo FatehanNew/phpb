@@ -57,7 +57,7 @@ class FusionCar extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCarId($var)
+    public function setCarId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->car_id = $var;
@@ -79,9 +79,9 @@ class FusionCar extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDeviceName($var)
+    public function setDeviceName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->device_name = $var;
 
         return $this;
@@ -101,7 +101,7 @@ class FusionCar extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPowerVoltage($var)
+    public function setPowerVoltage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->power_voltage = $var;

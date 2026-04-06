@@ -82,7 +82,7 @@ class DeviceResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCurrentPage($var)
+    public function setCurrentPage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->current_page = $var;
@@ -104,7 +104,7 @@ class DeviceResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFrom($var)
+    public function setFrom(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->from = $var;
@@ -126,7 +126,7 @@ class DeviceResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTo($var)
+    public function setTo(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->to = $var;
@@ -148,7 +148,7 @@ class DeviceResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLastPage($var)
+    public function setLastPage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->last_page = $var;
@@ -170,7 +170,7 @@ class DeviceResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPerPage($var)
+    public function setPerPage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->per_page = $var;
@@ -192,7 +192,7 @@ class DeviceResponse extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCost($var)
+    public function setCost(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->cost = $var;
@@ -214,7 +214,7 @@ class DeviceResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTotal($var)
+    public function setTotal(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->total = $var;
@@ -236,7 +236,7 @@ class DeviceResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Service\Repositories\DeviceRepo[] $var
      * @return $this
      */
-    public function setData($var)
+    public function setData(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Service\Repositories\DeviceRepo::class);
         $this->data = $arr;

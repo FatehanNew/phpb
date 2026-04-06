@@ -63,7 +63,7 @@ class ForgeDecoder extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -85,7 +85,7 @@ class ForgeDecoder extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSerialNo($var)
+    public function setSerialNo(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->serial_no = $var;
@@ -95,7 +95,7 @@ class ForgeDecoder extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.Protocol protocol = 3;</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\Protocol}
      */
     public function getProtocol()
     {
@@ -104,10 +104,10 @@ class ForgeDecoder extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.Protocol protocol = 3;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\Protocol}
      * @return $this
      */
-    public function setProtocol($var)
+    public function setProtocol(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\Protocol::class);
         $this->protocol = $var;
@@ -134,9 +134,9 @@ class ForgeDecoder extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRawString($var)
+    public function setRawString(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->writeOneof(11, $var);
 
         return $this;
@@ -161,9 +161,8 @@ class ForgeDecoder extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\Forge\ForgeException $var
      * @return $this
      */
-    public function setException($var)
+    public function setException(\Fatehan\Packet\Forge\ForgeException|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\Forge\ForgeException::class);
         $this->writeOneof(12, $var);
 
         return $this;
@@ -192,9 +191,8 @@ class ForgeDecoder extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\Forge\JTTLiveStatusUpdate $var
      * @return $this
      */
-    public function setJttLiveStatusUpdate($var)
+    public function setJttLiveStatusUpdate(\Fatehan\Packet\Forge\JTTLiveStatusUpdate|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\Forge\JTTLiveStatusUpdate::class);
         $this->writeOneof(21, $var);
 
         return $this;
@@ -219,9 +217,8 @@ class ForgeDecoder extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\Forge\JTTQueryFileResponse $var
      * @return $this
      */
-    public function setJttQueryFileResponse($var)
+    public function setJttQueryFileResponse(\Fatehan\Packet\Forge\JTTQueryFileResponse|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\Forge\JTTQueryFileResponse::class);
         $this->writeOneof(22, $var);
 
         return $this;

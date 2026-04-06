@@ -92,7 +92,7 @@ class Command extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -114,7 +114,7 @@ class Command extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -128,7 +128,7 @@ class Command extends \Google\Protobuf\Internal\Message
      */
     public function getUserId()
     {
-        return isset($this->user_id) ? $this->user_id : 0;
+        return isset($this->user_id) ? $this->user_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasUserId()
@@ -146,7 +146,7 @@ class Command extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->user_id = $var;
@@ -160,7 +160,7 @@ class Command extends \Google\Protobuf\Internal\Message
      */
     public function getCommandId()
     {
-        return isset($this->command_id) ? $this->command_id : 0;
+        return isset($this->command_id) ? $this->command_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCommandId()
@@ -178,7 +178,7 @@ class Command extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCommandId($var)
+    public function setCommandId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->command_id = $var;
@@ -192,7 +192,7 @@ class Command extends \Google\Protobuf\Internal\Message
      */
     public function getReplyId()
     {
-        return isset($this->reply_id) ? $this->reply_id : 0;
+        return isset($this->reply_id) ? $this->reply_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasReplyId()
@@ -210,7 +210,7 @@ class Command extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setReplyId($var)
+    public function setReplyId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->reply_id = $var;
@@ -220,7 +220,7 @@ class Command extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.CommandStatus status = 6 [json_name = "status"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\Message\CommandStatus}
      */
     public function getStatus()
     {
@@ -229,10 +229,10 @@ class Command extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.CommandStatus status = 6 [json_name = "status"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\Message\CommandStatus}
      * @return $this
      */
-    public function setStatus($var)
+    public function setStatus(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\Message\CommandStatus::class);
         $this->status = $var;
@@ -264,9 +264,8 @@ class Command extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\Message\CommandContent $var
      * @return $this
      */
-    public function setCommand($var)
+    public function setCommand(\Fatehan\Packet\Message\CommandContent|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\Message\CommandContent::class);
         $this->command = $var;
 
         return $this;
@@ -296,9 +295,8 @@ class Command extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\Message\CommandAkn $var
      * @return $this
      */
-    public function setAkn($var)
+    public function setAkn(\Fatehan\Packet\Message\CommandAkn|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\Message\CommandAkn::class);
         $this->akn = $var;
 
         return $this;
@@ -328,9 +326,8 @@ class Command extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -360,9 +357,8 @@ class Command extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;

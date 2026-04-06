@@ -62,7 +62,7 @@ class Statistics extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCompleted($var)
+    public function setCompleted(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->completed = $var;
@@ -84,7 +84,7 @@ class Statistics extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setNotCompleted($var)
+    public function setNotCompleted(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->not_completed = $var;
@@ -106,7 +106,7 @@ class Statistics extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTotal($var)
+    public function setTotal(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->total = $var;
@@ -128,7 +128,7 @@ class Statistics extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Service\MaintenanceIndexResponse\MostUsed[] $var
      * @return $this
      */
-    public function setMostUsedServices($var)
+    public function setMostUsedServices(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Service\MaintenanceIndexResponse\MostUsed::class);
         $this->most_used_services = $arr;

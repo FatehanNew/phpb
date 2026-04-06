@@ -39,7 +39,7 @@ class MeRequest extends \Google\Protobuf\Internal\Message
      */
     public function getDeviceId()
     {
-        return isset($this->device_id) ? $this->device_id : 0;
+        return isset($this->device_id) ? $this->device_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasDeviceId()
@@ -57,7 +57,7 @@ class MeRequest extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;

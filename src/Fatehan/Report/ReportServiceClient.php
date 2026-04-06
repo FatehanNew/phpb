@@ -234,11 +234,11 @@ class ReportServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Report\DeviceDataRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\ServerStreamingCall
+     * @return \Grpc\UnaryCall<\Fatehan\Report\DeviceDataResponse>
      */
     public function DeviceDataReport(\Fatehan\Report\DeviceDataRequest $argument,
       $metadata = [], $options = []) {
-        return $this->_serverStreamRequest('/com.fatehan.reports.ReportService/DeviceDataReport',
+        return $this->_simpleRequest('/com.fatehan.reports.ReportService/DeviceDataReport',
         $argument,
         ['\Fatehan\Report\DeviceDataResponse', 'decode'],
         $metadata, $options);
@@ -324,11 +324,11 @@ class ReportServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Report\ChartRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\ServerStreamingCall
+     * @return \Grpc\UnaryCall<\Fatehan\Report\ChartResponse>
      */
     public function ChartReport(\Fatehan\Report\ChartRequest $argument,
       $metadata = [], $options = []) {
-        return $this->_serverStreamRequest('/com.fatehan.reports.ReportService/ChartReport',
+        return $this->_simpleRequest('/com.fatehan.reports.ReportService/ChartReport',
         $argument,
         ['\Fatehan\Report\ChartResponse', 'decode'],
         $metadata, $options);

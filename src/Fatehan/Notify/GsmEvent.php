@@ -47,7 +47,7 @@ class GsmEvent extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSignalBelow($var)
+    public function setSignalBelow(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->signal_below = $var;

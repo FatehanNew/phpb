@@ -72,9 +72,9 @@ class JTT808SignalingDataMessage1210 extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTerminalId($var)
+    public function setTerminalId(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->terminal_id = $var;
 
         return $this;
@@ -94,9 +94,9 @@ class JTT808SignalingDataMessage1210 extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setAlarmIdentification($var)
+    public function setAlarmIdentification(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->alarm_identification = $var;
 
         return $this;
@@ -116,9 +116,9 @@ class JTT808SignalingDataMessage1210 extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setAlarmNo($var)
+    public function setAlarmNo(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->alarm_no = $var;
 
         return $this;
@@ -138,7 +138,7 @@ class JTT808SignalingDataMessage1210 extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setInfoType($var)
+    public function setInfoType(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->info_type = $var;
@@ -160,7 +160,7 @@ class JTT808SignalingDataMessage1210 extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAttachmentCount($var)
+    public function setAttachmentCount(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->attachment_count = $var;
@@ -182,7 +182,7 @@ class JTT808SignalingDataMessage1210 extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\JTT808SignalingDataMessage1210\Attachment[] $var
      * @return $this
      */
-    public function setAttachments($var)
+    public function setAttachments(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Packet\DataModel\JTT808SignalingDataMessage1210\Attachment::class);
         $this->attachments = $arr;

@@ -187,7 +187,7 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -209,7 +209,7 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMileage($var)
+    public function setMileage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->mileage = $var;
@@ -231,7 +231,7 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIdling($var)
+    public function setIdling(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->idling = $var;
@@ -253,7 +253,7 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setParking($var)
+    public function setParking(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->parking = $var;
@@ -275,7 +275,7 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMoving($var)
+    public function setMoving(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->moving = $var;
@@ -297,7 +297,7 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTowing($var)
+    public function setTowing(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->towing = $var;
@@ -319,7 +319,7 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTotalSpeed($var)
+    public function setTotalSpeed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->total_speed = $var;
@@ -341,7 +341,7 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSumSpeed($var)
+    public function setSumSpeed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->sum_speed = $var;
@@ -363,7 +363,7 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMaxSpeed($var)
+    public function setMaxSpeed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->max_speed = $var;
@@ -395,9 +395,8 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setStartedAt($var)
+    public function setStartedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->started_at = $var;
 
         return $this;
@@ -427,9 +426,8 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setFinishedAt($var)
+    public function setFinishedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->finished_at = $var;
 
         return $this;
@@ -449,7 +447,7 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setDriving($var)
+    public function setDriving(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::UINT32);
         $this->driving = $arr;
@@ -471,7 +469,7 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setTemperature($var)
+    public function setTemperature(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::SINT32);
         $this->temperature = $arr;
@@ -493,7 +491,7 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setHumidity($var)
+    public function setHumidity(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::UINT32);
         $this->humidity = $arr;
@@ -515,7 +513,7 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param int[]|string[] $var
      * @return $this
      */
-    public function setIButton($var)
+    public function setIButton(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT64);
         $this->i_button = $arr;
@@ -537,7 +535,7 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIgnition($var)
+    public function setIgnition(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ignition = $var;
@@ -569,7 +567,7 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDoorOpened($var)
+    public function setDoorOpened(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->door_opened = $var;
@@ -601,7 +599,7 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelUsed($var)
+    public function setFuelUsed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_used = $var;
@@ -633,7 +631,7 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelRate($var)
+    public function setFuelRate(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_rate = $var;
@@ -665,7 +663,7 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEngineRpm($var)
+    public function setEngineRpm(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->engine_rpm = $var;
@@ -697,7 +695,7 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEngineLoad($var)
+    public function setEngineLoad(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->engine_load = $var;
@@ -719,7 +717,7 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setCrashes($var)
+    public function setCrashes(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::UINT32);
         $this->crashes = $arr;
@@ -741,7 +739,7 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setSpeeds($var)
+    public function setSpeeds(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::UINT32, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Trip\TripDurationStat::class);
         $this->speeds = $arr;
@@ -763,7 +761,7 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPoints($var)
+    public function setPoints(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->points = $var;
@@ -785,7 +783,7 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRecords($var)
+    public function setRecords(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->records = $var;
@@ -807,7 +805,7 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Report\TripPerformance\Average[] $var
      * @return $this
      */
-    public function setAverage($var)
+    public function setAverage(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Report\TripPerformance\Average::class);
         $this->average = $arr;
@@ -839,9 +837,9 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDeviceName($var)
+    public function setDeviceName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->device_name = $var;
 
         return $this;
@@ -871,9 +869,9 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDriverName($var)
+    public function setDriverName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->driver_name = $var;
 
         return $this;
@@ -903,9 +901,9 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setOrganizationName($var)
+    public function setOrganizationName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->organization_name = $var;
 
         return $this;

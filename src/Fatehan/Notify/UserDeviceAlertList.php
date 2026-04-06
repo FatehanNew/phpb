@@ -49,7 +49,7 @@ class UserDeviceAlertList extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Notify\UserDeviceAlert[] $var
      * @return $this
      */
-    public function setList($var)
+    public function setList(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Notify\UserDeviceAlert::class);
         $this->list = $arr;

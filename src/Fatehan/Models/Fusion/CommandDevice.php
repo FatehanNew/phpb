@@ -117,7 +117,7 @@ class CommandDevice extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCdId($var)
+    public function setCdId(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->cd_id = $var;
@@ -139,7 +139,7 @@ class CommandDevice extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCommandId($var)
+    public function setCommandId(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->command_id = $var;
@@ -161,7 +161,7 @@ class CommandDevice extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setImei($var)
+    public function setImei(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->imei = $var;
@@ -183,7 +183,7 @@ class CommandDevice extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->user_id = $var;
@@ -205,7 +205,7 @@ class CommandDevice extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDateCreate($var)
+    public function setDateCreate(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->date_create = $var;
@@ -227,7 +227,7 @@ class CommandDevice extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setStatus($var)
+    public function setStatus(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->status = $var;
@@ -249,9 +249,9 @@ class CommandDevice extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCommand($var)
+    public function setCommand(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->command = $var;
 
         return $this;
@@ -281,9 +281,9 @@ class CommandDevice extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCommandParse($var)
+    public function setCommandParse(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->command_parse = $var;
 
         return $this;
@@ -303,7 +303,7 @@ class CommandDevice extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDateSend($var)
+    public function setDateSend(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->date_send = $var;
@@ -335,9 +335,9 @@ class CommandDevice extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setResponse($var)
+    public function setResponse(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->response = $var;
 
         return $this;
@@ -367,9 +367,9 @@ class CommandDevice extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setResponseParse($var)
+    public function setResponseParse(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->response_parse = $var;
 
         return $this;
@@ -389,7 +389,7 @@ class CommandDevice extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDateResponse($var)
+    public function setDateResponse(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->date_response = $var;
@@ -411,7 +411,7 @@ class CommandDevice extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTimeOut($var)
+    public function setTimeOut(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->time_out = $var;
@@ -433,7 +433,7 @@ class CommandDevice extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setType($var)
+    public function setType(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->type = $var;
@@ -455,7 +455,7 @@ class CommandDevice extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;

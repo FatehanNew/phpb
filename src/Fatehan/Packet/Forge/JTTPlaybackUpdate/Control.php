@@ -52,7 +52,7 @@ class Control extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFastForward($var)
+    public function setFastForward(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->fast_forward = $var;
@@ -84,9 +84,8 @@ class Control extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setPlaybackPosition($var)
+    public function setPlaybackPosition(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->playback_position = $var;
 
         return $this;

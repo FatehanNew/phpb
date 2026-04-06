@@ -57,9 +57,8 @@ class DeviceShowResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Service\Repositories\DeviceRepo $var
      * @return $this
      */
-    public function setDevice($var)
+    public function setDevice(\Fatehan\Service\Repositories\DeviceRepo|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Service\Repositories\DeviceRepo::class);
         $this->device = $var;
 
         return $this;

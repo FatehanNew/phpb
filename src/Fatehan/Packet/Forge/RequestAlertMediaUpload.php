@@ -77,9 +77,9 @@ class RequestAlertMediaUpload extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setIp($var)
+    public function setIp(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->ip = $var;
 
         return $this;
@@ -99,7 +99,7 @@ class RequestAlertMediaUpload extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTcp($var)
+    public function setTcp(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->tcp = $var;
@@ -121,7 +121,7 @@ class RequestAlertMediaUpload extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setUdp($var)
+    public function setUdp(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->udp = $var;
@@ -143,9 +143,9 @@ class RequestAlertMediaUpload extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setAlarmId($var)
+    public function setAlarmId(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->alarm_id = $var;
 
         return $this;
@@ -165,7 +165,7 @@ class RequestAlertMediaUpload extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -197,9 +197,8 @@ class RequestAlertMediaUpload extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setGpsTime($var)
+    public function setGpsTime(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->gps_time = $var;
 
         return $this;
@@ -219,9 +218,9 @@ class RequestAlertMediaUpload extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setReserve($var)
+    public function setReserve(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->reserve = $var;
 
         return $this;

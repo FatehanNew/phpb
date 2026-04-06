@@ -72,7 +72,7 @@ class CommandValidation extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setMax($var)
+    public function setMax(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->max = $var;
@@ -94,7 +94,7 @@ class CommandValidation extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setMin($var)
+    public function setMin(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->min = $var;
@@ -116,9 +116,9 @@ class CommandValidation extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -138,9 +138,9 @@ class CommandValidation extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setType($var)
+    public function setType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->type = $var;
 
         return $this;
@@ -160,9 +160,9 @@ class CommandValidation extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDescription($var)
+    public function setDescription(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->description = $var;
 
         return $this;
@@ -192,9 +192,8 @@ class CommandValidation extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsRequired($var)
+    public function setIsRequired(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_required = $var;
 
         return $this;

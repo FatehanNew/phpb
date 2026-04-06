@@ -124,7 +124,7 @@ class AlertModel extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -146,7 +146,7 @@ class AlertModel extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOrganizationId($var)
+    public function setOrganizationId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->organization_id = $var;
@@ -168,7 +168,7 @@ class AlertModel extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setAlertId($var)
+    public function setAlertId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->alert_id = $var;
@@ -190,7 +190,7 @@ class AlertModel extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setAlertType($var)
+    public function setAlertType(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->alert_type = $var;
@@ -222,9 +222,9 @@ class AlertModel extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUnit($var)
+    public function setUnit(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->unit = $var;
 
         return $this;
@@ -236,7 +236,7 @@ class AlertModel extends \Google\Protobuf\Internal\Message
      */
     public function getValue()
     {
-        return isset($this->value) ? $this->value : 0;
+        return isset($this->value) ? $this->value : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasValue()
@@ -254,7 +254,7 @@ class AlertModel extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setValue($var)
+    public function setValue(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->value = $var;
@@ -276,9 +276,9 @@ class AlertModel extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMessage($var)
+    public function setMessage(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->message = $var;
 
         return $this;
@@ -298,9 +298,9 @@ class AlertModel extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -330,9 +330,9 @@ class AlertModel extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMinValue($var)
+    public function setMinValue(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->min_value = $var;
 
         return $this;
@@ -362,9 +362,9 @@ class AlertModel extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMaxValue($var)
+    public function setMaxValue(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->max_value = $var;
 
         return $this;
@@ -394,9 +394,9 @@ class AlertModel extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPicture($var)
+    public function setPicture(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->picture = $var;
 
         return $this;
@@ -408,7 +408,7 @@ class AlertModel extends \Google\Protobuf\Internal\Message
      */
     public function getCreatedBy()
     {
-        return isset($this->created_by) ? $this->created_by : 0;
+        return isset($this->created_by) ? $this->created_by : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCreatedBy()
@@ -426,7 +426,7 @@ class AlertModel extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreatedBy($var)
+    public function setCreatedBy(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->created_by = $var;
@@ -440,7 +440,7 @@ class AlertModel extends \Google\Protobuf\Internal\Message
      */
     public function getUpdatedBy()
     {
-        return isset($this->updated_by) ? $this->updated_by : 0;
+        return isset($this->updated_by) ? $this->updated_by : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasUpdatedBy()
@@ -458,7 +458,7 @@ class AlertModel extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setUpdatedBy($var)
+    public function setUpdatedBy(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->updated_by = $var;
@@ -490,9 +490,8 @@ class AlertModel extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -522,9 +521,8 @@ class AlertModel extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;
@@ -554,9 +552,9 @@ class AlertModel extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setObjectType($var)
+    public function setObjectType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->object_type = $var;
 
         return $this;

@@ -95,9 +95,9 @@ class FilterScope extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFilterType($var)
+    public function setFilterType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->filter_type = $var;
 
         return $this;
@@ -131,9 +131,9 @@ class FilterScope extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setOperator($var)
+    public function setOperator(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->operator = $var;
 
         return $this;
@@ -157,7 +157,7 @@ class FilterScope extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Service\FilterConditions[] $var
      * @return $this
      */
-    public function setConditions($var)
+    public function setConditions(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Service\FilterConditions::class);
         $this->conditions = $arr;
@@ -193,9 +193,9 @@ class FilterScope extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFilter($var)
+    public function setFilter(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->filter = $var;
 
         return $this;
@@ -229,9 +229,9 @@ class FilterScope extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDateFrom($var)
+    public function setDateFrom(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->date_from = $var;
 
         return $this;
@@ -265,9 +265,9 @@ class FilterScope extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDateTo($var)
+    public function setDateTo(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->date_to = $var;
 
         return $this;
@@ -301,9 +301,9 @@ class FilterScope extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setType($var)
+    public function setType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->type = $var;
 
         return $this;

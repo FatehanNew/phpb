@@ -82,9 +82,8 @@ class Task extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\Data $var
      * @return $this
      */
-    public function setData($var)
+    public function setData(\Fatehan\Packet\DataModel\Data|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\Data::class);
         $this->data = $var;
 
         return $this;
@@ -114,9 +113,8 @@ class Task extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\Client $var
      * @return $this
      */
-    public function setClient($var)
+    public function setClient(\Fatehan\Packet\DataModel\Client|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\Client::class);
         $this->client = $var;
 
         return $this;
@@ -136,7 +134,7 @@ class Task extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setAlertIdNumber($var)
+    public function setAlertIdNumber(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::INT32, \Google\Protobuf\Internal\GPBType::BYTES);
         $this->alert_id_number = $arr;
@@ -158,7 +156,7 @@ class Task extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setImei($var)
+    public function setImei(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->imei = $var;
@@ -190,9 +188,8 @@ class Task extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\DeviceData $var
      * @return $this
      */
-    public function setDeviceData($var)
+    public function setDeviceData(\Fatehan\Packet\DataModel\DeviceData|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\DeviceData::class);
         $this->device_data = $var;
 
         return $this;
@@ -200,7 +197,7 @@ class Task extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.Protocol protocol = 6 [json_name = "protocol"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\Protocol}
      */
     public function getProtocol()
     {
@@ -209,10 +206,10 @@ class Task extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.Protocol protocol = 6 [json_name = "protocol"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\Protocol}
      * @return $this
      */
-    public function setProtocol($var)
+    public function setProtocol(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\Protocol::class);
         $this->protocol = $var;

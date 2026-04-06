@@ -52,7 +52,7 @@ class JTTQueryFileResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSerialNo($var)
+    public function setSerialNo(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->serial_no = $var;
@@ -74,7 +74,7 @@ class JTTQueryFileResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\Forge\JTTQueryFileResponse\File[] $var
      * @return $this
      */
-    public function setFiles($var)
+    public function setFiles(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Packet\Forge\JTTQueryFileResponse\File::class);
         $this->files = $arr;

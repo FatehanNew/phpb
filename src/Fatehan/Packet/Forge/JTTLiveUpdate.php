@@ -62,7 +62,7 @@ class JTTLiveUpdate extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLogicalNumber($var)
+    public function setLogicalNumber(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->logical_number = $var;
@@ -84,7 +84,7 @@ class JTTLiveUpdate extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setControlInstruction($var)
+    public function setControlInstruction(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->control_instruction = $var;
@@ -106,7 +106,7 @@ class JTTLiveUpdate extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCloseAudioVideo($var)
+    public function setCloseAudioVideo(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->close_audio_video = $var;
@@ -128,7 +128,7 @@ class JTTLiveUpdate extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSwitchStream($var)
+    public function setSwitchStream(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->switch_stream = $var;

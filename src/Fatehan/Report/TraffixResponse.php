@@ -47,7 +47,7 @@ class TraffixResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Report\Traffix[] $var
      * @return $this
      */
-    public function setList($var)
+    public function setList(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Report\Traffix::class);
         $this->list = $arr;

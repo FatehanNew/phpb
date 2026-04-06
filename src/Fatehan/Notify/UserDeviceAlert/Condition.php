@@ -82,9 +82,9 @@ class Condition extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFromTime($var)
+    public function setFromTime(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->from_time = $var;
 
         return $this;
@@ -114,9 +114,9 @@ class Condition extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setToTime($var)
+    public function setToTime(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->to_time = $var;
 
         return $this;
@@ -128,7 +128,7 @@ class Condition extends \Google\Protobuf\Internal\Message
      */
     public function getSoundId()
     {
-        return isset($this->sound_id) ? $this->sound_id : 0;
+        return isset($this->sound_id) ? $this->sound_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasSoundId()
@@ -146,7 +146,7 @@ class Condition extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setSoundId($var)
+    public function setSoundId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->sound_id = $var;
@@ -178,9 +178,9 @@ class Condition extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setText($var)
+    public function setText(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->text = $var;
 
         return $this;
@@ -192,7 +192,7 @@ class Condition extends \Google\Protobuf\Internal\Message
      */
     public function getValue()
     {
-        return isset($this->value) ? $this->value : 0;
+        return isset($this->value) ? $this->value : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasValue()
@@ -210,7 +210,7 @@ class Condition extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setValue($var)
+    public function setValue(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->value = $var;
@@ -220,7 +220,7 @@ class Condition extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.notifies.Via type = 6 [json_name = "type"];</code>
-     * @return RepeatedField<int>
+     * @return RepeatedField<int> one of the values in {@see \Fatehan\Notify\Via}
      */
     public function getType()
     {
@@ -229,10 +229,10 @@ class Condition extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.notifies.Via type = 6 [json_name = "type"];</code>
-     * @param int[] $var
+     * @param int[] $var one of the values in {@see \Fatehan\Notify\Via}
      * @return $this
      */
-    public function setType($var)
+    public function setType(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Fatehan\Notify\Via::class);
         $this->type = $arr;

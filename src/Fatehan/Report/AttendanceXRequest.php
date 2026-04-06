@@ -67,7 +67,7 @@ class AttendanceXRequest extends \Google\Protobuf\Internal\Message
      * @param int[]|string[] $var
      * @return $this
      */
-    public function setDeviceIds($var)
+    public function setDeviceIds(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT64);
         $this->device_ids = $arr;
@@ -99,9 +99,8 @@ class AttendanceXRequest extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setStartedAt($var)
+    public function setStartedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->started_at = $var;
 
         return $this;
@@ -131,9 +130,8 @@ class AttendanceXRequest extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setFinishedAt($var)
+    public function setFinishedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->finished_at = $var;
 
         return $this;
@@ -153,9 +151,8 @@ class AttendanceXRequest extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setExcludeLeaves($var)
+    public function setExcludeLeaves(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->exclude_leaves = $var;
 
         return $this;
@@ -163,7 +160,7 @@ class AttendanceXRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.reports.Source source = 5 [json_name = "source"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Report\Source}
      */
     public function getSource()
     {
@@ -172,10 +169,10 @@ class AttendanceXRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.reports.Source source = 5 [json_name = "source"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Report\Source}
      * @return $this
      */
-    public function setSource($var)
+    public function setSource(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Report\Source::class);
         $this->source = $var;

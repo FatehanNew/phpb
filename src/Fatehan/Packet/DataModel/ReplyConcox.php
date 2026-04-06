@@ -47,7 +47,7 @@ class ReplyConcox extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\ReplyConcox\Item[] $var
      * @return $this
      */
-    public function setItems($var)
+    public function setItems(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Packet\DataModel\ReplyConcox\Item::class);
         $this->items = $arr;

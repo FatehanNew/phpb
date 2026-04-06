@@ -64,7 +64,7 @@ class Document extends \Google\Protobuf\Internal\Message
      */
     public function getObjectId()
     {
-        return isset($this->object_id) ? $this->object_id : 0;
+        return isset($this->object_id) ? $this->object_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasObjectId()
@@ -82,7 +82,7 @@ class Document extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setObjectId($var)
+    public function setObjectId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->object_id = $var;
@@ -96,7 +96,7 @@ class Document extends \Google\Protobuf\Internal\Message
      */
     public function getCreatedBy()
     {
-        return isset($this->created_by) ? $this->created_by : 0;
+        return isset($this->created_by) ? $this->created_by : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCreatedBy()
@@ -114,7 +114,7 @@ class Document extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreatedBy($var)
+    public function setCreatedBy(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->created_by = $var;
@@ -128,7 +128,7 @@ class Document extends \Google\Protobuf\Internal\Message
      */
     public function getOrganizationId()
     {
-        return isset($this->organization_id) ? $this->organization_id : 0;
+        return isset($this->organization_id) ? $this->organization_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasOrganizationId()
@@ -146,7 +146,7 @@ class Document extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOrganizationId($var)
+    public function setOrganizationId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->organization_id = $var;
@@ -178,9 +178,9 @@ class Document extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUrl($var)
+    public function setUrl(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->url = $var;
 
         return $this;
@@ -210,9 +210,9 @@ class Document extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setVisibility($var)
+    public function setVisibility(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->visibility = $var;
 
         return $this;
@@ -242,9 +242,9 @@ class Document extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setObjectType($var)
+    public function setObjectType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->object_type = $var;
 
         return $this;

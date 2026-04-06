@@ -122,9 +122,8 @@ class Compact extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\IoElement $var
      * @return $this
      */
-    public function setIoElement($var)
+    public function setIoElement(\Fatehan\Packet\DataModel\IoElement|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\IoElement::class);
         $this->io_element = $var;
 
         return $this;
@@ -154,9 +153,8 @@ class Compact extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\EventualIoElements $var
      * @return $this
      */
-    public function setEventualIoElements($var)
+    public function setEventualIoElements(\Fatehan\Packet\DataModel\EventualIoElements|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\EventualIoElements::class);
         $this->eventual_io_elements = $var;
 
         return $this;
@@ -186,9 +184,8 @@ class Compact extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\ObdElements $var
      * @return $this
      */
-    public function setObdElements($var)
+    public function setObdElements(\Fatehan\Packet\DataModel\ObdElements|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\ObdElements::class);
         $this->obd_elements = $var;
 
         return $this;
@@ -218,9 +215,8 @@ class Compact extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\ObdOemElements $var
      * @return $this
      */
-    public function setObdOemElements($var)
+    public function setObdOemElements(\Fatehan\Packet\DataModel\ObdOemElements|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\ObdOemElements::class);
         $this->obd_oem_elements = $var;
 
         return $this;
@@ -250,9 +246,8 @@ class Compact extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\BleSensorsIoElements $var
      * @return $this
      */
-    public function setBleSensorsIoElements($var)
+    public function setBleSensorsIoElements(\Fatehan\Packet\DataModel\BleSensorsIoElements|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\BleSensorsIoElements::class);
         $this->ble_sensors_io_elements = $var;
 
         return $this;
@@ -282,9 +277,8 @@ class Compact extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\CanAdaptersElements $var
      * @return $this
      */
-    public function setCanAdaptersElements($var)
+    public function setCanAdaptersElements(\Fatehan\Packet\DataModel\CanAdaptersElements|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\CanAdaptersElements::class);
         $this->can_adapters_elements = $var;
 
         return $this;
@@ -314,9 +308,8 @@ class Compact extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\AdditionalInfo $var
      * @return $this
      */
-    public function setAdditionalInfo($var)
+    public function setAdditionalInfo(\Fatehan\Packet\DataModel\AdditionalInfo|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\AdditionalInfo::class);
         $this->additional_info = $var;
 
         return $this;
@@ -324,7 +317,7 @@ class Compact extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.packets.Alert alerts = 7 [json_name = "alerts"];</code>
-     * @return RepeatedField<int>
+     * @return RepeatedField<int> one of the values in {@see \Fatehan\Packet\DataModel\Alert}
      */
     public function getAlerts()
     {
@@ -333,10 +326,10 @@ class Compact extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.packets.Alert alerts = 7 [json_name = "alerts"];</code>
-     * @param int[] $var
+     * @param int[] $var one of the values in {@see \Fatehan\Packet\DataModel\Alert}
      * @return $this
      */
-    public function setAlerts($var)
+    public function setAlerts(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Fatehan\Packet\DataModel\Alert::class);
         $this->alerts = $arr;
@@ -368,9 +361,8 @@ class Compact extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\DataModule $var
      * @return $this
      */
-    public function setModules($var)
+    public function setModules(\Fatehan\Packet\DataModel\DataModule|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\DataModule::class);
         $this->modules = $var;
 
         return $this;
@@ -390,7 +382,7 @@ class Compact extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setAlertValues($var)
+    public function setAlertValues(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::UINT32, \Google\Protobuf\Internal\GPBType::INT64);
         $this->alert_values = $arr;
@@ -422,9 +414,8 @@ class Compact extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\ADAS $var
      * @return $this
      */
-    public function setAdas($var)
+    public function setAdas(\Fatehan\Packet\DataModel\ADAS|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\ADAS::class);
         $this->adas = $var;
 
         return $this;
@@ -454,9 +445,8 @@ class Compact extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\FmsElement $var
      * @return $this
      */
-    public function setFms($var)
+    public function setFms(\Fatehan\Packet\DataModel\FmsElement|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\FmsElement::class);
         $this->fms = $var;
 
         return $this;
@@ -476,7 +466,7 @@ class Compact extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setUnknownIos($var)
+    public function setUnknownIos(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::UINT32, \Google\Protobuf\Internal\GPBType::BYTES);
         $this->unknown_ios = $arr;
@@ -498,7 +488,7 @@ class Compact extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setCustomIos($var)
+    public function setCustomIos(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::UINT32, \Google\Protobuf\Internal\GPBType::BYTES);
         $this->custom_ios = $arr;

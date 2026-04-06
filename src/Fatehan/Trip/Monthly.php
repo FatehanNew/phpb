@@ -122,7 +122,7 @@ class Monthly extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -144,7 +144,7 @@ class Monthly extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -166,7 +166,7 @@ class Monthly extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMileage($var)
+    public function setMileage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->mileage = $var;
@@ -188,7 +188,7 @@ class Monthly extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIdling($var)
+    public function setIdling(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->idling = $var;
@@ -210,7 +210,7 @@ class Monthly extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setParking($var)
+    public function setParking(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->parking = $var;
@@ -232,7 +232,7 @@ class Monthly extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMoving($var)
+    public function setMoving(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->moving = $var;
@@ -254,7 +254,7 @@ class Monthly extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTowing($var)
+    public function setTowing(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->towing = $var;
@@ -276,7 +276,7 @@ class Monthly extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTotalSpeed($var)
+    public function setTotalSpeed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->total_speed = $var;
@@ -298,7 +298,7 @@ class Monthly extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setSumSpeed($var)
+    public function setSumSpeed(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->sum_speed = $var;
@@ -320,7 +320,7 @@ class Monthly extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMaxSpeed($var)
+    public function setMaxSpeed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->max_speed = $var;
@@ -342,7 +342,7 @@ class Monthly extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTrips($var)
+    public function setTrips(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->trips = $var;
@@ -374,9 +374,8 @@ class Monthly extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Trip\MonthlyCompact $var
      * @return $this
      */
-    public function setCompact($var)
+    public function setCompact(\Fatehan\Trip\MonthlyCompact|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Trip\MonthlyCompact::class);
         $this->compact = $var;
 
         return $this;
@@ -406,9 +405,8 @@ class Monthly extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setStartedAt($var)
+    public function setStartedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->started_at = $var;
 
         return $this;
@@ -438,9 +436,8 @@ class Monthly extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setFinishedAt($var)
+    public function setFinishedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->finished_at = $var;
 
         return $this;
@@ -470,9 +467,8 @@ class Monthly extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -502,9 +498,8 @@ class Monthly extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;

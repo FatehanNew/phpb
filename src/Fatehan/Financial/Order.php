@@ -167,7 +167,7 @@ class Order extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -189,9 +189,9 @@ class Order extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUuid($var)
+    public function setUuid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->uuid = $var;
 
         return $this;
@@ -211,7 +211,7 @@ class Order extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOrganizationId($var)
+    public function setOrganizationId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->organization_id = $var;
@@ -225,7 +225,7 @@ class Order extends \Google\Protobuf\Internal\Message
      */
     public function getCreatedBy()
     {
-        return isset($this->created_by) ? $this->created_by : 0;
+        return isset($this->created_by) ? $this->created_by : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCreatedBy()
@@ -243,7 +243,7 @@ class Order extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreatedBy($var)
+    public function setCreatedBy(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->created_by = $var;
@@ -257,7 +257,7 @@ class Order extends \Google\Protobuf\Internal\Message
      */
     public function getPaymentGatewayId()
     {
-        return isset($this->payment_gateway_id) ? $this->payment_gateway_id : 0;
+        return isset($this->payment_gateway_id) ? $this->payment_gateway_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasPaymentGatewayId()
@@ -275,7 +275,7 @@ class Order extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setPaymentGatewayId($var)
+    public function setPaymentGatewayId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->payment_gateway_id = $var;
@@ -289,7 +289,7 @@ class Order extends \Google\Protobuf\Internal\Message
      */
     public function getCurrencyId()
     {
-        return isset($this->currency_id) ? $this->currency_id : 0;
+        return isset($this->currency_id) ? $this->currency_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCurrencyId()
@@ -307,7 +307,7 @@ class Order extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCurrencyId($var)
+    public function setCurrencyId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->currency_id = $var;
@@ -321,7 +321,7 @@ class Order extends \Google\Protobuf\Internal\Message
      */
     public function getPartnerId()
     {
-        return isset($this->partner_id) ? $this->partner_id : 0;
+        return isset($this->partner_id) ? $this->partner_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasPartnerId()
@@ -339,7 +339,7 @@ class Order extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setPartnerId($var)
+    public function setPartnerId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->partner_id = $var;
@@ -361,9 +361,8 @@ class Order extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setTotalPrice($var)
+    public function setTotalPrice(float $var)
     {
-        GPBUtil::checkDouble($var);
         $this->total_price = $var;
 
         return $this;
@@ -383,9 +382,8 @@ class Order extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setTax($var)
+    public function setTax(float $var)
     {
-        GPBUtil::checkDouble($var);
         $this->tax = $var;
 
         return $this;
@@ -405,7 +403,7 @@ class Order extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTaxPercent($var)
+    public function setTaxPercent(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->tax_percent = $var;
@@ -427,9 +425,8 @@ class Order extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setDiscount($var)
+    public function setDiscount(float $var)
     {
-        GPBUtil::checkDouble($var);
         $this->discount = $var;
 
         return $this;
@@ -449,9 +446,8 @@ class Order extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setSubtotal($var)
+    public function setSubtotal(float $var)
     {
-        GPBUtil::checkDouble($var);
         $this->subtotal = $var;
 
         return $this;
@@ -481,9 +477,9 @@ class Order extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPaymentUrl($var)
+    public function setPaymentUrl(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->payment_url = $var;
 
         return $this;
@@ -513,9 +509,9 @@ class Order extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTransactionId($var)
+    public function setTransactionId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->transaction_id = $var;
 
         return $this;
@@ -545,9 +541,9 @@ class Order extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRefId($var)
+    public function setRefId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->ref_id = $var;
 
         return $this;
@@ -577,9 +573,8 @@ class Order extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setPaidAt($var)
+    public function setPaidAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->paid_at = $var;
 
         return $this;
@@ -609,7 +604,7 @@ class Order extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMonths($var)
+    public function setMonths(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->months = $var;
@@ -631,9 +626,9 @@ class Order extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setStatus($var)
+    public function setStatus(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->status = $var;
 
         return $this;
@@ -663,9 +658,8 @@ class Order extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -695,9 +689,8 @@ class Order extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;
@@ -717,7 +710,7 @@ class Order extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Financial\OrderProduct[] $var
      * @return $this
      */
-    public function setProducts($var)
+    public function setProducts(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Financial\OrderProduct::class);
         $this->products = $arr;
@@ -749,9 +742,8 @@ class Order extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Financial\Partner $var
      * @return $this
      */
-    public function setPartner($var)
+    public function setPartner(\Fatehan\Financial\Partner|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Financial\Partner::class);
         $this->partner = $var;
 
         return $this;
@@ -781,9 +773,8 @@ class Order extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Financial\PaymentGateway $var
      * @return $this
      */
-    public function setPaymentGateway($var)
+    public function setPaymentGateway(\Fatehan\Financial\PaymentGateway|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Financial\PaymentGateway::class);
         $this->payment_gateway = $var;
 
         return $this;
@@ -813,9 +804,8 @@ class Order extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Financial\Currency $var
      * @return $this
      */
-    public function setCurrency($var)
+    public function setCurrency(\Fatehan\Financial\Currency|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Financial\Currency::class);
         $this->currency = $var;
 
         return $this;
@@ -845,9 +835,8 @@ class Order extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Identity\Person $var
      * @return $this
      */
-    public function setPerson($var)
+    public function setPerson(\Fatehan\Identity\Person|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Identity\Person::class);
         $this->person = $var;
 
         return $this;

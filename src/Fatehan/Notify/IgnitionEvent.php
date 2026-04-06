@@ -52,9 +52,8 @@ class IgnitionEvent extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIgnitionOn($var)
+    public function setIgnitionOn(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->ignition_on = $var;
 
         return $this;
@@ -74,9 +73,8 @@ class IgnitionEvent extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIgnitionOff($var)
+    public function setIgnitionOff(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->ignition_off = $var;
 
         return $this;

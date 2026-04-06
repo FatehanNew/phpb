@@ -72,7 +72,7 @@ class LogResponse extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTotal($var)
+    public function setTotal(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->total = $var;
@@ -94,7 +94,7 @@ class LogResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRecords($var)
+    public function setRecords(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->records = $var;
@@ -116,7 +116,7 @@ class LogResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCost($var)
+    public function setCost(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->cost = $var;
@@ -138,7 +138,7 @@ class LogResponse extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCurrentPage($var)
+    public function setCurrentPage(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->current_page = $var;
@@ -160,7 +160,7 @@ class LogResponse extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setLastPage($var)
+    public function setLastPage(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->last_page = $var;
@@ -182,7 +182,7 @@ class LogResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\Log[] $var
      * @return $this
      */
-    public function setData($var)
+    public function setData(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Packet\DataModel\Log::class);
         $this->data = $arr;

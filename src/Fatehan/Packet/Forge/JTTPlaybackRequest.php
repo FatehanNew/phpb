@@ -67,9 +67,9 @@ class JTTPlaybackRequest extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setIp($var)
+    public function setIp(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->ip = $var;
 
         return $this;
@@ -89,7 +89,7 @@ class JTTPlaybackRequest extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTcp($var)
+    public function setTcp(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->tcp = $var;
@@ -111,7 +111,7 @@ class JTTPlaybackRequest extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setUdp($var)
+    public function setUdp(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->udp = $var;
@@ -133,7 +133,7 @@ class JTTPlaybackRequest extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLogicalNumber($var)
+    public function setLogicalNumber(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->logical_number = $var;
@@ -155,7 +155,7 @@ class JTTPlaybackRequest extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\Forge\JTTPlaybackRequest\Files[] $var
      * @return $this
      */
-    public function setFiles($var)
+    public function setFiles(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Packet\Forge\JTTPlaybackRequest\Files::class);
         $this->files = $arr;

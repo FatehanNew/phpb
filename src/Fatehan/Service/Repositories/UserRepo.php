@@ -62,9 +62,8 @@ class UserRepo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Identity\User $var
      * @return $this
      */
-    public function setUser($var)
+    public function setUser(\Fatehan\Identity\User|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Identity\User::class);
         $this->user = $var;
 
         return $this;
@@ -84,7 +83,7 @@ class UserRepo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Identity\Person[] $var
      * @return $this
      */
-    public function setPersons($var)
+    public function setPersons(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Identity\Person::class);
         $this->persons = $arr;

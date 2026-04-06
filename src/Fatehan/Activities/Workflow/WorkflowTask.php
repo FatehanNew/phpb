@@ -117,7 +117,7 @@ class WorkflowTask extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -139,7 +139,7 @@ class WorkflowTask extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOrganizationId($var)
+    public function setOrganizationId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->organization_id = $var;
@@ -161,7 +161,7 @@ class WorkflowTask extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setWorkflowId($var)
+    public function setWorkflowId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->workflow_id = $var;
@@ -183,7 +183,7 @@ class WorkflowTask extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setWorkflowDetailId($var)
+    public function setWorkflowDetailId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->workflow_detail_id = $var;
@@ -205,7 +205,7 @@ class WorkflowTask extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -237,9 +237,8 @@ class WorkflowTask extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Activities\Workflow\Flow $var
      * @return $this
      */
-    public function setFlow($var)
+    public function setFlow(\Fatehan\Activities\Workflow\Flow|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Activities\Workflow\Flow::class);
         $this->flow = $var;
 
         return $this;
@@ -259,7 +258,7 @@ class WorkflowTask extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPointer($var)
+    public function setPointer(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->pointer = $var;
@@ -269,7 +268,7 @@ class WorkflowTask extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.activities.WorkflowStat status = 7 [json_name = "status"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Activities\Workflow\WorkflowStat}
      */
     public function getStatus()
     {
@@ -278,10 +277,10 @@ class WorkflowTask extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.activities.WorkflowStat status = 7 [json_name = "status"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Activities\Workflow\WorkflowStat}
      * @return $this
      */
-    public function setStatus($var)
+    public function setStatus(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Activities\Workflow\WorkflowStat::class);
         $this->status = $var;
@@ -313,9 +312,8 @@ class WorkflowTask extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setStartsAt($var)
+    public function setStartsAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->starts_at = $var;
 
         return $this;
@@ -345,9 +343,8 @@ class WorkflowTask extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setExpiresAt($var)
+    public function setExpiresAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->expires_at = $var;
 
         return $this;
@@ -377,9 +374,8 @@ class WorkflowTask extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -409,9 +405,8 @@ class WorkflowTask extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;
@@ -423,7 +418,7 @@ class WorkflowTask extends \Google\Protobuf\Internal\Message
      */
     public function getCreatedBy()
     {
-        return isset($this->created_by) ? $this->created_by : 0;
+        return isset($this->created_by) ? $this->created_by : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCreatedBy()
@@ -441,7 +436,7 @@ class WorkflowTask extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreatedBy($var)
+    public function setCreatedBy(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->created_by = $var;
@@ -473,9 +468,8 @@ class WorkflowTask extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setConfirmedAt($var)
+    public function setConfirmedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->confirmed_at = $var;
 
         return $this;
@@ -505,9 +499,8 @@ class WorkflowTask extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setRejectedAt($var)
+    public function setRejectedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->rejected_at = $var;
 
         return $this;

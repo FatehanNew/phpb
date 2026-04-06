@@ -192,7 +192,7 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -206,7 +206,7 @@ class Device extends \Google\Protobuf\Internal\Message
      */
     public function getOrganizationId()
     {
-        return isset($this->organization_id) ? $this->organization_id : 0;
+        return isset($this->organization_id) ? $this->organization_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasOrganizationId()
@@ -224,7 +224,7 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOrganizationId($var)
+    public function setOrganizationId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->organization_id = $var;
@@ -238,7 +238,7 @@ class Device extends \Google\Protobuf\Internal\Message
      */
     public function getPartnerId()
     {
-        return isset($this->partner_id) ? $this->partner_id : 0;
+        return isset($this->partner_id) ? $this->partner_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasPartnerId()
@@ -256,7 +256,7 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setPartnerId($var)
+    public function setPartnerId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->partner_id = $var;
@@ -288,9 +288,9 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setGeneration($var)
+    public function setGeneration(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->generation = $var;
 
         return $this;
@@ -310,9 +310,9 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->device_id = $var;
 
         return $this;
@@ -324,7 +324,7 @@ class Device extends \Google\Protobuf\Internal\Message
      */
     public function getObjectId()
     {
-        return isset($this->object_id) ? $this->object_id : 0;
+        return isset($this->object_id) ? $this->object_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasObjectId()
@@ -342,7 +342,7 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setObjectId($var)
+    public function setObjectId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->object_id = $var;
@@ -374,9 +374,9 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setObjectType($var)
+    public function setObjectType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->object_type = $var;
 
         return $this;
@@ -388,7 +388,7 @@ class Device extends \Google\Protobuf\Internal\Message
      */
     public function getTrackerId()
     {
-        return isset($this->tracker_id) ? $this->tracker_id : 0;
+        return isset($this->tracker_id) ? $this->tracker_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasTrackerId()
@@ -406,7 +406,7 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTrackerId($var)
+    public function setTrackerId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->tracker_id = $var;
@@ -428,7 +428,7 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOwnerId($var)
+    public function setOwnerId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->owner_id = $var;
@@ -442,7 +442,7 @@ class Device extends \Google\Protobuf\Internal\Message
      */
     public function getIconId()
     {
-        return isset($this->icon_id) ? $this->icon_id : 0;
+        return isset($this->icon_id) ? $this->icon_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasIconId()
@@ -460,7 +460,7 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setIconId($var)
+    public function setIconId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->icon_id = $var;
@@ -474,7 +474,7 @@ class Device extends \Google\Protobuf\Internal\Message
      */
     public function getWarehouseId()
     {
-        return isset($this->warehouse_id) ? $this->warehouse_id : 0;
+        return isset($this->warehouse_id) ? $this->warehouse_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasWarehouseId()
@@ -492,7 +492,7 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setWarehouseId($var)
+    public function setWarehouseId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->warehouse_id = $var;
@@ -514,7 +514,7 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreatedBy($var)
+    public function setCreatedBy(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->created_by = $var;
@@ -546,9 +546,9 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSimCard($var)
+    public function setSimCard(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->sim_card = $var;
 
         return $this;
@@ -578,7 +578,7 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSimProvider($var)
+    public function setSimProvider(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->sim_provider = $var;
@@ -600,7 +600,7 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIdChanged($var)
+    public function setIdChanged(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->id_changed = $var;
@@ -632,9 +632,9 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setIccId($var)
+    public function setIccId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->icc_id = $var;
 
         return $this;
@@ -664,9 +664,9 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSmsUsername($var)
+    public function setSmsUsername(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->sms_username = $var;
 
         return $this;
@@ -696,9 +696,9 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSmsPassword($var)
+    public function setSmsPassword(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->sms_password = $var;
 
         return $this;
@@ -728,9 +728,9 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setConfigPassword($var)
+    public function setConfigPassword(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->config_password = $var;
 
         return $this;
@@ -750,9 +750,8 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setTest($var)
+    public function setTest(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->test = $var;
 
         return $this;
@@ -782,9 +781,9 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSimCardId($var)
+    public function setSimCardId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->sim_card_id = $var;
 
         return $this;
@@ -814,9 +813,9 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTimezone($var)
+    public function setTimezone(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->timezone = $var;
 
         return $this;
@@ -836,9 +835,8 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsUnlimited($var)
+    public function setIsUnlimited(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_unlimited = $var;
 
         return $this;
@@ -858,9 +856,9 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTripType($var)
+    public function setTripType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->trip_type = $var;
 
         return $this;
@@ -890,9 +888,8 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\DataModule $var
      * @return $this
      */
-    public function setModules($var)
+    public function setModules(\Fatehan\Packet\DataModel\DataModule|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\DataModule::class);
         $this->modules = $var;
 
         return $this;
@@ -922,9 +919,8 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setReceiveAt($var)
+    public function setReceiveAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->receive_at = $var;
 
         return $this;
@@ -954,9 +950,8 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setExpiresAt($var)
+    public function setExpiresAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->expires_at = $var;
 
         return $this;
@@ -986,9 +981,8 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setConnectAt($var)
+    public function setConnectAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->connect_at = $var;
 
         return $this;
@@ -1018,9 +1012,8 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -1050,9 +1043,8 @@ class Device extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;

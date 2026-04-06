@@ -47,7 +47,7 @@ class DeviceDataResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\Data[] $var
      * @return $this
      */
-    public function setReports($var)
+    public function setReports(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Packet\DataModel\Data::class);
         $this->reports = $arr;

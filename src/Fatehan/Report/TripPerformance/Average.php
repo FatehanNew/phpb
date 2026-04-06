@@ -67,9 +67,9 @@ class Average extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -89,7 +89,7 @@ class Average extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setUintValue($var)
+    public function setUintValue(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->uint_value = $var;
@@ -111,7 +111,7 @@ class Average extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIntValue($var)
+    public function setIntValue(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->int_value = $var;
@@ -133,7 +133,7 @@ class Average extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setSeconds($var)
+    public function setSeconds(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->seconds = $var;
@@ -155,7 +155,7 @@ class Average extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setKind($var)
+    public function setKind(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->kind = $var;

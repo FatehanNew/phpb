@@ -52,7 +52,7 @@ class Item extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setServerFlagBit($var)
+    public function setServerFlagBit(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->server_flag_bit = $var;
@@ -74,9 +74,9 @@ class Item extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setContent($var)
+    public function setContent(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->content = $var;
 
         return $this;

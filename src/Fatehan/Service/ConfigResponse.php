@@ -77,7 +77,7 @@ class ConfigResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCost($var)
+    public function setCost(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->cost = $var;
@@ -99,7 +99,7 @@ class ConfigResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRecords($var)
+    public function setRecords(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->records = $var;
@@ -121,7 +121,7 @@ class ConfigResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Models\Config[] $var
      * @return $this
      */
-    public function setList($var)
+    public function setList(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Models\Config::class);
         $this->list = $arr;
@@ -153,9 +153,8 @@ class ConfigResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Service\ConfigResponse\AppDesignConfig $var
      * @return $this
      */
-    public function setAppDesign($var)
+    public function setAppDesign(\Fatehan\Service\ConfigResponse\AppDesignConfig|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Service\ConfigResponse\AppDesignConfig::class);
         $this->app_design = $var;
 
         return $this;
@@ -185,9 +184,8 @@ class ConfigResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Service\ConfigResponse\AppSecConfig $var
      * @return $this
      */
-    public function setAppSec($var)
+    public function setAppSec(\Fatehan\Service\ConfigResponse\AppSecConfig|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Service\ConfigResponse\AppSecConfig::class);
         $this->app_sec = $var;
 
         return $this;
@@ -217,9 +215,8 @@ class ConfigResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Identity\Authentication\AuthenticationStrategy $var
      * @return $this
      */
-    public function setStrategy($var)
+    public function setStrategy(\Fatehan\Identity\Authentication\AuthenticationStrategy|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Identity\Authentication\AuthenticationStrategy::class);
         $this->strategy = $var;
 
         return $this;
@@ -239,7 +236,7 @@ class ConfigResponse extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOrganizationId($var)
+    public function setOrganizationId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->organization_id = $var;

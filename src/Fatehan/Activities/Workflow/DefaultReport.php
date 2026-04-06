@@ -62,7 +62,7 @@ class DefaultReport extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDuration($var)
+    public function setDuration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->duration = $var;
@@ -84,7 +84,7 @@ class DefaultReport extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMileage($var)
+    public function setMileage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->mileage = $var;
@@ -116,9 +116,8 @@ class DefaultReport extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setStartedAt($var)
+    public function setStartedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->started_at = $var;
 
         return $this;
@@ -148,9 +147,8 @@ class DefaultReport extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setFinishedAt($var)
+    public function setFinishedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->finished_at = $var;
 
         return $this;

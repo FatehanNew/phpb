@@ -77,7 +77,7 @@ class TripPerformanceRequest extends \Google\Protobuf\Internal\Message
      * @param int[]|string[] $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT64);
         $this->device_id = $arr;
@@ -109,9 +109,8 @@ class TripPerformanceRequest extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setStartedAt($var)
+    public function setStartedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->started_at = $var;
 
         return $this;
@@ -141,9 +140,8 @@ class TripPerformanceRequest extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setFinishedAt($var)
+    public function setFinishedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->finished_at = $var;
 
         return $this;
@@ -163,9 +161,8 @@ class TripPerformanceRequest extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setGroupByDevice($var)
+    public function setGroupByDevice(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->group_by_device = $var;
 
         return $this;
@@ -173,7 +170,7 @@ class TripPerformanceRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.reports.TripPerformanceRequest.GroupBy group_by_datetime = 5 [json_name = "group_by_datetime"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Report\TripPerformanceRequest\GroupBy}
      */
     public function getGroupByDatetime()
     {
@@ -182,10 +179,10 @@ class TripPerformanceRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.reports.TripPerformanceRequest.GroupBy group_by_datetime = 5 [json_name = "group_by_datetime"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Report\TripPerformanceRequest\GroupBy}
      * @return $this
      */
-    public function setGroupByDatetime($var)
+    public function setGroupByDatetime(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Report\TripPerformanceRequest\GroupBy::class);
         $this->group_by_datetime = $var;
@@ -207,9 +204,8 @@ class TripPerformanceRequest extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setHourly($var)
+    public function setHourly(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->hourly = $var;
 
         return $this;
@@ -221,7 +217,7 @@ class TripPerformanceRequest extends \Google\Protobuf\Internal\Message
      */
     public function getOrgId()
     {
-        return isset($this->org_id) ? $this->org_id : 0;
+        return isset($this->org_id) ? $this->org_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasOrgId()
@@ -239,7 +235,7 @@ class TripPerformanceRequest extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOrgId($var)
+    public function setOrgId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->org_id = $var;

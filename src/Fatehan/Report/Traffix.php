@@ -112,7 +112,7 @@ class Traffix extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -144,9 +144,8 @@ class Traffix extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setDateTime($var)
+    public function setDateTime(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->date_time = $var;
 
         return $this;
@@ -176,9 +175,8 @@ class Traffix extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setWorkStartedAt($var)
+    public function setWorkStartedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->work_started_at = $var;
 
         return $this;
@@ -208,9 +206,8 @@ class Traffix extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setWorkFinishedAt($var)
+    public function setWorkFinishedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->work_finished_at = $var;
 
         return $this;
@@ -240,9 +237,8 @@ class Traffix extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setHomeStartedAt($var)
+    public function setHomeStartedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->home_started_at = $var;
 
         return $this;
@@ -272,9 +268,8 @@ class Traffix extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setHomeFinishedAt($var)
+    public function setHomeFinishedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->home_finished_at = $var;
 
         return $this;
@@ -294,7 +289,7 @@ class Traffix extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Report\Traffix\Event[] $var
      * @return $this
      */
-    public function setWorkTraffic($var)
+    public function setWorkTraffic(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Report\Traffix\Event::class);
         $this->work_traffic = $arr;
@@ -316,7 +311,7 @@ class Traffix extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Report\Traffix\Event[] $var
      * @return $this
      */
-    public function setHomeTraffic($var)
+    public function setHomeTraffic(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Report\Traffix\Event::class);
         $this->home_traffic = $arr;
@@ -338,7 +333,7 @@ class Traffix extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Report\Traffix\STOP[] $var
      * @return $this
      */
-    public function setStopList($var)
+    public function setStopList(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Report\Traffix\STOP::class);
         $this->stop_list = $arr;
@@ -360,7 +355,7 @@ class Traffix extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setWorkTimeMileage($var)
+    public function setWorkTimeMileage(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->work_time_mileage = $var;
@@ -382,7 +377,7 @@ class Traffix extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTotalMileage($var)
+    public function setTotalMileage(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->total_mileage = $var;
@@ -404,7 +399,7 @@ class Traffix extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setHomeToWorkMileage($var)
+    public function setHomeToWorkMileage(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->home_to_work_mileage = $var;
@@ -426,7 +421,7 @@ class Traffix extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setWorkToWorkMileage($var)
+    public function setWorkToWorkMileage(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->work_to_work_mileage = $var;
@@ -448,7 +443,7 @@ class Traffix extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setWorkToHomeMileage($var)
+    public function setWorkToHomeMileage(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->work_to_home_mileage = $var;

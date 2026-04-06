@@ -77,9 +77,9 @@ class Log extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->id = $var;
 
         return $this;
@@ -99,7 +99,7 @@ class Log extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setImei($var)
+    public function setImei(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->imei = $var;
@@ -131,9 +131,8 @@ class Log extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\Packet $var
      * @return $this
      */
-    public function setPacket($var)
+    public function setPacket(\Fatehan\Packet\DataModel\Packet|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\Packet::class);
         $this->packet = $var;
 
         return $this;
@@ -163,9 +162,8 @@ class Log extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setDatetime($var)
+    public function setDatetime(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->datetime = $var;
 
         return $this;
@@ -185,7 +183,7 @@ class Log extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPort($var)
+    public function setPort(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->port = $var;
@@ -195,7 +193,7 @@ class Log extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.Protocol protocol = 7 [json_name = "protocol"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\Protocol}
      */
     public function getProtocol()
     {
@@ -204,10 +202,10 @@ class Log extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.Protocol protocol = 7 [json_name = "protocol"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\Protocol}
      * @return $this
      */
-    public function setProtocol($var)
+    public function setProtocol(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\Protocol::class);
         $this->protocol = $var;
@@ -229,9 +227,9 @@ class Log extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPayload($var)
+    public function setPayload(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->payload = $var;
 
         return $this;

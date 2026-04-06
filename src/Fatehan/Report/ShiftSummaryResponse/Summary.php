@@ -182,7 +182,7 @@ class Summary extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -204,7 +204,7 @@ class Summary extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMileage($var)
+    public function setMileage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->mileage = $var;
@@ -226,7 +226,7 @@ class Summary extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIdling($var)
+    public function setIdling(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->idling = $var;
@@ -248,7 +248,7 @@ class Summary extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setParking($var)
+    public function setParking(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->parking = $var;
@@ -270,7 +270,7 @@ class Summary extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMoving($var)
+    public function setMoving(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->moving = $var;
@@ -292,7 +292,7 @@ class Summary extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTowing($var)
+    public function setTowing(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->towing = $var;
@@ -314,7 +314,7 @@ class Summary extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSpeedTotal($var)
+    public function setSpeedTotal(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->speed_total = $var;
@@ -336,7 +336,7 @@ class Summary extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSpeedSum($var)
+    public function setSpeedSum(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->speed_sum = $var;
@@ -358,7 +358,7 @@ class Summary extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSpeedMax($var)
+    public function setSpeedMax(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->speed_max = $var;
@@ -380,7 +380,7 @@ class Summary extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setRecords($var)
+    public function setRecords(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->records = $var;
@@ -402,7 +402,7 @@ class Summary extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setHarshAcceleration($var)
+    public function setHarshAcceleration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->harsh_acceleration = $var;
@@ -424,7 +424,7 @@ class Summary extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setHarshBreak($var)
+    public function setHarshBreak(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->harsh_break = $var;
@@ -446,7 +446,7 @@ class Summary extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setHarshCorner($var)
+    public function setHarshCorner(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->harsh_corner = $var;
@@ -478,7 +478,7 @@ class Summary extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMinTemp01($var)
+    public function setMinTemp01(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->min_temp_01 = $var;
@@ -510,7 +510,7 @@ class Summary extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMaxTemp01($var)
+    public function setMaxTemp01(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->max_temp_01 = $var;
@@ -542,7 +542,7 @@ class Summary extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMinTemp02($var)
+    public function setMinTemp02(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->min_temp_02 = $var;
@@ -574,7 +574,7 @@ class Summary extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMaxTemp02($var)
+    public function setMaxTemp02(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->max_temp_02 = $var;
@@ -606,7 +606,7 @@ class Summary extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMinTemp03($var)
+    public function setMinTemp03(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->min_temp_03 = $var;
@@ -638,7 +638,7 @@ class Summary extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMaxTemp03($var)
+    public function setMaxTemp03(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->max_temp_03 = $var;
@@ -670,7 +670,7 @@ class Summary extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMinTemp04($var)
+    public function setMinTemp04(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->min_temp_04 = $var;
@@ -702,7 +702,7 @@ class Summary extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMaxTemp04($var)
+    public function setMaxTemp04(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->max_temp_04 = $var;
@@ -734,7 +734,7 @@ class Summary extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMinHumidity($var)
+    public function setMinHumidity(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->min_humidity = $var;
@@ -766,7 +766,7 @@ class Summary extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMaxHumidity($var)
+    public function setMaxHumidity(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->max_humidity = $var;
@@ -798,9 +798,8 @@ class Summary extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setStartedAt($var)
+    public function setStartedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->started_at = $var;
 
         return $this;
@@ -830,9 +829,8 @@ class Summary extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setFinishedAt($var)
+    public function setFinishedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->finished_at = $var;
 
         return $this;
@@ -852,7 +850,7 @@ class Summary extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTotalSeconds($var)
+    public function setTotalSeconds(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->total_seconds = $var;
@@ -874,7 +872,7 @@ class Summary extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setIncludingSeconds($var)
+    public function setIncludingSeconds(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->including_seconds = $var;
@@ -896,7 +894,7 @@ class Summary extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDifferent($var)
+    public function setDifferent(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->different = $var;

@@ -77,7 +77,7 @@ class TirePressureMonitoringSystemModule extends \Google\Protobuf\Internal\Messa
      * @param int $var
      * @return $this
      */
-    public function setTireAxleKey($var)
+    public function setTireAxleKey(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->tire_axle_key = $var;
@@ -109,7 +109,7 @@ class TirePressureMonitoringSystemModule extends \Google\Protobuf\Internal\Messa
      * @param int $var
      * @return $this
      */
-    public function setPressureKey($var)
+    public function setPressureKey(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->pressure_key = $var;
@@ -141,7 +141,7 @@ class TirePressureMonitoringSystemModule extends \Google\Protobuf\Internal\Messa
      * @param int $var
      * @return $this
      */
-    public function setTemperatureKey($var)
+    public function setTemperatureKey(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->temperature_key = $var;
@@ -173,7 +173,7 @@ class TirePressureMonitoringSystemModule extends \Google\Protobuf\Internal\Messa
      * @param int $var
      * @return $this
      */
-    public function setStatusKey($var)
+    public function setStatusKey(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->status_key = $var;
@@ -195,7 +195,7 @@ class TirePressureMonitoringSystemModule extends \Google\Protobuf\Internal\Messa
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setTireData($var)
+    public function setTireData(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::UINT32, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Packet\DataModel\TirePressureMonitoringSystemModule\TirePosition::class);
         $this->tire_data = $arr;

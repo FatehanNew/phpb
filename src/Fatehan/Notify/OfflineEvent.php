@@ -47,7 +47,7 @@ class OfflineEvent extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setSeconds($var)
+    public function setSeconds(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->seconds = $var;

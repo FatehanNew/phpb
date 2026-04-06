@@ -62,7 +62,7 @@ class SubscriptionRepo extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setPartnerId($var)
+    public function setPartnerId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->partner_id = $var;
@@ -84,7 +84,7 @@ class SubscriptionRepo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Financial\Product[] $var
      * @return $this
      */
-    public function setCustomSubs($var)
+    public function setCustomSubs(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Financial\Product::class);
         $this->custom_subs = $arr;
@@ -106,7 +106,7 @@ class SubscriptionRepo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Financial\Product[] $var
      * @return $this
      */
-    public function setPackages($var)
+    public function setPackages(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Financial\Product::class);
         $this->packages = $arr;
@@ -128,7 +128,7 @@ class SubscriptionRepo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Financial\PaymentGateway[] $var
      * @return $this
      */
-    public function setGateways($var)
+    public function setGateways(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Financial\PaymentGateway::class);
         $this->gateways = $arr;

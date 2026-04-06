@@ -252,9 +252,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setCheckEngineIndicator($var)
+    public function setCheckEngineIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->check_engine_indicator = $var;
 
         return $this;
@@ -284,9 +283,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAbsIndicator($var)
+    public function setAbsIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->abs_indicator = $var;
 
         return $this;
@@ -316,9 +314,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEspIndicator($var)
+    public function setEspIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->esp_indicator = $var;
 
         return $this;
@@ -348,9 +345,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEspTurnedOff($var)
+    public function setEspTurnedOff(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->esp_turned_off = $var;
 
         return $this;
@@ -380,9 +376,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setStopIndicator($var)
+    public function setStopIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->stop_indicator = $var;
 
         return $this;
@@ -412,9 +407,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setOilLevelIndicator($var)
+    public function setOilLevelIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->oil_level_indicator = $var;
 
         return $this;
@@ -444,9 +438,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setCoolantLiquidLevel($var)
+    public function setCoolantLiquidLevel(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->coolant_liquid_level = $var;
 
         return $this;
@@ -476,9 +469,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setBatteryNotChargingIndicator($var)
+    public function setBatteryNotChargingIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->battery_not_charging_indicator = $var;
 
         return $this;
@@ -508,9 +500,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setHandbrakeSystemIndicator($var)
+    public function setHandbrakeSystemIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->handbrake_system_indicator = $var;
 
         return $this;
@@ -540,9 +531,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAirbagIndicator($var)
+    public function setAirbagIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->airbag_indicator = $var;
 
         return $this;
@@ -572,9 +562,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEpsIndicator($var)
+    public function setEpsIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->eps_indicator = $var;
 
         return $this;
@@ -604,9 +593,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setWarningIndicator($var)
+    public function setWarningIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->warning_indicator = $var;
 
         return $this;
@@ -636,9 +624,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLightsFailureIndicator($var)
+    public function setLightsFailureIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->lights_failure_indicator = $var;
 
         return $this;
@@ -668,9 +655,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLowTirePressureIndicator($var)
+    public function setLowTirePressureIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->low_tire_pressure_indicator = $var;
 
         return $this;
@@ -700,9 +686,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setWearOfBrakePadsIndicator($var)
+    public function setWearOfBrakePadsIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->wear_of_brake_pads_indicator = $var;
 
         return $this;
@@ -732,9 +717,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLowFuelLevelIndicator($var)
+    public function setLowFuelLevelIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->low_fuel_level_indicator = $var;
 
         return $this;
@@ -764,9 +748,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setMaintenanceRequiredIndicator($var)
+    public function setMaintenanceRequiredIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->maintenance_required_indicator = $var;
 
         return $this;
@@ -796,9 +779,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setGlowPlugIndicator($var)
+    public function setGlowPlugIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->glow_plug_indicator = $var;
 
         return $this;
@@ -828,9 +810,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setFapIndicator($var)
+    public function setFapIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->fap_indicator = $var;
 
         return $this;
@@ -860,9 +841,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEpcElectronicPowerControlIndicator($var)
+    public function setEpcElectronicPowerControlIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->epc_electronic_power_control_indicator = $var;
 
         return $this;
@@ -892,9 +872,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setCloggedEngineOilFilterIndicator($var)
+    public function setCloggedEngineOilFilterIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->clogged_engine_oil_filter_indicator = $var;
 
         return $this;
@@ -924,9 +903,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLowEngineOilPressureIndicator($var)
+    public function setLowEngineOilPressureIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->low_engine_oil_pressure_indicator = $var;
 
         return $this;
@@ -956,9 +934,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setTooHighEngineOilTemperatureIndicator($var)
+    public function setTooHighEngineOilTemperatureIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->too_high_engine_oil_temperature_indicator = $var;
 
         return $this;
@@ -988,9 +965,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLowCoolantLevelIndicator($var)
+    public function setLowCoolantLevelIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->low_coolant_level_indicator = $var;
 
         return $this;
@@ -1020,9 +996,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setCloggedHydraulicSystemOilFilterIndicator($var)
+    public function setCloggedHydraulicSystemOilFilterIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->clogged_hydraulic_system_oil_filter_indicator = $var;
 
         return $this;
@@ -1052,9 +1027,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setHydraulicSystemLowPressureIndicator($var)
+    public function setHydraulicSystemLowPressureIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->hydraulic_system_low_pressure_indicator = $var;
 
         return $this;
@@ -1084,9 +1058,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setHydraulicOilLowLevelIndicator($var)
+    public function setHydraulicOilLowLevelIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->hydraulic_oil_low_level_indicator = $var;
 
         return $this;
@@ -1116,9 +1089,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setHydraulicSystemHighTemperatureIndicator($var)
+    public function setHydraulicSystemHighTemperatureIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->hydraulic_system_high_temperature_indicator = $var;
 
         return $this;
@@ -1148,9 +1120,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setOilOverflowInHydraulicChamberIndicator($var)
+    public function setOilOverflowInHydraulicChamberIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->oil_overflow_in_hydraulic_chamber_indicator = $var;
 
         return $this;
@@ -1180,9 +1151,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setCloggedAirFilterIndicator($var)
+    public function setCloggedAirFilterIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->clogged_air_filter_indicator = $var;
 
         return $this;
@@ -1212,9 +1182,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setCloggedFuelFilterIndicator($var)
+    public function setCloggedFuelFilterIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->clogged_fuel_filter_indicator = $var;
 
         return $this;
@@ -1244,9 +1213,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setWaterInFuelIndicator($var)
+    public function setWaterInFuelIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->water_in_fuel_indicator = $var;
 
         return $this;
@@ -1276,9 +1244,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setCloggedBrakeSystemFilterIndicator($var)
+    public function setCloggedBrakeSystemFilterIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->clogged_brake_system_filter_indicator = $var;
 
         return $this;
@@ -1308,9 +1275,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLowWasherFluidLevelIndicator($var)
+    public function setLowWasherFluidLevelIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->low_washer_fluid_level_indicator = $var;
 
         return $this;
@@ -1340,9 +1306,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLowAdBlueLevelIndicator($var)
+    public function setLowAdBlueLevelIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->low_ad_blue_level_indicator = $var;
 
         return $this;
@@ -1372,9 +1337,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLowTrailerTyrePressureIndicator($var)
+    public function setLowTrailerTyrePressureIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->low_trailer_tyre_pressure_indicator = $var;
 
         return $this;
@@ -1404,9 +1368,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setWearOfTrailerBrakeLiningIndicator($var)
+    public function setWearOfTrailerBrakeLiningIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->wear_of_trailer_brake_lining_indicator = $var;
 
         return $this;
@@ -1436,9 +1399,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setHighTrailerBrakeTemperatureIndicator($var)
+    public function setHighTrailerBrakeTemperatureIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->high_trailer_brake_temperature_indicator = $var;
 
         return $this;
@@ -1468,9 +1430,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIncorrectTrailerPneumaticSupplyIndicator($var)
+    public function setIncorrectTrailerPneumaticSupplyIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->incorrect_trailer_pneumatic_supply_indicator = $var;
 
         return $this;
@@ -1500,9 +1461,8 @@ class Isf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLowCngLevelIndicator($var)
+    public function setLowCngLevelIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->low_cng_level_indicator = $var;
 
         return $this;

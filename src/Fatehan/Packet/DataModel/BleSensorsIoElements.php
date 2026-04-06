@@ -322,9 +322,9 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setBeacon($var)
+    public function setBeacon(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->beacon = $var;
 
         return $this;
@@ -354,9 +354,9 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setAdvancedBleBeaconData($var)
+    public function setAdvancedBleBeaconData(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->advanced_ble_beacon_data = $var;
 
         return $this;
@@ -386,7 +386,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTemperature01($var)
+    public function setTemperature01(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->temperature01 = $var;
@@ -418,7 +418,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTemperature02($var)
+    public function setTemperature02(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->temperature02 = $var;
@@ -450,7 +450,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTemperature03($var)
+    public function setTemperature03(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->temperature03 = $var;
@@ -482,7 +482,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTemperature04($var)
+    public function setTemperature04(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->temperature04 = $var;
@@ -514,7 +514,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBattery01($var)
+    public function setBattery01(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->battery01 = $var;
@@ -546,7 +546,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBattery02($var)
+    public function setBattery02(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->battery02 = $var;
@@ -578,7 +578,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBattery03($var)
+    public function setBattery03(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->battery03 = $var;
@@ -610,7 +610,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBattery04($var)
+    public function setBattery04(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->battery04 = $var;
@@ -642,7 +642,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setHumidity01($var)
+    public function setHumidity01(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->humidity01 = $var;
@@ -674,7 +674,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setHumidity02($var)
+    public function setHumidity02(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->humidity02 = $var;
@@ -706,7 +706,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setHumidity03($var)
+    public function setHumidity03(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->humidity03 = $var;
@@ -738,7 +738,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setHumidity04($var)
+    public function setHumidity04(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->humidity04 = $var;
@@ -770,7 +770,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelLevel01($var)
+    public function setFuelLevel01(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_level01 = $var;
@@ -802,7 +802,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelLevel02($var)
+    public function setFuelLevel02(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_level02 = $var;
@@ -834,7 +834,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelLevel03($var)
+    public function setFuelLevel03(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_level03 = $var;
@@ -866,7 +866,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelLevel04($var)
+    public function setFuelLevel04(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_level04 = $var;
@@ -898,7 +898,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelFrequency01($var)
+    public function setFuelFrequency01(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_frequency01 = $var;
@@ -930,7 +930,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelFrequency02($var)
+    public function setFuelFrequency02(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_frequency02 = $var;
@@ -962,7 +962,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelFrequency03($var)
+    public function setFuelFrequency03(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_frequency03 = $var;
@@ -994,7 +994,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelFrequency04($var)
+    public function setFuelFrequency04(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_frequency04 = $var;
@@ -1026,7 +1026,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLuminosity01($var)
+    public function setLuminosity01(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->luminosity01 = $var;
@@ -1058,7 +1058,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLuminosity02($var)
+    public function setLuminosity02(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->luminosity02 = $var;
@@ -1090,7 +1090,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLuminosity03($var)
+    public function setLuminosity03(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->luminosity03 = $var;
@@ -1122,7 +1122,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLuminosity04($var)
+    public function setLuminosity04(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->luminosity04 = $var;
@@ -1154,9 +1154,9 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setBle01Custom01($var)
+    public function setBle01Custom01(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->ble01_custom01 = $var;
 
         return $this;
@@ -1186,7 +1186,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBle01Custom02($var)
+    public function setBle01Custom02(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ble01_custom02 = $var;
@@ -1218,7 +1218,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBle01Custom03($var)
+    public function setBle01Custom03(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ble01_custom03 = $var;
@@ -1250,7 +1250,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBle01Custom04($var)
+    public function setBle01Custom04(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ble01_custom04 = $var;
@@ -1282,7 +1282,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBle01Custom05($var)
+    public function setBle01Custom05(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ble01_custom05 = $var;
@@ -1314,9 +1314,9 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setBle02Custom01($var)
+    public function setBle02Custom01(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->ble02_custom01 = $var;
 
         return $this;
@@ -1346,7 +1346,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBle02Custom02($var)
+    public function setBle02Custom02(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ble02_custom02 = $var;
@@ -1378,7 +1378,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBle02Custom03($var)
+    public function setBle02Custom03(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ble02_custom03 = $var;
@@ -1410,7 +1410,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBle02Custom04($var)
+    public function setBle02Custom04(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ble02_custom04 = $var;
@@ -1442,7 +1442,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBle02Custom05($var)
+    public function setBle02Custom05(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ble02_custom05 = $var;
@@ -1474,9 +1474,9 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setBle03Custom01($var)
+    public function setBle03Custom01(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->ble03_custom01 = $var;
 
         return $this;
@@ -1506,7 +1506,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBle03Custom02($var)
+    public function setBle03Custom02(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ble03_custom02 = $var;
@@ -1538,7 +1538,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBle03Custom03($var)
+    public function setBle03Custom03(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ble03_custom03 = $var;
@@ -1570,7 +1570,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBle03Custom04($var)
+    public function setBle03Custom04(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ble03_custom04 = $var;
@@ -1602,7 +1602,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBle03Custom05($var)
+    public function setBle03Custom05(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ble03_custom05 = $var;
@@ -1634,9 +1634,9 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setBle04Custom01($var)
+    public function setBle04Custom01(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->ble04_custom01 = $var;
 
         return $this;
@@ -1666,7 +1666,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBle04Custom02($var)
+    public function setBle04Custom02(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ble04_custom02 = $var;
@@ -1698,7 +1698,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBle04Custom03($var)
+    public function setBle04Custom03(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ble04_custom03 = $var;
@@ -1730,7 +1730,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBle04Custom04($var)
+    public function setBle04Custom04(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ble04_custom04 = $var;
@@ -1762,7 +1762,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBle04Custom05($var)
+    public function setBle04Custom05(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ble04_custom05 = $var;
@@ -1776,7 +1776,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      */
     public function getSensor01()
     {
-        return isset($this->sensor01) ? $this->sensor01 : 0;
+        return isset($this->sensor01) ? $this->sensor01 : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasSensor01()
@@ -1794,7 +1794,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setSensor01($var)
+    public function setSensor01(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->sensor01 = $var;
@@ -1808,7 +1808,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      */
     public function getSensor02()
     {
-        return isset($this->sensor02) ? $this->sensor02 : 0;
+        return isset($this->sensor02) ? $this->sensor02 : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasSensor02()
@@ -1826,7 +1826,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setSensor02($var)
+    public function setSensor02(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->sensor02 = $var;
@@ -1840,7 +1840,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      */
     public function getSensor03()
     {
-        return isset($this->sensor03) ? $this->sensor03 : 0;
+        return isset($this->sensor03) ? $this->sensor03 : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasSensor03()
@@ -1858,7 +1858,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setSensor03($var)
+    public function setSensor03(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->sensor03 = $var;
@@ -1872,7 +1872,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      */
     public function getSensor04()
     {
-        return isset($this->sensor04) ? $this->sensor04 : 0;
+        return isset($this->sensor04) ? $this->sensor04 : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasSensor04()
@@ -1890,7 +1890,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setSensor04($var)
+    public function setSensor04(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->sensor04 = $var;
@@ -1922,7 +1922,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIllum01($var)
+    public function setIllum01(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->illum01 = $var;
@@ -1954,7 +1954,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIllum02($var)
+    public function setIllum02(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->illum02 = $var;
@@ -1986,7 +1986,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIllum03($var)
+    public function setIllum03(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->illum03 = $var;
@@ -2018,7 +2018,7 @@ class BleSensorsIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIllum04($var)
+    public function setIllum04(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->illum04 = $var;

@@ -114,7 +114,7 @@ class Area extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -124,7 +124,7 @@ class Area extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.areas.AreaType type = 2 [json_name = "type"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Area\AreaType}
      */
     public function getType()
     {
@@ -133,10 +133,10 @@ class Area extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.areas.AreaType type = 2 [json_name = "type"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Area\AreaType}
      * @return $this
      */
-    public function setType($var)
+    public function setType(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Area\AreaType::class);
         $this->type = $var;
@@ -168,9 +168,9 @@ class Area extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -190,7 +190,7 @@ class Area extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOrganizationId($var)
+    public function setOrganizationId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->organization_id = $var;
@@ -222,9 +222,8 @@ class Area extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setRadius($var)
+    public function setRadius(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->radius = $var;
 
         return $this;
@@ -254,9 +253,9 @@ class Area extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setColor($var)
+    public function setColor(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->color = $var;
 
         return $this;
@@ -268,7 +267,7 @@ class Area extends \Google\Protobuf\Internal\Message
      */
     public function getCreatedBy()
     {
-        return isset($this->created_by) ? $this->created_by : 0;
+        return isset($this->created_by) ? $this->created_by : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCreatedBy()
@@ -286,7 +285,7 @@ class Area extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreatedBy($var)
+    public function setCreatedBy(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->created_by = $var;
@@ -300,7 +299,7 @@ class Area extends \Google\Protobuf\Internal\Message
      */
     public function getUpdatedBy()
     {
-        return isset($this->updated_by) ? $this->updated_by : 0;
+        return isset($this->updated_by) ? $this->updated_by : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasUpdatedBy()
@@ -318,7 +317,7 @@ class Area extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setUpdatedBy($var)
+    public function setUpdatedBy(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->updated_by = $var;
@@ -332,7 +331,7 @@ class Area extends \Google\Protobuf\Internal\Message
      */
     public function getCategoryId()
     {
-        return isset($this->category_id) ? $this->category_id : 0;
+        return isset($this->category_id) ? $this->category_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCategoryId()
@@ -350,7 +349,7 @@ class Area extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCategoryId($var)
+    public function setCategoryId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->category_id = $var;
@@ -382,9 +381,8 @@ class Area extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -414,9 +412,8 @@ class Area extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;
@@ -446,9 +443,8 @@ class Area extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Area\AreaCategory $var
      * @return $this
      */
-    public function setCategory($var)
+    public function setCategory(\Fatehan\Area\AreaCategory|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Area\AreaCategory::class);
         $this->category = $var;
 
         return $this;
@@ -478,9 +474,8 @@ class Area extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Identity\Organization $var
      * @return $this
      */
-    public function setOrganization($var)
+    public function setOrganization(\Fatehan\Identity\Organization|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Identity\Organization::class);
         $this->organization = $var;
 
         return $this;
@@ -500,7 +495,7 @@ class Area extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Area\Point[] $var
      * @return $this
      */
-    public function setCoordinates($var)
+    public function setCoordinates(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Area\Point::class);
         $this->coordinates = $arr;

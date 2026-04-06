@@ -72,9 +72,8 @@ class CommandActionIndexRequest extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setDisablePagination($var)
+    public function setDisablePagination(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->disable_pagination = $var;
 
         return $this;
@@ -104,7 +103,7 @@ class CommandActionIndexRequest extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPage($var)
+    public function setPage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->page = $var;
@@ -136,7 +135,7 @@ class CommandActionIndexRequest extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPageSize($var)
+    public function setPageSize(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->page_size = $var;
@@ -158,7 +157,7 @@ class CommandActionIndexRequest extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setQueryFilter($var)
+    public function setQueryFilter(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Service\FilterScope::class);
         $this->query_filter = $arr;
@@ -190,9 +189,9 @@ class CommandActionIndexRequest extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSort($var)
+    public function setSort(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->sort = $var;
 
         return $this;
@@ -222,9 +221,9 @@ class CommandActionIndexRequest extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setOrder($var)
+    public function setOrder(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->order = $var;
 
         return $this;

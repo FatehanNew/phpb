@@ -55,7 +55,7 @@ class TripTask extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.trips.TripTask.EventType event_type = 1;</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Trip\TripTask\EventType}
      */
     public function getEventType()
     {
@@ -64,10 +64,10 @@ class TripTask extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.trips.TripTask.EventType event_type = 1;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Trip\TripTask\EventType}
      * @return $this
      */
-    public function setEventType($var)
+    public function setEventType(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Trip\TripTask\EventType::class);
         $this->event_type = $var;
@@ -99,9 +99,8 @@ class TripTask extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Trip\Trip $var
      * @return $this
      */
-    public function setTrip($var)
+    public function setTrip(\Fatehan\Trip\Trip|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Trip\Trip::class);
         $this->trip = $var;
 
         return $this;
@@ -131,9 +130,8 @@ class TripTask extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Trip\Monthly $var
      * @return $this
      */
-    public function setMonthly($var)
+    public function setMonthly(\Fatehan\Trip\Monthly|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Trip\Monthly::class);
         $this->monthly = $var;
 
         return $this;
@@ -163,9 +161,8 @@ class TripTask extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Trip\FusionTrip $var
      * @return $this
      */
-    public function setFusion($var)
+    public function setFusion(\Fatehan\Trip\FusionTrip|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Trip\FusionTrip::class);
         $this->fusion = $var;
 
         return $this;
@@ -195,9 +192,9 @@ class TripTask extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setAdditional($var)
+    public function setAdditional(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->additional = $var;
 
         return $this;

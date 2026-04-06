@@ -52,9 +52,9 @@ class Attachment extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -74,7 +74,7 @@ class Attachment extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSize($var)
+    public function setSize(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->size = $var;

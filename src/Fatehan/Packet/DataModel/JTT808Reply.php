@@ -57,7 +57,7 @@ class JTT808Reply extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setResponseSerialNumber($var)
+    public function setResponseSerialNumber(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->response_serial_number = $var;
@@ -79,7 +79,7 @@ class JTT808Reply extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setResponseId($var)
+    public function setResponseId(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->response_id = $var;
@@ -101,7 +101,7 @@ class JTT808Reply extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setResult($var)
+    public function setResult(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->result = $var;

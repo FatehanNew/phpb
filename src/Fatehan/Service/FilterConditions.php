@@ -57,9 +57,9 @@ class FilterConditions extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFilterType($var)
+    public function setFilterType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->filter_type = $var;
 
         return $this;
@@ -79,9 +79,9 @@ class FilterConditions extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setType($var)
+    public function setType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->type = $var;
 
         return $this;
@@ -101,9 +101,9 @@ class FilterConditions extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFilter($var)
+    public function setFilter(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->filter = $var;
 
         return $this;

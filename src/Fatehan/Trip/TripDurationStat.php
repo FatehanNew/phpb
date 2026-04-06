@@ -52,7 +52,7 @@ class TripDurationStat extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDuration($var)
+    public function setDuration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->duration = $var;
@@ -74,7 +74,7 @@ class TripDurationStat extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMileage($var)
+    public function setMileage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->mileage = $var;

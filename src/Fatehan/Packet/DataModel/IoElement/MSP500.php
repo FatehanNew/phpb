@@ -67,9 +67,9 @@ class MSP500 extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMsp500VendorName($var)
+    public function setMsp500VendorName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->msp500_vendor_name = $var;
 
         return $this;
@@ -99,9 +99,9 @@ class MSP500 extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMsp500VehicleNumber($var)
+    public function setMsp500VehicleNumber(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->msp500_vehicle_number = $var;
 
         return $this;
@@ -131,9 +131,8 @@ class MSP500 extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setMsp500SpeedSensor($var)
+    public function setMsp500SpeedSensor(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->msp500_speed_sensor = $var;
 
         return $this;

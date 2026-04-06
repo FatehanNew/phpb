@@ -67,9 +67,9 @@ class SystemIoStyle extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setIcon($var)
+    public function setIcon(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->icon = $var;
 
         return $this;
@@ -99,9 +99,9 @@ class SystemIoStyle extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -131,9 +131,9 @@ class SystemIoStyle extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setColor($var)
+    public function setColor(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->color = $var;
 
         return $this;

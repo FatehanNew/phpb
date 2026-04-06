@@ -187,9 +187,8 @@ class Csf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setParkingLights($var)
+    public function setParkingLights(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->parking_lights = $var;
 
         return $this;
@@ -219,9 +218,8 @@ class Csf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setDippedHeadLights($var)
+    public function setDippedHeadLights(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->dipped_head_lights = $var;
 
         return $this;
@@ -251,9 +249,8 @@ class Csf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setFullBeamHeadlights($var)
+    public function setFullBeamHeadlights(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->full_beam_headlights = $var;
 
         return $this;
@@ -283,9 +280,8 @@ class Csf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setRearFogLights($var)
+    public function setRearFogLights(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->rear_fog_lights = $var;
 
         return $this;
@@ -315,9 +311,8 @@ class Csf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setFrontFogLights($var)
+    public function setFrontFogLights(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->front_fog_lights = $var;
 
         return $this;
@@ -347,9 +342,8 @@ class Csf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAdditionalFrontLights($var)
+    public function setAdditionalFrontLights(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->additional_front_lights = $var;
 
         return $this;
@@ -379,9 +373,8 @@ class Csf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAdditionalRearLights($var)
+    public function setAdditionalRearLights(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->additional_rear_lights = $var;
 
         return $this;
@@ -411,9 +404,8 @@ class Csf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLightSignal($var)
+    public function setLightSignal(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->light_signal = $var;
 
         return $this;
@@ -443,9 +435,8 @@ class Csf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAirConditioning($var)
+    public function setAirConditioning(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->air_conditioning = $var;
 
         return $this;
@@ -475,9 +466,8 @@ class Csf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setCruiseControl($var)
+    public function setCruiseControl(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->cruise_control = $var;
 
         return $this;
@@ -507,9 +497,8 @@ class Csf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAutomaticRetarder($var)
+    public function setAutomaticRetarder(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->automatic_retarder = $var;
 
         return $this;
@@ -539,9 +528,8 @@ class Csf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setManualRetarder($var)
+    public function setManualRetarder(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->manual_retarder = $var;
 
         return $this;
@@ -571,9 +559,8 @@ class Csf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setDriverSeatbeltFastened($var)
+    public function setDriverSeatbeltFastened(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->driver_seatbelt_fastened = $var;
 
         return $this;
@@ -603,9 +590,8 @@ class Csf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setFrontDriverSeatbeltFastened($var)
+    public function setFrontDriverSeatbeltFastened(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->front_driver_seatbelt_fastened = $var;
 
         return $this;
@@ -635,9 +621,8 @@ class Csf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLeftDriverSeatbeltFastened($var)
+    public function setLeftDriverSeatbeltFastened(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->left_driver_seatbelt_fastened = $var;
 
         return $this;
@@ -667,9 +652,8 @@ class Csf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setRightDriverSeatbeltFastened($var)
+    public function setRightDriverSeatbeltFastened(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->right_driver_seatbelt_fastened = $var;
 
         return $this;
@@ -699,9 +683,8 @@ class Csf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setCentreDriverSeatbeltFastened($var)
+    public function setCentreDriverSeatbeltFastened(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->centre_driver_seatbelt_fastened = $var;
 
         return $this;
@@ -731,9 +714,8 @@ class Csf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setFrontPassengerPresent($var)
+    public function setFrontPassengerPresent(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->front_passenger_present = $var;
 
         return $this;
@@ -763,9 +745,8 @@ class Csf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setPto($var)
+    public function setPto(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->pto = $var;
 
         return $this;
@@ -795,9 +776,8 @@ class Csf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setFrontDifferentialLocked($var)
+    public function setFrontDifferentialLocked(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->front_differential_locked = $var;
 
         return $this;
@@ -827,9 +807,8 @@ class Csf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setRearDifferentialLocked($var)
+    public function setRearDifferentialLocked(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->rear_differential_locked = $var;
 
         return $this;
@@ -859,9 +838,8 @@ class Csf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setCentralDifferential4HiLocked($var)
+    public function setCentralDifferential4HiLocked(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->central_differential4hi_locked = $var;
 
         return $this;
@@ -891,9 +869,8 @@ class Csf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setRearDifferential4LoLocked($var)
+    public function setRearDifferential4LoLocked(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->rear_differential4lo_locked = $var;
 
         return $this;
@@ -923,9 +900,8 @@ class Csf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setTrailerAxle1LiftActive($var)
+    public function setTrailerAxle1LiftActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->trailer_axle1_lift_active = $var;
 
         return $this;
@@ -955,9 +931,8 @@ class Csf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setTrailerAxle2LiftActive($var)
+    public function setTrailerAxle2LiftActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->trailer_axle2_lift_active = $var;
 
         return $this;
@@ -987,9 +962,8 @@ class Csf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setTrailerConnected($var)
+    public function setTrailerConnected(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->trailer_connected = $var;
 
         return $this;
@@ -1019,9 +993,8 @@ class Csf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setStartStopSystemInactive($var)
+    public function setStartStopSystemInactive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->start_stop_system_inactive = $var;
 
         return $this;

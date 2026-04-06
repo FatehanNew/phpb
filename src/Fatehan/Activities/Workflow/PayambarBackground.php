@@ -77,7 +77,7 @@ class PayambarBackground extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMovingDuration($var)
+    public function setMovingDuration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->moving_duration = $var;
@@ -99,7 +99,7 @@ class PayambarBackground extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIdlingDuration($var)
+    public function setIdlingDuration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->idling_duration = $var;
@@ -121,7 +121,7 @@ class PayambarBackground extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setParkingDuration($var)
+    public function setParkingDuration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->parking_duration = $var;
@@ -143,7 +143,7 @@ class PayambarBackground extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTowingDuration($var)
+    public function setTowingDuration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->towing_duration = $var;
@@ -165,9 +165,8 @@ class PayambarBackground extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsLoaded($var)
+    public function setIsLoaded(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_loaded = $var;
 
         return $this;
@@ -197,9 +196,8 @@ class PayambarBackground extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\Data $var
      * @return $this
      */
-    public function setLoading($var)
+    public function setLoading(\Fatehan\Packet\DataModel\Data|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\Data::class);
         $this->loading = $var;
 
         return $this;
@@ -229,9 +227,8 @@ class PayambarBackground extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\Data $var
      * @return $this
      */
-    public function setUnloading($var)
+    public function setUnloading(\Fatehan\Packet\DataModel\Data|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\Data::class);
         $this->unloading = $var;
 
         return $this;

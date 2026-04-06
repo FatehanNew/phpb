@@ -82,7 +82,7 @@ class Event extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setAreaId($var)
+    public function setAreaId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->area_id = $var;
@@ -114,9 +114,8 @@ class Event extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setStartedAt($var)
+    public function setStartedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->started_at = $var;
 
         return $this;
@@ -146,9 +145,8 @@ class Event extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setFinishedAt($var)
+    public function setFinishedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->finished_at = $var;
 
         return $this;
@@ -168,7 +166,7 @@ class Event extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setMileage($var)
+    public function setMileage(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->mileage = $var;
@@ -190,7 +188,7 @@ class Event extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDuration($var)
+    public function setDuration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->duration = $var;
@@ -200,7 +198,7 @@ class Event extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.reports.Traffix.Event.Type type = 6;</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Report\Traffix\Event\Type}
      */
     public function getType()
     {
@@ -209,10 +207,10 @@ class Event extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.reports.Traffix.Event.Type type = 6;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Report\Traffix\Event\Type}
      * @return $this
      */
-    public function setType($var)
+    public function setType(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Report\Traffix\Event\Type::class);
         $this->type = $var;
@@ -234,7 +232,7 @@ class Event extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setGroupId($var)
+    public function setGroupId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->group_id = $var;
@@ -266,7 +264,7 @@ class Event extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMileageSum($var)
+    public function setMileageSum(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->mileage_sum = $var;

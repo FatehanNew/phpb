@@ -117,7 +117,7 @@ class AdditionalInfo extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPacketVersion($var)
+    public function setPacketVersion(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->packet_version = $var;
@@ -149,7 +149,7 @@ class AdditionalInfo extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDeviceVersion($var)
+    public function setDeviceVersion(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->device_version = $var;
@@ -181,7 +181,7 @@ class AdditionalInfo extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPacketCounter($var)
+    public function setPacketCounter(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->packet_counter = $var;
@@ -213,7 +213,7 @@ class AdditionalInfo extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSystemUptime($var)
+    public function setSystemUptime(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->system_uptime = $var;
@@ -245,7 +245,7 @@ class AdditionalInfo extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setResetCounter($var)
+    public function setResetCounter(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->reset_counter = $var;
@@ -277,7 +277,7 @@ class AdditionalInfo extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFlashStorePoint($var)
+    public function setFlashStorePoint(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->flash_store_point = $var;
@@ -309,7 +309,7 @@ class AdditionalInfo extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPauseTime($var)
+    public function setPauseTime(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->pause_time = $var;
@@ -341,7 +341,7 @@ class AdditionalInfo extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDeadTime($var)
+    public function setDeadTime(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->dead_time = $var;
@@ -373,7 +373,7 @@ class AdditionalInfo extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDeviceStatus($var)
+    public function setDeviceStatus(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->device_status = $var;
@@ -405,7 +405,7 @@ class AdditionalInfo extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setStoredPictureCounter($var)
+    public function setStoredPictureCounter(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->stored_picture_counter = $var;
@@ -437,7 +437,7 @@ class AdditionalInfo extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setResetSource($var)
+    public function setResetSource(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->reset_source = $var;
@@ -469,7 +469,7 @@ class AdditionalInfo extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBootloaderVersion($var)
+    public function setBootloaderVersion(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->bootloader_version = $var;
@@ -501,7 +501,7 @@ class AdditionalInfo extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSimCharge($var)
+    public function setSimCharge(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->sim_charge = $var;

@@ -112,7 +112,7 @@ class DallasTemperature extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDallasTemperature1($var)
+    public function setDallasTemperature1(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->dallas_temperature1 = $var;
@@ -144,7 +144,7 @@ class DallasTemperature extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDallasTemperature2($var)
+    public function setDallasTemperature2(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->dallas_temperature2 = $var;
@@ -176,7 +176,7 @@ class DallasTemperature extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDallasTemperature3($var)
+    public function setDallasTemperature3(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->dallas_temperature3 = $var;
@@ -208,7 +208,7 @@ class DallasTemperature extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDallasTemperature4($var)
+    public function setDallasTemperature4(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->dallas_temperature4 = $var;
@@ -222,7 +222,7 @@ class DallasTemperature extends \Google\Protobuf\Internal\Message
      */
     public function getDallasTemperatureId1()
     {
-        return isset($this->dallas_temperature_id1) ? $this->dallas_temperature_id1 : 0;
+        return isset($this->dallas_temperature_id1) ? $this->dallas_temperature_id1 : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasDallasTemperatureId1()
@@ -240,7 +240,7 @@ class DallasTemperature extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDallasTemperatureId1($var)
+    public function setDallasTemperatureId1(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->dallas_temperature_id1 = $var;
@@ -254,7 +254,7 @@ class DallasTemperature extends \Google\Protobuf\Internal\Message
      */
     public function getDallasTemperatureId2()
     {
-        return isset($this->dallas_temperature_id2) ? $this->dallas_temperature_id2 : 0;
+        return isset($this->dallas_temperature_id2) ? $this->dallas_temperature_id2 : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasDallasTemperatureId2()
@@ -272,7 +272,7 @@ class DallasTemperature extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDallasTemperatureId2($var)
+    public function setDallasTemperatureId2(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->dallas_temperature_id2 = $var;
@@ -286,7 +286,7 @@ class DallasTemperature extends \Google\Protobuf\Internal\Message
      */
     public function getDallasTemperatureId3()
     {
-        return isset($this->dallas_temperature_id3) ? $this->dallas_temperature_id3 : 0;
+        return isset($this->dallas_temperature_id3) ? $this->dallas_temperature_id3 : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasDallasTemperatureId3()
@@ -304,7 +304,7 @@ class DallasTemperature extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDallasTemperatureId3($var)
+    public function setDallasTemperatureId3(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->dallas_temperature_id3 = $var;
@@ -318,7 +318,7 @@ class DallasTemperature extends \Google\Protobuf\Internal\Message
      */
     public function getDallasTemperatureId4()
     {
-        return isset($this->dallas_temperature_id4) ? $this->dallas_temperature_id4 : 0;
+        return isset($this->dallas_temperature_id4) ? $this->dallas_temperature_id4 : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasDallasTemperatureId4()
@@ -336,7 +336,7 @@ class DallasTemperature extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDallasTemperatureId4($var)
+    public function setDallasTemperatureId4(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->dallas_temperature_id4 = $var;
@@ -368,7 +368,7 @@ class DallasTemperature extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDallasTemperature5($var)
+    public function setDallasTemperature5(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->dallas_temperature5 = $var;
@@ -400,7 +400,7 @@ class DallasTemperature extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDallasTemperature6($var)
+    public function setDallasTemperature6(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->dallas_temperature6 = $var;
@@ -414,7 +414,7 @@ class DallasTemperature extends \Google\Protobuf\Internal\Message
      */
     public function getDallasTemperatureId5()
     {
-        return isset($this->dallas_temperature_id5) ? $this->dallas_temperature_id5 : 0;
+        return isset($this->dallas_temperature_id5) ? $this->dallas_temperature_id5 : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasDallasTemperatureId5()
@@ -432,7 +432,7 @@ class DallasTemperature extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDallasTemperatureId5($var)
+    public function setDallasTemperatureId5(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->dallas_temperature_id5 = $var;
@@ -446,7 +446,7 @@ class DallasTemperature extends \Google\Protobuf\Internal\Message
      */
     public function getDallasTemperatureId6()
     {
-        return isset($this->dallas_temperature_id6) ? $this->dallas_temperature_id6 : 0;
+        return isset($this->dallas_temperature_id6) ? $this->dallas_temperature_id6 : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasDallasTemperatureId6()
@@ -464,7 +464,7 @@ class DallasTemperature extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDallasTemperatureId6($var)
+    public function setDallasTemperatureId6(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->dallas_temperature_id6 = $var;

@@ -47,7 +47,7 @@ class Logout extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setAccessTokenId($var)
+    public function setAccessTokenId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->access_token_id = $var;

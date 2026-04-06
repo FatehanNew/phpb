@@ -47,7 +47,7 @@ class WorkCycleDeviceList extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Models\Fusion\WorkCycleDevice[] $var
      * @return $this
      */
-    public function setList($var)
+    public function setList(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Models\Fusion\WorkCycleDevice::class);
         $this->list = $arr;

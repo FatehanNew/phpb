@@ -57,7 +57,7 @@ class JTT808MediaRetrieval0802 extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSerialNo($var)
+    public function setSerialNo(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->serial_no = $var;
@@ -79,7 +79,7 @@ class JTT808MediaRetrieval0802 extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMediaCounter($var)
+    public function setMediaCounter(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->media_counter = $var;
@@ -101,7 +101,7 @@ class JTT808MediaRetrieval0802 extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\JTT808MediaRetrieval0802\Item[] $var
      * @return $this
      */
-    public function setItems($var)
+    public function setItems(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Packet\DataModel\JTT808MediaRetrieval0802\Item::class);
         $this->items = $arr;

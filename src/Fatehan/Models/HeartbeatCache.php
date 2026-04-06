@@ -112,9 +112,8 @@ class HeartbeatCache extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIgnition($var)
+    public function setIgnition(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->ignition = $var;
 
         return $this;
@@ -144,7 +143,7 @@ class HeartbeatCache extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setGsm($var)
+    public function setGsm(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->gsm = $var;
@@ -176,7 +175,7 @@ class HeartbeatCache extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBatteryPercent($var)
+    public function setBatteryPercent(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->battery_percent = $var;
@@ -208,7 +207,7 @@ class HeartbeatCache extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setExternalVoltage($var)
+    public function setExternalVoltage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->external_voltage = $var;
@@ -222,7 +221,7 @@ class HeartbeatCache extends \Google\Protobuf\Internal\Message
      */
     public function getCommandId()
     {
-        return isset($this->command_id) ? $this->command_id : 0;
+        return isset($this->command_id) ? $this->command_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCommandId()
@@ -240,7 +239,7 @@ class HeartbeatCache extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCommandId($var)
+    public function setCommandId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->command_id = $var;
@@ -272,9 +271,9 @@ class HeartbeatCache extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCommand($var)
+    public function setCommand(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->command = $var;
 
         return $this;
@@ -286,7 +285,7 @@ class HeartbeatCache extends \Google\Protobuf\Internal\Message
      */
     public function getMileage()
     {
-        return isset($this->mileage) ? $this->mileage : 0;
+        return isset($this->mileage) ? $this->mileage : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasMileage()
@@ -304,7 +303,7 @@ class HeartbeatCache extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setMileage($var)
+    public function setMileage(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->mileage = $var;
@@ -336,7 +335,7 @@ class HeartbeatCache extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTerminalId($var)
+    public function setTerminalId(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->terminal_id = $var;
@@ -368,9 +367,8 @@ class HeartbeatCache extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setTemperature($var)
+    public function setTemperature(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->temperature = $var;
 
         return $this;
@@ -400,7 +398,7 @@ class HeartbeatCache extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAi1($var)
+    public function setAi1(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ai1 = $var;
@@ -414,7 +412,7 @@ class HeartbeatCache extends \Google\Protobuf\Internal\Message
      */
     public function getOdysseyCommandId()
     {
-        return isset($this->odyssey_command_id) ? $this->odyssey_command_id : 0;
+        return isset($this->odyssey_command_id) ? $this->odyssey_command_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasOdysseyCommandId()
@@ -432,7 +430,7 @@ class HeartbeatCache extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOdysseyCommandId($var)
+    public function setOdysseyCommandId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->odyssey_command_id = $var;
@@ -442,7 +440,7 @@ class HeartbeatCache extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.Alert schedule_alert = 12 [json_name = "schedule_alert"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\Alert}
      */
     public function getScheduleAlert()
     {
@@ -461,10 +459,10 @@ class HeartbeatCache extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.Alert schedule_alert = 12 [json_name = "schedule_alert"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\Alert}
      * @return $this
      */
-    public function setScheduleAlert($var)
+    public function setScheduleAlert(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\Alert::class);
         $this->schedule_alert = $var;

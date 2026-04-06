@@ -69,7 +69,7 @@ class WorkCycleDevice extends \Google\Protobuf\Internal\Message
      */
     public function getDeviceId()
     {
-        return isset($this->device_id) ? $this->device_id : 0;
+        return isset($this->device_id) ? $this->device_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasDeviceId()
@@ -87,7 +87,7 @@ class WorkCycleDevice extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -109,9 +109,8 @@ class WorkCycleDevice extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setMovable($var)
+    public function setMovable(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->movable = $var;
 
         return $this;
@@ -131,7 +130,7 @@ class WorkCycleDevice extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRadius($var)
+    public function setRadius(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->radius = $var;
@@ -153,7 +152,7 @@ class WorkCycleDevice extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setGroupId($var)
+    public function setGroupId(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->group_id = $var;
@@ -175,7 +174,7 @@ class WorkCycleDevice extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOrganizationId($var)
+    public function setOrganizationId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->organization_id = $var;
@@ -207,9 +206,9 @@ class WorkCycleDevice extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -221,7 +220,7 @@ class WorkCycleDevice extends \Google\Protobuf\Internal\Message
      */
     public function getAreaId()
     {
-        return isset($this->area_id) ? $this->area_id : 0;
+        return isset($this->area_id) ? $this->area_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasAreaId()
@@ -239,7 +238,7 @@ class WorkCycleDevice extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setAreaId($var)
+    public function setAreaId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->area_id = $var;

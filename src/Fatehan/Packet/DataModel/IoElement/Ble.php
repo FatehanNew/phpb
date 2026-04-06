@@ -112,9 +112,9 @@ class Ble extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setBleRfid1($var)
+    public function setBleRfid1(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->ble_rfid1 = $var;
 
         return $this;
@@ -144,9 +144,9 @@ class Ble extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setBleRfid2($var)
+    public function setBleRfid2(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->ble_rfid2 = $var;
 
         return $this;
@@ -176,9 +176,9 @@ class Ble extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setBleRfid3($var)
+    public function setBleRfid3(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->ble_rfid3 = $var;
 
         return $this;
@@ -208,9 +208,9 @@ class Ble extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setBleRfid4($var)
+    public function setBleRfid4(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->ble_rfid4 = $var;
 
         return $this;
@@ -240,9 +240,8 @@ class Ble extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setBleButton1State1($var)
+    public function setBleButton1State1(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->ble_button1_state1 = $var;
 
         return $this;
@@ -272,9 +271,8 @@ class Ble extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setBleButton1State2($var)
+    public function setBleButton1State2(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->ble_button1_state2 = $var;
 
         return $this;
@@ -304,9 +302,8 @@ class Ble extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setBleButton1State3($var)
+    public function setBleButton1State3(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->ble_button1_state3 = $var;
 
         return $this;
@@ -336,9 +333,8 @@ class Ble extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setBleButton1State4($var)
+    public function setBleButton1State4(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->ble_button1_state4 = $var;
 
         return $this;
@@ -368,9 +364,8 @@ class Ble extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setBleButton2State1($var)
+    public function setBleButton2State1(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->ble_button2_state1 = $var;
 
         return $this;
@@ -400,9 +395,8 @@ class Ble extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setBleButton2State2($var)
+    public function setBleButton2State2(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->ble_button2_state2 = $var;
 
         return $this;
@@ -432,9 +426,8 @@ class Ble extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setBleButton2State3($var)
+    public function setBleButton2State3(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->ble_button2_state3 = $var;
 
         return $this;
@@ -464,9 +457,8 @@ class Ble extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setBleButton2State4($var)
+    public function setBleButton2State4(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->ble_button2_state4 = $var;
 
         return $this;

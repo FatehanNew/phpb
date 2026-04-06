@@ -57,7 +57,7 @@ class DeviceStatusList extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCost($var)
+    public function setCost(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->cost = $var;
@@ -79,7 +79,7 @@ class DeviceStatusList extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAccepted($var)
+    public function setAccepted(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->accepted = $var;
@@ -101,7 +101,7 @@ class DeviceStatusList extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\DeviceStatus[] $var
      * @return $this
      */
-    public function setList($var)
+    public function setList(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Packet\DataModel\DeviceStatus::class);
         $this->list = $arr;

@@ -47,7 +47,7 @@ class BatteryEvent extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPercentBelow($var)
+    public function setPercentBelow(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->percent_below = $var;

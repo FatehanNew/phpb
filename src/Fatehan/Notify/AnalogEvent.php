@@ -62,9 +62,8 @@ class AnalogEvent extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setValue($var)
+    public function setValue(float $var)
     {
-        GPBUtil::checkDouble($var);
         $this->value = $var;
 
         return $this;
@@ -84,9 +83,9 @@ class AnalogEvent extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setIo($var)
+    public function setIo(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->io = $var;
 
         return $this;
@@ -94,7 +93,7 @@ class AnalogEvent extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.notifies.AnalogEventType type = 3 [json_name = "type"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Notify\AnalogEventType}
      */
     public function getType()
     {
@@ -103,10 +102,10 @@ class AnalogEvent extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.notifies.AnalogEventType type = 3 [json_name = "type"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Notify\AnalogEventType}
      * @return $this
      */
-    public function setType($var)
+    public function setType(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Notify\AnalogEventType::class);
         $this->type = $var;
@@ -138,7 +137,7 @@ class AnalogEvent extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTolerancePercent($var)
+    public function setTolerancePercent(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->tolerance_percent = $var;

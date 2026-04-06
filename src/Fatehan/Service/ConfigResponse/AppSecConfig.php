@@ -74,7 +74,7 @@ class AppSecConfig extends \Google\Protobuf\Internal\Message
      */
     public function getMaxLogs()
     {
-        return isset($this->max_logs) ? $this->max_logs : 0;
+        return isset($this->max_logs) ? $this->max_logs : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasMaxLogs()
@@ -92,7 +92,7 @@ class AppSecConfig extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setMaxLogs($var)
+    public function setMaxLogs(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->max_logs = $var;
@@ -106,7 +106,7 @@ class AppSecConfig extends \Google\Protobuf\Internal\Message
      */
     public function getMaxSessions()
     {
-        return isset($this->max_sessions) ? $this->max_sessions : 0;
+        return isset($this->max_sessions) ? $this->max_sessions : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasMaxSessions()
@@ -124,7 +124,7 @@ class AppSecConfig extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setMaxSessions($var)
+    public function setMaxSessions(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->max_sessions = $var;
@@ -138,7 +138,7 @@ class AppSecConfig extends \Google\Protobuf\Internal\Message
      */
     public function getMaxOtpTries()
     {
-        return isset($this->max_otp_tries) ? $this->max_otp_tries : 0;
+        return isset($this->max_otp_tries) ? $this->max_otp_tries : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasMaxOtpTries()
@@ -156,7 +156,7 @@ class AppSecConfig extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setMaxOtpTries($var)
+    public function setMaxOtpTries(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->max_otp_tries = $var;
@@ -170,7 +170,7 @@ class AppSecConfig extends \Google\Protobuf\Internal\Message
      */
     public function getMinPasswordLength()
     {
-        return isset($this->min_password_length) ? $this->min_password_length : 0;
+        return isset($this->min_password_length) ? $this->min_password_length : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasMinPasswordLength()
@@ -188,7 +188,7 @@ class AppSecConfig extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setMinPasswordLength($var)
+    public function setMinPasswordLength(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->min_password_length = $var;
@@ -202,7 +202,7 @@ class AppSecConfig extends \Google\Protobuf\Internal\Message
      */
     public function getCredentialExpirationDays()
     {
-        return isset($this->credential_expiration_days) ? $this->credential_expiration_days : 0;
+        return isset($this->credential_expiration_days) ? $this->credential_expiration_days : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCredentialExpirationDays()
@@ -220,7 +220,7 @@ class AppSecConfig extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCredentialExpirationDays($var)
+    public function setCredentialExpirationDays(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->credential_expiration_days = $var;
@@ -242,9 +242,8 @@ class AppSecConfig extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setForcedTwoStepVerification($var)
+    public function setForcedTwoStepVerification(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->forced_two_step_verification = $var;
 
         return $this;
@@ -274,9 +273,9 @@ class AppSecConfig extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setGoogleClientSecret($var)
+    public function setGoogleClientSecret(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->google_client_secret = $var;
 
         return $this;
@@ -306,9 +305,9 @@ class AppSecConfig extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTelegramBotToken($var)
+    public function setTelegramBotToken(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->telegram_bot_token = $var;
 
         return $this;

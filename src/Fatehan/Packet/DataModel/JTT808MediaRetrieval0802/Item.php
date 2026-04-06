@@ -67,7 +67,7 @@ class Item extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMultimediaId($var)
+    public function setMultimediaId(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->multimedia_id = $var;
@@ -89,7 +89,7 @@ class Item extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMultimediaType($var)
+    public function setMultimediaType(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->multimedia_type = $var;
@@ -111,7 +111,7 @@ class Item extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setChannelId($var)
+    public function setChannelId(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->channel_id = $var;
@@ -133,7 +133,7 @@ class Item extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEventItemEncoding($var)
+    public function setEventItemEncoding(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->event_item_encoding = $var;
@@ -165,9 +165,8 @@ class Item extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\Data $var
      * @return $this
      */
-    public function setLocation($var)
+    public function setLocation(\Fatehan\Packet\DataModel\Data|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\Data::class);
         $this->location = $var;
 
         return $this;

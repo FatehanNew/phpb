@@ -92,9 +92,8 @@ class MeResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Identity\User $var
      * @return $this
      */
-    public function setUser($var)
+    public function setUser(\Fatehan\Identity\User|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Identity\User::class);
         $this->user = $var;
 
         return $this;
@@ -114,7 +113,7 @@ class MeResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Service\Repositories\PersonRepo[] $var
      * @return $this
      */
-    public function setPerson($var)
+    public function setPerson(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Service\Repositories\PersonRepo::class);
         $this->person = $arr;
@@ -136,7 +135,7 @@ class MeResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Financial\Currency[] $var
      * @return $this
      */
-    public function setCurrencies($var)
+    public function setCurrencies(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Financial\Currency::class);
         $this->currencies = $arr;
@@ -146,7 +145,7 @@ class MeResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.identities.Permission permissions = 4 [json_name = "permissions"];</code>
-     * @return RepeatedField<int>
+     * @return RepeatedField<int> one of the values in {@see \Fatehan\Identity\Permission}
      */
     public function getPermissions()
     {
@@ -155,10 +154,10 @@ class MeResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.identities.Permission permissions = 4 [json_name = "permissions"];</code>
-     * @param int[] $var
+     * @param int[] $var one of the values in {@see \Fatehan\Identity\Permission}
      * @return $this
      */
-    public function setPermissions($var)
+    public function setPermissions(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Fatehan\Identity\Permission::class);
         $this->permissions = $arr;
@@ -190,9 +189,8 @@ class MeResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Service\Repositories\DeviceRepo $var
      * @return $this
      */
-    public function setDevice($var)
+    public function setDevice(\Fatehan\Service\Repositories\DeviceRepo|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Service\Repositories\DeviceRepo::class);
         $this->device = $var;
 
         return $this;
@@ -222,7 +220,7 @@ class MeResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDeviceCount($var)
+    public function setDeviceCount(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->device_count = $var;
@@ -244,7 +242,7 @@ class MeResponse extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCost($var)
+    public function setCost(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->cost = $var;
@@ -276,9 +274,9 @@ class MeResponse extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setErrorMessage($var)
+    public function setErrorMessage(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->error_message = $var;
 
         return $this;

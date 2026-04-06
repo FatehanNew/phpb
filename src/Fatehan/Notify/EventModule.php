@@ -59,9 +59,8 @@ class EventModule extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setForceToFill($var)
+    public function setForceToFill(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->force_to_fill = $var;
 
         return $this;
@@ -86,9 +85,8 @@ class EventModule extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Notify\AreaEvent $var
      * @return $this
      */
-    public function setAreaEvent($var)
+    public function setAreaEvent(\Fatehan\Notify\AreaEvent|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Notify\AreaEvent::class);
         $this->writeOneof(21, $var);
 
         return $this;
@@ -113,9 +111,8 @@ class EventModule extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Notify\DigitalEvent $var
      * @return $this
      */
-    public function setDigitalEvent($var)
+    public function setDigitalEvent(\Fatehan\Notify\DigitalEvent|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Notify\DigitalEvent::class);
         $this->writeOneof(22, $var);
 
         return $this;
@@ -140,9 +137,8 @@ class EventModule extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Notify\AnalogEvent $var
      * @return $this
      */
-    public function setAnalogEvent($var)
+    public function setAnalogEvent(\Fatehan\Notify\AnalogEvent|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Notify\AnalogEvent::class);
         $this->writeOneof(23, $var);
 
         return $this;
@@ -167,9 +163,8 @@ class EventModule extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Notify\FormulaEvent $var
      * @return $this
      */
-    public function setFormulaEvent($var)
+    public function setFormulaEvent(\Fatehan\Notify\FormulaEvent|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Notify\FormulaEvent::class);
         $this->writeOneof(24, $var);
 
         return $this;
@@ -194,9 +189,8 @@ class EventModule extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Notify\ProtocolEvent $var
      * @return $this
      */
-    public function setProtocolEvent($var)
+    public function setProtocolEvent(\Fatehan\Notify\ProtocolEvent|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Notify\ProtocolEvent::class);
         $this->writeOneof(25, $var);
 
         return $this;
@@ -221,9 +215,8 @@ class EventModule extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Notify\SpeedEvent $var
      * @return $this
      */
-    public function setSpeedEvent($var)
+    public function setSpeedEvent(\Fatehan\Notify\SpeedEvent|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Notify\SpeedEvent::class);
         $this->writeOneof(26, $var);
 
         return $this;
@@ -248,9 +241,8 @@ class EventModule extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Notify\IgnitionEvent $var
      * @return $this
      */
-    public function setIgnitionEvent($var)
+    public function setIgnitionEvent(\Fatehan\Notify\IgnitionEvent|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Notify\IgnitionEvent::class);
         $this->writeOneof(27, $var);
 
         return $this;
@@ -275,9 +267,8 @@ class EventModule extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Notify\BatteryEvent $var
      * @return $this
      */
-    public function setBatteryEvent($var)
+    public function setBatteryEvent(\Fatehan\Notify\BatteryEvent|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Notify\BatteryEvent::class);
         $this->writeOneof(28, $var);
 
         return $this;
@@ -302,9 +293,8 @@ class EventModule extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Notify\OfflineEvent $var
      * @return $this
      */
-    public function setOfflineEvent($var)
+    public function setOfflineEvent(\Fatehan\Notify\OfflineEvent|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Notify\OfflineEvent::class);
         $this->writeOneof(29, $var);
 
         return $this;
@@ -329,9 +319,8 @@ class EventModule extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Notify\GpsEvent $var
      * @return $this
      */
-    public function setGpsEvent($var)
+    public function setGpsEvent(\Fatehan\Notify\GpsEvent|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Notify\GpsEvent::class);
         $this->writeOneof(30, $var);
 
         return $this;
@@ -356,9 +345,8 @@ class EventModule extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Notify\GsmEvent $var
      * @return $this
      */
-    public function setGsmEvent($var)
+    public function setGsmEvent(\Fatehan\Notify\GsmEvent|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Notify\GsmEvent::class);
         $this->writeOneof(31, $var);
 
         return $this;

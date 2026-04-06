@@ -117,7 +117,7 @@ class FusionDevice extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -131,7 +131,7 @@ class FusionDevice extends \Google\Protobuf\Internal\Message
      */
     public function getCarId()
     {
-        return isset($this->car_id) ? $this->car_id : 0;
+        return isset($this->car_id) ? $this->car_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCarId()
@@ -149,7 +149,7 @@ class FusionDevice extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCarId($var)
+    public function setCarId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->car_id = $var;
@@ -171,7 +171,7 @@ class FusionDevice extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setImei($var)
+    public function setImei(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->imei = $var;
@@ -193,7 +193,7 @@ class FusionDevice extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIgnitionSource($var)
+    public function setIgnitionSource(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->ignition_source = $var;
@@ -225,9 +225,9 @@ class FusionDevice extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTimezone($var)
+    public function setTimezone(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->timezone = $var;
 
         return $this;
@@ -257,9 +257,9 @@ class FusionDevice extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFcmToken($var)
+    public function setFcmToken(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->fcm_token = $var;
 
         return $this;
@@ -279,9 +279,8 @@ class FusionDevice extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsFreeUse($var)
+    public function setIsFreeUse(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_free_use = $var;
 
         return $this;
@@ -301,7 +300,7 @@ class FusionDevice extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCanReceiveFrom($var)
+    public function setCanReceiveFrom(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->can_receive_from = $var;
@@ -323,7 +322,7 @@ class FusionDevice extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setExpireTime($var)
+    public function setExpireTime(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->expire_time = $var;
@@ -345,7 +344,7 @@ class FusionDevice extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setOdoType($var)
+    public function setOdoType(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->odo_type = $var;
@@ -367,7 +366,7 @@ class FusionDevice extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setFirstConnect($var)
+    public function setFirstConnect(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->first_connect = $var;
@@ -389,7 +388,7 @@ class FusionDevice extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTripType($var)
+    public function setTripType(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->trip_type = $var;
@@ -411,7 +410,7 @@ class FusionDevice extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->created_at = $var;
@@ -425,7 +424,7 @@ class FusionDevice extends \Google\Protobuf\Internal\Message
      */
     public function getOrganizationId()
     {
-        return isset($this->organization_id) ? $this->organization_id : 0;
+        return isset($this->organization_id) ? $this->organization_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasOrganizationId()
@@ -443,7 +442,7 @@ class FusionDevice extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOrganizationId($var)
+    public function setOrganizationId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->organization_id = $var;
@@ -465,7 +464,7 @@ class FusionDevice extends \Google\Protobuf\Internal\Message
      * @param int[]|string[] $var
      * @return $this
      */
-    public function setGeneration($var)
+    public function setGeneration(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT64);
         $this->generation = $arr;

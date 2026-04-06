@@ -77,9 +77,9 @@ class Image extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setImgCelo($var)
+    public function setImgCelo(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->img_celo = $var;
 
         return $this;
@@ -109,9 +109,9 @@ class Image extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setImgMove($var)
+    public function setImgMove(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->img_move = $var;
 
         return $this;
@@ -141,9 +141,9 @@ class Image extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setImgStop($var)
+    public function setImgStop(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->img_stop = $var;
 
         return $this;
@@ -173,9 +173,9 @@ class Image extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setImgTowing($var)
+    public function setImgTowing(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->img_towing = $var;
 
         return $this;
@@ -205,9 +205,9 @@ class Image extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setImgTimeout($var)
+    public function setImgTimeout(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->img_timeout = $var;
 
         return $this;

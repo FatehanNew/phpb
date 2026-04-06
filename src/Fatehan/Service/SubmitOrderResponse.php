@@ -52,7 +52,7 @@ class SubmitOrderResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Service\Repositories\DeviceRepo[] $var
      * @return $this
      */
-    public function setDevices($var)
+    public function setDevices(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Service\Repositories\DeviceRepo::class);
         $this->devices = $arr;
@@ -84,9 +84,8 @@ class SubmitOrderResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Financial\Order $var
      * @return $this
      */
-    public function setOrder($var)
+    public function setOrder(\Fatehan\Financial\Order|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Financial\Order::class);
         $this->order = $var;
 
         return $this;

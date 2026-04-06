@@ -137,9 +137,8 @@ class Usf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSpreading($var)
+    public function setSpreading(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->spreading = $var;
 
         return $this;
@@ -169,9 +168,8 @@ class Usf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setPouringChemicals($var)
+    public function setPouringChemicals(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->pouring_chemicals = $var;
 
         return $this;
@@ -201,9 +199,8 @@ class Usf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setConveyorBelt($var)
+    public function setConveyorBelt(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->conveyor_belt = $var;
 
         return $this;
@@ -233,9 +230,8 @@ class Usf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSaltSpreaderDriveWheel($var)
+    public function setSaltSpreaderDriveWheel(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->salt_spreader_drive_wheel = $var;
 
         return $this;
@@ -265,9 +261,8 @@ class Usf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setBrushes($var)
+    public function setBrushes(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->brushes = $var;
 
         return $this;
@@ -297,9 +292,8 @@ class Usf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setVacuumCleaner($var)
+    public function setVacuumCleaner(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->vacuum_cleaner = $var;
 
         return $this;
@@ -329,9 +323,8 @@ class Usf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setWaterSupply($var)
+    public function setWaterSupply(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->water_supply = $var;
 
         return $this;
@@ -361,9 +354,8 @@ class Usf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLiquidPump($var)
+    public function setLiquidPump(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->liquid_pump = $var;
 
         return $this;
@@ -393,9 +385,8 @@ class Usf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setUnloadingFromTheHopper($var)
+    public function setUnloadingFromTheHopper(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->unloading_from_the_hopper = $var;
 
         return $this;
@@ -425,9 +416,8 @@ class Usf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLowSaltSandLevelInContainerIndicator($var)
+    public function setLowSaltSandLevelInContainerIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->low_salt_sand_level_in_container_indicator = $var;
 
         return $this;
@@ -457,9 +447,8 @@ class Usf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLowWaterLevelInContainerIndicator($var)
+    public function setLowWaterLevelInContainerIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->low_water_level_in_container_indicator = $var;
 
         return $this;
@@ -489,9 +478,8 @@ class Usf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setChemicals($var)
+    public function setChemicals(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->chemicals = $var;
 
         return $this;
@@ -521,9 +509,8 @@ class Usf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setCompressor($var)
+    public function setCompressor(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->compressor = $var;
 
         return $this;
@@ -553,9 +540,8 @@ class Usf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setWaterValveIsOpened($var)
+    public function setWaterValveIsOpened(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->water_valve_is_opened = $var;
 
         return $this;
@@ -585,9 +571,8 @@ class Usf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setCabinMovedUpStatusActive($var)
+    public function setCabinMovedUpStatusActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->cabin_moved_up_status_active = $var;
 
         return $this;
@@ -617,9 +602,8 @@ class Usf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setCabinMovedDownStatusActive($var)
+    public function setCabinMovedDownStatusActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->cabin_moved_down_status_active = $var;
 
         return $this;
@@ -649,9 +633,8 @@ class Usf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setHydraulicsWorkNotPermitted($var)
+    public function setHydraulicsWorkNotPermitted(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->hydraulics_work_not_permitted = $var;
 
         return $this;

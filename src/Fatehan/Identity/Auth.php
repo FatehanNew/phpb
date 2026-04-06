@@ -74,9 +74,8 @@ class Auth extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Identity\User $var
      * @return $this
      */
-    public function setUser($var)
+    public function setUser(\Fatehan\Identity\User|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Identity\User::class);
         $this->user = $var;
 
         return $this;
@@ -106,9 +105,8 @@ class Auth extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Identity\Person $var
      * @return $this
      */
-    public function setPerson($var)
+    public function setPerson(\Fatehan\Identity\Person|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Identity\Person::class);
         $this->person = $var;
 
         return $this;
@@ -138,9 +136,8 @@ class Auth extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Identity\PersonalAccessToken $var
      * @return $this
      */
-    public function setAccessToken($var)
+    public function setAccessToken(\Fatehan\Identity\PersonalAccessToken|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Identity\PersonalAccessToken::class);
         $this->access_token = $var;
 
         return $this;
@@ -148,7 +145,7 @@ class Auth extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.identities.Permission permissions = 4 [json_name = "permissions"];</code>
-     * @return RepeatedField<int>
+     * @return RepeatedField<int> one of the values in {@see \Fatehan\Identity\Permission}
      */
     public function getPermissions()
     {
@@ -157,10 +154,10 @@ class Auth extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.identities.Permission permissions = 4 [json_name = "permissions"];</code>
-     * @param int[] $var
+     * @param int[] $var one of the values in {@see \Fatehan\Identity\Permission}
      * @return $this
      */
-    public function setPermissions($var)
+    public function setPermissions(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Fatehan\Identity\Permission::class);
         $this->permissions = $arr;

@@ -122,7 +122,7 @@ class Organization extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -154,9 +154,9 @@ class Organization extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -186,9 +186,9 @@ class Organization extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setNumber($var)
+    public function setNumber(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->number = $var;
 
         return $this;
@@ -218,9 +218,9 @@ class Organization extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPicture($var)
+    public function setPicture(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->picture = $var;
 
         return $this;
@@ -240,9 +240,8 @@ class Organization extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setStatus($var)
+    public function setStatus(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->status = $var;
 
         return $this;
@@ -262,9 +261,8 @@ class Organization extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsPartner($var)
+    public function setIsPartner(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_partner = $var;
 
         return $this;
@@ -294,9 +292,8 @@ class Organization extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Identity\Organization\MetaData $var
      * @return $this
      */
-    public function setMetadata($var)
+    public function setMetadata(\Fatehan\Identity\Organization\MetaData|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Identity\Organization\MetaData::class);
         $this->metadata = $var;
 
         return $this;
@@ -316,7 +313,7 @@ class Organization extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setDomains($var)
+    public function setDomains(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->domains = $arr;
@@ -348,9 +345,9 @@ class Organization extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setGeneration($var)
+    public function setGeneration(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->generation = $var;
 
         return $this;
@@ -362,7 +359,7 @@ class Organization extends \Google\Protobuf\Internal\Message
      */
     public function getParentId()
     {
-        return isset($this->parent_id) ? $this->parent_id : 0;
+        return isset($this->parent_id) ? $this->parent_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasParentId()
@@ -380,7 +377,7 @@ class Organization extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setParentId($var)
+    public function setParentId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->parent_id = $var;
@@ -402,7 +399,7 @@ class Organization extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLevel($var)
+    public function setLevel(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->level = $var;
@@ -416,7 +413,7 @@ class Organization extends \Google\Protobuf\Internal\Message
      */
     public function getOwnerId()
     {
-        return isset($this->owner_id) ? $this->owner_id : 0;
+        return isset($this->owner_id) ? $this->owner_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasOwnerId()
@@ -434,7 +431,7 @@ class Organization extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOwnerId($var)
+    public function setOwnerId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->owner_id = $var;
@@ -448,7 +445,7 @@ class Organization extends \Google\Protobuf\Internal\Message
      */
     public function getCreatedBy()
     {
-        return isset($this->created_by) ? $this->created_by : 0;
+        return isset($this->created_by) ? $this->created_by : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCreatedBy()
@@ -466,7 +463,7 @@ class Organization extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreatedBy($var)
+    public function setCreatedBy(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->created_by = $var;
@@ -498,9 +495,8 @@ class Organization extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setDeletedAt($var)
+    public function setDeletedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->deleted_at = $var;
 
         return $this;
@@ -530,9 +526,8 @@ class Organization extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -562,9 +557,8 @@ class Organization extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;

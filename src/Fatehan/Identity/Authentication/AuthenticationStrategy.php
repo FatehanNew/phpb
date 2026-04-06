@@ -98,7 +98,7 @@ class AuthenticationStrategy extends \Google\Protobuf\Internal\Message
      * authentication methods 
      *
      * Generated from protobuf field <code>repeated .com.fatehan.identities.AuthenticationMethod authentication = 1 [json_name = "authentication"];</code>
-     * @return RepeatedField<int>
+     * @return RepeatedField<int> one of the values in {@see \Fatehan\Identity\Authentication\AuthenticationMethod}
      */
     public function getAuthentication()
     {
@@ -109,10 +109,10 @@ class AuthenticationStrategy extends \Google\Protobuf\Internal\Message
      * authentication methods 
      *
      * Generated from protobuf field <code>repeated .com.fatehan.identities.AuthenticationMethod authentication = 1 [json_name = "authentication"];</code>
-     * @param int[] $var
+     * @param int[] $var one of the values in {@see \Fatehan\Identity\Authentication\AuthenticationMethod}
      * @return $this
      */
-    public function setAuthentication($var)
+    public function setAuthentication(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Fatehan\Identity\Authentication\AuthenticationMethod::class);
         $this->authentication = $arr;
@@ -124,7 +124,7 @@ class AuthenticationStrategy extends \Google\Protobuf\Internal\Message
      * verification method 
      *
      * Generated from protobuf field <code>.com.fatehan.identities.AuthenticationMethod verification = 2 [json_name = "verification"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Identity\Authentication\AuthenticationMethod}
      */
     public function getVerification()
     {
@@ -135,10 +135,10 @@ class AuthenticationStrategy extends \Google\Protobuf\Internal\Message
      * verification method 
      *
      * Generated from protobuf field <code>.com.fatehan.identities.AuthenticationMethod verification = 2 [json_name = "verification"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Identity\Authentication\AuthenticationMethod}
      * @return $this
      */
-    public function setVerification($var)
+    public function setVerification(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Identity\Authentication\AuthenticationMethod::class);
         $this->verification = $var;
@@ -174,9 +174,8 @@ class AuthenticationStrategy extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Duration $var
      * @return $this
      */
-    public function setVerificationTimeout($var)
+    public function setVerificationTimeout(\Google\Protobuf\Duration|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Duration::class);
         $this->verification_timeout = $var;
 
         return $this;
@@ -210,9 +209,8 @@ class AuthenticationStrategy extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Duration $var
      * @return $this
      */
-    public function setSessionTimeout($var)
+    public function setSessionTimeout(\Google\Protobuf\Duration|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Duration::class);
         $this->session_timeout = $var;
 
         return $this;
@@ -236,7 +234,7 @@ class AuthenticationStrategy extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setActiveSessionLimit($var)
+    public function setActiveSessionLimit(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->active_session_limit = $var;
@@ -262,7 +260,7 @@ class AuthenticationStrategy extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPasswordMinimumLength($var)
+    public function setPasswordMinimumLength(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->password_minimum_length = $var;
@@ -288,7 +286,7 @@ class AuthenticationStrategy extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPasswordMinCharacterClass($var)
+    public function setPasswordMinCharacterClass(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->password_min_character_class = $var;
@@ -324,9 +322,8 @@ class AuthenticationStrategy extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Duration $var
      * @return $this
      */
-    public function setPasswordTimeout($var)
+    public function setPasswordTimeout(\Google\Protobuf\Duration|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Duration::class);
         $this->password_timeout = $var;
 
         return $this;

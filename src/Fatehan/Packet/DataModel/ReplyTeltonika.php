@@ -67,7 +67,7 @@ class ReplyTeltonika extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setQuantity1($var)
+    public function setQuantity1(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->quantity1 = $var;
@@ -89,7 +89,7 @@ class ReplyTeltonika extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setType($var)
+    public function setType(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->type = $var;
@@ -111,7 +111,7 @@ class ReplyTeltonika extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setResponseSize($var)
+    public function setResponseSize(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->response_size = $var;
@@ -133,9 +133,9 @@ class ReplyTeltonika extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setResponse($var)
+    public function setResponse(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->response = $var;
 
         return $this;
@@ -155,7 +155,7 @@ class ReplyTeltonika extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setQuantity2($var)
+    public function setQuantity2(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->quantity2 = $var;

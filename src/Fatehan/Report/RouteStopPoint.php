@@ -67,7 +67,7 @@ class RouteStopPoint extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDuration($var)
+    public function setDuration(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->duration = $var;
@@ -99,9 +99,8 @@ class RouteStopPoint extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setStartedAt($var)
+    public function setStartedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->started_at = $var;
 
         return $this;
@@ -131,9 +130,8 @@ class RouteStopPoint extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setFinishedAt($var)
+    public function setFinishedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->finished_at = $var;
 
         return $this;
@@ -141,7 +139,7 @@ class RouteStopPoint extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.reports.RouteStopType type = 4 [json_name = "type"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Report\RouteStopType}
      */
     public function getType()
     {
@@ -150,10 +148,10 @@ class RouteStopPoint extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.reports.RouteStopType type = 4 [json_name = "type"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Report\RouteStopType}
      * @return $this
      */
-    public function setType($var)
+    public function setType(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Report\RouteStopType::class);
         $this->type = $var;
@@ -185,9 +183,8 @@ class RouteStopPoint extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Area\Point $var
      * @return $this
      */
-    public function setPoint($var)
+    public function setPoint(\Fatehan\Area\Point|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Area\Point::class);
         $this->point = $var;
 
         return $this;

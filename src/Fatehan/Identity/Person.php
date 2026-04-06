@@ -152,7 +152,7 @@ class Person extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -174,7 +174,7 @@ class Person extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setType($var)
+    public function setType(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->type = $var;
@@ -196,7 +196,7 @@ class Person extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOrganizationId($var)
+    public function setOrganizationId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->organization_id = $var;
@@ -210,7 +210,7 @@ class Person extends \Google\Protobuf\Internal\Message
      */
     public function getRoleId()
     {
-        return isset($this->role_id) ? $this->role_id : 0;
+        return isset($this->role_id) ? $this->role_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasRoleId()
@@ -228,7 +228,7 @@ class Person extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setRoleId($var)
+    public function setRoleId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->role_id = $var;
@@ -242,7 +242,7 @@ class Person extends \Google\Protobuf\Internal\Message
      */
     public function getUserId()
     {
-        return isset($this->user_id) ? $this->user_id : 0;
+        return isset($this->user_id) ? $this->user_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasUserId()
@@ -260,7 +260,7 @@ class Person extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->user_id = $var;
@@ -274,7 +274,7 @@ class Person extends \Google\Protobuf\Internal\Message
      */
     public function getPartnerId()
     {
-        return isset($this->partner_id) ? $this->partner_id : 0;
+        return isset($this->partner_id) ? $this->partner_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasPartnerId()
@@ -292,7 +292,7 @@ class Person extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setPartnerId($var)
+    public function setPartnerId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->partner_id = $var;
@@ -306,7 +306,7 @@ class Person extends \Google\Protobuf\Internal\Message
      */
     public function getCreatedBy()
     {
-        return isset($this->created_by) ? $this->created_by : 0;
+        return isset($this->created_by) ? $this->created_by : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCreatedBy()
@@ -324,7 +324,7 @@ class Person extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreatedBy($var)
+    public function setCreatedBy(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->created_by = $var;
@@ -338,7 +338,7 @@ class Person extends \Google\Protobuf\Internal\Message
      */
     public function getUpdatedBy()
     {
-        return isset($this->updated_by) ? $this->updated_by : 0;
+        return isset($this->updated_by) ? $this->updated_by : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasUpdatedBy()
@@ -356,7 +356,7 @@ class Person extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setUpdatedBy($var)
+    public function setUpdatedBy(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->updated_by = $var;
@@ -378,9 +378,8 @@ class Person extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsComplete($var)
+    public function setIsComplete(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_complete = $var;
 
         return $this;
@@ -410,9 +409,9 @@ class Person extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -442,9 +441,9 @@ class Person extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setImage($var)
+    public function setImage(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->image = $var;
 
         return $this;
@@ -474,9 +473,9 @@ class Person extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setNationalId($var)
+    public function setNationalId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->national_id = $var;
 
         return $this;
@@ -506,9 +505,9 @@ class Person extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setEconomicalId($var)
+    public function setEconomicalId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->economical_id = $var;
 
         return $this;
@@ -538,9 +537,9 @@ class Person extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setIdentificationNumber($var)
+    public function setIdentificationNumber(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->identification_number = $var;
 
         return $this;
@@ -570,9 +569,9 @@ class Person extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPostalCode($var)
+    public function setPostalCode(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->postal_code = $var;
 
         return $this;
@@ -602,9 +601,9 @@ class Person extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setAddress($var)
+    public function setAddress(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->address = $var;
 
         return $this;
@@ -634,9 +633,8 @@ class Person extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setBirthDate($var)
+    public function setBirthDate(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->birth_date = $var;
 
         return $this;
@@ -666,9 +664,9 @@ class Person extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setContactMobile($var)
+    public function setContactMobile(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->contact_mobile = $var;
 
         return $this;
@@ -698,9 +696,9 @@ class Person extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setContactPhone($var)
+    public function setContactPhone(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->contact_phone = $var;
 
         return $this;
@@ -730,9 +728,8 @@ class Person extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -762,9 +759,8 @@ class Person extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;
@@ -794,9 +790,8 @@ class Person extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Identity\Organization $var
      * @return $this
      */
-    public function setOrganization($var)
+    public function setOrganization(\Fatehan\Identity\Organization|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Identity\Organization::class);
         $this->organization = $var;
 
         return $this;

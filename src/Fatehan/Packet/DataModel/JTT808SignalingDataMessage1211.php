@@ -57,9 +57,9 @@ class JTT808SignalingDataMessage1211 extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -67,7 +67,7 @@ class JTT808SignalingDataMessage1211 extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.FileType type = 2;</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\FileType}
      */
     public function getType()
     {
@@ -76,10 +76,10 @@ class JTT808SignalingDataMessage1211 extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.FileType type = 2;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\FileType}
      * @return $this
      */
-    public function setType($var)
+    public function setType(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\FileType::class);
         $this->type = $var;
@@ -101,7 +101,7 @@ class JTT808SignalingDataMessage1211 extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSize($var)
+    public function setSize(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->size = $var;

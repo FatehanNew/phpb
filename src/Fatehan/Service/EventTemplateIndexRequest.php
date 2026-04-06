@@ -79,7 +79,7 @@ class EventTemplateIndexRequest extends \Google\Protobuf\Internal\Message
      */
     public function getDeviceId()
     {
-        return isset($this->device_id) ? $this->device_id : 0;
+        return isset($this->device_id) ? $this->device_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasDeviceId()
@@ -97,7 +97,7 @@ class EventTemplateIndexRequest extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -119,9 +119,8 @@ class EventTemplateIndexRequest extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setDisablePagination($var)
+    public function setDisablePagination(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->disable_pagination = $var;
 
         return $this;
@@ -151,9 +150,9 @@ class EventTemplateIndexRequest extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSearch($var)
+    public function setSearch(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->search = $var;
 
         return $this;
@@ -183,7 +182,7 @@ class EventTemplateIndexRequest extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPage($var)
+    public function setPage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->page = $var;
@@ -215,7 +214,7 @@ class EventTemplateIndexRequest extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPageSize($var)
+    public function setPageSize(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->page_size = $var;
@@ -229,7 +228,7 @@ class EventTemplateIndexRequest extends \Google\Protobuf\Internal\Message
      */
     public function getOrganizationId()
     {
-        return isset($this->organization_id) ? $this->organization_id : 0;
+        return isset($this->organization_id) ? $this->organization_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasOrganizationId()
@@ -247,7 +246,7 @@ class EventTemplateIndexRequest extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOrganizationId($var)
+    public function setOrganizationId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->organization_id = $var;
@@ -269,7 +268,7 @@ class EventTemplateIndexRequest extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setQueryFilter($var)
+    public function setQueryFilter(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Service\FilterScope::class);
         $this->query_filter = $arr;
@@ -301,9 +300,9 @@ class EventTemplateIndexRequest extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSort($var)
+    public function setSort(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->sort = $var;
 
         return $this;
@@ -333,9 +332,9 @@ class EventTemplateIndexRequest extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setOrder($var)
+    public function setOrder(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->order = $var;
 
         return $this;

@@ -97,7 +97,7 @@ class OrderPagination extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCurrentPage($var)
+    public function setCurrentPage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->current_page = $var;
@@ -119,9 +119,9 @@ class OrderPagination extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFirstPageUrl($var)
+    public function setFirstPageUrl(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->first_page_url = $var;
 
         return $this;
@@ -141,9 +141,9 @@ class OrderPagination extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setLastPageUrl($var)
+    public function setLastPageUrl(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->last_page_url = $var;
 
         return $this;
@@ -163,9 +163,9 @@ class OrderPagination extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setNextPageUrl($var)
+    public function setNextPageUrl(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->next_page_url = $var;
 
         return $this;
@@ -185,9 +185,9 @@ class OrderPagination extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPrevPageUrl($var)
+    public function setPrevPageUrl(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->prev_page_url = $var;
 
         return $this;
@@ -207,9 +207,9 @@ class OrderPagination extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPath($var)
+    public function setPath(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->path = $var;
 
         return $this;
@@ -229,7 +229,7 @@ class OrderPagination extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFrom($var)
+    public function setFrom(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->from = $var;
@@ -251,7 +251,7 @@ class OrderPagination extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLastPage($var)
+    public function setLastPage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->last_page = $var;
@@ -273,7 +273,7 @@ class OrderPagination extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPerPage($var)
+    public function setPerPage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->per_page = $var;
@@ -295,7 +295,7 @@ class OrderPagination extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTo($var)
+    public function setTo(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->to = $var;
@@ -317,7 +317,7 @@ class OrderPagination extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Financial\Order[] $var
      * @return $this
      */
-    public function setData($var)
+    public function setData(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Financial\Order::class);
         $this->data = $arr;

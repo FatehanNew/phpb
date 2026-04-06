@@ -52,9 +52,8 @@ class DigitalEvent extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setTrigger($var)
+    public function setTrigger(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->trigger = $var;
 
         return $this;
@@ -74,9 +73,9 @@ class DigitalEvent extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setIo($var)
+    public function setIo(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->io = $var;
 
         return $this;

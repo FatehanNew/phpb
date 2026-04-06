@@ -97,7 +97,7 @@ class DeviceStatus extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -119,7 +119,7 @@ class DeviceStatus extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setImei($var)
+    public function setImei(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->imei = $var;
@@ -151,9 +151,8 @@ class DeviceStatus extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\Data $var
      * @return $this
      */
-    public function setData($var)
+    public function setData(\Fatehan\Packet\DataModel\Data|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\Data::class);
         $this->data = $var;
 
         return $this;
@@ -183,9 +182,8 @@ class DeviceStatus extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\Client $var
      * @return $this
      */
-    public function setClient($var)
+    public function setClient(\Fatehan\Packet\DataModel\Client|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\Client::class);
         $this->client = $var;
 
         return $this;
@@ -205,9 +203,8 @@ class DeviceStatus extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setOnline($var)
+    public function setOnline(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->online = $var;
 
         return $this;
@@ -237,9 +234,8 @@ class DeviceStatus extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setLastOnline($var)
+    public function setLastOnline(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->last_online = $var;
 
         return $this;
@@ -259,7 +255,7 @@ class DeviceStatus extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\Log[] $var
      * @return $this
      */
-    public function setLogs($var)
+    public function setLogs(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Packet\DataModel\Log::class);
         $this->logs = $arr;
@@ -269,7 +265,7 @@ class DeviceStatus extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.DeviceStatus.Stat stat = 8 [json_name = "stat"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\DeviceStatus\Stat}
      */
     public function getStat()
     {
@@ -278,10 +274,10 @@ class DeviceStatus extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.DeviceStatus.Stat stat = 8 [json_name = "stat"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\DeviceStatus\Stat}
      * @return $this
      */
-    public function setStat($var)
+    public function setStat(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\DeviceStatus\Stat::class);
         $this->stat = $var;
@@ -291,7 +287,7 @@ class DeviceStatus extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.Protocol protocol = 9 [json_name = "protocol"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\Protocol}
      */
     public function getProtocol()
     {
@@ -300,10 +296,10 @@ class DeviceStatus extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.Protocol protocol = 9 [json_name = "protocol"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\Protocol}
      * @return $this
      */
-    public function setProtocol($var)
+    public function setProtocol(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\Protocol::class);
         $this->protocol = $var;
@@ -335,9 +331,8 @@ class DeviceStatus extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\OdysseyDevice $var
      * @return $this
      */
-    public function setOdyssey($var)
+    public function setOdyssey(\Fatehan\Packet\DataModel\OdysseyDevice|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\OdysseyDevice::class);
         $this->odyssey = $var;
 
         return $this;
@@ -367,9 +362,8 @@ class DeviceStatus extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\FusionDevice $var
      * @return $this
      */
-    public function setFusion($var)
+    public function setFusion(\Fatehan\Packet\DataModel\FusionDevice|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\FusionDevice::class);
         $this->fusion = $var;
 
         return $this;

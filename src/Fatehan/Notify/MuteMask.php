@@ -72,7 +72,7 @@ class MuteMask extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDayOfMonth($var)
+    public function setDayOfMonth(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->day_of_month = $var;
@@ -104,7 +104,7 @@ class MuteMask extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDayOfWeek($var)
+    public function setDayOfWeek(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->day_of_week = $var;
@@ -136,7 +136,7 @@ class MuteMask extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFromSeconds($var)
+    public function setFromSeconds(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->from_seconds = $var;
@@ -168,7 +168,7 @@ class MuteMask extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setToSeconds($var)
+    public function setToSeconds(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->to_seconds = $var;

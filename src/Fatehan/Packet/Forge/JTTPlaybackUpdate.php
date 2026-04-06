@@ -57,7 +57,7 @@ class JTTPlaybackUpdate extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLogicalNumber($var)
+    public function setLogicalNumber(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->logical_number = $var;
@@ -79,7 +79,7 @@ class JTTPlaybackUpdate extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPlaybackControl($var)
+    public function setPlaybackControl(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->playback_control = $var;
@@ -101,7 +101,7 @@ class JTTPlaybackUpdate extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\Forge\JTTPlaybackUpdate\Control[] $var
      * @return $this
      */
-    public function setControl($var)
+    public function setControl(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Packet\Forge\JTTPlaybackUpdate\Control::class);
         $this->control = $arr;

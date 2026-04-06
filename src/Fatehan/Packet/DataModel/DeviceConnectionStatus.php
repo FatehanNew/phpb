@@ -57,7 +57,7 @@ class DeviceConnectionStatus extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -79,9 +79,8 @@ class DeviceConnectionStatus extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setOnline($var)
+    public function setOnline(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->online = $var;
 
         return $this;
@@ -111,9 +110,8 @@ class DeviceConnectionStatus extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setTimestamp($var)
+    public function setTimestamp(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->timestamp = $var;
 
         return $this;

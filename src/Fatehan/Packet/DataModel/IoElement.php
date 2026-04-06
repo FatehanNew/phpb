@@ -582,7 +582,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setGsm($var)
+    public function setGsm(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->gsm = $var;
@@ -614,7 +614,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSleepMode($var)
+    public function setSleepMode(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->sleep_mode = $var;
@@ -646,7 +646,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setGnss($var)
+    public function setGnss(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->gnss = $var;
@@ -678,7 +678,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPdop($var)
+    public function setPdop(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->pdop = $var;
@@ -710,7 +710,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setHdop($var)
+    public function setHdop(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->hdop = $var;
@@ -742,7 +742,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setExternalVoltage($var)
+    public function setExternalVoltage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->external_voltage = $var;
@@ -774,7 +774,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCellId($var)
+    public function setCellId(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->cell_id = $var;
@@ -806,7 +806,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAreaCode($var)
+    public function setAreaCode(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->area_code = $var;
@@ -838,7 +838,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBatteryVoltage($var)
+    public function setBatteryVoltage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->battery_voltage = $var;
@@ -852,7 +852,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      */
     public function getBatteryCurrent()
     {
-        return isset($this->battery_current) ? $this->battery_current : 0;
+        return isset($this->battery_current) ? $this->battery_current : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasBatteryCurrent()
@@ -870,7 +870,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setBatteryCurrent($var)
+    public function setBatteryCurrent(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->battery_current = $var;
@@ -902,7 +902,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBatteryPercent($var)
+    public function setBatteryPercent(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->battery_percent = $var;
@@ -934,7 +934,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setOperatorCode($var)
+    public function setOperatorCode(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->operator_code = $var;
@@ -966,7 +966,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTripOdometer($var)
+    public function setTripOdometer(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->trip_odometer = $var;
@@ -998,7 +998,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAi1($var)
+    public function setAi1(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ai1 = $var;
@@ -1030,7 +1030,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAi2($var)
+    public function setAi2(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ai2 = $var;
@@ -1062,7 +1062,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAi3($var)
+    public function setAi3(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ai3 = $var;
@@ -1094,7 +1094,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAi4($var)
+    public function setAi4(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ai4 = $var;
@@ -1126,9 +1126,8 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setDi1($var)
+    public function setDi1(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->di1 = $var;
 
         return $this;
@@ -1158,9 +1157,8 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setDi2($var)
+    public function setDi2(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->di2 = $var;
 
         return $this;
@@ -1190,9 +1188,8 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setDi3($var)
+    public function setDi3(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->di3 = $var;
 
         return $this;
@@ -1222,9 +1219,8 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setDi4($var)
+    public function setDi4(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->di4 = $var;
 
         return $this;
@@ -1254,9 +1250,8 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setDo1($var)
+    public function setDo1(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->do1 = $var;
 
         return $this;
@@ -1286,9 +1281,8 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setDo2($var)
+    public function setDo2(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->do2 = $var;
 
         return $this;
@@ -1318,9 +1312,8 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setDo3($var)
+    public function setDo3(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->do3 = $var;
 
         return $this;
@@ -1350,9 +1343,8 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setDo4($var)
+    public function setDo4(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->do4 = $var;
 
         return $this;
@@ -1382,7 +1374,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelRateGps($var)
+    public function setFuelRateGps(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_rate_gps = $var;
@@ -1414,7 +1406,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelUsedGps($var)
+    public function setFuelUsedGps(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_used_gps = $var;
@@ -1446,7 +1438,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAxisX($var)
+    public function setAxisX(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->axis_x = $var;
@@ -1478,7 +1470,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAxisY($var)
+    public function setAxisY(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->axis_y = $var;
@@ -1510,7 +1502,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAxisZ($var)
+    public function setAxisZ(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->axis_z = $var;
@@ -1524,7 +1516,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      */
     public function getIccId()
     {
-        return isset($this->icc_id) ? $this->icc_id : 0;
+        return isset($this->icc_id) ? $this->icc_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasIccId()
@@ -1542,7 +1534,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setIccId($var)
+    public function setIccId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->icc_id = $var;
@@ -1574,9 +1566,8 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSdStatus($var)
+    public function setSdStatus(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->sd_status = $var;
 
         return $this;
@@ -1588,7 +1579,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      */
     public function getIButton()
     {
-        return isset($this->i_button) ? $this->i_button : 0;
+        return isset($this->i_button) ? $this->i_button : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasIButton()
@@ -1606,7 +1597,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setIButton($var)
+    public function setIButton(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->i_button = $var;
@@ -1638,9 +1629,8 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\IoElement\DallasTemperature $var
      * @return $this
      */
-    public function setDallas($var)
+    public function setDallas(\Fatehan\Packet\DataModel\IoElement\DallasTemperature|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\IoElement\DallasTemperature::class);
         $this->dallas = $var;
 
         return $this;
@@ -1670,9 +1660,8 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\IoElement\LLS $var
      * @return $this
      */
-    public function setLls($var)
+    public function setLls(\Fatehan\Packet\DataModel\IoElement\LLS|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\IoElement\LLS::class);
         $this->lls = $var;
 
         return $this;
@@ -1702,9 +1691,8 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\IoElement\Eye $var
      * @return $this
      */
-    public function setEye($var)
+    public function setEye(\Fatehan\Packet\DataModel\IoElement\Eye|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\IoElement\Eye::class);
         $this->eye = $var;
 
         return $this;
@@ -1734,9 +1722,8 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\IoElement\Ble $var
      * @return $this
      */
-    public function setBle($var)
+    public function setBle(\Fatehan\Packet\DataModel\IoElement\Ble|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\IoElement\Ble::class);
         $this->ble = $var;
 
         return $this;
@@ -1766,9 +1753,8 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\IoElement\Driver $var
      * @return $this
      */
-    public function setDriver($var)
+    public function setDriver(\Fatehan\Packet\DataModel\IoElement\Driver|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\IoElement\Driver::class);
         $this->driver = $var;
 
         return $this;
@@ -1798,9 +1784,8 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\IoElement\MSP500 $var
      * @return $this
      */
-    public function setMsp500($var)
+    public function setMsp500(\Fatehan\Packet\DataModel\IoElement\MSP500|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\IoElement\MSP500::class);
         $this->msp500 = $var;
 
         return $this;
@@ -1812,7 +1797,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      */
     public function getRfid()
     {
-        return isset($this->rfid) ? $this->rfid : 0;
+        return isset($this->rfid) ? $this->rfid : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasRfid()
@@ -1830,7 +1815,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setRfid($var)
+    public function setRfid(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->rfid = $var;
@@ -1862,7 +1847,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEcoScore($var)
+    public function setEcoScore(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->eco_score = $var;
@@ -1894,7 +1879,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setNetworkType($var)
+    public function setNetworkType(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->network_type = $var;
@@ -1926,7 +1911,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPulseCounterDin1($var)
+    public function setPulseCounterDin1(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->pulse_counter_din1 = $var;
@@ -1958,7 +1943,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPulseCounterDin2($var)
+    public function setPulseCounterDin2(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->pulse_counter_din2 = $var;
@@ -1990,7 +1975,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBtStatus($var)
+    public function setBtStatus(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->bt_status = $var;
@@ -2022,9 +2007,9 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setBarcodeId($var)
+    public function setBarcodeId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->barcode_id = $var;
 
         return $this;
@@ -2054,9 +2039,8 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setInstantMovement($var)
+    public function setInstantMovement(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->instant_movement = $var;
 
         return $this;
@@ -2086,7 +2070,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setUl20202SensorFuelLevel($var)
+    public function setUl20202SensorFuelLevel(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->ul20202_sensor_fuel_level = $var;
@@ -2118,7 +2102,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setUl20202SensorStatus($var)
+    public function setUl20202SensorStatus(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ul20202_sensor_status = $var;
@@ -2150,9 +2134,8 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setGroundSense($var)
+    public function setGroundSense(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->ground_sense = $var;
 
         return $this;
@@ -2182,9 +2165,9 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setIso6709Coordinates($var)
+    public function setIso6709Coordinates(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->iso6709_coordinates = $var;
 
         return $this;
@@ -2214,7 +2197,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setUmtsLteCellId($var)
+    public function setUmtsLteCellId(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->umts_lte_cell_id = $var;
@@ -2246,7 +2229,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAinSpeed($var)
+    public function setAinSpeed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ain_speed = $var;
@@ -2278,9 +2261,8 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setWakeReason($var)
+    public function setWakeReason(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->wake_reason = $var;
 
         return $this;
@@ -2310,7 +2292,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAxlCalibrationStatus($var)
+    public function setAxlCalibrationStatus(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->axl_calibration_status = $var;
@@ -2342,7 +2324,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFrequencyDin1($var)
+    public function setFrequencyDin1(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->frequency_din1 = $var;
@@ -2374,7 +2356,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFrequencyDin2($var)
+    public function setFrequencyDin2(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->frequency_din2 = $var;
@@ -2406,9 +2388,8 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIgnition($var)
+    public function setIgnition(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->ignition = $var;
 
         return $this;
@@ -2438,9 +2419,8 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIdling($var)
+    public function setIdling(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->idling = $var;
 
         return $this;
@@ -2470,9 +2450,8 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setTowing($var)
+    public function setTowing(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->towing = $var;
 
         return $this;
@@ -2502,9 +2481,8 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setUnplug($var)
+    public function setUnplug(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->unplug = $var;
 
         return $this;
@@ -2534,9 +2512,8 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setJamming($var)
+    public function setJamming(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->jamming = $var;
 
         return $this;
@@ -2566,9 +2543,8 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setMovement($var)
+    public function setMovement(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->movement = $var;
 
         return $this;
@@ -2598,7 +2574,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDataMode($var)
+    public function setDataMode(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->data_mode = $var;
@@ -2630,7 +2606,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSpeed($var)
+    public function setSpeed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->speed = $var;
@@ -2662,9 +2638,8 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setTemperature($var)
+    public function setTemperature(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->temperature = $var;
 
         return $this;
@@ -2694,7 +2669,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSlopeX($var)
+    public function setSlopeX(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->slope_x = $var;
@@ -2726,7 +2701,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSlopeY($var)
+    public function setSlopeY(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->slope_y = $var;
@@ -2758,7 +2733,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSlopeZ($var)
+    public function setSlopeZ(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->slope_z = $var;
@@ -2790,7 +2765,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setHumidity($var)
+    public function setHumidity(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->humidity = $var;
@@ -2822,7 +2797,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelFlow($var)
+    public function setFuelFlow(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_flow = $var;
@@ -2854,9 +2829,8 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setDoorCar($var)
+    public function setDoorCar(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->door_car = $var;
 
         return $this;
@@ -2886,9 +2860,8 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setRealtime($var)
+    public function setRealtime(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->realtime = $var;
 
         return $this;
@@ -2918,9 +2891,8 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setPositioning($var)
+    public function setPositioning(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->positioning = $var;
 
         return $this;
@@ -2932,7 +2904,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      */
     public function getAdminPhoneNumber()
     {
-        return isset($this->admin_phone_number) ? $this->admin_phone_number : 0;
+        return isset($this->admin_phone_number) ? $this->admin_phone_number : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasAdminPhoneNumber()
@@ -2950,7 +2922,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setAdminPhoneNumber($var)
+    public function setAdminPhoneNumber(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->admin_phone_number = $var;
@@ -2982,7 +2954,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelCounter($var)
+    public function setFuelCounter(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_counter = $var;
@@ -3014,7 +2986,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setImpulseFrequency1($var)
+    public function setImpulseFrequency1(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->impulse_frequency1 = $var;
@@ -3046,7 +3018,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setImpulseCounter1($var)
+    public function setImpulseCounter1(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->impulse_counter1 = $var;
@@ -3078,7 +3050,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setImpulseRpm1($var)
+    public function setImpulseRpm1(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->impulse_rpm1 = $var;
@@ -3110,7 +3082,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setImpulseFrequency2($var)
+    public function setImpulseFrequency2(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->impulse_frequency2 = $var;
@@ -3142,7 +3114,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setImpulseCounter2($var)
+    public function setImpulseCounter2(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->impulse_counter2 = $var;
@@ -3174,7 +3146,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setImpulseRpm2($var)
+    public function setImpulseRpm2(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->impulse_rpm2 = $var;
@@ -3206,7 +3178,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setImpulseFrequency3($var)
+    public function setImpulseFrequency3(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->impulse_frequency3 = $var;
@@ -3238,7 +3210,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setImpulseCounter3($var)
+    public function setImpulseCounter3(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->impulse_counter3 = $var;
@@ -3270,7 +3242,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setImpulseRpm3($var)
+    public function setImpulseRpm3(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->impulse_rpm3 = $var;
@@ -3302,7 +3274,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setImpulseFrequency4($var)
+    public function setImpulseFrequency4(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->impulse_frequency4 = $var;
@@ -3334,7 +3306,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setImpulseCounter4($var)
+    public function setImpulseCounter4(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->impulse_counter4 = $var;
@@ -3366,7 +3338,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setImpulseRpm4($var)
+    public function setImpulseRpm4(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->impulse_rpm4 = $var;
@@ -3398,7 +3370,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setNumberOfData($var)
+    public function setNumberOfData(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->number_of_data = $var;
@@ -3412,7 +3384,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      */
     public function getRfidCom2()
     {
-        return isset($this->rfid_com2) ? $this->rfid_com2 : 0;
+        return isset($this->rfid_com2) ? $this->rfid_com2 : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasRfidCom2()
@@ -3430,7 +3402,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setRfidCom2($var)
+    public function setRfidCom2(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->rfid_com2 = $var;
@@ -3444,7 +3416,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      */
     public function getImsi()
     {
-        return isset($this->imsi) ? $this->imsi : 0;
+        return isset($this->imsi) ? $this->imsi : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasImsi()
@@ -3462,7 +3434,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setImsi($var)
+    public function setImsi(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->imsi = $var;
@@ -3494,7 +3466,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setUltrasonicFuelLevel1($var)
+    public function setUltrasonicFuelLevel1(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->ultrasonic_fuel_level1 = $var;
@@ -3526,7 +3498,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setUltrasonicFuelLevel2($var)
+    public function setUltrasonicFuelLevel2(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->ultrasonic_fuel_level2 = $var;
@@ -3558,7 +3530,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setUltrasonicSoftwareStatus1($var)
+    public function setUltrasonicSoftwareStatus1(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ultrasonic_software_status1 = $var;
@@ -3590,7 +3562,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setUltrasonicSoftwareStatus2($var)
+    public function setUltrasonicSoftwareStatus2(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ultrasonic_software_status2 = $var;
@@ -3622,7 +3594,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setOneWireHumidity1($var)
+    public function setOneWireHumidity1(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->one_wire_humidity1 = $var;
@@ -3654,7 +3626,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setOneWireHumidity2($var)
+    public function setOneWireHumidity2(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->one_wire_humidity2 = $var;
@@ -3686,7 +3658,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setOneWireHumidity3($var)
+    public function setOneWireHumidity3(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->one_wire_humidity3 = $var;
@@ -3718,7 +3690,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setOneWireHumidity4($var)
+    public function setOneWireHumidity4(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->one_wire_humidity4 = $var;
@@ -3750,7 +3722,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setOneWireHumidity5($var)
+    public function setOneWireHumidity5(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->one_wire_humidity5 = $var;
@@ -3782,7 +3754,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setOneWireHumidity6($var)
+    public function setOneWireHumidity6(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->one_wire_humidity6 = $var;
@@ -3796,7 +3768,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      */
     public function getImei()
     {
-        return isset($this->imei) ? $this->imei : 0;
+        return isset($this->imei) ? $this->imei : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasImei()
@@ -3814,7 +3786,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setImei($var)
+    public function setImei(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->imei = $var;
@@ -3846,7 +3818,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setNoSimCounter($var)
+    public function setNoSimCounter(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->no_sim_counter = $var;
@@ -3878,7 +3850,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setConnectivityQuality($var)
+    public function setConnectivityQuality(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->connectivity_quality = $var;
@@ -3910,7 +3882,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTotalDrivingTime($var)
+    public function setTotalDrivingTime(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->total_driving_time = $var;
@@ -3942,7 +3914,7 @@ class IoElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMaxSpeedGps($var)
+    public function setMaxSpeedGps(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->max_speed_gps = $var;

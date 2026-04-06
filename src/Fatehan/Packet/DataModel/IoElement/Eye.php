@@ -252,7 +252,7 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEyeTemperature1($var)
+    public function setEyeTemperature1(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->eye_temperature1 = $var;
@@ -284,7 +284,7 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEyeTemperature2($var)
+    public function setEyeTemperature2(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->eye_temperature2 = $var;
@@ -316,7 +316,7 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEyeTemperature3($var)
+    public function setEyeTemperature3(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->eye_temperature3 = $var;
@@ -348,7 +348,7 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEyeTemperature4($var)
+    public function setEyeTemperature4(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->eye_temperature4 = $var;
@@ -380,7 +380,7 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEyeHumidity1($var)
+    public function setEyeHumidity1(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->eye_humidity1 = $var;
@@ -412,7 +412,7 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEyeHumidity2($var)
+    public function setEyeHumidity2(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->eye_humidity2 = $var;
@@ -444,7 +444,7 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEyeHumidity3($var)
+    public function setEyeHumidity3(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->eye_humidity3 = $var;
@@ -476,7 +476,7 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEyeHumidity4($var)
+    public function setEyeHumidity4(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->eye_humidity4 = $var;
@@ -508,9 +508,8 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEyeMagnet1($var)
+    public function setEyeMagnet1(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->eye_magnet1 = $var;
 
         return $this;
@@ -540,9 +539,8 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEyeMagnet2($var)
+    public function setEyeMagnet2(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->eye_magnet2 = $var;
 
         return $this;
@@ -572,9 +570,8 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEyeMagnet3($var)
+    public function setEyeMagnet3(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->eye_magnet3 = $var;
 
         return $this;
@@ -604,9 +601,8 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEyeMagnet4($var)
+    public function setEyeMagnet4(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->eye_magnet4 = $var;
 
         return $this;
@@ -636,9 +632,8 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEyeMovement1($var)
+    public function setEyeMovement1(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->eye_movement1 = $var;
 
         return $this;
@@ -668,9 +663,8 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEyeMovement2($var)
+    public function setEyeMovement2(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->eye_movement2 = $var;
 
         return $this;
@@ -700,9 +694,8 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEyeMovement3($var)
+    public function setEyeMovement3(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->eye_movement3 = $var;
 
         return $this;
@@ -732,9 +725,8 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEyeMovement4($var)
+    public function setEyeMovement4(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->eye_movement4 = $var;
 
         return $this;
@@ -764,7 +756,7 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEyePitch1($var)
+    public function setEyePitch1(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->eye_pitch1 = $var;
@@ -796,7 +788,7 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEyePitch2($var)
+    public function setEyePitch2(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->eye_pitch2 = $var;
@@ -828,7 +820,7 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEyePitch3($var)
+    public function setEyePitch3(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->eye_pitch3 = $var;
@@ -860,7 +852,7 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEyePitch4($var)
+    public function setEyePitch4(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->eye_pitch4 = $var;
@@ -892,9 +884,8 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEyeLowBattery1($var)
+    public function setEyeLowBattery1(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->eye_low_battery1 = $var;
 
         return $this;
@@ -924,9 +915,8 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEyeLowBattery2($var)
+    public function setEyeLowBattery2(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->eye_low_battery2 = $var;
 
         return $this;
@@ -956,9 +946,8 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEyeLowBattery3($var)
+    public function setEyeLowBattery3(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->eye_low_battery3 = $var;
 
         return $this;
@@ -988,9 +977,8 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEyeLowBattery4($var)
+    public function setEyeLowBattery4(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->eye_low_battery4 = $var;
 
         return $this;
@@ -1020,7 +1008,7 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEyeBatteryVoltage1($var)
+    public function setEyeBatteryVoltage1(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->eye_battery_voltage1 = $var;
@@ -1052,7 +1040,7 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEyeBatteryVoltage2($var)
+    public function setEyeBatteryVoltage2(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->eye_battery_voltage2 = $var;
@@ -1084,7 +1072,7 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEyeBatteryVoltage3($var)
+    public function setEyeBatteryVoltage3(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->eye_battery_voltage3 = $var;
@@ -1116,7 +1104,7 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEyeBatteryVoltage4($var)
+    public function setEyeBatteryVoltage4(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->eye_battery_voltage4 = $var;
@@ -1148,7 +1136,7 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEyeRoll1($var)
+    public function setEyeRoll1(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->eye_roll1 = $var;
@@ -1180,7 +1168,7 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEyeRoll2($var)
+    public function setEyeRoll2(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->eye_roll2 = $var;
@@ -1212,7 +1200,7 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEyeRoll3($var)
+    public function setEyeRoll3(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->eye_roll3 = $var;
@@ -1244,7 +1232,7 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEyeRoll4($var)
+    public function setEyeRoll4(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->eye_roll4 = $var;
@@ -1276,7 +1264,7 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEyeMovementCount1($var)
+    public function setEyeMovementCount1(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->eye_movement_count1 = $var;
@@ -1308,7 +1296,7 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEyeMovementCount2($var)
+    public function setEyeMovementCount2(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->eye_movement_count2 = $var;
@@ -1340,7 +1328,7 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEyeMovementCount3($var)
+    public function setEyeMovementCount3(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->eye_movement_count3 = $var;
@@ -1372,7 +1360,7 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEyeMovementCount4($var)
+    public function setEyeMovementCount4(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->eye_movement_count4 = $var;
@@ -1404,7 +1392,7 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEyeMagnetCount1($var)
+    public function setEyeMagnetCount1(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->eye_magnet_count1 = $var;
@@ -1436,7 +1424,7 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEyeMagnetCount2($var)
+    public function setEyeMagnetCount2(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->eye_magnet_count2 = $var;
@@ -1468,7 +1456,7 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEyeMagnetCount3($var)
+    public function setEyeMagnetCount3(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->eye_magnet_count3 = $var;
@@ -1500,7 +1488,7 @@ class Eye extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEyeMagnetCount4($var)
+    public function setEyeMagnetCount4(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->eye_magnet_count4 = $var;

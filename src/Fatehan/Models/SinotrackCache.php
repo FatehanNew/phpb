@@ -67,7 +67,7 @@ class SinotrackCache extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setGpsTime($var)
+    public function setGpsTime(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->gps_time = $var;
@@ -99,7 +99,7 @@ class SinotrackCache extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelUsedGps($var)
+    public function setFuelUsedGps(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_used_gps = $var;
@@ -131,9 +131,8 @@ class SinotrackCache extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIgnition($var)
+    public function setIgnition(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->ignition = $var;
 
         return $this;
@@ -145,7 +144,7 @@ class SinotrackCache extends \Google\Protobuf\Internal\Message
      */
     public function getCommandId()
     {
-        return isset($this->command_id) ? $this->command_id : 0;
+        return isset($this->command_id) ? $this->command_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCommandId()
@@ -163,7 +162,7 @@ class SinotrackCache extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCommandId($var)
+    public function setCommandId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->command_id = $var;
@@ -195,9 +194,9 @@ class SinotrackCache extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCommand($var)
+    public function setCommand(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->command = $var;
 
         return $this;

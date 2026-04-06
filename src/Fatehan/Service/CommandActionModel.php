@@ -87,7 +87,7 @@ class CommandActionModel extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCommandId($var)
+    public function setCommandId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->command_id = $var;
@@ -109,7 +109,7 @@ class CommandActionModel extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTrackerId($var)
+    public function setTrackerId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->tracker_id = $var;
@@ -131,7 +131,7 @@ class CommandActionModel extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCommandActionId($var)
+    public function setCommandActionId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->command_action_id = $var;
@@ -153,9 +153,9 @@ class CommandActionModel extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCommandName($var)
+    public function setCommandName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->command_name = $var;
 
         return $this;
@@ -175,9 +175,9 @@ class CommandActionModel extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setActionName($var)
+    public function setActionName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->action_name = $var;
 
         return $this;
@@ -197,9 +197,9 @@ class CommandActionModel extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setActionDescription($var)
+    public function setActionDescription(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->action_description = $var;
 
         return $this;
@@ -219,9 +219,9 @@ class CommandActionModel extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setActionPicture($var)
+    public function setActionPicture(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->action_picture = $var;
 
         return $this;
@@ -251,9 +251,8 @@ class CommandActionModel extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\Message\CommandFormat $var
      * @return $this
      */
-    public function setSms($var)
+    public function setSms(\Fatehan\Packet\Message\CommandFormat|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\Message\CommandFormat::class);
         $this->sms = $var;
 
         return $this;
@@ -283,9 +282,8 @@ class CommandActionModel extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\Message\CommandFormat $var
      * @return $this
      */
-    public function setGprs($var)
+    public function setGprs(\Fatehan\Packet\Message\CommandFormat|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\Message\CommandFormat::class);
         $this->gprs = $var;
 
         return $this;

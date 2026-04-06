@@ -52,7 +52,7 @@ class CommandActionListResponse extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCost($var)
+    public function setCost(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->cost = $var;
@@ -74,7 +74,7 @@ class CommandActionListResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Service\CommandActionModel[] $var
      * @return $this
      */
-    public function setData($var)
+    public function setData(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Service\CommandActionModel::class);
         $this->data = $arr;

@@ -77,9 +77,8 @@ class Traffic extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setEnteredAt($var)
+    public function setEnteredAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->entered_at = $var;
 
         return $this;
@@ -109,9 +108,8 @@ class Traffic extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setExitedAt($var)
+    public function setExitedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->exited_at = $var;
 
         return $this;
@@ -131,7 +129,7 @@ class Traffic extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMileage($var)
+    public function setMileage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->mileage = $var;
@@ -153,7 +151,7 @@ class Traffic extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setGeoId($var)
+    public function setGeoId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->geo_id = $var;
@@ -185,9 +183,9 @@ class Traffic extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setGeoName($var)
+    public function setGeoName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->geo_name = $var;
 
         return $this;

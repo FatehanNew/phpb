@@ -52,7 +52,7 @@ class EventIndexResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCost($var)
+    public function setCost(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->cost = $var;
@@ -74,7 +74,7 @@ class EventIndexResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Notify\Event[] $var
      * @return $this
      */
-    public function setEvents($var)
+    public function setEvents(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Notify\Event::class);
         $this->events = $arr;

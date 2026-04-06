@@ -92,9 +92,9 @@ class JTT808AlarmData extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setAlarmId($var)
+    public function setAlarmId(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->alarm_id = $var;
 
         return $this;
@@ -114,7 +114,7 @@ class JTT808AlarmData extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTerminalId($var)
+    public function setTerminalId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->terminal_id = $var;
@@ -146,9 +146,8 @@ class JTT808AlarmData extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setDatetime($var)
+    public function setDatetime(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->datetime = $var;
 
         return $this;
@@ -168,7 +167,7 @@ class JTT808AlarmData extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSerialNo($var)
+    public function setSerialNo(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->serial_no = $var;
@@ -190,7 +189,7 @@ class JTT808AlarmData extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAttachments($var)
+    public function setAttachments(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->attachments = $var;
@@ -212,7 +211,7 @@ class JTT808AlarmData extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSpeed($var)
+    public function setSpeed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->speed = $var;
@@ -234,7 +233,7 @@ class JTT808AlarmData extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLatitude($var)
+    public function setLatitude(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->latitude = $var;
@@ -256,7 +255,7 @@ class JTT808AlarmData extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLongitude($var)
+    public function setLongitude(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->longitude = $var;
@@ -288,9 +287,8 @@ class JTT808AlarmData extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setGpsTime($var)
+    public function setGpsTime(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->gps_time = $var;
 
         return $this;
@@ -298,7 +296,7 @@ class JTT808AlarmData extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.Alert alarm_type = 10 [json_name = "alarm_type"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\Alert}
      */
     public function getAlarmType()
     {
@@ -307,10 +305,10 @@ class JTT808AlarmData extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.Alert alarm_type = 10 [json_name = "alarm_type"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\Alert}
      * @return $this
      */
-    public function setAlarmType($var)
+    public function setAlarmType(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\Alert::class);
         $this->alarm_type = $var;

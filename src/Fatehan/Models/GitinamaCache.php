@@ -52,9 +52,8 @@ class GitinamaCache extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setLat($var)
+    public function setLat(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->lat = $var;
 
         return $this;
@@ -74,9 +73,8 @@ class GitinamaCache extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setLng($var)
+    public function setLng(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->lng = $var;
 
         return $this;

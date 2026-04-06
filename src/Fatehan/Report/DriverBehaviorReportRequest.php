@@ -67,7 +67,7 @@ class DriverBehaviorReportRequest extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOrganizationId($var)
+    public function setOrganizationId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->organization_id = $var;
@@ -77,7 +77,7 @@ class DriverBehaviorReportRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.reports.DriverBehaviorReportRequest.GroupBy group_by = 2 [json_name = "group_by"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Report\DriverBehaviorReportRequest\GroupBy}
      */
     public function getGroupBy()
     {
@@ -86,10 +86,10 @@ class DriverBehaviorReportRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.reports.DriverBehaviorReportRequest.GroupBy group_by = 2 [json_name = "group_by"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Report\DriverBehaviorReportRequest\GroupBy}
      * @return $this
      */
-    public function setGroupBy($var)
+    public function setGroupBy(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Report\DriverBehaviorReportRequest\GroupBy::class);
         $this->group_by = $var;
@@ -121,9 +121,8 @@ class DriverBehaviorReportRequest extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setStartedAt($var)
+    public function setStartedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->started_at = $var;
 
         return $this;
@@ -153,9 +152,8 @@ class DriverBehaviorReportRequest extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setFinishedAt($var)
+    public function setFinishedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->finished_at = $var;
 
         return $this;
@@ -175,7 +173,7 @@ class DriverBehaviorReportRequest extends \Google\Protobuf\Internal\Message
      * @param int[]|string[] $var
      * @return $this
      */
-    public function setDeviceIds($var)
+    public function setDeviceIds(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT64);
         $this->device_ids = $arr;

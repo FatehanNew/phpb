@@ -72,9 +72,9 @@ class Receiver extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPhone($var)
+    public function setPhone(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->phone = $var;
 
         return $this;
@@ -104,9 +104,9 @@ class Receiver extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setEmail($var)
+    public function setEmail(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->email = $var;
 
         return $this;
@@ -118,7 +118,7 @@ class Receiver extends \Google\Protobuf\Internal\Message
      */
     public function getTelegramId()
     {
-        return isset($this->telegram_id) ? $this->telegram_id : 0;
+        return isset($this->telegram_id) ? $this->telegram_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasTelegramId()
@@ -136,7 +136,7 @@ class Receiver extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTelegramId($var)
+    public function setTelegramId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->telegram_id = $var;
@@ -158,7 +158,7 @@ class Receiver extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Identity\Receiver\Token[] $var
      * @return $this
      */
-    public function setTokens($var)
+    public function setTokens(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Identity\Receiver\Token::class);
         $this->tokens = $arr;

@@ -47,7 +47,7 @@ class CommandActionListRequest extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTrackerId($var)
+    public function setTrackerId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->tracker_id = $var;

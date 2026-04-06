@@ -132,7 +132,7 @@ class Metadata extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPort($var)
+    public function setPort(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->port = $var;
@@ -164,9 +164,9 @@ class Metadata extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTags($var)
+    public function setTags(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->tags = $var;
 
         return $this;
@@ -196,7 +196,7 @@ class Metadata extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setType($var)
+    public function setType(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->type = $var;
@@ -228,7 +228,7 @@ class Metadata extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIdType($var)
+    public function setIdType(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->id_type = $var;
@@ -260,9 +260,9 @@ class Metadata extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setIdStart($var)
+    public function setIdStart(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->id_start = $var;
 
         return $this;
@@ -292,7 +292,7 @@ class Metadata extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setOdoType($var)
+    public function setOdoType(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->odo_type = $var;
@@ -324,7 +324,7 @@ class Metadata extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCallType($var)
+    public function setCallType(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->call_type = $var;
@@ -356,7 +356,7 @@ class Metadata extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIdLength($var)
+    public function setIdLength(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->id_length = $var;
@@ -388,7 +388,7 @@ class Metadata extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAnalogInput($var)
+    public function setAnalogInput(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->analog_input = $var;
@@ -420,9 +420,9 @@ class Metadata extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSmsPassword($var)
+    public function setSmsPassword(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->sms_password = $var;
 
         return $this;
@@ -452,9 +452,9 @@ class Metadata extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSmsUsername($var)
+    public function setSmsUsername(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->sms_username = $var;
 
         return $this;
@@ -484,7 +484,7 @@ class Metadata extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDigitalInput($var)
+    public function setDigitalInput(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->digital_input = $var;
@@ -516,7 +516,7 @@ class Metadata extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDigitalOutput($var)
+    public function setDigitalOutput(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->digital_output = $var;
@@ -548,9 +548,8 @@ class Metadata extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setMovementSensor($var)
+    public function setMovementSensor(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->movement_sensor = $var;
 
         return $this;
@@ -580,9 +579,8 @@ class Metadata extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Device\Tracker\Metadata\SmsCredentials $var
      * @return $this
      */
-    public function setSmsCredentials($var)
+    public function setSmsCredentials(\Fatehan\Device\Tracker\Metadata\SmsCredentials|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Device\Tracker\Metadata\SmsCredentials::class);
         $this->sms_credentials = $var;
 
         return $this;
@@ -612,9 +610,9 @@ class Metadata extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDeviceConfigCommands($var)
+    public function setDeviceConfigCommands(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->device_config_commands = $var;
 
         return $this;

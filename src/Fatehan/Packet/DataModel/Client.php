@@ -62,9 +62,9 @@ class Client extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRemoteIp($var)
+    public function setRemoteIp(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->remote_ip = $var;
 
         return $this;
@@ -84,7 +84,7 @@ class Client extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRemotePort($var)
+    public function setRemotePort(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->remote_port = $var;
@@ -106,9 +106,9 @@ class Client extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setLocalIp($var)
+    public function setLocalIp(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->local_ip = $var;
 
         return $this;
@@ -128,7 +128,7 @@ class Client extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLocalPort($var)
+    public function setLocalPort(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->local_port = $var;

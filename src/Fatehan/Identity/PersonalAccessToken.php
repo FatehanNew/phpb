@@ -127,7 +127,7 @@ class PersonalAccessToken extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -149,9 +149,9 @@ class PersonalAccessToken extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTokenableType($var)
+    public function setTokenableType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->tokenable_type = $var;
 
         return $this;
@@ -171,7 +171,7 @@ class PersonalAccessToken extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTokenableId($var)
+    public function setTokenableId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->tokenable_id = $var;
@@ -185,7 +185,7 @@ class PersonalAccessToken extends \Google\Protobuf\Internal\Message
      */
     public function getGoauId()
     {
-        return isset($this->goau_id) ? $this->goau_id : 0;
+        return isset($this->goau_id) ? $this->goau_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasGoauId()
@@ -203,7 +203,7 @@ class PersonalAccessToken extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setGoauId($var)
+    public function setGoauId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->goau_id = $var;
@@ -225,9 +225,9 @@ class PersonalAccessToken extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -247,9 +247,9 @@ class PersonalAccessToken extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setToken($var)
+    public function setToken(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->token = $var;
 
         return $this;
@@ -279,9 +279,9 @@ class PersonalAccessToken extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setAbilities($var)
+    public function setAbilities(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->abilities = $var;
 
         return $this;
@@ -311,9 +311,9 @@ class PersonalAccessToken extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFcm($var)
+    public function setFcm(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->fcm = $var;
 
         return $this;
@@ -343,9 +343,9 @@ class PersonalAccessToken extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setIp($var)
+    public function setIp(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->ip = $var;
 
         return $this;
@@ -375,9 +375,9 @@ class PersonalAccessToken extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDomain($var)
+    public function setDomain(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->domain = $var;
 
         return $this;
@@ -389,7 +389,7 @@ class PersonalAccessToken extends \Google\Protobuf\Internal\Message
      */
     public function getPartnerId()
     {
-        return isset($this->partner_id) ? $this->partner_id : 0;
+        return isset($this->partner_id) ? $this->partner_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasPartnerId()
@@ -407,7 +407,7 @@ class PersonalAccessToken extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setPartnerId($var)
+    public function setPartnerId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->partner_id = $var;
@@ -439,9 +439,9 @@ class PersonalAccessToken extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUserAgent($var)
+    public function setUserAgent(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->user_agent = $var;
 
         return $this;
@@ -461,9 +461,9 @@ class PersonalAccessToken extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDeviceType($var)
+    public function setDeviceType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->device_type = $var;
 
         return $this;
@@ -493,9 +493,8 @@ class PersonalAccessToken extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setLastUsedAt($var)
+    public function setLastUsedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->last_used_at = $var;
 
         return $this;
@@ -525,9 +524,8 @@ class PersonalAccessToken extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setExpiresAt($var)
+    public function setExpiresAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->expires_at = $var;
 
         return $this;
@@ -557,9 +555,8 @@ class PersonalAccessToken extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -589,9 +586,8 @@ class PersonalAccessToken extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;

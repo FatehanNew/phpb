@@ -117,7 +117,7 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -139,7 +139,7 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setImei($var)
+    public function setImei(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->imei = $var;
@@ -153,7 +153,7 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
      */
     public function getObjectId()
     {
-        return isset($this->object_id) ? $this->object_id : 0;
+        return isset($this->object_id) ? $this->object_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasObjectId()
@@ -171,7 +171,7 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setObjectId($var)
+    public function setObjectId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->object_id = $var;
@@ -181,7 +181,7 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.OdysseyDevice.ObjectType object_type = 4 [json_name = "object_type"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\OdysseyDevice\ObjectType}
      */
     public function getObjectType()
     {
@@ -190,10 +190,10 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.OdysseyDevice.ObjectType object_type = 4 [json_name = "object_type"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\OdysseyDevice\ObjectType}
      * @return $this
      */
-    public function setObjectType($var)
+    public function setObjectType(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\OdysseyDevice\ObjectType::class);
         $this->object_type = $var;
@@ -215,9 +215,9 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTimezone($var)
+    public function setTimezone(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->timezone = $var;
 
         return $this;
@@ -237,9 +237,8 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsUnlimited($var)
+    public function setIsUnlimited(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_unlimited = $var;
 
         return $this;
@@ -247,7 +246,7 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.OdysseyDevice.TripType trip_type = 7 [json_name = "trip_type"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\OdysseyDevice\TripType}
      */
     public function getTripType()
     {
@@ -256,10 +255,10 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.OdysseyDevice.TripType trip_type = 7 [json_name = "trip_type"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\OdysseyDevice\TripType}
      * @return $this
      */
-    public function setTripType($var)
+    public function setTripType(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\OdysseyDevice\TripType::class);
         $this->trip_type = $var;
@@ -291,9 +290,8 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setReceiveAt($var)
+    public function setReceiveAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->receive_at = $var;
 
         return $this;
@@ -323,9 +321,8 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setExpiresAt($var)
+    public function setExpiresAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->expires_at = $var;
 
         return $this;
@@ -355,9 +352,8 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setConnectAt($var)
+    public function setConnectAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->connect_at = $var;
 
         return $this;
@@ -387,9 +383,8 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -401,7 +396,7 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
      */
     public function getWorkflowTaskId()
     {
-        return isset($this->workflow_task_id) ? $this->workflow_task_id : 0;
+        return isset($this->workflow_task_id) ? $this->workflow_task_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasWorkflowTaskId()
@@ -419,7 +414,7 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setWorkflowTaskId($var)
+    public function setWorkflowTaskId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->workflow_task_id = $var;
@@ -433,7 +428,7 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
      */
     public function getOrganizationId()
     {
-        return isset($this->organization_id) ? $this->organization_id : 0;
+        return isset($this->organization_id) ? $this->organization_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasOrganizationId()
@@ -451,7 +446,7 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOrganizationId($var)
+    public function setOrganizationId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->organization_id = $var;
@@ -473,7 +468,7 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
      * @param int[]|string[] $var
      * @return $this
      */
-    public function setGeneration($var)
+    public function setGeneration(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT64);
         $this->generation = $arr;
@@ -505,9 +500,8 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\DataModule $var
      * @return $this
      */
-    public function setModule($var)
+    public function setModule(\Fatehan\Packet\DataModel\DataModule|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\DataModule::class);
         $this->module = $var;
 
         return $this;

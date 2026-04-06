@@ -35,7 +35,7 @@ class ProtocolEvent extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.Alert alert = 1;</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\Alert}
      */
     public function getAlert()
     {
@@ -44,10 +44,10 @@ class ProtocolEvent extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.Alert alert = 1;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\Alert}
      * @return $this
      */
-    public function setAlert($var)
+    public function setAlert(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\Alert::class);
         $this->alert = $var;

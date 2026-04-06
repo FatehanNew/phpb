@@ -107,7 +107,7 @@ class MonthlyCompact extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCost($var)
+    public function setCost(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->cost = $var;
@@ -129,7 +129,7 @@ class MonthlyCompact extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRecords($var)
+    public function setRecords(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->records = $var;
@@ -151,7 +151,7 @@ class MonthlyCompact extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setGreenDriving($var)
+    public function setGreenDriving(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::UINT32, \Google\Protobuf\Internal\GPBType::UINT32);
         $this->green_driving = $arr;
@@ -173,7 +173,7 @@ class MonthlyCompact extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setTemperature($var)
+    public function setTemperature(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::UINT32, \Google\Protobuf\Internal\GPBType::SINT32);
         $this->temperature = $arr;
@@ -195,7 +195,7 @@ class MonthlyCompact extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setHumidity($var)
+    public function setHumidity(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::UINT32, \Google\Protobuf\Internal\GPBType::UINT32);
         $this->humidity = $arr;
@@ -227,7 +227,7 @@ class MonthlyCompact extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIgnition($var)
+    public function setIgnition(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ignition = $var;
@@ -259,7 +259,7 @@ class MonthlyCompact extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDoorOpened($var)
+    public function setDoorOpened(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->door_opened = $var;
@@ -291,7 +291,7 @@ class MonthlyCompact extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelUsed($var)
+    public function setFuelUsed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_used = $var;
@@ -323,7 +323,7 @@ class MonthlyCompact extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelRate($var)
+    public function setFuelRate(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_rate = $var;
@@ -355,7 +355,7 @@ class MonthlyCompact extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEngineRpm($var)
+    public function setEngineRpm(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->engine_rpm = $var;
@@ -387,7 +387,7 @@ class MonthlyCompact extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEngineLoad($var)
+    public function setEngineLoad(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->engine_load = $var;
@@ -409,7 +409,7 @@ class MonthlyCompact extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setCrashes($var)
+    public function setCrashes(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::UINT32, \Google\Protobuf\Internal\GPBType::UINT32);
         $this->crashes = $arr;
@@ -431,7 +431,7 @@ class MonthlyCompact extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setSpeeds($var)
+    public function setSpeeds(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::UINT32, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Trip\TripDurationStat::class);
         $this->speeds = $arr;

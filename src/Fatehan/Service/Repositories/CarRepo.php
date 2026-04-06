@@ -67,9 +67,8 @@ class CarRepo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Device\Car $var
      * @return $this
      */
-    public function setCar($var)
+    public function setCar(\Fatehan\Device\Car|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Device\Car::class);
         $this->car = $var;
 
         return $this;
@@ -99,9 +98,8 @@ class CarRepo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Service\Repositories\DriverRepo $var
      * @return $this
      */
-    public function setDriverRepo($var)
+    public function setDriverRepo(\Fatehan\Service\Repositories\DriverRepo|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Service\Repositories\DriverRepo::class);
         $this->driver_repo = $var;
 
         return $this;
@@ -131,9 +129,8 @@ class CarRepo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Service\Repositories\CarModelRepo $var
      * @return $this
      */
-    public function setCarModelRepo($var)
+    public function setCarModelRepo(\Fatehan\Service\Repositories\CarModelRepo|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Service\Repositories\CarModelRepo::class);
         $this->car_model_repo = $var;
 
         return $this;

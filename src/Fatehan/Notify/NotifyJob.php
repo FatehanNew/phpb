@@ -72,7 +72,7 @@ class NotifyJob extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -94,7 +94,7 @@ class NotifyJob extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->user_id = $var;
@@ -116,7 +116,7 @@ class NotifyJob extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRetries($var)
+    public function setRetries(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->retries = $var;
@@ -126,7 +126,7 @@ class NotifyJob extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.notifies.NotifyJob.Priority priority = 4 [json_name = "priority"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Notify\NotifyJob\Priority}
      */
     public function getPriority()
     {
@@ -135,10 +135,10 @@ class NotifyJob extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.notifies.NotifyJob.Priority priority = 4 [json_name = "priority"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Notify\NotifyJob\Priority}
      * @return $this
      */
-    public function setPriority($var)
+    public function setPriority(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Notify\NotifyJob\Priority::class);
         $this->priority = $var;
@@ -170,9 +170,8 @@ class NotifyJob extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Notify\Notify $var
      * @return $this
      */
-    public function setNotify($var)
+    public function setNotify(\Fatehan\Notify\Notify|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Notify\Notify::class);
         $this->notify = $var;
 
         return $this;
@@ -180,7 +179,7 @@ class NotifyJob extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.notifies.Via via = 6 [json_name = "via"];</code>
-     * @return RepeatedField<int>
+     * @return RepeatedField<int> one of the values in {@see \Fatehan\Notify\Via}
      */
     public function getVia()
     {
@@ -189,10 +188,10 @@ class NotifyJob extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.notifies.Via via = 6 [json_name = "via"];</code>
-     * @param int[] $var
+     * @param int[] $var one of the values in {@see \Fatehan\Notify\Via}
      * @return $this
      */
-    public function setVia($var)
+    public function setVia(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Fatehan\Notify\Via::class);
         $this->via = $arr;

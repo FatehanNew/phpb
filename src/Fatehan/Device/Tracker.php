@@ -102,7 +102,7 @@ class Tracker extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -124,9 +124,9 @@ class Tracker extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -156,9 +156,9 @@ class Tracker extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPicture($var)
+    public function setPicture(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->picture = $var;
 
         return $this;
@@ -188,9 +188,8 @@ class Tracker extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Device\Tracker\Metadata $var
      * @return $this
      */
-    public function setMetadata($var)
+    public function setMetadata(\Fatehan\Device\Tracker\Metadata|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Device\Tracker\Metadata::class);
         $this->metadata = $var;
 
         return $this;
@@ -220,9 +219,9 @@ class Tracker extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setGeneration($var)
+    public function setGeneration(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->generation = $var;
 
         return $this;
@@ -242,7 +241,7 @@ class Tracker extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLevel($var)
+    public function setLevel(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->level = $var;
@@ -256,7 +255,7 @@ class Tracker extends \Google\Protobuf\Internal\Message
      */
     public function getParentId()
     {
-        return isset($this->parent_id) ? $this->parent_id : 0;
+        return isset($this->parent_id) ? $this->parent_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasParentId()
@@ -274,7 +273,7 @@ class Tracker extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setParentId($var)
+    public function setParentId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->parent_id = $var;
@@ -288,7 +287,7 @@ class Tracker extends \Google\Protobuf\Internal\Message
      */
     public function getCreatedBy()
     {
-        return isset($this->created_by) ? $this->created_by : 0;
+        return isset($this->created_by) ? $this->created_by : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCreatedBy()
@@ -306,7 +305,7 @@ class Tracker extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreatedBy($var)
+    public function setCreatedBy(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->created_by = $var;
@@ -338,9 +337,8 @@ class Tracker extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -370,9 +368,8 @@ class Tracker extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;
@@ -392,7 +389,7 @@ class Tracker extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Device\Tracker\Document[] $var
      * @return $this
      */
-    public function setDocuments($var)
+    public function setDocuments(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Device\Tracker\Document::class);
         $this->documents = $arr;
@@ -424,9 +421,9 @@ class Tracker extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCamera($var)
+    public function setCamera(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->camera = $var;
 
         return $this;

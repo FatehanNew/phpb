@@ -267,9 +267,9 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setVin($var)
+    public function setVin(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->vin = $var;
 
         return $this;
@@ -299,7 +299,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setShortFuelTrim($var)
+    public function setShortFuelTrim(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->short_fuel_trim = $var;
@@ -331,7 +331,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelPressure($var)
+    public function setFuelPressure(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_pressure = $var;
@@ -363,7 +363,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIntakeMap($var)
+    public function setIntakeMap(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->intake_map = $var;
@@ -395,7 +395,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setVehicleSpeed($var)
+    public function setVehicleSpeed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->vehicle_speed = $var;
@@ -427,7 +427,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTimingAdvance($var)
+    public function setTimingAdvance(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->timing_advance = $var;
@@ -459,7 +459,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIntakeAirTemperature($var)
+    public function setIntakeAirTemperature(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->intake_air_temperature = $var;
@@ -491,7 +491,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMaf($var)
+    public function setMaf(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->maf = $var;
@@ -523,7 +523,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setThrottlePosition($var)
+    public function setThrottlePosition(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->throttle_position = $var;
@@ -555,7 +555,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRuntimeSinceEngineStart($var)
+    public function setRuntimeSinceEngineStart(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->runtime_since_engine_start = $var;
@@ -587,7 +587,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDistanceTraveledMilOn($var)
+    public function setDistanceTraveledMilOn(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->distance_traveled_mil_on = $var;
@@ -619,7 +619,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRelativeFuelRailPressure($var)
+    public function setRelativeFuelRailPressure(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->relative_fuel_rail_pressure = $var;
@@ -651,7 +651,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDirectFuelRailPressure($var)
+    public function setDirectFuelRailPressure(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->direct_fuel_rail_pressure = $var;
@@ -683,7 +683,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCommandedEgr($var)
+    public function setCommandedEgr(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->commanded_egr = $var;
@@ -715,7 +715,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEgrError($var)
+    public function setEgrError(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->egr_error = $var;
@@ -747,7 +747,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDistanceSinceCodesClear($var)
+    public function setDistanceSinceCodesClear(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->distance_since_codes_clear = $var;
@@ -779,7 +779,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBarometricPressure($var)
+    public function setBarometricPressure(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->barometric_pressure = $var;
@@ -811,7 +811,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setControlModuleVoltage($var)
+    public function setControlModuleVoltage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->control_module_voltage = $var;
@@ -843,7 +843,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAbsoluteLoadValue($var)
+    public function setAbsoluteLoadValue(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->absolute_load_value = $var;
@@ -875,7 +875,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelType($var)
+    public function setFuelType(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_type = $var;
@@ -907,7 +907,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAmbientAirTemperature($var)
+    public function setAmbientAirTemperature(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->ambient_air_temperature = $var;
@@ -939,7 +939,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTimeRunWithMilOn($var)
+    public function setTimeRunWithMilOn(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->time_run_with_mil_on = $var;
@@ -971,7 +971,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTimeSinceCodesCleared($var)
+    public function setTimeSinceCodesCleared(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->time_since_codes_cleared = $var;
@@ -1003,7 +1003,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAbsoluteFuelRailPressure($var)
+    public function setAbsoluteFuelRailPressure(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->absolute_fuel_rail_pressure = $var;
@@ -1035,7 +1035,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setHybridBatteryPackLife($var)
+    public function setHybridBatteryPackLife(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->hybrid_battery_pack_life = $var;
@@ -1067,7 +1067,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEngineOilTemperature($var)
+    public function setEngineOilTemperature(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->engine_oil_temperature = $var;
@@ -1099,7 +1099,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelInjectionTiming($var)
+    public function setFuelInjectionTiming(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->fuel_injection_timing = $var;
@@ -1131,7 +1131,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setThrottlePositionGroup($var)
+    public function setThrottlePositionGroup(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->throttle_position_group = $var;
@@ -1163,7 +1163,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCommandedEquivalenceR($var)
+    public function setCommandedEquivalenceR(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->commanded_equivalence_r = $var;
@@ -1195,7 +1195,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIntakeMap2Bytes($var)
+    public function setIntakeMap2Bytes(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->intake_map_2_bytes = $var;
@@ -1227,7 +1227,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setHybridSystemVoltage($var)
+    public function setHybridSystemVoltage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->hybrid_system_voltage = $var;
@@ -1259,7 +1259,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setHybridSystemCurrent($var)
+    public function setHybridSystemCurrent(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->hybrid_system_current = $var;
@@ -1291,9 +1291,9 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFaultCodes($var)
+    public function setFaultCodes(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->fault_codes = $var;
 
         return $this;
@@ -1323,9 +1323,8 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEcuBreakSwitch($var)
+    public function setEcuBreakSwitch(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->ecu_break_switch = $var;
 
         return $this;
@@ -1355,7 +1354,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCoolantTemperature($var)
+    public function setCoolantTemperature(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->coolant_temperature = $var;
@@ -1387,7 +1386,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setNumberOfDtc($var)
+    public function setNumberOfDtc(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->number_of_dtc = $var;
@@ -1419,7 +1418,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEngineLoad($var)
+    public function setEngineLoad(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->engine_load = $var;
@@ -1451,7 +1450,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEngineRpm($var)
+    public function setEngineRpm(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->engine_rpm = $var;
@@ -1483,7 +1482,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelLevel($var)
+    public function setFuelLevel(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_level = $var;
@@ -1515,7 +1514,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelRate($var)
+    public function setFuelRate(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_rate = $var;
@@ -1547,7 +1546,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTirePressure($var)
+    public function setTirePressure(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->tire_pressure = $var;
@@ -1579,7 +1578,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAnalog($var)
+    public function setAnalog(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->analog = $var;
@@ -1611,7 +1610,7 @@ class ObdElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setOil($var)
+    public function setOil(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->oil = $var;

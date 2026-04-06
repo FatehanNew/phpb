@@ -72,7 +72,7 @@ class RouteReviewResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\Data[] $var
      * @return $this
      */
-    public function setRouteList($var)
+    public function setRouteList(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Packet\DataModel\Data::class);
         $this->route_list = $arr;
@@ -94,7 +94,7 @@ class RouteReviewResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Report\RouteStopPoint[] $var
      * @return $this
      */
-    public function setStopList($var)
+    public function setStopList(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Report\RouteStopPoint::class);
         $this->stop_list = $arr;
@@ -116,7 +116,7 @@ class RouteReviewResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Trip\Trip[] $var
      * @return $this
      */
-    public function setTripList($var)
+    public function setTripList(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Trip\Trip::class);
         $this->trip_list = $arr;
@@ -138,7 +138,7 @@ class RouteReviewResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRecords($var)
+    public function setRecords(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->records = $var;
@@ -160,7 +160,7 @@ class RouteReviewResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCost($var)
+    public function setCost(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->cost = $var;
@@ -182,7 +182,7 @@ class RouteReviewResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setThreads($var)
+    public function setThreads(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->threads = $var;

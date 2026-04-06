@@ -62,7 +62,7 @@ class DriverBehaviorReportResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCost($var)
+    public function setCost(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->cost = $var;
@@ -84,7 +84,7 @@ class DriverBehaviorReportResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRecords($var)
+    public function setRecords(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->records = $var;
@@ -106,7 +106,7 @@ class DriverBehaviorReportResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Trip\TripPoint[] $var
      * @return $this
      */
-    public function setPoints($var)
+    public function setPoints(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Trip\TripPoint::class);
         $this->points = $arr;
@@ -128,7 +128,7 @@ class DriverBehaviorReportResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Report\DriverBehaviorReportResponse\Chunk[] $var
      * @return $this
      */
-    public function setChunks($var)
+    public function setChunks(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Report\DriverBehaviorReportResponse\Chunk::class);
         $this->chunks = $arr;

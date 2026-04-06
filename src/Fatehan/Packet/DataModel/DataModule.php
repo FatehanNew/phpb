@@ -47,7 +47,7 @@ class DataModule extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\DataModule\ModuleList[] $var
      * @return $this
      */
-    public function setModules($var)
+    public function setModules(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Packet\DataModel\DataModule\ModuleList::class);
         $this->modules = $arr;

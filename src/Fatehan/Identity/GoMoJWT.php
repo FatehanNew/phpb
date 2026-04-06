@@ -82,7 +82,7 @@ class GoMoJWT extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->user_id = $var;
@@ -104,7 +104,7 @@ class GoMoJWT extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setIdentityId($var)
+    public function setIdentityId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->identity_id = $var;
@@ -126,7 +126,7 @@ class GoMoJWT extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOrganizationId($var)
+    public function setOrganizationId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->organization_id = $var;
@@ -148,7 +148,7 @@ class GoMoJWT extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setPersonId($var)
+    public function setPersonId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->person_id = $var;
@@ -170,7 +170,7 @@ class GoMoJWT extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setRoleId($var)
+    public function setRoleId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->role_id = $var;
@@ -202,9 +202,9 @@ class GoMoJWT extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -234,9 +234,9 @@ class GoMoJWT extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPicture($var)
+    public function setPicture(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->picture = $var;
 
         return $this;
@@ -244,7 +244,7 @@ class GoMoJWT extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.identities.Permission permissions = 8 [json_name = "permissions"];</code>
-     * @return RepeatedField<int>
+     * @return RepeatedField<int> one of the values in {@see \Fatehan\Identity\Permission}
      */
     public function getPermissions()
     {
@@ -253,10 +253,10 @@ class GoMoJWT extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.identities.Permission permissions = 8 [json_name = "permissions"];</code>
-     * @param int[] $var
+     * @param int[] $var one of the values in {@see \Fatehan\Identity\Permission}
      * @return $this
      */
-    public function setPermissions($var)
+    public function setPermissions(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Fatehan\Identity\Permission::class);
         $this->permissions = $arr;

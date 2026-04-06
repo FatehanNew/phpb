@@ -62,9 +62,8 @@ class DriverRepo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Identity\Driver $var
      * @return $this
      */
-    public function setDriver($var)
+    public function setDriver(\Fatehan\Identity\Driver|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Identity\Driver::class);
         $this->driver = $var;
 
         return $this;
@@ -94,9 +93,8 @@ class DriverRepo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Identity\Person $var
      * @return $this
      */
-    public function setPerson($var)
+    public function setPerson(\Fatehan\Identity\Person|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Identity\Person::class);
         $this->person = $var;
 
         return $this;

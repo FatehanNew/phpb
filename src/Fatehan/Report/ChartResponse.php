@@ -62,7 +62,7 @@ class ChartResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCost($var)
+    public function setCost(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->cost = $var;
@@ -84,7 +84,7 @@ class ChartResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRecords($var)
+    public function setRecords(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->records = $var;
@@ -106,7 +106,7 @@ class ChartResponse extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setChart($var)
+    public function setChart(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::UINT64, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Report\ChartResponse\Chart::class);
         $this->chart = $arr;
@@ -128,7 +128,7 @@ class ChartResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSection($var)
+    public function setSection(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->section = $var;

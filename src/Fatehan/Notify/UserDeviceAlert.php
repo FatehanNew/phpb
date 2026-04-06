@@ -109,7 +109,7 @@ class UserDeviceAlert extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -131,7 +131,7 @@ class UserDeviceAlert extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->user_id = $var;
@@ -153,7 +153,7 @@ class UserDeviceAlert extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -175,7 +175,7 @@ class UserDeviceAlert extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOrganizationId($var)
+    public function setOrganizationId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->organization_id = $var;
@@ -197,7 +197,7 @@ class UserDeviceAlert extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setAlertId($var)
+    public function setAlertId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->alert_id = $var;
@@ -219,7 +219,7 @@ class UserDeviceAlert extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setCondition($var)
+    public function setCondition(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::UINT32, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Notify\UserDeviceAlert\ConditionList::class);
         $this->condition = $arr;
@@ -241,7 +241,7 @@ class UserDeviceAlert extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setTiming($var)
+    public function setTiming(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::UINT32, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Notify\UserDeviceAlert\ConditionList::class);
         $this->timing = $arr;
@@ -263,9 +263,8 @@ class UserDeviceAlert extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setStatus($var)
+    public function setStatus(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->status = $var;
 
         return $this;
@@ -285,9 +284,9 @@ class UserDeviceAlert extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFormat($var)
+    public function setFormat(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->format = $var;
 
         return $this;
@@ -295,7 +294,7 @@ class UserDeviceAlert extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.Alert alert = 9 [json_name = "alert"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\Alert}
      */
     public function getAlert()
     {
@@ -304,10 +303,10 @@ class UserDeviceAlert extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.Alert alert = 9 [json_name = "alert"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\Alert}
      * @return $this
      */
-    public function setAlert($var)
+    public function setAlert(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\Alert::class);
         $this->alert = $var;
@@ -339,9 +338,9 @@ class UserDeviceAlert extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUnit($var)
+    public function setUnit(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->unit = $var;
 
         return $this;
@@ -371,9 +370,9 @@ class UserDeviceAlert extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setObjectType($var)
+    public function setObjectType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->object_type = $var;
 
         return $this;
@@ -385,7 +384,7 @@ class UserDeviceAlert extends \Google\Protobuf\Internal\Message
      */
     public function getObjectId()
     {
-        return isset($this->object_id) ? $this->object_id : 0;
+        return isset($this->object_id) ? $this->object_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasObjectId()
@@ -403,7 +402,7 @@ class UserDeviceAlert extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setObjectId($var)
+    public function setObjectId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->object_id = $var;

@@ -57,7 +57,7 @@ class NotificationTrigger extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->user_id = $var;
@@ -79,9 +79,9 @@ class NotificationTrigger extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTitle($var)
+    public function setTitle(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->title = $var;
 
         return $this;
@@ -111,9 +111,9 @@ class NotificationTrigger extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setBody($var)
+    public function setBody(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->body = $var;
 
         return $this;

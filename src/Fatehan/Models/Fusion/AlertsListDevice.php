@@ -152,7 +152,7 @@ class AlertsListDevice extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAlertListId($var)
+    public function setAlertListId(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->alert_list_id = $var;
@@ -174,7 +174,7 @@ class AlertsListDevice extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDateCreate($var)
+    public function setDateCreate(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->date_create = $var;
@@ -196,7 +196,7 @@ class AlertsListDevice extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->user_id = $var;
@@ -218,7 +218,7 @@ class AlertsListDevice extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setImei($var)
+    public function setImei(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->imei = $var;
@@ -240,9 +240,9 @@ class AlertsListDevice extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setContent($var)
+    public function setContent(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->content = $var;
 
         return $this;
@@ -262,7 +262,7 @@ class AlertsListDevice extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAlertRead($var)
+    public function setAlertRead(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->alert_read = $var;
@@ -284,7 +284,7 @@ class AlertsListDevice extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAlertId($var)
+    public function setAlertId(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->alert_id = $var;
@@ -306,9 +306,9 @@ class AlertsListDevice extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTitle($var)
+    public function setTitle(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->title = $var;
 
         return $this;
@@ -328,7 +328,7 @@ class AlertsListDevice extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDisabled($var)
+    public function setDisabled(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->disabled = $var;
@@ -350,9 +350,8 @@ class AlertsListDevice extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setLatitude($var)
+    public function setLatitude(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->latitude = $var;
 
         return $this;
@@ -372,9 +371,8 @@ class AlertsListDevice extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setLongitude($var)
+    public function setLongitude(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->longitude = $var;
 
         return $this;
@@ -394,9 +392,8 @@ class AlertsListDevice extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setLatitudeEnd($var)
+    public function setLatitudeEnd(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->latitude_end = $var;
 
         return $this;
@@ -416,9 +413,8 @@ class AlertsListDevice extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setLongitudeEnd($var)
+    public function setLongitudeEnd(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->longitude_end = $var;
 
         return $this;
@@ -438,7 +434,7 @@ class AlertsListDevice extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDateEnd($var)
+    public function setDateEnd(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->date_end = $var;
@@ -460,7 +456,7 @@ class AlertsListDevice extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDateRead($var)
+    public function setDateRead(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->date_read = $var;
@@ -482,7 +478,7 @@ class AlertsListDevice extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAlertSend($var)
+    public function setAlertSend(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->alert_send = $var;
@@ -504,7 +500,7 @@ class AlertsListDevice extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDateSend($var)
+    public function setDateSend(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->date_send = $var;
@@ -526,9 +522,9 @@ class AlertsListDevice extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setVals($var)
+    public function setVals(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->vals = $var;
 
         return $this;
@@ -548,7 +544,7 @@ class AlertsListDevice extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRelId($var)
+    public function setRelId(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->rel_id = $var;
@@ -580,9 +576,8 @@ class AlertsListDevice extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -612,9 +607,8 @@ class AlertsListDevice extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;
@@ -644,9 +638,9 @@ class AlertsListDevice extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setIdentificationNo($var)
+    public function setIdentificationNo(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->identification_no = $var;
 
         return $this;

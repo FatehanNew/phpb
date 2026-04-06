@@ -142,7 +142,7 @@ class SystemIo extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -156,7 +156,7 @@ class SystemIo extends \Google\Protobuf\Internal\Message
      */
     public function getDeviceId()
     {
-        return isset($this->device_id) ? $this->device_id : 0;
+        return isset($this->device_id) ? $this->device_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasDeviceId()
@@ -174,7 +174,7 @@ class SystemIo extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -188,7 +188,7 @@ class SystemIo extends \Google\Protobuf\Internal\Message
      */
     public function getOrganizationId()
     {
-        return isset($this->organization_id) ? $this->organization_id : 0;
+        return isset($this->organization_id) ? $this->organization_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasOrganizationId()
@@ -206,7 +206,7 @@ class SystemIo extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOrganizationId($var)
+    public function setOrganizationId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->organization_id = $var;
@@ -228,9 +228,9 @@ class SystemIo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFormula($var)
+    public function setFormula(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->formula = $var;
 
         return $this;
@@ -250,9 +250,9 @@ class SystemIo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -282,9 +282,9 @@ class SystemIo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDescription($var)
+    public function setDescription(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->description = $var;
 
         return $this;
@@ -292,7 +292,7 @@ class SystemIo extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.devices.SystemIo.SystemIoType type = 6 [json_name = "type"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Device\SystemIo\SystemIoType}
      */
     public function getType()
     {
@@ -301,10 +301,10 @@ class SystemIo extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.devices.SystemIo.SystemIoType type = 6 [json_name = "type"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Device\SystemIo\SystemIoType}
      * @return $this
      */
-    public function setType($var)
+    public function setType(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Device\SystemIo\SystemIoType::class);
         $this->type = $var;
@@ -336,9 +336,9 @@ class SystemIo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUnit($var)
+    public function setUnit(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->unit = $var;
 
         return $this;
@@ -368,9 +368,8 @@ class SystemIo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Device\SystemIoStyle $var
      * @return $this
      */
-    public function setActiveStyle($var)
+    public function setActiveStyle(\Fatehan\Device\SystemIoStyle|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Device\SystemIoStyle::class);
         $this->active_style = $var;
 
         return $this;
@@ -400,9 +399,8 @@ class SystemIo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Device\SystemIoStyle $var
      * @return $this
      */
-    public function setInactiveStyle($var)
+    public function setInactiveStyle(\Fatehan\Device\SystemIoStyle|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Device\SystemIoStyle::class);
         $this->inactive_style = $var;
 
         return $this;
@@ -422,9 +420,8 @@ class SystemIo extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setActive($var)
+    public function setActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->active = $var;
 
         return $this;
@@ -444,9 +441,8 @@ class SystemIo extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setGraphable($var)
+    public function setGraphable(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->graphable = $var;
 
         return $this;
@@ -466,7 +462,7 @@ class SystemIo extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSord($var)
+    public function setSord(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->sord = $var;
@@ -488,7 +484,7 @@ class SystemIo extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setHidden($var)
+    public function setHidden(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->hidden = $arr;
@@ -510,7 +506,7 @@ class SystemIo extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setUnknown($var)
+    public function setUnknown(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
         $this->unknown = $arr;
@@ -524,7 +520,7 @@ class SystemIo extends \Google\Protobuf\Internal\Message
      */
     public function getCreatedBy()
     {
-        return isset($this->created_by) ? $this->created_by : 0;
+        return isset($this->created_by) ? $this->created_by : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCreatedBy()
@@ -542,7 +538,7 @@ class SystemIo extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreatedBy($var)
+    public function setCreatedBy(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->created_by = $var;
@@ -574,9 +570,8 @@ class SystemIo extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -606,9 +601,8 @@ class SystemIo extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;
@@ -638,7 +632,7 @@ class SystemIo extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSeparatorsCount($var)
+    public function setSeparatorsCount(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->separators_count = $var;
@@ -670,7 +664,7 @@ class SystemIo extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDecimalCount($var)
+    public function setDecimalCount(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->decimal_count = $var;

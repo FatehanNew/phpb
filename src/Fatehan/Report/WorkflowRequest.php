@@ -79,7 +79,7 @@ class WorkflowRequest extends \Google\Protobuf\Internal\Message
      */
     public function getOrganizationId()
     {
-        return isset($this->organization_id) ? $this->organization_id : 0;
+        return isset($this->organization_id) ? $this->organization_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasOrganizationId()
@@ -97,7 +97,7 @@ class WorkflowRequest extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOrganizationId($var)
+    public function setOrganizationId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->organization_id = $var;
@@ -111,7 +111,7 @@ class WorkflowRequest extends \Google\Protobuf\Internal\Message
      */
     public function getWorkflowId()
     {
-        return isset($this->workflow_id) ? $this->workflow_id : 0;
+        return isset($this->workflow_id) ? $this->workflow_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasWorkflowId()
@@ -129,7 +129,7 @@ class WorkflowRequest extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setWorkflowId($var)
+    public function setWorkflowId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->workflow_id = $var;
@@ -143,7 +143,7 @@ class WorkflowRequest extends \Google\Protobuf\Internal\Message
      */
     public function getDeviceId()
     {
-        return isset($this->device_id) ? $this->device_id : 0;
+        return isset($this->device_id) ? $this->device_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasDeviceId()
@@ -161,7 +161,7 @@ class WorkflowRequest extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -171,7 +171,7 @@ class WorkflowRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.activities.WorkflowStat status = 4 [json_name = "status"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Activities\Workflow\WorkflowStat}
      */
     public function getStatus()
     {
@@ -190,10 +190,10 @@ class WorkflowRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.activities.WorkflowStat status = 4 [json_name = "status"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Activities\Workflow\WorkflowStat}
      * @return $this
      */
-    public function setStatus($var)
+    public function setStatus(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Activities\Workflow\WorkflowStat::class);
         $this->status = $var;
@@ -225,9 +225,8 @@ class WorkflowRequest extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setStartedAt($var)
+    public function setStartedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->started_at = $var;
 
         return $this;
@@ -257,9 +256,8 @@ class WorkflowRequest extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setFinishedAt($var)
+    public function setFinishedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->finished_at = $var;
 
         return $this;
@@ -279,9 +277,8 @@ class WorkflowRequest extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setDisablePagination($var)
+    public function setDisablePagination(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->disable_pagination = $var;
 
         return $this;
@@ -311,7 +308,7 @@ class WorkflowRequest extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPage($var)
+    public function setPage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->page = $var;
@@ -343,7 +340,7 @@ class WorkflowRequest extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPerPage($var)
+    public function setPerPage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->per_page = $var;

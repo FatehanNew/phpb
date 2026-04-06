@@ -47,7 +47,7 @@ class GpsEvent extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSatellitesBelow($var)
+    public function setSatellitesBelow(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->satellites_below = $var;

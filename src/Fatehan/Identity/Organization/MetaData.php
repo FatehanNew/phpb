@@ -157,9 +157,9 @@ class MetaData extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFax($var)
+    public function setFax(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->fax = $var;
 
         return $this;
@@ -189,9 +189,8 @@ class MetaData extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setLat($var)
+    public function setLat(float $var)
     {
-        GPBUtil::checkDouble($var);
         $this->lat = $var;
 
         return $this;
@@ -221,9 +220,8 @@ class MetaData extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setLong($var)
+    public function setLong(float $var)
     {
-        GPBUtil::checkDouble($var);
         $this->long = $var;
 
         return $this;
@@ -253,7 +251,7 @@ class MetaData extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setZoom($var)
+    public function setZoom(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->zoom = $var;
@@ -285,9 +283,9 @@ class MetaData extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setAbout($var)
+    public function setAbout(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->about = $var;
 
         return $this;
@@ -317,9 +315,9 @@ class MetaData extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setEmail($var)
+    public function setEmail(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->email = $var;
 
         return $this;
@@ -349,9 +347,9 @@ class MetaData extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRules($var)
+    public function setRules(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->rules = $var;
 
         return $this;
@@ -381,9 +379,9 @@ class MetaData extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMobile($var)
+    public function setMobile(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->mobile = $var;
 
         return $this;
@@ -413,9 +411,9 @@ class MetaData extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setAddress($var)
+    public function setAddress(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->address = $var;
 
         return $this;
@@ -445,9 +443,9 @@ class MetaData extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMobile2($var)
+    public function setMobile2(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->mobile2 = $var;
 
         return $this;
@@ -477,9 +475,9 @@ class MetaData extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setWebsite($var)
+    public function setWebsite(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->website = $var;
 
         return $this;
@@ -509,7 +507,7 @@ class MetaData extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIsLegal($var)
+    public function setIsLegal(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->is_legal = $var;
@@ -541,9 +539,9 @@ class MetaData extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTelegram($var)
+    public function setTelegram(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->telegram = $var;
 
         return $this;
@@ -573,9 +571,9 @@ class MetaData extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setInstagram($var)
+    public function setInstagram(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->instagram = $var;
 
         return $this;
@@ -605,9 +603,9 @@ class MetaData extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTelephone($var)
+    public function setTelephone(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->telephone = $var;
 
         return $this;
@@ -619,7 +617,7 @@ class MetaData extends \Google\Protobuf\Internal\Message
      */
     public function getCompanyId()
     {
-        return isset($this->company_id) ? $this->company_id : 0;
+        return isset($this->company_id) ? $this->company_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCompanyId()
@@ -637,7 +635,7 @@ class MetaData extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCompanyId($var)
+    public function setCompanyId(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->company_id = $var;
@@ -669,9 +667,9 @@ class MetaData extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTelephone2($var)
+    public function setTelephone2(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->telephone2 = $var;
 
         return $this;
@@ -701,9 +699,9 @@ class MetaData extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setNationalId($var)
+    public function setNationalId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->national_id = $var;
 
         return $this;
@@ -733,9 +731,9 @@ class MetaData extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPostalCode($var)
+    public function setPostalCode(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->postal_code = $var;
 
         return $this;
@@ -765,9 +763,9 @@ class MetaData extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setEconomicalId($var)
+    public function setEconomicalId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->economical_id = $var;
 
         return $this;
@@ -797,9 +795,9 @@ class MetaData extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRegistrationDate($var)
+    public function setRegistrationDate(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->registration_date = $var;
 
         return $this;

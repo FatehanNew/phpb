@@ -62,9 +62,8 @@ class CarModelRepo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Device\CarModel $var
      * @return $this
      */
-    public function setCarModel($var)
+    public function setCarModel(\Fatehan\Device\CarModel|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Device\CarModel::class);
         $this->car_model = $var;
 
         return $this;
@@ -94,9 +93,8 @@ class CarModelRepo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Device\CarBrand $var
      * @return $this
      */
-    public function setCarBrand($var)
+    public function setCarBrand(\Fatehan\Device\CarBrand|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Device\CarBrand::class);
         $this->car_brand = $var;
 
         return $this;

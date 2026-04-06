@@ -67,9 +67,8 @@ class DeviceData extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\FusionDevice $var
      * @return $this
      */
-    public function setFusionDevice($var)
+    public function setFusionDevice(\Fatehan\Packet\DataModel\FusionDevice|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\FusionDevice::class);
         $this->fusion_device = $var;
 
         return $this;
@@ -99,9 +98,8 @@ class DeviceData extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\OdysseyDevice $var
      * @return $this
      */
-    public function setOdysseyDevice($var)
+    public function setOdysseyDevice(\Fatehan\Packet\DataModel\OdysseyDevice|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\OdysseyDevice::class);
         $this->odyssey_device = $var;
 
         return $this;
@@ -121,7 +119,7 @@ class DeviceData extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setFetchedAt($var)
+    public function setFetchedAt(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->fetched_at = $var;

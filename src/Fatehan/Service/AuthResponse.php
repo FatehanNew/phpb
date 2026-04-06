@@ -72,9 +72,8 @@ class AuthResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Identity\Authentication\Identity $var
      * @return $this
      */
-    public function setIdentity($var)
+    public function setIdentity(\Fatehan\Identity\Authentication\Identity|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Identity\Authentication\Identity::class);
         $this->identity = $var;
 
         return $this;
@@ -104,9 +103,8 @@ class AuthResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Identity\Authentication\AccessToken $var
      * @return $this
      */
-    public function setAccessToken($var)
+    public function setAccessToken(\Fatehan\Identity\Authentication\AccessToken|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Identity\Authentication\AccessToken::class);
         $this->access_token = $var;
 
         return $this;
@@ -136,9 +134,8 @@ class AuthResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Service\Repositories\UserRepo $var
      * @return $this
      */
-    public function setUserRepo($var)
+    public function setUserRepo(\Fatehan\Service\Repositories\UserRepo|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Service\Repositories\UserRepo::class);
         $this->user_repo = $var;
 
         return $this;
@@ -158,7 +155,7 @@ class AuthResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCost($var)
+    public function setCost(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->cost = $var;

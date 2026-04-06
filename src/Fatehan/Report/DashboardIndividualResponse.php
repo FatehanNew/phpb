@@ -152,7 +152,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\Data[] $var
      * @return $this
      */
-    public function setDataList($var)
+    public function setDataList(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Packet\DataModel\Data::class);
         $this->data_list = $arr;
@@ -174,7 +174,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setTitle($var)
+    public function setTitle(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->title = $arr;
@@ -196,7 +196,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
      * @param int[] $var
      * @return $this
      */
-    public function setMileage($var)
+    public function setMileage(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT32);
         $this->mileage = $arr;
@@ -218,7 +218,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
      * @param int[] $var
      * @return $this
      */
-    public function setWeight($var)
+    public function setWeight(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT32);
         $this->weight = $arr;
@@ -240,7 +240,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
      * @param int[] $var
      * @return $this
      */
-    public function setFuelUsed($var)
+    public function setFuelUsed(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT32);
         $this->fuel_used = $arr;
@@ -262,7 +262,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
      * @param int[] $var
      * @return $this
      */
-    public function setFuelRate($var)
+    public function setFuelRate(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT32);
         $this->fuel_rate = $arr;
@@ -284,7 +284,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
      * @param int[] $var
      * @return $this
      */
-    public function setTrips($var)
+    public function setTrips(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT32);
         $this->trips = $arr;
@@ -306,7 +306,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
      * @param int[] $var
      * @return $this
      */
-    public function setIdling($var)
+    public function setIdling(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT32);
         $this->idling = $arr;
@@ -328,7 +328,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
      * @param int[] $var
      * @return $this
      */
-    public function setParking($var)
+    public function setParking(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT32);
         $this->parking = $arr;
@@ -350,7 +350,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
      * @param int[] $var
      * @return $this
      */
-    public function setMoving($var)
+    public function setMoving(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT32);
         $this->moving = $arr;
@@ -372,7 +372,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
      * @param int[] $var
      * @return $this
      */
-    public function setTowing($var)
+    public function setTowing(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT32);
         $this->towing = $arr;
@@ -394,7 +394,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
      * @param int[] $var
      * @return $this
      */
-    public function setTotalSpeed($var)
+    public function setTotalSpeed(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT32);
         $this->total_speed = $arr;
@@ -416,7 +416,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
      * @param int[] $var
      * @return $this
      */
-    public function setSumSpeed($var)
+    public function setSumSpeed(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT32);
         $this->sum_speed = $arr;
@@ -438,7 +438,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
      * @param int[] $var
      * @return $this
      */
-    public function setMaxSpeed($var)
+    public function setMaxSpeed(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT32);
         $this->max_speed = $arr;
@@ -460,7 +460,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Trip\TripPoint[] $var
      * @return $this
      */
-    public function setPoints($var)
+    public function setPoints(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Trip\TripPoint::class);
         $this->points = $arr;
@@ -482,7 +482,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Report\DashboardIndividualResponse\Environmental[] $var
      * @return $this
      */
-    public function setEnvironmental($var)
+    public function setEnvironmental(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Report\DashboardIndividualResponse\Environmental::class);
         $this->environmental = $arr;
@@ -504,7 +504,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setGreenDriving($var)
+    public function setGreenDriving(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::UINT32, \Google\Protobuf\Internal\GPBType::UINT32);
         $this->green_driving = $arr;
@@ -526,7 +526,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setSpeeds($var)
+    public function setSpeeds(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::UINT32, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Trip\TripDurationStat::class);
         $this->speeds = $arr;
@@ -548,7 +548,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCrashes($var)
+    public function setCrashes(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->crashes = $var;
@@ -570,7 +570,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCost($var)
+    public function setCost(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->cost = $var;
@@ -592,7 +592,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setThreads($var)
+    public function setThreads(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->threads = $var;
@@ -614,7 +614,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRecords($var)
+    public function setRecords(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->records = $var;

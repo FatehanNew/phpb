@@ -327,9 +327,8 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setBrakeSwitch($var)
+    public function setBrakeSwitch(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->brake_switch = $var;
 
         return $this;
@@ -359,7 +358,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setWheelBasedSpeed($var)
+    public function setWheelBasedSpeed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->wheel_based_speed = $var;
@@ -391,9 +390,8 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setCruiseControlActive($var)
+    public function setCruiseControlActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->cruise_control_active = $var;
 
         return $this;
@@ -423,9 +421,8 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setClutchSwitch($var)
+    public function setClutchSwitch(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->clutch_switch = $var;
 
         return $this;
@@ -455,9 +452,8 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setPtoState($var)
+    public function setPtoState(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->pto_state = $var;
 
         return $this;
@@ -487,7 +483,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAccelerationPedalPosition($var)
+    public function setAccelerationPedalPosition(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->acceleration_pedal_position = $var;
@@ -519,7 +515,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEngineCurrentLoad($var)
+    public function setEngineCurrentLoad(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->engine_current_load = $var;
@@ -551,7 +547,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEngineTotalFuelUsed($var)
+    public function setEngineTotalFuelUsed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->engine_total_fuel_used = $var;
@@ -583,7 +579,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelLevelPercentage($var)
+    public function setFuelLevelPercentage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_level_percentage = $var;
@@ -615,7 +611,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEngineSpeed($var)
+    public function setEngineSpeed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->engine_speed = $var;
@@ -647,7 +643,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAxleWeight1($var)
+    public function setAxleWeight1(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->axle_weight1 = $var;
@@ -679,7 +675,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAxleWeight2($var)
+    public function setAxleWeight2(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->axle_weight2 = $var;
@@ -711,7 +707,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAxleWeight3($var)
+    public function setAxleWeight3(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->axle_weight3 = $var;
@@ -743,7 +739,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAxleWeight4($var)
+    public function setAxleWeight4(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->axle_weight4 = $var;
@@ -775,7 +771,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAxleWeight5($var)
+    public function setAxleWeight5(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->axle_weight5 = $var;
@@ -807,7 +803,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAxleWeight6($var)
+    public function setAxleWeight6(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->axle_weight6 = $var;
@@ -839,7 +835,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAxleWeight7($var)
+    public function setAxleWeight7(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->axle_weight7 = $var;
@@ -871,7 +867,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAxleWeight8($var)
+    public function setAxleWeight8(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->axle_weight8 = $var;
@@ -903,7 +899,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAxleWeight9($var)
+    public function setAxleWeight9(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->axle_weight9 = $var;
@@ -935,7 +931,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAxleWeight10($var)
+    public function setAxleWeight10(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->axle_weight10 = $var;
@@ -967,7 +963,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAxleWeight11($var)
+    public function setAxleWeight11(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->axle_weight11 = $var;
@@ -999,7 +995,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAxleWeight12($var)
+    public function setAxleWeight12(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->axle_weight12 = $var;
@@ -1031,7 +1027,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAxleWeight13($var)
+    public function setAxleWeight13(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->axle_weight13 = $var;
@@ -1063,7 +1059,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAxleWeight14($var)
+    public function setAxleWeight14(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->axle_weight14 = $var;
@@ -1095,7 +1091,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAxleWeight15($var)
+    public function setAxleWeight15(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->axle_weight15 = $var;
@@ -1127,7 +1123,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEngineTotalHoursOfOperation($var)
+    public function setEngineTotalHoursOfOperation(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->engine_total_hours_of_operation = $var;
@@ -1159,7 +1155,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSoftwareVersionSupported($var)
+    public function setSoftwareVersionSupported(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->software_version_supported = $var;
@@ -1191,7 +1187,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDiagnosticSupported($var)
+    public function setDiagnosticSupported(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->diagnostic_supported = $var;
@@ -1223,7 +1219,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRequestsSupported($var)
+    public function setRequestsSupported(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->requests_supported = $var;
@@ -1255,7 +1251,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setServerDistance($var)
+    public function setServerDistance(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->server_distance = $var;
@@ -1287,7 +1283,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDirectionIndication($var)
+    public function setDirectionIndication(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->direction_indication = $var;
@@ -1319,7 +1315,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTachographPerformance($var)
+    public function setTachographPerformance(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->tachograph_performance = $var;
@@ -1351,7 +1347,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setHandlingInfo($var)
+    public function setHandlingInfo(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->handling_info = $var;
@@ -1383,7 +1379,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSystemEvent($var)
+    public function setSystemEvent(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->system_event = $var;
@@ -1415,7 +1411,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEngineCoolantTemperature($var)
+    public function setEngineCoolantTemperature(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->engine_coolant_temperature = $var;
@@ -1447,7 +1443,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAmbientAirTemperature($var)
+    public function setAmbientAirTemperature(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->ambient_air_temperature = $var;
@@ -1479,7 +1475,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelRate($var)
+    public function setFuelRate(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_rate = $var;
@@ -1511,7 +1507,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setInstantaneousFuelEconomy($var)
+    public function setInstantaneousFuelEconomy(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->instantaneous_fuel_economy = $var;
@@ -1543,7 +1539,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPtoDriveEngagement($var)
+    public function setPtoDriveEngagement(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->pto_drive_engagement = $var;
@@ -1575,7 +1571,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setHighResolutionEngineTotalFuelUsed($var)
+    public function setHighResolutionEngineTotalFuelUsed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->high_resolution_engine_total_fuel_used = $var;
@@ -1607,7 +1603,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setGrossCombinationVehicleWeight($var)
+    public function setGrossCombinationVehicleWeight(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->gross_combination_vehicle_weight = $var;
@@ -1639,7 +1635,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAdBlueStatus($var)
+    public function setAdBlueStatus(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ad_blue_status = $var;
@@ -1671,7 +1667,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBrakePedalPosition($var)
+    public function setBrakePedalPosition(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->brake_pedal_position = $var;
@@ -1703,7 +1699,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelLevel2($var)
+    public function setFuelLevel2(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_level2 = $var;
@@ -1735,7 +1731,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMilIndicator($var)
+    public function setMilIndicator(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->mil_indicator = $var;
@@ -1767,9 +1763,9 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTellTale0($var)
+    public function setTellTale0(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->tell_tale0 = $var;
 
         return $this;
@@ -1799,9 +1795,9 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTellTale1($var)
+    public function setTellTale1(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->tell_tale1 = $var;
 
         return $this;
@@ -1831,9 +1827,9 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTellTale2($var)
+    public function setTellTale2(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->tell_tale2 = $var;
 
         return $this;
@@ -1863,9 +1859,9 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTellTale3($var)
+    public function setTellTale3(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->tell_tale3 = $var;
 
         return $this;
@@ -1895,9 +1891,9 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTellTale4($var)
+    public function setTellTale4(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->tell_tale4 = $var;
 
         return $this;
@@ -1927,7 +1923,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAdBlueLevel($var)
+    public function setAdBlueLevel(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ad_blue_level = $var;
@@ -1959,7 +1955,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDtcDm1($var)
+    public function setDtcDm1(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->dtc_dm1 = $var;
@@ -1991,7 +1987,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDtcTimeDm1($var)
+    public function setDtcTimeDm1(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->dtc_time_dm1 = $var;
@@ -2023,7 +2019,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDtcDm2($var)
+    public function setDtcDm2(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->dtc_dm2 = $var;
@@ -2055,7 +2051,7 @@ class FmsElement extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDtcTimeDm2($var)
+    public function setDtcTimeDm2(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->dtc_time_dm2 = $var;

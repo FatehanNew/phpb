@@ -78,9 +78,8 @@ class Flow extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setContinuous($var)
+    public function setContinuous(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->continuous = $var;
 
         return $this;
@@ -100,7 +99,7 @@ class Flow extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setLastGpsTime($var)
+    public function setLastGpsTime(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->last_gps_time = $var;
@@ -132,9 +131,8 @@ class Flow extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Duration $var
      * @return $this
      */
-    public function setOperationTimeout($var)
+    public function setOperationTimeout(\Google\Protobuf\Duration|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Duration::class);
         $this->operation_timeout = $var;
 
         return $this;
@@ -154,7 +152,7 @@ class Flow extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Activities\Workflow\FlowEvent[] $var
      * @return $this
      */
-    public function setEvents($var)
+    public function setEvents(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Activities\Workflow\FlowEvent::class);
         $this->events = $arr;
@@ -176,7 +174,7 @@ class Flow extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Activities\Workflow\FlowModule[] $var
      * @return $this
      */
-    public function setModules($var)
+    public function setModules(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Activities\Workflow\FlowModule::class);
         $this->modules = $arr;
@@ -203,9 +201,8 @@ class Flow extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Activities\Workflow\DefaultReport $var
      * @return $this
      */
-    public function setDefaultReport($var)
+    public function setDefaultReport(\Fatehan\Activities\Workflow\DefaultReport|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Activities\Workflow\DefaultReport::class);
         $this->writeOneof(41, $var);
 
         return $this;
@@ -230,9 +227,8 @@ class Flow extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Activities\Workflow\PayambarReport $var
      * @return $this
      */
-    public function setPayambarReport($var)
+    public function setPayambarReport(\Fatehan\Activities\Workflow\PayambarReport|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Activities\Workflow\PayambarReport::class);
         $this->writeOneof(42, $var);
 
         return $this;
@@ -257,9 +253,8 @@ class Flow extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Activities\Workflow\TaneshReport $var
      * @return $this
      */
-    public function setTaneshReport($var)
+    public function setTaneshReport(\Fatehan\Activities\Workflow\TaneshReport|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Activities\Workflow\TaneshReport::class);
         $this->writeOneof(43, $var);
 
         return $this;
@@ -284,9 +279,8 @@ class Flow extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Activities\Workflow\DefaultBackground $var
      * @return $this
      */
-    public function setDefaultBackground($var)
+    public function setDefaultBackground(\Fatehan\Activities\Workflow\DefaultBackground|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Activities\Workflow\DefaultBackground::class);
         $this->writeOneof(61, $var);
 
         return $this;
@@ -311,9 +305,8 @@ class Flow extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Activities\Workflow\PayambarBackground $var
      * @return $this
      */
-    public function setPayambarBackground($var)
+    public function setPayambarBackground(\Fatehan\Activities\Workflow\PayambarBackground|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Activities\Workflow\PayambarBackground::class);
         $this->writeOneof(62, $var);
 
         return $this;
@@ -338,9 +331,8 @@ class Flow extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Activities\Workflow\TaneshBackground $var
      * @return $this
      */
-    public function setTaneshBackground($var)
+    public function setTaneshBackground(\Fatehan\Activities\Workflow\TaneshBackground|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Activities\Workflow\TaneshBackground::class);
         $this->writeOneof(63, $var);
 
         return $this;
@@ -365,9 +357,8 @@ class Flow extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Activities\Workflow\DefaultStatus $var
      * @return $this
      */
-    public function setDefaultStatus($var)
+    public function setDefaultStatus(\Fatehan\Activities\Workflow\DefaultStatus|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Activities\Workflow\DefaultStatus::class);
         $this->writeOneof(91, $var);
 
         return $this;
@@ -392,9 +383,8 @@ class Flow extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Activities\Workflow\TaneshStatus $var
      * @return $this
      */
-    public function setTaneshStatus($var)
+    public function setTaneshStatus(\Fatehan\Activities\Workflow\TaneshStatus|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Activities\Workflow\TaneshStatus::class);
         $this->writeOneof(92, $var);
 
         return $this;

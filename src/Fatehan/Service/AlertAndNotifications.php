@@ -89,7 +89,7 @@ class AlertAndNotifications extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -111,7 +111,7 @@ class AlertAndNotifications extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPage($var)
+    public function setPage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->page = $var;
@@ -133,9 +133,9 @@ class AlertAndNotifications extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPlatform($var)
+    public function setPlatform(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->platform = $var;
 
         return $this;
@@ -155,7 +155,7 @@ class AlertAndNotifications extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTotal($var)
+    public function setTotal(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->total = $var;
@@ -177,7 +177,7 @@ class AlertAndNotifications extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLastPage($var)
+    public function setLastPage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->last_page = $var;
@@ -199,7 +199,7 @@ class AlertAndNotifications extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRecords($var)
+    public function setRecords(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->records = $var;
@@ -221,7 +221,7 @@ class AlertAndNotifications extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCost($var)
+    public function setCost(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->cost = $var;
@@ -243,7 +243,7 @@ class AlertAndNotifications extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Notify\UserDeviceAlert[] $var
      * @return $this
      */
-    public function setAlerts($var)
+    public function setAlerts(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Notify\UserDeviceAlert::class);
         $this->alerts = $arr;
@@ -265,7 +265,7 @@ class AlertAndNotifications extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Notify\Notification[] $var
      * @return $this
      */
-    public function setNotifications($var)
+    public function setNotifications(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Notify\Notification::class);
         $this->notifications = $arr;

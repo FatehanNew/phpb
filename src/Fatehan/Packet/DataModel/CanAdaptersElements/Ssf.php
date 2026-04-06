@@ -272,9 +272,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIgnition($var)
+    public function setIgnition(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->ignition = $var;
 
         return $this;
@@ -304,9 +303,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setKeyInIgnitionLock($var)
+    public function setKeyInIgnitionLock(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->key_in_ignition_lock = $var;
 
         return $this;
@@ -336,9 +334,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setWebasto($var)
+    public function setWebasto(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->webasto = $var;
 
         return $this;
@@ -368,9 +365,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEngineWorking($var)
+    public function setEngineWorking(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->engine_working = $var;
 
         return $this;
@@ -400,9 +396,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setStandaloneEngine($var)
+    public function setStandaloneEngine(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->standalone_engine = $var;
 
         return $this;
@@ -432,9 +427,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setReadyToDrive($var)
+    public function setReadyToDrive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->ready_to_drive = $var;
 
         return $this;
@@ -464,9 +458,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEngineWorkingOnCng($var)
+    public function setEngineWorkingOnCng(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->engine_working_on_cng = $var;
 
         return $this;
@@ -496,9 +489,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setWorkMode($var)
+    public function setWorkMode(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->work_mode = $var;
 
         return $this;
@@ -528,9 +520,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setOperator($var)
+    public function setOperator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->operator = $var;
 
         return $this;
@@ -560,9 +551,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setInterlock($var)
+    public function setInterlock(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->interlock = $var;
 
         return $this;
@@ -592,9 +582,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEngineLockActive($var)
+    public function setEngineLockActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->engine_lock_active = $var;
 
         return $this;
@@ -624,9 +613,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setRequestToLockEngine($var)
+    public function setRequestToLockEngine(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->request_to_lock_engine = $var;
 
         return $this;
@@ -656,9 +644,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setHandbrakeIsActive($var)
+    public function setHandbrakeIsActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->handbrake_is_active = $var;
 
         return $this;
@@ -688,9 +675,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setFootBrakeIsActive($var)
+    public function setFootBrakeIsActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->foot_brake_is_active = $var;
 
         return $this;
@@ -720,9 +706,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setClutchPushed($var)
+    public function setClutchPushed(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->clutch_pushed = $var;
 
         return $this;
@@ -752,9 +737,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setHazardWarningLights($var)
+    public function setHazardWarningLights(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->hazard_warning_lights = $var;
 
         return $this;
@@ -784,9 +768,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setFrontLeftDoorOpen($var)
+    public function setFrontLeftDoorOpen(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->front_left_door_open = $var;
 
         return $this;
@@ -816,9 +799,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setFrontRightDoorOpen($var)
+    public function setFrontRightDoorOpen(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->front_right_door_open = $var;
 
         return $this;
@@ -848,9 +830,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setRearLeftDoorOpen($var)
+    public function setRearLeftDoorOpen(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->rear_left_door_open = $var;
 
         return $this;
@@ -880,9 +861,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setRearRightDoorOpen($var)
+    public function setRearRightDoorOpen(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->rear_right_door_open = $var;
 
         return $this;
@@ -912,9 +892,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setTrunkDoorOpen($var)
+    public function setTrunkDoorOpen(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->trunk_door_open = $var;
 
         return $this;
@@ -944,9 +923,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEngineCoverOpen($var)
+    public function setEngineCoverOpen(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->engine_cover_open = $var;
 
         return $this;
@@ -976,9 +954,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setRoofOpen($var)
+    public function setRoofOpen(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->roof_open = $var;
 
         return $this;
@@ -1008,9 +985,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setChargingWirePlugged($var)
+    public function setChargingWirePlugged(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->charging_wire_plugged = $var;
 
         return $this;
@@ -1040,9 +1016,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setBatteryCharging($var)
+    public function setBatteryCharging(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->battery_charging = $var;
 
         return $this;
@@ -1072,9 +1047,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setElectricEngineState($var)
+    public function setElectricEngineState(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->electric_engine_state = $var;
 
         return $this;
@@ -1104,9 +1078,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setCarClosedFactoryRemote($var)
+    public function setCarClosedFactoryRemote(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->car_closed_factory_remote = $var;
 
         return $this;
@@ -1136,9 +1109,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setCarIsClosed($var)
+    public function setCarIsClosed(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->car_is_closed = $var;
 
         return $this;
@@ -1168,9 +1140,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setFactoryAlarmActuated($var)
+    public function setFactoryAlarmActuated(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->factory_alarm_actuated = $var;
 
         return $this;
@@ -1200,9 +1171,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setFactoryAlarmEmulated($var)
+    public function setFactoryAlarmEmulated(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->factory_alarm_emulated = $var;
 
         return $this;
@@ -1232,9 +1202,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSignalCloseFactoryRemote($var)
+    public function setSignalCloseFactoryRemote(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->signal_close_factory_remote = $var;
 
         return $this;
@@ -1264,9 +1233,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSignalOpenFactoryRemote($var)
+    public function setSignalOpenFactoryRemote(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->signal_open_factory_remote = $var;
 
         return $this;
@@ -1296,9 +1264,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setRearmingSignal($var)
+    public function setRearmingSignal(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->rearming_signal = $var;
 
         return $this;
@@ -1328,9 +1295,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setTrunkDoorOpenedFactoryRemote($var)
+    public function setTrunkDoorOpenedFactoryRemote(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->trunk_door_opened_factory_remote = $var;
 
         return $this;
@@ -1360,9 +1326,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setCanModuleInSleep($var)
+    public function setCanModuleInSleep(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->can_module_in_sleep = $var;
 
         return $this;
@@ -1392,9 +1357,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setFactoryRemote3X($var)
+    public function setFactoryRemote3X(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->factory_remote_3x = $var;
 
         return $this;
@@ -1424,9 +1388,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setFactoryArmed($var)
+    public function setFactoryArmed(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->factory_armed = $var;
 
         return $this;
@@ -1456,9 +1419,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setParkingGearActiveAutomaticGearBox($var)
+    public function setParkingGearActiveAutomaticGearBox(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->parking_gear_active_automatic_gear_box = $var;
 
         return $this;
@@ -1488,9 +1450,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setReverseGearActive($var)
+    public function setReverseGearActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->reverse_gear_active = $var;
 
         return $this;
@@ -1520,9 +1481,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setNeutralGearActive($var)
+    public function setNeutralGearActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->neutral_gear_active = $var;
 
         return $this;
@@ -1552,9 +1512,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setDriveIsActive($var)
+    public function setDriveIsActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->drive_is_active = $var;
 
         return $this;
@@ -1584,9 +1543,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEngineWorkingOnDualFuel($var)
+    public function setEngineWorkingOnDualFuel(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->engine_working_on_dual_fuel = $var;
 
         return $this;
@@ -1616,9 +1574,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEngineWorkingOnLpg($var)
+    public function setEngineWorkingOnLpg(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->engine_working_on_lpg = $var;
 
         return $this;
@@ -1648,9 +1605,8 @@ class Ssf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEngineDoorOpen($var)
+    public function setEngineDoorOpen(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->engine_door_open = $var;
 
         return $this;

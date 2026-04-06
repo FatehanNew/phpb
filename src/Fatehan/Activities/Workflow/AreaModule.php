@@ -139,7 +139,7 @@ class AreaModule extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.activities.AreaEvent starts = 1 [json_name = "starts"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Activities\Workflow\AreaEvent}
      */
     public function getStarts()
     {
@@ -148,10 +148,10 @@ class AreaModule extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.activities.AreaEvent starts = 1 [json_name = "starts"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Activities\Workflow\AreaEvent}
      * @return $this
      */
-    public function setStarts($var)
+    public function setStarts(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Activities\Workflow\AreaEvent::class);
         $this->starts = $var;
@@ -161,7 +161,7 @@ class AreaModule extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.activities.AreaEvent finishes = 2 [json_name = "finishes"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Activities\Workflow\AreaEvent}
      */
     public function getFinishes()
     {
@@ -170,10 +170,10 @@ class AreaModule extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.activities.AreaEvent finishes = 2 [json_name = "finishes"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Activities\Workflow\AreaEvent}
      * @return $this
      */
-    public function setFinishes($var)
+    public function setFinishes(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Activities\Workflow\AreaEvent::class);
         $this->finishes = $var;
@@ -195,7 +195,7 @@ class AreaModule extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setAreaId($var)
+    public function setAreaId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->area_id = $var;
@@ -221,9 +221,8 @@ class AreaModule extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setRunning($var)
+    public function setRunning(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->running = $var;
 
         return $this;
@@ -253,9 +252,8 @@ class AreaModule extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setStartedAt($var)
+    public function setStartedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->started_at = $var;
 
         return $this;
@@ -285,9 +283,8 @@ class AreaModule extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setFinishedAt($var)
+    public function setFinishedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->finished_at = $var;
 
         return $this;
@@ -299,7 +296,7 @@ class AreaModule extends \Google\Protobuf\Internal\Message
      */
     public function getTotalMileageAtStart()
     {
-        return isset($this->total_mileage_at_start) ? $this->total_mileage_at_start : 0;
+        return isset($this->total_mileage_at_start) ? $this->total_mileage_at_start : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasTotalMileageAtStart()
@@ -317,7 +314,7 @@ class AreaModule extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTotalMileageAtStart($var)
+    public function setTotalMileageAtStart(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->total_mileage_at_start = $var;
@@ -331,7 +328,7 @@ class AreaModule extends \Google\Protobuf\Internal\Message
      */
     public function getTotalMileageAtFinish()
     {
-        return isset($this->total_mileage_at_finish) ? $this->total_mileage_at_finish : 0;
+        return isset($this->total_mileage_at_finish) ? $this->total_mileage_at_finish : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasTotalMileageAtFinish()
@@ -349,7 +346,7 @@ class AreaModule extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTotalMileageAtFinish($var)
+    public function setTotalMileageAtFinish(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->total_mileage_at_finish = $var;
@@ -381,7 +378,7 @@ class AreaModule extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelConsumedAtStart($var)
+    public function setFuelConsumedAtStart(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_consumed_at_start = $var;
@@ -413,7 +410,7 @@ class AreaModule extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelConsumedAtFinish($var)
+    public function setFuelConsumedAtFinish(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_consumed_at_finish = $var;
@@ -435,7 +432,7 @@ class AreaModule extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMaxSpeed($var)
+    public function setMaxSpeed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->max_speed = $var;
@@ -457,7 +454,7 @@ class AreaModule extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTotalSpeed($var)
+    public function setTotalSpeed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->total_speed = $var;
@@ -479,7 +476,7 @@ class AreaModule extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCountSpeed($var)
+    public function setCountSpeed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->count_speed = $var;
@@ -501,7 +498,7 @@ class AreaModule extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDuration($var)
+    public function setDuration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->duration = $var;
@@ -523,7 +520,7 @@ class AreaModule extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMovingDuration($var)
+    public function setMovingDuration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->moving_duration = $var;
@@ -545,7 +542,7 @@ class AreaModule extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIdlingDuration($var)
+    public function setIdlingDuration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->idling_duration = $var;
@@ -567,7 +564,7 @@ class AreaModule extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setParkingDuration($var)
+    public function setParkingDuration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->parking_duration = $var;
@@ -589,7 +586,7 @@ class AreaModule extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTowingDuration($var)
+    public function setTowingDuration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->towing_duration = $var;
@@ -625,7 +622,7 @@ class AreaModule extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMinimumAcceptedDuration($var)
+    public function setMinimumAcceptedDuration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->minimum_accepted_duration = $var;
@@ -661,9 +658,8 @@ class AreaModule extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Area\Area $var
      * @return $this
      */
-    public function setArea($var)
+    public function setArea(\Fatehan\Area\Area|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Area\Area::class);
         $this->area = $var;
 
         return $this;

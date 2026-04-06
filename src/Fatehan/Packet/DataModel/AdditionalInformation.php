@@ -43,7 +43,7 @@ class AdditionalInformation extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.AdditionalInformation.Key key = 1;</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\AdditionalInformation\Key}
      */
     public function getKey()
     {
@@ -52,10 +52,10 @@ class AdditionalInformation extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.AdditionalInformation.Key key = 1;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\AdditionalInformation\Key}
      * @return $this
      */
-    public function setKey($var)
+    public function setKey(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\AdditionalInformation\Key::class);
         $this->key = $var;
@@ -77,9 +77,9 @@ class AdditionalInformation extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setVal($var)
+    public function setVal(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->val = $var;
 
         return $this;
@@ -104,7 +104,7 @@ class AdditionalInformation extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setUint32Value($var)
+    public function setUint32Value(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->writeOneof(3, $var);
@@ -131,9 +131,9 @@ class AdditionalInformation extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setStringValue($var)
+    public function setStringValue(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->writeOneof(4, $var);
 
         return $this;

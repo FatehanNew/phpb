@@ -82,7 +82,7 @@ class Event extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -114,9 +114,9 @@ class Event extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -146,9 +146,8 @@ class Event extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Area\Point $var
      * @return $this
      */
-    public function setEnteredPoint($var)
+    public function setEnteredPoint(\Fatehan\Area\Point|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Area\Point::class);
         $this->entered_point = $var;
 
         return $this;
@@ -178,9 +177,8 @@ class Event extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setEnteredAt($var)
+    public function setEnteredAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->entered_at = $var;
 
         return $this;
@@ -210,9 +208,8 @@ class Event extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Area\Point $var
      * @return $this
      */
-    public function setExitedPoint($var)
+    public function setExitedPoint(\Fatehan\Area\Point|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Area\Point::class);
         $this->exited_point = $var;
 
         return $this;
@@ -242,9 +239,8 @@ class Event extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setExitedAt($var)
+    public function setExitedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->exited_at = $var;
 
         return $this;
@@ -264,7 +260,7 @@ class Event extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMileage($var)
+    public function setMileage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->mileage = $var;
@@ -286,7 +282,7 @@ class Event extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDuration($var)
+    public function setDuration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->duration = $var;

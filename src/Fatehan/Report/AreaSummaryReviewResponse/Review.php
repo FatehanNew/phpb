@@ -97,7 +97,7 @@ class Review extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -119,7 +119,7 @@ class Review extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setAreaId($var)
+    public function setAreaId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->area_id = $var;
@@ -151,9 +151,8 @@ class Review extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\Data $var
      * @return $this
      */
-    public function setStarted($var)
+    public function setStarted(\Fatehan\Packet\DataModel\Data|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\Data::class);
         $this->started = $var;
 
         return $this;
@@ -183,9 +182,8 @@ class Review extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\Data $var
      * @return $this
      */
-    public function setFinished($var)
+    public function setFinished(\Fatehan\Packet\DataModel\Data|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\Data::class);
         $this->finished = $var;
 
         return $this;
@@ -205,7 +203,7 @@ class Review extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setMileage($var)
+    public function setMileage(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->mileage = $var;
@@ -227,7 +225,7 @@ class Review extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDuration($var)
+    public function setDuration(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->duration = $var;
@@ -249,7 +247,7 @@ class Review extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMaxSpeed($var)
+    public function setMaxSpeed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->max_speed = $var;
@@ -271,7 +269,7 @@ class Review extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTotalSpeed($var)
+    public function setTotalSpeed(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->total_speed = $var;
@@ -293,7 +291,7 @@ class Review extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCountSpeed($var)
+    public function setCountSpeed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->count_speed = $var;
@@ -303,7 +301,7 @@ class Review extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.reports.AreaSummaryReviewResponse.TrafficType type = 10 [json_name = "traffic_type"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Report\AreaSummaryReviewResponse\TrafficType}
      */
     public function getType()
     {
@@ -312,10 +310,10 @@ class Review extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.reports.AreaSummaryReviewResponse.TrafficType type = 10 [json_name = "traffic_type"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Report\AreaSummaryReviewResponse\TrafficType}
      * @return $this
      */
-    public function setType($var)
+    public function setType(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Report\AreaSummaryReviewResponse\TrafficType::class);
         $this->type = $var;
@@ -347,9 +345,8 @@ class Review extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Area\Area $var
      * @return $this
      */
-    public function setArea($var)
+    public function setArea(\Fatehan\Area\Area|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Area\Area::class);
         $this->area = $var;
 
         return $this;

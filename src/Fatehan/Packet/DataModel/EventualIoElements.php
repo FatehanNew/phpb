@@ -645,7 +645,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone01 = 1 [json_name = "geo_fence_zone_01"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone01()
     {
@@ -664,10 +664,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone01 = 1 [json_name = "geo_fence_zone_01"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone01($var)
+    public function setGeoFenceZone01(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone01 = $var;
@@ -677,7 +677,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone02 = 2 [json_name = "geo_fence_zone_02"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone02()
     {
@@ -696,10 +696,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone02 = 2 [json_name = "geo_fence_zone_02"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone02($var)
+    public function setGeoFenceZone02(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone02 = $var;
@@ -709,7 +709,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone03 = 3 [json_name = "geo_fence_zone_03"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone03()
     {
@@ -728,10 +728,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone03 = 3 [json_name = "geo_fence_zone_03"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone03($var)
+    public function setGeoFenceZone03(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone03 = $var;
@@ -741,7 +741,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone04 = 4 [json_name = "geo_fence_zone_04"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone04()
     {
@@ -760,10 +760,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone04 = 4 [json_name = "geo_fence_zone_04"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone04($var)
+    public function setGeoFenceZone04(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone04 = $var;
@@ -773,7 +773,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone05 = 5 [json_name = "geo_fence_zone_05"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone05()
     {
@@ -792,10 +792,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone05 = 5 [json_name = "geo_fence_zone_05"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone05($var)
+    public function setGeoFenceZone05(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone05 = $var;
@@ -805,7 +805,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone06 = 6 [json_name = "geo_fence_zone_06"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone06()
     {
@@ -824,10 +824,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone06 = 6 [json_name = "geo_fence_zone_06"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone06($var)
+    public function setGeoFenceZone06(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone06 = $var;
@@ -837,7 +837,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone07 = 7 [json_name = "geo_fence_zone_07"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone07()
     {
@@ -856,10 +856,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone07 = 7 [json_name = "geo_fence_zone_07"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone07($var)
+    public function setGeoFenceZone07(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone07 = $var;
@@ -869,7 +869,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone08 = 8 [json_name = "geo_fence_zone_08"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone08()
     {
@@ -888,10 +888,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone08 = 8 [json_name = "geo_fence_zone_08"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone08($var)
+    public function setGeoFenceZone08(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone08 = $var;
@@ -901,7 +901,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone09 = 9 [json_name = "geo_fence_zone_09"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone09()
     {
@@ -920,10 +920,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone09 = 9 [json_name = "geo_fence_zone_09"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone09($var)
+    public function setGeoFenceZone09(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone09 = $var;
@@ -933,7 +933,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone10 = 10 [json_name = "geo_fence_zone_10"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone10()
     {
@@ -952,10 +952,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone10 = 10 [json_name = "geo_fence_zone_10"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone10($var)
+    public function setGeoFenceZone10(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone10 = $var;
@@ -965,7 +965,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone11 = 11 [json_name = "geo_fence_zone_11"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone11()
     {
@@ -984,10 +984,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone11 = 11 [json_name = "geo_fence_zone_11"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone11($var)
+    public function setGeoFenceZone11(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone11 = $var;
@@ -997,7 +997,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone12 = 12 [json_name = "geo_fence_zone_12"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone12()
     {
@@ -1016,10 +1016,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone12 = 12 [json_name = "geo_fence_zone_12"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone12($var)
+    public function setGeoFenceZone12(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone12 = $var;
@@ -1029,7 +1029,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone13 = 13 [json_name = "geo_fence_zone_13"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone13()
     {
@@ -1048,10 +1048,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone13 = 13 [json_name = "geo_fence_zone_13"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone13($var)
+    public function setGeoFenceZone13(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone13 = $var;
@@ -1061,7 +1061,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone14 = 14 [json_name = "geo_fence_zone_14"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone14()
     {
@@ -1080,10 +1080,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone14 = 14 [json_name = "geo_fence_zone_14"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone14($var)
+    public function setGeoFenceZone14(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone14 = $var;
@@ -1093,7 +1093,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone15 = 15 [json_name = "geo_fence_zone_15"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone15()
     {
@@ -1112,10 +1112,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone15 = 15 [json_name = "geo_fence_zone_15"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone15($var)
+    public function setGeoFenceZone15(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone15 = $var;
@@ -1125,7 +1125,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone16 = 16 [json_name = "geo_fence_zone_16"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone16()
     {
@@ -1144,10 +1144,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone16 = 16 [json_name = "geo_fence_zone_16"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone16($var)
+    public function setGeoFenceZone16(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone16 = $var;
@@ -1157,7 +1157,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone17 = 17 [json_name = "geo_fence_zone_17"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone17()
     {
@@ -1176,10 +1176,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone17 = 17 [json_name = "geo_fence_zone_17"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone17($var)
+    public function setGeoFenceZone17(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone17 = $var;
@@ -1189,7 +1189,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone18 = 18 [json_name = "geo_fence_zone_18"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone18()
     {
@@ -1208,10 +1208,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone18 = 18 [json_name = "geo_fence_zone_18"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone18($var)
+    public function setGeoFenceZone18(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone18 = $var;
@@ -1221,7 +1221,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone19 = 19 [json_name = "geo_fence_zone_19"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone19()
     {
@@ -1240,10 +1240,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone19 = 19 [json_name = "geo_fence_zone_19"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone19($var)
+    public function setGeoFenceZone19(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone19 = $var;
@@ -1253,7 +1253,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone20 = 20 [json_name = "geo_fence_zone_20"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone20()
     {
@@ -1272,10 +1272,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone20 = 20 [json_name = "geo_fence_zone_20"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone20($var)
+    public function setGeoFenceZone20(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone20 = $var;
@@ -1285,7 +1285,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone21 = 21 [json_name = "geo_fence_zone_21"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone21()
     {
@@ -1304,10 +1304,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone21 = 21 [json_name = "geo_fence_zone_21"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone21($var)
+    public function setGeoFenceZone21(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone21 = $var;
@@ -1317,7 +1317,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone22 = 22 [json_name = "geo_fence_zone_22"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone22()
     {
@@ -1336,10 +1336,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone22 = 22 [json_name = "geo_fence_zone_22"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone22($var)
+    public function setGeoFenceZone22(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone22 = $var;
@@ -1349,7 +1349,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone23 = 23 [json_name = "geo_fence_zone_23"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone23()
     {
@@ -1368,10 +1368,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone23 = 23 [json_name = "geo_fence_zone_23"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone23($var)
+    public function setGeoFenceZone23(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone23 = $var;
@@ -1381,7 +1381,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone24 = 24 [json_name = "geo_fence_zone_24"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone24()
     {
@@ -1400,10 +1400,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone24 = 24 [json_name = "geo_fence_zone_24"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone24($var)
+    public function setGeoFenceZone24(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone24 = $var;
@@ -1413,7 +1413,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone25 = 25 [json_name = "geo_fence_zone_25"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone25()
     {
@@ -1432,10 +1432,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone25 = 25 [json_name = "geo_fence_zone_25"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone25($var)
+    public function setGeoFenceZone25(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone25 = $var;
@@ -1445,7 +1445,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone26 = 26 [json_name = "geo_fence_zone_26"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone26()
     {
@@ -1464,10 +1464,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone26 = 26 [json_name = "geo_fence_zone_26"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone26($var)
+    public function setGeoFenceZone26(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone26 = $var;
@@ -1477,7 +1477,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone27 = 27 [json_name = "geo_fence_zone_27"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone27()
     {
@@ -1496,10 +1496,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone27 = 27 [json_name = "geo_fence_zone_27"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone27($var)
+    public function setGeoFenceZone27(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone27 = $var;
@@ -1509,7 +1509,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone28 = 28 [json_name = "geo_fence_zone_28"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone28()
     {
@@ -1528,10 +1528,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone28 = 28 [json_name = "geo_fence_zone_28"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone28($var)
+    public function setGeoFenceZone28(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone28 = $var;
@@ -1541,7 +1541,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone29 = 29 [json_name = "geo_fence_zone_29"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone29()
     {
@@ -1560,10 +1560,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone29 = 29 [json_name = "geo_fence_zone_29"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone29($var)
+    public function setGeoFenceZone29(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone29 = $var;
@@ -1573,7 +1573,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone30 = 30 [json_name = "geo_fence_zone_30"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone30()
     {
@@ -1592,10 +1592,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone30 = 30 [json_name = "geo_fence_zone_30"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone30($var)
+    public function setGeoFenceZone30(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone30 = $var;
@@ -1605,7 +1605,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone31 = 31 [json_name = "geo_fence_zone_31"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone31()
     {
@@ -1624,10 +1624,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone31 = 31 [json_name = "geo_fence_zone_31"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone31($var)
+    public function setGeoFenceZone31(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone31 = $var;
@@ -1637,7 +1637,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone32 = 32 [json_name = "geo_fence_zone_32"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone32()
     {
@@ -1656,10 +1656,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone32 = 32 [json_name = "geo_fence_zone_32"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone32($var)
+    public function setGeoFenceZone32(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone32 = $var;
@@ -1669,7 +1669,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone33 = 33 [json_name = "geo_fence_zone_33"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone33()
     {
@@ -1688,10 +1688,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone33 = 33 [json_name = "geo_fence_zone_33"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone33($var)
+    public function setGeoFenceZone33(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone33 = $var;
@@ -1701,7 +1701,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone34 = 34 [json_name = "geo_fence_zone_34"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone34()
     {
@@ -1720,10 +1720,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone34 = 34 [json_name = "geo_fence_zone_34"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone34($var)
+    public function setGeoFenceZone34(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone34 = $var;
@@ -1733,7 +1733,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone35 = 35 [json_name = "geo_fence_zone_35"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone35()
     {
@@ -1752,10 +1752,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone35 = 35 [json_name = "geo_fence_zone_35"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone35($var)
+    public function setGeoFenceZone35(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone35 = $var;
@@ -1765,7 +1765,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone36 = 36 [json_name = "geo_fence_zone_36"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone36()
     {
@@ -1784,10 +1784,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone36 = 36 [json_name = "geo_fence_zone_36"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone36($var)
+    public function setGeoFenceZone36(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone36 = $var;
@@ -1797,7 +1797,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone37 = 37 [json_name = "geo_fence_zone_37"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone37()
     {
@@ -1816,10 +1816,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone37 = 37 [json_name = "geo_fence_zone_37"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone37($var)
+    public function setGeoFenceZone37(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone37 = $var;
@@ -1829,7 +1829,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone38 = 38 [json_name = "geo_fence_zone_38"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone38()
     {
@@ -1848,10 +1848,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone38 = 38 [json_name = "geo_fence_zone_38"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone38($var)
+    public function setGeoFenceZone38(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone38 = $var;
@@ -1861,7 +1861,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone39 = 39 [json_name = "geo_fence_zone_39"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone39()
     {
@@ -1880,10 +1880,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone39 = 39 [json_name = "geo_fence_zone_39"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone39($var)
+    public function setGeoFenceZone39(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone39 = $var;
@@ -1893,7 +1893,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone40 = 40 [json_name = "geo_fence_zone_40"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone40()
     {
@@ -1912,10 +1912,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone40 = 40 [json_name = "geo_fence_zone_40"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone40($var)
+    public function setGeoFenceZone40(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone40 = $var;
@@ -1925,7 +1925,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone41 = 41 [json_name = "geo_fence_zone_41"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone41()
     {
@@ -1944,10 +1944,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone41 = 41 [json_name = "geo_fence_zone_41"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone41($var)
+    public function setGeoFenceZone41(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone41 = $var;
@@ -1957,7 +1957,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone42 = 42 [json_name = "geo_fence_zone_42"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone42()
     {
@@ -1976,10 +1976,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone42 = 42 [json_name = "geo_fence_zone_42"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone42($var)
+    public function setGeoFenceZone42(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone42 = $var;
@@ -1989,7 +1989,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone43 = 43 [json_name = "geo_fence_zone_43"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone43()
     {
@@ -2008,10 +2008,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone43 = 43 [json_name = "geo_fence_zone_43"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone43($var)
+    public function setGeoFenceZone43(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone43 = $var;
@@ -2021,7 +2021,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone44 = 44 [json_name = "geo_fence_zone_44"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone44()
     {
@@ -2040,10 +2040,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone44 = 44 [json_name = "geo_fence_zone_44"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone44($var)
+    public function setGeoFenceZone44(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone44 = $var;
@@ -2053,7 +2053,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone45 = 45 [json_name = "geo_fence_zone_45"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone45()
     {
@@ -2072,10 +2072,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone45 = 45 [json_name = "geo_fence_zone_45"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone45($var)
+    public function setGeoFenceZone45(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone45 = $var;
@@ -2085,7 +2085,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone46 = 46 [json_name = "geo_fence_zone_46"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone46()
     {
@@ -2104,10 +2104,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone46 = 46 [json_name = "geo_fence_zone_46"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone46($var)
+    public function setGeoFenceZone46(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone46 = $var;
@@ -2117,7 +2117,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone47 = 47 [json_name = "geo_fence_zone_47"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone47()
     {
@@ -2136,10 +2136,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone47 = 47 [json_name = "geo_fence_zone_47"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone47($var)
+    public function setGeoFenceZone47(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone47 = $var;
@@ -2149,7 +2149,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone48 = 48 [json_name = "geo_fence_zone_48"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone48()
     {
@@ -2168,10 +2168,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone48 = 48 [json_name = "geo_fence_zone_48"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone48($var)
+    public function setGeoFenceZone48(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone48 = $var;
@@ -2181,7 +2181,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone49 = 49 [json_name = "geo_fence_zone_49"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone49()
     {
@@ -2200,10 +2200,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone49 = 49 [json_name = "geo_fence_zone_49"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone49($var)
+    public function setGeoFenceZone49(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone49 = $var;
@@ -2213,7 +2213,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone50 = 50 [json_name = "geo_fence_zone_50"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone50()
     {
@@ -2232,10 +2232,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone50 = 50 [json_name = "geo_fence_zone_50"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone50($var)
+    public function setGeoFenceZone50(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone50 = $var;
@@ -2267,7 +2267,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setGreenDrivingType($var)
+    public function setGreenDrivingType(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->green_driving_type = $var;
@@ -2299,7 +2299,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setGreenDrivingValue($var)
+    public function setGreenDrivingValue(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->green_driving_value = $var;
@@ -2331,7 +2331,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCrashDetection($var)
+    public function setCrashDetection(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->crash_detection = $var;
@@ -2363,7 +2363,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setImmobilizer($var)
+    public function setImmobilizer(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->immobilizer = $var;
@@ -2377,7 +2377,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
      */
     public function getIccId2()
     {
-        return isset($this->icc_id2) ? $this->icc_id2 : 0;
+        return isset($this->icc_id2) ? $this->icc_id2 : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasIccId2()
@@ -2395,7 +2395,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setIccId2($var)
+    public function setIccId2(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->icc_id2 = $var;
@@ -2427,7 +2427,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setGreenDrivingEventDuration($var)
+    public function setGreenDrivingEventDuration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->green_driving_event_duration = $var;
@@ -2459,9 +2459,8 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAlarm($var)
+    public function setAlarm(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->alarm = $var;
 
         return $this;
@@ -2473,7 +2472,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
      */
     public function getEcoMaximum()
     {
-        return isset($this->eco_maximum) ? $this->eco_maximum : 0;
+        return isset($this->eco_maximum) ? $this->eco_maximum : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasEcoMaximum()
@@ -2491,7 +2490,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setEcoMaximum($var)
+    public function setEcoMaximum(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->eco_maximum = $var;
@@ -2505,7 +2504,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
      */
     public function getEcoAverage()
     {
-        return isset($this->eco_average) ? $this->eco_average : 0;
+        return isset($this->eco_average) ? $this->eco_average : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasEcoAverage()
@@ -2523,7 +2522,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setEcoAverage($var)
+    public function setEcoAverage(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->eco_average = $var;
@@ -2555,7 +2554,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEcoDuration($var)
+    public function setEcoDuration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->eco_duration = $var;
@@ -2587,7 +2586,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDrivingState($var)
+    public function setDrivingState(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->driving_state = $var;
@@ -2619,7 +2618,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDrivingRecords($var)
+    public function setDrivingRecords(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->driving_records = $var;
@@ -2651,7 +2650,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCrashEventCounter($var)
+    public function setCrashEventCounter(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->crash_event_counter = $var;
@@ -2683,7 +2682,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setGnssJamming($var)
+    public function setGnssJamming(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->gnss_jamming = $var;
@@ -2715,7 +2714,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPrivateMode($var)
+    public function setPrivateMode(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->private_mode = $var;
@@ -2747,7 +2746,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIgnitionOnCounter($var)
+    public function setIgnitionOnCounter(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ignition_on_counter = $var;
@@ -2779,7 +2778,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMotorcycleFallDetection($var)
+    public function setMotorcycleFallDetection(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->motorcycle_fall_detection = $var;
@@ -2811,9 +2810,8 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setTrip($var)
+    public function setTrip(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->trip = $var;
 
         return $this;
@@ -2843,7 +2841,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setOverSpeeding($var)
+    public function setOverSpeeding(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->over_speeding = $var;
@@ -2875,9 +2873,9 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCrashTraceData($var)
+    public function setCrashTraceData(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->crash_trace_data = $var;
 
         return $this;
@@ -2907,7 +2905,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBloodAlcoholContent($var)
+    public function setBloodAlcoholContent(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->blood_alcohol_content = $var;
@@ -2939,9 +2937,8 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAutoGeoFence($var)
+    public function setAutoGeoFence(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->auto_geo_fence = $var;
 
         return $this;
@@ -2953,7 +2950,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
      */
     public function getIccId3()
     {
-        return isset($this->icc_id3) ? $this->icc_id3 : 0;
+        return isset($this->icc_id3) ? $this->icc_id3 : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasIccId3()
@@ -2971,7 +2968,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setIccId3($var)
+    public function setIccId3(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->icc_id3 = $var;
@@ -2981,7 +2978,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone51 = 91 [json_name = "geo_fence_zone_51"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone51()
     {
@@ -3000,10 +2997,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone51 = 91 [json_name = "geo_fence_zone_51"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone51($var)
+    public function setGeoFenceZone51(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone51 = $var;
@@ -3013,7 +3010,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone52 = 74 [json_name = "geo_fence_zone_52"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone52()
     {
@@ -3032,10 +3029,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone52 = 74 [json_name = "geo_fence_zone_52"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone52($var)
+    public function setGeoFenceZone52(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone52 = $var;
@@ -3045,7 +3042,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone53 = 75 [json_name = "geo_fence_zone_53"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone53()
     {
@@ -3064,10 +3061,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone53 = 75 [json_name = "geo_fence_zone_53"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone53($var)
+    public function setGeoFenceZone53(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone53 = $var;
@@ -3077,7 +3074,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone54 = 76 [json_name = "geo_fence_zone_54"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone54()
     {
@@ -3096,10 +3093,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone54 = 76 [json_name = "geo_fence_zone_54"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone54($var)
+    public function setGeoFenceZone54(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone54 = $var;
@@ -3109,7 +3106,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone55 = 77 [json_name = "geo_fence_zone_55"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone55()
     {
@@ -3128,10 +3125,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone55 = 77 [json_name = "geo_fence_zone_55"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone55($var)
+    public function setGeoFenceZone55(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone55 = $var;
@@ -3141,7 +3138,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone56 = 78 [json_name = "geo_fence_zone_56"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone56()
     {
@@ -3160,10 +3157,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone56 = 78 [json_name = "geo_fence_zone_56"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone56($var)
+    public function setGeoFenceZone56(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone56 = $var;
@@ -3173,7 +3170,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone57 = 79 [json_name = "geo_fence_zone_57"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone57()
     {
@@ -3192,10 +3189,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone57 = 79 [json_name = "geo_fence_zone_57"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone57($var)
+    public function setGeoFenceZone57(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone57 = $var;
@@ -3205,7 +3202,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone58 = 80 [json_name = "geo_fence_zone_58"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone58()
     {
@@ -3224,10 +3221,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone58 = 80 [json_name = "geo_fence_zone_58"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone58($var)
+    public function setGeoFenceZone58(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone58 = $var;
@@ -3237,7 +3234,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone59 = 81 [json_name = "geo_fence_zone_59"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone59()
     {
@@ -3256,10 +3253,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone59 = 81 [json_name = "geo_fence_zone_59"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone59($var)
+    public function setGeoFenceZone59(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone59 = $var;
@@ -3269,7 +3266,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone60 = 82 [json_name = "geo_fence_zone_60"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone60()
     {
@@ -3288,10 +3285,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone60 = 82 [json_name = "geo_fence_zone_60"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone60($var)
+    public function setGeoFenceZone60(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone60 = $var;
@@ -3301,7 +3298,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone61 = 83 [json_name = "geo_fence_zone_61"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone61()
     {
@@ -3320,10 +3317,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone61 = 83 [json_name = "geo_fence_zone_61"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone61($var)
+    public function setGeoFenceZone61(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone61 = $var;
@@ -3333,7 +3330,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone62 = 84 [json_name = "geo_fence_zone_62"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone62()
     {
@@ -3352,10 +3349,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone62 = 84 [json_name = "geo_fence_zone_62"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone62($var)
+    public function setGeoFenceZone62(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone62 = $var;
@@ -3365,7 +3362,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone63 = 85 [json_name = "geo_fence_zone_63"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone63()
     {
@@ -3384,10 +3381,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone63 = 85 [json_name = "geo_fence_zone_63"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone63($var)
+    public function setGeoFenceZone63(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone63 = $var;
@@ -3397,7 +3394,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone64 = 86 [json_name = "geo_fence_zone_64"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone64()
     {
@@ -3416,10 +3413,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone64 = 86 [json_name = "geo_fence_zone_64"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone64($var)
+    public function setGeoFenceZone64(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone64 = $var;
@@ -3429,7 +3426,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone65 = 87 [json_name = "geo_fence_zone_65"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone65()
     {
@@ -3448,10 +3445,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone65 = 87 [json_name = "geo_fence_zone_65"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone65($var)
+    public function setGeoFenceZone65(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone65 = $var;
@@ -3461,7 +3458,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone66 = 88 [json_name = "geo_fence_zone_66"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone66()
     {
@@ -3480,10 +3477,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone66 = 88 [json_name = "geo_fence_zone_66"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone66($var)
+    public function setGeoFenceZone66(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone66 = $var;
@@ -3493,7 +3490,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone67 = 89 [json_name = "geo_fence_zone_67"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone67()
     {
@@ -3512,10 +3509,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone67 = 89 [json_name = "geo_fence_zone_67"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone67($var)
+    public function setGeoFenceZone67(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone67 = $var;
@@ -3525,7 +3522,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone68 = 90 [json_name = "geo_fence_zone_68"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone68()
     {
@@ -3544,10 +3541,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone68 = 90 [json_name = "geo_fence_zone_68"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone68($var)
+    public function setGeoFenceZone68(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone68 = $var;
@@ -3557,7 +3554,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone69 = 92 [json_name = "geo_fence_zone_69"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone69()
     {
@@ -3576,10 +3573,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone69 = 92 [json_name = "geo_fence_zone_69"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone69($var)
+    public function setGeoFenceZone69(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone69 = $var;
@@ -3589,7 +3586,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone70 = 93 [json_name = "geo_fence_zone_70"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone70()
     {
@@ -3608,10 +3605,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone70 = 93 [json_name = "geo_fence_zone_70"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone70($var)
+    public function setGeoFenceZone70(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone70 = $var;
@@ -3621,7 +3618,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone71 = 94 [json_name = "geo_fence_zone_71"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone71()
     {
@@ -3640,10 +3637,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone71 = 94 [json_name = "geo_fence_zone_71"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone71($var)
+    public function setGeoFenceZone71(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone71 = $var;
@@ -3653,7 +3650,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone72 = 95 [json_name = "geo_fence_zone_72"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone72()
     {
@@ -3672,10 +3669,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone72 = 95 [json_name = "geo_fence_zone_72"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone72($var)
+    public function setGeoFenceZone72(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone72 = $var;
@@ -3685,7 +3682,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone73 = 96 [json_name = "geo_fence_zone_73"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone73()
     {
@@ -3704,10 +3701,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone73 = 96 [json_name = "geo_fence_zone_73"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone73($var)
+    public function setGeoFenceZone73(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone73 = $var;
@@ -3717,7 +3714,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone74 = 97 [json_name = "geo_fence_zone_74"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone74()
     {
@@ -3736,10 +3733,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone74 = 97 [json_name = "geo_fence_zone_74"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone74($var)
+    public function setGeoFenceZone74(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone74 = $var;
@@ -3749,7 +3746,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone75 = 98 [json_name = "geo_fence_zone_75"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone75()
     {
@@ -3768,10 +3765,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone75 = 98 [json_name = "geo_fence_zone_75"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone75($var)
+    public function setGeoFenceZone75(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone75 = $var;
@@ -3781,7 +3778,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone76 = 99 [json_name = "geo_fence_zone_76"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone76()
     {
@@ -3800,10 +3797,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone76 = 99 [json_name = "geo_fence_zone_76"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone76($var)
+    public function setGeoFenceZone76(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone76 = $var;
@@ -3813,7 +3810,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone77 = 100 [json_name = "geo_fence_zone_77"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone77()
     {
@@ -3832,10 +3829,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone77 = 100 [json_name = "geo_fence_zone_77"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone77($var)
+    public function setGeoFenceZone77(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone77 = $var;
@@ -3845,7 +3842,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone78 = 101 [json_name = "geo_fence_zone_78"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone78()
     {
@@ -3864,10 +3861,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone78 = 101 [json_name = "geo_fence_zone_78"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone78($var)
+    public function setGeoFenceZone78(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone78 = $var;
@@ -3877,7 +3874,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone79 = 102 [json_name = "geo_fence_zone_79"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone79()
     {
@@ -3896,10 +3893,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone79 = 102 [json_name = "geo_fence_zone_79"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone79($var)
+    public function setGeoFenceZone79(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone79 = $var;
@@ -3909,7 +3906,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone80 = 103 [json_name = "geo_fence_zone_80"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone80()
     {
@@ -3928,10 +3925,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone80 = 103 [json_name = "geo_fence_zone_80"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone80($var)
+    public function setGeoFenceZone80(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone80 = $var;
@@ -3941,7 +3938,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone81 = 104 [json_name = "geo_fence_zone_81"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone81()
     {
@@ -3960,10 +3957,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone81 = 104 [json_name = "geo_fence_zone_81"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone81($var)
+    public function setGeoFenceZone81(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone81 = $var;
@@ -3973,7 +3970,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone82 = 105 [json_name = "geo_fence_zone_82"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone82()
     {
@@ -3992,10 +3989,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone82 = 105 [json_name = "geo_fence_zone_82"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone82($var)
+    public function setGeoFenceZone82(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone82 = $var;
@@ -4005,7 +4002,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone83 = 106 [json_name = "geo_fence_zone_83"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone83()
     {
@@ -4024,10 +4021,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone83 = 106 [json_name = "geo_fence_zone_83"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone83($var)
+    public function setGeoFenceZone83(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone83 = $var;
@@ -4037,7 +4034,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone84 = 107 [json_name = "geo_fence_zone_84"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone84()
     {
@@ -4056,10 +4053,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone84 = 107 [json_name = "geo_fence_zone_84"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone84($var)
+    public function setGeoFenceZone84(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone84 = $var;
@@ -4069,7 +4066,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone85 = 108 [json_name = "geo_fence_zone_85"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone85()
     {
@@ -4088,10 +4085,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone85 = 108 [json_name = "geo_fence_zone_85"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone85($var)
+    public function setGeoFenceZone85(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone85 = $var;
@@ -4101,7 +4098,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone86 = 109 [json_name = "geo_fence_zone_86"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone86()
     {
@@ -4120,10 +4117,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone86 = 109 [json_name = "geo_fence_zone_86"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone86($var)
+    public function setGeoFenceZone86(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone86 = $var;
@@ -4133,7 +4130,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone87 = 110 [json_name = "geo_fence_zone_87"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone87()
     {
@@ -4152,10 +4149,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone87 = 110 [json_name = "geo_fence_zone_87"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone87($var)
+    public function setGeoFenceZone87(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone87 = $var;
@@ -4165,7 +4162,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone88 = 111 [json_name = "geo_fence_zone_88"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone88()
     {
@@ -4184,10 +4181,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone88 = 111 [json_name = "geo_fence_zone_88"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone88($var)
+    public function setGeoFenceZone88(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone88 = $var;
@@ -4197,7 +4194,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone89 = 112 [json_name = "geo_fence_zone_89"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone89()
     {
@@ -4216,10 +4213,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone89 = 112 [json_name = "geo_fence_zone_89"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone89($var)
+    public function setGeoFenceZone89(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone89 = $var;
@@ -4229,7 +4226,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone90 = 113 [json_name = "geo_fence_zone_90"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone90()
     {
@@ -4248,10 +4245,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone90 = 113 [json_name = "geo_fence_zone_90"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone90($var)
+    public function setGeoFenceZone90(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone90 = $var;
@@ -4261,7 +4258,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone91 = 114 [json_name = "geo_fence_zone_91"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone91()
     {
@@ -4280,10 +4277,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone91 = 114 [json_name = "geo_fence_zone_91"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone91($var)
+    public function setGeoFenceZone91(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone91 = $var;
@@ -4293,7 +4290,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone92 = 115 [json_name = "geo_fence_zone_92"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone92()
     {
@@ -4312,10 +4309,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone92 = 115 [json_name = "geo_fence_zone_92"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone92($var)
+    public function setGeoFenceZone92(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone92 = $var;
@@ -4325,7 +4322,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone93 = 116 [json_name = "geo_fence_zone_93"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone93()
     {
@@ -4344,10 +4341,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone93 = 116 [json_name = "geo_fence_zone_93"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone93($var)
+    public function setGeoFenceZone93(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone93 = $var;
@@ -4357,7 +4354,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone94 = 117 [json_name = "geo_fence_zone_94"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone94()
     {
@@ -4376,10 +4373,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone94 = 117 [json_name = "geo_fence_zone_94"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone94($var)
+    public function setGeoFenceZone94(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone94 = $var;
@@ -4389,7 +4386,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone95 = 118 [json_name = "geo_fence_zone_95"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone95()
     {
@@ -4408,10 +4405,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone95 = 118 [json_name = "geo_fence_zone_95"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone95($var)
+    public function setGeoFenceZone95(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone95 = $var;
@@ -4421,7 +4418,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone96 = 119 [json_name = "geo_fence_zone_96"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone96()
     {
@@ -4440,10 +4437,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone96 = 119 [json_name = "geo_fence_zone_96"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone96($var)
+    public function setGeoFenceZone96(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone96 = $var;
@@ -4453,7 +4450,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone97 = 120 [json_name = "geo_fence_zone_97"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone97()
     {
@@ -4472,10 +4469,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone97 = 120 [json_name = "geo_fence_zone_97"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone97($var)
+    public function setGeoFenceZone97(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone97 = $var;
@@ -4485,7 +4482,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone98 = 121 [json_name = "geo_fence_zone_98"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone98()
     {
@@ -4504,10 +4501,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone98 = 121 [json_name = "geo_fence_zone_98"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone98($var)
+    public function setGeoFenceZone98(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone98 = $var;
@@ -4517,7 +4514,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone99 = 122 [json_name = "geo_fence_zone_99"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone99()
     {
@@ -4536,10 +4533,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone99 = 122 [json_name = "geo_fence_zone_99"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone99($var)
+    public function setGeoFenceZone99(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone99 = $var;
@@ -4549,7 +4546,7 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone100 = 123 [json_name = "geo_fence_zone_100"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      */
     public function getGeoFenceZone100()
     {
@@ -4568,10 +4565,10 @@ class EventualIoElements extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.EventualIoElements.ZoneEvent geo_fence_zone100 = 123 [json_name = "geo_fence_zone_100"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent}
      * @return $this
      */
-    public function setGeoFenceZone100($var)
+    public function setGeoFenceZone100(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\EventualIoElements\ZoneEvent::class);
         $this->geo_fence_zone100 = $var;

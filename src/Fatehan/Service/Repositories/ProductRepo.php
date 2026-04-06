@@ -62,7 +62,7 @@ class ProductRepo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Financial\Product[] $var
      * @return $this
      */
-    public function setComponents($var)
+    public function setComponents(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Financial\Product::class);
         $this->components = $arr;
@@ -94,9 +94,8 @@ class ProductRepo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Financial\Currency $var
      * @return $this
      */
-    public function setCurrency($var)
+    public function setCurrency(\Fatehan\Financial\Currency|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Financial\Currency::class);
         $this->currency = $var;
 
         return $this;
@@ -126,9 +125,8 @@ class ProductRepo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Financial\ProductType $var
      * @return $this
      */
-    public function setProductType($var)
+    public function setProductType(\Fatehan\Financial\ProductType|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Financial\ProductType::class);
         $this->product_type = $var;
 
         return $this;
@@ -158,9 +156,9 @@ class ProductRepo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setProperties($var)
+    public function setProperties(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->properties = $var;
 
         return $this;

@@ -54,9 +54,8 @@ class AreaAlertIsRunning extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsRunning($var)
+    public function setIsRunning(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_running = $var;
 
         return $this;
@@ -76,7 +75,7 @@ class AreaAlertIsRunning extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setLatest($var)
+    public function setLatest(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->latest = $var;

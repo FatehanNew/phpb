@@ -97,7 +97,7 @@ class Gallery extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -119,7 +119,7 @@ class Gallery extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -141,9 +141,9 @@ class Gallery extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setIdentificationNo($var)
+    public function setIdentificationNo(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->identification_no = $var;
 
         return $this;
@@ -151,7 +151,7 @@ class Gallery extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.FileType type = 4 [json_name = "type"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\FileType}
      */
     public function getType()
     {
@@ -160,10 +160,10 @@ class Gallery extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.FileType type = 4 [json_name = "type"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\FileType}
      * @return $this
      */
-    public function setType($var)
+    public function setType(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\FileType::class);
         $this->type = $var;
@@ -185,9 +185,9 @@ class Gallery extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setStorage($var)
+    public function setStorage(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->storage = $var;
 
         return $this;
@@ -207,9 +207,9 @@ class Gallery extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPath($var)
+    public function setPath(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->path = $var;
 
         return $this;
@@ -229,9 +229,9 @@ class Gallery extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMime($var)
+    public function setMime(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->mime = $var;
 
         return $this;
@@ -261,9 +261,9 @@ class Gallery extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCodec($var)
+    public function setCodec(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->codec = $var;
 
         return $this;
@@ -283,7 +283,7 @@ class Gallery extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSize($var)
+    public function setSize(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->size = $var;
@@ -315,9 +315,8 @@ class Gallery extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\Data $var
      * @return $this
      */
-    public function setLocation($var)
+    public function setLocation(\Fatehan\Packet\DataModel\Data|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\Data::class);
         $this->location = $var;
 
         return $this;
@@ -347,9 +346,8 @@ class Gallery extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;

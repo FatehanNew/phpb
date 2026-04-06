@@ -57,7 +57,7 @@ class DailyTraffic extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -89,9 +89,8 @@ class DailyTraffic extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setDate($var)
+    public function setDate(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->date = $var;
 
         return $this;
@@ -111,7 +110,7 @@ class DailyTraffic extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Report\DailyTrafficResponse\Traffic[] $var
      * @return $this
      */
-    public function setTraffics($var)
+    public function setTraffics(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Report\DailyTrafficResponse\Traffic::class);
         $this->traffics = $arr;

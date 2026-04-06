@@ -57,7 +57,7 @@ class IoResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCost($var)
+    public function setCost(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->cost = $var;
@@ -79,7 +79,7 @@ class IoResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRecords($var)
+    public function setRecords(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->records = $var;
@@ -101,7 +101,7 @@ class IoResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Device\SystemIo[] $var
      * @return $this
      */
-    public function setIos($var)
+    public function setIos(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Device\SystemIo::class);
         $this->ios = $arr;

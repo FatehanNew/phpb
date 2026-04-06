@@ -52,7 +52,7 @@ class AreaEvent extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setAreaId($var)
+    public function setAreaId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->area_id = $var;
@@ -62,7 +62,7 @@ class AreaEvent extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.notifies.AreaEventType event_type = 2 [json_name = "event_type"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Notify\AreaEventType}
      */
     public function getEventType()
     {
@@ -71,10 +71,10 @@ class AreaEvent extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.notifies.AreaEventType event_type = 2 [json_name = "event_type"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Notify\AreaEventType}
      * @return $this
      */
-    public function setEventType($var)
+    public function setEventType(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Notify\AreaEventType::class);
         $this->event_type = $var;

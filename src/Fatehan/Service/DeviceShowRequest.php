@@ -52,7 +52,7 @@ class DeviceShowRequest extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -84,9 +84,8 @@ class DeviceShowRequest extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIncludeDeviceStatus($var)
+    public function setIncludeDeviceStatus(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->include_device_status = $var;
 
         return $this;

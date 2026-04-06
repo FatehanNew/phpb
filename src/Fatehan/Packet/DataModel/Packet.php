@@ -103,7 +103,7 @@ class Packet extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.Packet.Type type = 1 [json_name = "type"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\Packet\Type}
      */
     public function getType()
     {
@@ -112,10 +112,10 @@ class Packet extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.Packet.Type type = 1 [json_name = "type"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\Packet\Type}
      * @return $this
      */
-    public function setType($var)
+    public function setType(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\Packet\Type::class);
         $this->type = $var;
@@ -137,7 +137,7 @@ class Packet extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\Data[] $var
      * @return $this
      */
-    public function setData($var)
+    public function setData(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Packet\DataModel\Data::class);
         $this->data = $arr;
@@ -169,9 +169,8 @@ class Packet extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\Authorize $var
      * @return $this
      */
-    public function setAuthorize($var)
+    public function setAuthorize(\Fatehan\Packet\DataModel\Authorize|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\Authorize::class);
         $this->authorize = $var;
 
         return $this;
@@ -201,9 +200,9 @@ class Packet extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setResponse($var)
+    public function setResponse(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->response = $var;
 
         return $this;
@@ -213,7 +212,7 @@ class Packet extends \Google\Protobuf\Internal\Message
      * Deprecated: Use custom oneof instead
      *
      * Generated from protobuf field <code>.com.fatehan.packets.Packet.CustomPacketType custom_type = 6 [json_name = "custom_type"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\Packet\CustomPacketType}
      */
     public function getCustomType()
     {
@@ -224,10 +223,10 @@ class Packet extends \Google\Protobuf\Internal\Message
      * Deprecated: Use custom oneof instead
      *
      * Generated from protobuf field <code>.com.fatehan.packets.Packet.CustomPacketType custom_type = 6 [json_name = "custom_type"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\Packet\CustomPacketType}
      * @return $this
      */
-    public function setCustomType($var)
+    public function setCustomType(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\Packet\CustomPacketType::class);
         $this->custom_type = $var;
@@ -263,9 +262,9 @@ class Packet extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCustomPayload($var)
+    public function setCustomPayload(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->custom_payload = $var;
 
         return $this;
@@ -299,9 +298,9 @@ class Packet extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setAnswer($var)
+    public function setAnswer(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->answer = $var;
 
         return $this;
@@ -325,7 +324,7 @@ class Packet extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\AdditionalInformation[] $var
      * @return $this
      */
-    public function setAdditional($var)
+    public function setAdditional(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Packet\DataModel\AdditionalInformation::class);
         $this->additional = $arr;
@@ -352,9 +351,8 @@ class Packet extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\ReplyConcox $var
      * @return $this
      */
-    public function setConcox($var)
+    public function setConcox(\Fatehan\Packet\DataModel\ReplyConcox|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\ReplyConcox::class);
         $this->writeOneof(10, $var);
 
         return $this;
@@ -379,9 +377,8 @@ class Packet extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\ReplyTeltonika $var
      * @return $this
      */
-    public function setTeltonika($var)
+    public function setTeltonika(\Fatehan\Packet\DataModel\ReplyTeltonika|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\ReplyTeltonika::class);
         $this->writeOneof(12, $var);
 
         return $this;
@@ -406,9 +403,8 @@ class Packet extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\JTT808Reply $var
      * @return $this
      */
-    public function setJtt808Reply($var)
+    public function setJtt808Reply(\Fatehan\Packet\DataModel\JTT808Reply|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\JTT808Reply::class);
         $this->writeOneof(14, $var);
 
         return $this;
@@ -433,9 +429,9 @@ class Packet extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRawString($var)
+    public function setRawString(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->writeOneof(22, $var);
 
         return $this;
@@ -460,9 +456,9 @@ class Packet extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRawBinary($var)
+    public function setRawBinary(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->writeOneof(23, $var);
 
         return $this;
@@ -487,9 +483,8 @@ class Packet extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\Stream $var
      * @return $this
      */
-    public function setStream($var)
+    public function setStream(\Fatehan\Packet\DataModel\Stream|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\Stream::class);
         $this->writeOneof(11, $var);
 
         return $this;
@@ -514,9 +509,8 @@ class Packet extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\ForgeDecoder $var
      * @return $this
      */
-    public function setForge($var)
+    public function setForge(\Fatehan\Packet\DataModel\ForgeDecoder|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\ForgeDecoder::class);
         $this->writeOneof(13, $var);
 
         return $this;
@@ -541,9 +535,8 @@ class Packet extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\JTT808SignalingDataMessage1210 $var
      * @return $this
      */
-    public function setJttSignaling1210($var)
+    public function setJttSignaling1210(\Fatehan\Packet\DataModel\JTT808SignalingDataMessage1210|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\JTT808SignalingDataMessage1210::class);
         $this->writeOneof(15, $var);
 
         return $this;
@@ -568,9 +561,8 @@ class Packet extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\JTT808SignalingDataMessage1211 $var
      * @return $this
      */
-    public function setJttSignaling1211($var)
+    public function setJttSignaling1211(\Fatehan\Packet\DataModel\JTT808SignalingDataMessage1211|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\JTT808SignalingDataMessage1211::class);
         $this->writeOneof(16, $var);
 
         return $this;
@@ -595,9 +587,8 @@ class Packet extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\JTT808SignalingDataMessage1212 $var
      * @return $this
      */
-    public function setJttSignaling1212($var)
+    public function setJttSignaling1212(\Fatehan\Packet\DataModel\JTT808SignalingDataMessage1212|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\JTT808SignalingDataMessage1212::class);
         $this->writeOneof(17, $var);
 
         return $this;
@@ -622,9 +613,8 @@ class Packet extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\JTT808EventMediaInfoUpload $var
      * @return $this
      */
-    public function setJttEventMediaInfo($var)
+    public function setJttEventMediaInfo(\Fatehan\Packet\DataModel\JTT808EventMediaInfoUpload|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\JTT808EventMediaInfoUpload::class);
         $this->writeOneof(18, $var);
 
         return $this;
@@ -649,9 +639,8 @@ class Packet extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\JTT808EventMediaDataUpload $var
      * @return $this
      */
-    public function setJttEventMediaData($var)
+    public function setJttEventMediaData(\Fatehan\Packet\DataModel\JTT808EventMediaDataUpload|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\JTT808EventMediaDataUpload::class);
         $this->writeOneof(19, $var);
 
         return $this;
@@ -676,9 +665,8 @@ class Packet extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\JTT808AlarmData $var
      * @return $this
      */
-    public function setJttAlarmData($var)
+    public function setJttAlarmData(\Fatehan\Packet\DataModel\JTT808AlarmData|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\JTT808AlarmData::class);
         $this->writeOneof(20, $var);
 
         return $this;
@@ -703,9 +691,8 @@ class Packet extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\JTT808MediaRetrieval0802 $var
      * @return $this
      */
-    public function setJttMedia($var)
+    public function setJttMedia(\Fatehan\Packet\DataModel\JTT808MediaRetrieval0802|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\JTT808MediaRetrieval0802::class);
         $this->writeOneof(21, $var);
 
         return $this;
@@ -735,9 +722,9 @@ class Packet extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setErrorMessage($var)
+    public function setErrorMessage(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->error_message = $var;
 
         return $this;

@@ -212,7 +212,7 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMcId($var)
+    public function setMcId(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->mc_id = $var;
@@ -234,7 +234,7 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCarId($var)
+    public function setCarId(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->car_id = $var;
@@ -256,7 +256,7 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMaintenanceId($var)
+    public function setMaintenanceId(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->maintenance_id = $var;
@@ -278,7 +278,7 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setProjectId($var)
+    public function setProjectId(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->project_id = $var;
@@ -300,7 +300,7 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->user_id = $var;
@@ -322,7 +322,7 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDateSet($var)
+    public function setDateSet(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->date_set = $var;
@@ -344,7 +344,7 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPrice($var)
+    public function setPrice(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->price = $var;
@@ -366,9 +366,8 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setExpireable($var)
+    public function setExpireable(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->expireable = $var;
 
         return $this;
@@ -388,7 +387,7 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setExpireDate($var)
+    public function setExpireDate(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->expire_date = $var;
@@ -410,7 +409,7 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setExpireEnginTime($var)
+    public function setExpireEnginTime(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->expire_engin_time = $var;
@@ -432,7 +431,7 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setExpireOdo($var)
+    public function setExpireOdo(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->expire_odo = $var;
@@ -454,7 +453,7 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setExpired($var)
+    public function setExpired(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->expired = $var;
@@ -476,7 +475,7 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCarEnginTime($var)
+    public function setCarEnginTime(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->car_engin_time = $var;
@@ -498,7 +497,7 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCarOdo($var)
+    public function setCarOdo(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->car_odo = $var;
@@ -520,7 +519,7 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDateCreate($var)
+    public function setDateCreate(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->date_create = $var;
@@ -542,7 +541,7 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRenewable($var)
+    public function setRenewable(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->renewable = $var;
@@ -564,7 +563,7 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDateRenew($var)
+    public function setDateRenew(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->date_renew = $var;
@@ -586,7 +585,7 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRenewId($var)
+    public function setRenewId(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->renew_id = $var;
@@ -608,7 +607,7 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSent($var)
+    public function setSent(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->sent = $var;
@@ -630,7 +629,7 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDateExpired($var)
+    public function setDateExpired(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->date_expired = $var;
@@ -662,9 +661,9 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setParts($var)
+    public function setParts(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->parts = $var;
 
         return $this;
@@ -684,7 +683,7 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setServiceProviderId($var)
+    public function setServiceProviderId(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->service_provider_id = $var;
@@ -716,9 +715,8 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setLat($var)
+    public function setLat(float $var)
     {
-        GPBUtil::checkDouble($var);
         $this->lat = $var;
 
         return $this;
@@ -748,9 +746,8 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setLng($var)
+    public function setLng(float $var)
     {
-        GPBUtil::checkDouble($var);
         $this->lng = $var;
 
         return $this;
@@ -780,9 +777,9 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPhoto($var)
+    public function setPhoto(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->photo = $var;
 
         return $this;
@@ -802,7 +799,7 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setUserCreatorId($var)
+    public function setUserCreatorId(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->user_creator_id = $var;
@@ -824,7 +821,7 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setExpireDateWarranty($var)
+    public function setExpireDateWarranty(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->expire_date_warranty = $var;
@@ -856,9 +853,9 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDescription($var)
+    public function setDescription(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->description = $var;
 
         return $this;
@@ -878,7 +875,7 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDateEnd($var)
+    public function setDateEnd(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->date_end = $var;
@@ -900,7 +897,7 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCurrentMileage($var)
+    public function setCurrentMileage(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->current_mileage = $var;
@@ -922,7 +919,7 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCurrentEngineTime($var)
+    public function setCurrentEngineTime(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->current_engine_time = $var;
@@ -954,9 +951,9 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setExpiredReason($var)
+    public function setExpiredReason(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->expired_reason = $var;
 
         return $this;
@@ -986,9 +983,8 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -1018,9 +1014,8 @@ class FusionMaintenance extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;

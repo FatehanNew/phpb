@@ -127,7 +127,7 @@ class TripCompact extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCost($var)
+    public function setCost(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->cost = $var;
@@ -149,7 +149,7 @@ class TripCompact extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRecords($var)
+    public function setRecords(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->records = $var;
@@ -181,9 +181,8 @@ class TripCompact extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Trip\TripPoint $var
      * @return $this
      */
-    public function setStart($var)
+    public function setStart(\Fatehan\Trip\TripPoint|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Trip\TripPoint::class);
         $this->start = $var;
 
         return $this;
@@ -213,9 +212,8 @@ class TripCompact extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Trip\TripPoint $var
      * @return $this
      */
-    public function setFinish($var)
+    public function setFinish(\Fatehan\Trip\TripPoint|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Trip\TripPoint::class);
         $this->finish = $var;
 
         return $this;
@@ -235,7 +233,7 @@ class TripCompact extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setGreenDriving($var)
+    public function setGreenDriving(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::UINT32, \Google\Protobuf\Internal\GPBType::UINT32);
         $this->green_driving = $arr;
@@ -257,7 +255,7 @@ class TripCompact extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setTemperature($var)
+    public function setTemperature(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::UINT32, \Google\Protobuf\Internal\GPBType::SINT32);
         $this->temperature = $arr;
@@ -279,7 +277,7 @@ class TripCompact extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setHumidity($var)
+    public function setHumidity(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::UINT32, \Google\Protobuf\Internal\GPBType::UINT32);
         $this->humidity = $arr;
@@ -293,7 +291,7 @@ class TripCompact extends \Google\Protobuf\Internal\Message
      */
     public function getIButton()
     {
-        return isset($this->i_button) ? $this->i_button : 0;
+        return isset($this->i_button) ? $this->i_button : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasIButton()
@@ -311,7 +309,7 @@ class TripCompact extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setIButton($var)
+    public function setIButton(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->i_button = $var;
@@ -343,7 +341,7 @@ class TripCompact extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIgnition($var)
+    public function setIgnition(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ignition = $var;
@@ -375,7 +373,7 @@ class TripCompact extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDoorOpened($var)
+    public function setDoorOpened(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->door_opened = $var;
@@ -407,7 +405,7 @@ class TripCompact extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelUsed($var)
+    public function setFuelUsed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_used = $var;
@@ -439,7 +437,7 @@ class TripCompact extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelRate($var)
+    public function setFuelRate(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_rate = $var;
@@ -471,7 +469,7 @@ class TripCompact extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEngineRpm($var)
+    public function setEngineRpm(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->engine_rpm = $var;
@@ -503,7 +501,7 @@ class TripCompact extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEngineLoad($var)
+    public function setEngineLoad(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->engine_load = $var;
@@ -525,7 +523,7 @@ class TripCompact extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setCrashes($var)
+    public function setCrashes(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::UINT32, \Google\Protobuf\Internal\GPBType::UINT32);
         $this->crashes = $arr;
@@ -547,7 +545,7 @@ class TripCompact extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setSpeeds($var)
+    public function setSpeeds(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::UINT32, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Trip\TripDurationStat::class);
         $this->speeds = $arr;
@@ -569,7 +567,7 @@ class TripCompact extends \Google\Protobuf\Internal\Message
      * @param int[]|string[] $var
      * @return $this
      */
-    public function setPoints($var)
+    public function setPoints(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT64);
         $this->points = $arr;

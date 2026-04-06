@@ -137,7 +137,7 @@ class Maintenance extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -159,7 +159,7 @@ class Maintenance extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -181,7 +181,7 @@ class Maintenance extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setServiceId($var)
+    public function setServiceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->service_id = $var;
@@ -203,7 +203,7 @@ class Maintenance extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOrganizationId($var)
+    public function setOrganizationId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->organization_id = $var;
@@ -217,7 +217,7 @@ class Maintenance extends \Google\Protobuf\Internal\Message
      */
     public function getCreatedBy()
     {
-        return isset($this->created_by) ? $this->created_by : 0;
+        return isset($this->created_by) ? $this->created_by : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCreatedBy()
@@ -235,7 +235,7 @@ class Maintenance extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreatedBy($var)
+    public function setCreatedBy(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->created_by = $var;
@@ -249,7 +249,7 @@ class Maintenance extends \Google\Protobuf\Internal\Message
      */
     public function getUpdatedBy()
     {
-        return isset($this->updated_by) ? $this->updated_by : 0;
+        return isset($this->updated_by) ? $this->updated_by : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasUpdatedBy()
@@ -267,7 +267,7 @@ class Maintenance extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setUpdatedBy($var)
+    public function setUpdatedBy(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->updated_by = $var;
@@ -281,7 +281,7 @@ class Maintenance extends \Google\Protobuf\Internal\Message
      */
     public function getStartedMileage()
     {
-        return isset($this->started_mileage) ? $this->started_mileage : 0;
+        return isset($this->started_mileage) ? $this->started_mileage : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasStartedMileage()
@@ -299,7 +299,7 @@ class Maintenance extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setStartedMileage($var)
+    public function setStartedMileage(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->started_mileage = $var;
@@ -313,7 +313,7 @@ class Maintenance extends \Google\Protobuf\Internal\Message
      */
     public function getStartedUptime()
     {
-        return isset($this->started_uptime) ? $this->started_uptime : 0;
+        return isset($this->started_uptime) ? $this->started_uptime : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasStartedUptime()
@@ -331,7 +331,7 @@ class Maintenance extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setStartedUptime($var)
+    public function setStartedUptime(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->started_uptime = $var;
@@ -363,9 +363,8 @@ class Maintenance extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setStartedAt($var)
+    public function setStartedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->started_at = $var;
 
         return $this;
@@ -395,9 +394,8 @@ class Maintenance extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setExpiresAt($var)
+    public function setExpiresAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->expires_at = $var;
 
         return $this;
@@ -427,7 +425,7 @@ class Maintenance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setUptime($var)
+    public function setUptime(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->uptime = $var;
@@ -459,7 +457,7 @@ class Maintenance extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMileage($var)
+    public function setMileage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->mileage = $var;
@@ -491,9 +489,8 @@ class Maintenance extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setFinishedAt($var)
+    public function setFinishedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->finished_at = $var;
 
         return $this;
@@ -513,7 +510,7 @@ class Maintenance extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCurrentUptime($var)
+    public function setCurrentUptime(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->current_uptime = $var;
@@ -535,7 +532,7 @@ class Maintenance extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCurrentMileage($var)
+    public function setCurrentMileage(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->current_mileage = $var;
@@ -545,7 +542,7 @@ class Maintenance extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.devices.MaintenanceStatus status = 16 [json_name = "status"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Device\Maintenance\MaintenanceStatus}
      */
     public function getStatus()
     {
@@ -554,10 +551,10 @@ class Maintenance extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.devices.MaintenanceStatus status = 16 [json_name = "status"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Device\Maintenance\MaintenanceStatus}
      * @return $this
      */
-    public function setStatus($var)
+    public function setStatus(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Device\Maintenance\MaintenanceStatus::class);
         $this->status = $var;
@@ -589,9 +586,8 @@ class Maintenance extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -621,9 +617,8 @@ class Maintenance extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;
@@ -653,9 +648,8 @@ class Maintenance extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Device\Maintenance\MaintenanceService $var
      * @return $this
      */
-    public function setService($var)
+    public function setService(\Fatehan\Device\Maintenance\MaintenanceService|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Device\Maintenance\MaintenanceService::class);
         $this->service = $var;
 
         return $this;

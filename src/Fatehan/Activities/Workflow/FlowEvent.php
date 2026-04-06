@@ -37,7 +37,7 @@ class FlowEvent extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.activities.FlowEvent.TriggerEvent event = 1 [json_name = "event"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Activities\Workflow\FlowEvent\TriggerEvent}
      */
     public function getEvent()
     {
@@ -46,10 +46,10 @@ class FlowEvent extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.activities.FlowEvent.TriggerEvent event = 1 [json_name = "event"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Activities\Workflow\FlowEvent\TriggerEvent}
      * @return $this
      */
-    public function setEvent($var)
+    public function setEvent(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Activities\Workflow\FlowEvent\TriggerEvent::class);
         $this->event = $var;
@@ -76,9 +76,8 @@ class FlowEvent extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Activities\Workflow\NotificationTrigger $var
      * @return $this
      */
-    public function setEventTrigger($var)
+    public function setEventTrigger(\Fatehan\Activities\Workflow\NotificationTrigger|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Activities\Workflow\NotificationTrigger::class);
         $this->writeOneof(2, $var);
 
         return $this;

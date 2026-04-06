@@ -47,7 +47,7 @@ class DailyTrafficResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Report\DailyTrafficResponse\DailyTraffic[] $var
      * @return $this
      */
-    public function setReports($var)
+    public function setReports(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Report\DailyTrafficResponse\DailyTraffic::class);
         $this->reports = $arr;

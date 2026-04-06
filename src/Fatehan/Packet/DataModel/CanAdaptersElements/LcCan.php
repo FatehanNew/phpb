@@ -97,7 +97,7 @@ class LcCan extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setVehicleRange($var)
+    public function setVehicleRange(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->vehicle_range = $var;
@@ -129,7 +129,7 @@ class LcCan extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTotalCngCounted($var)
+    public function setTotalCngCounted(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->total_cng_counted = $var;
@@ -161,7 +161,7 @@ class LcCan extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMaxRoadSpeed($var)
+    public function setMaxRoadSpeed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->max_road_speed = $var;
@@ -193,7 +193,7 @@ class LcCan extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setExceededRoadSpeed($var)
+    public function setExceededRoadSpeed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->exceeded_road_speed = $var;
@@ -225,9 +225,8 @@ class LcCan extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setRsfSpeedLimitSign($var)
+    public function setRsfSpeedLimitSign(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->rsf_speed_limit_sign = $var;
 
         return $this;
@@ -257,9 +256,8 @@ class LcCan extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setRsfEndOfSpeedLimitSign($var)
+    public function setRsfEndOfSpeedLimitSign(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->rsf_end_of_speed_limit_sign = $var;
 
         return $this;
@@ -289,9 +287,8 @@ class LcCan extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setRsfSpeedExceeded($var)
+    public function setRsfSpeedExceeded(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->rsf_speed_exceeded = $var;
 
         return $this;
@@ -321,9 +318,8 @@ class LcCan extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setRsfTimeSpeedLimitSign($var)
+    public function setRsfTimeSpeedLimitSign(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->rsf_time_speed_limit_sign = $var;
 
         return $this;
@@ -353,9 +349,8 @@ class LcCan extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setRsfWthrSpeedLimitSign($var)
+    public function setRsfWthrSpeedLimitSign(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->rsf_wthr_speed_limit_sign = $var;
 
         return $this;

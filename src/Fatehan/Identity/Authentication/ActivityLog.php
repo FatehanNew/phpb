@@ -127,7 +127,7 @@ class ActivityLog extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -141,7 +141,7 @@ class ActivityLog extends \Google\Protobuf\Internal\Message
      */
     public function getCreatedBy()
     {
-        return isset($this->created_by) ? $this->created_by : 0;
+        return isset($this->created_by) ? $this->created_by : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCreatedBy()
@@ -159,7 +159,7 @@ class ActivityLog extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreatedBy($var)
+    public function setCreatedBy(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->created_by = $var;
@@ -173,7 +173,7 @@ class ActivityLog extends \Google\Protobuf\Internal\Message
      */
     public function getOrganizationId()
     {
-        return isset($this->organization_id) ? $this->organization_id : 0;
+        return isset($this->organization_id) ? $this->organization_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasOrganizationId()
@@ -191,7 +191,7 @@ class ActivityLog extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOrganizationId($var)
+    public function setOrganizationId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->organization_id = $var;
@@ -223,9 +223,9 @@ class ActivityLog extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setLogName($var)
+    public function setLogName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->log_name = $var;
 
         return $this;
@@ -255,9 +255,9 @@ class ActivityLog extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setEvent($var)
+    public function setEvent(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->event = $var;
 
         return $this;
@@ -287,9 +287,9 @@ class ActivityLog extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setBatchUuid($var)
+    public function setBatchUuid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->batch_uuid = $var;
 
         return $this;
@@ -319,9 +319,9 @@ class ActivityLog extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDescription($var)
+    public function setDescription(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->description = $var;
 
         return $this;
@@ -351,9 +351,9 @@ class ActivityLog extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setObjectType($var)
+    public function setObjectType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->object_type = $var;
 
         return $this;
@@ -365,7 +365,7 @@ class ActivityLog extends \Google\Protobuf\Internal\Message
      */
     public function getObjectId()
     {
-        return isset($this->object_id) ? $this->object_id : 0;
+        return isset($this->object_id) ? $this->object_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasObjectId()
@@ -383,7 +383,7 @@ class ActivityLog extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setObjectId($var)
+    public function setObjectId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->object_id = $var;
@@ -415,9 +415,9 @@ class ActivityLog extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCauserType($var)
+    public function setCauserType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->causer_type = $var;
 
         return $this;
@@ -429,7 +429,7 @@ class ActivityLog extends \Google\Protobuf\Internal\Message
      */
     public function getCauserId()
     {
-        return isset($this->causer_id) ? $this->causer_id : 0;
+        return isset($this->causer_id) ? $this->causer_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCauserId()
@@ -447,7 +447,7 @@ class ActivityLog extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCauserId($var)
+    public function setCauserId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->causer_id = $var;
@@ -479,9 +479,9 @@ class ActivityLog extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDataHash($var)
+    public function setDataHash(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->data_hash = $var;
 
         return $this;
@@ -511,9 +511,9 @@ class ActivityLog extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setIp($var)
+    public function setIp(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->ip = $var;
 
         return $this;
@@ -543,9 +543,9 @@ class ActivityLog extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUserAgent($var)
+    public function setUserAgent(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->user_agent = $var;
 
         return $this;
@@ -575,9 +575,9 @@ class ActivityLog extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setProperties($var)
+    public function setProperties(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->properties = $var;
 
         return $this;
@@ -607,9 +607,8 @@ class ActivityLog extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -639,9 +638,8 @@ class ActivityLog extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;

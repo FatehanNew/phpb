@@ -52,7 +52,7 @@ class Stream extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDataLength($var)
+    public function setDataLength(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->data_length = $var;
@@ -74,9 +74,9 @@ class Stream extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPayload($var)
+    public function setPayload(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->payload = $var;
 
         return $this;

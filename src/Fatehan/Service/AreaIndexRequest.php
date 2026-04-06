@@ -77,9 +77,8 @@ class AreaIndexRequest extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setDisablePagination($var)
+    public function setDisablePagination(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->disable_pagination = $var;
 
         return $this;
@@ -109,7 +108,7 @@ class AreaIndexRequest extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPage($var)
+    public function setPage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->page = $var;
@@ -141,7 +140,7 @@ class AreaIndexRequest extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPageSize($var)
+    public function setPageSize(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->page_size = $var;
@@ -163,7 +162,7 @@ class AreaIndexRequest extends \Google\Protobuf\Internal\Message
      * @param int[]|string[] $var
      * @return $this
      */
-    public function setOrganizationIds($var)
+    public function setOrganizationIds(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT64);
         $this->organization_ids = $arr;
@@ -185,7 +184,7 @@ class AreaIndexRequest extends \Google\Protobuf\Internal\Message
      * @param int[]|string[] $var
      * @return $this
      */
-    public function setAreaIds($var)
+    public function setAreaIds(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT64);
         $this->area_ids = $arr;
@@ -195,7 +194,7 @@ class AreaIndexRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.areas.AreaType type = 6 [json_name = "type"];</code>
-     * @return RepeatedField<int>
+     * @return RepeatedField<int> one of the values in {@see \Fatehan\Area\AreaType}
      */
     public function getType()
     {
@@ -204,10 +203,10 @@ class AreaIndexRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.areas.AreaType type = 6 [json_name = "type"];</code>
-     * @param int[] $var
+     * @param int[] $var one of the values in {@see \Fatehan\Area\AreaType}
      * @return $this
      */
-    public function setType($var)
+    public function setType(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Fatehan\Area\AreaType::class);
         $this->type = $arr;
@@ -239,9 +238,9 @@ class AreaIndexRequest extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSearch($var)
+    public function setSearch(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->search = $var;
 
         return $this;

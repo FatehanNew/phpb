@@ -77,7 +77,7 @@ class Item extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDuration($var)
+    public function setDuration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->duration = $var;
@@ -99,7 +99,7 @@ class Item extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMovingDuration($var)
+    public function setMovingDuration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->moving_duration = $var;
@@ -121,7 +121,7 @@ class Item extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIdlingDuration($var)
+    public function setIdlingDuration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->idling_duration = $var;
@@ -143,7 +143,7 @@ class Item extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setParkingDuration($var)
+    public function setParkingDuration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->parking_duration = $var;
@@ -165,7 +165,7 @@ class Item extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTowingDuration($var)
+    public function setTowingDuration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->towing_duration = $var;
@@ -179,7 +179,7 @@ class Item extends \Google\Protobuf\Internal\Message
      */
     public function getTotalMileageAtStart()
     {
-        return isset($this->total_mileage_at_start) ? $this->total_mileage_at_start : 0;
+        return isset($this->total_mileage_at_start) ? $this->total_mileage_at_start : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasTotalMileageAtStart()
@@ -197,7 +197,7 @@ class Item extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTotalMileageAtStart($var)
+    public function setTotalMileageAtStart(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->total_mileage_at_start = $var;
@@ -211,7 +211,7 @@ class Item extends \Google\Protobuf\Internal\Message
      */
     public function getTotalMileageAtFinish()
     {
-        return isset($this->total_mileage_at_finish) ? $this->total_mileage_at_finish : 0;
+        return isset($this->total_mileage_at_finish) ? $this->total_mileage_at_finish : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasTotalMileageAtFinish()
@@ -229,7 +229,7 @@ class Item extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTotalMileageAtFinish($var)
+    public function setTotalMileageAtFinish(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->total_mileage_at_finish = $var;

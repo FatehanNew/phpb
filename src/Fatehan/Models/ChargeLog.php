@@ -122,7 +122,7 @@ class ChargeLog extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -136,7 +136,7 @@ class ChargeLog extends \Google\Protobuf\Internal\Message
      */
     public function getUserId()
     {
-        return isset($this->user_id) ? $this->user_id : 0;
+        return isset($this->user_id) ? $this->user_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasUserId()
@@ -154,7 +154,7 @@ class ChargeLog extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->user_id = $var;
@@ -176,7 +176,7 @@ class ChargeLog extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -198,7 +198,7 @@ class ChargeLog extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setImei($var)
+    public function setImei(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->imei = $var;
@@ -212,7 +212,7 @@ class ChargeLog extends \Google\Protobuf\Internal\Message
      */
     public function getObjectId()
     {
-        return isset($this->object_id) ? $this->object_id : 0;
+        return isset($this->object_id) ? $this->object_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasObjectId()
@@ -230,7 +230,7 @@ class ChargeLog extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setObjectId($var)
+    public function setObjectId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->object_id = $var;
@@ -262,9 +262,9 @@ class ChargeLog extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setObjectType($var)
+    public function setObjectType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->object_type = $var;
 
         return $this;
@@ -272,7 +272,7 @@ class ChargeLog extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.models.ChargeLog.Type type = 7 [json_name = "type"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Models\ChargeLog\Type}
      */
     public function getType()
     {
@@ -281,10 +281,10 @@ class ChargeLog extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.models.ChargeLog.Type type = 7 [json_name = "type"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Models\ChargeLog\Type}
      * @return $this
      */
-    public function setType($var)
+    public function setType(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Models\ChargeLog\Type::class);
         $this->type = $var;
@@ -316,9 +316,9 @@ class ChargeLog extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDescription($var)
+    public function setDescription(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->description = $var;
 
         return $this;
@@ -348,9 +348,9 @@ class ChargeLog extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setIp($var)
+    public function setIp(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->ip = $var;
 
         return $this;
@@ -380,9 +380,9 @@ class ChargeLog extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUserAgent($var)
+    public function setUserAgent(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->user_agent = $var;
 
         return $this;
@@ -412,9 +412,8 @@ class ChargeLog extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setPreviousExpiration($var)
+    public function setPreviousExpiration(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->previous_expiration = $var;
 
         return $this;
@@ -444,9 +443,8 @@ class ChargeLog extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setNextExpiration($var)
+    public function setNextExpiration(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->next_expiration = $var;
 
         return $this;
@@ -466,9 +464,8 @@ class ChargeLog extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsUnlimited($var)
+    public function setIsUnlimited(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_unlimited = $var;
 
         return $this;
@@ -488,9 +485,8 @@ class ChargeLog extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setRefund($var)
+    public function setRefund(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->refund = $var;
 
         return $this;
@@ -520,9 +516,8 @@ class ChargeLog extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -552,9 +547,8 @@ class ChargeLog extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;

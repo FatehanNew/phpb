@@ -117,7 +117,7 @@ class OrderProduct extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -131,7 +131,7 @@ class OrderProduct extends \Google\Protobuf\Internal\Message
      */
     public function getOrderId()
     {
-        return isset($this->order_id) ? $this->order_id : 0;
+        return isset($this->order_id) ? $this->order_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasOrderId()
@@ -149,7 +149,7 @@ class OrderProduct extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOrderId($var)
+    public function setOrderId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->order_id = $var;
@@ -163,7 +163,7 @@ class OrderProduct extends \Google\Protobuf\Internal\Message
      */
     public function getProductId()
     {
-        return isset($this->product_id) ? $this->product_id : 0;
+        return isset($this->product_id) ? $this->product_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasProductId()
@@ -181,7 +181,7 @@ class OrderProduct extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setProductId($var)
+    public function setProductId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->product_id = $var;
@@ -203,9 +203,9 @@ class OrderProduct extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setProductType($var)
+    public function setProductType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->product_type = $var;
 
         return $this;
@@ -225,9 +225,9 @@ class OrderProduct extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setProductName($var)
+    public function setProductName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->product_name = $var;
 
         return $this;
@@ -247,9 +247,9 @@ class OrderProduct extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setProductDetail($var)
+    public function setProductDetail(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->product_detail = $var;
 
         return $this;
@@ -261,7 +261,7 @@ class OrderProduct extends \Google\Protobuf\Internal\Message
      */
     public function getCurrencyId()
     {
-        return isset($this->currency_id) ? $this->currency_id : 0;
+        return isset($this->currency_id) ? $this->currency_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCurrencyId()
@@ -279,7 +279,7 @@ class OrderProduct extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCurrencyId($var)
+    public function setCurrencyId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->currency_id = $var;
@@ -311,7 +311,7 @@ class OrderProduct extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDiscountPercent($var)
+    public function setDiscountPercent(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->discount_percent = $var;
@@ -333,9 +333,8 @@ class OrderProduct extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setTaxPrice($var)
+    public function setTaxPrice(float $var)
     {
-        GPBUtil::checkDouble($var);
         $this->tax_price = $var;
 
         return $this;
@@ -355,9 +354,8 @@ class OrderProduct extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setDiscount($var)
+    public function setDiscount(float $var)
     {
-        GPBUtil::checkDouble($var);
         $this->discount = $var;
 
         return $this;
@@ -377,9 +375,8 @@ class OrderProduct extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setPrice($var)
+    public function setPrice(float $var)
     {
-        GPBUtil::checkDouble($var);
         $this->price = $var;
 
         return $this;
@@ -409,7 +406,7 @@ class OrderProduct extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMonths($var)
+    public function setMonths(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->months = $var;
@@ -441,9 +438,8 @@ class OrderProduct extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -473,9 +469,8 @@ class OrderProduct extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;
@@ -505,9 +500,8 @@ class OrderProduct extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Financial\Product $var
      * @return $this
      */
-    public function setProduct($var)
+    public function setProduct(\Fatehan\Financial\Product|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Financial\Product::class);
         $this->product = $var;
 
         return $this;

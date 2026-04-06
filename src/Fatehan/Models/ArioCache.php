@@ -79,9 +79,8 @@ class ArioCache extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setTowing($var)
+    public function setTowing(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->towing = $var;
 
         return $this;
@@ -111,9 +110,8 @@ class ArioCache extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setDoor($var)
+    public function setDoor(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->door = $var;
 
         return $this;
@@ -143,9 +141,8 @@ class ArioCache extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setUnplug($var)
+    public function setUnplug(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->unplug = $var;
 
         return $this;
@@ -175,9 +172,8 @@ class ArioCache extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIgnition($var)
+    public function setIgnition(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->ignition = $var;
 
         return $this;
@@ -207,9 +203,8 @@ class ArioCache extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setMovement($var)
+    public function setMovement(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->movement = $var;
 
         return $this;

@@ -102,7 +102,7 @@ class ObdOemElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTotalMileage($var)
+    public function setTotalMileage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->total_mileage = $var;
@@ -134,7 +134,7 @@ class ObdOemElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelLevel($var)
+    public function setFuelLevel(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_level = $var;
@@ -166,7 +166,7 @@ class ObdOemElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setUntilService($var)
+    public function setUntilService(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->until_service = $var;
@@ -198,9 +198,8 @@ class ObdOemElements extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setBatteryChargeState($var)
+    public function setBatteryChargeState(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->battery_charge_state = $var;
 
         return $this;
@@ -230,7 +229,7 @@ class ObdOemElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBatteryChargeLevel($var)
+    public function setBatteryChargeLevel(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->battery_charge_level = $var;
@@ -262,7 +261,7 @@ class ObdOemElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBatteryPowerConsumption($var)
+    public function setBatteryPowerConsumption(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->battery_power_consumption = $var;
@@ -294,7 +293,7 @@ class ObdOemElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRemainingDistance($var)
+    public function setRemainingDistance(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->remaining_distance = $var;
@@ -326,7 +325,7 @@ class ObdOemElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBatteryStateOfHealth($var)
+    public function setBatteryStateOfHealth(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->battery_state_of_health = $var;
@@ -358,7 +357,7 @@ class ObdOemElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBatteryTemperature($var)
+    public function setBatteryTemperature(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->battery_temperature = $var;
@@ -390,7 +389,7 @@ class ObdOemElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDistanceUntilService($var)
+    public function setDistanceUntilService(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->distance_until_service = $var;

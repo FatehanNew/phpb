@@ -50,7 +50,7 @@ class FlowModule extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Activities\Workflow\FlowEvent[] $var
      * @return $this
      */
-    public function setEvents($var)
+    public function setEvents(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Activities\Workflow\FlowEvent::class);
         $this->events = $arr;
@@ -77,9 +77,8 @@ class FlowModule extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Activities\Workflow\AreaModule $var
      * @return $this
      */
-    public function setAreaModule($var)
+    public function setAreaModule(\Fatehan\Activities\Workflow\AreaModule|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Activities\Workflow\AreaModule::class);
         $this->writeOneof(2, $var);
 
         return $this;
@@ -104,9 +103,8 @@ class FlowModule extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Activities\Workflow\DeviceModule $var
      * @return $this
      */
-    public function setDeviceModule($var)
+    public function setDeviceModule(\Fatehan\Activities\Workflow\DeviceModule|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Activities\Workflow\DeviceModule::class);
         $this->writeOneof(3, $var);
 
         return $this;

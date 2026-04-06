@@ -77,9 +77,8 @@ class RouteStopRequest extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setStartedAt($var)
+    public function setStartedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->started_at = $var;
 
         return $this;
@@ -109,9 +108,8 @@ class RouteStopRequest extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setFinishedAt($var)
+    public function setFinishedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->finished_at = $var;
 
         return $this;
@@ -119,7 +117,7 @@ class RouteStopRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.reports.Source source = 3 [json_name = "source"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Report\Source}
      */
     public function getSource()
     {
@@ -128,10 +126,10 @@ class RouteStopRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.reports.Source source = 3 [json_name = "source"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Report\Source}
      * @return $this
      */
-    public function setSource($var)
+    public function setSource(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Report\Source::class);
         $this->source = $var;
@@ -141,7 +139,7 @@ class RouteStopRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.reports.StopCalculateIo stop_type = 4 [json_name = "stop_type"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Report\StopCalculateIo}
      */
     public function getStopType()
     {
@@ -150,10 +148,10 @@ class RouteStopRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.reports.StopCalculateIo stop_type = 4 [json_name = "stop_type"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Report\StopCalculateIo}
      * @return $this
      */
-    public function setStopType($var)
+    public function setStopType(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Report\StopCalculateIo::class);
         $this->stop_type = $var;
@@ -175,7 +173,7 @@ class RouteStopRequest extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;

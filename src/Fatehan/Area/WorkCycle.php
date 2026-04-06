@@ -89,7 +89,7 @@ class WorkCycle extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -111,9 +111,9 @@ class WorkCycle extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDeviceName($var)
+    public function setDeviceName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->device_name = $var;
 
         return $this;
@@ -143,9 +143,8 @@ class WorkCycle extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Area\WorkCycle\Event $var
      * @return $this
      */
-    public function setStart($var)
+    public function setStart(\Fatehan\Area\WorkCycle\Event|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Area\WorkCycle\Event::class);
         $this->start = $var;
 
         return $this;
@@ -175,9 +174,8 @@ class WorkCycle extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Area\WorkCycle\Event $var
      * @return $this
      */
-    public function setFinish($var)
+    public function setFinish(\Fatehan\Area\WorkCycle\Event|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Area\WorkCycle\Event::class);
         $this->finish = $var;
 
         return $this;
@@ -207,9 +205,8 @@ class WorkCycle extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Area\WorkCycle\Event $var
      * @return $this
      */
-    public function setArea($var)
+    public function setArea(\Fatehan\Area\WorkCycle\Event|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Area\WorkCycle\Event::class);
         $this->area = $var;
 
         return $this;
@@ -239,9 +236,8 @@ class WorkCycle extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setStartedAt($var)
+    public function setStartedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->started_at = $var;
 
         return $this;
@@ -271,9 +267,8 @@ class WorkCycle extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setFinishedAt($var)
+    public function setFinishedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->finished_at = $var;
 
         return $this;
@@ -293,7 +288,7 @@ class WorkCycle extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMileage($var)
+    public function setMileage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->mileage = $var;
@@ -315,7 +310,7 @@ class WorkCycle extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDuration($var)
+    public function setDuration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->duration = $var;

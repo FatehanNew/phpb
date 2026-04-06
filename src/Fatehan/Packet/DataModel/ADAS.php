@@ -77,7 +77,7 @@ class ADAS extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFrontVehicleSpeed($var)
+    public function setFrontVehicleSpeed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->front_vehicle_speed = $var;
@@ -109,7 +109,7 @@ class ADAS extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFrontVehiclePedestrianDistance($var)
+    public function setFrontVehiclePedestrianDistance(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->front_vehicle_pedestrian_distance = $var;
@@ -119,7 +119,7 @@ class ADAS extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.ADAS.DeviationType deviation = 3 [json_name = "deviation"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\ADAS\DeviationType}
      */
     public function getDeviation()
     {
@@ -138,10 +138,10 @@ class ADAS extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.ADAS.DeviationType deviation = 3 [json_name = "deviation"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\ADAS\DeviationType}
      * @return $this
      */
-    public function setDeviation($var)
+    public function setDeviation(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\ADAS\DeviationType::class);
         $this->deviation = $var;
@@ -151,7 +151,7 @@ class ADAS extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.ADAS.RoadSignType types_of_road_sign_recognition = 4 [json_name = "types_of_road_sign_recognition"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\ADAS\RoadSignType}
      */
     public function getTypesOfRoadSignRecognition()
     {
@@ -170,10 +170,10 @@ class ADAS extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .com.fatehan.packets.ADAS.RoadSignType types_of_road_sign_recognition = 4 [json_name = "types_of_road_sign_recognition"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\ADAS\RoadSignType}
      * @return $this
      */
-    public function setTypesOfRoadSignRecognition($var)
+    public function setTypesOfRoadSignRecognition(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\ADAS\RoadSignType::class);
         $this->types_of_road_sign_recognition = $var;
@@ -205,7 +205,7 @@ class ADAS extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRoadSignRecognitionData($var)
+    public function setRoadSignRecognitionData(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->road_sign_recognition_data = $var;

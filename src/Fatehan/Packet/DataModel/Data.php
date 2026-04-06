@@ -97,7 +97,7 @@ class Data extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -129,9 +129,8 @@ class Data extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setGpsTime($var)
+    public function setGpsTime(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->gps_time = $var;
 
         return $this;
@@ -151,9 +150,8 @@ class Data extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setLatitude($var)
+    public function setLatitude(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->latitude = $var;
 
         return $this;
@@ -173,9 +171,8 @@ class Data extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setLongitude($var)
+    public function setLongitude(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->longitude = $var;
 
         return $this;
@@ -195,7 +192,7 @@ class Data extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAltitude($var)
+    public function setAltitude(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->altitude = $var;
@@ -217,7 +214,7 @@ class Data extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAngle($var)
+    public function setAngle(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->angle = $var;
@@ -239,7 +236,7 @@ class Data extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSpeed($var)
+    public function setSpeed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->speed = $var;
@@ -271,7 +268,7 @@ class Data extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSatellite($var)
+    public function setSatellite(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->satellite = $var;
@@ -303,9 +300,8 @@ class Data extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIgnition($var)
+    public function setIgnition(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->ignition = $var;
 
         return $this;
@@ -317,7 +313,7 @@ class Data extends \Google\Protobuf\Internal\Message
      */
     public function getMileage()
     {
-        return isset($this->mileage) ? $this->mileage : 0;
+        return isset($this->mileage) ? $this->mileage : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasMileage()
@@ -335,7 +331,7 @@ class Data extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setMileage($var)
+    public function setMileage(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->mileage = $var;
@@ -367,9 +363,8 @@ class Data extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\Compact $var
      * @return $this
      */
-    public function setCompact($var)
+    public function setCompact(\Fatehan\Packet\DataModel\Compact|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\Compact::class);
         $this->compact = $var;
 
         return $this;

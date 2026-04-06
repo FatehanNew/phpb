@@ -97,9 +97,8 @@ class DeviceRepo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Device\Device $var
      * @return $this
      */
-    public function setDevice($var)
+    public function setDevice(\Fatehan\Device\Device|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Device\Device::class);
         $this->device = $var;
 
         return $this;
@@ -129,9 +128,8 @@ class DeviceRepo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Device\DeviceIcon $var
      * @return $this
      */
-    public function setIcon($var)
+    public function setIcon(\Fatehan\Device\DeviceIcon|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Device\DeviceIcon::class);
         $this->icon = $var;
 
         return $this;
@@ -161,9 +159,8 @@ class DeviceRepo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Device\Tracker $var
      * @return $this
      */
-    public function setTracker($var)
+    public function setTracker(\Fatehan\Device\Tracker|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Device\Tracker::class);
         $this->tracker = $var;
 
         return $this;
@@ -193,9 +190,8 @@ class DeviceRepo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Service\Repositories\CarRepo $var
      * @return $this
      */
-    public function setCarRepo($var)
+    public function setCarRepo(\Fatehan\Service\Repositories\CarRepo|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Service\Repositories\CarRepo::class);
         $this->car_repo = $var;
 
         return $this;
@@ -225,9 +221,8 @@ class DeviceRepo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\DeviceStatus $var
      * @return $this
      */
-    public function setDeviceStatus($var)
+    public function setDeviceStatus(\Fatehan\Packet\DataModel\DeviceStatus|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\DeviceStatus::class);
         $this->device_status = $var;
 
         return $this;
@@ -247,7 +242,7 @@ class DeviceRepo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Device\SystemIo[] $var
      * @return $this
      */
-    public function setUserDeviceIo($var)
+    public function setUserDeviceIo(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Device\SystemIo::class);
         $this->user_device_io = $arr;
@@ -279,9 +274,8 @@ class DeviceRepo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Service\Repositories\UserRepo $var
      * @return $this
      */
-    public function setOwnerRepo($var)
+    public function setOwnerRepo(\Fatehan\Service\Repositories\UserRepo|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Service\Repositories\UserRepo::class);
         $this->owner_repo = $var;
 
         return $this;
@@ -311,9 +305,8 @@ class DeviceRepo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Identity\Organization $var
      * @return $this
      */
-    public function setOrganization($var)
+    public function setOrganization(\Fatehan\Identity\Organization|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Identity\Organization::class);
         $this->organization = $var;
 
         return $this;
@@ -333,9 +326,8 @@ class DeviceRepo extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSubscribed($var)
+    public function setSubscribed(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->subscribed = $var;
 
         return $this;

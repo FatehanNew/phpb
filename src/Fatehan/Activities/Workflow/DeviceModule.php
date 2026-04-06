@@ -114,7 +114,7 @@ class DeviceModule extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.activities.AreaEvent starts = 1 [json_name = "starts"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Activities\Workflow\AreaEvent}
      */
     public function getStarts()
     {
@@ -123,10 +123,10 @@ class DeviceModule extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.activities.AreaEvent starts = 1 [json_name = "starts"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Activities\Workflow\AreaEvent}
      * @return $this
      */
-    public function setStarts($var)
+    public function setStarts(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Activities\Workflow\AreaEvent::class);
         $this->starts = $var;
@@ -136,7 +136,7 @@ class DeviceModule extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.activities.AreaEvent finishes = 2 [json_name = "finishes"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Activities\Workflow\AreaEvent}
      */
     public function getFinishes()
     {
@@ -145,10 +145,10 @@ class DeviceModule extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.activities.AreaEvent finishes = 2 [json_name = "finishes"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Activities\Workflow\AreaEvent}
      * @return $this
      */
-    public function setFinishes($var)
+    public function setFinishes(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Activities\Workflow\AreaEvent::class);
         $this->finishes = $var;
@@ -170,7 +170,7 @@ class DeviceModule extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -192,7 +192,7 @@ class DeviceModule extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRadius($var)
+    public function setRadius(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->radius = $var;
@@ -218,9 +218,8 @@ class DeviceModule extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setRunning($var)
+    public function setRunning(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->running = $var;
 
         return $this;
@@ -250,9 +249,8 @@ class DeviceModule extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setStartedAt($var)
+    public function setStartedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->started_at = $var;
 
         return $this;
@@ -282,9 +280,8 @@ class DeviceModule extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setFinishedAt($var)
+    public function setFinishedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->finished_at = $var;
 
         return $this;
@@ -296,7 +293,7 @@ class DeviceModule extends \Google\Protobuf\Internal\Message
      */
     public function getTotalMileageAtStart()
     {
-        return isset($this->total_mileage_at_start) ? $this->total_mileage_at_start : 0;
+        return isset($this->total_mileage_at_start) ? $this->total_mileage_at_start : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasTotalMileageAtStart()
@@ -314,7 +311,7 @@ class DeviceModule extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTotalMileageAtStart($var)
+    public function setTotalMileageAtStart(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->total_mileage_at_start = $var;
@@ -328,7 +325,7 @@ class DeviceModule extends \Google\Protobuf\Internal\Message
      */
     public function getTotalMileageAtFinish()
     {
-        return isset($this->total_mileage_at_finish) ? $this->total_mileage_at_finish : 0;
+        return isset($this->total_mileage_at_finish) ? $this->total_mileage_at_finish : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasTotalMileageAtFinish()
@@ -346,7 +343,7 @@ class DeviceModule extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTotalMileageAtFinish($var)
+    public function setTotalMileageAtFinish(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->total_mileage_at_finish = $var;
@@ -368,7 +365,7 @@ class DeviceModule extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMaxSpeed($var)
+    public function setMaxSpeed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->max_speed = $var;
@@ -390,7 +387,7 @@ class DeviceModule extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTotalSpeed($var)
+    public function setTotalSpeed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->total_speed = $var;
@@ -412,7 +409,7 @@ class DeviceModule extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCountSpeed($var)
+    public function setCountSpeed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->count_speed = $var;
@@ -434,7 +431,7 @@ class DeviceModule extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDuration($var)
+    public function setDuration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->duration = $var;
@@ -470,7 +467,7 @@ class DeviceModule extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMinimumAcceptedDuration($var)
+    public function setMinimumAcceptedDuration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->minimum_accepted_duration = $var;
@@ -506,9 +503,8 @@ class DeviceModule extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Device\Device $var
      * @return $this
      */
-    public function setDevice($var)
+    public function setDevice(\Fatehan\Device\Device|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Device\Device::class);
         $this->device = $var;
 
         return $this;

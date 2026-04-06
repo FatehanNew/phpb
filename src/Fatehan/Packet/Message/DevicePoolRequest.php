@@ -54,7 +54,7 @@ class DevicePoolRequest extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -86,9 +86,8 @@ class DevicePoolRequest extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setRequested($var)
+    public function setRequested(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->requested = $var;
 
         return $this;
@@ -113,9 +112,8 @@ class DevicePoolRequest extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\Message\DevicePoolRequestRefetch $var
      * @return $this
      */
-    public function setRequestRefetch($var)
+    public function setRequestRefetch(\Fatehan\Packet\Message\DevicePoolRequestRefetch|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\Message\DevicePoolRequestRefetch::class);
         $this->writeOneof(3, $var);
 
         return $this;

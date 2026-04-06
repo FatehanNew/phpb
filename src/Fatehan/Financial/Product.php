@@ -127,7 +127,7 @@ class Product extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -141,7 +141,7 @@ class Product extends \Google\Protobuf\Internal\Message
      */
     public function getOrganizationId()
     {
-        return isset($this->organization_id) ? $this->organization_id : 0;
+        return isset($this->organization_id) ? $this->organization_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasOrganizationId()
@@ -159,7 +159,7 @@ class Product extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOrganizationId($var)
+    public function setOrganizationId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->organization_id = $var;
@@ -173,7 +173,7 @@ class Product extends \Google\Protobuf\Internal\Message
      */
     public function getProductTypeId()
     {
-        return isset($this->product_type_id) ? $this->product_type_id : 0;
+        return isset($this->product_type_id) ? $this->product_type_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasProductTypeId()
@@ -191,7 +191,7 @@ class Product extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setProductTypeId($var)
+    public function setProductTypeId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->product_type_id = $var;
@@ -205,7 +205,7 @@ class Product extends \Google\Protobuf\Internal\Message
      */
     public function getCreatedBy()
     {
-        return isset($this->created_by) ? $this->created_by : 0;
+        return isset($this->created_by) ? $this->created_by : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCreatedBy()
@@ -223,7 +223,7 @@ class Product extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreatedBy($var)
+    public function setCreatedBy(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->created_by = $var;
@@ -237,7 +237,7 @@ class Product extends \Google\Protobuf\Internal\Message
      */
     public function getUpdatedBy()
     {
-        return isset($this->updated_by) ? $this->updated_by : 0;
+        return isset($this->updated_by) ? $this->updated_by : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasUpdatedBy()
@@ -255,7 +255,7 @@ class Product extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setUpdatedBy($var)
+    public function setUpdatedBy(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->updated_by = $var;
@@ -277,9 +277,9 @@ class Product extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -309,9 +309,9 @@ class Product extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDisplayName($var)
+    public function setDisplayName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->display_name = $var;
 
         return $this;
@@ -341,9 +341,9 @@ class Product extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDescription($var)
+    public function setDescription(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->description = $var;
 
         return $this;
@@ -373,9 +373,9 @@ class Product extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPicture($var)
+    public function setPicture(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->picture = $var;
 
         return $this;
@@ -405,9 +405,9 @@ class Product extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSlug($var)
+    public function setSlug(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->slug = $var;
 
         return $this;
@@ -437,9 +437,9 @@ class Product extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUuid($var)
+    public function setUuid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->uuid = $var;
 
         return $this;
@@ -469,9 +469,9 @@ class Product extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setObjectType($var)
+    public function setObjectType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->object_type = $var;
 
         return $this;
@@ -483,7 +483,7 @@ class Product extends \Google\Protobuf\Internal\Message
      */
     public function getObjectId()
     {
-        return isset($this->object_id) ? $this->object_id : 0;
+        return isset($this->object_id) ? $this->object_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasObjectId()
@@ -501,7 +501,7 @@ class Product extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setObjectId($var)
+    public function setObjectId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->object_id = $var;
@@ -523,7 +523,7 @@ class Product extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCurrencyId($var)
+    public function setCurrencyId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->currency_id = $var;
@@ -545,9 +545,8 @@ class Product extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setPrice($var)
+    public function setPrice(float $var)
     {
-        GPBUtil::checkDouble($var);
         $this->price = $var;
 
         return $this;
@@ -577,9 +576,8 @@ class Product extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -609,9 +607,8 @@ class Product extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;

@@ -67,9 +67,9 @@ class ConfigRequest extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDomain($var)
+    public function setDomain(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->domain = $var;
 
         return $this;
@@ -81,7 +81,7 @@ class ConfigRequest extends \Google\Protobuf\Internal\Message
      */
     public function getPartnerId()
     {
-        return isset($this->partner_id) ? $this->partner_id : 0;
+        return isset($this->partner_id) ? $this->partner_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasPartnerId()
@@ -99,7 +99,7 @@ class ConfigRequest extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setPartnerId($var)
+    public function setPartnerId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->partner_id = $var;
@@ -121,9 +121,8 @@ class ConfigRequest extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIncludeSecurityConfig($var)
+    public function setIncludeSecurityConfig(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->include_security_config = $var;
 
         return $this;

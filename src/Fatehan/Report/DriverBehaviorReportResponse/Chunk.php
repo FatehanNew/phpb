@@ -162,7 +162,7 @@ class Chunk extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -184,9 +184,9 @@ class Chunk extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setOrganizationName($var)
+    public function setOrganizationName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->organization_name = $var;
 
         return $this;
@@ -216,9 +216,9 @@ class Chunk extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCarName($var)
+    public function setCarName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->car_name = $var;
 
         return $this;
@@ -248,9 +248,9 @@ class Chunk extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDriverName($var)
+    public function setDriverName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->driver_name = $var;
 
         return $this;
@@ -270,7 +270,7 @@ class Chunk extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setMileage($var)
+    public function setMileage(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->mileage = $var;
@@ -292,7 +292,7 @@ class Chunk extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setIdling($var)
+    public function setIdling(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->idling = $var;
@@ -314,7 +314,7 @@ class Chunk extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setParking($var)
+    public function setParking(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->parking = $var;
@@ -336,7 +336,7 @@ class Chunk extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setMoving($var)
+    public function setMoving(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->moving = $var;
@@ -358,7 +358,7 @@ class Chunk extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTowing($var)
+    public function setTowing(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->towing = $var;
@@ -380,7 +380,7 @@ class Chunk extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setAvgSpeed($var)
+    public function setAvgSpeed(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->avg_speed = $var;
@@ -402,7 +402,7 @@ class Chunk extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTotalSpeed($var)
+    public function setTotalSpeed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->total_speed = $var;
@@ -424,7 +424,7 @@ class Chunk extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSumSpeed($var)
+    public function setSumSpeed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->sum_speed = $var;
@@ -446,7 +446,7 @@ class Chunk extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setMaxSpeed($var)
+    public function setMaxSpeed(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->max_speed = $var;
@@ -460,7 +460,7 @@ class Chunk extends \Google\Protobuf\Internal\Message
      */
     public function getIButton()
     {
-        return isset($this->i_button) ? $this->i_button : 0;
+        return isset($this->i_button) ? $this->i_button : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasIButton()
@@ -478,7 +478,7 @@ class Chunk extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setIButton($var)
+    public function setIButton(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->i_button = $var;
@@ -510,7 +510,7 @@ class Chunk extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIgnition($var)
+    public function setIgnition(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ignition = $var;
@@ -542,7 +542,7 @@ class Chunk extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDoorOpened($var)
+    public function setDoorOpened(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->door_opened = $var;
@@ -574,7 +574,7 @@ class Chunk extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelUsed($var)
+    public function setFuelUsed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_used = $var;
@@ -596,7 +596,7 @@ class Chunk extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setCrashes($var)
+    public function setCrashes(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::UINT32, \Google\Protobuf\Internal\GPBType::UINT32);
         $this->crashes = $arr;
@@ -618,7 +618,7 @@ class Chunk extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setSpeeds($var)
+    public function setSpeeds(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::UINT32, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Trip\TripDurationStat::class);
         $this->speeds = $arr;
@@ -640,7 +640,7 @@ class Chunk extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setGreenDriving($var)
+    public function setGreenDriving(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::UINT32, \Google\Protobuf\Internal\GPBType::UINT32);
         $this->green_driving = $arr;
@@ -662,7 +662,7 @@ class Chunk extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setTemperature($var)
+    public function setTemperature(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::UINT32, \Google\Protobuf\Internal\GPBType::SINT32);
         $this->temperature = $arr;
@@ -684,7 +684,7 @@ class Chunk extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setHumidity($var)
+    public function setHumidity(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::UINT32, \Google\Protobuf\Internal\GPBType::UINT32);
         $this->humidity = $arr;
@@ -716,9 +716,8 @@ class Chunk extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setStartedAt($var)
+    public function setStartedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->started_at = $var;
 
         return $this;
@@ -748,9 +747,8 @@ class Chunk extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setFinishedAt($var)
+    public function setFinishedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->finished_at = $var;
 
         return $this;

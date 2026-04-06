@@ -52,9 +52,9 @@ class Token extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFcm($var)
+    public function setFcm(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->fcm = $var;
 
         return $this;
@@ -84,9 +84,8 @@ class Token extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setExpiresAt($var)
+    public function setExpiresAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->expires_at = $var;
 
         return $this;

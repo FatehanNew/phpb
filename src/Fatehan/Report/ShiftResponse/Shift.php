@@ -207,7 +207,7 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -229,7 +229,7 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -251,7 +251,7 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setShiftId($var)
+    public function setShiftId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->shift_id = $var;
@@ -273,7 +273,7 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMileage($var)
+    public function setMileage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->mileage = $var;
@@ -295,7 +295,7 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIdling($var)
+    public function setIdling(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->idling = $var;
@@ -317,7 +317,7 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setParking($var)
+    public function setParking(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->parking = $var;
@@ -339,7 +339,7 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMoving($var)
+    public function setMoving(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->moving = $var;
@@ -361,7 +361,7 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTowing($var)
+    public function setTowing(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->towing = $var;
@@ -383,7 +383,7 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSpeedTotal($var)
+    public function setSpeedTotal(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->speed_total = $var;
@@ -405,7 +405,7 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSpeedSum($var)
+    public function setSpeedSum(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->speed_sum = $var;
@@ -427,7 +427,7 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSpeedMax($var)
+    public function setSpeedMax(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->speed_max = $var;
@@ -449,7 +449,7 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setRecords($var)
+    public function setRecords(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->records = $var;
@@ -471,7 +471,7 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setHarshAcceleration($var)
+    public function setHarshAcceleration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->harsh_acceleration = $var;
@@ -493,7 +493,7 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setHarshBreak($var)
+    public function setHarshBreak(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->harsh_break = $var;
@@ -515,7 +515,7 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setHarshCorner($var)
+    public function setHarshCorner(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->harsh_corner = $var;
@@ -547,7 +547,7 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMinTemp01($var)
+    public function setMinTemp01(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->min_temp_01 = $var;
@@ -579,7 +579,7 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMaxTemp01($var)
+    public function setMaxTemp01(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->max_temp_01 = $var;
@@ -611,7 +611,7 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMinTemp02($var)
+    public function setMinTemp02(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->min_temp_02 = $var;
@@ -643,7 +643,7 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMaxTemp02($var)
+    public function setMaxTemp02(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->max_temp_02 = $var;
@@ -675,7 +675,7 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMinTemp03($var)
+    public function setMinTemp03(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->min_temp_03 = $var;
@@ -707,7 +707,7 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMaxTemp03($var)
+    public function setMaxTemp03(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->max_temp_03 = $var;
@@ -739,7 +739,7 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMinTemp04($var)
+    public function setMinTemp04(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->min_temp_04 = $var;
@@ -771,7 +771,7 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMaxTemp04($var)
+    public function setMaxTemp04(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->max_temp_04 = $var;
@@ -803,7 +803,7 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMinHumidity($var)
+    public function setMinHumidity(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->min_humidity = $var;
@@ -835,7 +835,7 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMaxHumidity($var)
+    public function setMaxHumidity(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->max_humidity = $var;
@@ -867,9 +867,8 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setStartLat($var)
+    public function setStartLat(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->start_lat = $var;
 
         return $this;
@@ -899,9 +898,8 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setStartLng($var)
+    public function setStartLng(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->start_lng = $var;
 
         return $this;
@@ -931,9 +929,8 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setFinishLat($var)
+    public function setFinishLat(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->finish_lat = $var;
 
         return $this;
@@ -963,9 +960,8 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setFinishLng($var)
+    public function setFinishLng(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->finish_lng = $var;
 
         return $this;
@@ -995,9 +991,8 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setStartedAt($var)
+    public function setStartedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->started_at = $var;
 
         return $this;
@@ -1027,9 +1022,8 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setFinishedAt($var)
+    public function setFinishedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->finished_at = $var;
 
         return $this;
@@ -1059,9 +1053,8 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -1091,9 +1084,8 @@ class Shift extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;

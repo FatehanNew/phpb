@@ -72,7 +72,7 @@ class ConcoxRecording0x8d extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFileType($var)
+    public function setFileType(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->file_type = $var;
@@ -94,7 +94,7 @@ class ConcoxRecording0x8d extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFileSize($var)
+    public function setFileSize(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->file_size = $var;
@@ -116,7 +116,7 @@ class ConcoxRecording0x8d extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTotalFiles($var)
+    public function setTotalFiles(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->total_files = $var;
@@ -138,7 +138,7 @@ class ConcoxRecording0x8d extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCurrentSequence($var)
+    public function setCurrentSequence(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->current_sequence = $var;
@@ -160,7 +160,7 @@ class ConcoxRecording0x8d extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCurrentLength($var)
+    public function setCurrentLength(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->current_length = $var;
@@ -182,9 +182,9 @@ class ConcoxRecording0x8d extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPayload($var)
+    public function setPayload(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->payload = $var;
 
         return $this;

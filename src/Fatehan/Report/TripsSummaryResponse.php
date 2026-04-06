@@ -67,7 +67,7 @@ class TripsSummaryResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Trip\FusionTrip[] $var
      * @return $this
      */
-    public function setReports($var)
+    public function setReports(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Trip\FusionTrip::class);
         $this->reports = $arr;
@@ -89,7 +89,7 @@ class TripsSummaryResponse extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setRecords($var)
+    public function setRecords(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->records = $var;
@@ -111,7 +111,7 @@ class TripsSummaryResponse extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCost($var)
+    public function setCost(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->cost = $var;
@@ -143,9 +143,8 @@ class TripsSummaryResponse extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setStartedAt($var)
+    public function setStartedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->started_at = $var;
 
         return $this;
@@ -175,9 +174,8 @@ class TripsSummaryResponse extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setFinishedAt($var)
+    public function setFinishedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->finished_at = $var;
 
         return $this;

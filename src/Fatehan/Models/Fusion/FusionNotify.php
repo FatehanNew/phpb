@@ -77,7 +77,7 @@ class FusionNotify extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->user_id = $var;
@@ -99,9 +99,9 @@ class FusionNotify extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTitle($var)
+    public function setTitle(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->title = $var;
 
         return $this;
@@ -121,9 +121,9 @@ class FusionNotify extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setBody($var)
+    public function setBody(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->body = $var;
 
         return $this;
@@ -153,9 +153,8 @@ class FusionNotify extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Models\Fusion\FusionNotify\Body $var
      * @return $this
      */
-    public function setData($var)
+    public function setData(\Fatehan\Models\Fusion\FusionNotify\Body|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Models\Fusion\FusionNotify\Body::class);
         $this->data = $var;
 
         return $this;
@@ -185,9 +184,9 @@ class FusionNotify extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setImage($var)
+    public function setImage(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->image = $var;
 
         return $this;
@@ -217,7 +216,7 @@ class FusionNotify extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSound($var)
+    public function setSound(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->sound = $var;
@@ -249,9 +248,9 @@ class FusionNotify extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setToken($var)
+    public function setToken(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->token = $var;
 
         return $this;

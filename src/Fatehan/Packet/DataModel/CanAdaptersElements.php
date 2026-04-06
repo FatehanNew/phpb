@@ -667,7 +667,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setVehicleSpeed($var)
+    public function setVehicleSpeed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->vehicle_speed = $var;
@@ -699,7 +699,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAcceleratorPedalPosition($var)
+    public function setAcceleratorPedalPosition(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->accelerator_pedal_position = $var;
@@ -731,7 +731,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelConsumed($var)
+    public function setFuelConsumed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_consumed = $var;
@@ -763,7 +763,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelLevel($var)
+    public function setFuelLevel(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_level = $var;
@@ -795,7 +795,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEngineRpm($var)
+    public function setEngineRpm(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->engine_rpm = $var;
@@ -827,7 +827,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTotalMileage($var)
+    public function setTotalMileage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->total_mileage = $var;
@@ -859,7 +859,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDoorStatus($var)
+    public function setDoorStatus(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->door_status = $var;
@@ -891,7 +891,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setProgramNumber($var)
+    public function setProgramNumber(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->program_number = $var;
@@ -905,7 +905,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      */
     public function getModuleId8B()
     {
-        return isset($this->module_id8b) ? $this->module_id8b : 0;
+        return isset($this->module_id8b) ? $this->module_id8b : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasModuleId8B()
@@ -923,7 +923,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setModuleId8B($var)
+    public function setModuleId8B(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->module_id8b = $var;
@@ -955,9 +955,9 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setModuleId17B($var)
+    public function setModuleId17B(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->module_id17b = $var;
 
         return $this;
@@ -987,7 +987,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEngineWorktime($var)
+    public function setEngineWorktime(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->engine_worktime = $var;
@@ -1019,7 +1019,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEngineWorktimeCounted($var)
+    public function setEngineWorktimeCounted(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->engine_worktime_counted = $var;
@@ -1051,7 +1051,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTotalMileageCounted($var)
+    public function setTotalMileageCounted(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->total_mileage_counted = $var;
@@ -1083,7 +1083,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelConsumedCounted($var)
+    public function setFuelConsumedCounted(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_consumed_counted = $var;
@@ -1115,7 +1115,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelRate($var)
+    public function setFuelRate(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_rate = $var;
@@ -1147,7 +1147,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAdBlueLevelPercentage($var)
+    public function setAdBlueLevelPercentage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ad_blue_level_percentage = $var;
@@ -1179,7 +1179,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAdBlueLevel($var)
+    public function setAdBlueLevel(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ad_blue_level = $var;
@@ -1211,7 +1211,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEngineLoad($var)
+    public function setEngineLoad(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->engine_load = $var;
@@ -1243,7 +1243,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEngineTemperature($var)
+    public function setEngineTemperature(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->engine_temperature = $var;
@@ -1275,7 +1275,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAxle1Load($var)
+    public function setAxle1Load(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->axle1_load = $var;
@@ -1307,7 +1307,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAxle2Load($var)
+    public function setAxle2Load(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->axle2_load = $var;
@@ -1339,7 +1339,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAxle3Load($var)
+    public function setAxle3Load(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->axle3_load = $var;
@@ -1371,7 +1371,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAxle4Load($var)
+    public function setAxle4Load(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->axle4_load = $var;
@@ -1403,7 +1403,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAxle5Load($var)
+    public function setAxle5Load(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->axle5_load = $var;
@@ -1435,7 +1435,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setControlStateFlags($var)
+    public function setControlStateFlags(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->control_state_flags = $var;
@@ -1449,7 +1449,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      */
     public function getAgriculturalMachineryFlags()
     {
-        return isset($this->agricultural_machinery_flags) ? $this->agricultural_machinery_flags : 0;
+        return isset($this->agricultural_machinery_flags) ? $this->agricultural_machinery_flags : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasAgriculturalMachineryFlags()
@@ -1467,7 +1467,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setAgriculturalMachineryFlags($var)
+    public function setAgriculturalMachineryFlags(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->agricultural_machinery_flags = $var;
@@ -1499,7 +1499,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setHarvestingTime($var)
+    public function setHarvestingTime(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->harvesting_time = $var;
@@ -1531,7 +1531,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAreaOfHarvest($var)
+    public function setAreaOfHarvest(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->area_of_harvest = $var;
@@ -1563,7 +1563,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMowingEfficiency($var)
+    public function setMowingEfficiency(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->mowing_efficiency = $var;
@@ -1595,7 +1595,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setGrainMownVolume($var)
+    public function setGrainMownVolume(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->grain_mown_volume = $var;
@@ -1627,7 +1627,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setGrainMoisture($var)
+    public function setGrainMoisture(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->grain_moisture = $var;
@@ -1659,7 +1659,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setHarvestingDrumRpm($var)
+    public function setHarvestingDrumRpm(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->harvesting_drum_rpm = $var;
@@ -1691,7 +1691,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setGapUnderHarvestingDrum($var)
+    public function setGapUnderHarvestingDrum(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->gap_under_harvesting_drum = $var;
@@ -1705,7 +1705,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      */
     public function getSecurityStateFlags()
     {
-        return isset($this->security_state_flags) ? $this->security_state_flags : 0;
+        return isset($this->security_state_flags) ? $this->security_state_flags : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasSecurityStateFlags()
@@ -1723,7 +1723,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setSecurityStateFlags($var)
+    public function setSecurityStateFlags(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->security_state_flags = $var;
@@ -1755,7 +1755,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTachographTotalVehicleDistance($var)
+    public function setTachographTotalVehicleDistance(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->tachograph_total_vehicle_distance = $var;
@@ -1787,7 +1787,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTripDistance($var)
+    public function setTripDistance(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->trip_distance = $var;
@@ -1819,7 +1819,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTachographVehicleSpeed($var)
+    public function setTachographVehicleSpeed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->tachograph_vehicle_speed = $var;
@@ -1851,7 +1851,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTachoDriverCardPresence($var)
+    public function setTachoDriverCardPresence(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->tacho_driver_card_presence = $var;
@@ -1883,7 +1883,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDriver1States($var)
+    public function setDriver1States(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->driver1_states = $var;
@@ -1915,7 +1915,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDriver2States($var)
+    public function setDriver2States(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->driver2_states = $var;
@@ -1947,7 +1947,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDriver1ContinuousDrivingTime($var)
+    public function setDriver1ContinuousDrivingTime(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->driver1_continuous_driving_time = $var;
@@ -1979,7 +1979,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDriver2ContinuousDrivingTime($var)
+    public function setDriver2ContinuousDrivingTime(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->driver2_continuous_driving_time = $var;
@@ -2011,7 +2011,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDriver1CumulativeBreakTime($var)
+    public function setDriver1CumulativeBreakTime(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->driver1_cumulative_break_time = $var;
@@ -2043,7 +2043,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDriver2CumulativeBreakTime($var)
+    public function setDriver2CumulativeBreakTime(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->driver2_cumulative_break_time = $var;
@@ -2075,7 +2075,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDriver1SelectedActivityDuration($var)
+    public function setDriver1SelectedActivityDuration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->driver1_selected_activity_duration = $var;
@@ -2107,7 +2107,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDriver2SelectedActivityDuration($var)
+    public function setDriver2SelectedActivityDuration(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->driver2_selected_activity_duration = $var;
@@ -2139,7 +2139,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDriver1CumulativeDrivingTime($var)
+    public function setDriver1CumulativeDrivingTime(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->driver1_cumulative_driving_time = $var;
@@ -2171,7 +2171,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDriver2CumulativeDrivingTime($var)
+    public function setDriver2CumulativeDrivingTime(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->driver2_cumulative_driving_time = $var;
@@ -2185,7 +2185,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      */
     public function getDriver1IdHigh()
     {
-        return isset($this->driver1_id_high) ? $this->driver1_id_high : 0;
+        return isset($this->driver1_id_high) ? $this->driver1_id_high : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasDriver1IdHigh()
@@ -2203,7 +2203,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDriver1IdHigh($var)
+    public function setDriver1IdHigh(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->driver1_id_high = $var;
@@ -2217,7 +2217,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      */
     public function getDriver1IdLow()
     {
-        return isset($this->driver1_id_low) ? $this->driver1_id_low : 0;
+        return isset($this->driver1_id_low) ? $this->driver1_id_low : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasDriver1IdLow()
@@ -2235,7 +2235,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDriver1IdLow($var)
+    public function setDriver1IdLow(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->driver1_id_low = $var;
@@ -2249,7 +2249,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      */
     public function getDriver2IdHigh()
     {
-        return isset($this->driver2_id_high) ? $this->driver2_id_high : 0;
+        return isset($this->driver2_id_high) ? $this->driver2_id_high : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasDriver2IdHigh()
@@ -2267,7 +2267,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDriver2IdHigh($var)
+    public function setDriver2IdHigh(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->driver2_id_high = $var;
@@ -2281,7 +2281,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      */
     public function getDriver2IdLow()
     {
-        return isset($this->driver2_id_low) ? $this->driver2_id_low : 0;
+        return isset($this->driver2_id_low) ? $this->driver2_id_low : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasDriver2IdLow()
@@ -2299,7 +2299,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDriver2IdLow($var)
+    public function setDriver2IdLow(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->driver2_id_low = $var;
@@ -2331,7 +2331,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBatteryTemperature($var)
+    public function setBatteryTemperature(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->battery_temperature = $var;
@@ -2363,7 +2363,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setHvBatteryLevel($var)
+    public function setHvBatteryLevel(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->hv_battery_level = $var;
@@ -2395,7 +2395,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDtcFaults($var)
+    public function setDtcFaults(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->dtc_faults = $var;
@@ -2427,7 +2427,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSlopeOfArm($var)
+    public function setSlopeOfArm(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->slope_of_arm = $var;
@@ -2459,7 +2459,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRotationOfArm($var)
+    public function setRotationOfArm(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->rotation_of_arm = $var;
@@ -2491,7 +2491,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEjectOfArm($var)
+    public function setEjectOfArm(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->eject_of_arm = $var;
@@ -2523,7 +2523,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setHorizontalDistanceArmVehicle($var)
+    public function setHorizontalDistanceArmVehicle(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->horizontal_distance_arm_vehicle = $var;
@@ -2555,7 +2555,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setHeightArmAboveGround($var)
+    public function setHeightArmAboveGround(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->height_arm_above_ground = $var;
@@ -2587,7 +2587,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDrillRpm($var)
+    public function setDrillRpm(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->drill_rpm = $var;
@@ -2619,7 +2619,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAmountOfSpreadSaltSquareMeter($var)
+    public function setAmountOfSpreadSaltSquareMeter(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->amount_of_spread_salt_square_meter = $var;
@@ -2651,7 +2651,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBatteryVoltage($var)
+    public function setBatteryVoltage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->battery_voltage = $var;
@@ -2683,7 +2683,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAmountOfSpreadFineGrainedSalt($var)
+    public function setAmountOfSpreadFineGrainedSalt(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->amount_of_spread_fine_grained_salt = $var;
@@ -2715,7 +2715,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAmountOfCoarseGrainedSalt($var)
+    public function setAmountOfCoarseGrainedSalt(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->amount_of_coarse_grained_salt = $var;
@@ -2747,7 +2747,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAmountOfSpreadDiMix($var)
+    public function setAmountOfSpreadDiMix(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->amount_of_spread_di_mix = $var;
@@ -2779,7 +2779,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAmountOfSpreadCoarseGrainedCalcium($var)
+    public function setAmountOfSpreadCoarseGrainedCalcium(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->amount_of_spread_coarse_grained_calcium = $var;
@@ -2811,7 +2811,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAmountOfSpreadCalciumChloride($var)
+    public function setAmountOfSpreadCalciumChloride(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->amount_of_spread_calcium_chloride = $var;
@@ -2843,7 +2843,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAmountOfSpreadSodiumChloride($var)
+    public function setAmountOfSpreadSodiumChloride(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->amount_of_spread_sodium_chloride = $var;
@@ -2875,7 +2875,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAmountOfSpreadMagnesiumChloride($var)
+    public function setAmountOfSpreadMagnesiumChloride(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->amount_of_spread_magnesium_chloride = $var;
@@ -2907,7 +2907,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAmountOfSpreadGravel($var)
+    public function setAmountOfSpreadGravel(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->amount_of_spread_gravel = $var;
@@ -2939,7 +2939,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAmountOfSpreadSand($var)
+    public function setAmountOfSpreadSand(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->amount_of_spread_sand = $var;
@@ -2971,7 +2971,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setWidthPouringLeft($var)
+    public function setWidthPouringLeft(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->width_pouring_left = $var;
@@ -3003,7 +3003,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setWidthPouringRight($var)
+    public function setWidthPouringRight(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->width_pouring_right = $var;
@@ -3035,7 +3035,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSaltSpreaderWorkingHours($var)
+    public function setSaltSpreaderWorkingHours(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->salt_spreader_working_hours = $var;
@@ -3067,7 +3067,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDistanceDuringSalting($var)
+    public function setDistanceDuringSalting(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->distance_during_salting = $var;
@@ -3099,7 +3099,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLoadWeight($var)
+    public function setLoadWeight(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->load_weight = $var;
@@ -3131,7 +3131,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRetarderLoad($var)
+    public function setRetarderLoad(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->retarder_load = $var;
@@ -3163,7 +3163,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCruiseTime($var)
+    public function setCruiseTime(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->cruise_time = $var;
@@ -3195,7 +3195,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCngStatus($var)
+    public function setCngStatus(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->cng_status = $var;
@@ -3227,7 +3227,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCngUsed($var)
+    public function setCngUsed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->cng_used = $var;
@@ -3259,7 +3259,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCngLevel($var)
+    public function setCngLevel(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->cng_level = $var;
@@ -3291,7 +3291,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setOilLevel($var)
+    public function setOilLevel(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->oil_level = $var;
@@ -3323,7 +3323,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setVehiclesRangeOnBattery($var)
+    public function setVehiclesRangeOnBattery(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->vehicles_range_on_battery = $var;
@@ -3355,7 +3355,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setVehiclesRangeOnAdditionalFuel($var)
+    public function setVehiclesRangeOnAdditionalFuel(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->vehicles_range_on_additional_fuel = $var;
@@ -3387,9 +3387,9 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setVin($var)
+    public function setVin(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->vin = $var;
 
         return $this;
@@ -3419,9 +3419,9 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFaultCodes($var)
+    public function setFaultCodes(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->fault_codes = $var;
 
         return $this;
@@ -3451,9 +3451,9 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSecurityStateFlagsP4($var)
+    public function setSecurityStateFlagsP4(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->security_state_flags_p4 = $var;
 
         return $this;
@@ -3483,9 +3483,9 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setControlStateFlagsP4($var)
+    public function setControlStateFlagsP4(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->control_state_flags_p4 = $var;
 
         return $this;
@@ -3515,9 +3515,9 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setIndicatorStateFlagsP4($var)
+    public function setIndicatorStateFlagsP4(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->indicator_state_flags_p4 = $var;
 
         return $this;
@@ -3547,9 +3547,9 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setAgriculturalStateFlagsP4($var)
+    public function setAgriculturalStateFlagsP4(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->agricultural_state_flags_p4 = $var;
 
         return $this;
@@ -3579,9 +3579,9 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUtilityStateFlagsP4($var)
+    public function setUtilityStateFlagsP4(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->utility_state_flags_p4 = $var;
 
         return $this;
@@ -3611,9 +3611,9 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCisternStateFlagsP4($var)
+    public function setCisternStateFlagsP4(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->cistern_state_flags_p4 = $var;
 
         return $this;
@@ -3643,7 +3643,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLngUsed($var)
+    public function setLngUsed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->lng_used = $var;
@@ -3675,7 +3675,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLngUsedCounted($var)
+    public function setLngUsedCounted(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->lng_used_counted = $var;
@@ -3707,7 +3707,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLngLevelPercentage($var)
+    public function setLngLevelPercentage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->lng_level_percentage = $var;
@@ -3739,7 +3739,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLngLevel($var)
+    public function setLngLevel(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->lng_level = $var;
@@ -3771,7 +3771,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTotalLpgUsed($var)
+    public function setTotalLpgUsed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->total_lpg_used = $var;
@@ -3803,7 +3803,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTotalLpgUsedCounted($var)
+    public function setTotalLpgUsedCounted(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->total_lpg_used_counted = $var;
@@ -3835,7 +3835,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLpgLevelProc($var)
+    public function setLpgLevelProc(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->lpg_level_proc = $var;
@@ -3867,7 +3867,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLpgLevelLiters($var)
+    public function setLpgLevelLiters(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->lpg_level_liters = $var;
@@ -3899,9 +3899,8 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\CanAdaptersElements\Ssf $var
      * @return $this
      */
-    public function setSsf($var)
+    public function setSsf(\Fatehan\Packet\DataModel\CanAdaptersElements\Ssf|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\CanAdaptersElements\Ssf::class);
         $this->ssf = $var;
 
         return $this;
@@ -3931,9 +3930,8 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\CanAdaptersElements\Csf $var
      * @return $this
      */
-    public function setCsf($var)
+    public function setCsf(\Fatehan\Packet\DataModel\CanAdaptersElements\Csf|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\CanAdaptersElements\Csf::class);
         $this->csf = $var;
 
         return $this;
@@ -3963,9 +3961,8 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\CanAdaptersElements\Isf $var
      * @return $this
      */
-    public function setIsf($var)
+    public function setIsf(\Fatehan\Packet\DataModel\CanAdaptersElements\Isf|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\CanAdaptersElements\Isf::class);
         $this->isf = $var;
 
         return $this;
@@ -3995,9 +3992,8 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\CanAdaptersElements\Asf $var
      * @return $this
      */
-    public function setAsf($var)
+    public function setAsf(\Fatehan\Packet\DataModel\CanAdaptersElements\Asf|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\CanAdaptersElements\Asf::class);
         $this->asf = $var;
 
         return $this;
@@ -4027,9 +4023,8 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\CanAdaptersElements\Usf $var
      * @return $this
      */
-    public function setUsf($var)
+    public function setUsf(\Fatehan\Packet\DataModel\CanAdaptersElements\Usf|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\CanAdaptersElements\Usf::class);
         $this->usf = $var;
 
         return $this;
@@ -4059,9 +4054,8 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\CanAdaptersElements\Cisf $var
      * @return $this
      */
-    public function setCisf($var)
+    public function setCisf(\Fatehan\Packet\DataModel\CanAdaptersElements\Cisf|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\CanAdaptersElements\Cisf::class);
         $this->cisf = $var;
 
         return $this;
@@ -4091,7 +4085,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDistanceToNextService($var)
+    public function setDistanceToNextService(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->distance_to_next_service = $var;
@@ -4123,7 +4117,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCngLevelKg($var)
+    public function setCngLevelKg(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->cng_level_kg = $var;
@@ -4155,7 +4149,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDistanceFromNeedOfService($var)
+    public function setDistanceFromNeedOfService(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->distance_from_need_of_service = $var;
@@ -4187,7 +4181,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDistanceFromLastService($var)
+    public function setDistanceFromLastService(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->distance_from_last_service = $var;
@@ -4219,7 +4213,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTimeToNextService($var)
+    public function setTimeToNextService(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->time_to_next_service = $var;
@@ -4251,7 +4245,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTimeFromNeedOfService($var)
+    public function setTimeFromNeedOfService(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->time_from_need_of_service = $var;
@@ -4283,7 +4277,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTimeFromLastService($var)
+    public function setTimeFromLastService(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->time_from_last_service = $var;
@@ -4315,7 +4309,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDistanceToNextOilService($var)
+    public function setDistanceToNextOilService(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->distance_to_next_oil_service = $var;
@@ -4347,7 +4341,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTimeToNextOilService($var)
+    public function setTimeToNextOilService(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->time_to_next_oil_service = $var;
@@ -4379,7 +4373,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTotalBaleCount($var)
+    public function setTotalBaleCount(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->total_bale_count = $var;
@@ -4411,7 +4405,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBaleCount($var)
+    public function setBaleCount(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->bale_count = $var;
@@ -4443,7 +4437,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCutBaleCount($var)
+    public function setCutBaleCount(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->cut_bale_count = $var;
@@ -4475,7 +4469,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBaleSlices($var)
+    public function setBaleSlices(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->bale_slices = $var;
@@ -4507,9 +4501,8 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\CanAdaptersElements\LcCan $var
      * @return $this
      */
-    public function setLvCan($var)
+    public function setLvCan(\Fatehan\Packet\DataModel\CanAdaptersElements\LcCan|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\CanAdaptersElements\LcCan::class);
         $this->lv_can = $var;
 
         return $this;
@@ -4539,7 +4532,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFuelLevelPercent($var)
+    public function setFuelLevelPercent(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->fuel_level_percent = $var;
@@ -4571,7 +4564,7 @@ class CanAdaptersElements extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setVehicleMaxSpeed($var)
+    public function setVehicleMaxSpeed(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->vehicle_max_speed = $var;

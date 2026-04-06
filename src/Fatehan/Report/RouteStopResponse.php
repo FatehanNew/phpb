@@ -62,7 +62,7 @@ class RouteStopResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Report\RouteStopPoint[] $var
      * @return $this
      */
-    public function setList($var)
+    public function setList(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Report\RouteStopPoint::class);
         $this->list = $arr;
@@ -84,7 +84,7 @@ class RouteStopResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRecords($var)
+    public function setRecords(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->records = $var;
@@ -106,7 +106,7 @@ class RouteStopResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCost($var)
+    public function setCost(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->cost = $var;
@@ -128,7 +128,7 @@ class RouteStopResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setThreads($var)
+    public function setThreads(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->threads = $var;

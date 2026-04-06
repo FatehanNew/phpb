@@ -87,7 +87,7 @@ class Currency extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -109,9 +109,9 @@ class Currency extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -141,9 +141,9 @@ class Currency extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCode($var)
+    public function setCode(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->code = $var;
 
         return $this;
@@ -173,9 +173,9 @@ class Currency extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setLeftSign($var)
+    public function setLeftSign(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->left_sign = $var;
 
         return $this;
@@ -205,9 +205,9 @@ class Currency extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRightSign($var)
+    public function setRightSign(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->right_sign = $var;
 
         return $this;
@@ -227,7 +227,7 @@ class Currency extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDefault($var)
+    public function setDefault(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->default = $var;
@@ -249,7 +249,7 @@ class Currency extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRatioToDefault($var)
+    public function setRatioToDefault(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->ratio_to_default = $var;
@@ -281,9 +281,8 @@ class Currency extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -313,9 +312,8 @@ class Currency extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;

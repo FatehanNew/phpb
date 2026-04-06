@@ -52,7 +52,7 @@ class MaintenanceIndexRequest extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -62,7 +62,7 @@ class MaintenanceIndexRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.devices.MaintenanceStatus status = 2 [json_name = "status"];</code>
-     * @return RepeatedField<int>
+     * @return RepeatedField<int> one of the values in {@see \Fatehan\Device\Maintenance\MaintenanceStatus}
      */
     public function getStatus()
     {
@@ -71,10 +71,10 @@ class MaintenanceIndexRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.devices.MaintenanceStatus status = 2 [json_name = "status"];</code>
-     * @param int[] $var
+     * @param int[] $var one of the values in {@see \Fatehan\Device\Maintenance\MaintenanceStatus}
      * @return $this
      */
-    public function setStatus($var)
+    public function setStatus(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Fatehan\Device\Maintenance\MaintenanceStatus::class);
         $this->status = $arr;

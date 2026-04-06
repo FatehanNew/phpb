@@ -107,7 +107,7 @@ class CommandStruct extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -129,7 +129,7 @@ class CommandStruct extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTrackerId($var)
+    public function setTrackerId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->tracker_id = $var;
@@ -143,7 +143,7 @@ class CommandStruct extends \Google\Protobuf\Internal\Message
      */
     public function getUserCreatedId()
     {
-        return isset($this->user_created_id) ? $this->user_created_id : 0;
+        return isset($this->user_created_id) ? $this->user_created_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasUserCreatedId()
@@ -161,7 +161,7 @@ class CommandStruct extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setUserCreatedId($var)
+    public function setUserCreatedId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->user_created_id = $var;
@@ -175,7 +175,7 @@ class CommandStruct extends \Google\Protobuf\Internal\Message
      */
     public function getUserUpdatedId()
     {
-        return isset($this->user_updated_id) ? $this->user_updated_id : 0;
+        return isset($this->user_updated_id) ? $this->user_updated_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasUserUpdatedId()
@@ -193,7 +193,7 @@ class CommandStruct extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setUserUpdatedId($var)
+    public function setUserUpdatedId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->user_updated_id = $var;
@@ -207,7 +207,7 @@ class CommandStruct extends \Google\Protobuf\Internal\Message
      */
     public function getOrganizationId()
     {
-        return isset($this->organization_id) ? $this->organization_id : 0;
+        return isset($this->organization_id) ? $this->organization_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasOrganizationId()
@@ -225,7 +225,7 @@ class CommandStruct extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOrganizationId($var)
+    public function setOrganizationId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->organization_id = $var;
@@ -247,9 +247,9 @@ class CommandStruct extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -269,7 +269,7 @@ class CommandStruct extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setSortOrder($var)
+    public function setSortOrder(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->sort_order = $var;
@@ -291,7 +291,7 @@ class CommandStruct extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setVisible($var)
+    public function setVisible(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->visible = $var;
@@ -323,9 +323,9 @@ class CommandStruct extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDescription($var)
+    public function setDescription(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->description = $var;
 
         return $this;
@@ -355,9 +355,8 @@ class CommandStruct extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\Message\CommandFormat $var
      * @return $this
      */
-    public function setSms($var)
+    public function setSms(\Fatehan\Packet\Message\CommandFormat|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\Message\CommandFormat::class);
         $this->sms = $var;
 
         return $this;
@@ -387,9 +386,8 @@ class CommandStruct extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\Message\CommandFormat $var
      * @return $this
      */
-    public function setGprs($var)
+    public function setGprs(\Fatehan\Packet\Message\CommandFormat|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\Message\CommandFormat::class);
         $this->gprs = $var;
 
         return $this;
@@ -419,9 +417,8 @@ class CommandStruct extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -451,9 +448,8 @@ class CommandStruct extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;

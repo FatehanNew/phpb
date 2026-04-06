@@ -77,7 +77,7 @@ class TirePosition extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAxle($var)
+    public function setAxle(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->axle = $var;
@@ -99,7 +99,7 @@ class TirePosition extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTire($var)
+    public function setTire(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->tire = $var;
@@ -131,9 +131,8 @@ class TirePosition extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setPressure($var)
+    public function setPressure(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->pressure = $var;
 
         return $this;
@@ -163,9 +162,8 @@ class TirePosition extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setTemperature($var)
+    public function setTemperature(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->temperature = $var;
 
         return $this;
@@ -195,7 +193,7 @@ class TirePosition extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setStatus($var)
+    public function setStatus(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->status = $var;
@@ -227,9 +225,8 @@ class TirePosition extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;
@@ -237,7 +234,7 @@ class TirePosition extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.TirePressureMonitoringSystemModule.Position position = 6 [json_name = "position"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\TirePressureMonitoringSystemModule\Position}
      */
     public function getPosition()
     {
@@ -246,10 +243,10 @@ class TirePosition extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.TirePressureMonitoringSystemModule.Position position = 6 [json_name = "position"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\TirePressureMonitoringSystemModule\Position}
      * @return $this
      */
-    public function setPosition($var)
+    public function setPosition(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\TirePressureMonitoringSystemModule\Position::class);
         $this->position = $var;

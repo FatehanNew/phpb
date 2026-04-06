@@ -67,7 +67,7 @@ class ForgeEncoder extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -89,7 +89,7 @@ class ForgeEncoder extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSerialNo($var)
+    public function setSerialNo(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->serial_no = $var;
@@ -99,7 +99,7 @@ class ForgeEncoder extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.Protocol protocol = 3;</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Packet\DataModel\Protocol}
      */
     public function getProtocol()
     {
@@ -108,10 +108,10 @@ class ForgeEncoder extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.packets.Protocol protocol = 3;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\Protocol}
      * @return $this
      */
-    public function setProtocol($var)
+    public function setProtocol(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\Protocol::class);
         $this->protocol = $var;
@@ -138,9 +138,9 @@ class ForgeEncoder extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRawString($var)
+    public function setRawString(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->writeOneof(11, $var);
 
         return $this;
@@ -165,9 +165,8 @@ class ForgeEncoder extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\Forge\RawStingWithProps $var
      * @return $this
      */
-    public function setRawStingWithProps($var)
+    public function setRawStingWithProps(\Fatehan\Packet\Forge\RawStingWithProps|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\Forge\RawStingWithProps::class);
         $this->writeOneof(12, $var);
 
         return $this;
@@ -196,9 +195,8 @@ class ForgeEncoder extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\Forge\JTTLiveRequest $var
      * @return $this
      */
-    public function setJttLiveVideoRequest($var)
+    public function setJttLiveVideoRequest(\Fatehan\Packet\Forge\JTTLiveRequest|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\Forge\JTTLiveRequest::class);
         $this->writeOneof(21, $var);
 
         return $this;
@@ -223,9 +221,8 @@ class ForgeEncoder extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\Forge\JTTLiveUpdate $var
      * @return $this
      */
-    public function setJttLiveVideoUpdate($var)
+    public function setJttLiveVideoUpdate(\Fatehan\Packet\Forge\JTTLiveUpdate|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\Forge\JTTLiveUpdate::class);
         $this->writeOneof(22, $var);
 
         return $this;
@@ -250,9 +247,8 @@ class ForgeEncoder extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\Forge\JTTQueryFileRequest $var
      * @return $this
      */
-    public function setJttQueryFileRequest($var)
+    public function setJttQueryFileRequest(\Fatehan\Packet\Forge\JTTQueryFileRequest|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\Forge\JTTQueryFileRequest::class);
         $this->writeOneof(23, $var);
 
         return $this;
@@ -277,9 +273,8 @@ class ForgeEncoder extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\Forge\JTTPlaybackRequest $var
      * @return $this
      */
-    public function setJttPlaybackRequest($var)
+    public function setJttPlaybackRequest(\Fatehan\Packet\Forge\JTTPlaybackRequest|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\Forge\JTTPlaybackRequest::class);
         $this->writeOneof(24, $var);
 
         return $this;
@@ -304,9 +299,8 @@ class ForgeEncoder extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\Forge\JTTPlaybackUpdate $var
      * @return $this
      */
-    public function setJttPlaybackUpdate($var)
+    public function setJttPlaybackUpdate(\Fatehan\Packet\Forge\JTTPlaybackUpdate|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\Forge\JTTPlaybackUpdate::class);
         $this->writeOneof(25, $var);
 
         return $this;
@@ -331,9 +325,8 @@ class ForgeEncoder extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\Forge\RequestAlertMediaUpload $var
      * @return $this
      */
-    public function setJttMediaUploadRequest($var)
+    public function setJttMediaUploadRequest(\Fatehan\Packet\Forge\RequestAlertMediaUpload|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\Forge\RequestAlertMediaUpload::class);
         $this->writeOneof(26, $var);
 
         return $this;

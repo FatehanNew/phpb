@@ -82,9 +82,9 @@ class ShownIo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -114,9 +114,8 @@ class ShownIo extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Device\SystemIoStyle $var
      * @return $this
      */
-    public function setStyle($var)
+    public function setStyle(\Fatehan\Device\SystemIoStyle|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Device\SystemIoStyle::class);
         $this->style = $var;
 
         return $this;
@@ -146,9 +145,9 @@ class ShownIo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUnit($var)
+    public function setUnit(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->unit = $var;
 
         return $this;
@@ -178,9 +177,9 @@ class ShownIo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDescription($var)
+    public function setDescription(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->description = $var;
 
         return $this;
@@ -200,9 +199,9 @@ class ShownIo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setValue($var)
+    public function setValue(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->value = $var;
 
         return $this;
@@ -222,9 +221,8 @@ class ShownIo extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setActive($var)
+    public function setActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->active = $var;
 
         return $this;
@@ -244,9 +242,8 @@ class ShownIo extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setGraphable($var)
+    public function setGraphable(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->graphable = $var;
 
         return $this;
@@ -266,7 +263,7 @@ class ShownIo extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSord($var)
+    public function setSord(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->sord = $var;

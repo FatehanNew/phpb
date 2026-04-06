@@ -74,7 +74,7 @@ class Driver extends \Google\Protobuf\Internal\Message
      */
     public function getUserId()
     {
-        return isset($this->user_id) ? $this->user_id : 0;
+        return isset($this->user_id) ? $this->user_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasUserId()
@@ -92,7 +92,7 @@ class Driver extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->user_id = $var;
@@ -124,9 +124,9 @@ class Driver extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDriverName($var)
+    public function setDriverName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->driver_name = $var;
 
         return $this;
@@ -156,7 +156,7 @@ class Driver extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDriverCardLicenseType($var)
+    public function setDriverCardLicenseType(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->driver_card_license_type = $var;
@@ -188,7 +188,7 @@ class Driver extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDriverGender($var)
+    public function setDriverGender(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->driver_gender = $var;
@@ -220,7 +220,7 @@ class Driver extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDriverCardId($var)
+    public function setDriverCardId(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->driver_card_id = $var;
@@ -252,7 +252,7 @@ class Driver extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDriverCardExpirationDate($var)
+    public function setDriverCardExpirationDate(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->driver_card_expiration_date = $var;
@@ -284,7 +284,7 @@ class Driver extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDriverCardPlaceOfIssue($var)
+    public function setDriverCardPlaceOfIssue(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->driver_card_place_of_issue = $var;
@@ -316,7 +316,7 @@ class Driver extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDriverStatusEvent($var)
+    public function setDriverStatusEvent(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->driver_status_event = $var;

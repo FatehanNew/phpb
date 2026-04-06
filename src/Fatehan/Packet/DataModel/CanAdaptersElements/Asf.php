@@ -327,9 +327,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setRightJoystickMovedRightActive($var)
+    public function setRightJoystickMovedRightActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->right_joystick_moved_right_active = $var;
 
         return $this;
@@ -359,9 +358,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setRightJoystickMovedLeftActive($var)
+    public function setRightJoystickMovedLeftActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->right_joystick_moved_left_active = $var;
 
         return $this;
@@ -391,9 +389,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setRightJoystickMovedForwardActive($var)
+    public function setRightJoystickMovedForwardActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->right_joystick_moved_forward_active = $var;
 
         return $this;
@@ -423,9 +420,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setRightJoystickMovedBackActive($var)
+    public function setRightJoystickMovedBackActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->right_joystick_moved_back_active = $var;
 
         return $this;
@@ -455,9 +451,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLeftJoystickMovedRightActive($var)
+    public function setLeftJoystickMovedRightActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->left_joystick_moved_right_active = $var;
 
         return $this;
@@ -487,9 +482,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLeftJoystickMovedLeftActive($var)
+    public function setLeftJoystickMovedLeftActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->left_joystick_moved_left_active = $var;
 
         return $this;
@@ -519,9 +513,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLeftJoystickMovedForwardActive($var)
+    public function setLeftJoystickMovedForwardActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->left_joystick_moved_forward_active = $var;
 
         return $this;
@@ -551,9 +544,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLeftJoystickMovedBackActive($var)
+    public function setLeftJoystickMovedBackActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->left_joystick_moved_back_active = $var;
 
         return $this;
@@ -583,9 +575,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setFirstRearHydraulic($var)
+    public function setFirstRearHydraulic(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->first_rear_hydraulic = $var;
 
         return $this;
@@ -615,9 +606,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSecondRearHydraulic($var)
+    public function setSecondRearHydraulic(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->second_rear_hydraulic = $var;
 
         return $this;
@@ -647,9 +637,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setThirdRearHydraulic($var)
+    public function setThirdRearHydraulic(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->third_rear_hydraulic = $var;
 
         return $this;
@@ -679,9 +668,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setFourthRearHydraulic($var)
+    public function setFourthRearHydraulic(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->fourth_rear_hydraulic = $var;
 
         return $this;
@@ -711,9 +699,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setFirstFrontHydraulic($var)
+    public function setFirstFrontHydraulic(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->first_front_hydraulic = $var;
 
         return $this;
@@ -743,9 +730,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSecondFrontHydraulic($var)
+    public function setSecondFrontHydraulic(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->second_front_hydraulic = $var;
 
         return $this;
@@ -775,9 +761,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setThirdFrontHydraulic($var)
+    public function setThirdFrontHydraulic(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->third_front_hydraulic = $var;
 
         return $this;
@@ -807,9 +792,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setFourthFrontHydraulic($var)
+    public function setFourthFrontHydraulic(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->fourth_front_hydraulic = $var;
 
         return $this;
@@ -839,9 +823,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setFrontThreePointHitch($var)
+    public function setFrontThreePointHitch(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->front_three_point_hitch = $var;
 
         return $this;
@@ -871,9 +854,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setRearThreePointHitch($var)
+    public function setRearThreePointHitch(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->rear_three_point_hitch = $var;
 
         return $this;
@@ -903,9 +885,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setFrontPowerTakeOff($var)
+    public function setFrontPowerTakeOff(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->front_power_take_off = $var;
 
         return $this;
@@ -935,9 +916,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setRearPowerTakeOff($var)
+    public function setRearPowerTakeOff(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->rear_power_take_off = $var;
 
         return $this;
@@ -967,9 +947,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setMowingActive($var)
+    public function setMowingActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->mowing_active = $var;
 
         return $this;
@@ -999,9 +978,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setThreshingActive($var)
+    public function setThreshingActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->threshing_active = $var;
 
         return $this;
@@ -1031,9 +1009,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setGrainReleaseFromHopper($var)
+    public function setGrainReleaseFromHopper(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->grain_release_from_hopper = $var;
 
         return $this;
@@ -1063,9 +1040,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setGrainTankIs100Full($var)
+    public function setGrainTankIs100Full(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->grain_tank_is_100_full = $var;
 
         return $this;
@@ -1095,9 +1071,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setGrainTankIs70Full($var)
+    public function setGrainTankIs70Full(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->grain_tank_is_70_full = $var;
 
         return $this;
@@ -1127,9 +1102,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setGrainTankIsOpened($var)
+    public function setGrainTankIsOpened(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->grain_tank_is_opened = $var;
 
         return $this;
@@ -1159,9 +1133,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setUnloaderDrive($var)
+    public function setUnloaderDrive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->unloader_drive = $var;
 
         return $this;
@@ -1191,9 +1164,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setCleaningFanControlTurnedOff($var)
+    public function setCleaningFanControlTurnedOff(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->cleaning_fan_control_turned_off = $var;
 
         return $this;
@@ -1223,9 +1195,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setThreshingDrumControlTurnedOff($var)
+    public function setThreshingDrumControlTurnedOff(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->threshing_drum_control_turned_off = $var;
 
         return $this;
@@ -1255,9 +1226,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setStrawWalkerIsClogged($var)
+    public function setStrawWalkerIsClogged(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->straw_walker_is_clogged = $var;
 
         return $this;
@@ -1287,9 +1257,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setExcessiveClearanceUnderTheThreshingDrum($var)
+    public function setExcessiveClearanceUnderTheThreshingDrum(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->excessive_clearance_under_the_threshing_drum = $var;
 
         return $this;
@@ -1319,9 +1288,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLowTemperatureOfDriveSystemHydraulicsLessThan5Grades($var)
+    public function setLowTemperatureOfDriveSystemHydraulicsLessThan5Grades(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->low_temperature_of_drive_system_hydraulics_less_than_5_grades = $var;
 
         return $this;
@@ -1351,9 +1319,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setHighTemperatureOfDriveSystemHydraulicsGreaterThan86Grades($var)
+    public function setHighTemperatureOfDriveSystemHydraulicsGreaterThan86Grades(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->high_temperature_of_drive_system_hydraulics_greater_than_86_grades = $var;
 
         return $this;
@@ -1383,9 +1350,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEarAugerSpeedBelowTheNorm($var)
+    public function setEarAugerSpeedBelowTheNorm(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->ear_auger_speed_below_the_norm = $var;
 
         return $this;
@@ -1415,9 +1381,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setGrainAugerSpeedBelowTheNorm($var)
+    public function setGrainAugerSpeedBelowTheNorm(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->grain_auger_speed_below_the_norm = $var;
 
         return $this;
@@ -1447,9 +1412,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setStrawChooperSpeedBelowTheNorm($var)
+    public function setStrawChooperSpeedBelowTheNorm(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->straw_chooper_speed_below_the_norm = $var;
 
         return $this;
@@ -1479,9 +1443,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setStrawShakerSpeedBelowTheNorm($var)
+    public function setStrawShakerSpeedBelowTheNorm(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->straw_shaker_speed_below_the_norm = $var;
 
         return $this;
@@ -1511,9 +1474,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setFeederSpeedBelowTheNorm($var)
+    public function setFeederSpeedBelowTheNorm(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->feeder_speed_below_the_norm = $var;
 
         return $this;
@@ -1543,9 +1505,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setStrawChopperSwitchedOn($var)
+    public function setStrawChopperSwitchedOn(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->straw_chopper_switched_on = $var;
 
         return $this;
@@ -1575,9 +1536,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setCornHeaderConnected($var)
+    public function setCornHeaderConnected(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->corn_header_connected = $var;
 
         return $this;
@@ -1607,9 +1567,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setGrainHeaderConnected($var)
+    public function setGrainHeaderConnected(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->grain_header_connected = $var;
 
         return $this;
@@ -1639,9 +1598,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setFeederReverseSwitchedOn($var)
+    public function setFeederReverseSwitchedOn(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->feeder_reverse_switched_on = $var;
 
         return $this;
@@ -1671,9 +1629,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setThePressureFilterOfTheHydraulicPumpIsClogged($var)
+    public function setThePressureFilterOfTheHydraulicPumpIsClogged(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->the_pressure_filter_of_the_hydraulic_pump_is_clogged = $var;
 
         return $this;
@@ -1703,9 +1660,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAdapterPressureFilterSensor($var)
+    public function setAdapterPressureFilterSensor(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->adapter_pressure_filter_sensor = $var;
 
         return $this;
@@ -1735,9 +1691,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setService2RequiredIndicator($var)
+    public function setService2RequiredIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->service2_required_indicator = $var;
 
         return $this;
@@ -1767,9 +1722,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setDrainFilterCloggedIndicator($var)
+    public function setDrainFilterCloggedIndicator(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->drain_filter_clogged_indicator = $var;
 
         return $this;
@@ -1799,9 +1753,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection1Spraying($var)
+    public function setSection1Spraying(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section1_spraying = $var;
 
         return $this;
@@ -1831,9 +1784,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection2Spraying($var)
+    public function setSection2Spraying(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section2_spraying = $var;
 
         return $this;
@@ -1863,9 +1815,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection3Spraying($var)
+    public function setSection3Spraying(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section3_spraying = $var;
 
         return $this;
@@ -1895,9 +1846,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection4Spraying($var)
+    public function setSection4Spraying(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section4_spraying = $var;
 
         return $this;
@@ -1927,9 +1877,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection5Spraying($var)
+    public function setSection5Spraying(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section5_spraying = $var;
 
         return $this;
@@ -1959,9 +1908,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection6Spraying($var)
+    public function setSection6Spraying(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section6_spraying = $var;
 
         return $this;
@@ -1991,9 +1939,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection7Spraying($var)
+    public function setSection7Spraying(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section7_spraying = $var;
 
         return $this;
@@ -2023,9 +1970,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection8Spraying($var)
+    public function setSection8Spraying(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section8_spraying = $var;
 
         return $this;
@@ -2055,9 +2001,8 @@ class Asf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setSection9Spraying($var)
+    public function setSection9Spraying(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->section9_spraying = $var;
 
         return $this;

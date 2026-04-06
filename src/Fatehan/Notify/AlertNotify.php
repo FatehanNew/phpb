@@ -67,9 +67,9 @@ class AlertNotify extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTitle($var)
+    public function setTitle(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->title = $var;
 
         return $this;
@@ -99,9 +99,9 @@ class AlertNotify extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setBody($var)
+    public function setBody(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->body = $var;
 
         return $this;
@@ -113,7 +113,7 @@ class AlertNotify extends \Google\Protobuf\Internal\Message
      */
     public function getSound()
     {
-        return isset($this->sound) ? $this->sound : 0;
+        return isset($this->sound) ? $this->sound : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasSound()
@@ -131,7 +131,7 @@ class AlertNotify extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setSound($var)
+    public function setSound(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->sound = $var;
@@ -163,9 +163,9 @@ class AlertNotify extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setImage($var)
+    public function setImage(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->image = $var;
 
         return $this;
@@ -195,9 +195,9 @@ class AlertNotify extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setIcon($var)
+    public function setIcon(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->icon = $var;
 
         return $this;

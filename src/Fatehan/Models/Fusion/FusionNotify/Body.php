@@ -117,9 +117,9 @@ class Body extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setType($var)
+    public function setType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->type = $var;
 
         return $this;
@@ -149,9 +149,9 @@ class Body extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setAlertParam($var)
+    public function setAlertParam(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->alert_param = $var;
 
         return $this;
@@ -171,7 +171,7 @@ class Body extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAlertType($var)
+    public function setAlertType(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->alert_type = $var;
@@ -193,9 +193,9 @@ class Body extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setAlertRead($var)
+    public function setAlertRead(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->alert_read = $var;
 
         return $this;
@@ -225,9 +225,9 @@ class Body extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setIcon($var)
+    public function setIcon(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->icon = $var;
 
         return $this;
@@ -257,9 +257,9 @@ class Body extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUnit($var)
+    public function setUnit(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->unit = $var;
 
         return $this;
@@ -289,9 +289,9 @@ class Body extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setVals($var)
+    public function setVals(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->vals = $var;
 
         return $this;
@@ -321,7 +321,7 @@ class Body extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAlertListId($var)
+    public function setAlertListId(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->alert_list_id = $var;
@@ -343,9 +343,8 @@ class Body extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setLat($var)
+    public function setLat(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->lat = $var;
 
         return $this;
@@ -365,9 +364,8 @@ class Body extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setLng($var)
+    public function setLng(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->lng = $var;
 
         return $this;
@@ -387,7 +385,7 @@ class Body extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setGpsTime($var)
+    public function setGpsTime(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->gps_time = $var;
@@ -409,7 +407,7 @@ class Body extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setImei($var)
+    public function setImei(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->imei = $var;
@@ -431,9 +429,9 @@ class Body extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDeviceName($var)
+    public function setDeviceName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->device_name = $var;
 
         return $this;
@@ -445,7 +443,7 @@ class Body extends \Google\Protobuf\Internal\Message
      */
     public function getRelId()
     {
-        return isset($this->rel_id) ? $this->rel_id : 0;
+        return isset($this->rel_id) ? $this->rel_id : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasRelId()
@@ -463,7 +461,7 @@ class Body extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setRelId($var)
+    public function setRelId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->rel_id = $var;
@@ -485,9 +483,9 @@ class Body extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTitle($var)
+    public function setTitle(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->title = $var;
 
         return $this;

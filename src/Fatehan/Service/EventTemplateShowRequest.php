@@ -47,7 +47,7 @@ class EventTemplateShowRequest extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setEventTemplateId($var)
+    public function setEventTemplateId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->event_template_id = $var;

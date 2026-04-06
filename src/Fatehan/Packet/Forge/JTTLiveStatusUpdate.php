@@ -52,7 +52,7 @@ class JTTLiveStatusUpdate extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLogicalNumber($var)
+    public function setLogicalNumber(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->logical_number = $var;
@@ -74,7 +74,7 @@ class JTTLiveStatusUpdate extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPacketLose($var)
+    public function setPacketLose(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->packet_lose = $var;

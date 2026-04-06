@@ -87,7 +87,7 @@ class Application extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->id = $var;
@@ -109,9 +109,9 @@ class Application extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -141,9 +141,9 @@ class Application extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDomain($var)
+    public function setDomain(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->domain = $var;
 
         return $this;
@@ -151,7 +151,7 @@ class Application extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.identities.Application.Status status = 4 [json_name = "status"];</code>
-     * @return int
+     * @return int one of the values in {@see \Fatehan\Identity\Application\Status}
      */
     public function getStatus()
     {
@@ -160,10 +160,10 @@ class Application extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.com.fatehan.identities.Application.Status status = 4 [json_name = "status"];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Fatehan\Identity\Application\Status}
      * @return $this
      */
-    public function setStatus($var)
+    public function setStatus(int $var)
     {
         GPBUtil::checkEnum($var, \Fatehan\Identity\Application\Status::class);
         $this->status = $var;
@@ -185,9 +185,9 @@ class Application extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSecret($var)
+    public function setSecret(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->secret = $var;
 
         return $this;
@@ -207,9 +207,9 @@ class Application extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setAppKey($var)
+    public function setAppKey(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->app_key = $var;
 
         return $this;
@@ -229,9 +229,9 @@ class Application extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setWebhook($var)
+    public function setWebhook(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->webhook = $var;
 
         return $this;
@@ -261,9 +261,8 @@ class Application extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->created_at = $var;
 
         return $this;
@@ -293,9 +292,8 @@ class Application extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setUpdatedAt($var)
+    public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->updated_at = $var;
 
         return $this;

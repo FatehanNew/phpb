@@ -52,9 +52,9 @@ class CommandFormat extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setStructure($var)
+    public function setStructure(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->structure = $var;
 
         return $this;
@@ -74,7 +74,7 @@ class CommandFormat extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\Message\CommandValidation[] $var
      * @return $this
      */
-    public function setParameters($var)
+    public function setParameters(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Packet\Message\CommandValidation::class);
         $this->parameters = $arr;

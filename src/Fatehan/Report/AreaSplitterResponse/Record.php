@@ -97,7 +97,7 @@ class Record extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->device_id = $var;
@@ -129,9 +129,8 @@ class Record extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Report\AreaSplitterResponse\Area $var
      * @return $this
      */
-    public function setStart($var)
+    public function setStart(\Fatehan\Report\AreaSplitterResponse\Area|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Report\AreaSplitterResponse\Area::class);
         $this->start = $var;
 
         return $this;
@@ -161,9 +160,8 @@ class Record extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Report\AreaSplitterResponse\Area $var
      * @return $this
      */
-    public function setFinish($var)
+    public function setFinish(\Fatehan\Report\AreaSplitterResponse\Area|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Report\AreaSplitterResponse\Area::class);
         $this->finish = $var;
 
         return $this;
@@ -193,9 +191,8 @@ class Record extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setStartedAt($var)
+    public function setStartedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->started_at = $var;
 
         return $this;
@@ -225,9 +222,8 @@ class Record extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setFinishedAt($var)
+    public function setFinishedAt(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->finished_at = $var;
 
         return $this;
@@ -247,7 +243,7 @@ class Record extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDurationOrigin($var)
+    public function setDurationOrigin(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->duration_origin = $var;
@@ -269,7 +265,7 @@ class Record extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDurationTrip($var)
+    public function setDurationTrip(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->duration_trip = $var;
@@ -291,7 +287,7 @@ class Record extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDurationDestination($var)
+    public function setDurationDestination(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->duration_destination = $var;
@@ -323,7 +319,7 @@ class Record extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMileage($var)
+    public function setMileage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->mileage = $var;
@@ -345,7 +341,7 @@ class Record extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSpeedMax($var)
+    public function setSpeedMax(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->speed_max = $var;
@@ -367,7 +363,7 @@ class Record extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSpeedAvg($var)
+    public function setSpeedAvg(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->speed_avg = $var;

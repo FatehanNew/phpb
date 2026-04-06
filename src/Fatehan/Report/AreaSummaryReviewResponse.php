@@ -87,7 +87,7 @@ class AreaSummaryReviewResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRecords($var)
+    public function setRecords(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->records = $var;
@@ -109,7 +109,7 @@ class AreaSummaryReviewResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCost($var)
+    public function setCost(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->cost = $var;
@@ -131,7 +131,7 @@ class AreaSummaryReviewResponse extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTotalDurationInside($var)
+    public function setTotalDurationInside(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->total_duration_inside = $var;
@@ -153,7 +153,7 @@ class AreaSummaryReviewResponse extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTotalDurationOutside($var)
+    public function setTotalDurationOutside(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->total_duration_outside = $var;
@@ -175,7 +175,7 @@ class AreaSummaryReviewResponse extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTotalMileageInside($var)
+    public function setTotalMileageInside(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->total_mileage_inside = $var;
@@ -197,7 +197,7 @@ class AreaSummaryReviewResponse extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTotalMileageOutside($var)
+    public function setTotalMileageOutside(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->total_mileage_outside = $var;
@@ -219,7 +219,7 @@ class AreaSummaryReviewResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTotalInsideRecords($var)
+    public function setTotalInsideRecords(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->total_inside_records = $var;
@@ -241,7 +241,7 @@ class AreaSummaryReviewResponse extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTotalOutsideRecords($var)
+    public function setTotalOutsideRecords(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->total_outside_records = $var;
@@ -263,7 +263,7 @@ class AreaSummaryReviewResponse extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Report\AreaSummaryReviewResponse\Review[] $var
      * @return $this
      */
-    public function setReports($var)
+    public function setReports(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Report\AreaSummaryReviewResponse\Review::class);
         $this->reports = $arr;

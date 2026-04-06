@@ -102,7 +102,7 @@ class LLS extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLls1FuelLevel($var)
+    public function setLls1FuelLevel(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->lls1_fuel_level = $var;
@@ -134,7 +134,7 @@ class LLS extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLls1Temperature($var)
+    public function setLls1Temperature(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->lls1_temperature = $var;
@@ -166,7 +166,7 @@ class LLS extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLls2FuelLevel($var)
+    public function setLls2FuelLevel(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->lls2_fuel_level = $var;
@@ -198,7 +198,7 @@ class LLS extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLls2Temperature($var)
+    public function setLls2Temperature(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->lls2_temperature = $var;
@@ -230,7 +230,7 @@ class LLS extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLls3FuelLevel($var)
+    public function setLls3FuelLevel(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->lls3_fuel_level = $var;
@@ -262,7 +262,7 @@ class LLS extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLls3Temperature($var)
+    public function setLls3Temperature(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->lls3_temperature = $var;
@@ -294,7 +294,7 @@ class LLS extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLls4FuelLevel($var)
+    public function setLls4FuelLevel(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->lls4_fuel_level = $var;
@@ -326,7 +326,7 @@ class LLS extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLls4Temperature($var)
+    public function setLls4Temperature(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->lls4_temperature = $var;
@@ -358,7 +358,7 @@ class LLS extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLls5FuelLevel($var)
+    public function setLls5FuelLevel(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->lls5_fuel_level = $var;
@@ -390,7 +390,7 @@ class LLS extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLls5Temperature($var)
+    public function setLls5Temperature(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->lls5_temperature = $var;

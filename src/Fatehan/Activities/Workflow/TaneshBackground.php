@@ -57,7 +57,7 @@ class TaneshBackground extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setMainAreaId($var)
+    public function setMainAreaId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->main_area_id = $var;
@@ -89,9 +89,8 @@ class TaneshBackground extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Activities\Workflow\TaneshBackground\Item $var
      * @return $this
      */
-    public function setInside($var)
+    public function setInside(\Fatehan\Activities\Workflow\TaneshBackground\Item|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Activities\Workflow\TaneshBackground\Item::class);
         $this->inside = $var;
 
         return $this;
@@ -121,9 +120,8 @@ class TaneshBackground extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Activities\Workflow\TaneshBackground\Item $var
      * @return $this
      */
-    public function setOutside($var)
+    public function setOutside(\Fatehan\Activities\Workflow\TaneshBackground\Item|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Activities\Workflow\TaneshBackground\Item::class);
         $this->outside = $var;
 
         return $this;

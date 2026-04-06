@@ -47,7 +47,7 @@ class SpeedEvent extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSpeedLimit($var)
+    public function setSpeedLimit(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->speed_limit = $var;

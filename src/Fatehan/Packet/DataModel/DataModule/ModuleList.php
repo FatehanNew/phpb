@@ -49,9 +49,8 @@ class ModuleList extends \Google\Protobuf\Internal\Message
      * @param \Fatehan\Packet\DataModel\TirePressureMonitoringSystemModule $var
      * @return $this
      */
-    public function setTpms($var)
+    public function setTpms(\Fatehan\Packet\DataModel\TirePressureMonitoringSystemModule|null $var)
     {
-        GPBUtil::checkMessage($var, \Fatehan\Packet\DataModel\TirePressureMonitoringSystemModule::class);
         $this->writeOneof(1, $var);
 
         return $this;
