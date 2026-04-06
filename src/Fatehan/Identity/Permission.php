@@ -2014,9 +2014,9 @@ class Permission
      */
     const CHARGE_DEVICE = 488;
     /**
-     * Generated from protobuf enum <code>CHARGE_MANUAL_DEVICE = 489;</code>
+     * Generated from protobuf enum <code>ADMIN_CHARGE_MANUAL_DEVICE = 489;</code>
      */
-    const CHARGE_MANUAL_DEVICE = 489;
+    const ADMIN_CHARGE_MANUAL_DEVICE = 489;
     /**
      * Generated from protobuf enum <code>PARTNER_REPORT = 491;</code>
      */
@@ -3175,7 +3175,7 @@ class Permission
         self::CAR_WARRANTY_REPORT => 'CAR_WARRANTY_REPORT',
         self::LAST_CONNECTION_REPORT => 'LAST_CONNECTION_REPORT',
         self::CHARGE_DEVICE => 'CHARGE_DEVICE',
-        self::CHARGE_MANUAL_DEVICE => 'CHARGE_MANUAL_DEVICE',
+        self::ADMIN_CHARGE_MANUAL_DEVICE => 'ADMIN_CHARGE_MANUAL_DEVICE',
         self::PARTNER_REPORT => 'PARTNER_REPORT',
         self::EXPIRE_SHOW => 'EXPIRE_SHOW',
         self::DRIVING_REPORT => 'DRIVING_REPORT',
