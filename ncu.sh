@@ -16,7 +16,7 @@ rm -rf src/Fatehan/*
 
 printf "Regenerating gRPC PHP classes from .proto files...\n"
 protoc --php_out=src/ --grpc_out=src/ --plugin=protoc-gen-grpc=/bin/grpc_php_plugin -I ../protocols \
-  ../protocols/{trips,reports,packets,notifies,financial,identities,models,services,areas,devices,activities}/*.proto
+  ../protocols/{trips,packets,notifies,financial,identities,models,services,areas,devices,activities}/*.proto
 
 printf "Bumping composer package minor version...\n"
 if [ -f "composer.json" ]; then
