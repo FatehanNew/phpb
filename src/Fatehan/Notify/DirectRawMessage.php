@@ -23,7 +23,11 @@ class DirectRawMessage extends \Google\Protobuf\Internal\Message
      */
     private $user_ids;
     /**
-     * Generated from protobuf field <code>.com.fatehan.notifies.DirectMessage direct_message = 3;</code>
+     * Generated from protobuf field <code>repeated uint64 device_ids = 3;</code>
+     */
+    private $device_ids;
+    /**
+     * Generated from protobuf field <code>.com.fatehan.notifies.DirectMessage direct_message = 4;</code>
      */
     protected $direct_message = null;
 
@@ -35,6 +39,7 @@ class DirectRawMessage extends \Google\Protobuf\Internal\Message
      *
      *     @type string $topic
      *     @type int[]|string[] $user_ids
+     *     @type int[]|string[] $device_ids
      *     @type \Fatehan\Notify\DirectMessage $direct_message
      * }
      */
@@ -98,7 +103,29 @@ class DirectRawMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.com.fatehan.notifies.DirectMessage direct_message = 3;</code>
+     * Generated from protobuf field <code>repeated uint64 device_ids = 3;</code>
+     * @return RepeatedField<int>|RepeatedField<string>
+     */
+    public function getDeviceIds()
+    {
+        return $this->device_ids;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated uint64 device_ids = 3;</code>
+     * @param int[]|string[] $var
+     * @return $this
+     */
+    public function setDeviceIds(array|RepeatedField $var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT64);
+        $this->device_ids = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.com.fatehan.notifies.DirectMessage direct_message = 4;</code>
      * @return \Fatehan\Notify\DirectMessage|null
      */
     public function getDirectMessage()
@@ -117,7 +144,7 @@ class DirectRawMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.com.fatehan.notifies.DirectMessage direct_message = 3;</code>
+     * Generated from protobuf field <code>.com.fatehan.notifies.DirectMessage direct_message = 4;</code>
      * @param \Fatehan\Notify\DirectMessage $var
      * @return $this
      */

@@ -40,6 +40,10 @@ class Via
      * Generated from protobuf enum <code>WEBHOOK = 6;</code>
      */
     const WEBHOOK = 6;
+    /**
+     * Generated from protobuf enum <code>DIRECT = 7;</code>
+     */
+    const DIRECT = 7;
 
     private static $valueToName = [
         self::NONE => 'NONE',
@@ -49,6 +53,7 @@ class Via
         self::DATABASE => 'DATABASE',
         self::CALL => 'CALL',
         self::WEBHOOK => 'WEBHOOK',
+        self::DIRECT => 'DIRECT',
     ];
 
     public static function name($value)

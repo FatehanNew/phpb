@@ -10,14 +10,14 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * Generated from protobuf message <code>com.fatehan.notifies.DirectMessageUserIds</code>
+ * Generated from protobuf message <code>com.fatehan.notifies.IdList</code>
  */
-class DirectMessageUserIds extends \Google\Protobuf\Internal\Message
+class IdList extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>repeated uint64 user_ids = 1;</code>
+     * Generated from protobuf field <code>repeated uint64 ids = 1;</code>
      */
-    private $user_ids;
+    private $ids;
 
     /**
      * Constructor.
@@ -25,7 +25,7 @@ class DirectMessageUserIds extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type int[]|string[] $user_ids
+     *     @type int[]|string[] $ids
      * }
      */
     public function __construct($data = NULL) {
@@ -34,23 +34,23 @@ class DirectMessageUserIds extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated uint64 user_ids = 1;</code>
+     * Generated from protobuf field <code>repeated uint64 ids = 1;</code>
      * @return RepeatedField<int>|RepeatedField<string>
      */
-    public function getUserIds()
+    public function getIds()
     {
-        return $this->user_ids;
+        return $this->ids;
     }
 
     /**
-     * Generated from protobuf field <code>repeated uint64 user_ids = 1;</code>
+     * Generated from protobuf field <code>repeated uint64 ids = 1;</code>
      * @param int[]|string[] $var
      * @return $this
      */
-    public function setUserIds(array|RepeatedField $var)
+    public function setIds(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT64);
-        $this->user_ids = $arr;
+        $this->ids = $arr;
 
         return $this;
     }

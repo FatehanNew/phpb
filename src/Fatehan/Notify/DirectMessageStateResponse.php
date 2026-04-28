@@ -19,11 +19,19 @@ class DirectMessageStateResponse extends \Google\Protobuf\Internal\Message
      */
     protected $uuid = '';
     /**
-     * Generated from protobuf field <code>int32 delivered = 2;</code>
+     * Generated from protobuf field <code>string state = 2;</code>
      */
-    protected $delivered = 0;
+    protected $state = '';
     /**
-     * Generated from protobuf field <code>int32 failed = 3;</code>
+     * Generated from protobuf field <code>uint32 receivers = 3;</code>
+     */
+    protected $receivers = 0;
+    /**
+     * Generated from protobuf field <code>uint32 sent = 4;</code>
+     */
+    protected $sent = 0;
+    /**
+     * Generated from protobuf field <code>uint32 failed = 5;</code>
      */
     protected $failed = 0;
 
@@ -34,7 +42,9 @@ class DirectMessageStateResponse extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $uuid
-     *     @type int $delivered
+     *     @type string $state
+     *     @type int $receivers
+     *     @type int $sent
      *     @type int $failed
      * }
      */
@@ -66,29 +76,73 @@ class DirectMessageStateResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int32 delivered = 2;</code>
-     * @return int
+     * Generated from protobuf field <code>string state = 2;</code>
+     * @return string
      */
-    public function getDelivered()
+    public function getState()
     {
-        return $this->delivered;
+        return $this->state;
     }
 
     /**
-     * Generated from protobuf field <code>int32 delivered = 2;</code>
-     * @param int $var
+     * Generated from protobuf field <code>string state = 2;</code>
+     * @param string $var
      * @return $this
      */
-    public function setDelivered(int $var)
+    public function setState(string $var)
     {
-        GPBUtil::checkInt32($var);
-        $this->delivered = $var;
+        GPBUtil::checkString($var, true);
+        $this->state = $var;
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>int32 failed = 3;</code>
+     * Generated from protobuf field <code>uint32 receivers = 3;</code>
+     * @return int
+     */
+    public function getReceivers()
+    {
+        return $this->receivers;
+    }
+
+    /**
+     * Generated from protobuf field <code>uint32 receivers = 3;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setReceivers(int $var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->receivers = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>uint32 sent = 4;</code>
+     * @return int
+     */
+    public function getSent()
+    {
+        return $this->sent;
+    }
+
+    /**
+     * Generated from protobuf field <code>uint32 sent = 4;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setSent(int $var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->sent = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>uint32 failed = 5;</code>
      * @return int
      */
     public function getFailed()
@@ -97,13 +151,13 @@ class DirectMessageStateResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int32 failed = 3;</code>
+     * Generated from protobuf field <code>uint32 failed = 5;</code>
      * @param int $var
      * @return $this
      */
     public function setFailed(int $var)
     {
-        GPBUtil::checkInt32($var);
+        GPBUtil::checkUint32($var);
         $this->failed = $var;
 
         return $this;

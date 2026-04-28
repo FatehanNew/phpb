@@ -3,11 +3,9 @@
 printf "Updating Git repository...\n"
 git pull
 
-printf "Updating PHP dependencies using Composer...\n"
 
-if [[ "$1" == "--ignore" || "$2" == "--ignore" ]]; then
-    printf "ignoring composer updates\n"
-else 
+if [[ "$1" == "--update" || "$2" == "--update" ]]; then
+    printf "Updating PHP dependencies using Composer...\n"
     composer update
 fi
 

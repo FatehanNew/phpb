@@ -23,7 +23,7 @@ class AlertNotify extends \Google\Protobuf\Internal\Message
      */
     protected $body = null;
     /**
-     * Generated from protobuf field <code>optional uint64 sound = 3 [json_name = "sound"];</code>
+     * Generated from protobuf field <code>optional string sound = 3 [json_name = "sound"];</code>
      */
     protected $sound = null;
     /**
@@ -43,7 +43,7 @@ class AlertNotify extends \Google\Protobuf\Internal\Message
      *
      *     @type string $title
      *     @type string $body
-     *     @type int|string $sound
+     *     @type string $sound
      *     @type string $image
      *     @type string $icon
      * }
@@ -108,12 +108,12 @@ class AlertNotify extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional uint64 sound = 3 [json_name = "sound"];</code>
-     * @return int|string
+     * Generated from protobuf field <code>optional string sound = 3 [json_name = "sound"];</code>
+     * @return string
      */
     public function getSound()
     {
-        return isset($this->sound) ? $this->sound : GPBUtil::compatibleInt64(0, '0');
+        return isset($this->sound) ? $this->sound : '';
     }
 
     public function hasSound()
@@ -127,13 +127,13 @@ class AlertNotify extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional uint64 sound = 3 [json_name = "sound"];</code>
-     * @param int|string $var
+     * Generated from protobuf field <code>optional string sound = 3 [json_name = "sound"];</code>
+     * @param string $var
      * @return $this
      */
-    public function setSound(int|string $var)
+    public function setSound(string $var)
     {
-        GPBUtil::checkUint64($var);
+        GPBUtil::checkString($var, true);
         $this->sound = $var;
 
         return $this;

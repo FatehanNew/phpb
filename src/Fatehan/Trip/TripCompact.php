@@ -82,6 +82,14 @@ class TripCompact extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated uint64 points = 17 [json_name = "points"];</code>
      */
     private $points;
+    /**
+     * Generated from protobuf field <code>.google.protobuf.Timestamp started_at = 18 [json_name = "started_at"];</code>
+     */
+    protected $started_at = null;
+    /**
+     * Generated from protobuf field <code>.google.protobuf.Timestamp finished_at = 19 [json_name = "finished_at"];</code>
+     */
+    protected $finished_at = null;
 
     /**
      * Constructor.
@@ -106,6 +114,8 @@ class TripCompact extends \Google\Protobuf\Internal\Message
      *     @type array|\Google\Protobuf\Internal\MapField $crashes
      *     @type array|\Google\Protobuf\Internal\MapField $speeds
      *     @type int[]|string[] $points
+     *     @type \Google\Protobuf\Timestamp $started_at
+     *     @type \Google\Protobuf\Timestamp $finished_at
      * }
      */
     public function __construct($data = NULL) {
@@ -571,6 +581,68 @@ class TripCompact extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT64);
         $this->points = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.google.protobuf.Timestamp started_at = 18 [json_name = "started_at"];</code>
+     * @return \Google\Protobuf\Timestamp|null
+     */
+    public function getStartedAt()
+    {
+        return $this->started_at;
+    }
+
+    public function hasStartedAt()
+    {
+        return isset($this->started_at);
+    }
+
+    public function clearStartedAt()
+    {
+        unset($this->started_at);
+    }
+
+    /**
+     * Generated from protobuf field <code>.google.protobuf.Timestamp started_at = 18 [json_name = "started_at"];</code>
+     * @param \Google\Protobuf\Timestamp $var
+     * @return $this
+     */
+    public function setStartedAt(\Google\Protobuf\Timestamp|null $var)
+    {
+        $this->started_at = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.google.protobuf.Timestamp finished_at = 19 [json_name = "finished_at"];</code>
+     * @return \Google\Protobuf\Timestamp|null
+     */
+    public function getFinishedAt()
+    {
+        return $this->finished_at;
+    }
+
+    public function hasFinishedAt()
+    {
+        return isset($this->finished_at);
+    }
+
+    public function clearFinishedAt()
+    {
+        unset($this->finished_at);
+    }
+
+    /**
+     * Generated from protobuf field <code>.google.protobuf.Timestamp finished_at = 19 [json_name = "finished_at"];</code>
+     * @param \Google\Protobuf\Timestamp $var
+     * @return $this
+     */
+    public function setFinishedAt(\Google\Protobuf\Timestamp|null $var)
+    {
+        $this->finished_at = $var;
 
         return $this;
     }

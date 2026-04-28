@@ -35,7 +35,7 @@ class NotifyJob extends \Google\Protobuf\Internal\Message
      */
     protected $notify = null;
     /**
-     * Generated from protobuf field <code>repeated .com.fatehan.notifies.Via via = 6 [json_name = "via"];</code>
+     * Generated from protobuf field <code>repeated .com.fatehan.notifies.Via via = 12 [json_name = "via"];</code>
      */
     private $via;
 
@@ -178,7 +178,7 @@ class NotifyJob extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .com.fatehan.notifies.Via via = 6 [json_name = "via"];</code>
+     * Generated from protobuf field <code>repeated .com.fatehan.notifies.Via via = 12 [json_name = "via"];</code>
      * @return RepeatedField<int> one of the values in {@see \Fatehan\Notify\Via}
      */
     public function getVia()
@@ -187,7 +187,7 @@ class NotifyJob extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .com.fatehan.notifies.Via via = 6 [json_name = "via"];</code>
+     * Generated from protobuf field <code>repeated .com.fatehan.notifies.Via via = 12 [json_name = "via"];</code>
      * @param int[] $var one of the values in {@see \Fatehan\Notify\Via}
      * @return $this
      */

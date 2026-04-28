@@ -43,4 +43,5 @@ class CacheKeys
     public const CACHE_USER_PERSON_LIST_JSON = "user:person:list:json";
     public const CACHE_ROLE_PERMISSION = "fatehan_database_object:permissions";
     public const CACHE_PEOPLE_ROLE_ID = "fatehan_database_odyssey:people:roles";
+    public const DEVICE_REPO = "device:repo";
 }

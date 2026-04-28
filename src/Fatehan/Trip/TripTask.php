@@ -23,10 +23,6 @@ class TripTask extends \Google\Protobuf\Internal\Message
      */
     protected $trip = null;
     /**
-     * Generated from protobuf field <code>optional .com.fatehan.trips.Monthly monthly = 3;</code>
-     */
-    protected $monthly = null;
-    /**
      * Generated from protobuf field <code>optional .com.fatehan.trips.FusionTrip fusion = 5;</code>
      */
     protected $fusion = null;
@@ -43,7 +39,6 @@ class TripTask extends \Google\Protobuf\Internal\Message
      *
      *     @type int $event_type
      *     @type \Fatehan\Trip\Trip $trip
-     *     @type \Fatehan\Trip\Monthly $monthly
      *     @type \Fatehan\Trip\FusionTrip $fusion
      *     @type string $additional
      * }
@@ -102,37 +97,6 @@ class TripTask extends \Google\Protobuf\Internal\Message
     public function setTrip(\Fatehan\Trip\Trip|null $var)
     {
         $this->trip = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>optional .com.fatehan.trips.Monthly monthly = 3;</code>
-     * @return \Fatehan\Trip\Monthly|null
-     */
-    public function getMonthly()
-    {
-        return $this->monthly;
-    }
-
-    public function hasMonthly()
-    {
-        return isset($this->monthly);
-    }
-
-    public function clearMonthly()
-    {
-        unset($this->monthly);
-    }
-
-    /**
-     * Generated from protobuf field <code>optional .com.fatehan.trips.Monthly monthly = 3;</code>
-     * @param \Fatehan\Trip\Monthly $var
-     * @return $this
-     */
-    public function setMonthly(\Fatehan\Trip\Monthly|null $var)
-    {
-        $this->monthly = $var;
 
         return $this;
     }

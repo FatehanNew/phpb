@@ -13,9 +13,9 @@ use UnexpectedValueException;
 class ObjectType
 {
     /**
-     * Generated from protobuf enum <code>UNKNOWN = 0;</code>
+     * Generated from protobuf enum <code>UNSPECIFIED = 0;</code>
      */
-    const UNKNOWN = 0;
+    const UNSPECIFIED = 0;
     /**
      * Generated from protobuf enum <code>DEVICE = 1;</code>
      */
@@ -32,13 +32,23 @@ class ObjectType
      * Generated from protobuf enum <code>WORKFLOW_TASK = 4;</code>
      */
     const WORKFLOW_TASK = 4;
+    /**
+     * Generated from protobuf enum <code>MAINTENANCE = 5;</code>
+     */
+    const MAINTENANCE = 5;
+    /**
+     * Generated from protobuf enum <code>EVENT = 6;</code>
+     */
+    const EVENT = 6;
 
     private static $valueToName = [
-        self::UNKNOWN => 'UNKNOWN',
+        self::UNSPECIFIED => 'UNSPECIFIED',
         self::DEVICE => 'DEVICE',
         self::USER => 'USER',
         self::OPERATION => 'OPERATION',
         self::WORKFLOW_TASK => 'WORKFLOW_TASK',
+        self::MAINTENANCE => 'MAINTENANCE',
+        self::EVENT => 'EVENT',
     ];
 
     public static function name($value)

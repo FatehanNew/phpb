@@ -724,7 +724,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Group Command Show 
+     * Group Command Show
      * @param \Fatehan\Packet\Message\GroupCommandShowRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
@@ -739,7 +739,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Group Command List 
+     * Group Command List
      * @param \Fatehan\Packet\Message\GroupCommandListRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
@@ -900,6 +900,21 @@ class ApiServiceClient extends \Grpc\BaseStub {
         return $this->_simpleRequest('/com.fatehan.services.ApiService/WorkShiftDestroy',
         $argument,
         ['\Fatehan\Activities\WorkShift\WorkShiftDestroyResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Notification Report
+     * @param \Fatehan\Service\NotificationReportRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall<\Fatehan\Service\NotificationReportResponse>
+     */
+    public function NotificationReport(\Fatehan\Service\NotificationReportRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/com.fatehan.services.ApiService/NotificationReport',
+        $argument,
+        ['\Fatehan\Service\NotificationReportResponse', 'decode'],
         $metadata, $options);
     }
 

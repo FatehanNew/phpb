@@ -23,7 +23,7 @@ class Notify extends \Google\Protobuf\Internal\Message
      */
     protected $body = null;
     /**
-     * Generated from protobuf field <code>optional uint64 sound = 3 [json_name = "sound"];</code>
+     * Generated from protobuf field <code>optional string sound = 3 [json_name = "sound"];</code>
      */
     protected $sound = null;
     /**
@@ -39,19 +39,23 @@ class Notify extends \Google\Protobuf\Internal\Message
      */
     protected $receiver = null;
     /**
-     * Generated from protobuf field <code>optional uint64 object_id = 7 [json_name = "object_id"];</code>
+     * Generated from protobuf field <code>optional uint64 device_id = 7 [json_name = "device_id"];</code>
+     */
+    protected $device_id = null;
+    /**
+     * Generated from protobuf field <code>optional uint64 object_id = 8 [json_name = "object_id"];</code>
      */
     protected $object_id = null;
     /**
-     * Generated from protobuf field <code>.com.fatehan.notifies.ObjectType object_type = 8 [json_name = "object_type"];</code>
+     * Generated from protobuf field <code>.com.fatehan.notifies.ObjectType object_type = 9 [json_name = "object_type"];</code>
      */
     protected $object_type = 0;
     /**
-     * Generated from protobuf field <code>.google.protobuf.Timestamp timestamp = 9 [json_name = "timestamp"];</code>
+     * Generated from protobuf field <code>.google.protobuf.Timestamp timestamp = 10 [json_name = "timestamp"];</code>
      */
     protected $timestamp = null;
     /**
-     * Generated from protobuf field <code>map<string, string> data = 10 [json_name = "data"];</code>
+     * Generated from protobuf field <code>map<string, string> data = 11 [json_name = "data"];</code>
      */
     private $data;
 
@@ -63,10 +67,11 @@ class Notify extends \Google\Protobuf\Internal\Message
      *
      *     @type string $title
      *     @type string $body
-     *     @type int|string $sound
+     *     @type string $sound
      *     @type string $image
      *     @type string $icon
      *     @type \Fatehan\Identity\Receiver $receiver
+     *     @type int|string $device_id
      *     @type int|string $object_id
      *     @type int $object_type
      *     @type \Google\Protobuf\Timestamp $timestamp
@@ -133,12 +138,12 @@ class Notify extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional uint64 sound = 3 [json_name = "sound"];</code>
-     * @return int|string
+     * Generated from protobuf field <code>optional string sound = 3 [json_name = "sound"];</code>
+     * @return string
      */
     public function getSound()
     {
-        return isset($this->sound) ? $this->sound : GPBUtil::compatibleInt64(0, '0');
+        return isset($this->sound) ? $this->sound : '';
     }
 
     public function hasSound()
@@ -152,13 +157,13 @@ class Notify extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional uint64 sound = 3 [json_name = "sound"];</code>
-     * @param int|string $var
+     * Generated from protobuf field <code>optional string sound = 3 [json_name = "sound"];</code>
+     * @param string $var
      * @return $this
      */
-    public function setSound(int|string $var)
+    public function setSound(string $var)
     {
-        GPBUtil::checkUint64($var);
+        GPBUtil::checkString($var, true);
         $this->sound = $var;
 
         return $this;
@@ -260,7 +265,39 @@ class Notify extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional uint64 object_id = 7 [json_name = "object_id"];</code>
+     * Generated from protobuf field <code>optional uint64 device_id = 7 [json_name = "device_id"];</code>
+     * @return int|string
+     */
+    public function getDeviceId()
+    {
+        return isset($this->device_id) ? $this->device_id : GPBUtil::compatibleInt64(0, '0');
+    }
+
+    public function hasDeviceId()
+    {
+        return isset($this->device_id);
+    }
+
+    public function clearDeviceId()
+    {
+        unset($this->device_id);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint64 device_id = 7 [json_name = "device_id"];</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setDeviceId(int|string $var)
+    {
+        GPBUtil::checkUint64($var);
+        $this->device_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint64 object_id = 8 [json_name = "object_id"];</code>
      * @return int|string
      */
     public function getObjectId()
@@ -279,7 +316,7 @@ class Notify extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional uint64 object_id = 7 [json_name = "object_id"];</code>
+     * Generated from protobuf field <code>optional uint64 object_id = 8 [json_name = "object_id"];</code>
      * @param int|string $var
      * @return $this
      */
@@ -292,7 +329,7 @@ class Notify extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.com.fatehan.notifies.ObjectType object_type = 8 [json_name = "object_type"];</code>
+     * Generated from protobuf field <code>.com.fatehan.notifies.ObjectType object_type = 9 [json_name = "object_type"];</code>
      * @return int one of the values in {@see \Fatehan\Notify\ObjectType}
      */
     public function getObjectType()
@@ -301,7 +338,7 @@ class Notify extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.com.fatehan.notifies.ObjectType object_type = 8 [json_name = "object_type"];</code>
+     * Generated from protobuf field <code>.com.fatehan.notifies.ObjectType object_type = 9 [json_name = "object_type"];</code>
      * @param int $var one of the values in {@see \Fatehan\Notify\ObjectType}
      * @return $this
      */
@@ -314,7 +351,7 @@ class Notify extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.google.protobuf.Timestamp timestamp = 9 [json_name = "timestamp"];</code>
+     * Generated from protobuf field <code>.google.protobuf.Timestamp timestamp = 10 [json_name = "timestamp"];</code>
      * @return \Google\Protobuf\Timestamp|null
      */
     public function getTimestamp()
@@ -333,7 +370,7 @@ class Notify extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.google.protobuf.Timestamp timestamp = 9 [json_name = "timestamp"];</code>
+     * Generated from protobuf field <code>.google.protobuf.Timestamp timestamp = 10 [json_name = "timestamp"];</code>
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
@@ -345,7 +382,7 @@ class Notify extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>map<string, string> data = 10 [json_name = "data"];</code>
+     * Generated from protobuf field <code>map<string, string> data = 11 [json_name = "data"];</code>
      * @return \Google\Protobuf\Internal\MapField
      */
     public function getData()
@@ -354,7 +391,7 @@ class Notify extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>map<string, string> data = 10 [json_name = "data"];</code>
+     * Generated from protobuf field <code>map<string, string> data = 11 [json_name = "data"];</code>
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */

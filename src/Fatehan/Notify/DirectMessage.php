@@ -75,9 +75,11 @@ class DirectMessage extends \Google\Protobuf\Internal\Message
      *     @type string $action
      *     @type array|\Google\Protobuf\Internal\MapField $data
      *     @type int|string $user_id
+     *     @type int|string $device_id
      *     @type int|string $organization_id
      *     @type string $topic
-     *     @type \Fatehan\Notify\DirectMessageUserIds $users_list
+     *     @type \Fatehan\Notify\IdList $users_list
+     *     @type \Fatehan\Notify\IdList $devices_list
      *     @type int[] $platforms
      *     @type \Google\Protobuf\Timestamp $timestamp
      *     @type \Google\Protobuf\Duration $ttl
@@ -342,25 +344,25 @@ class DirectMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint64 organization_id = 22;</code>
+     * Generated from protobuf field <code>uint64 device_id = 22;</code>
      * @return int|string
      */
-    public function getOrganizationId()
+    public function getDeviceId()
     {
         return $this->readOneof(22);
     }
 
-    public function hasOrganizationId()
+    public function hasDeviceId()
     {
         return $this->hasOneof(22);
     }
 
     /**
-     * Generated from protobuf field <code>uint64 organization_id = 22;</code>
+     * Generated from protobuf field <code>uint64 device_id = 22;</code>
      * @param int|string $var
      * @return $this
      */
-    public function setOrganizationId(int|string $var)
+    public function setDeviceId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->writeOneof(22, $var);
@@ -369,54 +371,107 @@ class DirectMessage extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string topic = 23;</code>
-     * @return string
+     * Generated from protobuf field <code>uint64 organization_id = 23;</code>
+     * @return int|string
      */
-    public function getTopic()
+    public function getOrganizationId()
     {
         return $this->readOneof(23);
     }
 
-    public function hasTopic()
+    public function hasOrganizationId()
     {
         return $this->hasOneof(23);
     }
 
     /**
-     * Generated from protobuf field <code>string topic = 23;</code>
-     * @param string $var
+     * Generated from protobuf field <code>uint64 organization_id = 23;</code>
+     * @param int|string $var
      * @return $this
      */
-    public function setTopic(string $var)
+    public function setOrganizationId(int|string $var)
     {
-        GPBUtil::checkString($var, true);
+        GPBUtil::checkUint64($var);
         $this->writeOneof(23, $var);
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>.com.fatehan.notifies.DirectMessageUserIds users_list = 24;</code>
-     * @return \Fatehan\Notify\DirectMessageUserIds|null
+     * Generated from protobuf field <code>string topic = 24;</code>
+     * @return string
      */
-    public function getUsersList()
+    public function getTopic()
     {
         return $this->readOneof(24);
     }
 
-    public function hasUsersList()
+    public function hasTopic()
     {
         return $this->hasOneof(24);
     }
 
     /**
-     * Generated from protobuf field <code>.com.fatehan.notifies.DirectMessageUserIds users_list = 24;</code>
-     * @param \Fatehan\Notify\DirectMessageUserIds $var
+     * Generated from protobuf field <code>string topic = 24;</code>
+     * @param string $var
      * @return $this
      */
-    public function setUsersList(\Fatehan\Notify\DirectMessageUserIds|null $var)
+    public function setTopic(string $var)
     {
+        GPBUtil::checkString($var, true);
         $this->writeOneof(24, $var);
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.com.fatehan.notifies.IdList users_list = 25;</code>
+     * @return \Fatehan\Notify\IdList|null
+     */
+    public function getUsersList()
+    {
+        return $this->readOneof(25);
+    }
+
+    public function hasUsersList()
+    {
+        return $this->hasOneof(25);
+    }
+
+    /**
+     * Generated from protobuf field <code>.com.fatehan.notifies.IdList users_list = 25;</code>
+     * @param \Fatehan\Notify\IdList $var
+     * @return $this
+     */
+    public function setUsersList(\Fatehan\Notify\IdList|null $var)
+    {
+        $this->writeOneof(25, $var);
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.com.fatehan.notifies.IdList devices_list = 26;</code>
+     * @return \Fatehan\Notify\IdList|null
+     */
+    public function getDevicesList()
+    {
+        return $this->readOneof(26);
+    }
+
+    public function hasDevicesList()
+    {
+        return $this->hasOneof(26);
+    }
+
+    /**
+     * Generated from protobuf field <code>.com.fatehan.notifies.IdList devices_list = 26;</code>
+     * @param \Fatehan\Notify\IdList $var
+     * @return $this
+     */
+    public function setDevicesList(\Fatehan\Notify\IdList|null $var)
+    {
+        $this->writeOneof(26, $var);
 
         return $this;
     }

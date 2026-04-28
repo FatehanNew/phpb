@@ -15,65 +15,29 @@ use Google\Protobuf\RepeatedField;
 class Notification extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string uuid = 1 [json_name = "uuid"];</code>
+     * Generated from protobuf field <code>string id = 1;</code>
      */
-    protected $uuid = '';
+    protected $id = '';
     /**
-     * Generated from protobuf field <code>uint64 user_id = 2 [json_name = "user_id"];</code>
+     * Generated from protobuf field <code>uint64 user_id = 2;</code>
      */
     protected $user_id = 0;
     /**
-     * Generated from protobuf field <code>optional uint64 object_id = 3 [json_name = "object_id"];</code>
+     * Generated from protobuf field <code>.com.fatehan.notifies.Notify payload = 3;</code>
      */
-    protected $object_id = null;
+    protected $payload = null;
     /**
-     * Generated from protobuf field <code>optional .com.fatehan.notifies.ObjectType object_type = 4 [json_name = "object_type"];</code>
-     */
-    protected $object_type = null;
-    /**
-     * Generated from protobuf field <code>string title = 5 [json_name = "title"];</code>
-     */
-    protected $title = '';
-    /**
-     * Generated from protobuf field <code>optional string body = 6 [json_name = "body"];</code>
-     */
-    protected $body = null;
-    /**
-     * Generated from protobuf field <code>optional uint64 alert_id = 7 [json_name = "alert_id"];</code>
-     */
-    protected $alert_id = null;
-    /**
-     * Generated from protobuf field <code>.com.fatehan.packets.Alert alert = 8 [json_name = "alert"];</code>
-     */
-    protected $alert = 0;
-    /**
-     * Generated from protobuf field <code>repeated .com.fatehan.notifies.Via via = 9 [json_name = "via"];</code>
+     * Generated from protobuf field <code>repeated .com.fatehan.notifies.Via via = 4;</code>
      */
     private $via;
     /**
-     * Generated from protobuf field <code>map<string, string> data = 10 [json_name = "data"];</code>
-     */
-    private $data;
-    /**
-     * Generated from protobuf field <code>optional string image = 11 [json_name = "image"];</code>
-     */
-    protected $image = null;
-    /**
-     * Generated from protobuf field <code>optional uint64 sound = 12 [json_name = "sound"];</code>
-     */
-    protected $sound = null;
-    /**
-     * Generated from protobuf field <code>.google.protobuf.Timestamp created_at = 13 [json_name = "created_at"];</code>
+     * Generated from protobuf field <code>.google.protobuf.Timestamp created_at = 5;</code>
      */
     protected $created_at = null;
     /**
-     * Generated from protobuf field <code>.google.protobuf.Timestamp read_at = 14 [json_name = "read_at"];</code>
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp read_at = 6;</code>
      */
     protected $read_at = null;
-    /**
-     * Generated from protobuf field <code>optional uint64 user_alert_id = 15 [json_name = "user_alert_id"];</code>
-     */
-    protected $user_alert_id = null;
 
     /**
      * Constructor.
@@ -81,21 +45,12 @@ class Notification extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type string $uuid
+     *     @type string $id
      *     @type int|string $user_id
-     *     @type int|string $object_id
-     *     @type int $object_type
-     *     @type string $title
-     *     @type string $body
-     *     @type int|string $alert_id
-     *     @type int $alert
+     *     @type \Fatehan\Notify\Notify $payload
      *     @type int[] $via
-     *     @type array|\Google\Protobuf\Internal\MapField $data
-     *     @type string $image
-     *     @type int|string $sound
      *     @type \Google\Protobuf\Timestamp $created_at
      *     @type \Google\Protobuf\Timestamp $read_at
-     *     @type int|string $user_alert_id
      * }
      */
     public function __construct($data = NULL) {
@@ -104,29 +59,29 @@ class Notification extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string uuid = 1 [json_name = "uuid"];</code>
+     * Generated from protobuf field <code>string id = 1;</code>
      * @return string
      */
-    public function getUuid()
+    public function getId()
     {
-        return $this->uuid;
+        return $this->id;
     }
 
     /**
-     * Generated from protobuf field <code>string uuid = 1 [json_name = "uuid"];</code>
+     * Generated from protobuf field <code>string id = 1;</code>
      * @param string $var
      * @return $this
      */
-    public function setUuid(string $var)
+    public function setId(string $var)
     {
         GPBUtil::checkString($var, true);
-        $this->uuid = $var;
+        $this->id = $var;
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>uint64 user_id = 2 [json_name = "user_id"];</code>
+     * Generated from protobuf field <code>uint64 user_id = 2;</code>
      * @return int|string
      */
     public function getUserId()
@@ -135,7 +90,7 @@ class Notification extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint64 user_id = 2 [json_name = "user_id"];</code>
+     * Generated from protobuf field <code>uint64 user_id = 2;</code>
      * @param int|string $var
      * @return $this
      */
@@ -148,179 +103,38 @@ class Notification extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional uint64 object_id = 3 [json_name = "object_id"];</code>
-     * @return int|string
+     * Generated from protobuf field <code>.com.fatehan.notifies.Notify payload = 3;</code>
+     * @return \Fatehan\Notify\Notify|null
      */
-    public function getObjectId()
+    public function getPayload()
     {
-        return isset($this->object_id) ? $this->object_id : GPBUtil::compatibleInt64(0, '0');
+        return $this->payload;
     }
 
-    public function hasObjectId()
+    public function hasPayload()
     {
-        return isset($this->object_id);
+        return isset($this->payload);
     }
 
-    public function clearObjectId()
+    public function clearPayload()
     {
-        unset($this->object_id);
+        unset($this->payload);
     }
 
     /**
-     * Generated from protobuf field <code>optional uint64 object_id = 3 [json_name = "object_id"];</code>
-     * @param int|string $var
+     * Generated from protobuf field <code>.com.fatehan.notifies.Notify payload = 3;</code>
+     * @param \Fatehan\Notify\Notify $var
      * @return $this
      */
-    public function setObjectId(int|string $var)
+    public function setPayload(\Fatehan\Notify\Notify|null $var)
     {
-        GPBUtil::checkUint64($var);
-        $this->object_id = $var;
+        $this->payload = $var;
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>optional .com.fatehan.notifies.ObjectType object_type = 4 [json_name = "object_type"];</code>
-     * @return int one of the values in {@see \Fatehan\Notify\ObjectType}
-     */
-    public function getObjectType()
-    {
-        return isset($this->object_type) ? $this->object_type : 0;
-    }
-
-    public function hasObjectType()
-    {
-        return isset($this->object_type);
-    }
-
-    public function clearObjectType()
-    {
-        unset($this->object_type);
-    }
-
-    /**
-     * Generated from protobuf field <code>optional .com.fatehan.notifies.ObjectType object_type = 4 [json_name = "object_type"];</code>
-     * @param int $var one of the values in {@see \Fatehan\Notify\ObjectType}
-     * @return $this
-     */
-    public function setObjectType(int $var)
-    {
-        GPBUtil::checkEnum($var, \Fatehan\Notify\ObjectType::class);
-        $this->object_type = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>string title = 5 [json_name = "title"];</code>
-     * @return string
-     */
-    public function getTitle()
-    {
-        return $this->title;
-    }
-
-    /**
-     * Generated from protobuf field <code>string title = 5 [json_name = "title"];</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setTitle(string $var)
-    {
-        GPBUtil::checkString($var, true);
-        $this->title = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>optional string body = 6 [json_name = "body"];</code>
-     * @return string
-     */
-    public function getBody()
-    {
-        return isset($this->body) ? $this->body : '';
-    }
-
-    public function hasBody()
-    {
-        return isset($this->body);
-    }
-
-    public function clearBody()
-    {
-        unset($this->body);
-    }
-
-    /**
-     * Generated from protobuf field <code>optional string body = 6 [json_name = "body"];</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setBody(string $var)
-    {
-        GPBUtil::checkString($var, true);
-        $this->body = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>optional uint64 alert_id = 7 [json_name = "alert_id"];</code>
-     * @return int|string
-     */
-    public function getAlertId()
-    {
-        return isset($this->alert_id) ? $this->alert_id : GPBUtil::compatibleInt64(0, '0');
-    }
-
-    public function hasAlertId()
-    {
-        return isset($this->alert_id);
-    }
-
-    public function clearAlertId()
-    {
-        unset($this->alert_id);
-    }
-
-    /**
-     * Generated from protobuf field <code>optional uint64 alert_id = 7 [json_name = "alert_id"];</code>
-     * @param int|string $var
-     * @return $this
-     */
-    public function setAlertId(int|string $var)
-    {
-        GPBUtil::checkUint64($var);
-        $this->alert_id = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>.com.fatehan.packets.Alert alert = 8 [json_name = "alert"];</code>
-     * @return int one of the values in {@see \Fatehan\Packet\DataModel\Alert}
-     */
-    public function getAlert()
-    {
-        return $this->alert;
-    }
-
-    /**
-     * Generated from protobuf field <code>.com.fatehan.packets.Alert alert = 8 [json_name = "alert"];</code>
-     * @param int $var one of the values in {@see \Fatehan\Packet\DataModel\Alert}
-     * @return $this
-     */
-    public function setAlert(int $var)
-    {
-        GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\Alert::class);
-        $this->alert = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>repeated .com.fatehan.notifies.Via via = 9 [json_name = "via"];</code>
+     * Generated from protobuf field <code>repeated .com.fatehan.notifies.Via via = 4;</code>
      * @return RepeatedField<int> one of the values in {@see \Fatehan\Notify\Via}
      */
     public function getVia()
@@ -329,7 +143,7 @@ class Notification extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .com.fatehan.notifies.Via via = 9 [json_name = "via"];</code>
+     * Generated from protobuf field <code>repeated .com.fatehan.notifies.Via via = 4;</code>
      * @param int[] $var one of the values in {@see \Fatehan\Notify\Via}
      * @return $this
      */
@@ -342,93 +156,7 @@ class Notification extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>map<string, string> data = 10 [json_name = "data"];</code>
-     * @return \Google\Protobuf\Internal\MapField
-     */
-    public function getData()
-    {
-        return $this->data;
-    }
-
-    /**
-     * Generated from protobuf field <code>map<string, string> data = 10 [json_name = "data"];</code>
-     * @param array|\Google\Protobuf\Internal\MapField $var
-     * @return $this
-     */
-    public function setData(array|\Google\Protobuf\Internal\MapField $var)
-    {
-        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->data = $arr;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>optional string image = 11 [json_name = "image"];</code>
-     * @return string
-     */
-    public function getImage()
-    {
-        return isset($this->image) ? $this->image : '';
-    }
-
-    public function hasImage()
-    {
-        return isset($this->image);
-    }
-
-    public function clearImage()
-    {
-        unset($this->image);
-    }
-
-    /**
-     * Generated from protobuf field <code>optional string image = 11 [json_name = "image"];</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setImage(string $var)
-    {
-        GPBUtil::checkString($var, true);
-        $this->image = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>optional uint64 sound = 12 [json_name = "sound"];</code>
-     * @return int|string
-     */
-    public function getSound()
-    {
-        return isset($this->sound) ? $this->sound : GPBUtil::compatibleInt64(0, '0');
-    }
-
-    public function hasSound()
-    {
-        return isset($this->sound);
-    }
-
-    public function clearSound()
-    {
-        unset($this->sound);
-    }
-
-    /**
-     * Generated from protobuf field <code>optional uint64 sound = 12 [json_name = "sound"];</code>
-     * @param int|string $var
-     * @return $this
-     */
-    public function setSound(int|string $var)
-    {
-        GPBUtil::checkUint64($var);
-        $this->sound = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>.google.protobuf.Timestamp created_at = 13 [json_name = "created_at"];</code>
+     * Generated from protobuf field <code>.google.protobuf.Timestamp created_at = 5;</code>
      * @return \Google\Protobuf\Timestamp|null
      */
     public function getCreatedAt()
@@ -447,7 +175,7 @@ class Notification extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.google.protobuf.Timestamp created_at = 13 [json_name = "created_at"];</code>
+     * Generated from protobuf field <code>.google.protobuf.Timestamp created_at = 5;</code>
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
@@ -459,7 +187,7 @@ class Notification extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.google.protobuf.Timestamp read_at = 14 [json_name = "read_at"];</code>
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp read_at = 6;</code>
      * @return \Google\Protobuf\Timestamp|null
      */
     public function getReadAt()
@@ -478,45 +206,13 @@ class Notification extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.google.protobuf.Timestamp read_at = 14 [json_name = "read_at"];</code>
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp read_at = 6;</code>
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
     public function setReadAt(\Google\Protobuf\Timestamp|null $var)
     {
         $this->read_at = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>optional uint64 user_alert_id = 15 [json_name = "user_alert_id"];</code>
-     * @return int|string
-     */
-    public function getUserAlertId()
-    {
-        return isset($this->user_alert_id) ? $this->user_alert_id : GPBUtil::compatibleInt64(0, '0');
-    }
-
-    public function hasUserAlertId()
-    {
-        return isset($this->user_alert_id);
-    }
-
-    public function clearUserAlertId()
-    {
-        unset($this->user_alert_id);
-    }
-
-    /**
-     * Generated from protobuf field <code>optional uint64 user_alert_id = 15 [json_name = "user_alert_id"];</code>
-     * @param int|string $var
-     * @return $this
-     */
-    public function setUserAlertId(int|string $var)
-    {
-        GPBUtil::checkUint64($var);
-        $this->user_alert_id = $var;
 
         return $this;
     }
