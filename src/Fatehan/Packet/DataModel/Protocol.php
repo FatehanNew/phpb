@@ -224,6 +224,10 @@ class Protocol
      * Generated from protobuf enum <code>XEXUN = 52;</code>
      */
     const XEXUN = 52;
+    /**
+     * Generated from protobuf enum <code>RANA = 53;</code>
+     */
+    const RANA = 53;
 
     private static $valueToName = [
         self::UNKNOWN => 'UNKNOWN',
@@ -279,6 +283,7 @@ class Protocol
         self::ET804 => 'ET804',
         self::GF900 => 'GF900',
         self::XEXUN => 'XEXUN',
+        self::RANA => 'RANA',
     ];
 
     public static function name($value)
