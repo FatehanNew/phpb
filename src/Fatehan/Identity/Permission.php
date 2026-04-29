@@ -2789,6 +2789,31 @@ class Permission
      * Generated from protobuf enum <code>WORK_SHIFT_ME = 697;</code>
      */
     const WORK_SHIFT_ME = 697;
+    /**
+     *
+     * Generated from protobuf enum <code>PARTNER_WAREHOUSE_DISPATCH = 698;</code>
+     */
+    const PARTNER_WAREHOUSE_DISPATCH = 698;
+    /**
+     * Generated from protobuf enum <code>PARTNER_WAREHOUSE_RETURN = 699;</code>
+     */
+    const PARTNER_WAREHOUSE_RETURN = 699;
+    /**
+     * Generated from protobuf enum <code>PARTNER_WAREHOUSE_CHANGE = 700;</code>
+     */
+    const PARTNER_WAREHOUSE_CHANGE = 700;
+    /**
+     * Generated from protobuf enum <code>PARTNER_WAREHOUSE_DESTROY = 701;</code>
+     */
+    const PARTNER_WAREHOUSE_DESTROY = 701;
+    /**
+     * Generated from protobuf enum <code>PARTNER_WAREHOUSE_LEND = 702;</code>
+     */
+    const PARTNER_WAREHOUSE_LEND = 702;
+    /**
+     * Generated from protobuf enum <code>PARTNER_WAREHOUSE_READY = 703;</code>
+     */
+    const PARTNER_WAREHOUSE_READY = 703;
 
     private static $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
@@ -3446,6 +3471,12 @@ class Permission
         self::WORK_SHIFT_DELETE => 'WORK_SHIFT_DELETE',
         self::WORK_SHIFT_SUB => 'WORK_SHIFT_SUB',
         self::WORK_SHIFT_ME => 'WORK_SHIFT_ME',
+        self::PARTNER_WAREHOUSE_DISPATCH => 'PARTNER_WAREHOUSE_DISPATCH',
+        self::PARTNER_WAREHOUSE_RETURN => 'PARTNER_WAREHOUSE_RETURN',
+        self::PARTNER_WAREHOUSE_CHANGE => 'PARTNER_WAREHOUSE_CHANGE',
+        self::PARTNER_WAREHOUSE_DESTROY => 'PARTNER_WAREHOUSE_DESTROY',
+        self::PARTNER_WAREHOUSE_LEND => 'PARTNER_WAREHOUSE_LEND',
+        self::PARTNER_WAREHOUSE_READY => 'PARTNER_WAREHOUSE_READY',
     ];
 
     public static function name($value)
