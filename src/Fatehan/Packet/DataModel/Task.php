@@ -38,10 +38,6 @@ class Task extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.com.fatehan.packets.Protocol protocol = 6 [json_name = "protocol"];</code>
      */
     protected $protocol = 0;
-    /**
-     * Generated from protobuf field <code>repeated uint64 work_shift_ids = 7 [json_name = "work_shift_ids"];</code>
-     */
-    private $work_shift_ids;
 
     /**
      * Constructor.
@@ -55,7 +51,6 @@ class Task extends \Google\Protobuf\Internal\Message
      *     @type int|string $imei
      *     @type \Fatehan\Packet\DataModel\DeviceData $device_data
      *     @type int $protocol
-     *     @type int[]|string[] $work_shift_ids
      * }
      */
     public function __construct($data = NULL) {
@@ -218,28 +213,6 @@ class Task extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\Protocol::class);
         $this->protocol = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>repeated uint64 work_shift_ids = 7 [json_name = "work_shift_ids"];</code>
-     * @return RepeatedField<int>|RepeatedField<string>
-     */
-    public function getWorkShiftIds()
-    {
-        return $this->work_shift_ids;
-    }
-
-    /**
-     * Generated from protobuf field <code>repeated uint64 work_shift_ids = 7 [json_name = "work_shift_ids"];</code>
-     * @param int[]|string[] $var
-     * @return $this
-     */
-    public function setWorkShiftIds(array|RepeatedField $var)
-    {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT64);
-        $this->work_shift_ids = $arr;
 
         return $this;
     }

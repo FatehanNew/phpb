@@ -89,6 +89,10 @@ class AreaModule extends \Google\Protobuf\Internal\Message
      */
     protected $towing_duration = 0;
     /**
+     * Generated from protobuf field <code>optional string area_name = 21 [json_name = "area_name"];</code>
+     */
+    protected $area_name = null;
+    /**
      ** these are only accepted when both starts and finishes are not none *
      *
      * Generated from protobuf field <code>optional uint32 minimum_accepted_duration = 13 [json_name = "minimum_accepted_duration"];</code>
@@ -126,6 +130,7 @@ class AreaModule extends \Google\Protobuf\Internal\Message
      *     @type int $idling_duration
      *     @type int $parking_duration
      *     @type int $towing_duration
+     *     @type string $area_name
      *     @type int $minimum_accepted_duration
      *          * these are only accepted when both starts and finishes are not none *
      *     @type \Fatehan\Area\Area $area
@@ -590,6 +595,38 @@ class AreaModule extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkUint32($var);
         $this->towing_duration = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string area_name = 21 [json_name = "area_name"];</code>
+     * @return string
+     */
+    public function getAreaName()
+    {
+        return isset($this->area_name) ? $this->area_name : '';
+    }
+
+    public function hasAreaName()
+    {
+        return isset($this->area_name);
+    }
+
+    public function clearAreaName()
+    {
+        unset($this->area_name);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string area_name = 21 [json_name = "area_name"];</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setAreaName(string $var)
+    {
+        GPBUtil::checkString($var, true);
+        $this->area_name = $var;
 
         return $this;
     }

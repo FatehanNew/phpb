@@ -5,7 +5,7 @@ git pull
 
 
 if [[ "$1" == "--update" || "$2" == "--update" ]]; then
-    printf "Updating PHP dependencies using Composer...\n"
+    eprintf "Updating PHP dependencies using Composer...\n"
     composer update
 fi
 

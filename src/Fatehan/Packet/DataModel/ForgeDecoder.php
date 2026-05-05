@@ -42,6 +42,9 @@ class ForgeDecoder extends \Google\Protobuf\Internal\Message
      *     @type \Fatehan\Packet\Forge\JTTLiveStatusUpdate $jtt_live_status_update
      *           jtt device communication commands
      *     @type \Fatehan\Packet\Forge\JTTQueryFileResponse $jtt_query_file_response
+     *     @type \Fatehan\Packet\Forge\R31AudioResponse $r31_audio_response
+     *           r31 audio
+     *     @type \Fatehan\Packet\Forge\R31AudioUploadConfirmation $r31_audio_upload_confirmation
      * }
      */
     public function __construct($data = NULL) {
@@ -220,6 +223,62 @@ class ForgeDecoder extends \Google\Protobuf\Internal\Message
     public function setJttQueryFileResponse(\Fatehan\Packet\Forge\JTTQueryFileResponse|null $var)
     {
         $this->writeOneof(22, $var);
+
+        return $this;
+    }
+
+    /**
+     * r31 audio
+     *
+     * Generated from protobuf field <code>.com.fatehan.packets.R31AudioResponse r31_audio_response = 23;</code>
+     * @return \Fatehan\Packet\Forge\R31AudioResponse|null
+     */
+    public function getR31AudioResponse()
+    {
+        return $this->readOneof(23);
+    }
+
+    public function hasR31AudioResponse()
+    {
+        return $this->hasOneof(23);
+    }
+
+    /**
+     * r31 audio
+     *
+     * Generated from protobuf field <code>.com.fatehan.packets.R31AudioResponse r31_audio_response = 23;</code>
+     * @param \Fatehan\Packet\Forge\R31AudioResponse $var
+     * @return $this
+     */
+    public function setR31AudioResponse(\Fatehan\Packet\Forge\R31AudioResponse|null $var)
+    {
+        $this->writeOneof(23, $var);
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.com.fatehan.packets.R31AudioUploadConfirmation r31_audio_upload_confirmation = 24;</code>
+     * @return \Fatehan\Packet\Forge\R31AudioUploadConfirmation|null
+     */
+    public function getR31AudioUploadConfirmation()
+    {
+        return $this->readOneof(24);
+    }
+
+    public function hasR31AudioUploadConfirmation()
+    {
+        return $this->hasOneof(24);
+    }
+
+    /**
+     * Generated from protobuf field <code>.com.fatehan.packets.R31AudioUploadConfirmation r31_audio_upload_confirmation = 24;</code>
+     * @param \Fatehan\Packet\Forge\R31AudioUploadConfirmation $var
+     * @return $this
+     */
+    public function setR31AudioUploadConfirmation(\Fatehan\Packet\Forge\R31AudioUploadConfirmation|null $var)
+    {
+        $this->writeOneof(24, $var);
 
         return $this;
     }

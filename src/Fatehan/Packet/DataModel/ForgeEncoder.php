@@ -46,6 +46,10 @@ class ForgeEncoder extends \Google\Protobuf\Internal\Message
      *     @type \Fatehan\Packet\Forge\JTTPlaybackRequest $jtt_playback_request
      *     @type \Fatehan\Packet\Forge\JTTPlaybackUpdate $jtt_playback_update
      *     @type \Fatehan\Packet\Forge\RequestAlertMediaUpload $jtt_media_upload_request
+     *     @type \Fatehan\Packet\Forge\R31AudioRequest $r31_audio_request
+     *           r31 audio
+     *     @type \Fatehan\Packet\Forge\R31AudioUpload $r31_audio_upload
+     *     @type \Fatehan\Packet\Forge\R31AudioConfirmed $r31_audio_confirmed
      * }
      */
     public function __construct($data = NULL) {
@@ -328,6 +332,88 @@ class ForgeEncoder extends \Google\Protobuf\Internal\Message
     public function setJttMediaUploadRequest(\Fatehan\Packet\Forge\RequestAlertMediaUpload|null $var)
     {
         $this->writeOneof(26, $var);
+
+        return $this;
+    }
+
+    /**
+     * r31 audio
+     *
+     * Generated from protobuf field <code>.com.fatehan.packets.R31AudioRequest r31_audio_request = 27;</code>
+     * @return \Fatehan\Packet\Forge\R31AudioRequest|null
+     */
+    public function getR31AudioRequest()
+    {
+        return $this->readOneof(27);
+    }
+
+    public function hasR31AudioRequest()
+    {
+        return $this->hasOneof(27);
+    }
+
+    /**
+     * r31 audio
+     *
+     * Generated from protobuf field <code>.com.fatehan.packets.R31AudioRequest r31_audio_request = 27;</code>
+     * @param \Fatehan\Packet\Forge\R31AudioRequest $var
+     * @return $this
+     */
+    public function setR31AudioRequest(\Fatehan\Packet\Forge\R31AudioRequest|null $var)
+    {
+        $this->writeOneof(27, $var);
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.com.fatehan.packets.R31AudioUpload r31_audio_upload = 28;</code>
+     * @return \Fatehan\Packet\Forge\R31AudioUpload|null
+     */
+    public function getR31AudioUpload()
+    {
+        return $this->readOneof(28);
+    }
+
+    public function hasR31AudioUpload()
+    {
+        return $this->hasOneof(28);
+    }
+
+    /**
+     * Generated from protobuf field <code>.com.fatehan.packets.R31AudioUpload r31_audio_upload = 28;</code>
+     * @param \Fatehan\Packet\Forge\R31AudioUpload $var
+     * @return $this
+     */
+    public function setR31AudioUpload(\Fatehan\Packet\Forge\R31AudioUpload|null $var)
+    {
+        $this->writeOneof(28, $var);
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.com.fatehan.packets.R31AudioConfirmed r31_audio_confirmed = 29;</code>
+     * @return \Fatehan\Packet\Forge\R31AudioConfirmed|null
+     */
+    public function getR31AudioConfirmed()
+    {
+        return $this->readOneof(29);
+    }
+
+    public function hasR31AudioConfirmed()
+    {
+        return $this->hasOneof(29);
+    }
+
+    /**
+     * Generated from protobuf field <code>.com.fatehan.packets.R31AudioConfirmed r31_audio_confirmed = 29;</code>
+     * @param \Fatehan\Packet\Forge\R31AudioConfirmed $var
+     * @return $this
+     */
+    public function setR31AudioConfirmed(\Fatehan\Packet\Forge\R31AudioConfirmed|null $var)
+    {
+        $this->writeOneof(29, $var);
 
         return $this;
     }
