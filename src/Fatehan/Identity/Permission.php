@@ -2814,6 +2814,16 @@ class Permission
      * Generated from protobuf enum <code>PARTNER_WAREHOUSE_READY = 703;</code>
      */
     const PARTNER_WAREHOUSE_READY = 703;
+    /**
+     * PRDOCUT SUBMISSION
+     *
+     * Generated from protobuf enum <code>PARTNER_PRODUCT_SUBMISSION_LIST = 704;</code>
+     */
+    const PARTNER_PRODUCT_SUBMISSION_LIST = 704;
+    /**
+     * Generated from protobuf enum <code>PARTNER_PRODUCT_SUBMISSION_CREATE = 705;</code>
+     */
+    const PARTNER_PRODUCT_SUBMISSION_CREATE = 705;
 
     private static $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
@@ -3477,6 +3487,8 @@ class Permission
         self::PARTNER_WAREHOUSE_DESTROY => 'PARTNER_WAREHOUSE_DESTROY',
         self::PARTNER_WAREHOUSE_LEND => 'PARTNER_WAREHOUSE_LEND',
         self::PARTNER_WAREHOUSE_READY => 'PARTNER_WAREHOUSE_READY',
+        self::PARTNER_PRODUCT_SUBMISSION_LIST => 'PARTNER_PRODUCT_SUBMISSION_LIST',
+        self::PARTNER_PRODUCT_SUBMISSION_CREATE => 'PARTNER_PRODUCT_SUBMISSION_CREATE',
     ];
 
     public static function name($value)
