@@ -3,6 +3,14 @@
 printf "Updating Git repository...\n"
 git pull
 
+PROTOCOLS_DIR="$HOME/apps/go/protocols"
+
+printf $PROTOCOLS_DIR
+
+if [ ! -d "$PROTOCOLS_DIR" ]; then
+    printf "Error: Protocols directory not found: %s\n" "$PROTOCOLS_DIR"
+    exit 1
+fi
 
 if [[ "$1" == "--update" || "$2" == "--update" ]]; then
     eprintf "Updating PHP dependencies using Composer...\n"
@@ -13,8 +21,8 @@ printf "Clearing source directory...\n"
 rm -rf src/Fatehan/*
 
 printf "Regenerating gRPC PHP classes from .proto files...\n"
-protoc --php_out=src/ --grpc_out=src/ --plugin=protoc-gen-grpc=/bin/grpc_php_plugin -I ../protocols \
-  ../protocols/{trips,packets,notifies,financial,identities,models,services,areas,devices,activities}/*.proto
+protoc --php_out=src/ --grpc_out=src/ --plugin=protoc-gen-grpc=/bin/grpc_php_plugin -I "$PROTOCOLS_DIR" \
+  "$PROTOCOLS_DIR"/{trips,packets,notifies,financial,identities,models,services,areas,devices,activities}/*.proto
 
 printf "Bumping composer package minor version...\n"
 if [ -f "composer.json" ]; then
