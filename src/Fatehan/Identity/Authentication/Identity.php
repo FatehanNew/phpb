@@ -25,6 +25,10 @@ class Identity extends \Google\Protobuf\Internal\Message
      */
     protected $phone = 0;
     /**
+     * Generated from protobuf field <code>string domain = 15 [json_name = "domain"];</code>
+     */
+    protected $domain = '';
+    /**
      * Generated from protobuf field <code>optional string email = 7 [json_name = "email"];</code>
      */
     protected $email = null;
@@ -83,6 +87,7 @@ class Identity extends \Google\Protobuf\Internal\Message
      *
      *     @type int|string $id
      *     @type int|string $phone
+     *     @type string $domain
      *     @type string $email
      *     @type string $name
      *     @type string $picture
@@ -143,6 +148,28 @@ class Identity extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkUint64($var);
         $this->phone = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string domain = 15 [json_name = "domain"];</code>
+     * @return string
+     */
+    public function getDomain()
+    {
+        return $this->domain;
+    }
+
+    /**
+     * Generated from protobuf field <code>string domain = 15 [json_name = "domain"];</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setDomain(string $var)
+    {
+        GPBUtil::checkString($var, true);
+        $this->domain = $var;
 
         return $this;
     }
