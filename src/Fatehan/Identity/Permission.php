@@ -407,33 +407,33 @@ class Permission
     /**
      * Invoice permissions
      *
-     * Generated from protobuf enum <code>INVOICE_LIST = 98;</code>
+     * Generated from protobuf enum <code>PARTNER_INVOICE_LIST = 98;</code>
      */
-    const INVOICE_LIST = 98;
+    const PARTNER_INVOICE_LIST = 98;
     /**
-     * Generated from protobuf enum <code>INVOICE_CREATE = 99;</code>
+     * Generated from protobuf enum <code>PARTNER_INVOICE_CREATE = 99;</code>
      */
-    const INVOICE_CREATE = 99;
+    const PARTNER_INVOICE_CREATE = 99;
     /**
-     * Generated from protobuf enum <code>INVOICE_SHOW = 100;</code>
+     * Generated from protobuf enum <code>PARTNER_INVOICE_SHOW = 100;</code>
      */
-    const INVOICE_SHOW = 100;
+    const PARTNER_INVOICE_SHOW = 100;
     /**
-     * Generated from protobuf enum <code>INVOICE_UPDATE = 101;</code>
+     * Generated from protobuf enum <code>PARTNER_INVOICE_UPDATE = 101;</code>
      */
-    const INVOICE_UPDATE = 101;
+    const PARTNER_INVOICE_UPDATE = 101;
     /**
-     * Generated from protobuf enum <code>INVOICE_DELETE = 102;</code>
+     * Generated from protobuf enum <code>PARTNER_INVOICE_DELETE = 102;</code>
      */
-    const INVOICE_DELETE = 102;
+    const PARTNER_INVOICE_DELETE = 102;
     /**
-     * Generated from protobuf enum <code>INVOICE_ME = 103;</code>
+     * Generated from protobuf enum <code>PARTNER_INVOICE_ME = 103;</code>
      */
-    const INVOICE_ME = 103;
+    const PARTNER_INVOICE_ME = 103;
     /**
-     * Generated from protobuf enum <code>INVOICE_SUB = 104;</code>
+     * Generated from protobuf enum <code>PARTNER_INVOICE_SUB = 104;</code>
      */
-    const INVOICE_SUB = 104;
+    const PARTNER_INVOICE_SUB = 104;
     /**
      * Notification permissions
      *
@@ -2914,13 +2914,13 @@ class Permission
         self::ADMIN_ICON_CREATE_DEFAULT => 'ADMIN_ICON_CREATE_DEFAULT',
         self::ADMIN_ICON_UPDATE_DEFAULT => 'ADMIN_ICON_UPDATE_DEFAULT',
         self::ADMIN_ICON_DELETE_DEFAULT => 'ADMIN_ICON_DELETE_DEFAULT',
-        self::INVOICE_LIST => 'INVOICE_LIST',
-        self::INVOICE_CREATE => 'INVOICE_CREATE',
-        self::INVOICE_SHOW => 'INVOICE_SHOW',
-        self::INVOICE_UPDATE => 'INVOICE_UPDATE',
-        self::INVOICE_DELETE => 'INVOICE_DELETE',
-        self::INVOICE_ME => 'INVOICE_ME',
-        self::INVOICE_SUB => 'INVOICE_SUB',
+        self::PARTNER_INVOICE_LIST => 'PARTNER_INVOICE_LIST',
+        self::PARTNER_INVOICE_CREATE => 'PARTNER_INVOICE_CREATE',
+        self::PARTNER_INVOICE_SHOW => 'PARTNER_INVOICE_SHOW',
+        self::PARTNER_INVOICE_UPDATE => 'PARTNER_INVOICE_UPDATE',
+        self::PARTNER_INVOICE_DELETE => 'PARTNER_INVOICE_DELETE',
+        self::PARTNER_INVOICE_ME => 'PARTNER_INVOICE_ME',
+        self::PARTNER_INVOICE_SUB => 'PARTNER_INVOICE_SUB',
         self::NOTIFICATION_LIST => 'NOTIFICATION_LIST',
         self::NOTIFICATION_CREATE => 'NOTIFICATION_CREATE',
         self::NOTIFICATION_SHOW => 'NOTIFICATION_SHOW',
