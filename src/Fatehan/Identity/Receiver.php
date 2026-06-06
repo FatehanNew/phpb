@@ -39,7 +39,7 @@ class Receiver extends \Google\Protobuf\Internal\Message
      *     @type string $phone
      *     @type string $email
      *     @type int|string $telegram_id
-     *     @type \Fatehan\Identity\Receiver\Token[]|\Google\Protobuf\Internal\RepeatedField $tokens
+     *     @type array<\Fatehan\Identity\Receiver\Token>|\Google\Protobuf\Internal\RepeatedField $tokens
      * }
      */
     public function __construct($data = NULL) {
@@ -154,7 +154,7 @@ class Receiver extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.identities.Receiver.Token tokens = 4 [json_name = "tokens"];</code>
-     * @param \Fatehan\Identity\Receiver\Token[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Identity\Receiver\Token>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setTokens($var)

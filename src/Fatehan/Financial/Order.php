@@ -140,7 +140,7 @@ class Order extends \Google\Protobuf\Internal\Message
      *     @type string $status
      *     @type \Google\Protobuf\Timestamp $created_at
      *     @type \Google\Protobuf\Timestamp $updated_at
-     *     @type \Fatehan\Financial\OrderProduct[]|\Google\Protobuf\Internal\RepeatedField $products
+     *     @type array<\Fatehan\Financial\OrderProduct>|\Google\Protobuf\Internal\RepeatedField $products
      *     @type \Fatehan\Financial\Partner $partner
      *     @type \Fatehan\Financial\PaymentGateway $payment_gateway
      *     @type \Fatehan\Financial\Currency $currency
@@ -713,7 +713,7 @@ class Order extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.financial.OrderProduct products = 21 [json_name = "products"];</code>
-     * @param \Fatehan\Financial\OrderProduct[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Financial\OrderProduct>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setProducts($var)

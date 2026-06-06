@@ -94,7 +94,7 @@ class FusionDevice extends \Google\Protobuf\Internal\Message
      *     @type int $trip_type
      *     @type int|string $created_at
      *     @type int|string $organization_id
-     *     @type int[]|string[]|\Google\Protobuf\Internal\RepeatedField $generation
+     *     @type array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $generation
      * }
      */
     public function __construct($data = NULL) {
@@ -461,7 +461,7 @@ class FusionDevice extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated uint64 generation = 16 [json_name = "generation"];</code>
-     * @param int[]|string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setGeneration($var)

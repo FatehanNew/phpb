@@ -24,7 +24,7 @@ class TraffixResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type \Fatehan\Service\Traffix[]|\Google\Protobuf\Internal\RepeatedField $list
+     *     @type array<\Fatehan\Service\Traffix>|\Google\Protobuf\Internal\RepeatedField $list
      * }
      */
     public function __construct($data = NULL) {
@@ -43,7 +43,7 @@ class TraffixResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.services.Traffix list = 1;</code>
-     * @param \Fatehan\Service\Traffix[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Service\Traffix>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setList($var)

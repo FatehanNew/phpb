@@ -29,7 +29,7 @@ class Chart extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type array|\Google\Protobuf\Internal\MapField $ios
-     *     @type \Google\Protobuf\Timestamp[]|\Google\Protobuf\Internal\RepeatedField $datetime
+     *     @type array<\Google\Protobuf\Timestamp>|\Google\Protobuf\Internal\RepeatedField $datetime
      * }
      */
     public function __construct($data = NULL) {
@@ -70,7 +70,7 @@ class Chart extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .google.protobuf.Timestamp datetime = 2 [json_name = "datetime"];</code>
-     * @param \Google\Protobuf\Timestamp[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Google\Protobuf\Timestamp>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setDatetime($var)

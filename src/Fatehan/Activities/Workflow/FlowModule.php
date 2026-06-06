@@ -25,7 +25,7 @@ class FlowModule extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type \Fatehan\Activities\Workflow\FlowEvent[]|\Google\Protobuf\Internal\RepeatedField $events
+     *     @type array<\Fatehan\Activities\Workflow\FlowEvent>|\Google\Protobuf\Internal\RepeatedField $events
      *     @type \Fatehan\Activities\Workflow\AreaModule $area_module
      *     @type \Fatehan\Activities\Workflow\DeviceModule $device_module
      * }
@@ -46,7 +46,7 @@ class FlowModule extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.activities.FlowEvent events = 1 [json_name = "events"];</code>
-     * @param \Fatehan\Activities\Workflow\FlowEvent[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Activities\Workflow\FlowEvent>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setEvents($var)

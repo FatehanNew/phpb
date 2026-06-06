@@ -39,7 +39,7 @@ class WorkShiftIndexResponse extends \Google\Protobuf\Internal\Message
      *     @type int $current_page
      *     @type int $last_page
      *     @type int $per_page
-     *     @type \Fatehan\Activities\WorkShift\WorkShift[]|\Google\Protobuf\Internal\RepeatedField $data
+     *     @type array<\Fatehan\Activities\WorkShift\WorkShift>|\Google\Protobuf\Internal\RepeatedField $data
      * }
      */
     public function __construct($data = NULL) {
@@ -124,7 +124,7 @@ class WorkShiftIndexResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.activities.WorkShift data = 4;</code>
-     * @param \Fatehan\Activities\WorkShift\WorkShift[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Activities\WorkShift\WorkShift>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setData($var)

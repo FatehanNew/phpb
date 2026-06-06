@@ -46,8 +46,8 @@ class Flow extends \Google\Protobuf\Internal\Message
      *     @type bool $continuous
      *     @type int|string $last_gps_time
      *     @type \Google\Protobuf\Duration $operation_timeout
-     *     @type \Fatehan\Activities\Workflow\FlowEvent[]|\Google\Protobuf\Internal\RepeatedField $events
-     *     @type \Fatehan\Activities\Workflow\FlowModule[]|\Google\Protobuf\Internal\RepeatedField $modules
+     *     @type array<\Fatehan\Activities\Workflow\FlowEvent>|\Google\Protobuf\Internal\RepeatedField $events
+     *     @type array<\Fatehan\Activities\Workflow\FlowModule>|\Google\Protobuf\Internal\RepeatedField $modules
      *     @type \Fatehan\Activities\Workflow\DefaultReport $default_report
      *     @type \Fatehan\Activities\Workflow\PayambarReport $payambar_report
      *     @type \Fatehan\Activities\Workflow\TaneshReport $tanesh_report
@@ -150,7 +150,7 @@ class Flow extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.activities.FlowEvent events = 30 [json_name = "events"];</code>
-     * @param \Fatehan\Activities\Workflow\FlowEvent[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Activities\Workflow\FlowEvent>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setEvents($var)
@@ -172,7 +172,7 @@ class Flow extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.activities.FlowModule modules = 40 [json_name = "modules"];</code>
-     * @param \Fatehan\Activities\Workflow\FlowModule[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Activities\Workflow\FlowModule>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setModules($var)

@@ -50,6 +50,14 @@ class DeviceStatus extends \Google\Protobuf\Internal\Message
      */
     protected $protocol = 0;
     /**
+     * Generated from protobuf field <code>uint32 mileage_at_start = 10;</code>
+     */
+    protected $mileage_at_start = 0;
+    /**
+     * Generated from protobuf field <code>.google.protobuf.Timestamp gps_time_at_start = 11;</code>
+     */
+    protected $gps_time_at_start = null;
+    /**
      * Generated from protobuf field <code>.com.fatehan.packets.OdysseyDevice odyssey = 21 [json_name = "odyssey"];</code>
      */
     protected $odyssey = null;
@@ -70,9 +78,11 @@ class DeviceStatus extends \Google\Protobuf\Internal\Message
      *     @type \Fatehan\Packet\DataModel\Client $client
      *     @type bool $online
      *     @type \Google\Protobuf\Timestamp $last_online
-     *     @type \Fatehan\Packet\DataModel\Log[]|\Google\Protobuf\Internal\RepeatedField $logs
+     *     @type array<\Fatehan\Packet\DataModel\Log>|\Google\Protobuf\Internal\RepeatedField $logs
      *     @type int $stat
      *     @type int $protocol
+     *     @type int $mileage_at_start
+     *     @type \Google\Protobuf\Timestamp $gps_time_at_start
      *     @type \Fatehan\Packet\DataModel\OdysseyDevice $odyssey
      *     @type \Fatehan\Packet\DataModel\FusionDevice $fusion
      * }
@@ -255,7 +265,7 @@ class DeviceStatus extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.packets.Log logs = 7 [json_name = "logs"];</code>
-     * @param \Fatehan\Packet\DataModel\Log[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Packet\DataModel\Log>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setLogs($var)
@@ -306,6 +316,60 @@ class DeviceStatus extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\Protocol::class);
         $this->protocol = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>uint32 mileage_at_start = 10;</code>
+     * @return int
+     */
+    public function getMileageAtStart()
+    {
+        return $this->mileage_at_start;
+    }
+
+    /**
+     * Generated from protobuf field <code>uint32 mileage_at_start = 10;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setMileageAtStart($var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->mileage_at_start = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.google.protobuf.Timestamp gps_time_at_start = 11;</code>
+     * @return \Google\Protobuf\Timestamp|null
+     */
+    public function getGpsTimeAtStart()
+    {
+        return $this->gps_time_at_start;
+    }
+
+    public function hasGpsTimeAtStart()
+    {
+        return isset($this->gps_time_at_start);
+    }
+
+    public function clearGpsTimeAtStart()
+    {
+        unset($this->gps_time_at_start);
+    }
+
+    /**
+     * Generated from protobuf field <code>.google.protobuf.Timestamp gps_time_at_start = 11;</code>
+     * @param \Google\Protobuf\Timestamp $var
+     * @return $this
+     */
+    public function setGpsTimeAtStart($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
+        $this->gps_time_at_start = $var;
 
         return $this;
     }

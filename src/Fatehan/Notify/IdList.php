@@ -24,7 +24,7 @@ class IdList extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type int[]|string[]|\Google\Protobuf\Internal\RepeatedField $ids
+     *     @type array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $ids
      * }
      */
     public function __construct($data = NULL) {
@@ -43,7 +43,7 @@ class IdList extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated uint64 ids = 1;</code>
-     * @param int[]|string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setIds($var)

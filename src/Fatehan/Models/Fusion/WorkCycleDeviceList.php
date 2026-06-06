@@ -24,7 +24,7 @@ class WorkCycleDeviceList extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type \Fatehan\Models\Fusion\WorkCycleDevice[]|\Google\Protobuf\Internal\RepeatedField $list
+     *     @type array<\Fatehan\Models\Fusion\WorkCycleDevice>|\Google\Protobuf\Internal\RepeatedField $list
      * }
      */
     public function __construct($data = NULL) {
@@ -43,7 +43,7 @@ class WorkCycleDeviceList extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.models.WorkCycleDevice list = 1 [json_name = "list"];</code>
-     * @param \Fatehan\Models\Fusion\WorkCycleDevice[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Models\Fusion\WorkCycleDevice>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setList($var)

@@ -39,7 +39,7 @@ class CommandHistoryResponse extends \Google\Protobuf\Internal\Message
      *     @type int $records
      *     @type int $cost
      *     @type int $page
-     *     @type \Fatehan\Packet\Message\Command[]|\Google\Protobuf\Internal\RepeatedField $list
+     *     @type array<\Fatehan\Packet\Message\Command>|\Google\Protobuf\Internal\RepeatedField $list
      * }
      */
     public function __construct($data = NULL) {
@@ -124,7 +124,7 @@ class CommandHistoryResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.packets.Command list = 4;</code>
-     * @param \Fatehan\Packet\Message\Command[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Packet\Message\Command>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setList($var)

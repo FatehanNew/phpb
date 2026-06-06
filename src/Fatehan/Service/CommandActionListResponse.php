@@ -29,7 +29,7 @@ class CommandActionListResponse extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int|string $cost
-     *     @type \Fatehan\Service\CommandActionModel[]|\Google\Protobuf\Internal\RepeatedField $data
+     *     @type array<\Fatehan\Service\CommandActionModel>|\Google\Protobuf\Internal\RepeatedField $data
      * }
      */
     public function __construct($data = NULL) {
@@ -70,7 +70,7 @@ class CommandActionListResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.services.CommandActionModel data = 2 [json_name = "data"];</code>
-     * @param \Fatehan\Service\CommandActionModel[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Service\CommandActionModel>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setData($var)

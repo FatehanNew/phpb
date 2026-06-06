@@ -24,7 +24,7 @@ class Rule extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type \Fatehan\Activities\WorkShift\RuleOption[]|\Google\Protobuf\Internal\RepeatedField $rules
+     *     @type array<\Fatehan\Activities\WorkShift\RuleOption>|\Google\Protobuf\Internal\RepeatedField $rules
      * }
      */
     public function __construct($data = NULL) {
@@ -43,7 +43,7 @@ class Rule extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.activities.RuleOption rules = 1;</code>
-     * @param \Fatehan\Activities\WorkShift\RuleOption[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Activities\WorkShift\RuleOption>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setRules($var)

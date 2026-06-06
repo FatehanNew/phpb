@@ -97,9 +97,9 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
      *     @type \Google\Protobuf\Timestamp $created_at
      *     @type int|string $workflow_task_id
      *     @type int|string $organization_id
-     *     @type int[]|string[]|\Google\Protobuf\Internal\RepeatedField $generation
+     *     @type array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $generation
      *     @type \Fatehan\Packet\DataModel\DataModule $module
-     *     @type int[]|string[]|\Google\Protobuf\Internal\RepeatedField $work_shift_ids
+     *     @type array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $work_shift_ids
      * }
      */
     public function __construct($data = NULL) {
@@ -474,7 +474,7 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated uint64 generation = 14 [json_name = "generation"];</code>
-     * @param int[]|string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setGeneration($var)
@@ -528,7 +528,7 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated uint64 work_shift_ids = 16 [json_name = "work_shift_ids"];</code>
-     * @param int[]|string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setWorkShiftIds($var)

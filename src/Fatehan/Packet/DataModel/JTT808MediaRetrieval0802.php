@@ -34,7 +34,7 @@ class JTT808MediaRetrieval0802 extends \Google\Protobuf\Internal\Message
      *
      *     @type int $serial_no
      *     @type int $media_counter
-     *     @type \Fatehan\Packet\DataModel\JTT808MediaRetrieval0802\Item[]|\Google\Protobuf\Internal\RepeatedField $items
+     *     @type array<\Fatehan\Packet\DataModel\JTT808MediaRetrieval0802\Item>|\Google\Protobuf\Internal\RepeatedField $items
      * }
      */
     public function __construct($data = NULL) {
@@ -97,7 +97,7 @@ class JTT808MediaRetrieval0802 extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.packets.JTT808MediaRetrieval0802.Item items = 3;</code>
-     * @param \Fatehan\Packet\DataModel\JTT808MediaRetrieval0802\Item[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Packet\DataModel\JTT808MediaRetrieval0802\Item>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setItems($var)

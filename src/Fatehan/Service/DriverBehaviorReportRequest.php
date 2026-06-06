@@ -44,7 +44,7 @@ class DriverBehaviorReportRequest extends \Google\Protobuf\Internal\Message
      *     @type int $group_by
      *     @type \Google\Protobuf\Timestamp $started_at
      *     @type \Google\Protobuf\Timestamp $finished_at
-     *     @type int[]|string[]|\Google\Protobuf\Internal\RepeatedField $device_ids
+     *     @type array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $device_ids
      * }
      */
     public function __construct($data = NULL) {
@@ -171,7 +171,7 @@ class DriverBehaviorReportRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated uint64 device_ids = 5 [json_name = "device_ids"];</code>
-     * @param int[]|string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setDeviceIds($var)

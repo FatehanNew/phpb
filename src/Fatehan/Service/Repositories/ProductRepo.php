@@ -36,7 +36,7 @@ class ProductRepo extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type \Fatehan\Financial\Product[]|\Google\Protobuf\Internal\RepeatedField $components
+     *     @type array<\Fatehan\Financial\Product>|\Google\Protobuf\Internal\RepeatedField $components
      *     @type \Fatehan\Financial\Currency $currency
      *     @type \Fatehan\Financial\ProductType $product_type
      *     @type string $properties
@@ -58,7 +58,7 @@ class ProductRepo extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.financial.Product components = 23 [json_name = "components"];</code>
-     * @param \Fatehan\Financial\Product[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Financial\Product>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setComponents($var)

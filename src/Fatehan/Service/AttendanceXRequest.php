@@ -40,7 +40,7 @@ class AttendanceXRequest extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type int[]|string[]|\Google\Protobuf\Internal\RepeatedField $device_ids
+     *     @type array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $device_ids
      *     @type \Google\Protobuf\Timestamp $started_at
      *     @type \Google\Protobuf\Timestamp $finished_at
      *     @type bool $exclude_leaves
@@ -63,7 +63,7 @@ class AttendanceXRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated uint64 device_ids = 1 [json_name = "device_ids"];</code>
-     * @param int[]|string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setDeviceIds($var)

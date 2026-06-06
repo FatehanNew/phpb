@@ -91,7 +91,7 @@ class Area extends \Google\Protobuf\Internal\Message
      *     @type \Google\Protobuf\Timestamp $updated_at
      *     @type \Fatehan\Area\AreaCategory $category
      *     @type \Fatehan\Identity\Organization $organization
-     *     @type \Fatehan\Area\Point[]|\Google\Protobuf\Internal\RepeatedField $coordinates
+     *     @type array<\Fatehan\Area\Point>|\Google\Protobuf\Internal\RepeatedField $coordinates
      * }
      */
     public function __construct($data = NULL) {
@@ -496,7 +496,7 @@ class Area extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.areas.Point coordinates = 12 [json_name = "coordinates"];</code>
-     * @param \Fatehan\Area\Point[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Area\Point>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setCoordinates($var)

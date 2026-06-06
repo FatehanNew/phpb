@@ -2823,6 +2823,34 @@ class Permission
      * Generated from protobuf enum <code>PARTNER_PRODUCT_SUBMISSION_CREATE = 705;</code>
      */
     const PARTNER_PRODUCT_SUBMISSION_CREATE = 705;
+    /**
+     * Generated from protobuf enum <code>ADMIN_PARTNER_CREATE = 706;</code>
+     */
+    const ADMIN_PARTNER_CREATE = 706;
+    /**
+     * Generated from protobuf enum <code>COMMAND_ACTION_LIST = 707;</code>
+     */
+    const COMMAND_ACTION_LIST = 707;
+    /**
+     * Generated from protobuf enum <code>COMMAND_ACTION_CREATE = 708;</code>
+     */
+    const COMMAND_ACTION_CREATE = 708;
+    /**
+     * Generated from protobuf enum <code>COMMAND_ACTION_SHOW = 709;</code>
+     */
+    const COMMAND_ACTION_SHOW = 709;
+    /**
+     * Generated from protobuf enum <code>COMMAND_ACTION_UPDATE = 710;</code>
+     */
+    const COMMAND_ACTION_UPDATE = 710;
+    /**
+     * Generated from protobuf enum <code>COMMAND_ACTION_DELETE = 711;</code>
+     */
+    const COMMAND_ACTION_DELETE = 711;
+    /**
+     * Generated from protobuf enum <code>PARTNER_SEND_USER_NOTIFICATION = 712;</code>
+     */
+    const PARTNER_SEND_USER_NOTIFICATION = 712;
 
     private static $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
@@ -3488,6 +3516,13 @@ class Permission
         self::PARTNER_WAREHOUSE_READY => 'PARTNER_WAREHOUSE_READY',
         self::PARTNER_PRODUCT_SUBMISSION_LIST => 'PARTNER_PRODUCT_SUBMISSION_LIST',
         self::PARTNER_PRODUCT_SUBMISSION_CREATE => 'PARTNER_PRODUCT_SUBMISSION_CREATE',
+        self::ADMIN_PARTNER_CREATE => 'ADMIN_PARTNER_CREATE',
+        self::COMMAND_ACTION_LIST => 'COMMAND_ACTION_LIST',
+        self::COMMAND_ACTION_CREATE => 'COMMAND_ACTION_CREATE',
+        self::COMMAND_ACTION_SHOW => 'COMMAND_ACTION_SHOW',
+        self::COMMAND_ACTION_UPDATE => 'COMMAND_ACTION_UPDATE',
+        self::COMMAND_ACTION_DELETE => 'COMMAND_ACTION_DELETE',
+        self::PARTNER_SEND_USER_NOTIFICATION => 'PARTNER_SEND_USER_NOTIFICATION',
     ];
 
     public static function name($value)

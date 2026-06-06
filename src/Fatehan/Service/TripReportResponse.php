@@ -39,7 +39,7 @@ class TripReportResponse extends \Google\Protobuf\Internal\Message
      *     @type int $cost
      *     @type int $threads
      *     @type int $records
-     *     @type \Fatehan\Trip\Trip[]|\Google\Protobuf\Internal\RepeatedField $trips
+     *     @type array<\Fatehan\Trip\Trip>|\Google\Protobuf\Internal\RepeatedField $trips
      * }
      */
     public function __construct($data = NULL) {
@@ -124,7 +124,7 @@ class TripReportResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.trips.Trip trips = 4;</code>
-     * @param \Fatehan\Trip\Trip[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Trip\Trip>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setTrips($var)

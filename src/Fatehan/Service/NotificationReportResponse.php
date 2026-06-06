@@ -29,7 +29,7 @@ class NotificationReportResponse extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int $cost
-     *     @type \Fatehan\Notify\Notification[]|\Google\Protobuf\Internal\RepeatedField $data
+     *     @type array<\Fatehan\Notify\Notification>|\Google\Protobuf\Internal\RepeatedField $data
      * }
      */
     public function __construct($data = NULL) {
@@ -70,7 +70,7 @@ class NotificationReportResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.notifies.Notification data = 7 [json_name = "data"];</code>
-     * @param \Fatehan\Notify\Notification[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Notify\Notification>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setData($var)

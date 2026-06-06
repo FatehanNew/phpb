@@ -79,7 +79,7 @@ class DirectMessage extends \Google\Protobuf\Internal\Message
      *     @type string $topic
      *     @type \Fatehan\Notify\IdList $users_list
      *     @type \Fatehan\Notify\IdList $devices_list
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $platforms
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $platforms
      *     @type \Google\Protobuf\Timestamp $timestamp
      *     @type \Google\Protobuf\Duration $ttl
      * }
@@ -488,7 +488,7 @@ class DirectMessage extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.notifies.Platform platforms = 32;</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setPlatforms($var)

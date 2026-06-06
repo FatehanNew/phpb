@@ -36,7 +36,7 @@ class WorkCycleResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type \Fatehan\Area\WorkCycle[]|\Google\Protobuf\Internal\RepeatedField $work_cycles
+     *     @type array<\Fatehan\Area\WorkCycle>|\Google\Protobuf\Internal\RepeatedField $work_cycles
      *     @type int $cost
      *     @type int $threads
      *     @type int $records
@@ -58,7 +58,7 @@ class WorkCycleResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.areas.WorkCycle work_cycles = 1 [json_name = "work_cycles"];</code>
-     * @param \Fatehan\Area\WorkCycle[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Area\WorkCycle>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setWorkCycles($var)

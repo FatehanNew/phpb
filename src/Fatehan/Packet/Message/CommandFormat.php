@@ -29,7 +29,7 @@ class CommandFormat extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $structure
-     *     @type \Fatehan\Packet\Message\CommandValidation[]|\Google\Protobuf\Internal\RepeatedField $parameters
+     *     @type array<\Fatehan\Packet\Message\CommandValidation>|\Google\Protobuf\Internal\RepeatedField $parameters
      * }
      */
     public function __construct($data = NULL) {
@@ -70,7 +70,7 @@ class CommandFormat extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.packets.CommandValidation parameters = 2 [json_name = "parameters"];</code>
-     * @param \Fatehan\Packet\Message\CommandValidation[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Packet\Message\CommandValidation>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setParameters($var)

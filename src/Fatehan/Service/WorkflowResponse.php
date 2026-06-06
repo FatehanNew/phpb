@@ -59,7 +59,7 @@ class WorkflowResponse extends \Google\Protobuf\Internal\Message
      *     @type int $per_page
      *     @type int|string $cost
      *     @type int $total
-     *     @type \Fatehan\Activities\Workflow\WorkflowTask[]|\Google\Protobuf\Internal\RepeatedField $data
+     *     @type array<\Fatehan\Activities\Workflow\WorkflowTask>|\Google\Protobuf\Internal\RepeatedField $data
      * }
      */
     public function __construct($data = NULL) {
@@ -232,7 +232,7 @@ class WorkflowResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.activities.WorkflowTask data = 9 [json_name = "data"];</code>
-     * @param \Fatehan\Activities\Workflow\WorkflowTask[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Activities\Workflow\WorkflowTask>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setData($var)

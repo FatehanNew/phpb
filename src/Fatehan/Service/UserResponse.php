@@ -59,7 +59,7 @@ class UserResponse extends \Google\Protobuf\Internal\Message
      *     @type int $per_page
      *     @type int|string $cost
      *     @type int $total
-     *     @type \Fatehan\Service\Repositories\UserRepo[]|\Google\Protobuf\Internal\RepeatedField $data
+     *     @type array<\Fatehan\Service\Repositories\UserRepo>|\Google\Protobuf\Internal\RepeatedField $data
      * }
      */
     public function __construct($data = NULL) {
@@ -232,7 +232,7 @@ class UserResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.services.UserRepo data = 8 [json_name = "data"];</code>
-     * @param \Fatehan\Service\Repositories\UserRepo[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Service\Repositories\UserRepo>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setData($var)

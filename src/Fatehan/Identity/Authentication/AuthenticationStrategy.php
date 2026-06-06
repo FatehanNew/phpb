@@ -70,7 +70,7 @@ class AuthenticationStrategy extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $authentication
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $authentication
      *           authentication methods 
      *     @type int $verification
      *           verification method 
@@ -108,7 +108,7 @@ class AuthenticationStrategy extends \Google\Protobuf\Internal\Message
      * authentication methods 
      *
      * Generated from protobuf field <code>repeated .com.fatehan.identities.AuthenticationMethod authentication = 1 [json_name = "authentication"];</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setAuthentication($var)

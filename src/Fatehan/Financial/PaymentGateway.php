@@ -72,7 +72,7 @@ class PaymentGateway extends \Google\Protobuf\Internal\Message
      *     @type string $name
      *     @type bool $default
      *     @type bool $status
-     *     @type \Fatehan\Financial\PaymentGateway\Config[]|\Google\Protobuf\Internal\RepeatedField $config
+     *     @type array<\Fatehan\Financial\PaymentGateway\Config>|\Google\Protobuf\Internal\RepeatedField $config
      *     @type \Google\Protobuf\Timestamp $created_at
      *     @type \Google\Protobuf\Timestamp $updated_at
      * }
@@ -289,7 +289,7 @@ class PaymentGateway extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.financial.PaymentGateway.Config config = 9 [json_name = "config"];</code>
-     * @param \Fatehan\Financial\PaymentGateway\Config[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Financial\PaymentGateway\Config>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setConfig($var)

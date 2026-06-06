@@ -51,9 +51,9 @@ class AreaIndexRequest extends \Google\Protobuf\Internal\Message
      *     @type bool $disable_pagination
      *     @type int $page
      *     @type int $page_size
-     *     @type int[]|string[]|\Google\Protobuf\Internal\RepeatedField $organization_ids
-     *     @type int[]|string[]|\Google\Protobuf\Internal\RepeatedField $area_ids
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $type
+     *     @type array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $organization_ids
+     *     @type array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $area_ids
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $type
      *     @type string $search
      * }
      */
@@ -159,7 +159,7 @@ class AreaIndexRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated uint64 organization_ids = 4 [json_name = "organization_ids"];</code>
-     * @param int[]|string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setOrganizationIds($var)
@@ -181,7 +181,7 @@ class AreaIndexRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated uint64 area_ids = 5 [json_name = "ares_ids"];</code>
-     * @param int[]|string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setAreaIds($var)
@@ -203,7 +203,7 @@ class AreaIndexRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.areas.AreaType type = 6 [json_name = "type"];</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setType($var)

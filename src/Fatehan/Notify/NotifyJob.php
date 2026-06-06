@@ -49,7 +49,7 @@ class NotifyJob extends \Google\Protobuf\Internal\Message
      *     @type int $retries
      *     @type int $priority
      *     @type \Fatehan\Notify\Notify $notify
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $via
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $via
      * }
      */
     public function __construct($data = NULL) {
@@ -188,7 +188,7 @@ class NotifyJob extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.notifies.Via via = 12 [json_name = "via"];</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setVia($var)

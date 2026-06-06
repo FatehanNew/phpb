@@ -86,15 +86,15 @@ class RuleOption extends \Google\Protobuf\Internal\Message
      *     @type int $week_starts_at
      *     @type int $count
      *     @type \Google\Protobuf\Timestamp $until
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $by_set_pos
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $by_month
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $by_month_day
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $by_year_day
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $by_week_no
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $by_week_day
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $by_hour
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $by_minute
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $by_second
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $by_set_pos
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $by_month
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $by_month_day
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $by_year_day
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $by_week_no
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $by_week_day
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $by_hour
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $by_minute
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $by_second
      * }
      */
     public function __construct($data = NULL) {
@@ -265,7 +265,7 @@ class RuleOption extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated int32 by_set_pos = 7;</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setBySetPos($var)
@@ -287,7 +287,7 @@ class RuleOption extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated int32 by_month = 8;</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setByMonth($var)
@@ -309,7 +309,7 @@ class RuleOption extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated int32 by_month_day = 9;</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setByMonthDay($var)
@@ -331,7 +331,7 @@ class RuleOption extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated int32 by_year_day = 10;</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setByYearDay($var)
@@ -353,7 +353,7 @@ class RuleOption extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated int32 by_week_no = 11;</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setByWeekNo($var)
@@ -375,7 +375,7 @@ class RuleOption extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.activities.Weekday by_week_day = 12;</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setByWeekDay($var)
@@ -397,7 +397,7 @@ class RuleOption extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated int32 by_hour = 13;</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setByHour($var)
@@ -419,7 +419,7 @@ class RuleOption extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated int32 by_minute = 14;</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setByMinute($var)
@@ -441,7 +441,7 @@ class RuleOption extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated int32 by_second = 15;</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setBySecond($var)

@@ -40,7 +40,7 @@ class TripsSummaryResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type \Fatehan\Trip\FusionTrip[]|\Google\Protobuf\Internal\RepeatedField $reports
+     *     @type array<\Fatehan\Trip\FusionTrip>|\Google\Protobuf\Internal\RepeatedField $reports
      *     @type int|string $records
      *     @type int|string $cost
      *     @type \Google\Protobuf\Timestamp $started_at
@@ -63,7 +63,7 @@ class TripsSummaryResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.trips.FusionTrip reports = 1 [json_name = "reports"];</code>
-     * @param \Fatehan\Trip\FusionTrip[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Trip\FusionTrip>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setReports($var)

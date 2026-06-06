@@ -36,7 +36,7 @@ class TripPerformanceResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type \Fatehan\Service\TripPerformance[]|\Google\Protobuf\Internal\RepeatedField $data
+     *     @type array<\Fatehan\Service\TripPerformance>|\Google\Protobuf\Internal\RepeatedField $data
      *     @type int $cost
      *     @type int $threads
      *     @type int $records
@@ -58,7 +58,7 @@ class TripPerformanceResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.services.TripPerformance data = 1 [json_name = "data"];</code>
-     * @param \Fatehan\Service\TripPerformance[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Service\TripPerformance>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setData($var)

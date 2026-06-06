@@ -47,7 +47,7 @@ class Notification extends \Google\Protobuf\Internal\Message
      *     @type string $id
      *     @type int|string $user_id
      *     @type \Fatehan\Notify\Notify $payload
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $via
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $via
      *     @type \Google\Protobuf\Timestamp $created_at
      *     @type \Google\Protobuf\Timestamp $read_at
      * }
@@ -144,7 +144,7 @@ class Notification extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.notifies.Via via = 4;</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setVia($var)

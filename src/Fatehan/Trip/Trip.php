@@ -101,7 +101,7 @@ class Trip extends \Google\Protobuf\Internal\Message
      *     @type \Google\Protobuf\Timestamp $finished_at
      *     @type \Google\Protobuf\Timestamp $created_at
      *     @type \Google\Protobuf\Timestamp $updated_at
-     *     @type \Fatehan\Trip\TripPoint[]|\Google\Protobuf\Internal\RepeatedField $points
+     *     @type array<\Fatehan\Trip\TripPoint>|\Google\Protobuf\Internal\RepeatedField $points
      *           these will decode from compact.points 
      * }
      */
@@ -505,7 +505,7 @@ class Trip extends \Google\Protobuf\Internal\Message
      * these will decode from compact.points 
      *
      * Generated from protobuf field <code>repeated .com.fatehan.trips.TripPoint points = 16 [json_name = "points"];</code>
-     * @param \Fatehan\Trip\TripPoint[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Trip\TripPoint>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setPoints($var)

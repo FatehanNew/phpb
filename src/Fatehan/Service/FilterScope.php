@@ -63,7 +63,7 @@ class FilterScope extends \Google\Protobuf\Internal\Message
      *     @type string $filter_type
      *     @type string $operator
      *           text filter type only
-     *     @type \Fatehan\Service\FilterConditions[]|\Google\Protobuf\Internal\RepeatedField $conditions
+     *     @type array<\Fatehan\Service\FilterConditions>|\Google\Protobuf\Internal\RepeatedField $conditions
      *           text filter type only
      *     @type string $filter
      *           text filter type only
@@ -153,7 +153,7 @@ class FilterScope extends \Google\Protobuf\Internal\Message
      * text filter type only
      *
      * Generated from protobuf field <code>repeated .com.fatehan.services.FilterConditions conditions = 3 [json_name = "conditions"];</code>
-     * @param \Fatehan\Service\FilterConditions[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Service\FilterConditions>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setConditions($var)

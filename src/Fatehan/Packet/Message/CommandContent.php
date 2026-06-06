@@ -43,7 +43,7 @@ class CommandContent extends \Google\Protobuf\Internal\Message
      *     @type int|string $device_id
      *     @type int|string $command_id
      *     @type string $message
-     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $params
+     *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $params
      *     @type string $raw_command
      * }
      */
@@ -149,7 +149,7 @@ class CommandContent extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated string params = 4 [json_name = "params"];</code>
-     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<string>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setParams($var)

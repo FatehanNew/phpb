@@ -53,9 +53,9 @@ class MeResponse extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type \Fatehan\Identity\User $user
-     *     @type \Fatehan\Service\Repositories\PersonRepo[]|\Google\Protobuf\Internal\RepeatedField $person
-     *     @type \Fatehan\Financial\Currency[]|\Google\Protobuf\Internal\RepeatedField $currencies
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $permissions
+     *     @type array<\Fatehan\Service\Repositories\PersonRepo>|\Google\Protobuf\Internal\RepeatedField $person
+     *     @type array<\Fatehan\Financial\Currency>|\Google\Protobuf\Internal\RepeatedField $currencies
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $permissions
      *     @type \Fatehan\Service\Repositories\DeviceRepo $device
      *     @type int $device_count
      *     @type int|string $cost
@@ -110,7 +110,7 @@ class MeResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.services.PersonRepo person = 2 [json_name = "persons"];</code>
-     * @param \Fatehan\Service\Repositories\PersonRepo[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Service\Repositories\PersonRepo>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setPerson($var)
@@ -132,7 +132,7 @@ class MeResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.financial.Currency currencies = 3 [json_name = "currencies"];</code>
-     * @param \Fatehan\Financial\Currency[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Financial\Currency>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setCurrencies($var)
@@ -154,7 +154,7 @@ class MeResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.identities.Permission permissions = 4 [json_name = "permissions"];</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setPermissions($var)

@@ -34,7 +34,7 @@ class DeviceStatusList extends \Google\Protobuf\Internal\Message
      *
      *     @type int $cost
      *     @type int $accepted
-     *     @type \Fatehan\Packet\DataModel\DeviceStatus[]|\Google\Protobuf\Internal\RepeatedField $list
+     *     @type array<\Fatehan\Packet\DataModel\DeviceStatus>|\Google\Protobuf\Internal\RepeatedField $list
      * }
      */
     public function __construct($data = NULL) {
@@ -97,7 +97,7 @@ class DeviceStatusList extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.packets.DeviceStatus list = 3 [json_name = "list"];</code>
-     * @param \Fatehan\Packet\DataModel\DeviceStatus[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Packet\DataModel\DeviceStatus>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setList($var)

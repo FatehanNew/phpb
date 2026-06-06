@@ -64,7 +64,7 @@ class AreaSummaryReviewResponse extends \Google\Protobuf\Internal\Message
      *     @type int|string $total_mileage_outside
      *     @type int $total_inside_records
      *     @type int $total_outside_records
-     *     @type \Fatehan\Service\AreaSummaryReviewResponse\Review[]|\Google\Protobuf\Internal\RepeatedField $reports
+     *     @type array<\Fatehan\Service\AreaSummaryReviewResponse\Review>|\Google\Protobuf\Internal\RepeatedField $reports
      * }
      */
     public function __construct($data = NULL) {
@@ -259,7 +259,7 @@ class AreaSummaryReviewResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.services.AreaSummaryReviewResponse.Review reports = 9 [json_name = "reports"];</code>
-     * @param \Fatehan\Service\AreaSummaryReviewResponse\Review[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Service\AreaSummaryReviewResponse\Review>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setReports($var)

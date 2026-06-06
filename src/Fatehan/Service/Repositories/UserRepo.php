@@ -29,7 +29,7 @@ class UserRepo extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type \Fatehan\Identity\User $user
-     *     @type \Fatehan\Identity\Person[]|\Google\Protobuf\Internal\RepeatedField $persons
+     *     @type array<\Fatehan\Identity\Person>|\Google\Protobuf\Internal\RepeatedField $persons
      * }
      */
     public function __construct($data = NULL) {
@@ -80,7 +80,7 @@ class UserRepo extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.identities.Person persons = 2 [json_name = "persons"];</code>
-     * @param \Fatehan\Identity\Person[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Identity\Person>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setPersons($var)

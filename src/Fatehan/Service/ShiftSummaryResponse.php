@@ -40,7 +40,7 @@ class ShiftSummaryResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type \Fatehan\Service\ShiftSummaryResponse\Summary[]|\Google\Protobuf\Internal\RepeatedField $reports
+     *     @type array<\Fatehan\Service\ShiftSummaryResponse\Summary>|\Google\Protobuf\Internal\RepeatedField $reports
      *     @type int|string $trip_records
      *     @type int|string $trip_milliseconds
      *     @type string $started_at
@@ -63,7 +63,7 @@ class ShiftSummaryResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.services.ShiftSummaryResponse.Summary reports = 1;</code>
-     * @param \Fatehan\Service\ShiftSummaryResponse\Summary[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Service\ShiftSummaryResponse\Summary>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setReports($var)

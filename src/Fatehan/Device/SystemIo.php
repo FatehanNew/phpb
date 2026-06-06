@@ -113,7 +113,7 @@ class SystemIo extends \Google\Protobuf\Internal\Message
      *     @type bool $active
      *     @type bool $graphable
      *     @type int $sord
-     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $hidden
+     *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $hidden
      *     @type array|\Google\Protobuf\Internal\MapField $unknown
      *     @type int|string $created_by
      *     @type \Google\Protobuf\Timestamp $created_at
@@ -484,7 +484,7 @@ class SystemIo extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated string hidden = 14 [json_name = "hidden"];</code>
-     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<string>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setHidden($var)

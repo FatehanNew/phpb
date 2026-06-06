@@ -36,7 +36,7 @@ class RouteStopResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type \Fatehan\Service\RouteStopPoint[]|\Google\Protobuf\Internal\RepeatedField $list
+     *     @type array<\Fatehan\Service\RouteStopPoint>|\Google\Protobuf\Internal\RepeatedField $list
      *     @type int $records
      *     @type int $cost
      *     @type int $threads
@@ -58,7 +58,7 @@ class RouteStopResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.services.RouteStopPoint list = 2 [json_name = "list"];</code>
-     * @param \Fatehan\Service\RouteStopPoint[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Service\RouteStopPoint>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setList($var)

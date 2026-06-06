@@ -77,7 +77,7 @@ class CarModel extends \Google\Protobuf\Internal\Message
      *     @type bool $is_active
      *     @type int|string $created_by
      *     @type int|string $updated_by
-     *     @type \Fatehan\Device\CarModel\Metadata[]|\Google\Protobuf\Internal\RepeatedField $metadata
+     *     @type array<\Fatehan\Device\CarModel\Metadata>|\Google\Protobuf\Internal\RepeatedField $metadata
      *     @type \Google\Protobuf\Timestamp $created_at
      *     @type \Google\Protobuf\Timestamp $updated_at
      * }
@@ -346,7 +346,7 @@ class CarModel extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.devices.CarModel.Metadata metadata = 10 [json_name = "metadata"];</code>
-     * @param \Fatehan\Device\CarModel\Metadata[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Device\CarModel\Metadata>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setMetadata($var)

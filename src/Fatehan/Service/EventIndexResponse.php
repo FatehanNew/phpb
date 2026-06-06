@@ -29,7 +29,7 @@ class EventIndexResponse extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int $cost
-     *     @type \Fatehan\Notify\Event[]|\Google\Protobuf\Internal\RepeatedField $events
+     *     @type array<\Fatehan\Notify\Event>|\Google\Protobuf\Internal\RepeatedField $events
      * }
      */
     public function __construct($data = NULL) {
@@ -70,7 +70,7 @@ class EventIndexResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.notifies.Event events = 2 [json_name = "events"];</code>
-     * @param \Fatehan\Notify\Event[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Notify\Event>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setEvents($var)

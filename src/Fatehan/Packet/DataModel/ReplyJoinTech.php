@@ -29,7 +29,7 @@ class ReplyJoinTech extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $command_word
-     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $parameters
+     *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $parameters
      * }
      */
     public function __construct($data = NULL) {
@@ -70,7 +70,7 @@ class ReplyJoinTech extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated string parameters = 2;</code>
-     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<string>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setParameters($var)

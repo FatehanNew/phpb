@@ -71,6 +71,10 @@ class User extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .com.fatehan.identities.Person persons = 14 [json_name = "persons"];</code>
      */
     private $persons;
+    /**
+     * Generated from protobuf field <code>uint64 partner_id = 16 [json_name = "partner_id"];</code>
+     */
+    protected $partner_id = 0;
 
     /**
      * Constructor.
@@ -91,8 +95,9 @@ class User extends \Google\Protobuf\Internal\Message
      *     @type string $password
      *     @type string $token
      *           Deprecated: DO NOT USE RANDOM PARAMETER INSIDE A MODEL
-     *     @type \Fatehan\Identity\Person[]|\Google\Protobuf\Internal\RepeatedField $persons
+     *     @type array<\Fatehan\Identity\Person>|\Google\Protobuf\Internal\RepeatedField $persons
      *           Deprecated: Use UserRepo instead, currently using only in flutter auth sign
+     *     @type int|string $partner_id
      * }
      */
     public function __construct($data = NULL) {
@@ -463,13 +468,35 @@ class User extends \Google\Protobuf\Internal\Message
      * Deprecated: Use UserRepo instead, currently using only in flutter auth sign
      *
      * Generated from protobuf field <code>repeated .com.fatehan.identities.Person persons = 14 [json_name = "persons"];</code>
-     * @param \Fatehan\Identity\Person[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Identity\Person>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setPersons($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Identity\Person::class);
         $this->persons = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>uint64 partner_id = 16 [json_name = "partner_id"];</code>
+     * @return int|string
+     */
+    public function getPartnerId()
+    {
+        return $this->partner_id;
+    }
+
+    /**
+     * Generated from protobuf field <code>uint64 partner_id = 16 [json_name = "partner_id"];</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setPartnerId($var)
+    {
+        GPBUtil::checkUint64($var);
+        $this->partner_id = $var;
 
         return $this;
     }

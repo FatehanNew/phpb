@@ -47,8 +47,8 @@ class AreaSummaryReviewRequest extends \Google\Protobuf\Internal\Message
      *     @type \Google\Protobuf\Timestamp $started_at
      *     @type \Google\Protobuf\Timestamp $finished_at
      *     @type int $scope
-     *     @type int[]|string[]|\Google\Protobuf\Internal\RepeatedField $area_ids
-     *     @type int[]|string[]|\Google\Protobuf\Internal\RepeatedField $device_ids
+     *     @type array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $area_ids
+     *     @type array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $device_ids
      *     @type int|string $organization_id
      * }
      */
@@ -154,7 +154,7 @@ class AreaSummaryReviewRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated uint64 area_ids = 6 [json_name = "area_ids"];</code>
-     * @param int[]|string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setAreaIds($var)
@@ -176,7 +176,7 @@ class AreaSummaryReviewRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated uint64 device_ids = 7 [json_name = "device_ids"];</code>
-     * @param int[]|string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setDeviceIds($var)

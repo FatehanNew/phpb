@@ -38,7 +38,7 @@ class TripsSummaryRequest extends \Google\Protobuf\Internal\Message
      *
      *     @type \Google\Protobuf\Timestamp $started_at
      *     @type \Google\Protobuf\Timestamp $finished_at
-     *     @type int[]|string[]|\Google\Protobuf\Internal\RepeatedField $device_ids
+     *     @type array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $device_ids
      *     @type int $group_by
      * }
      */
@@ -122,7 +122,7 @@ class TripsSummaryRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated uint64 device_ids = 3 [json_name = "device_ids"];</code>
-     * @param int[]|string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setDeviceIds($var)

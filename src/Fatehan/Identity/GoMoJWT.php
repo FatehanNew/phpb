@@ -59,7 +59,7 @@ class GoMoJWT extends \Google\Protobuf\Internal\Message
      *     @type int|string $role_id
      *     @type string $name
      *     @type string $picture
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $permissions
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $permissions
      * }
      */
     public function __construct($data = NULL) {
@@ -252,7 +252,7 @@ class GoMoJWT extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.identities.Permission permissions = 8 [json_name = "permissions"];</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setPermissions($var)

@@ -44,7 +44,7 @@ class GroupCommandCreateRequest extends \Google\Protobuf\Internal\Message
      *     @type string $raw_command
      *     @type int|string $tracker_id
      *     @type int|string $organization_id
-     *     @type int[]|string[]|\Google\Protobuf\Internal\RepeatedField $device_ids
+     *     @type array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $device_ids
      * }
      */
     public function __construct($data = NULL) {
@@ -151,7 +151,7 @@ class GroupCommandCreateRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated uint64 device_ids = 5;</code>
-     * @param int[]|string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setDeviceIds($var)

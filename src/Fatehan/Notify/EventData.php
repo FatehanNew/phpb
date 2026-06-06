@@ -56,9 +56,9 @@ class EventData extends \Google\Protobuf\Internal\Message
      *     @type bool $blind_filter
      *     @type \Fatehan\Notify\AlertNotify $notify
      *     @type int $trigger_gate
-     *     @type \Fatehan\Notify\MuteMask[]|\Google\Protobuf\Internal\RepeatedField $mute_mask
-     *     @type \Fatehan\Notify\EventModule[]|\Google\Protobuf\Internal\RepeatedField $event_modules
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $via
+     *     @type array<\Fatehan\Notify\MuteMask>|\Google\Protobuf\Internal\RepeatedField $mute_mask
+     *     @type array<\Fatehan\Notify\EventModule>|\Google\Protobuf\Internal\RepeatedField $event_modules
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $via
      *     @type int|string $template_id
      * }
      */
@@ -176,7 +176,7 @@ class EventData extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.notifies.MuteMask mute_mask = 5 [json_name = "mute_mask"];</code>
-     * @param \Fatehan\Notify\MuteMask[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Notify\MuteMask>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setMuteMask($var)
@@ -198,7 +198,7 @@ class EventData extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.notifies.EventModule event_modules = 6 [json_name = "event_modules"];</code>
-     * @param \Fatehan\Notify\EventModule[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Notify\EventModule>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setEventModules($var)
@@ -220,7 +220,7 @@ class EventData extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.notifies.Via via = 7 [json_name = "via"];</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setVia($var)

@@ -29,7 +29,7 @@ class JTTQueryFileResponse extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int $serial_no
-     *     @type \Fatehan\Packet\Forge\JTTQueryFileResponse\File[]|\Google\Protobuf\Internal\RepeatedField $files
+     *     @type array<\Fatehan\Packet\Forge\JTTQueryFileResponse\File>|\Google\Protobuf\Internal\RepeatedField $files
      * }
      */
     public function __construct($data = NULL) {
@@ -70,7 +70,7 @@ class JTTQueryFileResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.packets.JTTQueryFileResponse.File files = 2;</code>
-     * @param \Fatehan\Packet\Forge\JTTQueryFileResponse\File[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Packet\Forge\JTTQueryFileResponse\File>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setFiles($var)

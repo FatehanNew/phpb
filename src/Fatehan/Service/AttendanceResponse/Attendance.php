@@ -114,7 +114,7 @@ class Attendance extends \Google\Protobuf\Internal\Message
      *     @type int|string $subtotal
      *     @type int $mileage_inside
      *     @type int $mileage_outside
-     *     @type \Fatehan\Service\AttendanceResponse\Event[]|\Google\Protobuf\Internal\RepeatedField $events
+     *     @type array<\Fatehan\Service\AttendanceResponse\Event>|\Google\Protobuf\Internal\RepeatedField $events
      * }
      */
     public function __construct($data = NULL) {
@@ -559,7 +559,7 @@ class Attendance extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.services.AttendanceResponse.Event events = 19 [json_name = "events"];</code>
-     * @param \Fatehan\Service\AttendanceResponse\Event[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Service\AttendanceResponse\Event>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setEvents($var)

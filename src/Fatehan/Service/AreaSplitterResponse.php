@@ -32,7 +32,7 @@ class AreaSplitterResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type \Fatehan\Service\AreaSplitterResponse\Record[]|\Google\Protobuf\Internal\RepeatedField $reports
+     *     @type array<\Fatehan\Service\AreaSplitterResponse\Record>|\Google\Protobuf\Internal\RepeatedField $reports
      *     @type \Google\Protobuf\Timestamp $started_at
      *     @type \Google\Protobuf\Timestamp $finished_at
      * }
@@ -53,7 +53,7 @@ class AreaSplitterResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.services.AreaSplitterResponse.Record reports = 1 [json_name = "reports"];</code>
-     * @param \Fatehan\Service\AreaSplitterResponse\Record[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Service\AreaSplitterResponse\Record>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setReports($var)

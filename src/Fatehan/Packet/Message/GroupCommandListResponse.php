@@ -44,7 +44,7 @@ class GroupCommandListResponse extends \Google\Protobuf\Internal\Message
      *     @type int $current_page
      *     @type int $last_page
      *     @type int $per_page
-     *     @type \Fatehan\Packet\Message\GroupCommand[]|\Google\Protobuf\Internal\RepeatedField $commands
+     *     @type array<\Fatehan\Packet\Message\GroupCommand>|\Google\Protobuf\Internal\RepeatedField $commands
      * }
      */
     public function __construct($data = NULL) {
@@ -151,7 +151,7 @@ class GroupCommandListResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.packets.GroupCommand commands = 5;</code>
-     * @param \Fatehan\Packet\Message\GroupCommand[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Packet\Message\GroupCommand>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setCommands($var)

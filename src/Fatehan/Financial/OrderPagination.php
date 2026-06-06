@@ -74,7 +74,7 @@ class OrderPagination extends \Google\Protobuf\Internal\Message
      *     @type int $last_page
      *     @type int $per_page
      *     @type int $to
-     *     @type \Fatehan\Financial\Order[]|\Google\Protobuf\Internal\RepeatedField $data
+     *     @type array<\Fatehan\Financial\Order>|\Google\Protobuf\Internal\RepeatedField $data
      * }
      */
     public function __construct($data = NULL) {
@@ -313,7 +313,7 @@ class OrderPagination extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.financial.Order data = 11 [json_name = "data"];</code>
-     * @param \Fatehan\Financial\Order[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Financial\Order>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setData($var)

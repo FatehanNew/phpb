@@ -29,7 +29,7 @@ class MaintenanceIndexRequest extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int|string $device_id
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $status
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $status
      * }
      */
     public function __construct($data = NULL) {
@@ -70,7 +70,7 @@ class MaintenanceIndexRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.devices.MaintenanceStatus status = 2 [json_name = "status"];</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setStatus($var)

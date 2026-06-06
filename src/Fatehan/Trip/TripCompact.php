@@ -112,7 +112,7 @@ class TripCompact extends \Google\Protobuf\Internal\Message
      *     @type int $engine_load
      *     @type array|\Google\Protobuf\Internal\MapField $crashes
      *     @type array|\Google\Protobuf\Internal\MapField $speeds
-     *     @type int[]|string[]|\Google\Protobuf\Internal\RepeatedField $points
+     *     @type array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $points
      *     @type \Google\Protobuf\Timestamp $started_at
      *     @type \Google\Protobuf\Timestamp $finished_at
      * }
@@ -575,7 +575,7 @@ class TripCompact extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated uint64 points = 17 [json_name = "points"];</code>
-     * @param int[]|string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setPoints($var)

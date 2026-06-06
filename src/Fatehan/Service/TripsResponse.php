@@ -24,7 +24,7 @@ class TripsResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type \Fatehan\Trip\FusionTrip[]|\Google\Protobuf\Internal\RepeatedField $reports
+     *     @type array<\Fatehan\Trip\FusionTrip>|\Google\Protobuf\Internal\RepeatedField $reports
      * }
      */
     public function __construct($data = NULL) {
@@ -43,7 +43,7 @@ class TripsResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.trips.FusionTrip reports = 1;</code>
-     * @param \Fatehan\Trip\FusionTrip[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Trip\FusionTrip>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setReports($var)

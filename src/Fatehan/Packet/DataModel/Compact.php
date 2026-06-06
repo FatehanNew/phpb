@@ -83,7 +83,7 @@ class Compact extends \Google\Protobuf\Internal\Message
      *     @type \Fatehan\Packet\DataModel\BleSensorsIoElements $ble_sensors_io_elements
      *     @type \Fatehan\Packet\DataModel\CanAdaptersElements $can_adapters_elements
      *     @type \Fatehan\Packet\DataModel\AdditionalInfo $additional_info
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $alerts
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $alerts
      *     @type \Fatehan\Packet\DataModel\DataModule $modules
      *     @type array|\Google\Protobuf\Internal\MapField $alert_values
      *     @type \Fatehan\Packet\DataModel\ADAS $adas
@@ -332,7 +332,7 @@ class Compact extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.packets.Alert alerts = 7 [json_name = "alerts"];</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setAlerts($var)

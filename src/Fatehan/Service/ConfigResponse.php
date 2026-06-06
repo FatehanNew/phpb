@@ -50,7 +50,7 @@ class ConfigResponse extends \Google\Protobuf\Internal\Message
      *
      *     @type int $cost
      *     @type int $records
-     *     @type \Fatehan\Models\Config[]|\Google\Protobuf\Internal\RepeatedField $list
+     *     @type array<\Fatehan\Models\Config>|\Google\Protobuf\Internal\RepeatedField $list
      *     @type \Fatehan\Service\ConfigResponse\AppDesignConfig $app_design
      *     @type \Fatehan\Service\ConfigResponse\AppSecConfig $app_sec
      *     @type \Fatehan\Identity\Authentication\AuthenticationStrategy $strategy
@@ -117,7 +117,7 @@ class ConfigResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.models.Config list = 3 [json_name = "list"];</code>
-     * @param \Fatehan\Models\Config[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Models\Config>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setList($var)

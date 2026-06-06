@@ -37,9 +37,9 @@ class SubscriptionRepo extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int|string $partner_id
-     *     @type \Fatehan\Financial\Product[]|\Google\Protobuf\Internal\RepeatedField $custom_subs
-     *     @type \Fatehan\Financial\Product[]|\Google\Protobuf\Internal\RepeatedField $packages
-     *     @type \Fatehan\Financial\PaymentGateway[]|\Google\Protobuf\Internal\RepeatedField $gateways
+     *     @type array<\Fatehan\Financial\Product>|\Google\Protobuf\Internal\RepeatedField $custom_subs
+     *     @type array<\Fatehan\Financial\Product>|\Google\Protobuf\Internal\RepeatedField $packages
+     *     @type array<\Fatehan\Financial\PaymentGateway>|\Google\Protobuf\Internal\RepeatedField $gateways
      * }
      */
     public function __construct($data = NULL) {
@@ -80,7 +80,7 @@ class SubscriptionRepo extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.financial.Product custom_subs = 2 [json_name = "customSubs"];</code>
-     * @param \Fatehan\Financial\Product[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Financial\Product>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setCustomSubs($var)
@@ -102,7 +102,7 @@ class SubscriptionRepo extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.financial.Product packages = 3 [json_name = "packages"];</code>
-     * @param \Fatehan\Financial\Product[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Financial\Product>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setPackages($var)
@@ -124,7 +124,7 @@ class SubscriptionRepo extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.financial.PaymentGateway gateways = 4 [json_name = "gateways"];</code>
-     * @param \Fatehan\Financial\PaymentGateway[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Financial\PaymentGateway>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setGateways($var)

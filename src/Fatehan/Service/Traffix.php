@@ -82,9 +82,9 @@ class Traffix extends \Google\Protobuf\Internal\Message
      *     @type \Google\Protobuf\Timestamp $work_finished_at
      *     @type \Google\Protobuf\Timestamp $home_started_at
      *     @type \Google\Protobuf\Timestamp $home_finished_at
-     *     @type \Fatehan\Service\Traffix\Event[]|\Google\Protobuf\Internal\RepeatedField $work_traffic
-     *     @type \Fatehan\Service\Traffix\Event[]|\Google\Protobuf\Internal\RepeatedField $home_traffic
-     *     @type \Fatehan\Service\Traffix\STOP[]|\Google\Protobuf\Internal\RepeatedField $stop_list
+     *     @type array<\Fatehan\Service\Traffix\Event>|\Google\Protobuf\Internal\RepeatedField $work_traffic
+     *     @type array<\Fatehan\Service\Traffix\Event>|\Google\Protobuf\Internal\RepeatedField $home_traffic
+     *     @type array<\Fatehan\Service\Traffix\STOP>|\Google\Protobuf\Internal\RepeatedField $stop_list
      *     @type int|string $work_time_mileage
      *     @type int|string $total_mileage
      *     @type int|string $home_to_work_mileage
@@ -290,7 +290,7 @@ class Traffix extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.services.Traffix.Event work_traffic = 7;</code>
-     * @param \Fatehan\Service\Traffix\Event[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Service\Traffix\Event>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setWorkTraffic($var)
@@ -312,7 +312,7 @@ class Traffix extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.services.Traffix.Event home_traffic = 8;</code>
-     * @param \Fatehan\Service\Traffix\Event[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Service\Traffix\Event>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setHomeTraffic($var)
@@ -334,7 +334,7 @@ class Traffix extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.services.Traffix.STOP stop_list = 9;</code>
-     * @param \Fatehan\Service\Traffix\STOP[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Service\Traffix\STOP>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setStopList($var)

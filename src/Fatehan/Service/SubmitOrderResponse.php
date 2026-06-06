@@ -28,7 +28,7 @@ class SubmitOrderResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type \Fatehan\Service\Repositories\DeviceRepo[]|\Google\Protobuf\Internal\RepeatedField $devices
+     *     @type array<\Fatehan\Service\Repositories\DeviceRepo>|\Google\Protobuf\Internal\RepeatedField $devices
      *     @type \Fatehan\Financial\Order $order
      * }
      */
@@ -48,7 +48,7 @@ class SubmitOrderResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.services.DeviceRepo devices = 1 [json_name = "devices"];</code>
-     * @param \Fatehan\Service\Repositories\DeviceRepo[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Service\Repositories\DeviceRepo>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setDevices($var)

@@ -108,22 +108,22 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type \Fatehan\Packet\DataModel\Data[]|\Google\Protobuf\Internal\RepeatedField $data_list
-     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $title
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $mileage
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $weight
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $fuel_used
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $fuel_rate
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $trips
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $idling
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $parking
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $moving
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $towing
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $total_speed
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $sum_speed
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $max_speed
-     *     @type \Fatehan\Trip\TripPoint[]|\Google\Protobuf\Internal\RepeatedField $points
-     *     @type \Fatehan\Service\DashboardIndividualResponse\Environmental[]|\Google\Protobuf\Internal\RepeatedField $environmental
+     *     @type array<\Fatehan\Packet\DataModel\Data>|\Google\Protobuf\Internal\RepeatedField $data_list
+     *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $title
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $mileage
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $weight
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $fuel_used
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $fuel_rate
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $trips
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $idling
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $parking
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $moving
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $towing
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $total_speed
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $sum_speed
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $max_speed
+     *     @type array<\Fatehan\Trip\TripPoint>|\Google\Protobuf\Internal\RepeatedField $points
+     *     @type array<\Fatehan\Service\DashboardIndividualResponse\Environmental>|\Google\Protobuf\Internal\RepeatedField $environmental
      *     @type array|\Google\Protobuf\Internal\MapField $green_driving
      *     @type array|\Google\Protobuf\Internal\MapField $speeds
      *     @type int $crashes
@@ -148,7 +148,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.packets.Data data_list = 1;</code>
-     * @param \Fatehan\Packet\DataModel\Data[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Packet\DataModel\Data>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setDataList($var)
@@ -170,7 +170,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated string title = 2;</code>
-     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<string>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setTitle($var)
@@ -192,7 +192,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated uint32 mileage = 3;</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setMileage($var)
@@ -214,7 +214,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated uint32 weight = 4;</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setWeight($var)
@@ -236,7 +236,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated uint32 fuel_used = 5;</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setFuelUsed($var)
@@ -258,7 +258,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated uint32 fuel_rate = 6;</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setFuelRate($var)
@@ -280,7 +280,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated uint32 trips = 7;</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setTrips($var)
@@ -302,7 +302,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated uint32 idling = 8;</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setIdling($var)
@@ -324,7 +324,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated uint32 parking = 9;</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setParking($var)
@@ -346,7 +346,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated uint32 moving = 10;</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setMoving($var)
@@ -368,7 +368,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated uint32 towing = 11;</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setTowing($var)
@@ -390,7 +390,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated uint32 total_speed = 12;</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setTotalSpeed($var)
@@ -412,7 +412,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated uint32 sum_speed = 13;</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setSumSpeed($var)
@@ -434,7 +434,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated uint32 max_speed = 14;</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setMaxSpeed($var)
@@ -456,7 +456,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.trips.TripPoint points = 15;</code>
-     * @param \Fatehan\Trip\TripPoint[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Trip\TripPoint>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setPoints($var)
@@ -478,7 +478,7 @@ class DashboardIndividualResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.services.DashboardIndividualResponse.Environmental environmental = 16;</code>
-     * @param \Fatehan\Service\DashboardIndividualResponse\Environmental[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Service\DashboardIndividualResponse\Environmental>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setEnvironmental($var)

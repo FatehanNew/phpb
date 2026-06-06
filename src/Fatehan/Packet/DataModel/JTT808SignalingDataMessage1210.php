@@ -49,7 +49,7 @@ class JTT808SignalingDataMessage1210 extends \Google\Protobuf\Internal\Message
      *     @type string $alarm_no
      *     @type int $info_type
      *     @type int $attachment_count
-     *     @type \Fatehan\Packet\DataModel\JTT808SignalingDataMessage1210\Attachment[]|\Google\Protobuf\Internal\RepeatedField $attachments
+     *     @type array<\Fatehan\Packet\DataModel\JTT808SignalingDataMessage1210\Attachment>|\Google\Protobuf\Internal\RepeatedField $attachments
      * }
      */
     public function __construct($data = NULL) {
@@ -178,7 +178,7 @@ class JTT808SignalingDataMessage1210 extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.packets.JTT808SignalingDataMessage1210.Attachment attachments = 6;</code>
-     * @param \Fatehan\Packet\DataModel\JTT808SignalingDataMessage1210\Attachment[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Packet\DataModel\JTT808SignalingDataMessage1210\Attachment>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setAttachments($var)

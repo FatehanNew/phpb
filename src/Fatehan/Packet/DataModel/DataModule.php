@@ -24,7 +24,7 @@ class DataModule extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type \Fatehan\Packet\DataModel\DataModule\ModuleList[]|\Google\Protobuf\Internal\RepeatedField $modules
+     *     @type array<\Fatehan\Packet\DataModel\DataModule\ModuleList>|\Google\Protobuf\Internal\RepeatedField $modules
      * }
      */
     public function __construct($data = NULL) {
@@ -43,7 +43,7 @@ class DataModule extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.packets.DataModule.ModuleList modules = 1 [json_name = "module_list"];</code>
-     * @param \Fatehan\Packet\DataModel\DataModule\ModuleList[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Packet\DataModel\DataModule\ModuleList>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setModules($var)

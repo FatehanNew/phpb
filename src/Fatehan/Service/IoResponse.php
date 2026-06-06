@@ -34,7 +34,7 @@ class IoResponse extends \Google\Protobuf\Internal\Message
      *
      *     @type int $cost
      *     @type int $records
-     *     @type \Fatehan\Device\SystemIo[]|\Google\Protobuf\Internal\RepeatedField $ios
+     *     @type array<\Fatehan\Device\SystemIo>|\Google\Protobuf\Internal\RepeatedField $ios
      * }
      */
     public function __construct($data = NULL) {
@@ -97,7 +97,7 @@ class IoResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.devices.SystemIo ios = 3 [json_name = "ios"];</code>
-     * @param \Fatehan\Device\SystemIo[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Device\SystemIo>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setIos($var)

@@ -67,7 +67,7 @@ class Packet extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int $type
-     *     @type \Fatehan\Packet\DataModel\Data[]|\Google\Protobuf\Internal\RepeatedField $data
+     *     @type array<\Fatehan\Packet\DataModel\Data>|\Google\Protobuf\Internal\RepeatedField $data
      *     @type \Fatehan\Packet\DataModel\Authorize $authorize
      *     @type string $response
      *     @type int $custom_type
@@ -76,7 +76,7 @@ class Packet extends \Google\Protobuf\Internal\Message
      *           Deprecated: Use custom oneof instead
      *     @type string $answer
      *           Deprecated: Use reply oneof instead
-     *     @type \Fatehan\Packet\DataModel\AdditionalInformation[]|\Google\Protobuf\Internal\RepeatedField $additional
+     *     @type array<\Fatehan\Packet\DataModel\AdditionalInformation>|\Google\Protobuf\Internal\RepeatedField $additional
      *           Deprecated: Use custom oneof instead
      *     @type \Fatehan\Packet\DataModel\ReplyConcox $concox
      *     @type \Fatehan\Packet\DataModel\ReplyTeltonika $teltonika
@@ -134,7 +134,7 @@ class Packet extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.packets.Data data = 2 [json_name = "data"];</code>
-     * @param \Fatehan\Packet\DataModel\Data[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Packet\DataModel\Data>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setData($var)
@@ -322,7 +322,7 @@ class Packet extends \Google\Protobuf\Internal\Message
      * Deprecated: Use custom oneof instead
      *
      * Generated from protobuf field <code>repeated .com.fatehan.packets.AdditionalInformation additional = 9 [json_name = "additional"];</code>
-     * @param \Fatehan\Packet\DataModel\AdditionalInformation[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Packet\DataModel\AdditionalInformation>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setAdditional($var)

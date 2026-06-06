@@ -37,7 +37,7 @@ class MaintenanceIndexResponse extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type \Fatehan\Service\Repositories\DeviceRepo $device
-     *     @type \Fatehan\Device\Maintenance\Maintenance[]|\Google\Protobuf\Internal\RepeatedField $maintenance
+     *     @type array<\Fatehan\Device\Maintenance\Maintenance>|\Google\Protobuf\Internal\RepeatedField $maintenance
      *     @type \Fatehan\Service\MaintenanceIndexResponse\Statistics $statistics
      *     @type int $cost
      * }
@@ -90,7 +90,7 @@ class MaintenanceIndexResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.devices.Maintenance maintenance = 2 [json_name = "maintenance"];</code>
-     * @param \Fatehan\Device\Maintenance\Maintenance[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Device\Maintenance\Maintenance>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setMaintenance($var)

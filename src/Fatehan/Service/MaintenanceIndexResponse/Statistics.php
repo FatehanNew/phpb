@@ -39,7 +39,7 @@ class Statistics extends \Google\Protobuf\Internal\Message
      *     @type int $completed
      *     @type int $not_completed
      *     @type int $total
-     *     @type \Fatehan\Service\MaintenanceIndexResponse\MostUsed[]|\Google\Protobuf\Internal\RepeatedField $most_used_services
+     *     @type array<\Fatehan\Service\MaintenanceIndexResponse\MostUsed>|\Google\Protobuf\Internal\RepeatedField $most_used_services
      * }
      */
     public function __construct($data = NULL) {
@@ -124,7 +124,7 @@ class Statistics extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.services.MaintenanceIndexResponse.MostUsed most_used_services = 4 [json_name = "most_used_services"];</code>
-     * @param \Fatehan\Service\MaintenanceIndexResponse\MostUsed[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Service\MaintenanceIndexResponse\MostUsed>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setMostUsedServices($var)

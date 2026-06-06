@@ -41,7 +41,7 @@ class Auth extends \Google\Protobuf\Internal\Message
      *     @type \Fatehan\Identity\User $user
      *     @type \Fatehan\Identity\Person $person
      *     @type \Fatehan\Identity\PersonalAccessToken $access_token
-     *     @type int[]|\Google\Protobuf\Internal\RepeatedField $permissions
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $permissions
      * }
      */
     public function __construct($data = NULL) {
@@ -156,7 +156,7 @@ class Auth extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.identities.Permission permissions = 4 [json_name = "permissions"];</code>
-     * @param int[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setPermissions($var)

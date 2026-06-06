@@ -34,7 +34,7 @@ class JTTPlaybackUpdate extends \Google\Protobuf\Internal\Message
      *
      *     @type int $logical_number
      *     @type int $playback_control
-     *     @type \Fatehan\Packet\Forge\JTTPlaybackUpdate\Control[]|\Google\Protobuf\Internal\RepeatedField $control
+     *     @type array<\Fatehan\Packet\Forge\JTTPlaybackUpdate\Control>|\Google\Protobuf\Internal\RepeatedField $control
      * }
      */
     public function __construct($data = NULL) {
@@ -97,7 +97,7 @@ class JTTPlaybackUpdate extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.packets.JTTPlaybackUpdate.Control control = 3;</code>
-     * @param \Fatehan\Packet\Forge\JTTPlaybackUpdate\Control[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Packet\Forge\JTTPlaybackUpdate\Control>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setControl($var)

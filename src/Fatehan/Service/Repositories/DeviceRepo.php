@@ -61,7 +61,7 @@ class DeviceRepo extends \Google\Protobuf\Internal\Message
      *     @type \Fatehan\Device\Tracker $tracker
      *     @type \Fatehan\Service\Repositories\CarRepo $car_repo
      *     @type \Fatehan\Packet\DataModel\DeviceStatus $device_status
-     *     @type \Fatehan\Device\SystemIo[]|\Google\Protobuf\Internal\RepeatedField $user_device_io
+     *     @type array<\Fatehan\Device\SystemIo>|\Google\Protobuf\Internal\RepeatedField $user_device_io
      *     @type \Fatehan\Service\Repositories\UserRepo $owner_repo
      *     @type \Fatehan\Identity\Organization $organization
      *     @type bool $subscribed
@@ -243,7 +243,7 @@ class DeviceRepo extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.devices.SystemIo user_device_io = 6 [json_name = "user_device_io"];</code>
-     * @param \Fatehan\Device\SystemIo[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Device\SystemIo>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setUserDeviceIo($var)

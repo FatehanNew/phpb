@@ -24,7 +24,7 @@ class AttendanceResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type \Fatehan\Service\AttendanceResponse\Attendance[]|\Google\Protobuf\Internal\RepeatedField $reports
+     *     @type array<\Fatehan\Service\AttendanceResponse\Attendance>|\Google\Protobuf\Internal\RepeatedField $reports
      * }
      */
     public function __construct($data = NULL) {
@@ -43,7 +43,7 @@ class AttendanceResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.services.AttendanceResponse.Attendance reports = 1 [json_name = "reports"];</code>
-     * @param \Fatehan\Service\AttendanceResponse\Attendance[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Service\AttendanceResponse\Attendance>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setReports($var)

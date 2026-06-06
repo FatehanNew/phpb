@@ -34,7 +34,7 @@ class DailyTraffic extends \Google\Protobuf\Internal\Message
      *
      *     @type int|string $device_id
      *     @type \Google\Protobuf\Timestamp $date
-     *     @type \Fatehan\Service\DailyTrafficResponse\Traffic[]|\Google\Protobuf\Internal\RepeatedField $traffics
+     *     @type array<\Fatehan\Service\DailyTrafficResponse\Traffic>|\Google\Protobuf\Internal\RepeatedField $traffics
      * }
      */
     public function __construct($data = NULL) {
@@ -107,7 +107,7 @@ class DailyTraffic extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.services.DailyTrafficResponse.Traffic traffics = 3 [json_name = "traffics"];</code>
-     * @param \Fatehan\Service\DailyTrafficResponse\Traffic[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Service\DailyTrafficResponse\Traffic>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setTraffics($var)

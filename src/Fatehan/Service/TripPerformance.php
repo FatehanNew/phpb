@@ -150,7 +150,7 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      *     @type array|\Google\Protobuf\Internal\MapField $driving
      *     @type array|\Google\Protobuf\Internal\MapField $temperature
      *     @type array|\Google\Protobuf\Internal\MapField $humidity
-     *     @type int[]|string[]|\Google\Protobuf\Internal\RepeatedField $i_button
+     *     @type array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $i_button
      *     @type int $ignition
      *     @type int $door_opened
      *     @type int $fuel_used
@@ -161,7 +161,7 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
      *     @type array|\Google\Protobuf\Internal\MapField $speeds
      *     @type int $points
      *     @type int $records
-     *     @type \Fatehan\Service\TripPerformance\Average[]|\Google\Protobuf\Internal\RepeatedField $average
+     *     @type array<\Fatehan\Service\TripPerformance\Average>|\Google\Protobuf\Internal\RepeatedField $average
      *     @type string $device_name
      *     @type string $driver_name
      *     @type string $organization_name
@@ -511,7 +511,7 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated uint64 i_button = 15 [json_name = "i_button"];</code>
-     * @param int[]|string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setIButton($var)
@@ -803,7 +803,7 @@ class TripPerformance extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.services.TripPerformance.Average average = 26 [json_name = "average"];</code>
-     * @param \Fatehan\Service\TripPerformance\Average[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Service\TripPerformance\Average>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setAverage($var)

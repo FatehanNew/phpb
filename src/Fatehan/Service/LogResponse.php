@@ -49,7 +49,7 @@ class LogResponse extends \Google\Protobuf\Internal\Message
      *     @type int $cost
      *     @type int|string $current_page
      *     @type int|string $last_page
-     *     @type \Fatehan\Packet\DataModel\Log[]|\Google\Protobuf\Internal\RepeatedField $data
+     *     @type array<\Fatehan\Packet\DataModel\Log>|\Google\Protobuf\Internal\RepeatedField $data
      * }
      */
     public function __construct($data = NULL) {
@@ -178,7 +178,7 @@ class LogResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.packets.Log data = 6 [json_name = "data"];</code>
-     * @param \Fatehan\Packet\DataModel\Log[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Packet\DataModel\Log>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setData($var)

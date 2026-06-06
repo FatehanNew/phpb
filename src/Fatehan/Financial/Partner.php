@@ -34,7 +34,7 @@ class Partner extends \Google\Protobuf\Internal\Message
      *
      *     @type int|string $id
      *     @type string $name
-     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $domains
+     *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $domains
      * }
      */
     public function __construct($data = NULL) {
@@ -107,7 +107,7 @@ class Partner extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated string domains = 2 [json_name = "domains"];</code>
-     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<string>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setDomains($var)

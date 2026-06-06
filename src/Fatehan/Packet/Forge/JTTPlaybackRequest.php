@@ -44,7 +44,7 @@ class JTTPlaybackRequest extends \Google\Protobuf\Internal\Message
      *     @type int $tcp
      *     @type int $udp
      *     @type int $logical_number
-     *     @type \Fatehan\Packet\Forge\JTTPlaybackRequest\Files[]|\Google\Protobuf\Internal\RepeatedField $files
+     *     @type array<\Fatehan\Packet\Forge\JTTPlaybackRequest\Files>|\Google\Protobuf\Internal\RepeatedField $files
      * }
      */
     public function __construct($data = NULL) {
@@ -151,7 +151,7 @@ class JTTPlaybackRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.packets.JTTPlaybackRequest.Files files = 5;</code>
-     * @param \Fatehan\Packet\Forge\JTTPlaybackRequest\Files[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Packet\Forge\JTTPlaybackRequest\Files>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setFiles($var)

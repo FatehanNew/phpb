@@ -78,7 +78,7 @@ class Tracker extends \Google\Protobuf\Internal\Message
      *     @type int|string $created_by
      *     @type \Google\Protobuf\Timestamp $created_at
      *     @type \Google\Protobuf\Timestamp $updated_at
-     *     @type \Fatehan\Device\Tracker\Document[]|\Google\Protobuf\Internal\RepeatedField $documents
+     *     @type array<\Fatehan\Device\Tracker\Document>|\Google\Protobuf\Internal\RepeatedField $documents
      *     @type string $camera
      * }
      */
@@ -388,7 +388,7 @@ class Tracker extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.devices.Tracker.Document documents = 11 [json_name = "documents"];</code>
-     * @param \Fatehan\Device\Tracker\Document[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Device\Tracker\Document>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setDocuments($var)

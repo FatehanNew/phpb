@@ -44,9 +44,9 @@ class RouteReviewResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type \Fatehan\Packet\DataModel\Data[]|\Google\Protobuf\Internal\RepeatedField $route_list
-     *     @type \Fatehan\Service\RouteStopPoint[]|\Google\Protobuf\Internal\RepeatedField $stop_list
-     *     @type \Fatehan\Trip\Trip[]|\Google\Protobuf\Internal\RepeatedField $trip_list
+     *     @type array<\Fatehan\Packet\DataModel\Data>|\Google\Protobuf\Internal\RepeatedField $route_list
+     *     @type array<\Fatehan\Service\RouteStopPoint>|\Google\Protobuf\Internal\RepeatedField $stop_list
+     *     @type array<\Fatehan\Trip\Trip>|\Google\Protobuf\Internal\RepeatedField $trip_list
      *     @type int $records
      *     @type int $cost
      *     @type int $threads
@@ -68,7 +68,7 @@ class RouteReviewResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.packets.Data route_list = 1 [json_name = "route_list"];</code>
-     * @param \Fatehan\Packet\DataModel\Data[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Packet\DataModel\Data>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setRouteList($var)
@@ -90,7 +90,7 @@ class RouteReviewResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.services.RouteStopPoint stop_list = 2 [json_name = "stop_list"];</code>
-     * @param \Fatehan\Service\RouteStopPoint[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Service\RouteStopPoint>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setStopList($var)
@@ -112,7 +112,7 @@ class RouteReviewResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.trips.Trip trip_list = 3 [json_name = "trip_list"];</code>
-     * @param \Fatehan\Trip\Trip[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Trip\Trip>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setTripList($var)

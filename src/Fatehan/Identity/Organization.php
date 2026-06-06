@@ -91,7 +91,7 @@ class Organization extends \Google\Protobuf\Internal\Message
      *     @type bool $status
      *     @type bool $is_partner
      *     @type \Fatehan\Identity\Organization\MetaData $metadata
-     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $domains
+     *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $domains
      *     @type string $generation
      *     @type int|string $parent_id
      *     @type int $level
@@ -312,7 +312,7 @@ class Organization extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated string domains = 8 [json_name = "domains"];</code>
-     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<string>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setDomains($var)

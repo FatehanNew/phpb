@@ -38,8 +38,8 @@ class DriverBehaviorReportResponse extends \Google\Protobuf\Internal\Message
      *
      *     @type int $cost
      *     @type int $records
-     *     @type \Fatehan\Trip\TripPoint[]|\Google\Protobuf\Internal\RepeatedField $points
-     *     @type \Fatehan\Service\DriverBehaviorReportResponse\Chunk[]|\Google\Protobuf\Internal\RepeatedField $chunks
+     *     @type array<\Fatehan\Trip\TripPoint>|\Google\Protobuf\Internal\RepeatedField $points
+     *     @type array<\Fatehan\Service\DriverBehaviorReportResponse\Chunk>|\Google\Protobuf\Internal\RepeatedField $chunks
      * }
      */
     public function __construct($data = NULL) {
@@ -102,7 +102,7 @@ class DriverBehaviorReportResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.trips.TripPoint points = 3 [json_name = "points"];</code>
-     * @param \Fatehan\Trip\TripPoint[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Trip\TripPoint>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setPoints($var)
@@ -124,7 +124,7 @@ class DriverBehaviorReportResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .com.fatehan.services.DriverBehaviorReportResponse.Chunk chunks = 4 [json_name = "chunks"];</code>
-     * @param \Fatehan\Service\DriverBehaviorReportResponse\Chunk[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Fatehan\Service\DriverBehaviorReportResponse\Chunk>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setChunks($var)

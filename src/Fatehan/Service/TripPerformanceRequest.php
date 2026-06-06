@@ -48,7 +48,7 @@ class TripPerformanceRequest extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type int[]|string[]|\Google\Protobuf\Internal\RepeatedField $device_id
+     *     @type array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $device_id
      *     @type \Google\Protobuf\Timestamp $started_at
      *     @type \Google\Protobuf\Timestamp $finished_at
      *     @type bool $group_by_device
@@ -73,7 +73,7 @@ class TripPerformanceRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated uint64 device_id = 1 [json_name = "device_id"];</code>
-     * @param int[]|string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<int>|array<string>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setDeviceId($var)
