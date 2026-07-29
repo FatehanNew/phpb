@@ -13,7 +13,7 @@ printf "Clearing source directory...\n"
 rm -rf src/Fatehan/*
 
 printf "Regenerating gRPC PHP classes from .proto files...\n"
-protoc --php_out=src/ --grpc_out=src/ --plugin=protoc-gen-grpc=/bin/grpc_php_plugin -I ../protocols \
+protoc --php_out=src/ --grpc_out=src/ --plugin=protoc-gen-grpc=/bin/grpc_php_plugin --php_version=7.4 -I ../protocols \
   ../protocols/{trips,packets,notifies,financial,identities,models,services,areas,devices,activities}/*.proto
 
 printf "Bumping composer package minor version...\n"
