@@ -5,7 +5,7 @@ git pull
 
 PROTOCOLS_DIR="$HOME/apps/go/protocols"
 
-printf $PROTOCOLS_DIR
+printf "%s\n" "$PROTOCOLS_DIR"
 
 if [ ! -d "$PROTOCOLS_DIR" ]; then
     printf "Error: Protocols directory not found: %s\n" "$PROTOCOLS_DIR"
@@ -13,7 +13,8 @@ if [ ! -d "$PROTOCOLS_DIR" ]; then
 fi
 
 if [[ "$1" == "--update" || "$2" == "--update" ]]; then
-    eprintf "Updating PHP dependencies using Composer...\n"
+    # eprintf به printf تغییر یافت تا خطای سینتکس ندهد
+    printf "Updating PHP dependencies using Composer...\n"
     php7.4 /home/alireza/apps/php/web/fatehanweb/composer.phar update
 fi
 
@@ -21,8 +22,12 @@ printf "Clearing source directory...\n"
 rm -rf src/Fatehan/*
 
 printf "Regenerating gRPC PHP classes from .proto files...\n"
-protoc --php_out=src/ --grpc_out=src/ --plugin=protoc-gen-grpc=/bin/grpc_php_plugin -I "$PROTOCOLS_DIR" \
-  "$PROTOCOLS_DIR"/{trips,packets,notifies,financial,identities,models,services,areas,devices,activities}/*.proto
+# دستور کامپایل با فرمت‌بندی مناسب برای خوانایی و اجرای دقیق در Bash
+protoc --php_out=src/ \
+       --grpc_out=src/ \
+       --plugin=protoc-gen-grpc=/bin/grpc_php_plugin \
+       -I "$PROTOCOLS_DIR" \
+       "$PROTOCOLS_DIR"/{trips,packets,notifies,financial,identities,models,services,areas,devices,activities}/*.proto
 
 printf "Bumping composer package minor version...\n"
 if [ -f "composer.json" ]; then
@@ -36,7 +41,7 @@ if [ -f "composer.json" ]; then
         
         sed "s/\"version\": \"$current_version\"/\"version\": \"$new_version\"/" composer.json > composer.json.tmp && mv composer.json.tmp composer.json
         
-        printf "Version bumped from $current_version to $new_version\n"
+        printf "Version bumped from %s to %s\n" "$current_version" "$new_version"
     else
         printf "Could not find a valid version in composer.json. Skipping bump.\n"
     fi
