@@ -14,7 +14,7 @@ fi
 
 if [[ "$1" == "--update" || "$2" == "--update" ]]; then
     eprintf "Updating PHP dependencies using Composer...\n"
-    composer update
+    php7.4 /home/alireza/apps/php/web/fatehanweb/composer.phar update
 fi
 
 printf "Clearing source directory...\n"
