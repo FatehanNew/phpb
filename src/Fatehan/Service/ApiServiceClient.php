@@ -22,7 +22,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\AuthRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\AuthResponse>
      */
     public function Authentication(\Fatehan\Service\AuthRequest $argument,
       $metadata = [], $options = []) {
@@ -37,7 +37,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\MeRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\MeResponse>
      */
     public function MeIndex(\Fatehan\Service\MeRequest $argument,
       $metadata = [], $options = []) {
@@ -52,7 +52,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\AreaIndexRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\AreaIndexResponse>
      */
     public function AreaIndex(\Fatehan\Service\AreaIndexRequest $argument,
       $metadata = [], $options = []) {
@@ -66,7 +66,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\AreaShowRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Area\Area>
      */
     public function AreaShow(\Fatehan\Service\AreaShowRequest $argument,
       $metadata = [], $options = []) {
@@ -81,7 +81,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\DeviceRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\DeviceResponse>
      */
     public function DeviceIndex(\Fatehan\Service\DeviceRequest $argument,
       $metadata = [], $options = []) {
@@ -96,7 +96,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\DeviceRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\DeviceResponse>
      */
     public function TaneshReadyDeviceIndex(\Fatehan\Service\DeviceRequest $argument,
       $metadata = [], $options = []) {
@@ -111,7 +111,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\DeviceShowRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\DeviceShowResponse>
      */
     public function DeviceShow(\Fatehan\Service\DeviceShowRequest $argument,
       $metadata = [], $options = []) {
@@ -126,7 +126,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\ConfigRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\ConfigResponse>
      */
     public function ConfigIndex(\Fatehan\Service\ConfigRequest $argument,
       $metadata = [], $options = []) {
@@ -141,7 +141,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\UserRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\UserResponse>
      */
     public function UserIndex(\Fatehan\Service\UserRequest $argument,
       $metadata = [], $options = []) {
@@ -156,7 +156,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\IoRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\IoResponse>
      */
     public function IoIndex(\Fatehan\Service\IoRequest $argument,
       $metadata = [], $options = []) {
@@ -171,7 +171,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\MaintenanceIndexRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\MaintenanceIndexResponse>
      */
     public function MaintenanceIndex(\Fatehan\Service\MaintenanceIndexRequest $argument,
       $metadata = [], $options = []) {
@@ -186,7 +186,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\SubscriptionMethodIndexRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\Repositories\SubscriptionRepo>
      */
     public function SubscriptionMethodIndex(\Fatehan\Service\SubscriptionMethodIndexRequest $argument,
       $metadata = [], $options = []) {
@@ -201,7 +201,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\EventTemplateIndexRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\EventTemplateIndexResponse>
      */
     public function EventTemplateIndex(\Fatehan\Service\EventTemplateIndexRequest $argument,
       $metadata = [], $options = []) {
@@ -216,7 +216,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Notify\EventTemplate $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Notify\EventTemplate>
      */
     public function EventTemplateStore(\Fatehan\Notify\EventTemplate $argument,
       $metadata = [], $options = []) {
@@ -231,7 +231,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Notify\EventTemplate $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Notify\EventTemplate>
      */
     public function EventTemplateUpdate(\Fatehan\Notify\EventTemplate $argument,
       $metadata = [], $options = []) {
@@ -246,7 +246,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\EventTemplateDestroyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\EventTemplateDestroyResponse>
      */
     public function EventTemplateDestroy(\Fatehan\Service\EventTemplateDestroyRequest $argument,
       $metadata = [], $options = []) {
@@ -261,7 +261,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\EventTemplateShowRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Notify\EventTemplate>
      */
     public function EventTemplateShow(\Fatehan\Service\EventTemplateShowRequest $argument,
       $metadata = [], $options = []) {
@@ -276,7 +276,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Notify\Event $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Notify\Event>
      */
     public function EventStore(\Fatehan\Notify\Event $argument,
       $metadata = [], $options = []) {
@@ -291,7 +291,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Notify\Event $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Notify\Event>
      */
     public function EventUpdate(\Fatehan\Notify\Event $argument,
       $metadata = [], $options = []) {
@@ -306,7 +306,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\EventDestroyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\EventDestroyResponse>
      */
     public function EventDestroy(\Fatehan\Service\EventDestroyRequest $argument,
       $metadata = [], $options = []) {
@@ -321,7 +321,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\EventIndexRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\EventIndexResponse>
      */
     public function EventIndex(\Fatehan\Service\EventIndexRequest $argument,
       $metadata = [], $options = []) {
@@ -336,7 +336,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\EventShowRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Notify\Event>
      */
     public function EventShow(\Fatehan\Service\EventShowRequest $argument,
       $metadata = [], $options = []) {
@@ -351,7 +351,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\CommandActionIndexRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\CommandActionIndexResponse>
      */
     public function CommandActionIndex(\Fatehan\Service\CommandActionIndexRequest $argument,
       $metadata = [], $options = []) {
@@ -366,7 +366,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\CommandActionShowRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Device\CommandAction>
      */
     public function CommandActionShow(\Fatehan\Service\CommandActionShowRequest $argument,
       $metadata = [], $options = []) {
@@ -381,7 +381,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\CommandActionListRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\CommandActionListResponse>
      */
     public function CommandActionList(\Fatehan\Service\CommandActionListRequest $argument,
       $metadata = [], $options = []) {
@@ -396,7 +396,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\TraffixRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\TraffixResponse>
      */
     public function TraffixReport(\Fatehan\Service\TraffixRequest $argument,
       $metadata = [], $options = []) {
@@ -411,7 +411,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\AreaSummaryReviewRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\AreaSummaryReviewResponse>
      */
     public function AreaSummaryReviewReport(\Fatehan\Service\AreaSummaryReviewRequest $argument,
       $metadata = [], $options = []) {
@@ -426,7 +426,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\AreaSplitterRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\AreaSplitterResponse>
      */
     public function AreaSplitterReport(\Fatehan\Service\AreaSplitterRequest $argument,
       $metadata = [], $options = []) {
@@ -441,7 +441,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\LogRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\LogResponse>
      */
     public function LogReport(\Fatehan\Service\LogRequest $argument,
       $metadata = [], $options = []) {
@@ -456,7 +456,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\ShiftRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\ShiftResponse>
      */
     public function ShiftReport(\Fatehan\Service\ShiftRequest $argument,
       $metadata = [], $options = []) {
@@ -471,7 +471,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\TripsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\TripsResponse>
      */
     public function TripsReport(\Fatehan\Service\TripsRequest $argument,
       $metadata = [], $options = []) {
@@ -486,7 +486,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\TrafficRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\TrafficResponse>
      */
     public function TrafficReport(\Fatehan\Service\TrafficRequest $argument,
       $metadata = [], $options = []) {
@@ -501,7 +501,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\AttendanceRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\AttendanceResponse>
      */
     public function AttendanceReport(\Fatehan\Service\AttendanceRequest $argument,
       $metadata = [], $options = []) {
@@ -516,7 +516,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\AttendanceXRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\AttendanceResponse>
      */
     public function AttendanceXReport(\Fatehan\Service\AttendanceXRequest $argument,
       $metadata = [], $options = []) {
@@ -531,7 +531,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\DailyTrafficRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\DailyTrafficResponse>
      */
     public function DailyTrafficReport(\Fatehan\Service\DailyTrafficRequest $argument,
       $metadata = [], $options = []) {
@@ -546,7 +546,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\TripsSummaryRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\TripsSummaryResponse>
      */
     public function TripsSummaryReport(\Fatehan\Service\TripsSummaryRequest $argument,
       $metadata = [], $options = []) {
@@ -561,7 +561,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\ShiftSummaryRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\ShiftSummaryResponse>
      */
     public function ShiftSummaryReport(\Fatehan\Service\ShiftSummaryRequest $argument,
       $metadata = [], $options = []) {
@@ -576,7 +576,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\WorkCycleRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\WorkCycleResponse>
      */
     public function WorkCycleReport(\Fatehan\Service\WorkCycleRequest $argument,
       $metadata = [], $options = []) {
@@ -592,7 +592,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\TripReportRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\TripReportResponse>
      */
     public function TripReport(\Fatehan\Service\TripReportRequest $argument,
       $metadata = [], $options = []) {
@@ -607,7 +607,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\DeviceDataRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\DeviceDataResponse>
      */
     public function DeviceDataReport(\Fatehan\Service\DeviceDataRequest $argument,
       $metadata = [], $options = []) {
@@ -622,7 +622,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\RouteReviewRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\RouteReviewResponse>
      */
     public function RouteReviewReport(\Fatehan\Service\RouteReviewRequest $argument,
       $metadata = [], $options = []) {
@@ -637,7 +637,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\TripPerformanceRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\TripPerformanceResponse>
      */
     public function TripPerformanceReport(\Fatehan\Service\TripPerformanceRequest $argument,
       $metadata = [], $options = []) {
@@ -652,7 +652,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\DashboardIndividualRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\DashboardIndividualResponse>
      */
     public function DashboardIndividual(\Fatehan\Service\DashboardIndividualRequest $argument,
       $metadata = [], $options = []) {
@@ -667,7 +667,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\RouteStopRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\RouteStopResponse>
      */
     public function RouteStopReport(\Fatehan\Service\RouteStopRequest $argument,
       $metadata = [], $options = []) {
@@ -682,7 +682,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\CommandHistoryRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\CommandHistoryResponse>
      */
     public function CommandHistoryReport(\Fatehan\Service\CommandHistoryRequest $argument,
       $metadata = [], $options = []) {
@@ -697,7 +697,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\ChartRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\ChartResponse>
      */
     public function ChartReport(\Fatehan\Service\ChartRequest $argument,
       $metadata = [], $options = []) {
@@ -712,7 +712,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\WorkflowRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\WorkflowResponse>
      */
     public function WorkflowReport(\Fatehan\Service\WorkflowRequest $argument,
       $metadata = [], $options = []) {
@@ -727,7 +727,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\DriverBehaviorReportRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\DriverBehaviorReportResponse>
      */
     public function DriverBehaviorReport(\Fatehan\Service\DriverBehaviorReportRequest $argument,
       $metadata = [], $options = []) {
@@ -742,7 +742,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Packet\Message\GroupCommandCreateRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Packet\Message\GroupCommand>
      */
     public function GroupCommandCreate(\Fatehan\Packet\Message\GroupCommandCreateRequest $argument,
       $metadata = [], $options = []) {
@@ -757,7 +757,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Packet\Message\GroupCommandShowRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Packet\Message\GroupCommand>
      */
     public function GroupCommandShow(\Fatehan\Packet\Message\GroupCommandShowRequest $argument,
       $metadata = [], $options = []) {
@@ -772,7 +772,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Packet\Message\GroupCommandListRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Packet\Message\GroupCommandListResponse>
      */
     public function GroupCommandList(\Fatehan\Packet\Message\GroupCommandListRequest $argument,
       $metadata = [], $options = []) {
@@ -787,7 +787,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\WorkShiftTemplateIndexRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\WorkShiftTemplateIndexResponse>
      */
     public function WorkShiftTemplateIndex(\Fatehan\Service\WorkShiftTemplateIndexRequest $argument,
       $metadata = [], $options = []) {
@@ -802,7 +802,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\WorkShiftTemplateShowRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Activities\WorkShift\WorkShiftTemplate>
      */
     public function WorkShiftTemplateShow(\Fatehan\Service\WorkShiftTemplateShowRequest $argument,
       $metadata = [], $options = []) {
@@ -817,7 +817,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Activities\WorkShift\WorkShiftTemplate $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Activities\WorkShift\WorkShiftTemplate>
      */
     public function WorkShiftTemplateStore(\Fatehan\Activities\WorkShift\WorkShiftTemplate $argument,
       $metadata = [], $options = []) {
@@ -832,7 +832,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Activities\WorkShift\WorkShiftTemplate $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Activities\WorkShift\WorkShiftTemplate>
      */
     public function WorkShiftTemplateUpdate(\Fatehan\Activities\WorkShift\WorkShiftTemplate $argument,
       $metadata = [], $options = []) {
@@ -847,7 +847,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\WorkShiftTemplateDestroyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\WorkShiftTemplateDestroyResponse>
      */
     public function WorkShiftTemplateDestroy(\Fatehan\Service\WorkShiftTemplateDestroyRequest $argument,
       $metadata = [], $options = []) {
@@ -862,7 +862,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\WorkShiftIndexRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\WorkShiftIndexResponse>
      */
     public function WorkShiftIndex(\Fatehan\Service\WorkShiftIndexRequest $argument,
       $metadata = [], $options = []) {
@@ -877,7 +877,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\WorkShiftShowRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Activities\WorkShift\WorkShift>
      */
     public function WorkShiftShow(\Fatehan\Service\WorkShiftShowRequest $argument,
       $metadata = [], $options = []) {
@@ -892,7 +892,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Activities\WorkShift\WorkShift $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Activities\WorkShift\WorkShift>
      */
     public function WorkShiftStore(\Fatehan\Activities\WorkShift\WorkShift $argument,
       $metadata = [], $options = []) {
@@ -907,7 +907,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Activities\WorkShift\WorkShift $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Activities\WorkShift\WorkShift>
      */
     public function WorkShiftUpdate(\Fatehan\Activities\WorkShift\WorkShift $argument,
       $metadata = [], $options = []) {
@@ -922,7 +922,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\WorkShiftDestroyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\WorkShiftDestroyResponse>
      */
     public function WorkShiftDestroy(\Fatehan\Service\WorkShiftDestroyRequest $argument,
       $metadata = [], $options = []) {
@@ -937,7 +937,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\NotificationReportRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\NotificationReportResponse>
      */
     public function NotificationReport(\Fatehan\Service\NotificationReportRequest $argument,
       $metadata = [], $options = []) {
@@ -952,7 +952,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\SendUserNotificationRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\SendUserNotificationResponse>
      */
     public function SendUserNotification(\Fatehan\Service\SendUserNotificationRequest $argument,
       $metadata = [], $options = []) {
@@ -967,7 +967,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\PrepareSendUserNotificationRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\PrepareSendUserNotificationResponse>
      */
     public function PrepareSendUserNotification(\Fatehan\Service\PrepareSendUserNotificationRequest $argument,
       $metadata = [], $options = []) {
@@ -982,7 +982,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Service\NotificationMediaRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Service\NotificationMediaResponse>
      */
     public function NotificationMediaIndex(\Fatehan\Service\NotificationMediaRequest $argument,
       $metadata = [], $options = []) {
@@ -997,7 +997,7 @@ class ApiServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Activities\Logs\ActivityLogRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Activities\Logs\ActivityLogResponse>
      */
     public function ActivityLogIndex(\Fatehan\Activities\Logs\ActivityLogRequest $argument,
       $metadata = [], $options = []) {
