@@ -63,20 +63,6 @@ class ApiServiceClient extends \Grpc\BaseStub {
     }
 
     /**
-     * @param \Fatehan\Service\AreaShowRequest $argument input argument
-     * @param array $metadata metadata
-     * @param array $options call options
-     * @return \Grpc\UnaryCall
-     */
-    public function AreaShow(\Fatehan\Service\AreaShowRequest $argument,
-      $metadata = [], $options = []) {
-        return $this->_simpleRequest('/com.fatehan.services.ApiService/AreaShow',
-        $argument,
-        ['\Fatehan\Area\Area', 'decode'],
-        $metadata, $options);
-    }
-
-    /**
      * List devices for the current account.
      * @param \Fatehan\Service\DeviceRequest $argument input argument
      * @param array $metadata metadata
@@ -86,21 +72,6 @@ class ApiServiceClient extends \Grpc\BaseStub {
     public function DeviceIndex(\Fatehan\Service\DeviceRequest $argument,
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/com.fatehan.services.ApiService/DeviceIndex',
-        $argument,
-        ['\Fatehan\Service\DeviceResponse', 'decode'],
-        $metadata, $options);
-    }
-
-    /**
-     * List TaneshReadyDeviceIndex for the current account.
-     * @param \Fatehan\Service\DeviceRequest $argument input argument
-     * @param array $metadata metadata
-     * @param array $options call options
-     * @return \Grpc\UnaryCall
-     */
-    public function TaneshReadyDeviceIndex(\Fatehan\Service\DeviceRequest $argument,
-      $metadata = [], $options = []) {
-        return $this->_simpleRequest('/com.fatehan.services.ApiService/TaneshReadyDeviceIndex',
         $argument,
         ['\Fatehan\Service\DeviceResponse', 'decode'],
         $metadata, $options);
@@ -784,27 +755,27 @@ class ApiServiceClient extends \Grpc\BaseStub {
 
     /**
      * WorkShift Template Index
-     * @param \Fatehan\Service\WorkShiftTemplateIndexRequest $argument input argument
+     * @param \Fatehan\Activities\WorkShift\WorkShiftTemplateIndexRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      * @return \Grpc\UnaryCall
      */
-    public function WorkShiftTemplateIndex(\Fatehan\Service\WorkShiftTemplateIndexRequest $argument,
+    public function WorkShiftTemplateIndex(\Fatehan\Activities\WorkShift\WorkShiftTemplateIndexRequest $argument,
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/com.fatehan.services.ApiService/WorkShiftTemplateIndex',
         $argument,
-        ['\Fatehan\Service\WorkShiftTemplateIndexResponse', 'decode'],
+        ['\Fatehan\Activities\WorkShift\WorkShiftTemplateIndexResponse', 'decode'],
         $metadata, $options);
     }
 
     /**
      * WorkShift Template Show
-     * @param \Fatehan\Service\WorkShiftTemplateShowRequest $argument input argument
+     * @param \Fatehan\Activities\WorkShift\WorkShiftTemplateShowRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      * @return \Grpc\UnaryCall
      */
-    public function WorkShiftTemplateShow(\Fatehan\Service\WorkShiftTemplateShowRequest $argument,
+    public function WorkShiftTemplateShow(\Fatehan\Activities\WorkShift\WorkShiftTemplateShowRequest $argument,
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/com.fatehan.services.ApiService/WorkShiftTemplateShow',
         $argument,
@@ -844,42 +815,42 @@ class ApiServiceClient extends \Grpc\BaseStub {
 
     /**
      * WorkShift Template Destroy
-     * @param \Fatehan\Service\WorkShiftTemplateDestroyRequest $argument input argument
+     * @param \Fatehan\Activities\WorkShift\WorkShiftTemplateDestroyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      * @return \Grpc\UnaryCall
      */
-    public function WorkShiftTemplateDestroy(\Fatehan\Service\WorkShiftTemplateDestroyRequest $argument,
+    public function WorkShiftTemplateDestroy(\Fatehan\Activities\WorkShift\WorkShiftTemplateDestroyRequest $argument,
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/com.fatehan.services.ApiService/WorkShiftTemplateDestroy',
         $argument,
-        ['\Fatehan\Service\WorkShiftTemplateDestroyResponse', 'decode'],
+        ['\Fatehan\Activities\WorkShift\WorkShiftTemplateDestroyResponse', 'decode'],
         $metadata, $options);
     }
 
     /**
      * WorkShift Index
-     * @param \Fatehan\Service\WorkShiftIndexRequest $argument input argument
+     * @param \Fatehan\Activities\WorkShift\WorkShiftIndexRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      * @return \Grpc\UnaryCall
      */
-    public function WorkShiftIndex(\Fatehan\Service\WorkShiftIndexRequest $argument,
+    public function WorkShiftIndex(\Fatehan\Activities\WorkShift\WorkShiftIndexRequest $argument,
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/com.fatehan.services.ApiService/WorkShiftIndex',
         $argument,
-        ['\Fatehan\Service\WorkShiftIndexResponse', 'decode'],
+        ['\Fatehan\Activities\WorkShift\WorkShiftIndexResponse', 'decode'],
         $metadata, $options);
     }
 
     /**
      * WorkShift Show
-     * @param \Fatehan\Service\WorkShiftShowRequest $argument input argument
+     * @param \Fatehan\Activities\WorkShift\WorkShiftShowRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      * @return \Grpc\UnaryCall
      */
-    public function WorkShiftShow(\Fatehan\Service\WorkShiftShowRequest $argument,
+    public function WorkShiftShow(\Fatehan\Activities\WorkShift\WorkShiftShowRequest $argument,
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/com.fatehan.services.ApiService/WorkShiftShow',
         $argument,
@@ -919,16 +890,16 @@ class ApiServiceClient extends \Grpc\BaseStub {
 
     /**
      * WorkShift Destroy
-     * @param \Fatehan\Service\WorkShiftDestroyRequest $argument input argument
+     * @param \Fatehan\Activities\WorkShift\WorkShiftDestroyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      * @return \Grpc\UnaryCall
      */
-    public function WorkShiftDestroy(\Fatehan\Service\WorkShiftDestroyRequest $argument,
+    public function WorkShiftDestroy(\Fatehan\Activities\WorkShift\WorkShiftDestroyRequest $argument,
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/com.fatehan.services.ApiService/WorkShiftDestroy',
         $argument,
-        ['\Fatehan\Service\WorkShiftDestroyResponse', 'decode'],
+        ['\Fatehan\Activities\WorkShift\WorkShiftDestroyResponse', 'decode'],
         $metadata, $options);
     }
 
@@ -944,66 +915,6 @@ class ApiServiceClient extends \Grpc\BaseStub {
         return $this->_simpleRequest('/com.fatehan.services.ApiService/NotificationReport',
         $argument,
         ['\Fatehan\Service\NotificationReportResponse', 'decode'],
-        $metadata, $options);
-    }
-
-    /**
-     * Send User Notification
-     * @param \Fatehan\Service\SendUserNotificationRequest $argument input argument
-     * @param array $metadata metadata
-     * @param array $options call options
-     * @return \Grpc\UnaryCall
-     */
-    public function SendUserNotification(\Fatehan\Service\SendUserNotificationRequest $argument,
-      $metadata = [], $options = []) {
-        return $this->_simpleRequest('/com.fatehan.services.ApiService/SendUserNotification',
-        $argument,
-        ['\Fatehan\Service\SendUserNotificationResponse', 'decode'],
-        $metadata, $options);
-    }
-
-    /**
-     * Prepare send user notification
-     * @param \Fatehan\Service\PrepareSendUserNotificationRequest $argument input argument
-     * @param array $metadata metadata
-     * @param array $options call options
-     * @return \Grpc\UnaryCall
-     */
-    public function PrepareSendUserNotification(\Fatehan\Service\PrepareSendUserNotificationRequest $argument,
-      $metadata = [], $options = []) {
-        return $this->_simpleRequest('/com.fatehan.services.ApiService/PrepareSendUserNotification',
-        $argument,
-        ['\Fatehan\Service\PrepareSendUserNotificationResponse', 'decode'],
-        $metadata, $options);
-    }
-
-    /**
-     * Notification Media
-     * @param \Fatehan\Service\NotificationMediaRequest $argument input argument
-     * @param array $metadata metadata
-     * @param array $options call options
-     * @return \Grpc\UnaryCall
-     */
-    public function NotificationMediaIndex(\Fatehan\Service\NotificationMediaRequest $argument,
-      $metadata = [], $options = []) {
-        return $this->_simpleRequest('/com.fatehan.services.ApiService/NotificationMediaIndex',
-        $argument,
-        ['\Fatehan\Service\NotificationMediaResponse', 'decode'],
-        $metadata, $options);
-    }
-
-    /**
-     * Activity Log Report
-     * @param \Fatehan\Activities\Logs\ActivityLogRequest $argument input argument
-     * @param array $metadata metadata
-     * @param array $options call options
-     * @return \Grpc\UnaryCall
-     */
-    public function ActivityLogIndex(\Fatehan\Activities\Logs\ActivityLogRequest $argument,
-      $metadata = [], $options = []) {
-        return $this->_simpleRequest('/com.fatehan.services.ApiService/ActivityLogIndex',
-        $argument,
-        ['\Fatehan\Activities\Logs\ActivityLogResponse', 'decode'],
         $metadata, $options);
     }
 
