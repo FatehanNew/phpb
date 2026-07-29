@@ -3,7 +3,7 @@
 printf "Updating Git repository...\n"
 git pull
 
-PROTOCOLS_DIR="$HOME/apps/protocols"
+PROTOCOLS_DIR="$HOME/apps/go/protocols"
 
 printf $PROTOCOLS_DIR
 

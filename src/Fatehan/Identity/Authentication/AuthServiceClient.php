@@ -22,7 +22,7 @@ class AuthServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Identity\Authentication\VerifyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall<\Fatehan\Identity\Authentication\VerifyResponse>
+     * @return \Grpc\UnaryCall
      */
     public function Verify(\Fatehan\Identity\Authentication\VerifyRequest $argument,
       $metadata = [], $options = []) {
