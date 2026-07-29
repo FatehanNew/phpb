@@ -22,7 +22,7 @@ class DirectMessageServiceClient extends \Grpc\BaseStub {
      * @param \Fatehan\Notify\DirectMessage $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Fatehan\Notify\DirectMessageResult>
      */
     public function SendDirectMessage(\Fatehan\Notify\DirectMessage $argument,
       $metadata = [], $options = []) {

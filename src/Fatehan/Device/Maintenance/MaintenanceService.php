@@ -43,7 +43,7 @@ class MaintenanceService extends \Google\Protobuf\Internal\Message
      */
     protected $expire_mileage_period = null;
     /**
-     * Generated from protobuf field <code>optional uint64 expire_date_period = 8 [json_name = "expire_date_period"];</code>
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp expire_date_period = 8 [json_name = "expire_date_period"];</code>
      */
     protected $expire_date_period = null;
     /**
@@ -72,7 +72,7 @@ class MaintenanceService extends \Google\Protobuf\Internal\Message
      *     @type int|string $updated_by
      *     @type bool $is_default
      *     @type int|string $expire_mileage_period
-     *     @type int|string $expire_date_period
+     *     @type \Google\Protobuf\Timestamp $expire_date_period
      *     @type int|string $expire_active_duration_period
      *     @type \Google\Protobuf\Timestamp $created_at
      *     @type \Google\Protobuf\Timestamp $updated_at
@@ -267,12 +267,12 @@ class MaintenanceService extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional uint64 expire_date_period = 8 [json_name = "expire_date_period"];</code>
-     * @return int|string
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp expire_date_period = 8 [json_name = "expire_date_period"];</code>
+     * @return \Google\Protobuf\Timestamp|null
      */
     public function getExpireDatePeriod()
     {
-        return isset($this->expire_date_period) ? $this->expire_date_period : GPBUtil::compatibleInt64(0, '0');
+        return $this->expire_date_period;
     }
 
     public function hasExpireDatePeriod()
@@ -286,13 +286,12 @@ class MaintenanceService extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional uint64 expire_date_period = 8 [json_name = "expire_date_period"];</code>
-     * @param int|string $var
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp expire_date_period = 8 [json_name = "expire_date_period"];</code>
+     * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setExpireDatePeriod(int|string $var)
+    public function setExpireDatePeriod(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkUint64($var);
         $this->expire_date_period = $var;
 
         return $this;
