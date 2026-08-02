@@ -2851,6 +2851,10 @@ class Permission
      * Generated from protobuf enum <code>PARTNER_SEND_USER_NOTIFICATION = 712;</code>
      */
     const PARTNER_SEND_USER_NOTIFICATION = 712;
+    /**
+     * Generated from protobuf enum <code>ADMIN_LOG_REPROT = 713;</code>
+     */
+    const ADMIN_LOG_REPROT = 713;
 
     private static $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
@@ -3523,6 +3527,7 @@ class Permission
         self::COMMAND_ACTION_UPDATE => 'COMMAND_ACTION_UPDATE',
         self::COMMAND_ACTION_DELETE => 'COMMAND_ACTION_DELETE',
         self::PARTNER_SEND_USER_NOTIFICATION => 'PARTNER_SEND_USER_NOTIFICATION',
+        self::ADMIN_LOG_REPROT => 'ADMIN_LOG_REPROT',
     ];
 
     public static function name($value)

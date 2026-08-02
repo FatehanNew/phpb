@@ -75,6 +75,10 @@ class User extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>uint64 partner_id = 16 [json_name = "partner_id"];</code>
      */
     protected $partner_id = 0;
+    /**
+     * Generated from protobuf field <code>optional string goftino_id = 17 [json_name = "goftino_id"];</code>
+     */
+    protected $goftino_id = null;
 
     /**
      * Constructor.
@@ -98,6 +102,7 @@ class User extends \Google\Protobuf\Internal\Message
      *     @type array<\Fatehan\Identity\Person>|\Google\Protobuf\Internal\RepeatedField $persons
      *           Deprecated: Use UserRepo instead, currently using only in flutter auth sign
      *     @type int|string $partner_id
+     *     @type string $goftino_id
      * }
      */
     public function __construct($data = NULL) {
@@ -497,6 +502,38 @@ class User extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkUint64($var);
         $this->partner_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string goftino_id = 17 [json_name = "goftino_id"];</code>
+     * @return string
+     */
+    public function getGoftinoId()
+    {
+        return isset($this->goftino_id) ? $this->goftino_id : '';
+    }
+
+    public function hasGoftinoId()
+    {
+        return isset($this->goftino_id);
+    }
+
+    public function clearGoftinoId()
+    {
+        unset($this->goftino_id);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string goftino_id = 17 [json_name = "goftino_id"];</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setGoftinoId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->goftino_id = $var;
 
         return $this;
     }
