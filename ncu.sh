@@ -4,7 +4,8 @@ printf "Updating Git repository...\n"
 git pull
 
 PROTOCOLS_DIR="$HOME/apps/go/protocols"
-PROTOC_BIN="$HOME/tools/protoc3/bin/protoc"
+#PROTOC_BIN="$HOME/tools/protoc3/bin/protoc"
+PROTOC_BIN="/home/alireza/.local/bin/protoc"
 
 printf $PROTOCOLS_DIR
 
@@ -15,7 +16,7 @@ fi
 
 if [[ "$1" == "--update" || "$2" == "--update" ]]; then
     eprintf "Updating PHP dependencies using Composer...\n"
-    php7.4 /home/alireza/apps/php/web/fatehanweb/composer.phar update
+    php composer update
 fi
 
 printf "Clearing source directory...\n"
