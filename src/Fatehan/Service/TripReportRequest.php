@@ -15,15 +15,15 @@ use Google\Protobuf\RepeatedField;
 class TripReportRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>repeated uint64 device_ids = 1;</code>
+     * Generated from protobuf field <code>repeated uint64 device_ids = 1 [json_name = "device_ids"];</code>
      */
     private $device_ids;
     /**
-     * Generated from protobuf field <code>.google.protobuf.Timestamp started_at = 2;</code>
+     * Generated from protobuf field <code>.google.protobuf.Timestamp started_at = 2 [json_name = "started_at"];</code>
      */
     protected $started_at = null;
     /**
-     * Generated from protobuf field <code>.google.protobuf.Timestamp finished_at = 3;</code>
+     * Generated from protobuf field <code>.google.protobuf.Timestamp finished_at = 3 [json_name = "finished_at"];</code>
      */
     protected $finished_at = null;
 
@@ -44,7 +44,7 @@ class TripReportRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated uint64 device_ids = 1;</code>
+     * Generated from protobuf field <code>repeated uint64 device_ids = 1 [json_name = "device_ids"];</code>
      * @return RepeatedField<int>|RepeatedField<string>
      */
     public function getDeviceIds()
@@ -53,7 +53,7 @@ class TripReportRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated uint64 device_ids = 1;</code>
+     * Generated from protobuf field <code>repeated uint64 device_ids = 1 [json_name = "device_ids"];</code>
      * @param int[]|string[] $var
      * @return $this
      */
@@ -66,7 +66,7 @@ class TripReportRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.google.protobuf.Timestamp started_at = 2;</code>
+     * Generated from protobuf field <code>.google.protobuf.Timestamp started_at = 2 [json_name = "started_at"];</code>
      * @return \Google\Protobuf\Timestamp|null
      */
     public function getStartedAt()
@@ -85,7 +85,7 @@ class TripReportRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.google.protobuf.Timestamp started_at = 2;</code>
+     * Generated from protobuf field <code>.google.protobuf.Timestamp started_at = 2 [json_name = "started_at"];</code>
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
@@ -97,7 +97,7 @@ class TripReportRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.google.protobuf.Timestamp finished_at = 3;</code>
+     * Generated from protobuf field <code>.google.protobuf.Timestamp finished_at = 3 [json_name = "finished_at"];</code>
      * @return \Google\Protobuf\Timestamp|null
      */
     public function getFinishedAt()
@@ -116,7 +116,7 @@ class TripReportRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.google.protobuf.Timestamp finished_at = 3;</code>
+     * Generated from protobuf field <code>.google.protobuf.Timestamp finished_at = 3 [json_name = "finished_at"];</code>
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */

@@ -23,6 +23,7 @@ class ModuleList extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type \Fatehan\Packet\DataModel\TirePressureMonitoringSystemModule $tpms
+     *     @type \Fatehan\Packet\DataModel\RahdariModule $rahdari
      * }
      */
     public function __construct($data = NULL) {
@@ -52,6 +53,32 @@ class ModuleList extends \Google\Protobuf\Internal\Message
     public function setTpms(\Fatehan\Packet\DataModel\TirePressureMonitoringSystemModule|null $var)
     {
         $this->writeOneof(1, $var);
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.com.fatehan.packets.RahdariModule rahdari = 2 [json_name = "rahdari"];</code>
+     * @return \Fatehan\Packet\DataModel\RahdariModule|null
+     */
+    public function getRahdari()
+    {
+        return $this->readOneof(2);
+    }
+
+    public function hasRahdari()
+    {
+        return $this->hasOneof(2);
+    }
+
+    /**
+     * Generated from protobuf field <code>.com.fatehan.packets.RahdariModule rahdari = 2 [json_name = "rahdari"];</code>
+     * @param \Fatehan\Packet\DataModel\RahdariModule $var
+     * @return $this
+     */
+    public function setRahdari(\Fatehan\Packet\DataModel\RahdariModule|null $var)
+    {
+        $this->writeOneof(2, $var);
 
         return $this;
     }

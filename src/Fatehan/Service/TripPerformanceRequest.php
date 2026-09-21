@@ -42,6 +42,10 @@ class TripPerformanceRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional uint64 org_id = 7 [json_name = "org_id"];</code>
      */
     protected $org_id = null;
+    /**
+     * Generated from protobuf field <code>optional uint64 shift_id = 8 [json_name = "shift_id"];</code>
+     */
+    protected $shift_id = null;
 
     /**
      * Constructor.
@@ -56,6 +60,7 @@ class TripPerformanceRequest extends \Google\Protobuf\Internal\Message
      *     @type int $group_by_datetime
      *     @type bool $hourly
      *     @type int|string $org_id
+     *     @type int|string $shift_id
      * }
      */
     public function __construct($data = NULL) {
@@ -239,6 +244,38 @@ class TripPerformanceRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkUint64($var);
         $this->org_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint64 shift_id = 8 [json_name = "shift_id"];</code>
+     * @return int|string
+     */
+    public function getShiftId()
+    {
+        return isset($this->shift_id) ? $this->shift_id : GPBUtil::compatibleInt64(0, '0');
+    }
+
+    public function hasShiftId()
+    {
+        return isset($this->shift_id);
+    }
+
+    public function clearShiftId()
+    {
+        unset($this->shift_id);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint64 shift_id = 8 [json_name = "shift_id"];</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setShiftId(int|string $var)
+    {
+        GPBUtil::checkUint64($var);
+        $this->shift_id = $var;
 
         return $this;
     }

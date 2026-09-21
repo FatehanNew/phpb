@@ -38,6 +38,10 @@ class RouteReviewRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool include_trip = 6 [json_name = "include_trip"];</code>
      */
     protected $include_trip = false;
+    /**
+     * Generated from protobuf field <code>optional uint64 shift_id = 7 [json_name = "shift_id"];</code>
+     */
+    protected $shift_id = null;
 
     /**
      * Constructor.
@@ -51,6 +55,7 @@ class RouteReviewRequest extends \Google\Protobuf\Internal\Message
      *     @type int $stop_type
      *     @type int|string $device_id
      *     @type bool $include_trip
+     *     @type int|string $shift_id
      * }
      */
     public function __construct($data = NULL) {
@@ -203,6 +208,38 @@ class RouteReviewRequest extends \Google\Protobuf\Internal\Message
     public function setIncludeTrip(bool $var)
     {
         $this->include_trip = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint64 shift_id = 7 [json_name = "shift_id"];</code>
+     * @return int|string
+     */
+    public function getShiftId()
+    {
+        return isset($this->shift_id) ? $this->shift_id : GPBUtil::compatibleInt64(0, '0');
+    }
+
+    public function hasShiftId()
+    {
+        return isset($this->shift_id);
+    }
+
+    public function clearShiftId()
+    {
+        unset($this->shift_id);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint64 shift_id = 7 [json_name = "shift_id"];</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setShiftId(int|string $var)
+    {
+        GPBUtil::checkUint64($var);
+        $this->shift_id = $var;
 
         return $this;
     }

@@ -22,6 +22,10 @@ class Chart extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .google.protobuf.Timestamp datetime = 2 [json_name = "datetime"];</code>
      */
     private $datetime;
+    /**
+     * Generated from protobuf field <code>repeated .com.fatehan.areas.Point lat_lng = 3 [json_name = "lat_lng"];</code>
+     */
+    private $lat_lng;
 
     /**
      * Constructor.
@@ -31,6 +35,7 @@ class Chart extends \Google\Protobuf\Internal\Message
      *
      *     @type array|\Google\Protobuf\Internal\MapField $ios
      *     @type \Google\Protobuf\Timestamp[] $datetime
+     *     @type \Fatehan\Area\Point[] $lat_lng
      * }
      */
     public function __construct($data = NULL) {
@@ -78,6 +83,28 @@ class Chart extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\Timestamp::class);
         $this->datetime = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .com.fatehan.areas.Point lat_lng = 3 [json_name = "lat_lng"];</code>
+     * @return RepeatedField<\Fatehan\Area\Point>
+     */
+    public function getLatLng()
+    {
+        return $this->lat_lng;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .com.fatehan.areas.Point lat_lng = 3 [json_name = "lat_lng"];</code>
+     * @param \Fatehan\Area\Point[] $var
+     * @return $this
+     */
+    public function setLatLng(array|RepeatedField $var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Area\Point::class);
+        $this->lat_lng = $arr;
 
         return $this;
     }

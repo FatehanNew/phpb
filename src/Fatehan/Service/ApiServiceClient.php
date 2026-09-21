@@ -708,6 +708,21 @@ class ApiServiceClient extends \Grpc\BaseStub {
     }
 
     /**
+     * Fuel report generation method
+     * @param \Fatehan\Service\FuelReportRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function FuelReport(\Fatehan\Service\FuelReportRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/com.fatehan.services.ApiService/FuelReport',
+        $argument,
+        ['\Fatehan\Service\FuelReportResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
      * Workflow report generation method
      * @param \Fatehan\Service\WorkflowRequest $argument input argument
      * @param array $metadata metadata

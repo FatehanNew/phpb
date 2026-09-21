@@ -31,9 +31,9 @@ class GroupCommandListResponse extends \Google\Protobuf\Internal\Message
      */
     protected $per_page = 0;
     /**
-     * Generated from protobuf field <code>repeated .com.fatehan.packets.GroupCommand commands = 5;</code>
+     * Generated from protobuf field <code>repeated .com.fatehan.packets.GroupCommand data = 5;</code>
      */
-    private $commands;
+    private $data;
 
     /**
      * Constructor.
@@ -45,7 +45,7 @@ class GroupCommandListResponse extends \Google\Protobuf\Internal\Message
      *     @type int $current_page
      *     @type int $last_page
      *     @type int $per_page
-     *     @type \Fatehan\Packet\Message\GroupCommand[] $commands
+     *     @type \Fatehan\Packet\Message\GroupCommand[] $data
      * }
      */
     public function __construct($data = NULL) {
@@ -142,23 +142,23 @@ class GroupCommandListResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .com.fatehan.packets.GroupCommand commands = 5;</code>
+     * Generated from protobuf field <code>repeated .com.fatehan.packets.GroupCommand data = 5;</code>
      * @return RepeatedField<\Fatehan\Packet\Message\GroupCommand>
      */
-    public function getCommands()
+    public function getData()
     {
-        return $this->commands;
+        return $this->data;
     }
 
     /**
-     * Generated from protobuf field <code>repeated .com.fatehan.packets.GroupCommand commands = 5;</code>
+     * Generated from protobuf field <code>repeated .com.fatehan.packets.GroupCommand data = 5;</code>
      * @param \Fatehan\Packet\Message\GroupCommand[] $var
      * @return $this
      */
-    public function setCommands(array|RepeatedField $var)
+    public function setData(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Packet\Message\GroupCommand::class);
-        $this->commands = $arr;
+        $this->data = $arr;
 
         return $this;
     }

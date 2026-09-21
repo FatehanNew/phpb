@@ -43,7 +43,7 @@ class WorkCycleRequest extends \Google\Protobuf\Internal\Message
      */
     protected $source = 0;
     /**
-     * Generated from protobuf field <code>optional uint64 shift_id = 8;</code>
+     * Generated from protobuf field <code>optional uint64 shift_id = 8 [json_name = "shift_id"];</code>
      */
     protected $shift_id = null;
 
@@ -249,7 +249,7 @@ class WorkCycleRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional uint64 shift_id = 8;</code>
+     * Generated from protobuf field <code>optional uint64 shift_id = 8 [json_name = "shift_id"];</code>
      * @return int|string
      */
     public function getShiftId()
@@ -268,7 +268,7 @@ class WorkCycleRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional uint64 shift_id = 8;</code>
+     * Generated from protobuf field <code>optional uint64 shift_id = 8 [json_name = "shift_id"];</code>
      * @param int|string $var
      * @return $this
      */
