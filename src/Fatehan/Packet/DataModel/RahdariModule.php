@@ -38,6 +38,38 @@ class RahdariModule extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional string smart_card_number = 8 [json_name = "smart_card_number"];</code>
      */
     protected $smart_card_number = null;
+    /**
+     * Generated from protobuf field <code>optional bool has_plate_number = 9 [json_name = "has_plate_number"];</code>
+     */
+    protected $has_plate_number = null;
+    /**
+     * Generated from protobuf field <code>optional string plate_number_first = 10 [json_name = "plate_number_first"];</code>
+     */
+    protected $plate_number_first = null;
+    /**
+     * Generated from protobuf field <code>optional string plate_number_character = 11 [json_name = "plate_number_character"];</code>
+     */
+    protected $plate_number_character = null;
+    /**
+     * Generated from protobuf field <code>optional string plate_number_last = 12 [json_name = "plate_number_last"];</code>
+     */
+    protected $plate_number_last = null;
+    /**
+     * Generated from protobuf field <code>optional string other_plate_number = 13 [json_name = "other_plate_number"];</code>
+     */
+    protected $other_plate_number = null;
+    /**
+     * Generated from protobuf field <code>optional string vin = 14 [json_name = "vin"];</code>
+     */
+    protected $vin = null;
+    /**
+     * Generated from protobuf field <code>optional string chassis_number = 15 [json_name = "chassis_number"];</code>
+     */
+    protected $chassis_number = null;
+    /**
+     * Generated from protobuf field <code>optional string simcard_number = 16 [json_name = "simcard_number"];</code>
+     */
+    protected $simcard_number = null;
 
     /**
      * Constructor.
@@ -51,6 +83,14 @@ class RahdariModule extends \Google\Protobuf\Internal\Message
      *     @type string $usage
      *     @type string $transit_number
      *     @type string $smart_card_number
+     *     @type bool $has_plate_number
+     *     @type string $plate_number_first
+     *     @type string $plate_number_character
+     *     @type string $plate_number_last
+     *     @type string $other_plate_number
+     *     @type string $vin
+     *     @type string $chassis_number
+     *     @type string $simcard_number
      * }
      */
     public function __construct($data = NULL) {
@@ -245,6 +285,261 @@ class RahdariModule extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, true);
         $this->smart_card_number = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional bool has_plate_number = 9 [json_name = "has_plate_number"];</code>
+     * @return bool
+     */
+    public function getHasPlateNumber()
+    {
+        return isset($this->has_plate_number) ? $this->has_plate_number : false;
+    }
+
+    public function hasHasPlateNumber()
+    {
+        return isset($this->has_plate_number);
+    }
+
+    public function clearHasPlateNumber()
+    {
+        unset($this->has_plate_number);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional bool has_plate_number = 9 [json_name = "has_plate_number"];</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setHasPlateNumber(bool $var)
+    {
+        $this->has_plate_number = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string plate_number_first = 10 [json_name = "plate_number_first"];</code>
+     * @return string
+     */
+    public function getPlateNumberFirst()
+    {
+        return isset($this->plate_number_first) ? $this->plate_number_first : '';
+    }
+
+    public function hasPlateNumberFirst()
+    {
+        return isset($this->plate_number_first);
+    }
+
+    public function clearPlateNumberFirst()
+    {
+        unset($this->plate_number_first);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string plate_number_first = 10 [json_name = "plate_number_first"];</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setPlateNumberFirst(string $var)
+    {
+        GPBUtil::checkString($var, true);
+        $this->plate_number_first = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string plate_number_character = 11 [json_name = "plate_number_character"];</code>
+     * @return string
+     */
+    public function getPlateNumberCharacter()
+    {
+        return isset($this->plate_number_character) ? $this->plate_number_character : '';
+    }
+
+    public function hasPlateNumberCharacter()
+    {
+        return isset($this->plate_number_character);
+    }
+
+    public function clearPlateNumberCharacter()
+    {
+        unset($this->plate_number_character);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string plate_number_character = 11 [json_name = "plate_number_character"];</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setPlateNumberCharacter(string $var)
+    {
+        GPBUtil::checkString($var, true);
+        $this->plate_number_character = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string plate_number_last = 12 [json_name = "plate_number_last"];</code>
+     * @return string
+     */
+    public function getPlateNumberLast()
+    {
+        return isset($this->plate_number_last) ? $this->plate_number_last : '';
+    }
+
+    public function hasPlateNumberLast()
+    {
+        return isset($this->plate_number_last);
+    }
+
+    public function clearPlateNumberLast()
+    {
+        unset($this->plate_number_last);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string plate_number_last = 12 [json_name = "plate_number_last"];</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setPlateNumberLast(string $var)
+    {
+        GPBUtil::checkString($var, true);
+        $this->plate_number_last = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string other_plate_number = 13 [json_name = "other_plate_number"];</code>
+     * @return string
+     */
+    public function getOtherPlateNumber()
+    {
+        return isset($this->other_plate_number) ? $this->other_plate_number : '';
+    }
+
+    public function hasOtherPlateNumber()
+    {
+        return isset($this->other_plate_number);
+    }
+
+    public function clearOtherPlateNumber()
+    {
+        unset($this->other_plate_number);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string other_plate_number = 13 [json_name = "other_plate_number"];</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setOtherPlateNumber(string $var)
+    {
+        GPBUtil::checkString($var, true);
+        $this->other_plate_number = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string vin = 14 [json_name = "vin"];</code>
+     * @return string
+     */
+    public function getVin()
+    {
+        return isset($this->vin) ? $this->vin : '';
+    }
+
+    public function hasVin()
+    {
+        return isset($this->vin);
+    }
+
+    public function clearVin()
+    {
+        unset($this->vin);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string vin = 14 [json_name = "vin"];</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setVin(string $var)
+    {
+        GPBUtil::checkString($var, true);
+        $this->vin = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string chassis_number = 15 [json_name = "chassis_number"];</code>
+     * @return string
+     */
+    public function getChassisNumber()
+    {
+        return isset($this->chassis_number) ? $this->chassis_number : '';
+    }
+
+    public function hasChassisNumber()
+    {
+        return isset($this->chassis_number);
+    }
+
+    public function clearChassisNumber()
+    {
+        unset($this->chassis_number);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string chassis_number = 15 [json_name = "chassis_number"];</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setChassisNumber(string $var)
+    {
+        GPBUtil::checkString($var, true);
+        $this->chassis_number = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string simcard_number = 16 [json_name = "simcard_number"];</code>
+     * @return string
+     */
+    public function getSimcardNumber()
+    {
+        return isset($this->simcard_number) ? $this->simcard_number : '';
+    }
+
+    public function hasSimcardNumber()
+    {
+        return isset($this->simcard_number);
+    }
+
+    public function clearSimcardNumber()
+    {
+        unset($this->simcard_number);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string simcard_number = 16 [json_name = "simcard_number"];</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setSimcardNumber(string $var)
+    {
+        GPBUtil::checkString($var, true);
+        $this->simcard_number = $var;
 
         return $this;
     }
