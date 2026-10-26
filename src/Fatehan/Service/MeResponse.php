@@ -50,6 +50,10 @@ class MeResponse extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional string error_message = 9 [json_name = "error_message"];</code>
      */
     protected $error_message = null;
+    /**
+     * Generated from protobuf field <code>optional .com.fatehan.services.MapConfig map_config = 10 [json_name = "map_config"];</code>
+     */
+    protected $map_config = null;
 
     /**
      * Constructor.
@@ -66,6 +70,7 @@ class MeResponse extends \Google\Protobuf\Internal\Message
      *     @type \Fatehan\Financial\Wallet $wallet
      *     @type int|string $cost
      *     @type string $error_message
+     *     @type \Fatehan\Service\MapConfig $map_config
      * }
      */
     public function __construct($data = NULL) {
@@ -314,6 +319,37 @@ class MeResponse extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, true);
         $this->error_message = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .com.fatehan.services.MapConfig map_config = 10 [json_name = "map_config"];</code>
+     * @return \Fatehan\Service\MapConfig|null
+     */
+    public function getMapConfig()
+    {
+        return $this->map_config;
+    }
+
+    public function hasMapConfig()
+    {
+        return isset($this->map_config);
+    }
+
+    public function clearMapConfig()
+    {
+        unset($this->map_config);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .com.fatehan.services.MapConfig map_config = 10 [json_name = "map_config"];</code>
+     * @param \Fatehan\Service\MapConfig $var
+     * @return $this
+     */
+    public function setMapConfig(\Fatehan\Service\MapConfig|null $var)
+    {
+        $this->map_config = $var;
 
         return $this;
     }

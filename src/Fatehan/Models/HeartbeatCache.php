@@ -62,6 +62,22 @@ class HeartbeatCache extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional .com.fatehan.packets.Alert schedule_alert = 12 [json_name = "schedule_alert"];</code>
      */
     protected $schedule_alert = null;
+    /**
+     * Generated from protobuf field <code>optional uint32 altitude = 13 [json_name = "altitude"];</code>
+     */
+    protected $altitude = null;
+    /**
+     * Generated from protobuf field <code>optional uint32 cellId = 14 [json_name = "cellId"];</code>
+     */
+    protected $cellId = null;
+    /**
+     * Generated from protobuf field <code>optional uint32 operator_code = 15 [json_name = "operator_code"];</code>
+     */
+    protected $operator_code = null;
+    /**
+     * Generated from protobuf field <code>optional uint32 area_code = 16 [json_name = "area_code"];</code>
+     */
+    protected $area_code = null;
 
     /**
      * Constructor.
@@ -81,6 +97,10 @@ class HeartbeatCache extends \Google\Protobuf\Internal\Message
      *     @type int $ai1
      *     @type int|string $odyssey_command_id
      *     @type int $schedule_alert
+     *     @type int $altitude
+     *     @type int $cellId
+     *     @type int $operator_code
+     *     @type int $area_code
      * }
      */
     public function __construct($data = NULL) {
@@ -466,6 +486,134 @@ class HeartbeatCache extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkEnum($var, \Fatehan\Packet\DataModel\Alert::class);
         $this->schedule_alert = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint32 altitude = 13 [json_name = "altitude"];</code>
+     * @return int
+     */
+    public function getAltitude()
+    {
+        return isset($this->altitude) ? $this->altitude : 0;
+    }
+
+    public function hasAltitude()
+    {
+        return isset($this->altitude);
+    }
+
+    public function clearAltitude()
+    {
+        unset($this->altitude);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint32 altitude = 13 [json_name = "altitude"];</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setAltitude(int $var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->altitude = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint32 cellId = 14 [json_name = "cellId"];</code>
+     * @return int
+     */
+    public function getCellId()
+    {
+        return isset($this->cellId) ? $this->cellId : 0;
+    }
+
+    public function hasCellId()
+    {
+        return isset($this->cellId);
+    }
+
+    public function clearCellId()
+    {
+        unset($this->cellId);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint32 cellId = 14 [json_name = "cellId"];</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setCellId(int $var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->cellId = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint32 operator_code = 15 [json_name = "operator_code"];</code>
+     * @return int
+     */
+    public function getOperatorCode()
+    {
+        return isset($this->operator_code) ? $this->operator_code : 0;
+    }
+
+    public function hasOperatorCode()
+    {
+        return isset($this->operator_code);
+    }
+
+    public function clearOperatorCode()
+    {
+        unset($this->operator_code);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint32 operator_code = 15 [json_name = "operator_code"];</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setOperatorCode(int $var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->operator_code = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint32 area_code = 16 [json_name = "area_code"];</code>
+     * @return int
+     */
+    public function getAreaCode()
+    {
+        return isset($this->area_code) ? $this->area_code : 0;
+    }
+
+    public function hasAreaCode()
+    {
+        return isset($this->area_code);
+    }
+
+    public function clearAreaCode()
+    {
+        unset($this->area_code);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint32 area_code = 16 [json_name = "area_code"];</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setAreaCode(int $var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->area_code = $var;
 
         return $this;
     }

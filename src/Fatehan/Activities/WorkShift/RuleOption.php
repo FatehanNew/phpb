@@ -74,6 +74,18 @@ class RuleOption extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated int32 by_second = 15;</code>
      */
     private $by_second;
+    /**
+     * Generated from protobuf field <code>string name = 16;</code>
+     */
+    protected $name = '';
+    /**
+     * Generated from protobuf field <code>string color = 17;</code>
+     */
+    protected $color = '';
+    /**
+     * Generated from protobuf field <code>string type = 18;</code>
+     */
+    protected $type = '';
 
     /**
      * Constructor.
@@ -96,6 +108,9 @@ class RuleOption extends \Google\Protobuf\Internal\Message
      *     @type int[] $by_hour
      *     @type int[] $by_minute
      *     @type int[] $by_second
+     *     @type string $name
+     *     @type string $color
+     *     @type string $type
      * }
      */
     public function __construct($data = NULL) {
@@ -447,6 +462,72 @@ class RuleOption extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
         $this->by_second = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string name = 16;</code>
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * Generated from protobuf field <code>string name = 16;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setName(string $var)
+    {
+        GPBUtil::checkString($var, true);
+        $this->name = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string color = 17;</code>
+     * @return string
+     */
+    public function getColor()
+    {
+        return $this->color;
+    }
+
+    /**
+     * Generated from protobuf field <code>string color = 17;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setColor(string $var)
+    {
+        GPBUtil::checkString($var, true);
+        $this->color = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string type = 18;</code>
+     * @return string
+     */
+    public function getType()
+    {
+        return $this->type;
+    }
+
+    /**
+     * Generated from protobuf field <code>string type = 18;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setType(string $var)
+    {
+        GPBUtil::checkString($var, true);
+        $this->type = $var;
 
         return $this;
     }

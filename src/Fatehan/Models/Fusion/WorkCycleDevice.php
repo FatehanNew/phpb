@@ -42,6 +42,14 @@ class WorkCycleDevice extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional uint64 area_id = 7 [json_name = "area_id"];</code>
      */
     protected $area_id = null;
+    /**
+     * Generated from protobuf field <code>optional uint64 io_element_id = 8 [json_name = "io_element_id"];</code>
+     */
+    protected $io_element_id = null;
+    /**
+     * Generated from protobuf field <code>optional string io_formula = 9 [json_name = "io_formula"];</code>
+     */
+    protected $io_formula = null;
 
     /**
      * Constructor.
@@ -56,6 +64,8 @@ class WorkCycleDevice extends \Google\Protobuf\Internal\Message
      *     @type int|string $organization_id
      *     @type string $name
      *     @type int|string $area_id
+     *     @type int|string $io_element_id
+     *     @type string $io_formula
      * }
      */
     public function __construct($data = NULL) {
@@ -242,6 +252,70 @@ class WorkCycleDevice extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkUint64($var);
         $this->area_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint64 io_element_id = 8 [json_name = "io_element_id"];</code>
+     * @return int|string
+     */
+    public function getIoElementId()
+    {
+        return isset($this->io_element_id) ? $this->io_element_id : GPBUtil::compatibleInt64(0, '0');
+    }
+
+    public function hasIoElementId()
+    {
+        return isset($this->io_element_id);
+    }
+
+    public function clearIoElementId()
+    {
+        unset($this->io_element_id);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint64 io_element_id = 8 [json_name = "io_element_id"];</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setIoElementId(int|string $var)
+    {
+        GPBUtil::checkUint64($var);
+        $this->io_element_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string io_formula = 9 [json_name = "io_formula"];</code>
+     * @return string
+     */
+    public function getIoFormula()
+    {
+        return isset($this->io_formula) ? $this->io_formula : '';
+    }
+
+    public function hasIoFormula()
+    {
+        return isset($this->io_formula);
+    }
+
+    public function clearIoFormula()
+    {
+        unset($this->io_formula);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string io_formula = 9 [json_name = "io_formula"];</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setIoFormula(string $var)
+    {
+        GPBUtil::checkString($var, true);
+        $this->io_formula = $var;
 
         return $this;
     }

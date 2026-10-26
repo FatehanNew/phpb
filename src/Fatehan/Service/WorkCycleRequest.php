@@ -46,6 +46,12 @@ class WorkCycleRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional uint64 shift_id = 8 [json_name = "shift_id"];</code>
      */
     protected $shift_id = null;
+    /**
+     * Unset = use each device's configured method. SENSOR only applies to devices that have a sensor configured.
+     *
+     * Generated from protobuf field <code>optional .com.fatehan.areas.WorkCycle.Method method = 9 [json_name = "method"];</code>
+     */
+    protected $method = null;
 
     /**
      * Constructor.
@@ -61,6 +67,8 @@ class WorkCycleRequest extends \Google\Protobuf\Internal\Message
      *     @type float $area_stop_seconds
      *     @type int $source
      *     @type int|string $shift_id
+     *     @type int $method
+     *           Unset = use each device's configured method. SENSOR only applies to devices that have a sensor configured.
      * }
      */
     public function __construct($data = NULL) {
@@ -276,6 +284,42 @@ class WorkCycleRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkUint64($var);
         $this->shift_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Unset = use each device's configured method. SENSOR only applies to devices that have a sensor configured.
+     *
+     * Generated from protobuf field <code>optional .com.fatehan.areas.WorkCycle.Method method = 9 [json_name = "method"];</code>
+     * @return int one of the values in {@see \Fatehan\Area\WorkCycle\Method}
+     */
+    public function getMethod()
+    {
+        return isset($this->method) ? $this->method : 0;
+    }
+
+    public function hasMethod()
+    {
+        return isset($this->method);
+    }
+
+    public function clearMethod()
+    {
+        unset($this->method);
+    }
+
+    /**
+     * Unset = use each device's configured method. SENSOR only applies to devices that have a sensor configured.
+     *
+     * Generated from protobuf field <code>optional .com.fatehan.areas.WorkCycle.Method method = 9 [json_name = "method"];</code>
+     * @param int $var one of the values in {@see \Fatehan\Area\WorkCycle\Method}
+     * @return $this
+     */
+    public function setMethod(int $var)
+    {
+        GPBUtil::checkEnum($var, \Fatehan\Area\WorkCycle\Method::class);
+        $this->method = $var;
 
         return $this;
     }

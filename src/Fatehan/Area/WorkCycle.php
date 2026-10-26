@@ -52,6 +52,76 @@ class WorkCycle extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>uint32 duration = 9 [json_name = "duration"];</code>
      */
     protected $duration = 0;
+    /**
+     * Generated from protobuf field <code>.com.fatehan.areas.WorkCycle.Method method = 10 [json_name = "method"];</code>
+     */
+    protected $method = 0;
+    /**
+     * exact dump point (sensor mode)
+     *
+     * Generated from protobuf field <code>.com.fatehan.areas.WorkCycle.Event unload = 11 [json_name = "unload"];</code>
+     */
+    protected $unload = null;
+    /**
+     * Generated from protobuf field <code>repeated .com.fatehan.areas.WorkCycle.Anomaly anomalies = 12 [json_name = "anomalies"];</code>
+     */
+    private $anomalies;
+    /**
+     * haul time (loaded travel), seconds
+     *
+     * Generated from protobuf field <code>uint32 loaded_duration = 13 [json_name = "loaded_duration"];</code>
+     */
+    protected $loaded_duration = 0;
+    /**
+     * return time (empty travel), seconds
+     *
+     * Generated from protobuf field <code>uint32 empty_duration = 14 [json_name = "empty_duration"];</code>
+     */
+    protected $empty_duration = 0;
+    /**
+     * meters
+     *
+     * Generated from protobuf field <code>uint32 loaded_mileage = 15 [json_name = "loaded_mileage"];</code>
+     */
+    protected $loaded_mileage = 0;
+    /**
+     * meters
+     *
+     * Generated from protobuf field <code>uint32 empty_mileage = 16 [json_name = "empty_mileage"];</code>
+     */
+    protected $empty_mileage = 0;
+    /**
+     * waiting in load zone before loading, seconds
+     *
+     * Generated from protobuf field <code>uint32 queue_duration = 17 [json_name = "queue_duration"];</code>
+     */
+    protected $queue_duration = 0;
+    /**
+     * total seconds with speed = 0 inside the cycle
+     *
+     * Generated from protobuf field <code>uint32 stop_duration = 18 [json_name = "stop_duration"];</code>
+     */
+    protected $stop_duration = 0;
+    /**
+     * km/h
+     *
+     * Generated from protobuf field <code>uint32 max_speed = 19 [json_name = "max_speed"];</code>
+     */
+    protected $max_speed = 0;
+    /**
+     * average moving speed km/h
+     *
+     * Generated from protobuf field <code>uint32 avg_speed = 20 [json_name = "avg_speed"];</code>
+     */
+    protected $avg_speed = 0;
+    /**
+     * Generated from protobuf field <code>optional string driver_name = 21 [json_name = "driver_name"];</code>
+     */
+    protected $driver_name = null;
+    /**
+     * Generated from protobuf field <code>optional string shift_title = 22 [json_name = "shift_title"];</code>
+     */
+    protected $shift_title = null;
 
     /**
      * Constructor.
@@ -68,6 +138,28 @@ class WorkCycle extends \Google\Protobuf\Internal\Message
      *     @type \Google\Protobuf\Timestamp $finished_at
      *     @type int $mileage
      *     @type int $duration
+     *     @type int $method
+     *     @type \Fatehan\Area\WorkCycle\Event $unload
+     *           exact dump point (sensor mode)
+     *     @type int[] $anomalies
+     *     @type int $loaded_duration
+     *           haul time (loaded travel), seconds
+     *     @type int $empty_duration
+     *           return time (empty travel), seconds
+     *     @type int $loaded_mileage
+     *           meters
+     *     @type int $empty_mileage
+     *           meters
+     *     @type int $queue_duration
+     *           waiting in load zone before loading, seconds
+     *     @type int $stop_duration
+     *           total seconds with speed = 0 inside the cycle
+     *     @type int $max_speed
+     *           km/h
+     *     @type int $avg_speed
+     *           average moving speed km/h
+     *     @type string $driver_name
+     *     @type string $shift_title
      * }
      */
     public function __construct($data = NULL) {
@@ -314,6 +406,357 @@ class WorkCycle extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkUint32($var);
         $this->duration = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.com.fatehan.areas.WorkCycle.Method method = 10 [json_name = "method"];</code>
+     * @return int one of the values in {@see \Fatehan\Area\WorkCycle\Method}
+     */
+    public function getMethod()
+    {
+        return $this->method;
+    }
+
+    /**
+     * Generated from protobuf field <code>.com.fatehan.areas.WorkCycle.Method method = 10 [json_name = "method"];</code>
+     * @param int $var one of the values in {@see \Fatehan\Area\WorkCycle\Method}
+     * @return $this
+     */
+    public function setMethod(int $var)
+    {
+        GPBUtil::checkEnum($var, \Fatehan\Area\WorkCycle\Method::class);
+        $this->method = $var;
+
+        return $this;
+    }
+
+    /**
+     * exact dump point (sensor mode)
+     *
+     * Generated from protobuf field <code>.com.fatehan.areas.WorkCycle.Event unload = 11 [json_name = "unload"];</code>
+     * @return \Fatehan\Area\WorkCycle\Event|null
+     */
+    public function getUnload()
+    {
+        return $this->unload;
+    }
+
+    public function hasUnload()
+    {
+        return isset($this->unload);
+    }
+
+    public function clearUnload()
+    {
+        unset($this->unload);
+    }
+
+    /**
+     * exact dump point (sensor mode)
+     *
+     * Generated from protobuf field <code>.com.fatehan.areas.WorkCycle.Event unload = 11 [json_name = "unload"];</code>
+     * @param \Fatehan\Area\WorkCycle\Event $var
+     * @return $this
+     */
+    public function setUnload(\Fatehan\Area\WorkCycle\Event|null $var)
+    {
+        $this->unload = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .com.fatehan.areas.WorkCycle.Anomaly anomalies = 12 [json_name = "anomalies"];</code>
+     * @return RepeatedField<int> one of the values in {@see \Fatehan\Area\WorkCycle\Anomaly}
+     */
+    public function getAnomalies()
+    {
+        return $this->anomalies;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .com.fatehan.areas.WorkCycle.Anomaly anomalies = 12 [json_name = "anomalies"];</code>
+     * @param int[] $var one of the values in {@see \Fatehan\Area\WorkCycle\Anomaly}
+     * @return $this
+     */
+    public function setAnomalies(array|RepeatedField $var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Fatehan\Area\WorkCycle\Anomaly::class);
+        $this->anomalies = $arr;
+
+        return $this;
+    }
+
+    /**
+     * haul time (loaded travel), seconds
+     *
+     * Generated from protobuf field <code>uint32 loaded_duration = 13 [json_name = "loaded_duration"];</code>
+     * @return int
+     */
+    public function getLoadedDuration()
+    {
+        return $this->loaded_duration;
+    }
+
+    /**
+     * haul time (loaded travel), seconds
+     *
+     * Generated from protobuf field <code>uint32 loaded_duration = 13 [json_name = "loaded_duration"];</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setLoadedDuration(int $var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->loaded_duration = $var;
+
+        return $this;
+    }
+
+    /**
+     * return time (empty travel), seconds
+     *
+     * Generated from protobuf field <code>uint32 empty_duration = 14 [json_name = "empty_duration"];</code>
+     * @return int
+     */
+    public function getEmptyDuration()
+    {
+        return $this->empty_duration;
+    }
+
+    /**
+     * return time (empty travel), seconds
+     *
+     * Generated from protobuf field <code>uint32 empty_duration = 14 [json_name = "empty_duration"];</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setEmptyDuration(int $var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->empty_duration = $var;
+
+        return $this;
+    }
+
+    /**
+     * meters
+     *
+     * Generated from protobuf field <code>uint32 loaded_mileage = 15 [json_name = "loaded_mileage"];</code>
+     * @return int
+     */
+    public function getLoadedMileage()
+    {
+        return $this->loaded_mileage;
+    }
+
+    /**
+     * meters
+     *
+     * Generated from protobuf field <code>uint32 loaded_mileage = 15 [json_name = "loaded_mileage"];</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setLoadedMileage(int $var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->loaded_mileage = $var;
+
+        return $this;
+    }
+
+    /**
+     * meters
+     *
+     * Generated from protobuf field <code>uint32 empty_mileage = 16 [json_name = "empty_mileage"];</code>
+     * @return int
+     */
+    public function getEmptyMileage()
+    {
+        return $this->empty_mileage;
+    }
+
+    /**
+     * meters
+     *
+     * Generated from protobuf field <code>uint32 empty_mileage = 16 [json_name = "empty_mileage"];</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setEmptyMileage(int $var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->empty_mileage = $var;
+
+        return $this;
+    }
+
+    /**
+     * waiting in load zone before loading, seconds
+     *
+     * Generated from protobuf field <code>uint32 queue_duration = 17 [json_name = "queue_duration"];</code>
+     * @return int
+     */
+    public function getQueueDuration()
+    {
+        return $this->queue_duration;
+    }
+
+    /**
+     * waiting in load zone before loading, seconds
+     *
+     * Generated from protobuf field <code>uint32 queue_duration = 17 [json_name = "queue_duration"];</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setQueueDuration(int $var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->queue_duration = $var;
+
+        return $this;
+    }
+
+    /**
+     * total seconds with speed = 0 inside the cycle
+     *
+     * Generated from protobuf field <code>uint32 stop_duration = 18 [json_name = "stop_duration"];</code>
+     * @return int
+     */
+    public function getStopDuration()
+    {
+        return $this->stop_duration;
+    }
+
+    /**
+     * total seconds with speed = 0 inside the cycle
+     *
+     * Generated from protobuf field <code>uint32 stop_duration = 18 [json_name = "stop_duration"];</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setStopDuration(int $var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->stop_duration = $var;
+
+        return $this;
+    }
+
+    /**
+     * km/h
+     *
+     * Generated from protobuf field <code>uint32 max_speed = 19 [json_name = "max_speed"];</code>
+     * @return int
+     */
+    public function getMaxSpeed()
+    {
+        return $this->max_speed;
+    }
+
+    /**
+     * km/h
+     *
+     * Generated from protobuf field <code>uint32 max_speed = 19 [json_name = "max_speed"];</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setMaxSpeed(int $var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->max_speed = $var;
+
+        return $this;
+    }
+
+    /**
+     * average moving speed km/h
+     *
+     * Generated from protobuf field <code>uint32 avg_speed = 20 [json_name = "avg_speed"];</code>
+     * @return int
+     */
+    public function getAvgSpeed()
+    {
+        return $this->avg_speed;
+    }
+
+    /**
+     * average moving speed km/h
+     *
+     * Generated from protobuf field <code>uint32 avg_speed = 20 [json_name = "avg_speed"];</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setAvgSpeed(int $var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->avg_speed = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string driver_name = 21 [json_name = "driver_name"];</code>
+     * @return string
+     */
+    public function getDriverName()
+    {
+        return isset($this->driver_name) ? $this->driver_name : '';
+    }
+
+    public function hasDriverName()
+    {
+        return isset($this->driver_name);
+    }
+
+    public function clearDriverName()
+    {
+        unset($this->driver_name);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string driver_name = 21 [json_name = "driver_name"];</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setDriverName(string $var)
+    {
+        GPBUtil::checkString($var, true);
+        $this->driver_name = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string shift_title = 22 [json_name = "shift_title"];</code>
+     * @return string
+     */
+    public function getShiftTitle()
+    {
+        return isset($this->shift_title) ? $this->shift_title : '';
+    }
+
+    public function hasShiftTitle()
+    {
+        return isset($this->shift_title);
+    }
+
+    public function clearShiftTitle()
+    {
+        unset($this->shift_title);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string shift_title = 22 [json_name = "shift_title"];</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setShiftTitle(string $var)
+    {
+        GPBUtil::checkString($var, true);
+        $this->shift_title = $var;
 
         return $this;
     }
