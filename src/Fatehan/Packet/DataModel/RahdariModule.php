@@ -59,15 +59,19 @@ class RahdariModule extends \Google\Protobuf\Internal\Message
      */
     protected $other_plate_number = null;
     /**
-     * Generated from protobuf field <code>optional string vin = 14 [json_name = "vin"];</code>
+     * Generated from protobuf field <code>optional string plate_number_serial = 14 [json_name = "plate_number_serial"];</code>
+     */
+    protected $plate_number_serial = null;
+    /**
+     * Generated from protobuf field <code>optional string vin = 15 [json_name = "vin"];</code>
      */
     protected $vin = null;
     /**
-     * Generated from protobuf field <code>optional string chassis_number = 15 [json_name = "chassis_number"];</code>
+     * Generated from protobuf field <code>optional string chassis_number = 16 [json_name = "chassis_number"];</code>
      */
     protected $chassis_number = null;
     /**
-     * Generated from protobuf field <code>optional string simcard_number = 16 [json_name = "simcard_number"];</code>
+     * Generated from protobuf field <code>optional string simcard_number = 17 [json_name = "simcard_number"];</code>
      */
     protected $simcard_number = null;
 
@@ -88,6 +92,7 @@ class RahdariModule extends \Google\Protobuf\Internal\Message
      *     @type string $plate_number_character
      *     @type string $plate_number_last
      *     @type string $other_plate_number
+     *     @type string $plate_number_serial
      *     @type string $vin
      *     @type string $chassis_number
      *     @type string $simcard_number
@@ -449,7 +454,39 @@ class RahdariModule extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional string vin = 14 [json_name = "vin"];</code>
+     * Generated from protobuf field <code>optional string plate_number_serial = 14 [json_name = "plate_number_serial"];</code>
+     * @return string
+     */
+    public function getPlateNumberSerial()
+    {
+        return isset($this->plate_number_serial) ? $this->plate_number_serial : '';
+    }
+
+    public function hasPlateNumberSerial()
+    {
+        return isset($this->plate_number_serial);
+    }
+
+    public function clearPlateNumberSerial()
+    {
+        unset($this->plate_number_serial);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string plate_number_serial = 14 [json_name = "plate_number_serial"];</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setPlateNumberSerial(string $var)
+    {
+        GPBUtil::checkString($var, true);
+        $this->plate_number_serial = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string vin = 15 [json_name = "vin"];</code>
      * @return string
      */
     public function getVin()
@@ -468,7 +505,7 @@ class RahdariModule extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional string vin = 14 [json_name = "vin"];</code>
+     * Generated from protobuf field <code>optional string vin = 15 [json_name = "vin"];</code>
      * @param string $var
      * @return $this
      */
@@ -481,7 +518,7 @@ class RahdariModule extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional string chassis_number = 15 [json_name = "chassis_number"];</code>
+     * Generated from protobuf field <code>optional string chassis_number = 16 [json_name = "chassis_number"];</code>
      * @return string
      */
     public function getChassisNumber()
@@ -500,7 +537,7 @@ class RahdariModule extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional string chassis_number = 15 [json_name = "chassis_number"];</code>
+     * Generated from protobuf field <code>optional string chassis_number = 16 [json_name = "chassis_number"];</code>
      * @param string $var
      * @return $this
      */
@@ -513,7 +550,7 @@ class RahdariModule extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional string simcard_number = 16 [json_name = "simcard_number"];</code>
+     * Generated from protobuf field <code>optional string simcard_number = 17 [json_name = "simcard_number"];</code>
      * @return string
      */
     public function getSimcardNumber()
@@ -532,7 +569,7 @@ class RahdariModule extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional string simcard_number = 16 [json_name = "simcard_number"];</code>
+     * Generated from protobuf field <code>optional string simcard_number = 17 [json_name = "simcard_number"];</code>
      * @param string $var
      * @return $this
      */
