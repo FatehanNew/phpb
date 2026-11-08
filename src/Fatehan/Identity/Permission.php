@@ -2860,6 +2860,18 @@ class Permission
      * Generated from protobuf enum <code>ADMIN_WEBSITE_ORDER_LIST = 714;</code>
      */
     const ADMIN_WEBSITE_ORDER_LIST = 714;
+    /**
+     * Generated from protobuf enum <code>ADMIN_DELETE_DATA_SHOW = 715;</code>
+     */
+    const ADMIN_DELETE_DATA_SHOW = 715;
+    /**
+     * Generated from protobuf enum <code>ADMIN_DELETE_DATA_CREATE = 716;</code>
+     */
+    const ADMIN_DELETE_DATA_CREATE = 716;
+    /**
+     * Generated from protobuf enum <code>ADMIN_DELETE_DATA_LIST = 717;</code>
+     */
+    const ADMIN_DELETE_DATA_LIST = 717;
 
     private static $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
@@ -3534,6 +3546,9 @@ class Permission
         self::PARTNER_SEND_USER_NOTIFICATION => 'PARTNER_SEND_USER_NOTIFICATION',
         self::ADMIN_LOG_REPORT => 'ADMIN_LOG_REPORT',
         self::ADMIN_WEBSITE_ORDER_LIST => 'ADMIN_WEBSITE_ORDER_LIST',
+        self::ADMIN_DELETE_DATA_SHOW => 'ADMIN_DELETE_DATA_SHOW',
+        self::ADMIN_DELETE_DATA_CREATE => 'ADMIN_DELETE_DATA_CREATE',
+        self::ADMIN_DELETE_DATA_LIST => 'ADMIN_DELETE_DATA_LIST',
     ];
 
     public static function name($value)

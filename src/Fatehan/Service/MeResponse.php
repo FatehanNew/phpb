@@ -54,6 +54,10 @@ class MeResponse extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional .com.fatehan.services.MapConfig map_config = 10 [json_name = "map_config"];</code>
      */
     protected $map_config = null;
+    /**
+     * Generated from protobuf field <code>optional uint32 device_expire_count = 11 [json_name = "device_expire_count"];</code>
+     */
+    protected $device_expire_count = null;
 
     /**
      * Constructor.
@@ -71,6 +75,7 @@ class MeResponse extends \Google\Protobuf\Internal\Message
      *     @type int|string $cost
      *     @type string $error_message
      *     @type \Fatehan\Service\MapConfig $map_config
+     *     @type int $device_expire_count
      * }
      */
     public function __construct($data = NULL) {
@@ -350,6 +355,38 @@ class MeResponse extends \Google\Protobuf\Internal\Message
     public function setMapConfig(\Fatehan\Service\MapConfig|null $var)
     {
         $this->map_config = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint32 device_expire_count = 11 [json_name = "device_expire_count"];</code>
+     * @return int
+     */
+    public function getDeviceExpireCount()
+    {
+        return isset($this->device_expire_count) ? $this->device_expire_count : 0;
+    }
+
+    public function hasDeviceExpireCount()
+    {
+        return isset($this->device_expire_count);
+    }
+
+    public function clearDeviceExpireCount()
+    {
+        unset($this->device_expire_count);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint32 device_expire_count = 11 [json_name = "device_expire_count"];</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setDeviceExpireCount(int $var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->device_expire_count = $var;
 
         return $this;
     }

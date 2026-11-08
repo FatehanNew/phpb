@@ -48,6 +48,21 @@ class ApiServiceClient extends \Grpc\BaseStub {
     }
 
     /**
+     * Return the user profile with token.
+     * @param \Fatehan\Service\UserInfoRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function UserInfo(\Fatehan\Service\UserInfoRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/com.fatehan.services.ApiService/UserInfo',
+        $argument,
+        ['\Fatehan\Service\UserInfoResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
      * List available areas and related metadata.
      * @param \Fatehan\Service\AreaIndexRequest $argument input argument
      * @param array $metadata metadata

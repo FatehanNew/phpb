@@ -102,6 +102,10 @@ class Person extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional .com.fatehan.identities.Organization organization = 22 [json_name = "organization"];</code>
      */
     protected $organization = null;
+    /**
+     * Generated from protobuf field <code>optional string goftino_id = 23 [json_name = "goftino_id"];</code>
+     */
+    protected $goftino_id = null;
 
     /**
      * Constructor.
@@ -131,6 +135,7 @@ class Person extends \Google\Protobuf\Internal\Message
      *     @type \Google\Protobuf\Timestamp $created_at
      *     @type \Google\Protobuf\Timestamp $updated_at
      *     @type \Fatehan\Identity\Organization $organization
+     *     @type string $goftino_id
      * }
      */
     public function __construct($data = NULL) {
@@ -793,6 +798,38 @@ class Person extends \Google\Protobuf\Internal\Message
     public function setOrganization(\Fatehan\Identity\Organization|null $var)
     {
         $this->organization = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string goftino_id = 23 [json_name = "goftino_id"];</code>
+     * @return string
+     */
+    public function getGoftinoId()
+    {
+        return isset($this->goftino_id) ? $this->goftino_id : '';
+    }
+
+    public function hasGoftinoId()
+    {
+        return isset($this->goftino_id);
+    }
+
+    public function clearGoftinoId()
+    {
+        unset($this->goftino_id);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string goftino_id = 23 [json_name = "goftino_id"];</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setGoftinoId(string $var)
+    {
+        GPBUtil::checkString($var, true);
+        $this->goftino_id = $var;
 
         return $this;
     }
