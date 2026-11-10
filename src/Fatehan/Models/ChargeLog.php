@@ -63,10 +63,6 @@ class ChargeLog extends \Google\Protobuf\Internal\Message
      */
     protected $next_expiration = null;
     /**
-     * Generated from protobuf field <code>bool is_unlimited = 13 [json_name = "is_unlimited"];</code>
-     */
-    protected $is_unlimited = false;
-    /**
      * Generated from protobuf field <code>bool refund = 14 [json_name = "refund"];</code>
      */
     protected $refund = false;
@@ -78,6 +74,10 @@ class ChargeLog extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.google.protobuf.Timestamp updated_at = 16 [json_name = "updated_at"];</code>
      */
     protected $updated_at = null;
+    /**
+     * Generated from protobuf field <code>optional int32 is_unlimited = 17 [json_name = "is_unlimited"];</code>
+     */
+    protected $is_unlimited = null;
 
     /**
      * Constructor.
@@ -97,10 +97,10 @@ class ChargeLog extends \Google\Protobuf\Internal\Message
      *     @type string $user_agent
      *     @type \Google\Protobuf\Timestamp $previous_expiration
      *     @type \Google\Protobuf\Timestamp $next_expiration
-     *     @type bool $is_unlimited
      *     @type bool $refund
      *     @type \Google\Protobuf\Timestamp $created_at
      *     @type \Google\Protobuf\Timestamp $updated_at
+     *     @type int $is_unlimited
      * }
      */
     public function __construct($data = NULL) {
@@ -451,27 +451,6 @@ class ChargeLog extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>bool is_unlimited = 13 [json_name = "is_unlimited"];</code>
-     * @return bool
-     */
-    public function getIsUnlimited()
-    {
-        return $this->is_unlimited;
-    }
-
-    /**
-     * Generated from protobuf field <code>bool is_unlimited = 13 [json_name = "is_unlimited"];</code>
-     * @param bool $var
-     * @return $this
-     */
-    public function setIsUnlimited(bool $var)
-    {
-        $this->is_unlimited = $var;
-
-        return $this;
-    }
-
-    /**
      * Generated from protobuf field <code>bool refund = 14 [json_name = "refund"];</code>
      * @return bool
      */
@@ -550,6 +529,38 @@ class ChargeLog extends \Google\Protobuf\Internal\Message
     public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
         $this->updated_at = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional int32 is_unlimited = 17 [json_name = "is_unlimited"];</code>
+     * @return int
+     */
+    public function getIsUnlimited()
+    {
+        return isset($this->is_unlimited) ? $this->is_unlimited : 0;
+    }
+
+    public function hasIsUnlimited()
+    {
+        return isset($this->is_unlimited);
+    }
+
+    public function clearIsUnlimited()
+    {
+        unset($this->is_unlimited);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional int32 is_unlimited = 17 [json_name = "is_unlimited"];</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setIsUnlimited(int $var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->is_unlimited = $var;
 
         return $this;
     }

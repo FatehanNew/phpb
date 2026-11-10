@@ -103,10 +103,6 @@ class Device extends \Google\Protobuf\Internal\Message
      */
     protected $timezone = null;
     /**
-     * Generated from protobuf field <code>bool is_unlimited = 22 [json_name = "is_unlimited"];</code>
-     */
-    protected $is_unlimited = false;
-    /**
      * Generated from protobuf field <code>string trip_type = 23 [json_name = "trip_type"];</code>
      */
     protected $trip_type = '';
@@ -134,6 +130,10 @@ class Device extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional .google.protobuf.Timestamp updated_at = 28 [json_name = "updated_at"];</code>
      */
     protected $updated_at = null;
+    /**
+     * Generated from protobuf field <code>optional int32 is_unlimited = 31 [json_name = "is_unlimited"];</code>
+     */
+    protected $is_unlimited = null;
 
     /**
      * Constructor.
@@ -163,7 +163,6 @@ class Device extends \Google\Protobuf\Internal\Message
      *     @type bool $test
      *     @type string $sim_card_id
      *     @type string $timezone
-     *     @type bool $is_unlimited
      *     @type string $trip_type
      *     @type \Fatehan\Packet\DataModel\DataModule $modules
      *     @type \Google\Protobuf\Timestamp $receive_at
@@ -171,6 +170,7 @@ class Device extends \Google\Protobuf\Internal\Message
      *     @type \Google\Protobuf\Timestamp $connect_at
      *     @type \Google\Protobuf\Timestamp $created_at
      *     @type \Google\Protobuf\Timestamp $updated_at
+     *     @type int $is_unlimited
      * }
      */
     public function __construct($data = NULL) {
@@ -822,27 +822,6 @@ class Device extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>bool is_unlimited = 22 [json_name = "is_unlimited"];</code>
-     * @return bool
-     */
-    public function getIsUnlimited()
-    {
-        return $this->is_unlimited;
-    }
-
-    /**
-     * Generated from protobuf field <code>bool is_unlimited = 22 [json_name = "is_unlimited"];</code>
-     * @param bool $var
-     * @return $this
-     */
-    public function setIsUnlimited(bool $var)
-    {
-        $this->is_unlimited = $var;
-
-        return $this;
-    }
-
-    /**
      * Generated from protobuf field <code>string trip_type = 23 [json_name = "trip_type"];</code>
      * @return string
      */
@@ -1046,6 +1025,38 @@ class Device extends \Google\Protobuf\Internal\Message
     public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
         $this->updated_at = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional int32 is_unlimited = 31 [json_name = "is_unlimited"];</code>
+     * @return int
+     */
+    public function getIsUnlimited()
+    {
+        return isset($this->is_unlimited) ? $this->is_unlimited : 0;
+    }
+
+    public function hasIsUnlimited()
+    {
+        return isset($this->is_unlimited);
+    }
+
+    public function clearIsUnlimited()
+    {
+        unset($this->is_unlimited);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional int32 is_unlimited = 31 [json_name = "is_unlimited"];</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setIsUnlimited(int $var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->is_unlimited = $var;
 
         return $this;
     }

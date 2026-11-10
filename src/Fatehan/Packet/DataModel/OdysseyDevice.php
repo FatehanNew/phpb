@@ -35,10 +35,6 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
      */
     protected $timezone = '';
     /**
-     * Generated from protobuf field <code>bool is_unlimited = 6 [json_name = "is_unlimited"];</code>
-     */
-    protected $is_unlimited = false;
-    /**
      * Generated from protobuf field <code>.com.fatehan.packets.OdysseyDevice.TripType trip_type = 7 [json_name = "trip_type"];</code>
      */
     protected $trip_type = 0;
@@ -78,6 +74,30 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated uint64 work_shift_ids = 16 [json_name = "work_shift_ids"];</code>
      */
     private $work_shift_ids;
+    /**
+     * Generated from protobuf field <code>optional uint64 car_id = 17 [json_name = "car_id"];</code>
+     */
+    protected $car_id = null;
+    /**
+     * Generated from protobuf field <code>optional string car_name = 18 [json_name = "car_name"];</code>
+     */
+    protected $car_name = null;
+    /**
+     * Generated from protobuf field <code>optional string car_plate = 19 [json_name = "car_plate"];</code>
+     */
+    protected $car_plate = null;
+    /**
+     * Generated from protobuf field <code>optional uint64 driver_id = 20 [json_name = "driver_id"];</code>
+     */
+    protected $driver_id = null;
+    /**
+     * Generated from protobuf field <code>optional string driver_name = 21 [json_name = "driver_name"];</code>
+     */
+    protected $driver_name = null;
+    /**
+     * Generated from protobuf field <code>optional int32 is_unlimited = 22 [json_name = "is_unlimited"];</code>
+     */
+    protected $is_unlimited = null;
 
     /**
      * Constructor.
@@ -90,7 +110,6 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
      *     @type int|string $object_id
      *     @type int $object_type
      *     @type string $timezone
-     *     @type bool $is_unlimited
      *     @type int $trip_type
      *     @type \Google\Protobuf\Timestamp $receive_at
      *     @type \Google\Protobuf\Timestamp $expires_at
@@ -101,6 +120,12 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
      *     @type int[]|string[] $generation
      *     @type \Fatehan\Packet\DataModel\DataModule $module
      *     @type int[]|string[] $work_shift_ids
+     *     @type int|string $car_id
+     *     @type string $car_name
+     *     @type string $car_plate
+     *     @type int|string $driver_id
+     *     @type string $driver_name
+     *     @type int $is_unlimited
      * }
      */
     public function __construct($data = NULL) {
@@ -224,27 +249,6 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, true);
         $this->timezone = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>bool is_unlimited = 6 [json_name = "is_unlimited"];</code>
-     * @return bool
-     */
-    public function getIsUnlimited()
-    {
-        return $this->is_unlimited;
-    }
-
-    /**
-     * Generated from protobuf field <code>bool is_unlimited = 6 [json_name = "is_unlimited"];</code>
-     * @param bool $var
-     * @return $this
-     */
-    public function setIsUnlimited(bool $var)
-    {
-        $this->is_unlimited = $var;
 
         return $this;
     }
@@ -530,6 +534,198 @@ class OdysseyDevice extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT64);
         $this->work_shift_ids = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint64 car_id = 17 [json_name = "car_id"];</code>
+     * @return int|string
+     */
+    public function getCarId()
+    {
+        return isset($this->car_id) ? $this->car_id : GPBUtil::compatibleInt64(0, '0');
+    }
+
+    public function hasCarId()
+    {
+        return isset($this->car_id);
+    }
+
+    public function clearCarId()
+    {
+        unset($this->car_id);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint64 car_id = 17 [json_name = "car_id"];</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setCarId(int|string $var)
+    {
+        GPBUtil::checkUint64($var);
+        $this->car_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string car_name = 18 [json_name = "car_name"];</code>
+     * @return string
+     */
+    public function getCarName()
+    {
+        return isset($this->car_name) ? $this->car_name : '';
+    }
+
+    public function hasCarName()
+    {
+        return isset($this->car_name);
+    }
+
+    public function clearCarName()
+    {
+        unset($this->car_name);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string car_name = 18 [json_name = "car_name"];</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setCarName(string $var)
+    {
+        GPBUtil::checkString($var, true);
+        $this->car_name = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string car_plate = 19 [json_name = "car_plate"];</code>
+     * @return string
+     */
+    public function getCarPlate()
+    {
+        return isset($this->car_plate) ? $this->car_plate : '';
+    }
+
+    public function hasCarPlate()
+    {
+        return isset($this->car_plate);
+    }
+
+    public function clearCarPlate()
+    {
+        unset($this->car_plate);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string car_plate = 19 [json_name = "car_plate"];</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setCarPlate(string $var)
+    {
+        GPBUtil::checkString($var, true);
+        $this->car_plate = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint64 driver_id = 20 [json_name = "driver_id"];</code>
+     * @return int|string
+     */
+    public function getDriverId()
+    {
+        return isset($this->driver_id) ? $this->driver_id : GPBUtil::compatibleInt64(0, '0');
+    }
+
+    public function hasDriverId()
+    {
+        return isset($this->driver_id);
+    }
+
+    public function clearDriverId()
+    {
+        unset($this->driver_id);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint64 driver_id = 20 [json_name = "driver_id"];</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setDriverId(int|string $var)
+    {
+        GPBUtil::checkUint64($var);
+        $this->driver_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string driver_name = 21 [json_name = "driver_name"];</code>
+     * @return string
+     */
+    public function getDriverName()
+    {
+        return isset($this->driver_name) ? $this->driver_name : '';
+    }
+
+    public function hasDriverName()
+    {
+        return isset($this->driver_name);
+    }
+
+    public function clearDriverName()
+    {
+        unset($this->driver_name);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string driver_name = 21 [json_name = "driver_name"];</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setDriverName(string $var)
+    {
+        GPBUtil::checkString($var, true);
+        $this->driver_name = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional int32 is_unlimited = 22 [json_name = "is_unlimited"];</code>
+     * @return int
+     */
+    public function getIsUnlimited()
+    {
+        return isset($this->is_unlimited) ? $this->is_unlimited : 0;
+    }
+
+    public function hasIsUnlimited()
+    {
+        return isset($this->is_unlimited);
+    }
+
+    public function clearIsUnlimited()
+    {
+        unset($this->is_unlimited);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional int32 is_unlimited = 22 [json_name = "is_unlimited"];</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setIsUnlimited(int $var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->is_unlimited = $var;
 
         return $this;
     }

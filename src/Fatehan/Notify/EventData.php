@@ -46,6 +46,14 @@ class EventData extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional uint64 template_id = 8 [json_name = "template_id"];</code>
      */
     protected $template_id = null;
+    /**
+     * Generated from protobuf field <code>optional string timezone = 9 [json_name = "timezone"];</code>
+     */
+    protected $timezone = null;
+    /**
+     * Generated from protobuf field <code>optional string calendar = 10 [json_name = "calendar"];</code>
+     */
+    protected $calendar = null;
 
     /**
      * Constructor.
@@ -61,6 +69,8 @@ class EventData extends \Google\Protobuf\Internal\Message
      *     @type \Fatehan\Notify\EventModule[] $event_modules
      *     @type int[] $via
      *     @type int|string $template_id
+     *     @type string $timezone
+     *     @type string $calendar
      * }
      */
     public function __construct($data = NULL) {
@@ -257,6 +267,70 @@ class EventData extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkUint64($var);
         $this->template_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string timezone = 9 [json_name = "timezone"];</code>
+     * @return string
+     */
+    public function getTimezone()
+    {
+        return isset($this->timezone) ? $this->timezone : '';
+    }
+
+    public function hasTimezone()
+    {
+        return isset($this->timezone);
+    }
+
+    public function clearTimezone()
+    {
+        unset($this->timezone);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string timezone = 9 [json_name = "timezone"];</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setTimezone(string $var)
+    {
+        GPBUtil::checkString($var, true);
+        $this->timezone = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string calendar = 10 [json_name = "calendar"];</code>
+     * @return string
+     */
+    public function getCalendar()
+    {
+        return isset($this->calendar) ? $this->calendar : '';
+    }
+
+    public function hasCalendar()
+    {
+        return isset($this->calendar);
+    }
+
+    public function clearCalendar()
+    {
+        unset($this->calendar);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string calendar = 10 [json_name = "calendar"];</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setCalendar(string $var)
+    {
+        GPBUtil::checkString($var, true);
+        $this->calendar = $var;
 
         return $this;
     }
