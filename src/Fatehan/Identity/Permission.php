@@ -2872,6 +2872,50 @@ class Permission
      * Generated from protobuf enum <code>ADMIN_DELETE_DATA_LIST = 717;</code>
      */
     const ADMIN_DELETE_DATA_LIST = 717;
+    /**
+     * Generated from protobuf enum <code>TICKET_DEPARTMENT_LIST = 718;</code>
+     */
+    const TICKET_DEPARTMENT_LIST = 718;
+    /**
+     * Generated from protobuf enum <code>TICKET_DEPARTMENT_SHOW = 719;</code>
+     */
+    const TICKET_DEPARTMENT_SHOW = 719;
+    /**
+     * Generated from protobuf enum <code>PARTNER_TICKET_DEPARTMENT_CREATE = 720;</code>
+     */
+    const PARTNER_TICKET_DEPARTMENT_CREATE = 720;
+    /**
+     * Generated from protobuf enum <code>PARTNER_TICKET_DEPARTMENT_DELETE = 721;</code>
+     */
+    const PARTNER_TICKET_DEPARTMENT_DELETE = 721;
+    /**
+     * Generated from protobuf enum <code>PARTNER_TICKET_DEPARTMENT_UPDATE = 722;</code>
+     */
+    const PARTNER_TICKET_DEPARTMENT_UPDATE = 722;
+    /**
+     * Generated from protobuf enum <code>TICKET_CREATE = 723;</code>
+     */
+    const TICKET_CREATE = 723;
+    /**
+     * Generated from protobuf enum <code>TICKET_SHOW = 724;</code>
+     */
+    const TICKET_SHOW = 724;
+    /**
+     * Generated from protobuf enum <code>TICKET_LIST = 725;</code>
+     */
+    const TICKET_LIST = 725;
+    /**
+     * Generated from protobuf enum <code>TICKET_SUB = 726;</code>
+     */
+    const TICKET_SUB = 726;
+    /**
+     * Generated from protobuf enum <code>TICKET_Me = 727;</code>
+     */
+    const TICKET_Me = 727;
+    /**
+     * Generated from protobuf enum <code>PARTNER_TICKET_STATS = 728;</code>
+     */
+    const PARTNER_TICKET_STATS = 728;
 
     private static $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
@@ -3549,6 +3593,17 @@ class Permission
         self::ADMIN_DELETE_DATA_SHOW => 'ADMIN_DELETE_DATA_SHOW',
         self::ADMIN_DELETE_DATA_CREATE => 'ADMIN_DELETE_DATA_CREATE',
         self::ADMIN_DELETE_DATA_LIST => 'ADMIN_DELETE_DATA_LIST',
+        self::TICKET_DEPARTMENT_LIST => 'TICKET_DEPARTMENT_LIST',
+        self::TICKET_DEPARTMENT_SHOW => 'TICKET_DEPARTMENT_SHOW',
+        self::PARTNER_TICKET_DEPARTMENT_CREATE => 'PARTNER_TICKET_DEPARTMENT_CREATE',
+        self::PARTNER_TICKET_DEPARTMENT_DELETE => 'PARTNER_TICKET_DEPARTMENT_DELETE',
+        self::PARTNER_TICKET_DEPARTMENT_UPDATE => 'PARTNER_TICKET_DEPARTMENT_UPDATE',
+        self::TICKET_CREATE => 'TICKET_CREATE',
+        self::TICKET_SHOW => 'TICKET_SHOW',
+        self::TICKET_LIST => 'TICKET_LIST',
+        self::TICKET_SUB => 'TICKET_SUB',
+        self::TICKET_Me => 'TICKET_Me',
+        self::PARTNER_TICKET_STATS => 'PARTNER_TICKET_STATS',
     ];
 
     public static function name($value)

@@ -1037,4 +1037,89 @@ class ApiServiceClient extends \Grpc\BaseStub {
         $metadata, $options);
     }
 
+    /**
+     * Debug & Cache Management (Two Cache Servers: Main Redis & Socket Redis)
+     * @param \Fatehan\Service\DebugSearchRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function DebugCacheSearch(\Fatehan\Service\DebugSearchRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/com.fatehan.services.ApiService/DebugCacheSearch',
+        $argument,
+        ['\Fatehan\Service\DebugSearchResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * @param \Fatehan\Service\DebugCacheGetRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function DebugCacheGet(\Fatehan\Service\DebugCacheGetRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/com.fatehan.services.ApiService/DebugCacheGet',
+        $argument,
+        ['\Fatehan\Service\CacheEntryProto', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * @param \Fatehan\Service\DebugCacheDeleteRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function DebugCacheDelete(\Fatehan\Service\DebugCacheDeleteRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/com.fatehan.services.ApiService/DebugCacheDelete',
+        $argument,
+        ['\Fatehan\Service\DebugCacheDeleteResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * @param \Fatehan\Service\DebugCacheClearTargetRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function DebugCacheClearTarget(\Fatehan\Service\DebugCacheClearTargetRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/com.fatehan.services.ApiService/DebugCacheClearTarget',
+        $argument,
+        ['\Fatehan\Service\DebugCacheClearTargetResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * @param \Fatehan\Service\DebugCacheOverviewRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function DebugCacheOverview(\Fatehan\Service\DebugCacheOverviewRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/com.fatehan.services.ApiService/DebugCacheOverview',
+        $argument,
+        ['\Fatehan\Service\DebugCacheOverviewResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * @param \Fatehan\Service\DebugCacheBrowseRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function DebugCacheBrowse(\Fatehan\Service\DebugCacheBrowseRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/com.fatehan.services.ApiService/DebugCacheBrowse',
+        $argument,
+        ['\Fatehan\Service\DebugCacheBrowseResponse', 'decode'],
+        $metadata, $options);
+    }
+
 }
