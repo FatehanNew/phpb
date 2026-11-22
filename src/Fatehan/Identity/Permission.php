@@ -2916,6 +2916,30 @@ class Permission
      * Generated from protobuf enum <code>PARTNER_TICKET_STATS = 728;</code>
      */
     const PARTNER_TICKET_STATS = 728;
+    /**
+     * Generated from protobuf enum <code>CAR_FILE_SHOW = 729;</code>
+     */
+    const CAR_FILE_SHOW = 729;
+    /**
+     * Generated from protobuf enum <code>CAR_FILE_CREATE = 730;</code>
+     */
+    const CAR_FILE_CREATE = 730;
+    /**
+     * Generated from protobuf enum <code>CAR_FILE_UPDATE = 731;</code>
+     */
+    const CAR_FILE_UPDATE = 731;
+    /**
+     * Generated from protobuf enum <code>CAR_ADDITIONAL_SHOW = 732;</code>
+     */
+    const CAR_ADDITIONAL_SHOW = 732;
+    /**
+     * Generated from protobuf enum <code>CAR_ADDITIONAL_CREATE = 733;</code>
+     */
+    const CAR_ADDITIONAL_CREATE = 733;
+    /**
+     * Generated from protobuf enum <code>CAR_ADDITIONAL_UPDATE = 734;</code>
+     */
+    const CAR_ADDITIONAL_UPDATE = 734;
 
     private static $valueToName = [
         self::UNSPECIFIED => 'UNSPECIFIED',
@@ -3604,6 +3628,12 @@ class Permission
         self::TICKET_SUB => 'TICKET_SUB',
         self::TICKET_Me => 'TICKET_Me',
         self::PARTNER_TICKET_STATS => 'PARTNER_TICKET_STATS',
+        self::CAR_FILE_SHOW => 'CAR_FILE_SHOW',
+        self::CAR_FILE_CREATE => 'CAR_FILE_CREATE',
+        self::CAR_FILE_UPDATE => 'CAR_FILE_UPDATE',
+        self::CAR_ADDITIONAL_SHOW => 'CAR_ADDITIONAL_SHOW',
+        self::CAR_ADDITIONAL_CREATE => 'CAR_ADDITIONAL_CREATE',
+        self::CAR_ADDITIONAL_UPDATE => 'CAR_ADDITIONAL_UPDATE',
     ];
 
     public static function name($value)
