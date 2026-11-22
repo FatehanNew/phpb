@@ -118,6 +118,10 @@ class Car extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.google.protobuf.Timestamp updated_at = 25 [json_name = "updated_at"];</code>
      */
     protected $updated_at = null;
+    /**
+     * Generated from protobuf field <code>repeated .com.fatehan.devices.CarModel.Metadata metadata = 28 [json_name = "metadata"];</code>
+     */
+    private $metadata;
 
     /**
      * Constructor.
@@ -151,6 +155,7 @@ class Car extends \Google\Protobuf\Internal\Message
      *     @type string $color
      *     @type \Google\Protobuf\Timestamp $created_at
      *     @type \Google\Protobuf\Timestamp $updated_at
+     *     @type \Fatehan\Device\CarModel\Metadata[] $metadata
      * }
      */
     public function __construct($data = NULL) {
@@ -953,6 +958,28 @@ class Car extends \Google\Protobuf\Internal\Message
     public function setUpdatedAt(\Google\Protobuf\Timestamp|null $var)
     {
         $this->updated_at = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .com.fatehan.devices.CarModel.Metadata metadata = 28 [json_name = "metadata"];</code>
+     * @return RepeatedField<\Fatehan\Device\CarModel\Metadata>
+     */
+    public function getMetadata()
+    {
+        return $this->metadata;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .com.fatehan.devices.CarModel.Metadata metadata = 28 [json_name = "metadata"];</code>
+     * @param \Fatehan\Device\CarModel\Metadata[] $var
+     * @return $this
+     */
+    public function setMetadata(array|RepeatedField $var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Device\CarModel\Metadata::class);
+        $this->metadata = $arr;
 
         return $this;
     }

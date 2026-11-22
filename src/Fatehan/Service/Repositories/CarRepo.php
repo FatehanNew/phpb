@@ -26,6 +26,14 @@ class CarRepo extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional .com.fatehan.services.CarModelRepo car_model_repo = 3 [json_name = "car_model_repo"];</code>
      */
     protected $car_model_repo = null;
+    /**
+     * Generated from protobuf field <code>repeated .com.fatehan.services.CarRepo.File files = 4 [json_name = "files"];</code>
+     */
+    private $files;
+    /**
+     * Generated from protobuf field <code>repeated .com.fatehan.services.CarRepo.Metadata metadata = 5 [json_name = "metadata"];</code>
+     */
+    private $metadata;
 
     /**
      * Constructor.
@@ -36,6 +44,8 @@ class CarRepo extends \Google\Protobuf\Internal\Message
      *     @type \Fatehan\Device\Car $car
      *     @type \Fatehan\Service\Repositories\DriverRepo $driver_repo
      *     @type \Fatehan\Service\Repositories\CarModelRepo $car_model_repo
+     *     @type \Fatehan\Service\Repositories\CarRepo\File[] $files
+     *     @type \Fatehan\Service\Repositories\CarRepo\Metadata[] $metadata
      * }
      */
     public function __construct($data = NULL) {
@@ -132,6 +142,50 @@ class CarRepo extends \Google\Protobuf\Internal\Message
     public function setCarModelRepo(\Fatehan\Service\Repositories\CarModelRepo|null $var)
     {
         $this->car_model_repo = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .com.fatehan.services.CarRepo.File files = 4 [json_name = "files"];</code>
+     * @return RepeatedField<\Fatehan\Service\Repositories\CarRepo\File>
+     */
+    public function getFiles()
+    {
+        return $this->files;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .com.fatehan.services.CarRepo.File files = 4 [json_name = "files"];</code>
+     * @param \Fatehan\Service\Repositories\CarRepo\File[] $var
+     * @return $this
+     */
+    public function setFiles(array|RepeatedField $var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Service\Repositories\CarRepo\File::class);
+        $this->files = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .com.fatehan.services.CarRepo.Metadata metadata = 5 [json_name = "metadata"];</code>
+     * @return RepeatedField<\Fatehan\Service\Repositories\CarRepo\Metadata>
+     */
+    public function getMetadata()
+    {
+        return $this->metadata;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .com.fatehan.services.CarRepo.Metadata metadata = 5 [json_name = "metadata"];</code>
+     * @param \Fatehan\Service\Repositories\CarRepo\Metadata[] $var
+     * @return $this
+     */
+    public function setMetadata(array|RepeatedField $var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Fatehan\Service\Repositories\CarRepo\Metadata::class);
+        $this->metadata = $arr;
 
         return $this;
     }
